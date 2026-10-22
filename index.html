@@ -116,7 +116,7 @@ h1{font:800 clamp(44px,9vw,84px)/.86 var(--display);margin:0;letter-spacing:-.01
 .legs li[data-res=ok] .o::after{content:"●";color:var(--won);font-size:11px}
 .legs li[data-res=no] .o::after{content:"●";color:var(--lost);font-size:11px}
 .legs li[data-res=lost] .m{text-decoration:line-through;text-decoration-color:var(--lost)}
-.legs li[data-res=won]{opacity:.7}
+
 .legs li.livenow{background:linear-gradient(90deg,rgba(242,194,48,.18),transparent 70%);margin:0 -6px;padding-left:6px;padding-right:6px}
 @media (prefers-reduced-motion:no-preference){.legs li[data-res=ok] .o::after,.legs li[data-res=no] .o::after{animation:blink 1.6s ease-in-out infinite}@keyframes blink{50%{opacity:.25}}}
 .prog{margin-top:10px;font:600 13px var(--ui);display:none;padding:7px 10px;border-radius:6px;background:#ebe7da}
@@ -124,6 +124,14 @@ h1{font:800 clamp(44px,9vw,84px)/.86 var(--display);margin:0;letter-spacing:-.01
 .prog.bad{background:#f6dcd8;color:#8c241c}.prog.good{background:#d9eedf;color:#15603a}
 .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#e04f3f;margin-right:6px;vertical-align:1px}
 @media (prefers-reduced-motion:no-preference){.dot{animation:blink 1.2s infinite}}
+
+.legs li[data-res=won]{background:linear-gradient(90deg,rgba(33,137,79,.16),transparent 75%);box-shadow:inset 3px 0 var(--won);margin:0 -6px;padding-left:9px;padding-right:6px;opacity:1}
+.legs li[data-res=lost]{background:linear-gradient(90deg,rgba(198,61,51,.16),transparent 75%);box-shadow:inset 3px 0 var(--lost);margin:0 -6px;padding-left:9px;padding-right:6px}
+.legs li[data-res=won] .lv{color:var(--won)}.legs li[data-res=lost] .lv{color:var(--lost)}
+.prog .cnt{display:flex;flex-wrap:wrap;gap:4px 12px}
+.prog .cw{color:var(--won)}.prog .cl{color:var(--lost)}.prog .co{color:#b26b00}.prog .ct{color:var(--ink-dim)}
+.prog .why{margin-top:3px;font-weight:500}
+.prog.bad,.prog.good{background:#ebe7da;color:var(--ink)}
 
 .empty{border:1.5px dashed var(--line);border-radius:10px;padding:28px;text-align:center;color:var(--chalk-dim)}
 .err{background:rgba(198,61,51,.15);border:1px solid rgba(198,61,51,.5);border-radius:10px;padding:16px;color:#ffd5d0}
@@ -200,6 +208,20 @@ const fmtDM=d=>d.getDate()+' '+MS[d.getMonth()];
 function pct(s){ if(s==null) return '–'; const v=s*100; return (v>=10?v.toFixed(0):v>=1?v.toFixed(1):v.toFixed(2))+'%'; }
 function odds(s){ if(!s||s<0.0005) return ''; return 'cam 1 din '+Math.round(1/s).toLocaleString('ro-RO'); }
 
+
+// scores written in "rezultat", e.g. "Sporting–LASK 2-3 · FCSB–Rapid 1-1 (11 cornere)"
+const nrm=x=>(x||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+function rezScore(rez,meci){
+  if(!rez) return null; const [h,a]=meci.split(' – ').map(nrm);
+  const key=w=>(w||'').split(/[\s.]+/).filter(t=>t.length>2)[0]||'';
+  for(const part of rez.split(/ · /)){
+    const m=part.match(/^(.+?)\s*[–-]\s*(.+?)\s+(\d+)\s*-\s*(\d+)(?:\s*\((\d+) cornere\))?/); if(!m) continue;
+    const ph=nrm(m[1]), pa=nrm(m[2]);
+    if(key(h)&&ph.includes(key(h)) && key(a)&&pa.includes(key(a))) return {state:2,h:+m[3],a:+m[4],corners:m[5]?[+m[5],0]:null,yellow:null};
+  }
+  return null;
+}
+
 function slip(r,i){
   const L=parseLegs(r), settled=r.status!=='în așteptare';
   const s=el('article','slip'+(settled?' settled':''));
@@ -223,7 +245,8 @@ function slip(r,i){
   L.forEach((l,k)=>{
     const id=(r.ids||[])[k];
     const li=el('li', (!id&&l.when&&l.when<now&&!settled)?'past':'');
-    if(id){ li.dataset.id=id; li._sel=l.sel; li._meci=l.meci; }
+    li._sel=l.sel; li._meci=l.meci;
+    if(id) li.dataset.id=id; else { const sc=rezScore(r.rezultat,l.meci); if(sc){ li._fin=sc; li.dataset.fin='1'; } }
     const multi=span.includes('–');
     li.append(el('span','t',l.when?(multi?String(l.when.getDate()).padStart(2,'0')+'.'+String(l.when.getMonth()+1).padStart(2,'0')+' ':'')+fmtHM(l.when):''),
               el('span','m',l.meci), el('span','o',l.o), el('span','s',l.sel), el('span','lv'));
@@ -235,7 +258,7 @@ function slip(r,i){
     m.onclick=()=>{const open=m.dataset.open!=='1'; ul.querySelectorAll('li').forEach((li,k)=>{if(k>=LIM) li.hidden=!open;}); m.dataset.open=open?'1':'0'; m.textContent=open?'Arată mai puțin':'Arată toate cele '+L.length+' meciuri';};
     s.append(m); }
 
-  if(r.ids) s.append(el('div','prog'));
+  s.append(el('div','prog'));
   const tot=el('div','tot');
   const cc=el('div','c'); cc.append(el('small',null,'cotă'), document.createTextNode(Number(r.cota).toLocaleString('ro-RO',{minimumFractionDigits:2,maximumFractionDigits:2})));
   const pp=el('div','p'); pp.append(el('b',null,pct(r.sansa)), document.createTextNode(odds(r.sansa)||'șansă estimată'));
@@ -309,8 +332,12 @@ function judge(sel,meci,m){
     if(parts.includes('lost')) return 'lost'; if(parts.every(p=>p==='won')) return 'won'; return parts.includes('no')?'no':'ok'; }
   return null;
 }
+function applyFin(){
+  for(const li of document.querySelectorAll('.legs li[data-fin]')){ const m=li._fin; const r=judge(li._sel,li._meci,m); if(r) li.dataset.res=r; const lv=li.querySelector('.lv'); lv.className='lv on fin'; lv.textContent='Final '+m.h+' – '+m.a; }
+}
 async function liveTick(){
-  if(live.busy) return; live.busy=true;
+  applyFin(); progs();
+  if(live.busy){ live.again=true; return; } live.busy=true;
   try{
     const lis=[...document.querySelectorAll('.legs li[data-id]')];
     const ids=[...new Set(lis.map(li=>li.dataset.id))];
@@ -326,18 +353,27 @@ async function liveTick(){
       if(m.state===1){ liveCount++; li.classList.add('livenow'); lv.className='lv on live'; lv.replaceChildren(el('span','dot'), document.createTextNode(m.h+' – '+m.a+(m.min?'  ·  '+m.min+"'":'')+(m.corners&&/corner/i.test(norm(li._sel))?'  ·  '+(m.corners[0]+m.corners[1])+' cornere':''))); }
       else { lv.className='lv on fin'; lv.textContent='Final '+m.h+' – '+m.a+(m.corners&&/corner/i.test(norm(li._sel))?', '+(m.corners[0]+m.corners[1])+' cornere':''); }
     }
+    progs();
+    const nx=$('next'); if(liveCount){ nx.querySelector('.livebadge')?.remove(); const b=el('span','livebadge'); b.append(el('span','dot'), liveCount+(liveCount===1?' meci live acum. ':' meciuri live acum. ')); nx.prepend(b); }
+  } finally { live.busy=false; if(live.again){ live.again=false; liveTick(); } }
+}
+function progs(){
     for(const s of document.querySelectorAll('.slip')){
       const p=s.querySelector('.prog'); if(!p) continue;
-      const L=[...s.querySelectorAll('.legs li[data-id]')]; const n=L.length;
+      const L=[...s.querySelectorAll('.legs li')]; const n=L.length;
       const won=L.filter(l=>l.dataset.res==='won').length, lost=L.filter(l=>l.dataset.res==='lost'), on=L.filter(l=>l.classList.contains('livenow')).length;
+      const todo=n-won-lost.length-on;
       if(!won&&!lost.length&&!on){ p.className='prog'; continue; }
       p.className='prog on'+(lost.length?' bad':won===n?' good':'');
-      if(lost.length) p.textContent='Picat la '+lost.map(l=>l._meci).join(', ')+'.';
-      else if(won===n) p.textContent='Toate cele '+n+' selecții au intrat.';
-      else p.textContent=won+' din '+n+' au intrat'+(on?', '+on+' live acum':'')+'.';
+      p.replaceChildren();
+      const cnt=el('div','cnt');
+      cnt.append(el('span','cw','✓ '+won+(won===1?' câștigat':' câștigate')), el('span','cl','✗ '+lost.length+(lost.length===1?' pierdut':' pierdute')));
+      if(on) cnt.append(el('span','co','● '+on+' live'));
+      if(todo>0) cnt.append(el('span','ct',todo+' de jucat'));
+      p.append(cnt);
+      if(lost.length) p.append(el('div','why','Picat la '+lost.map(l=>l._meci).join(', ')+'.'));
+      else if(won===n) p.append(el('div','why','Toate meciurile au intrat.'));
     }
-    const nx=$('next'); if(liveCount){ nx.querySelector('.livebadge')?.remove(); const b=el('span','livebadge'); b.append(el('span','dot'), liveCount+(liveCount===1?' meci live acum. ':' meciuri live acum. ')); nx.prepend(b); }
-  } finally { live.busy=false; }
 }
 
 function header(){
