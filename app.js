@@ -420,8 +420,9 @@ async function openSheet(l) {
     const j = await (await fetch(SA + l.id, { cache: 'no-store' })).json();
     stats.replaceChildren();
     const m = await getMatch(l.id);
-    if (m && m.state === 1) live.replaceChildren(el('span', 'dot'), document.createTextNode('Live: ' + m.h + ' – ' + m.a + (m.min ? ', minutul ' + m.min : '')));
-    else if (m && m.state === 2) live.textContent = 'Final: ' + m.h + ' – ' + m.a;
+    const sc2 = m && m.h != null ? m.h + ' – ' + m.a : '';
+    if (m && m.state === 1) live.replaceChildren(el('span', 'dot'), document.createTextNode('Live' + (sc2 ? ': ' + sc2 : '') + (m.min ? ', minutul ' + m.min : '')));
+    else if (m && m.state === 2) live.textContent = 'Final' + (sc2 ? ': ' + sc2 : '');
     const comp = j.competition && j.competition.name || j.tournament && j.tournament.name;
     if (comp) stats.append(el('p', 'comp', comp + (j.stadium_name && j.stadium_name.value ? ', ' + j.stadium_name.value : '')));
     const ps = (j.prematch_stats || []).map(x => ({ k: x.text.args[0].split('.').pop(), a: parseFloat(x.team1), b: parseFloat(x.team2) })).filter(x => STAT_LABEL[x.k]);
@@ -474,13 +475,16 @@ async function getMatch(id, sport) {
       const j = await (await fetch(SA + id, { cache: 'no-store' })).json();
       const sc = (j.scores || []).find(x => x.type === 0);
       let min = null; if (j.live_minute) { const lm = j.live_minute; const e = lm.elapsed_seconds + (lm.anchor_date ? Math.max(0, Date.now() / 1000 - lm.anchor_date.seconds) : 0); min = Math.min(Math.floor(e / 60) + 1, lm.max_seconds ? Math.floor(lm.max_seconds / 60) : 120); }
-      m = { t: Date.now(), state: j.match_state, h: sc ? sc.team1 : null, a: sc ? sc.team2 : null, min, corners: statOf(j, 'corner_kicks'), yellow: statOf(j, 'yellow_cards') };
+      // before the first goal Superbet sends no score at all: a started match without a score is 0-0
+      const started = j.match_state >= 1, num = v => (v == null || v === '' ? null : Number(v));
+      const sh = sc ? num(sc.team1) : null, sa = sc ? num(sc.team2) : null;
+      m = { t: Date.now(), state: j.match_state, h: sh != null ? sh : (started ? 0 : null), a: sa != null ? sa : (started ? 0 : null), min, corners: statOf(j, 'corner_kicks'), yellow: statOf(j, 'yellow_cards') };
     } else {
       const j = await (await fetch(OFFER + id + '&includeOnly=fixture,inPlayStats,inPlayStatsMetadata', { cache: 'no-store' })).json();
       const e = j.events && j.events[0]; if (!e) return c || null;
       const st = (e.inplay_stats_metadata && e.inplay_stats_metadata.status) || '';
       const ip = e.inplay_stats || {};
-      m = { t: Date.now(), state: /START|LIVE|PROGRESS/i.test(st) ? 1 : /END|FINISH|CLOSE/i.test(st) ? 2 : 0, h: ip.home_team_score != null ? +ip.home_team_score : null, a: ip.away_team_score != null ? +ip.away_team_score : null, min: null, label: e.inplay_stats_metadata && e.inplay_stats_metadata.event_status_label };
+      m = { t: Date.now(), state: /START|LIVE|PROGRESS/i.test(st) ? 1 : /END|FINISH|CLOSE/i.test(st) ? 2 : 0, h: ip.home_team_score != null ? +ip.home_team_score : (/START|LIVE|PROGRESS|END|FINISH|CLOSE/i.test(st) ? 0 : null), a: ip.away_team_score != null ? +ip.away_team_score : (/START|LIVE|PROGRESS|END|FINISH|CLOSE/i.test(st) ? 0 : null), min: null, label: e.inplay_stats_metadata && e.inplay_stats_metadata.event_status_label };
     }
     live.cache[id] = m; return m;
   } catch (e) { return c || null; }
