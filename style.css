@@ -332,3 +332,12 @@ body.noscroll{overflow:hidden}
 .mk-v.low{background:rgba(198,61,51,.1);color:#9e2a21}
 .mk-v.ok{background:#f1ecdd;color:#5b5d56}
 @media (max-width:480px){.mk-bar{grid-template-columns:5.2em 1fr 2.6em}.mk-team{grid-template-columns:minmax(0,5.2em) 1fr auto}.dots i{width:10px;height:10px}}
+.mk-teams.avg .mk-team{grid-template-columns:minmax(0,5.6em) 1fr auto}
+.nums{display:flex;gap:3px;flex-wrap:wrap}
+.nums i{font:600 11.5px/1 var(--slip);font-style:normal;min-width:20px;padding:4px 3px;text-align:center;border-radius:5px;background:#efeadb;color:#5b5d56}
+.nums i.y{background:var(--won);color:#fff}
+.mk-team .tm{font:500 12px var(--ui);color:var(--ink-dim);white-space:nowrap}
+.mk-team .tm b{font:800 20px/1 var(--display);color:var(--ink)}
+.mk-sum{font:500 13px var(--ui);color:#3b3d38;padding-top:2px}
+.mk-sum b{font-weight:700;color:var(--ink)}
+@media (max-width:480px){.nums i{min-width:17px;font-size:10.5px}}

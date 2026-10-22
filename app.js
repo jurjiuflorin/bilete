@@ -365,6 +365,11 @@ function barsBlock(pOdds, pStat) {
   }
   return w;
 }
+function numsRow(vals, line) { // valorile pe meci, de la vechi la recent; verde = peste linie
+  const d = el('span', 'nums'); [...vals].reverse().forEach(v => d.append(el('i', v > line ? 'y' : '', String(v))));
+  return d;
+}
+const r1 = x => Math.round(x * 10) / 10;
 function teamLine(name, seq, text) {
   const r = el('div', 'mk-team'); r.append(el('span', 'tn', name), dotsRow(seq), el('span', 'tc', text)); return r;
 }
@@ -383,7 +388,7 @@ async function sheetOdds(box, l) {
     const R1 = (SM && SM.R1) || [], R2 = (SM && SM.R2) || [], A = (SM && SM.avg) || {};
     body.replaceChildren(); body.className = '';
     const intro = el('p', 'mk-intro');
-    intro.append(el('b', null, 'Cum citești: '), document.createTextNode('bara gri e șansa după cota Superbet, bara verde („după formă”) e cât de des s-a întâmplat în ultimele meciuri ale echipelor. Fiecare bulină e un meci, de la cel mai vechi (stânga) la cel mai recent (dreapta): plină = s-a întâmplat.'));
+    intro.append(el('b', null, 'Cum citești: '), document.createTextNode('bara gri e șansa după cota Superbet, bara verde („după formă”) e cât de des s-a întâmplat în ultimele meciuri ale echipelor. La cornere, cartonașe, goluri etc. vezi media pe meci a fiecărei echipe și valorile din fiecare meci (de la cel mai vechi la cel mai recent); verde = peste linie.'));
     body.append(intro);
     if (inPlay) body.append(el('p', 'mk-live', 'Meciul se joacă acum: cotele sunt live și se schimbă cu scorul, iar forma e de dinainte de meci. Nu compara cele două până la final.'));
     let any = false;
@@ -429,7 +434,19 @@ async function sheetOdds(box, l) {
       if (cls) card.classList.add(cls);
       const hd = el('div', 'mk-h'); hd.append(el('span', 'mk-t', title), el('span', 'mk-o', fmtOdd(prc)));
       card.append(hd, barsBlock(pOdds, pStat));
-      if (n1 >= 4 && n2 >= 4) {
+      if (extra && extra.vals) {
+        // media pe meci a fiecărei echipe, cu valorile din fiecare meci dedesubt
+        const [v1, v2] = extra.vals, mean = v => v.reduce((x, y) => x + y, 0) / v.length;
+        const tw = el('div', 'mk-teams avg'); tw.append(el('div', 'mk-cap', capText));
+        for (const [nm, v] of [[h, v1], [a, v2]]) {
+          const r = el('div', 'mk-team');
+          const m = el('span', 'tm'); m.append(el('b', null, String(r1(mean(v)))), document.createTextNode(' / meci'));
+          r.append(el('span', 'tn', nm), numsRow(v, extra.line), m); tw.append(r);
+        }
+        const both = el('div', 'mk-sum'); both.append(document.createTextNode('Media celor două: '), el('b', null, r1((mean(v1) + mean(v2)) / 2) + ' ' + (extra.unit || '')), document.createTextNode(' pe meci, față de linia de ' + extra.line + '.'));
+        tw.append(both);
+        card.append(tw);
+      } else if (n1 >= 4 && n2 >= 4) {
         const tw = el('div', 'mk-teams'); tw.append(el('div', 'mk-cap', capText));
         tw.append(teamLine(h, seq1, k1 + ' din ' + n1), teamLine(a, seq2, k2 + ' din ' + n2));
         if (extra && extra.mean) tw.append(el('div', 'mk-mean', extra.mean));
@@ -445,8 +462,8 @@ async function sheetOdds(box, l) {
       if (pGG && pGG[0]) binCard(g, 'Ambele echipe marchează (GG)', fair(pGG)[0], pGG[0], G1.map(x => x.f > 0 && x.a > 0), G2.map(x => x.f > 0 && x.a > 0), 'În câte meciuri au marcat ambele echipe');
       if (pO && pO[0]) {
         const mg = G => G.reduce((s2, x) => s2 + x.f + x.a, 0) / G.length;
-        binCard(g, 'Peste 2.5 goluri', fair(pO)[0], pO[0], G1.map(x => x.f + x.a > 2), G2.map(x => x.f + x.a > 2), 'În câte meciuri s-au dat cel puțin 3 goluri',
-          okG ? { mean: 'Medie: ' + (Math.round(mg(G1) * 10) / 10) + ' goluri / meci la ' + h + ', ' + (Math.round(mg(G2) * 10) / 10) + ' la ' + a } : null);
+        binCard(g, 'Peste 2.5 goluri', fair(pO)[0], pO[0], G1.map(x => x.f + x.a > 2), G2.map(x => x.f + x.a > 2), 'Goluri în meciurile fiecărei echipe, ultimele ' + Math.max(G1.length, G2.length) + ' (verde = 3 sau mai multe)',
+          okG ? { vals: [G1.map(x => x.f + x.a), G2.map(x => x.f + x.a)], line: 2.5, unit: 'goluri' } : null);
       }
     }
 
@@ -460,8 +477,8 @@ async function sheetOdds(box, l) {
       const v1 = R1.map(x => x[rk]).filter(x => x != null), v2 = R2.map(x => x[rk]).filter(x => x != null);
       const mean = v => v.reduce((x, y) => x + y, 0) / v.length;
       if (v1.length >= 4 && v2.length >= 4) {
-        binCard(gJoc, lab + ' peste ' + b.ln, F[0], b.p, v1.map(x => x > ln), v2.map(x => x > ln), 'În câte meciuri s-au strâns cel puțin ' + need + ' ' + unit + ' (ambele echipe)',
-          { mean: 'Medie pe meci: ' + (Math.round(mean(v1) * 10) / 10) + ' ' + unit + ' la meciurile lui ' + h + ', ' + (Math.round(mean(v2) * 10) / 10) + ' la ale lui ' + a });
+        binCard(gJoc, lab + ' peste ' + b.ln, F[0], b.p, v1.map(x => x > ln), v2.map(x => x > ln), lab + ' în meciurile fiecărei echipe (total pe meci, ultimele ' + Math.max(v1.length, v2.length) + '; verde = ' + need + ' sau mai multe)',
+          { vals: [v1, v2], line: ln, unit });
       } else {
         const k = keys.find(x => A[x]); const v = k && A[k];
         binCard(gJoc, lab + ' peste ' + b.ln, F[0], b.p, null, null, '', v ? { p: poisOver(v[0] + v[1], ln), mean: 'Media din sezon: ' + v[0] + ' (' + h + ') + ' + v[1] + ' (' + a + ') = ' + (Math.round((v[0] + v[1]) * 10) / 10) + ' ' + unit + ' / meci' } : null);
