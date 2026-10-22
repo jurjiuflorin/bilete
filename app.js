@@ -769,7 +769,11 @@ function hero() {
   const left = el('div', 'hero-l');
   const k = el('div', 'hero-k', r.tip === 'Pariul zilei' ? 'Pariul zilei, ales de Claude' : 'Biletul zilei');
   if (isLive) { const lb = el('span', 'hero-livetag'); lb.append(el('span', 'dot'), 'LIVE'); k.append(lb); }
-  left.append(k, el('div', 'hero-tip', r.tip === 'Pariul zilei' && L[0] ? L[0].meci : r.tip));
+  // titlul se poate apăsa: un singur meci -> fereastra meciului; altfel -> biletul complet din listă
+  const ht = el('button', 'hero-tip', r.tip === 'Pariul zilei' && L[0] ? L[0].meci : r.tip); ht.type = 'button';
+  ht.title = L.length === 1 ? 'Detalii meci' : 'Vezi biletul';
+  ht.onclick = () => { if (L.length === 1) openSheet({ ...L[0] }); else goToTicket(r.id); };
+  left.append(k, ht);
   const cd = el('div', 'hero-cd'); cd.setAttribute('aria-label', 'Timp până la primul meci');
   const units = [['h', 'ore'], ['m', 'min'], ['s', 'sec']].map(([k, lab]) => { const u = el('div', 'u'); const b = el('b', null, '00'); u.append(b, el('span', null, lab)); cd.append(u); return b; });
   if (isLive) { const st = el('div', 'hero-state'); st.id = 'hero-state'; st.textContent = 'Se încarcă scorurile…'; left.append(st); }

@@ -357,3 +357,5 @@ body.noscroll{overflow:hidden}
 .next .livebadge{all:unset;cursor:pointer;color:#ffb3a8;font-weight:600;display:inline}
 .next .livebadge:hover,.next .livebadge:focus-visible{text-decoration:underline;text-underline-offset:3px}
 .next .livebadge .dot{display:inline-block}
+button.hero-tip{all:unset;display:block;cursor:pointer;font:800 clamp(30px,5vw,44px)/1 var(--display);margin:2px 0 12px;text-decoration:underline;text-decoration-color:rgba(29,31,28,.25);text-decoration-thickness:2px;text-underline-offset:5px}
+button.hero-tip:hover,button.hero-tip:focus-visible{text-decoration-color:#1d1f1c}
