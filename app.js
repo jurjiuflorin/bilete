@@ -440,10 +440,10 @@ async function sheetOdds(box, l) {
         const tw = el('div', 'mk-teams avg'); tw.append(el('div', 'mk-cap', capText));
         for (const [nm, v] of [[h, v1], [a, v2]]) {
           const r = el('div', 'mk-team');
-          const m = el('span', 'tm'); m.append(el('b', null, String(r1(mean(v)))), document.createTextNode(' / meci'));
+          const m = el('span', 'tm'); m.append(el('b', null, r1(mean(v)).toFixed(1)), document.createTextNode(' / meci'));
           r.append(el('span', 'tn', nm), numsRow(v, extra.line), m); tw.append(r);
         }
-        const both = el('div', 'mk-sum'); both.append(document.createTextNode('Media celor două: '), el('b', null, r1((mean(v1) + mean(v2)) / 2) + ' ' + (extra.unit || '')), document.createTextNode(' pe meci, față de linia de ' + extra.line + '.'));
+        const both = el('div', 'mk-sum'); both.append(document.createTextNode('Media celor două: '), el('b', null, r1((mean(v1) + mean(v2)) / 2).toFixed(1) + ' ' + (extra.unit || '')), document.createTextNode(' pe meci, față de linia de ' + extra.line + '.'));
         tw.append(both);
         card.append(tw);
       } else if (n1 >= 4 && n2 >= 4) {
