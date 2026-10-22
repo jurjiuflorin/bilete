@@ -9,6 +9,10 @@ const REPO = 'jurjiuflorin/bilete';
 const SA = 'https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro-RO?fixture-id=ax%3Amatch%3A';
 const OFFER = 'https://production-superbet-offer-ro.freetls.fastly.net/v3/ro-RO/events?events=';
 let rows = [], tab = 'p', tip = '', q = '', now = new Date();
+// tickets already lost live (a match is certainly lost) but not yet settled by the nightly task
+const lostNow = new Map(Object.entries((() => { try { return JSON.parse(localStorage.getItem('lostNow') || '{}'); } catch (e) { return {}; } })()));
+const PEND = 'în așteptare';
+const eff = r => r.status === PEND && lostNow.has(r.id) ? 'pierdut' : r.status;
 
 /* ---------- helpers ---------- */
 const nrm = x => (x || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
@@ -67,7 +71,7 @@ function legItem(l, opts = {}) {
 }
 
 function slip(r, i) {
-  const L = parseLegs(r), settled = r.status !== 'în așteptare';
+  const L = parseLegs(r), settled = eff(r) !== PEND, early = r.status === PEND && settled;
   const s = el('article', 'slip' + (settled ? ' settled' : '')); s.dataset.row = r.id; s._row = r;
   const top = el('div', 'slip-top');
   const first = L.find(l => l.when), last = [...L].reverse().find(l => l.when);
@@ -100,9 +104,10 @@ function slip(r, i) {
   const cc = el('div', 'c'); cc.append(el('small', null, 'cotă'), document.createTextNode(fmtOdd(r.cota)));
   const pp = el('div', 'p'); pp.append(el('b', null, pct(r.sansa)), document.createTextNode(oneIn(r.sansa) || 'șansă estimată'));
   tot.append(cc, pp);
-  if (settled) { const st = el('div', 'stamp ' + (r.status === 'câștigat' ? 'won' : 'lost'), r.status === 'câștigat' ? 'Câștigat' : 'Pierdut'); st.style.setProperty('--d', (Math.min(i, 8) * .06) + 's'); tot.append(st); }
+  if (settled) { const st = el('div', 'stamp ' + (eff(r) === 'câștigat' ? 'won' : 'lost'), eff(r) === 'câștigat' ? 'Câștigat' : 'Pierdut'); st.style.setProperty('--d', (Math.min(i, 8) * .06) + 's'); tot.append(st); }
   s.append(tot);
   if (r.rezultat) s.append(el('div', 'rez', r.rezultat));
+  if (early) s.append(el('div', 'rez', 'Picat la ' + lostNow.get(r.id).join(', ') + '. Restul meciurilor nu mai contează; rezultatul final se confirmă la verificarea de noapte.'));
   const sh = el('button', 'share', 'Trimite ca imagine'); sh.type = 'button'; sh.onclick = () => shareSlip(r, sh); s.append(sh);
   return s;
 }
@@ -118,7 +123,7 @@ const filtered = arr => arr.filter(r => !tip || r.tip === tip).filter(r => !q ||
 
 function viewTickets(pending) {
   const list = $('list');
-  let R = filtered(rows.filter(r => pending === (r.status === 'în așteptare')));
+  let R = filtered(rows.filter(r => pending === (eff(r) === PEND)));
   if (!R.length) { list.append(el('div', 'empty', pending ? 'Niciun bilet de jucat acum. Biletele noi apar dimineața.' : 'Încă nu s-a încheiat niciun bilet.')); return; }
   if (pending && !tip && !q) { const h = hero(); if (h) list.append(h); }
   const groups = new Map();
@@ -137,7 +142,7 @@ function viewTickets(pending) {
 function allMatches(fromNow) {
   const map = new Map();
   for (const r of rows) {
-    if (r.status !== 'în așteptare') continue;
+    if (eff(r) !== PEND) continue;
     for (const l of parseLegs(r)) {
       if (!l.when) continue;
       if (fromNow && l.when < new Date(now.getTime() + 5 * 6e4)) continue;
@@ -499,7 +504,15 @@ function judge(sel, meci, m) {
 function applyFin() {
   for (const li of document.querySelectorAll('.legs li[data-fin]')) { const m = li._fin; const r = judge(li._sel, li._meci, m); if (r) li.dataset.res = r; const lv = li.querySelector('.lv'); lv.className = 'lv on fin'; lv.textContent = 'Final ' + m.h + ' – ' + m.a; }
 }
+function markLost(r, matches) {
+  if (!r || r.status !== PEND || lostNow.has(r.id)) return false;
+  lostNow.set(r.id, matches);
+  try { localStorage.setItem('lostNow', JSON.stringify(Object.fromEntries(lostNow))); } catch (e) {}
+  return true;
+}
+let moveTimer = null;
 function progs() {
+  let moved = false;
   for (const s of document.querySelectorAll('.slip')) {
     const p = s.querySelector('.prog'); if (!p) continue;
     const L = [...s.querySelectorAll('.legs li')]; const n = L.length;
@@ -515,9 +528,11 @@ function progs() {
     if (on) cnt.append(el('span', 'co', '● ' + on + ' live'));
     if (todo > 0) cnt.append(el('span', 'ct', todo + ' de jucat'));
     p.append(cnt);
-    if (lost.length) p.append(el('div', 'why', 'Picat la ' + lost.map(l => l._meci).join(', ') + '.'));
+    if (lost.length) { p.append(el('div', 'why', 'Picat la ' + lost.map(l => l._meci).join(', ') + '.')); if (markLost(s._row, lost.map(l => l._meci))) moved = true; }
     else if (won === n) p.append(el('div', 'why', 'Toate meciurile au intrat.'));
   }
+  // a ticket that just lost leaves "În desfășurare" and moves to the history
+  if (moved) { header(); clearTimeout(moveTimer); moveTimer = setTimeout(() => { if (tab === 'p' || tab === 'h' || tab === 'c') render(); }, 1500); }
 }
 async function liveTick() {
   applyFin(); progs();
@@ -558,7 +573,7 @@ async function liveTick() {
 /* ---------- biletul zilei (hero) ---------- */
 let heroTimer = null;
 function heroPick() {
-  const soon = rows.filter(r => r.status === 'în așteptare' && firstWhen(r) > now && firstWhen(r) - now < 36 * 36e5);
+  const soon = rows.filter(r => eff(r) === PEND && firstWhen(r) > now && firstWhen(r) - now < 36 * 36e5);
   if (!soon.length) return null;
   const pref = ['Pariul zilei', 'Cotă 2', 'Goluri ~5', 'Cotă 5'];
   soon.sort((a, b) => { const pa = pref.indexOf(a.tip), pb = pref.indexOf(b.tip); return (pa < 0 ? 9 : pa) - (pb < 0 ? 9 : pb) || (b.sansa || 0) - (a.sansa || 0); });
@@ -695,7 +710,7 @@ async function shareSlip(r, btn) {
 
 /* ---------- header, chips, tabs ---------- */
 function header() {
-  const P = rows.filter(r => r.status === 'în așteptare'), W = rows.filter(r => r.status === 'câștigat').length, Lo = rows.filter(r => r.status === 'pierdut').length;
+  const P = rows.filter(r => eff(r) === PEND), W = rows.filter(r => eff(r) === 'câștigat').length, Lo = rows.filter(r => eff(r) === 'pierdut').length;
   $('s-p').textContent = P.length; $('s-w').textContent = W; $('s-l').textContent = Lo;
   $('n-p').textContent = P.length; $('n-h').textContent = W + Lo;
   let best = null;
@@ -733,6 +748,8 @@ fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(r => { if (!r.ok) throw new Error('fișierul de bilete nu răspunde (' + r.status + ')'); return r.json(); })
   .then(d => {
     rows = (Array.isArray(d) ? d : (d.rows || [])).filter(r => r.tip !== 'Test');
+    for (const id of [...lostNow.keys()]) { const r = rows.find(x => x.id === id); if (!r || r.status !== PEND) lostNow.delete(id); }
+    try { localStorage.setItem('lostNow', JSON.stringify(Object.fromEntries(lostNow))); } catch (e) {}
     chips(); header(); render(); $('next').after(soundBtn());
     setInterval(() => { now = new Date(); header(); liveTick(); if (tab === 'm' && Date.now() - day.t > 5 * 6e4) loadDay().then(() => { if (tab === 'm') render(); }); }, 60000);
   })
