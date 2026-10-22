@@ -106,6 +106,25 @@ h1{font:800 clamp(44px,9vw,84px)/.86 var(--display);margin:0;letter-spacing:-.01
   @keyframes thump{from{transform:rotate(-12deg) scale(1.8);opacity:0}to{transform:rotate(-12deg) scale(1);opacity:.82}}
 }
 
+/* live */
+.legs .lv{grid-column:2;font:600 12px var(--ui);display:none}
+.legs .lv.on{display:block}
+.legs .lv.live{color:#b26b00}.legs .lv.fin{color:var(--ink-dim)}
+.legs li[data-res] .o::after{display:inline-block;width:16px;margin-left:6px;text-align:center;font-family:var(--ui);font-weight:800}
+.legs li[data-res=won] .o::after{content:"✓";color:var(--won)}
+.legs li[data-res=lost] .o::after{content:"✗";color:var(--lost)}
+.legs li[data-res=ok] .o::after{content:"●";color:var(--won);font-size:11px}
+.legs li[data-res=no] .o::after{content:"●";color:var(--lost);font-size:11px}
+.legs li[data-res=lost] .m{text-decoration:line-through;text-decoration-color:var(--lost)}
+.legs li[data-res=won]{opacity:.7}
+.legs li.livenow{background:linear-gradient(90deg,rgba(242,194,48,.18),transparent 70%);margin:0 -6px;padding-left:6px;padding-right:6px}
+@media (prefers-reduced-motion:no-preference){.legs li[data-res=ok] .o::after,.legs li[data-res=no] .o::after{animation:blink 1.6s ease-in-out infinite}@keyframes blink{50%{opacity:.25}}}
+.prog{margin-top:10px;font:600 13px var(--ui);display:none;padding:7px 10px;border-radius:6px;background:#ebe7da}
+.prog.on{display:block}
+.prog.bad{background:#f6dcd8;color:#8c241c}.prog.good{background:#d9eedf;color:#15603a}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#e04f3f;margin-right:6px;vertical-align:1px}
+@media (prefers-reduced-motion:no-preference){.dot{animation:blink 1.2s infinite}}
+
 .empty{border:1.5px dashed var(--line);border-radius:10px;padding:28px;text-align:center;color:var(--chalk-dim)}
 .err{background:rgba(198,61,51,.15);border:1px solid rgba(198,61,51,.5);border-radius:10px;padding:16px;color:#ffd5d0}
 footer{margin-top:40px;color:var(--chalk-dim);font-size:13px;max-width:70ch;line-height:1.55}
@@ -202,10 +221,12 @@ function slip(r,i){
 
   const ul=el('ul','legs'); const LIM=7; const long=L.length>LIM+1;
   L.forEach((l,k)=>{
-    const li=el('li'+'' , (l.when&&l.when<now&&!settled)?'past':'');
+    const id=(r.ids||[])[k];
+    const li=el('li', (!id&&l.when&&l.when<now&&!settled)?'past':'');
+    if(id){ li.dataset.id=id; li._sel=l.sel; li._meci=l.meci; }
     const multi=span.includes('–');
     li.append(el('span','t',l.when?(multi?String(l.when.getDate()).padStart(2,'0')+'.'+String(l.when.getMonth()+1).padStart(2,'0')+' ':'')+fmtHM(l.when):''),
-              el('span','m',l.meci), el('span','o',l.o), el('span','s',l.sel));
+              el('span','m',l.meci), el('span','o',l.o), el('span','s',l.sel), el('span','lv'));
     if(long&&k>=LIM) li.hidden=true;
     ul.append(li);
   });
@@ -214,6 +235,7 @@ function slip(r,i){
     m.onclick=()=>{const open=m.dataset.open!=='1'; ul.querySelectorAll('li').forEach((li,k)=>{if(k>=LIM) li.hidden=!open;}); m.dataset.open=open?'1':'0'; m.textContent=open?'Arată mai puțin':'Arată toate cele '+L.length+' meciuri';};
     s.append(m); }
 
+  if(r.ids) s.append(el('div','prog'));
   const tot=el('div','tot');
   const cc=el('div','c'); cc.append(el('small',null,'cotă'), document.createTextNode(Number(r.cota).toLocaleString('ro-RO',{minimumFractionDigits:2,maximumFractionDigits:2})));
   const pp=el('div','p'); pp.append(el('b',null,pct(r.sansa)), document.createTextNode(odds(r.sansa)||'șansă estimată'));
@@ -248,6 +270,74 @@ function render(){
     const g=el('div','grid'); arr.forEach(r=>g.append(slip(r,i++)));
     sec.append(h,g); list.append(sec);
   }
+  liveTick();
+}
+
+
+/* ---------- live scores (Superbet public score data) ---------- */
+const SA='https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro-RO?fixture-id=ax%3Amatch%3A';
+const live={cache:{}, busy:false};
+const norm=x=>(x||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase();
+function statOf(j,key){ for(const g of (j.statistics||[])) if(g.period===0) for(const d of g.data||[]) if(d.text&&d.text.args&&d.text.args[0]==='stats.football.match.'+key) return [Number(d.team1)||0,Number(d.team2)||0]; return null; }
+async function getMatch(id){
+  const c=live.cache[id]; if(c && (c.state===2 || Date.now()-c.t<55e3)) return c;
+  try{
+    const j=await (await fetch(SA+id,{cache:'no-store'})).json();
+    const sc=(j.scores||[]).find(x=>x.type===0);
+    const state=j.match_state; // 0 neînceput, 1 live, 2 terminat
+    let min=null; if(j.live_minute){ const lm=j.live_minute; const el=lm.elapsed_seconds+(lm.anchor_date?Math.max(0,Date.now()/1000-lm.anchor_date.seconds):0); min=Math.min(Math.floor(el/60)+1, lm.max_seconds?Math.floor(lm.max_seconds/60):120); }
+    const half=(j.scores||[]).find(x=>x.type===1);
+    const m={t:Date.now(),state,h:sc?sc.team1:null,a:sc?sc.team2:null,min,ht:!!(state===1&&half&&!(j.scores||[]).find(x=>x.type===2)&&j.live_minute==null),
+      corners:statOf(j,'corner_kicks'), yellow:statOf(j,'yellow_cards')};
+    live.cache[id]=m; return m;
+  }catch(e){ return c||null; }
+}
+// result of one simple selection: 'won' | 'lost' | 'ok' | 'no' | null
+function judge(sel,meci,m){
+  if(!m||m.h==null||m.state===0) return null;
+  const fin=m.state===2, H=m.h, A=m.a, T=H+A, s=norm(sel).trim();
+  const done=(win,certainWin,certainLose)=> fin?(win?'won':'lost'):(certainWin?'won':certainLose?'lost':(win?'ok':'no'));
+  let x;
+  if(s==='1') return done(H>A); if(s==='x') return done(H===A); if(s==='2') return done(A>H);
+  if(s==='1x') return done(H>=A); if(s==='x2') return done(A>=H); if(s==='12') return done(H!==A);
+  if(s==='gg') return done(H>0&&A>0,H>0&&A>0); if(s==='ng') return done(!(H>0&&A>0),false,H>0&&A>0);
+  if((x=s.match(/^(peste|sub) (\d+(?:\.\d)?)(?: goluri)?$/))){ const L=+x[2]; return x[1]==='peste'?done(T>L,T>L):done(T<L,false,T>L); }
+  if((x=s.match(/^(.+?) peste (\d+(?:\.\d)?) goluri$/))){ const [hm,am]=meci.split(' – ').map(norm); const t=norm(x[1]); const G=(hm.includes(t)||t.includes(hm.split(' ')[0]))?H:A; const L=+x[2]; return done(G>L,G>L); }
+  if((x=s.match(/cornere (peste|sub) (\d+(?:\.\d)?)/)||s.match(/(peste|sub) (\d+(?:\.\d)?) cornere/))){ if(!m.corners) return null; const C=m.corners[0]+m.corners[1], L=+x[2]; return x[1]==='peste'?done(C>L,C>L):done(C<L,false,C>L); }
+  if((x=s.match(/(peste|sub) (\d+(?:\.\d)?) (?:galbene|cartonase)/))){ if(!m.yellow) return null; const Y=m.yellow[0]+m.yellow[1], L=+x[2]; return x[1]==='peste'?done(Y>L,Y>L):done(Y<L,false,Y>L); }
+  if(s.startsWith('bet builder')){ const parts=sel.replace(/^bet builder\s*/i,'').split(/\s*\+\s*/).map(p=>judge(p,meci,m)); if(parts.includes(null)) return null;
+    if(parts.includes('lost')) return 'lost'; if(parts.every(p=>p==='won')) return 'won'; return parts.includes('no')?'no':'ok'; }
+  return null;
+}
+async function liveTick(){
+  if(live.busy) return; live.busy=true;
+  try{
+    const lis=[...document.querySelectorAll('.legs li[data-id]')];
+    const ids=[...new Set(lis.map(li=>li.dataset.id))];
+    const soon=ids.filter(id=>{ const li=lis.find(l=>l.dataset.id===id); return true; });
+    const res={}; await Promise.all(soon.map(async id=>{ res[id]=await getMatch(id); }));
+    let liveCount=0;
+    for(const li of lis){
+      const m=res[li.dataset.id]; const lv=li.querySelector('.lv');
+      li.classList.remove('livenow');
+      if(!m||m.state===0||m.h==null){ lv.className='lv'; li.removeAttribute('data-res'); continue; }
+      const r=judge(li._sel,li._meci,m);
+      if(r) li.dataset.res=r; else li.removeAttribute('data-res');
+      if(m.state===1){ liveCount++; li.classList.add('livenow'); lv.className='lv on live'; lv.replaceChildren(el('span','dot'), document.createTextNode(m.h+' – '+m.a+(m.min?'  ·  '+m.min+"'":'')+(m.corners&&/corner/i.test(norm(li._sel))?'  ·  '+(m.corners[0]+m.corners[1])+' cornere':''))); }
+      else { lv.className='lv on fin'; lv.textContent='Final '+m.h+' – '+m.a+(m.corners&&/corner/i.test(norm(li._sel))?', '+(m.corners[0]+m.corners[1])+' cornere':''); }
+    }
+    for(const s of document.querySelectorAll('.slip')){
+      const p=s.querySelector('.prog'); if(!p) continue;
+      const L=[...s.querySelectorAll('.legs li[data-id]')]; const n=L.length;
+      const won=L.filter(l=>l.dataset.res==='won').length, lost=L.filter(l=>l.dataset.res==='lost'), on=L.filter(l=>l.classList.contains('livenow')).length;
+      if(!won&&!lost.length&&!on){ p.className='prog'; continue; }
+      p.className='prog on'+(lost.length?' bad':won===n?' good':'');
+      if(lost.length) p.textContent='Picat la '+lost.map(l=>l._meci).join(', ')+'.';
+      else if(won===n) p.textContent='Toate cele '+n+' selecții au intrat.';
+      else p.textContent=won+' din '+n+' au intrat'+(on?', '+on+' live acum':'')+'.';
+    }
+    const nx=$('next'); if(liveCount){ nx.querySelector('.livebadge')?.remove(); const b=el('span','livebadge'); b.append(el('span','dot'), liveCount+(liveCount===1?' meci live acum. ':' meciuri live acum. ')); nx.prepend(b); }
+  } finally { live.busy=false; }
 }
 
 function header(){
@@ -277,8 +367,8 @@ $('q').addEventListener('input',e=>{q=e.target.value.trim().toLowerCase();render
 
 fetch('bilete.json?v='+Date.now(),{cache:'no-store'})
   .then(r=>{if(!r.ok) throw new Error('fișierul de bilete nu răspunde ('+r.status+')'); return r.json();})
-  .then(d=>{ rows=(Array.isArray(d)?d:(d.rows||[])).filter(r=>r.tip!=='Test'); chips(); header(); render();
-    setInterval(()=>{now=new Date();header();},60000); })
+  .then(d=>{ rows=(Array.isArray(d)?d:(d.rows||[])).filter(r=>r.tip!=='Test'); chips(); header(); render(); liveTick();
+    setInterval(()=>{now=new Date();header();liveTick();},60000); })
   .catch(e=>{ $('next').textContent=''; const x=el('div','err','Biletele nu s-au putut încărca: '+e.message+'. Reîncarcă pagina peste un minut.'); $('list').append(x); });
 </script>
 </body>
