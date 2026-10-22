@@ -176,6 +176,7 @@ function viewBuilder() {
   const list = $('list');
   const intro = el('p', 'intro', 'Alege meciurile din biletele active. Pentru fiecare meci poți bifa o singură selecție. Cota și șansa se calculează pe loc, iar „Cere codul” îmi trimite biletul ca să generez codul de agenție.');
   list.append(intro);
+  myRequests(list);
   const M = allMatches(true).filter(m => !q || nrm(m.meci).includes(q));
   // drop picks whose match already started
   for (const k of Object.keys(pick)) if (new Date(pick[k].when) < now) delete pick[k];
@@ -228,23 +229,60 @@ function buildText() {
   return buildList().map(x => { const d = new Date(x.when); return pad(d.getDate()) + '.' + pad(d.getMonth() + 1) + ' ' + fmtHM(d) + ' ' + x.meci + ': ' + x.sel + ' (' + x.o + ')' + (x.id ? ' [id ' + x.id + ']' : ''); }).join('\n');
 }
 $('bb-clear').onclick = () => { pick = {}; store.set('bilet-meu', pick); render(); };
+const NTFY = 'https://ntfy.sh/bilete-jf-crr06iq7wj73';
+let reqs = store.get('cereri', []);   // [{req, t, n, c, text, cod?}]
 $('bb-go').onclick = () => {
   const B = buildList(); if (!B.length) return;
   const c = B.reduce((a, x) => a * (parseFloat(x.o) || 1), 1);
-  const body = 'Cerere de bilet trimisă de pe site. Claude generează codul de agenție la următoarea rulare (9:53) sau imediat dacă îi scrii în chat.\n\n```\n' + buildText() + '\n```\n\nCotă estimată: ' + c.toFixed(2);
-  const url = 'https://github.com/' + REPO + '/issues/new?title=' + encodeURIComponent('Bilet: ' + B.length + ' meciuri, cota ' + c.toFixed(2)) + '&body=' + encodeURIComponent(body);
-  openSheetBuild(url);
-};
-function openSheetBuild(url) {
   const box = $('sheet-body'); box.replaceChildren();
   box.append(el('h3', null, 'Trimite biletul'));
-  box.id = 'sheet-body';
-  const pre = el('pre', 'blist', buildText()); box.append(pre);
-  const a = el('a', 'btn', 'Trimite cererea pe GitHub'); a.href = url; a.target = '_blank'; a.rel = 'noopener';
+  box.append(el('pre', 'blist', buildText()));
+  const send = el('button', 'btn', 'Trimite cererea'); send.type = 'button';
   const cp = el('button', 'btn ghost', 'Copiază lista'); cp.type = 'button'; cp.onclick = () => copy(buildText(), cp, 'Copiază lista');
-  const row = el('div', 'btnrow'); row.append(a, cp); box.append(row);
-  box.append(el('p', 'note', 'Pe GitHub apeși „Create” (trebuie să fii logat). Codul apare pe site la următoarea rulare a sarcinii de coduri, la 9:53. Dacă vrei codul imediat, copiază lista și trimite-o în chat lui Claude.'));
+  const row = el('div', 'btnrow'); row.append(send, cp); box.append(row);
+  const note = el('p', 'note', 'Cererea ajunge la Claude fără cont sau logare. Codul de agenție apare aici, în „Biletul meu”, de obicei în cel mult 2 ore (cererile sunt preluate la 9:53, 11:53, 13:53 … 21:53). Dacă vrei codul imediat, copiază lista și trimite-o în chat lui Claude.');
+  box.append(note);
+  send.onclick = async () => {
+    send.disabled = true; send.textContent = 'Se trimite…';
+    const req = Math.random().toString(36).slice(2, 10);
+    const text = buildText();
+    try {
+      const r = await fetch(NTFY, { method: 'POST', body: text + '\nreq:' + req, headers: { 'Title': 'Bilet: ' + B.length + ' meciuri, cota ' + c.toFixed(2) } });
+      if (!r.ok) throw new Error(r.status);
+      reqs.unshift({ req, t: Date.now(), n: B.length, c: c.toFixed(2), text }); reqs = reqs.slice(0, 20); store.set('cereri', reqs);
+      send.textContent = 'Trimis'; toast('Cererea a fost trimisă');
+      note.textContent = 'Gata. Codul apare în „Biletul meu” când e generat. Poți închide fereastra.';
+      pick = {}; store.set('bilet-meu', pick); setTimeout(() => { hideSheet(); render(); }, 1400);
+    } catch (e) { send.disabled = false; send.textContent = 'Trimite cererea'; note.textContent = 'Nu s-a putut trimite acum. Verifică internetul și încearcă din nou, sau copiază lista și trimite-o lui Claude.'; }
+  };
   showSheet();
+};
+async function checkCodes() {
+  const open = reqs.filter(x => !x.cod && Date.now() - x.t < 12 * 36e5); if (!open.length) return;
+  try {
+    const txt = await (await fetch(NTFY + '-cod/json?poll=1&since=12h', { cache: 'no-store' })).text();
+    let changed = false;
+    for (const line of txt.split('\n')) { if (!line.trim()) continue; let m; try { m = JSON.parse(JSON.parse(line).message); } catch (e) { continue; }
+      const x = reqs.find(y => y.req === m.req); if (x && !x.cod && m.cod) { x.cod = m.cod; x.cs = m.cota; changed = true; toast('Codul biletului tău: ' + m.cod); }
+      else if (x && !x.cod && m.eroare) { x.err = m.eroare; changed = true; } }
+    if (changed) { store.set('cereri', reqs); if (tab === 'b') render(); }
+  } catch (e) {}
+}
+function myRequests(list) {
+  const R = reqs.filter(x => Date.now() - x.t < 3 * 864e5); if (!R.length) return;
+  const sec = el('section', 'day'); const h = el('h2', null, 'Cererile tale'); sec.append(h);
+  const g = el('div', 'grid');
+  for (const x of R) {
+    const s = el('article', 'slip req');
+    const top = el('div', 'slip-top'); const d = new Date(x.t);
+    top.append(el('div', 'slip-tip', x.n + ' meciuri, cota ' + x.c), el('div', 'slip-date', 'trimis ' + fmtHM(d) + ', ' + fmtDM(d)));
+    s.append(top);
+    const c = el('div', 'code' + (x.cod ? '' : ' none'));
+    if (x.cod) { const box = el('div'); box.append(el('div', 'lbl', 'Cod agenție' + (x.cs ? ', cotă pe site ' + x.cs : '')), el('div', 'pin', x.cod)); const b = el('button', null, 'Copiază codul'); b.type = 'button'; b.onclick = () => copy(x.cod, b, 'Copiază codul'); c.append(box, b); }
+    else c.textContent = x.err ? 'Fără cod: ' + x.err : 'Se pregătește codul…';
+    s.append(c, el('pre', 'blist small', x.text)); g.append(s);
+  }
+  sec.append(g); list.append(sec);
 }
 
 /* ---------- match sheet ---------- */
@@ -590,7 +628,7 @@ fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(d => {
     rows = (Array.isArray(d) ? d : (d.rows || [])).filter(r => r.tip !== 'Test');
     chips(); header(); render(); $('next').after(soundBtn());
-    setInterval(() => { now = new Date(); header(); liveTick(); }, 60000);
+    checkCodes(); setInterval(() => { now = new Date(); header(); liveTick(); checkCodes(); }, 60000);
   })
   .catch(e => { $('next').textContent = ''; $('list').append(el('div', 'err', 'Biletele nu s-au putut încărca: ' + e.message + '. Reîncarcă pagina peste un minut.')); });
 

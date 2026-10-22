@@ -263,3 +263,4 @@ body.noscroll{overflow:hidden}
 .legs li.flash{animation:gf 1.2s ease-out 1}
 .slip.winner{box-shadow:0 0 0 3px var(--won),0 14px 30px -18px rgba(0,0,0,.7)}
 .confetti{position:fixed;inset:0;pointer-events:none;z-index:40}
+.slip.req .blist.small{font-size:12px;margin:8px 0 0}
