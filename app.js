@@ -318,116 +318,167 @@ function lineNear(mk, target = 1.9) {
   let best = null; for (const [ln, v] of Object.entries(L)) if (v.Peste && v.Sub && (!best || Math.abs(v.Peste - target) < Math.abs(best.p - target))) best = { ln, p: v.Peste, s: v.Sub };
   return best;
 }
-// ---------- estimare din statistici: ultimele 10 meciuri oficiale + mediile din sezon ----------
+// ---------- estimare din statistici: ultimele meciuri oficiale ale echipelor ----------
 const SAH = 'https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/h2h/rosuperbetsport/ro-RO?';
 const poisOver = (lam, line) => { let p = 0, t = Math.exp(-lam); for (let k = 0; k <= Math.floor(line); k++) { p += t; t *= lam / (k + 1); } return Math.max(0, Math.min(1, 1 - p)); };
+const official = e => e.match_state === 2 && !/amical|friendl/.test(nrm(e.competition && e.competition.name));
 async function statModel(id) {
   try {
     const o = await (await fetch(SA + id, { cache: 'no-store' })).json();
     const t1 = o.team1 && o.team1.id, t2 = o.team2 && o.team2.id; if (!t1 || !t2) return null;
     const hh = await (await fetch(SAH + 'team1-id=' + t1 + '&team2-id=' + t2, { cache: 'no-store' })).json();
     const ft = e => { const x = (e.scores || []).find(y => y.type === 0); return x && x.team1 != null && x.team2 != null ? [x.team1, x.team2] : null; };
-    const games = (evs, tid) => (evs || []).filter(e => e.match_state === 2 && !/amical|friendl/.test(nrm(e.competition && e.competition.name)))
-      .map(e => { const x = ft(e); if (!x) return null; const home = e.team1 && e.team1.id === tid; return { f: home ? x[0] : x[1], a: home ? x[1] : x[0] }; }).filter(Boolean).slice(0, 10);
-    const G1 = games(hh.team1_events, t1), G2 = games(hh.team2_events, t2);
-    const M = {};
-    // statisticile din ultimele 8 meciuri oficiale ale fiecărei echipe (cornere, cartonașe, offside-uri, șuturi pe poartă)
-    const recentIds = evs => (evs || []).filter(e => e.match_state === 2 && !/amical|friendl/.test(nrm(e.competition && e.competition.name)) && e.offer_id && e.offer_id.value).slice(0, 8).map(e => e.offer_id.value.split(':').pop());
+    // goals for/against of the team in its last 10 official matches (newest first)
+    const games = (evs, tid) => (evs || []).filter(official).map(e => { const x = ft(e); if (!x) return null; const home = e.team1 && e.team1.id === tid; return { f: home ? x[0] : x[1], a: home ? x[1] : x[0], vs: home ? e.team2 && e.team2.name : e.team1 && e.team1.name }; }).filter(Boolean).slice(0, 10);
+    // match totals (both teams) of corners, cards, offsides, shots on target in the last 8 official matches
     const REC = ['corner_kicks', 'yellow_cards', 'red_cards', 'offsides', 'shots_on_goal'];
-    const recStats = async ids => (await Promise.all(ids.map(async fid => {
-      try { const c = live.cache['st' + fid]; if (c) return c; const jj = await (await fetch(SA + fid)).json(); const r = {}; for (const k of REC) { const v = statOf(jj, k); if (v) r[k] = v[0] + v[1]; } if (r.yellow_cards != null) r.cards = r.yellow_cards + (r.red_cards || 0); live.cache['st' + fid] = r; return r; } catch (e) { return null; }
+    const recStats = async evs => (await Promise.all((evs || []).filter(e => official(e) && e.offer_id && e.offer_id.value).slice(0, 8).map(async e => {
+      const fid = e.offer_id.value.split(':').pop();
+      try { const c = live.cache['st' + fid]; if (c) return c; const jj = await (await fetch(SA + fid)).json(); const r = {}; for (const k of REC) { const v = statOf(jj, k); if (v) r[k] = v[0] + v[1]; } if (r.yellow_cards != null) r.cards = r.yellow_cards + (r.red_cards || 0); live.cache['st' + fid] = r; return r; } catch (err) { return null; }
     }))).filter(Boolean);
-    const [R1, R2] = await Promise.all([recStats(recentIds(hh.team1_events)), recStats(recentIds(hh.team2_events))]);
-    M.rec = { R1, R2 };
-    if (G1.length >= 5 && G2.length >= 5) {
-      const cnt = (G, fn) => G.filter(fn).length, fr = (G, fn) => cnt(G, fn) / G.length;
-      // GG / peste 2.5: frecvență ușor trasă spre 50% ((k+1)/(n+2)), ca 10/10 să nu devină 100%
-      const sh = (G, fn) => (cnt(G, fn) + 1) / (G.length + 2);
-      const both = (fn1, fn2) => ({ p: (sh(G1, fn1) + sh(G2, fn2 || fn1)) / 2, d: cnt(G1, fn1) + '/' + G1.length + ' · ' + cnt(G2, fn2 || fn1) + '/' + G2.length });
-      const W = g => g.f > g.a, D = g => g.f === g.a, Lo = g => g.f < g.a;
-      let pH = (fr(G1, W) + fr(G2, Lo)) / 2, pD = (fr(G1, D) + fr(G2, D)) / 2, pA = (fr(G2, W) + fr(G1, Lo)) / 2; const t = pH + pD + pA || 1;
-      M.h = { p: pH / t, d: 'V ' + cnt(G1, W) + '/' + G1.length + ', ' + 'oaspeții I ' + cnt(G2, Lo) + '/' + G2.length };
-      M.x = { p: pD / t, d: 'E ' + cnt(G1, D) + '/' + G1.length + ' · ' + cnt(G2, D) + '/' + G2.length };
-      M.a = { p: pA / t, d: 'V ' + cnt(G2, W) + '/' + G2.length + ', ' + 'gazdele I ' + cnt(G1, Lo) + '/' + G1.length };
-      M.gg = both(g => g.f > 0 && g.a > 0);
-      M.o25 = both(g => g.f + g.a > 2);
-      M.n = [G1.length, G2.length];
-    }
-    // medii din sezon pentru linii (Poisson pe suma mediilor celor două echipe)
+    const [R1, R2] = await Promise.all([recStats(hh.team1_events), recStats(hh.team2_events)]);
     const avg = {};
-    for (const x of (o.prematch_stats || [])) { const k = x.text && x.text.args && String(x.text.args[0]).split('.').pop(); const a = parseFloat(x.team1), b = parseFloat(x.team2); if (k && !isNaN(a) && !isNaN(b)) avg[k] = [a, b]; }
-    for (const x of (o.prematch_season_stats || [])) { const k = x.text && x.text.args && String(x.text.args[0]).split('.').pop(); const a = parseFloat(x.team1), b = parseFloat(x.team2); if (!k || isNaN(a) || isNaN(b)) continue; const key = 's_' + k; if (!avg[key] || a + b < avg[key][0] + avg[key][1]) avg[key] = [a, b]; }
-    M.avg = avg;
-    return M;
+    for (const x of (o.prematch_stats || [])) { const k = x.text && x.text.args && String(x.text.args[0]).split('.').pop(); const va = parseFloat(x.team1), vb = parseFloat(x.team2); if (k && !isNaN(va) && !isNaN(vb)) avg[k] = [va, vb]; }
+    for (const x of (o.prematch_season_stats || [])) { const k = x.text && x.text.args && String(x.text.args[0]).split('.').pop(); const va = parseFloat(x.team1), vb = parseFloat(x.team2); if (!k || isNaN(va) || isNaN(vb)) continue; const key = 's_' + k; if (!avg[key] || va + vb < avg[key][0] + avg[key][1]) avg[key] = [va, vb]; }
+    return { G1: games(hh.team1_events, t1), G2: games(hh.team2_events, t2), R1, R2, avg };
   } catch (e) { return null; }
 }
+const shrink = (k, n) => (k + 1) / (n + 2); // 8 din 8 nu devine 100%
+const pc = p => Math.round(p * 100) + '%';
+function dotsRow(seq) { // seq: newest first; drawn old → new, left to right
+  const d = el('span', 'dots'); [...seq].reverse().forEach(v => d.append(el('i', v === true ? 'y' : v === false ? 'n' : v)));
+  return d;
+}
+function verdict(pOdds, pStat, price, inPlay) {
+  if (inPlay) return ['', ''];
+  const d = pStat - pOdds;
+  if (d >= 0.08 && price >= 1.3) return ['val', 'Forma echipelor susține mai mult decât arată cota: posibilă valoare.'];
+  if (d <= -0.08) return ['low', 'Forma echipelor nu susține cota: mai puțin probabil decât pare.'];
+  return ['ok', 'Cota și forma echipelor spun cam același lucru.'];
+}
+function barsBlock(pOdds, pStat) {
+  const w = el('div', 'mk-bars');
+  for (const [lab, p, cls] of [['Cota Superbet', pOdds, 'od'], ['Forma echipelor', pStat, 'fo']]) {
+    if (p == null) continue;
+    const r = el('div', 'mk-bar ' + cls); const tr = el('div', 'track'); const f = el('i'); f.style.width = pc(p); tr.append(f);
+    r.append(el('span', 'lab', lab), tr, el('b', null, pc(p))); w.append(r);
+  }
+  return w;
+}
+function teamLine(name, seq, text) {
+  const r = el('div', 'mk-team'); r.append(el('span', 'tn', name), dotsRow(seq), el('span', 'tc', text)); return r;
+}
 async function sheetOdds(box, l) {
-  const sec = el('div', 'sh-sec'); sec.append(el('h4', null, 'Cote și șanse (Superbet)')); const body = el('div', 'note', 'Se încarcă cotele…'); sec.append(body); box.append(sec);
+  const sec = el('div', 'sh-sec mkt'); sec.append(el('h4', null, 'Cote și formă')); const body = el('div', 'note', 'Se încarcă cotele și statisticile…'); sec.append(body); box.append(sec);
   try {
     const [j, SM, LM] = await Promise.all([
       fetch(OB + '/v3/ro-RO/events?events=' + l.id + '&includeOnly=fixture,markets', { cache: 'no-store' }).then(r => r.json()),
       statModel(l.id), getMatch(l.id).catch(() => null)]);
-    const inPlay = LM && LM.state >= 1;
+    const inPlay = !!(LM && LM.state >= 1);
     const e = j.events && j.events[0]; const MK = (e && e.markets) || [];
     const find = re => MK.find(m => re.test(nrm(m.name)));
     const price = (m, n) => { const x = m && (m.odds || []).find(o => ((o.metadata && o.metadata.name) || o.name) === n); return x ? x.price : null; };
     const [h, a] = (l.meci || '').split(' – ');
-    const rows = [];
-    const add = (lab, p, pr, st) => { if (p != null) rows.push([lab, p, pr, st || null]); };
-    const A = (SM && SM.avg) || {};
-    const lineRec = (key, line, lab) => {
-      const R = SM && SM.rec; if (!R) return null;
-      const v1 = R.R1.map(x => x[key]).filter(x => x != null), v2 = R.R2.map(x => x[key]).filter(x => x != null);
-      if (v1.length < 4 || v2.length < 4) return null;
-      const over = v => v.filter(x => x > +line).length, sh = v => (over(v) + 1) / (v.length + 2);
-      const mean = v => v.reduce((a, b) => a + b, 0) / v.length, mm = Math.round((mean(v1) + mean(v2)) / 2 * 10) / 10;
-      return { p: (sh(v1) + sh(v2)) / 2, d: 'peste ' + line + ': ' + over(v1) + '/' + v1.length + ' · ' + over(v2) + '/' + v2.length + ' · medie ' + mm + ' ' + lab + ' / meci' };
-    };
-    const lineSt = (key, line, lab) => { const v = A[key]; if (!v) return null; const lam = v[0] + v[1]; return { p: poisOver(lam, +line), d: 'medie ' + (Math.round(lam * 10) / 10) + ' ' + lab + ' / meci (' + v[0] + ' + ' + v[1] + ')' }; };
+    const G1 = (SM && SM.G1) || [], G2 = (SM && SM.G2) || [], okG = G1.length >= 5 && G2.length >= 5;
+    const R1 = (SM && SM.R1) || [], R2 = (SM && SM.R2) || [], A = (SM && SM.avg) || {};
+    body.replaceChildren(); body.className = '';
+    const intro = el('p', 'mk-intro');
+    intro.append(el('b', null, 'Cum citești: '), document.createTextNode('bara gri e șansa după cota Superbet, bara verde e cât de des s-a întâmplat în ultimele meciuri ale echipelor. Fiecare bulină e un meci, de la cel mai vechi (stânga) la cel mai recent (dreapta): plină = s-a întâmplat.'));
+    body.append(intro);
+    if (inPlay) body.append(el('p', 'mk-live', 'Meciul se joacă acum: cotele sunt live și se schimbă cu scorul, iar forma e de dinainte de meci. Nu compara cele două până la final.'));
+    let any = false;
+    const group = t => { const g = el('div', 'mk-group'); g.append(el('h5', null, t)); body.append(g); return g; };
+
+    // ---- rezultat final
     const fin = find(/^final$/);
-    if (fin) { const P = [price(fin, '1'), price(fin, 'X'), price(fin, '2')]; const F = fair(P); add('Câștigă ' + (h || 'gazdele'), F[0], P[0], SM && SM.h); add('Egal', F[1], P[1], SM && SM.x); add('Câștigă ' + (a || 'oaspeții'), F[2], P[2], SM && SM.a); }
-    const gg = find(/^ambele echipe marcheaza( \(gg\))?$/);
-    if (gg) { const P = [price(gg, 'Da'), price(gg, 'Nu')]; add('Ambele marchează (GG)', fair(P)[0], P[0], SM && SM.gg); }
-    const tg = find(/^total goluri$/);
-    if (tg) { const P = [price(tg, 'Peste 2.5'), price(tg, 'Sub 2.5')]; if (P[0]) add('Peste 2.5 goluri', fair(P)[0], P[0], SM && SM.o25); }
-    const ht = find(/^(pauza|prima repriza|repriza 1)( - (final|1x2|rezultat|rezultat final))?$/);
-    if (ht && price(ht, '1')) { const P = [price(ht, '1'), price(ht, 'X'), price(ht, '2')]; const F = fair(P); add((h || 'Gazdele') + ' conduce la pauză', F[0], P[0]); add('Egal la pauză', F[1], P[1]); add((a || 'Oaspeții') + ' conduce la pauză', F[2], P[2]); }
-    const lines = [];
-    for (const [re, lab, keys, unit, rk] of [[/^total cornere$/, 'Cornere', ['average_corners', 's_corners'], 'cornere', 'corner_kicks'], [/^total cartonase$/, 'Cartonașe', ['average_cards', 'average_yellow_cards', 's_yellow_cards'], 'cartonașe', 'cards'], [/^total (offside|ofsaid)/, 'Offside-uri', ['s_offsides'], 'offside-uri', 'offsides'], [/^total suturi pe poarta$/, 'Șuturi pe poartă', ['average_shots_on_target', 's_shots_on_target'], 'șuturi pe poartă', 'shots_on_goal']]) {
-      const m = find(re); const b = m && lineNear(m); if (!b) continue;
-      const F = fair([b.p, b.s]); const k = keys.find(x => A[x]);
-      add(lab + ' peste ' + b.ln, F[0], b.p, lineRec(rk, b.ln, unit) || (k ? lineSt(k, b.ln, unit) : null));
-    }
-    body.replaceChildren();
-    if (rows.length) {
-      const ul = el('ul', 'sh-odds');
-      const hd = el('li', 'hd'); hd.append(el('span', 'k', ''), el('span', 'p', 'cote'), el('span', 'st', 'statistici'), el('span', 'v', 'cotă')); ul.append(hd);
-      let nVal = 0;
-      for (const [lab, p, pr, st] of rows) {
-        const li = el('li'); const bar = el('i'); bar.style.width = Math.round(p * 100) + '%';
-        const k = el('span', 'k', lab); if (st && st.d) k.append(el('small', null, st.d));
-        const sv = el('span', 'st', st ? Math.round(st.p * 100) + '%' : '–');
-        if (st) { const diff = st.p - p; if (!inPlay && diff >= 0.08 && pr >= 1.3) { sv.classList.add('val'); sv.title = 'Statisticile văd selecția mai probabilă decât cota'; li.classList.add('val'); nVal++; } else if (diff <= -0.08) sv.classList.add('low'); const tick = el('b', 'tick'); tick.style.left = Math.round(st.p * 100) + '%'; li.append(tick); }
-        li.append(k, el('span', 'p', Math.round(p * 100) + '%'), sv, el('span', 'v', pr ? fmtOdd(pr) : ''), bar); ul.append(li);
+    if (fin && price(fin, '1')) {
+      any = true; const g = group('Rezultat final');
+      const P = [price(fin, '1'), price(fin, 'X'), price(fin, '2')], F = fair(P);
+      let S = [null, null, null];
+      if (okG) {
+        const fr = (G, fn) => G.filter(fn).length / G.length, W = x => x.f > x.a, D = x => x.f === x.a, Lo = x => x.f < x.a;
+        const raw = [(fr(G1, W) + fr(G2, Lo)) / 2, (fr(G1, D) + fr(G2, D)) / 2, (fr(G2, W) + fr(G1, Lo)) / 2], t = raw[0] + raw[1] + raw[2] || 1;
+        S = raw.map(x => x / t);
       }
-      body.append(ul);
-      const legend = el('p', 'note small');
-      legend.textContent = (inPlay ? 'Meciul se joacă: cotele sunt live, iar statisticile sunt de dinainte de meci, deci nu le compara acum. ' : '')
-        + 'Statistici = 1X2, GG și peste 2.5 din ultimele ' + (SM && SM.n ? Math.min(SM.n[0], SM.n[1]) + '–' + Math.max(SM.n[0], SM.n[1]) : '10') + ' meciuri oficiale ale fiecărei echipe (gazde · oaspeți); cornere, cartonașe, offside-uri și șuturi pe poartă din ultimele 8 meciuri ale fiecăreia (totalul din meci), iar dacă lipsesc, din mediile din sezon.'
-        + (nVal ? ' Verde = statisticile dau cu cel puțin 8 puncte mai mult decât cota (posibilă valoare).' : '');
-      body.append(legend);
+      const card = el('div', 'mk');
+      const labs = ['Câștigă ' + (h || 'gazdele'), 'Egal', 'Câștigă ' + (a || 'oaspeții')];
+      labs.forEach((lab, k) => {
+        const [cls, why] = S[k] != null ? verdict(F[k], S[k], P[k], inPlay) : ['', ''];
+        const row = el('div', 'mk-out' + (cls ? ' ' + cls : ''));
+        const hd = el('div', 'mk-h'); hd.append(el('span', 'mk-t', lab), el('span', 'mk-o', fmtOdd(P[k])));
+        row.append(hd, barsBlock(F[k], S[k]));
+        if (cls === 'val') row.append(el('div', 'mk-v val', why));
+        card.append(row);
+      });
+      if (okG) {
+        const res = G => G.map(x => x.f > x.a ? 'w' : x.f < x.a ? 'l' : 'd');
+        const cnt = (G, fn) => G.filter(fn).length;
+        const tl = (name, G) => teamLine(name, res(G), cnt(G, x => x.f > x.a) + 'V ' + cnt(G, x => x.f === x.a) + 'E ' + cnt(G, x => x.f < x.a) + 'Î');
+        const tw = el('div', 'mk-teams'); tw.append(el('div', 'mk-cap', 'Ultimele ' + Math.max(G1.length, G2.length) + ' meciuri (verde = victorie, gri = egal, roșu = înfrângere)'), tl(h, G1), tl(a, G2)); card.append(tw);
+      }
+      g.append(card);
     }
+
+    // ---- goluri
+    const binCard = (g, title, pOdds, prc, seq1, seq2, capText, extra) => {
+      const card = el('div', 'mk');
+      const n1 = seq1 ? seq1.length : 0, n2 = seq2 ? seq2.length : 0;
+      const k1 = seq1 ? seq1.filter(Boolean).length : 0, k2 = seq2 ? seq2.filter(Boolean).length : 0;
+      const pStat = extra && extra.p != null ? extra.p : (n1 >= 4 && n2 >= 4 ? (shrink(k1, n1) + shrink(k2, n2)) / 2 : null);
+      const [cls, why] = pStat != null ? verdict(pOdds, pStat, prc, inPlay) : ['', ''];
+      if (cls) card.classList.add(cls);
+      const hd = el('div', 'mk-h'); hd.append(el('span', 'mk-t', title), el('span', 'mk-o', fmtOdd(prc)));
+      card.append(hd, barsBlock(pOdds, pStat));
+      if (n1 >= 4 && n2 >= 4) {
+        const tw = el('div', 'mk-teams'); tw.append(el('div', 'mk-cap', capText));
+        tw.append(teamLine(h, seq1, k1 + ' din ' + n1), teamLine(a, seq2, k2 + ' din ' + n2));
+        if (extra && extra.mean) tw.append(el('div', 'mk-mean', extra.mean));
+        card.append(tw);
+      } else if (extra && extra.mean) card.append(el('div', 'mk-mean', extra.mean));
+      if (why) card.append(el('div', 'mk-v ' + cls, why));
+      g.append(card);
+    };
+    const gg = find(/^ambele echipe marcheaza( \(gg\))?$/), tg = find(/^total goluri$/);
+    const pGG = gg && [price(gg, 'Da'), price(gg, 'Nu')], pO = tg && [price(tg, 'Peste 2.5'), price(tg, 'Sub 2.5')];
+    if ((pGG && pGG[0]) || (pO && pO[0])) {
+      any = true; const g = group('Goluri');
+      if (pGG && pGG[0]) binCard(g, 'Ambele echipe marchează (GG)', fair(pGG)[0], pGG[0], G1.map(x => x.f > 0 && x.a > 0), G2.map(x => x.f > 0 && x.a > 0), 'În câte meciuri au marcat ambele echipe');
+      if (pO && pO[0]) {
+        const mg = G => G.reduce((s2, x) => s2 + x.f + x.a, 0) / G.length;
+        binCard(g, 'Peste 2.5 goluri', fair(pO)[0], pO[0], G1.map(x => x.f + x.a > 2), G2.map(x => x.f + x.a > 2), 'În câte meciuri s-au dat cel puțin 3 goluri',
+          okG ? { mean: 'Medie: ' + (Math.round(mg(G1) * 10) / 10) + ' goluri / meci la ' + h + ', ' + (Math.round(mg(G2) * 10) / 10) + ' la ' + a } : null);
+      }
+    }
+
+    // ---- statistici de joc
+    const LINES = [[/^total cornere$/, 'Cornere', ['average_corners', 's_corners'], 'cornere', 'corner_kicks'], [/^total cartonase$/, 'Cartonașe', ['average_cards', 'average_yellow_cards', 's_yellow_cards'], 'cartonașe', 'cards'], [/^total (offside|ofsaid)/, 'Offside-uri', ['s_offsides'], 'offside-uri', 'offsides'], [/^total suturi pe poarta$/, 'Șuturi pe poartă', ['average_shots_on_target', 's_shots_on_target'], 'șuturi pe poartă', 'shots_on_goal']];
+    let gJoc = null;
+    for (const [re, lab, keys, unit, rk] of LINES) {
+      const m = find(re); const b = m && lineNear(m); if (!b) continue;
+      if (!gJoc) { gJoc = group('Statistici de joc'); any = true; }
+      const F = fair([b.p, b.s]); const ln = +b.ln, need = Math.floor(ln) + 1;
+      const v1 = R1.map(x => x[rk]).filter(x => x != null), v2 = R2.map(x => x[rk]).filter(x => x != null);
+      const mean = v => v.reduce((x, y) => x + y, 0) / v.length;
+      if (v1.length >= 4 && v2.length >= 4) {
+        binCard(gJoc, lab + ' peste ' + b.ln, F[0], b.p, v1.map(x => x > ln), v2.map(x => x > ln), 'În câte meciuri s-au strâns cel puțin ' + need + ' ' + unit + ' (ambele echipe)',
+          { mean: 'Medie pe meci: ' + (Math.round(mean(v1) * 10) / 10) + ' ' + unit + ' la meciurile lui ' + h + ', ' + (Math.round(mean(v2) * 10) / 10) + ' la ale lui ' + a });
+      } else {
+        const k = keys.find(x => A[x]); const v = k && A[k];
+        binCard(gJoc, lab + ' peste ' + b.ln, F[0], b.p, null, null, '', v ? { p: poisOver(v[0] + v[1], ln), mean: 'Media din sezon: ' + v[0] + ' (' + h + ') + ' + v[1] + ' (' + a + ') = ' + (Math.round((v[0] + v[1]) * 10) / 10) + ' ' + unit + ' / meci' } : null);
+      }
+    }
+
     const sc = MK.filter(m => /marc(heaza|ator)/.test(nrm(m.name)) && /(oricand|in meci|marcator)/.test(nrm(m.name)) && !/(primul|ultimul|ambele|pauza|repriz)/.test(nrm(m.name)));
     const players = [];
     for (const m of sc) for (const o of m.odds || []) { const n = (o.metadata && o.metadata.name) || o.name; if (n && !/^(da|nu|niciun|fara)/i.test(n) && o.price) players.push([n, o.price]); }
     if (players.length) {
       players.sort((x, y) => x[1] - y[1]);
-      body.append(el('h4', null, 'Cine poate marca (marcator oricând)'));
+      const g = group('Cine poate marca (oricând în meci)');
       const ul = el('ul', 'sh-picks'); for (const [n, pr] of players.slice(0, 8)) { const li = el('li'); li.append(el('span', 'k', n), el('span', 'v', fmtOdd(pr) + ' · ' + Math.round(100 / pr) + '%')); ul.append(li); }
-      body.append(ul);
+      g.append(ul);
     }
-    if (!rows.length && !players.length) body.append(el('p', 'note', 'Superbet nu are cote pentru meciul ăsta acum.'));
-    else body.append(el('p', 'note small', 'Șansele sunt calculate din cote, fără marja casei. Marcatorii: cotă și șansa brută.'));
+    if (!any && !players.length) body.replaceChildren(el('p', 'note', 'Superbet nu are cote pentru meciul ăsta acum.'));
+    else body.append(el('p', 'note small', 'Șansa după cotă e calculată fără marja casei. Forma: 1X2 și goluri din ultimele 10 meciuri oficiale ale fiecărei echipe, restul din ultimele 8 (totalul din meci, ambele echipe). Sunt eșantioane mici: un semnal de verificat, nu o garanție.'));
   } catch (err) { body.className = 'note'; body.textContent = 'Cotele nu s-au putut încărca acum.'; }
 }
 function sheetInfo(box, l) {
