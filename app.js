@@ -602,13 +602,16 @@ async function openSheet(l) {
       }
       stats.append(tbl);
     }
-    const SS = [[/offside/, 'Offside-uri'], [/^(average_)?(total_)?shots(_total)?(_per_game)?$/, 'Șuturi total'], [/possession/, 'Posesie (%)'], [/big_chances/, 'Ocazii mari'], [/fouls/, 'Faulturi']];
+    const SS = [[/offside/, 'Offside-uri'], [/^(average_)?(total_)?shots(_total)?(_per_game)?$/, 'Șuturi total'], [/possession/, 'Posesie %'], [/^big_chances_created$/, 'Ocazii mari create'], [/fouls/, 'Faulturi']];
     const seen = new Set(), ss = [];
     for (const x of (j.prematch_season_stats || [])) {
       const k = x.text && x.text.args && String(x.text.args[0]).split('.').pop(); if (!k) continue;
-      const hit = SS.find(([re]) => re.test(k)); if (!hit || seen.has(hit[1])) continue; seen.add(hit[1]);
+      const hit = SS.find(([re]) => re.test(k)); if (!hit) continue;
       const va = parseFloat(x.team1), vb = parseFloat(x.team2); if (isNaN(va) || isNaN(vb)) continue;
-      ss.push({ l: hit[1], a: va, b: vb });
+      // Superbet trimite aceeași statistică de două ori: total pe sezon și medie pe meci; păstrăm media (valoarea mai mică)
+      const prev = ss.find(y => y.key === hit[1]);
+      if (!prev) { seen.add(hit[1]); ss.push({ l: hit[1] + (/Posesie/.test(hit[1]) ? '' : ' / meci'), a: va, b: vb, key: hit[1] }); }
+      else if (va + vb < prev.a + prev.b) { prev.a = va; prev.b = vb; }
     }
     if (ss.length) {
       stats.append(el('h4', null, 'Alte statistici din sezon'));
