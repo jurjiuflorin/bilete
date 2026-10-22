@@ -526,6 +526,24 @@ function hideSheet() { $('sheet').hidden = true; document.body.classList.remove(
 $('sheet').addEventListener('click', e => { if (e.target.closest('[data-close]')) hideSheet(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape' && !$('sheet').hidden) hideSheet(); });
 
+// închide fereastra și duce la biletul respectiv (tabul potrivit, fără filtre), cu o evidențiere scurtă
+function goToTicket(id) {
+  const r = rows.find(x => x.id === id); if (!r) return;
+  hideSheet();
+  const want = eff(r) === PEND ? 'p' : 'h';
+  if (tab !== want || tip || q) {
+    tab = want; tip = ''; q = ''; const qi = $('q'); if (qi) qi.value = '';
+    for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab));
+    try { history.replaceState(null, '', '#' + tab); } catch (err) {}
+    chips(); render();
+  }
+  requestAnimationFrame(() => {
+    const s = [...document.querySelectorAll('#list .slip')].find(x => x.dataset.row === id); if (!s) return;
+    s.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    s.classList.remove('flash'); void s.offsetWidth; s.classList.add('flash');
+    setTimeout(() => s.classList.remove('flash'), 2200);
+  });
+}
 function picksFor(l) {
   if (l._picks) return l._picks;
   const out = [];
@@ -543,7 +561,13 @@ async function openSheet(l) {
   if (P.length) {
     const sec = el('div', 'sh-sec'); sec.append(el('h4', null, P.length === 1 ? 'Pe bilet' : 'Pe ' + P.length + ' bilete'));
     const ul = el('ul', 'sh-picks');
-    for (const p of P) { const li = el('li'); li.append(el('span', 'k', p.row.tip), el('span', 'v', p.sel + (p.o ? ' @ ' + p.o : ''))); ul.append(li); }
+    for (const p of P) {
+      const li = el('li', 'go'); li.tabIndex = 0; li.setAttribute('role', 'button'); li.title = 'Mergi la bilet';
+      li.append(el('span', 'k', p.row.tip), el('span', 'v', p.sel + (p.o ? ' @ ' + p.o : '')), el('span', 'arr', '→'));
+      li.onclick = () => goToTicket(p.row.id);
+      li.onkeydown = ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); goToTicket(p.row.id); } };
+      ul.append(li);
+    }
     sec.append(ul);
     const why = P.map(p => p.motiv).filter(Boolean);
     if (why.length) { sec.append(el('h4', null, 'De ce l-am ales')); [...new Set(why)].forEach(w => sec.append(el('p', 'why', w))); }

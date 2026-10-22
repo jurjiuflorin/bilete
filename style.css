@@ -341,3 +341,13 @@ body.noscroll{overflow:hidden}
 .mk-sum{font:500 13px var(--ui);color:#3b3d38;padding-top:2px}
 .mk-sum b{font-weight:700;color:var(--ink)}
 @media (max-width:480px){.nums i{min-width:17px;font-size:10.5px}}
+
+/* „Pe bilet” din fereastra meciului: duce la bilet */
+.sh-picks li.go{cursor:pointer;border-radius:6px;transition:background .15s}
+.sh-picks li.go:hover,.sh-picks li.go:focus-visible{background:#ebe7da;outline:none}
+.sh-picks li.go .arr{margin-left:8px;color:var(--ink-dim);font-weight:700}
+.slip.flash{animation:slipflash 2.2s ease-out}
+@keyframes slipflash{0%,30%{box-shadow:0 0 0 4px var(--flood),0 10px 30px rgba(0,0,0,.35)}100%{box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.slip.flash{animation:none;outline:4px solid var(--flood)}}
+.sh-picks li.go{justify-content:flex-start;padding:6px 6px;margin:0 -6px}
+.sh-picks li.go .v{margin-left:auto}
