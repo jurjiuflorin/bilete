@@ -537,12 +537,12 @@ function goToTicket(id) {
     try { history.replaceState(null, '', '#' + tab); } catch (err) {}
     chips(); render();
   }
-  requestAnimationFrame(() => {
+  setTimeout(() => {
     const s = [...document.querySelectorAll('#list .slip')].find(x => x.dataset.row === id); if (!s) return;
     s.scrollIntoView({ behavior: 'smooth', block: 'center' });
     s.classList.remove('flash'); void s.offsetWidth; s.classList.add('flash');
     setTimeout(() => s.classList.remove('flash'), 2200);
-  });
+  }, 60);
 }
 function picksFor(l) {
   if (l._picks) return l._picks;
