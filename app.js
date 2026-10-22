@@ -190,10 +190,10 @@ function viewBuilder() {
     for (const m of arr) {
       const mk = m.id ? 'id' + m.id : nrm(m.meci) + '|' + dayKey(m.when);
       const li = el('li');
-      const head = el('div', 'ph'); head.append(el('span', 't', fmtHM(m.when)), el('span', 'm', m.meci));
-      const info = el('button', 'info', 'i'); info.type = 'button'; info.title = 'Detalii meci'; info.setAttribute('aria-label', 'Detalii ' + m.meci);
-      info.onclick = () => openSheet({ ...m, _picks: m.picks });
-      head.append(info); li.append(head);
+      const head = el('button', 'ph'); head.type = 'button'; head.title = 'Detalii meci'; head.setAttribute('aria-label', 'Detalii ' + m.meci);
+      head.append(el('span', 't', fmtHM(m.when)), el('span', 'm', m.meci), el('span', 'info', 'i'));
+      head.onclick = () => openSheet({ ...m, _picks: m.picks });
+      li.append(head);
       const opts = el('div', 'opts');
       const seen = new Set();
       for (const p of m.picks) {
