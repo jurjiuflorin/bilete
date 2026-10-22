@@ -230,6 +230,7 @@ function buildText() {
 }
 $('bb-clear').onclick = () => { pick = {}; store.set('bilet-meu', pick); render(); };
 const NTFY = 'https://ntfy.sh/bilete-jf-crr06iq7wj73';
+const INSTANT = 'https://claude.ai/artifact/Ay11pXaj1BHNPZB849T6wn';
 let reqs = store.get('cereri', []);   // [{req, t, n, c, text, cod?}]
 $('bb-go').onclick = () => {
   const B = buildList(); if (!B.length) return;
@@ -240,7 +241,7 @@ $('bb-go').onclick = () => {
   const send = el('button', 'btn', 'Trimite cererea'); send.type = 'button';
   const cp = el('button', 'btn ghost', 'Copiază lista'); cp.type = 'button'; cp.onclick = () => copy(buildText(), cp, 'Copiază lista');
   const row = el('div', 'btnrow'); row.append(send, cp); box.append(row);
-  const note = el('p', 'note', 'Cererea ajunge la Claude fără cont sau logare. Codul de agenție apare aici, în „Biletul meu”, de obicei în cel mult 2 ore (cererile sunt preluate la 9:53, 11:53, 13:53 … 21:53). Dacă vrei codul imediat, copiază lista și trimite-o în chat lui Claude.');
+  const note = el('p', 'note', 'Cererea ajunge la Claude fără cont sau logare. Codul de agenție apare aici, în „Biletul meu”: în câteva minute dacă apeși apoi „Generează acum”, altfel la următoarea rulare automată, din 2 în 2 ore. Dacă vrei codul imediat, copiază lista și trimite-o în chat lui Claude.');
   box.append(note);
   // access key (kept only on this device) — requests are signed with it
   let key = store.get('cheie', '');
@@ -266,8 +267,11 @@ $('bb-go').onclick = () => {
       if (!r.ok) throw new Error(r.status);
       reqs.unshift({ req, t: Date.now(), n: B.length, c: c.toFixed(2), text }); reqs = reqs.slice(0, 20); store.set('cereri', reqs);
       send.textContent = 'Trimis'; toast('Cererea a fost trimisă');
-      note.textContent = 'Gata. Codul apare în „Biletul meu” când e generat. Poți închide fereastra.';
-      pick = {}; store.set('bilet-meu', pick); setTimeout(() => { hideSheet(); render(); }, 1400);
+      note.textContent = 'Trimis. Ca să primești codul în câteva minute, apasă „Generează acum” (se deschide pagina ta de pe claude.ai). Altfel, codul vine la următoarea rulare automată (din 2 în 2 ore).';
+      const now1 = el('a', 'btn', 'Generează acum'); now1.href = INSTANT; now1.target = '_blank'; now1.rel = 'noopener';
+      row.replaceChildren(now1);
+      pick = {}; store.set('bilet-meu', pick); updBuild();
+      $('sheet').addEventListener('click', function once(e) { if (e.target.closest('[data-close]')) { render(); $('sheet').removeEventListener('click', once); } });
     } catch (e) { send.disabled = false; send.textContent = 'Trimite cererea'; note.textContent = 'Nu s-a putut trimite acum. Verifică internetul și încearcă din nou, sau copiază lista și trimite-o lui Claude.'; }
   };
   showSheet();
@@ -294,7 +298,8 @@ function myRequests(list) {
     s.append(top);
     const c = el('div', 'code' + (x.cod ? '' : ' none'));
     if (x.cod) { const box = el('div'); box.append(el('div', 'lbl', 'Cod agenție' + (x.cs ? ', cotă pe site ' + x.cs : '')), el('div', 'pin', x.cod)); const b = el('button', null, 'Copiază codul'); b.type = 'button'; b.onclick = () => copy(x.cod, b, 'Copiază codul'); c.append(box, b); }
-    else c.textContent = x.err ? 'Fără cod: ' + x.err : 'Se pregătește codul…';
+    else if (x.err) c.textContent = 'Fără cod: ' + x.err;
+    else { c.classList.remove('none'); const w = el('div'); w.append(el('div', 'lbl', 'Se pregătește codul'), el('div', 'wait', 'apare aici automat')); const a = el('a', 'btngo', 'Generează acum'); a.href = INSTANT; a.target = '_blank'; a.rel = 'noopener'; c.append(w, a); }
     s.append(c, el('pre', 'blist small', x.text)); g.append(s);
   }
   sec.append(g); list.append(sec);
