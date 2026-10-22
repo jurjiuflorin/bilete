@@ -242,12 +242,27 @@ $('bb-go').onclick = () => {
   const row = el('div', 'btnrow'); row.append(send, cp); box.append(row);
   const note = el('p', 'note', 'Cererea ajunge la Claude fără cont sau logare. Codul de agenție apare aici, în „Biletul meu”, de obicei în cel mult 2 ore (cererile sunt preluate la 9:53, 11:53, 13:53 … 21:53). Dacă vrei codul imediat, copiază lista și trimite-o în chat lui Claude.');
   box.append(note);
+  // access key (kept only on this device) — requests are signed with it
+  let key = store.get('cheie', '');
+  const kwrap = el('div', 'keybox');
+  const kin = el('input'); kin.type = 'password'; kin.placeholder = 'Cheia ta de acces (ex. ABCD-EFGH-JKLM)'; kin.autocomplete = 'off'; kin.value = key;
+  kwrap.append(el('label', null, 'Cheia de acces'), kin, el('small', null, 'O scrii o singură dată pe fiecare dispozitiv. Fără ea, cererile sunt ignorate.'));
+  if (!key) box.insertBefore(kwrap, row);
   send.onclick = async () => {
+    key = (kin.value || key).trim().toUpperCase();
+    if (!/^[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/.test(key)) { note.textContent = 'Scrie cheia de acces, în forma XXXX-XXXX-XXXX.'; if (!kwrap.isConnected) box.insertBefore(kwrap, row); kin.focus(); return; }
+    const recent = reqs.filter(x => Date.now() - x.t < 864e5);
+    if (recent.length && Date.now() - recent[0].t < 2 * 6e4) { note.textContent = 'Ai trimis o cerere acum câteva clipe. Așteaptă 2 minute.'; return; }
+    if (recent.length >= 10) { note.textContent = 'Ai atins limita de 10 cereri pe zi de pe acest dispozitiv.'; return; }
     send.disabled = true; send.textContent = 'Se trimite…';
     const req = Math.random().toString(36).slice(2, 10);
     const text = buildText();
     try {
-      const r = await fetch(NTFY, { method: 'POST', body: text + '\nreq:' + req, headers: { 'Title': 'Bilet: ' + B.length + ' meciuri, cota ' + c.toFixed(2) } });
+      const payload = text + '\nreq:' + req;
+      const k = await crypto.subtle.importKey('raw', new TextEncoder().encode(key), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+      const sig = [...new Uint8Array(await crypto.subtle.sign('HMAC', k, new TextEncoder().encode(payload)))].map(b => b.toString(16).padStart(2, '0')).join('');
+      store.set('cheie', key);
+      const r = await fetch(NTFY, { method: 'POST', body: payload + '\nsig:' + sig, headers: { 'Title': 'Bilet: ' + B.length + ' meciuri, cota ' + c.toFixed(2) } });
       if (!r.ok) throw new Error(r.status);
       reqs.unshift({ req, t: Date.now(), n: B.length, c: c.toFixed(2), text }); reqs = reqs.slice(0, 20); store.set('cereri', reqs);
       send.textContent = 'Trimis'; toast('Cererea a fost trimisă');
