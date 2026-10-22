@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biletele mele</title>
+<meta name="theme-color" content="#111318">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23e5322d'/><text x='16' y='22' font-size='16' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>B</text></svg>">
+<style>
+:root{--bg:#f6f6f4;--panel:#fff;--fg:#17181c;--muted:#6b6e76;--line:#e3e3df;--accent:#e5322d;--ok:#1f8a4c;--bad:#c4372f;--wait:#a86d00;--chip:#efefec}
+@media (prefers-color-scheme:dark){:root{--bg:#111318;--panel:#1a1c22;--fg:#eceef2;--muted:#9097a3;--line:#2b2e36;--chip:#242730;--ok:#3fb873;--bad:#ec5c52;--wait:#e0a83a}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 16px 48px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px;margin-bottom:18px}
+h1{font-size:26px;margin:0;letter-spacing:-.02em}
+.upd{color:var(--muted);font-size:13px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:18px}
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+.stat b{display:block;font-size:24px;font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:13px}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.filters select,.filters input{background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:inherit;min-width:0}
+.filters input{flex:1 1 180px}
+h2{font-size:17px;margin:24px 0 10px}
+h2 small{color:var(--muted);font-weight:400}
+.cards{display:grid;gap:10px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-bottom:8px}
+.tip{font-weight:650}
+.date{color:var(--muted);font-size:13px}
+.badge{font-size:12px;font-weight:600;padding:2px 8px;border-radius:99px;background:var(--chip)}
+.badge.câștigat{color:var(--ok)}.badge.pierdut{color:var(--bad)}.badge.wait{color:var(--wait)}
+.nums{margin-left:auto;display:flex;gap:14px;font-variant-numeric:tabular-nums;font-size:14px}
+.nums b{font-size:16px}
+.code{font-family:ui-monospace,Menlo,Consolas,monospace;font-weight:700;background:var(--chip);border:1px dashed var(--line);border-radius:8px;padding:3px 9px;cursor:pointer;font-size:14px}
+.code:active{transform:scale(.97)}
+ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+li{padding:6px 0;border-bottom:1px solid var(--line);display:flex;gap:10px;font-size:14px}
+li:last-child{border-bottom:0}
+li .o{margin-left:auto;font-variant-numeric:tabular-nums;color:var(--muted);white-space:nowrap}
+li .t{color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums;min-width:78px}
+.rez{margin-top:8px;font-size:13px;color:var(--muted)}
+.empty{color:var(--muted);padding:14px;text-align:center;border:1px dashed var(--line);border-radius:12px}
+.toast{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);background:var(--fg);color:var(--bg);padding:8px 14px;border-radius:8px;font-size:14px;opacity:0;transition:opacity .2s;pointer-events:none}
+.toast.on{opacity:1}
+footer{margin-top:28px;color:var(--muted);font-size:12px}
+li span:nth-child(2){flex:1;min-width:0}
+@media (max-width:560px){.nums{margin-left:0;width:100%}li{gap:8px}li .t{min-width:0;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Biletele mele</h1>
+    <div class="upd" id="upd">Se încarcă…</div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><b id="s-wait">—</b><span>În așteptare</span></div>
+    <div class="stat"><b id="s-won">—</b><span>Câștigate</span></div>
+    <div class="stat"><b id="s-lost">—</b><span>Pierdute</span></div>
+    <div class="stat"><b id="s-rate">—</b><span>Rată de câștig</span></div>
+  </div>
+
+  <div class="filters">
+    <select id="f-tip" aria-label="Tip bilet"><option value="">Toate tipurile</option></select>
+    <select id="f-status" aria-label="Status">
+      <option value="">Toate statusurile</option>
+      <option value="în așteptare">În așteptare</option>
+      <option value="câștigat">Câștigate</option>
+      <option value="pierdut">Pierdute</option>
+    </select>
+    <select id="f-sort" aria-label="Sortare">
+      <option value="data">După dată</option>
+      <option value="cota">După cotă</option>
+      <option value="sansa">După șansă</option>
+    </select>
+    <input id="f-q" type="search" placeholder="Caută echipa…" aria-label="Caută echipa">
+  </div>
+
+  <section id="sec-active">
+    <h2>În așteptare <small id="n-active"></small></h2>
+    <div class="cards" id="active"></div>
+  </section>
+  <section id="sec-hist">
+    <h2>Istoric <small id="n-hist"></small></h2>
+    <div class="cards" id="hist"></div>
+  </section>
+
+  <footer>Estimări statistice, nu garanții. Pariază doar sume pe care îți permiți să le pierzi. Cotele se pot schimba până la plasare. Apasă pe un cod ca să-l copiezi.</footer>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const $ = id => document.getElementById(id);
+let rows = [];
+
+function el(tag, cls, text){ const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e; }
+function fmtDate(d){ const [y,m,z]=d.split('-'); return z+'.'+m+'.'+y; }
+function legs(s){ return (s||'').split(' · ').filter(Boolean).map(p=>{
+  const m=p.match(/^((?:\d{2}\.\d{2} )?\d{2}:\d{2}) (.+?): (.+?)(?: \(([\d.]+|estimat[^)]*)\))?$/);
+  return m?{t:m[1],meci:m[2],sel:m[3],o:m[4]||''}:{t:'',meci:p,sel:'',o:''};
+});}
+
+function card(r){
+  const c=el('div','card');
+  const top=el('div','top');
+  top.append(el('span','tip',r.tip), el('span','date',fmtDate(r.data)));
+  const st=r.status==='în așteptare'?'wait':r.status;
+  top.append(el('span','badge '+st, r.status));
+  const nums=el('div','nums');
+  const co=el('span'); co.append('Cotă ', el('b',null,Number(r.cota).toFixed(2))); nums.append(co);
+  if(r.sansa!=null){ const sa=el('span'); sa.append('Șansă ', el('b',null,(r.sansa*100).toFixed(r.sansa<0.01?2:1)+'%')); nums.append(sa); }
+  if(r.cod){ const b=el('button','code',r.cod); b.type='button'; b.title='Copiază codul'; b.onclick=()=>copy(r.cod); nums.append(b); }
+  top.append(nums);
+  c.append(top);
+  const ul=el('ul');
+  for(const l of legs(r.selectii)){ const li=el('li'); li.append(el('span','t',l.t), el('span',null,l.meci+(l.sel?' — '+l.sel:'')), el('span','o',l.o)); ul.append(li); }
+  c.append(ul);
+  if(r.rezultat) c.append(el('div','rez','Rezultat: '+r.rezultat));
+  return c;
+}
+
+function copy(t){ (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(()=>toast('Cod copiat: '+t)).catch(()=>toast(t)); }
+function toast(t){ const e=$('toast'); e.textContent=t; e.classList.add('on'); clearTimeout(e._t); e._t=setTimeout(()=>e.classList.remove('on'),1600); }
+
+function render(){
+  const tip=$('f-tip').value, st=$('f-status').value, q=$('f-q').value.trim().toLowerCase(), sort=$('f-sort').value;
+  let list=rows.filter(r=>(!tip||r.tip===tip)&&(!st||r.status===st)&&(!q||(r.selectii||'').toLowerCase().includes(q)));
+  const key={data:r=>r.data+r.id, cota:r=>Number(r.cota), sansa:r=>Number(r.sansa||0)}[sort];
+  list.sort((a,b)=>{const x=key(a),y=key(b); return x<y?1:x>y?-1:0;});
+  const act=list.filter(r=>r.status==='în așteptare'), his=list.filter(r=>r.status!=='în așteptare');
+  if(sort==='data') act.reverse();
+  for(const [id,arr,sec] of [['active',act,'sec-active'],['hist',his,'sec-hist']]){
+    const box=$(id); box.replaceChildren();
+    if(!arr.length) box.append(el('div','empty','Niciun bilet.'));
+    arr.forEach(r=>box.append(card(r)));
+    $(sec).hidden = (st && ((id==='active')!==(st==='în așteptare')));
+  }
+  $('n-active').textContent='('+act.length+')'; $('n-hist').textContent='('+his.length+')';
+}
+
+function stats(){
+  const w=rows.filter(r=>r.status==='câștigat').length, l=rows.filter(r=>r.status==='pierdut').length;
+  $('s-wait').textContent=rows.length-w-l; $('s-won').textContent=w; $('s-lost').textContent=l;
+  $('s-rate').textContent=(w+l)?Math.round(100*w/(w+l))+'%':'—';
+}
+
+fetch('bilete.json?v='+Date.now(),{cache:'no-store'}).then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); }).then(d=>{
+  rows=(Array.isArray(d)?d:(d.rows||[])).filter(r=>r.tip!=='Test');
+  const tips=[...new Set(rows.map(r=>r.tip))].sort();
+  for(const t of tips){ const o=el('option',null,t); o.value=t; $('f-tip').append(o); }
+  stats(); render();
+  $('upd').textContent=rows.length+' bilete';
+}).catch(e=>{ $('upd').textContent='Nu s-au putut încărca biletele ('+e.message+').'; });
+
+['f-tip','f-status','f-sort'].forEach(id=>$(id).addEventListener('change',render));
+$('f-q').addEventListener('input',render);
+</script>
+</body>
+</html>
