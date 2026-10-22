@@ -458,10 +458,10 @@ async function openSheet(l) {
   } catch (e) { stats.replaceChildren(el('p', 'note', 'Statisticile nu s-au putut încărca acum. Încearcă din nou peste un minut.')); }
 }
 document.addEventListener('click', e => {
-  const li = e.target.closest('.legs li'); if (!li || !li._leg) return;
+  const li = e.target.closest('.legs li, .hero .hl'); if (!li || !li._leg) return;
   openSheet({ ...li._leg, _picks: li._picks });
 });
-document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('.legs li')) { e.preventDefault(); e.target.click(); } });
+document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('.legs li, .hero .hl')) { e.preventDefault(); e.target.click(); } });
 
 /* ---------- live scores ---------- */
 const live = { cache: {}, busy: false, again: false, prev: {} };
@@ -563,7 +563,7 @@ async function liveTick() {
         lv.replaceChildren(el('span', 'dot'), document.createTextNode(m.h + ' – ' + m.a + (m.min ? '  ·  ' + m.min + "'" : m.label ? '  ·  ' + m.label : '') + (corn ? '  ·  ' + corn : '')));
       } else { lv.className = 'lv on fin'; lv.textContent = 'Final ' + m.h + ' – ' + m.a + (corn ? ', ' + corn : ''); }
     }
-    progs(); ticker(tick);
+    progs(); ticker(tick); heroLive();
     const nx = $('next'); nx.querySelector('.livebadge')?.remove();
     if (liveCount) { const b = el('span', 'livebadge'); b.append(el('span', 'dot'), liveCount + (liveCount === 1 ? ' meci live acum. ' : ' meciuri live acum. ')); nx.prepend(b); }
   } finally { live.busy = false; if (live.again) { live.again = false; liveTick(); } }
@@ -573,21 +573,29 @@ async function liveTick() {
 /* ---------- biletul zilei (hero) ---------- */
 let heroTimer = null;
 function heroPick() {
-  const soon = rows.filter(r => eff(r) === PEND && firstWhen(r) > now && firstWhen(r) - now < 36 * 36e5);
+  // today's ticket stays the "ticket of the day" while it is live; otherwise the next one within 36 h
+  const lastWhen = r => { const L = parseLegs(r).filter(x => x.when); return L.length ? L[L.length - 1].when : firstWhen(r); };
+  // a one-day ticket whose first match has kicked off and whose last match ended less than 2.5 h ago
+  const liveNow = r => firstWhen(r) <= now && dayKey(lastWhen(r)) === dayKey(firstWhen(r)) && now - lastWhen(r) < 2.5 * 36e5;
+  const soon = rows.filter(r => eff(r) === PEND && (liveNow(r) || (firstWhen(r) > now && firstWhen(r) - now < 36 * 36e5)));
   if (!soon.length) return null;
   const pref = ['Pariul zilei', 'Cotă 2', 'Goluri ~5', 'Cotă 5'];
-  soon.sort((a, b) => { const pa = pref.indexOf(a.tip), pb = pref.indexOf(b.tip); return (pa < 0 ? 9 : pa) - (pb < 0 ? 9 : pb) || (b.sansa || 0) - (a.sansa || 0); });
+  const rank = r => { const p = pref.indexOf(r.tip); return p < 0 ? 9 : p; };
+  soon.sort((a, b) => (liveNow(b) - liveNow(a)) || rank(a) - rank(b) || (b.sansa || 0) - (a.sansa || 0));
   return soon[0];
 }
 function hero() {
   const r = heroPick(); if (!r) return null;
   const L = parseLegs(r), t0 = firstWhen(r);
-  const h = el('section', 'hero');
+  const h = el('section', 'hero'); const isLive = t0 <= now; if (isLive) h.classList.add('is-live');
   const left = el('div', 'hero-l');
-  left.append(el('div', 'hero-k', r.tip === 'Pariul zilei' ? 'Pariul zilei, ales de Claude' : 'Biletul zilei'), el('div', 'hero-tip', r.tip === 'Pariul zilei' && L[0] ? L[0].meci : r.tip));
+  const k = el('div', 'hero-k', r.tip === 'Pariul zilei' ? 'Pariul zilei, ales de Claude' : 'Biletul zilei');
+  if (isLive) { const lb = el('span', 'hero-livetag'); lb.append(el('span', 'dot'), 'LIVE'); k.append(lb); }
+  left.append(k, el('div', 'hero-tip', r.tip === 'Pariul zilei' && L[0] ? L[0].meci : r.tip));
   const cd = el('div', 'hero-cd'); cd.setAttribute('aria-label', 'Timp până la primul meci');
   const units = [['h', 'ore'], ['m', 'min'], ['s', 'sec']].map(([k, lab]) => { const u = el('div', 'u'); const b = el('b', null, '00'); u.append(b, el('span', null, lab)); cd.append(u); return b; });
-  left.append(cd, el('div', 'hero-sub', 'până la ' + L[0].meci + ', ' + (dayKey(t0) === dayKey(now) ? 'azi' : 'mâine') + ' la ' + fmtHM(t0)));
+  if (isLive) { const st = el('div', 'hero-state'); st.id = 'hero-state'; st.textContent = 'Se încarcă scorurile…'; left.append(st); }
+  else left.append(cd, el('div', 'hero-sub', 'până la ' + L[0].meci + ', ' + (dayKey(t0) === dayKey(now) ? 'azi' : 'mâine') + ' la ' + fmtHM(t0)));
   const right = el('div', 'hero-r');
   const nums = el('div', 'hero-nums');
   const a = el('div'); a.append(el('b', null, fmtOdd(r.cota)), el('span', null, 'cotă'));
@@ -595,13 +603,30 @@ function hero() {
   nums.append(a, b); right.append(nums);
   if (r.cod) { const c = el('button', 'hero-code'); c.type = 'button'; c.append(el('span', null, 'Cod'), el('b', null, r.cod)); c.onclick = () => copy(r.cod, null); right.append(c); }
   const chips = el('div', 'hero-legs');
-  L.forEach(l => { const c = el('span', 'hl'); c.append(el('i', null, fmtHM(l.when)), document.createTextNode(l.meci + ' '), el('b', null, l.sel)); chips.append(c); });
+  L.forEach(l => { const c = el('span', 'hl'); c._leg = l; if (l.id) c.dataset.id = l.id; c.tabIndex = 0; c.setAttribute('role', 'button'); c.title = 'Detalii meci'; c.append(el('i', null, fmtHM(l.when)), document.createTextNode(l.meci + ' '), el('b', null, l.sel), el('em', 'sc')); chips.append(c); });
   h.append(left, right, chips);
   if (r.motive && r.motive[0] && L.length === 1) h.append(el('p', 'why1', r.motive[0]));
   clearInterval(heroTimer);
+  if (isLive) return h;
   const upd = () => { let d = Math.max(0, Math.floor((t0 - Date.now()) / 1000)); const v = [Math.floor(d / 3600), Math.floor(d % 3600 / 60), d % 60]; units.forEach((u, k) => { u.textContent = pad(v[k]); }); if (!d) clearInterval(heroTimer); };
   upd(); heroTimer = setInterval(() => { if (!document.body.contains(h)) { clearInterval(heroTimer); return; } upd(); }, 1000);
   return h;
+}
+
+function heroLive() {
+  const st = $('hero-state'); if (!st) return;
+  const C = [...document.querySelectorAll('.hero .hl')]; let won = 0, lost = 0, on = 0, todo = 0, next = null;
+  for (const c of C) {
+    const l = c._leg, m = l.id ? live.cache[l.id] : null, sc = c.querySelector('.sc');
+    c.classList.remove('w', 'l', 'lv');
+    if (!m || m.state === 0 || m.h == null) { sc.textContent = ''; todo++; if (l.when && l.when > now && (!next || l.when < next.when)) next = l; continue; }
+    const res = judge(l.sel, l.meci, m);
+    if (m.state === 1) { on++; c.classList.add('lv'); sc.textContent = m.h + '-' + m.a + (m.min ? ' · ' + m.min + "'" : ''); if (res === 'won') won++; else if (res === 'lost') { lost++; c.classList.replace('lv', 'l'); } }
+    else { sc.textContent = 'Final ' + m.h + '-' + m.a; if (res === 'won') { won++; c.classList.add('w'); } else if (res === 'lost') { lost++; c.classList.add('l'); } else todo++; }
+  }
+  st.replaceChildren(el('span', 'cw', '✓ ' + won + (won === 1 ? ' câștigat' : ' câștigate')), el('span', 'cl', '✗ ' + lost + (lost === 1 ? ' pierdut' : ' pierdute')));
+  if (on) st.append(el('span', 'co', '● ' + on + ' live'));
+  if (next) st.append(el('span', 'ct', 'următorul: ' + next.meci + ' la ' + fmtHM(next.when)));
 }
 
 /* ---------- live ticker, goals, sound ---------- */

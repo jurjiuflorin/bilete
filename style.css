@@ -264,3 +264,20 @@ body.noscroll{overflow:hidden}
 .sh-odds .k{font-weight:600}.sh-odds .p{font:700 14px var(--slip)}.sh-odds .v{font:500 13px var(--slip);color:var(--ink-dim);text-align:right}
 .note.small{font-size:12px}
 #list>.note.small{color:var(--chalk-dim);margin-top:4px}
+
+/* biletul zilei live */
+.hero-k .hero-livetag{display:inline-flex;align-items:center;gap:6px;margin-left:10px;background:#1d1f1c;color:#ff6b5e;font:700 12px var(--ui);letter-spacing:.06em;padding:2px 9px;border-radius:999px;vertical-align:middle}
+.hero-livetag .dot{width:7px;height:7px;border-radius:50%;background:#ff6b5e;animation:heropulse 1.4s ease-in-out infinite}
+@keyframes heropulse{50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.hero-livetag .dot{animation:none}}
+.hero-state{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:4px;font:600 15px var(--ui)}
+.hero-state .cw{color:#14663a}.hero-state .cl{color:#9e2a21}.hero-state .co{color:#1d1f1c}.hero-state .ct{color:#1d1f1c;opacity:.75;font-weight:500}
+.hero-legs .hl .sc{font-style:normal;font:700 12px var(--slip);margin-left:8px}
+.hero-legs .hl .sc:empty{display:none}
+.hero-legs .hl.lv{background:#1d1f1c;color:#f6f3ea}
+.hero-legs .hl.w{background:rgba(33,137,79,.22)}
+.hero-legs .hl.l{background:rgba(198,61,51,.22);text-decoration:line-through;text-decoration-thickness:1px}
+.hero-legs .hl{cursor:pointer;transition:background .15s}
+.hero-legs .hl:hover{background:rgba(29,31,28,.2)}
+.hero-legs .hl.lv:hover{background:#000}
+.hero-legs .hl:focus-visible{outline:2px solid #1d1f1c;outline-offset:2px}
