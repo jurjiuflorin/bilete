@@ -358,7 +358,7 @@ function verdict(pOdds, pStat, price, inPlay) {
 }
 function barsBlock(pOdds, pStat) {
   const w = el('div', 'mk-bars');
-  for (const [lab, p, cls] of [['Cota Superbet', pOdds, 'od'], ['Forma echipelor', pStat, 'fo']]) {
+  for (const [lab, p, cls] of [['După cotă', pOdds, 'od'], ['După formă', pStat, 'fo']]) {
     if (p == null) continue;
     const r = el('div', 'mk-bar ' + cls); const tr = el('div', 'track'); const f = el('i'); f.style.width = pc(p); tr.append(f);
     r.append(el('span', 'lab', lab), tr, el('b', null, pc(p))); w.append(r);
@@ -383,7 +383,7 @@ async function sheetOdds(box, l) {
     const R1 = (SM && SM.R1) || [], R2 = (SM && SM.R2) || [], A = (SM && SM.avg) || {};
     body.replaceChildren(); body.className = '';
     const intro = el('p', 'mk-intro');
-    intro.append(el('b', null, 'Cum citești: '), document.createTextNode('bara gri e șansa după cota Superbet, bara verde e cât de des s-a întâmplat în ultimele meciuri ale echipelor. Fiecare bulină e un meci, de la cel mai vechi (stânga) la cel mai recent (dreapta): plină = s-a întâmplat.'));
+    intro.append(el('b', null, 'Cum citești: '), document.createTextNode('bara gri e șansa după cota Superbet, bara verde („după formă”) e cât de des s-a întâmplat în ultimele meciuri ale echipelor. Fiecare bulină e un meci, de la cel mai vechi (stânga) la cel mai recent (dreapta): plină = s-a întâmplat.'));
     body.append(intro);
     if (inPlay) body.append(el('p', 'mk-live', 'Meciul se joacă acum: cotele sunt live și se schimbă cu scorul, iar forma e de dinainte de meci. Nu compara cele două până la final.'));
     let any = false;

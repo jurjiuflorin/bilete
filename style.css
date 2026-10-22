@@ -304,12 +304,12 @@ body.noscroll{overflow:hidden}
 .mk.val{border-color:var(--won);box-shadow:inset 4px 0 0 var(--won)}
 .mk-out{display:grid;gap:6px;padding-bottom:10px;border-bottom:1px dashed #e3ddcc}
 .mk-out:last-of-type{border-bottom:0;padding-bottom:0}
-.mk-out.val{box-shadow:inset 4px 0 0 var(--won);padding-left:10px;margin-left:-14px;padding-right:0}
+.mk-out.val{box-shadow:inset 4px 0 0 var(--won);padding-left:14px;margin-left:-14px}
 .mk-h{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
 .mk-t{font:600 15px/1.25 var(--ui);color:var(--ink)}
 .mk-o{font:700 15px var(--slip);color:var(--ink);background:#f1ecdd;border-radius:6px;padding:2px 8px;white-space:nowrap}
 .mk-bars{display:grid;gap:5px}
-.mk-bar{display:grid;grid-template-columns:7.6em 1fr 2.8em;align-items:center;gap:8px;font:500 12.5px var(--ui);color:var(--ink-dim)}
+.mk-bar{display:grid;grid-template-columns:5.6em 1fr 2.8em;align-items:center;gap:8px;font:500 12.5px var(--ui);color:var(--ink-dim)}
 .mk-bar .track{height:10px;border-radius:99px;background:#efeadb;overflow:hidden}
 .mk-bar .track i{display:block;height:100%;border-radius:99px}
 .mk-bar.od .track i{background:#a7a291}
@@ -317,7 +317,7 @@ body.noscroll{overflow:hidden}
 .mk-bar b{font:700 13px var(--slip);color:var(--ink);text-align:right}
 .mk-teams{display:grid;gap:5px;padding-top:2px}
 .mk-cap{font:500 12px var(--ui);color:var(--ink-dim)}
-.mk-team{display:grid;grid-template-columns:minmax(0,7.6em) 1fr auto;align-items:center;gap:8px;font:500 13px var(--ui)}
+.mk-team{display:grid;grid-template-columns:minmax(0,5.6em) 1fr auto;align-items:center;gap:8px;font:500 13px var(--ui)}
 .mk-team .tn{font-weight:600;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .mk-team .tc{font:600 12.5px var(--slip);color:var(--ink);white-space:nowrap}
 .dots{display:flex;gap:4px;flex-wrap:wrap}
@@ -331,4 +331,4 @@ body.noscroll{overflow:hidden}
 .mk-v.val{background:rgba(33,137,79,.12);color:#14663a}
 .mk-v.low{background:rgba(198,61,51,.1);color:#9e2a21}
 .mk-v.ok{background:#f1ecdd;color:#5b5d56}
-@media (max-width:480px){.mk-bar{grid-template-columns:6.4em 1fr 2.6em}.mk-team{grid-template-columns:minmax(0,6em) 1fr auto}.dots i{width:10px;height:10px}}
+@media (max-width:480px){.mk-bar{grid-template-columns:5.2em 1fr 2.6em}.mk-team{grid-template-columns:minmax(0,5.2em) 1fr auto}.dots i{width:10px;height:10px}}
