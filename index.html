@@ -15,7 +15,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=12">
+<link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 <div class="wrap">
@@ -34,8 +34,8 @@
   <div class="bar">
     <div class="tabs" role="tablist" id="tabs">
       <button role="tab" data-tab="p" aria-selected="true">De jucat<span class="n" id="n-p"></span></button>
+      <button role="tab" data-tab="m" aria-selected="false">Meciuri azi</button>
       <button role="tab" data-tab="c" aria-selected="false">Calendar</button>
-      <button role="tab" data-tab="b" aria-selected="false">Biletul meu<span class="n" id="n-b"></span></button>
       <button role="tab" data-tab="h" aria-selected="false">Istoric<span class="n" id="n-h"></span></button>
     </div>
     <div class="chips" id="chips" aria-label="Tip bilet"></div>
@@ -44,7 +44,7 @@
 
   <main id="list"></main>
 
-  <footer>Cotele și șansele sunt estimări din statistici și se pot schimba până plasezi biletul. Scorurile live vin de la Superbet. Codul se folosește în agenția Superbet. Pariază doar sume pe care îți permiți să le pierzi.</footer>
+  <footer>Cotele și șansele sunt estimări din statistici și se pot schimba până plasezi biletul. Scorurile live, cotele și statisticile meciurilor vin de la Superbet. Codul se folosește în agenția Superbet. Pariază doar sume pe care îți permiți să le pierzi.</footer>
 </div>
 
 <div class="sheet" id="sheet" hidden>
@@ -55,15 +55,7 @@
   </div>
 </div>
 
-<div class="buildbar" id="buildbar" hidden>
-  <div class="bb-info"><b id="bb-n">0</b> selecții · cotă <b id="bb-c">1,00</b> · șansă <b id="bb-p">–</b></div>
-  <div class="bb-actions">
-    <button type="button" id="bb-clear" class="ghost">Golește</button>
-    <button type="button" id="bb-go">Cere codul</button>
-  </div>
-</div>
-
 <div class="toast" id="toast" role="status"></div>
-<script src="app.js?v=12"></script>
+<script src="app.js?v=13"></script>
 </body>
 </html>
