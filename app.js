@@ -68,7 +68,7 @@ function legItem(l, opts = {}) {
 
 function slip(r, i) {
   const L = parseLegs(r), settled = r.status !== 'în așteptare';
-  const s = el('article', 'slip' + (settled ? ' settled' : ''));
+  const s = el('article', 'slip' + (settled ? ' settled' : '')); s.dataset.row = r.id; s._row = r;
   const top = el('div', 'slip-top');
   const first = L.find(l => l.when), last = [...L].reverse().find(l => l.when);
   let span = '';
@@ -77,6 +77,7 @@ function slip(r, i) {
   if (r.sport && r.sport !== 'fotbal') tipBox.append(el('span', 'sport', r.sport));
   top.append(tipBox, el('div', 'slip-date', (L.length + ' meciuri') + (span ? ', ' + span : '')));
   s.append(top);
+  const meter = el('div', 'meter'); meter.setAttribute('aria-hidden', 'true'); L.forEach(() => meter.append(el('i'))); s.append(meter);
 
   const c = el('div', 'code' + (r.cod ? '' : ' none'));
   if (r.cod) {
@@ -102,6 +103,7 @@ function slip(r, i) {
   if (settled) { const st = el('div', 'stamp ' + (r.status === 'câștigat' ? 'won' : 'lost'), r.status === 'câștigat' ? 'Câștigat' : 'Pierdut'); st.style.setProperty('--d', (Math.min(i, 8) * .06) + 's'); tot.append(st); }
   s.append(tot);
   if (r.rezultat) s.append(el('div', 'rez', r.rezultat));
+  const sh = el('button', 'share', 'Trimite ca imagine'); sh.type = 'button'; sh.onclick = () => shareSlip(r, sh); s.append(sh);
   return s;
 }
 
@@ -118,6 +120,7 @@ function viewTickets(pending) {
   const list = $('list');
   let R = filtered(rows.filter(r => pending === (r.status === 'în așteptare')));
   if (!R.length) { list.append(el('div', 'empty', pending ? 'Niciun bilet de jucat acum. Biletele noi apar dimineața.' : 'Încă nu s-a încheiat niciun bilet.')); return; }
+  if (pending && !tip && !q) { const h = hero(); if (h) list.append(h); }
   const groups = new Map();
   R.sort((a, b) => pending ? firstWhen(a) - firstWhen(b) : (b.data + b.id).localeCompare(a.data + a.id));
   for (const r of R) { const k = pending ? (firstWhen(r) < now ? 'live' : dayKey(firstWhen(r))) : r.data; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(r); }
@@ -311,7 +314,7 @@ document.addEventListener('click', e => {
 document.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches && e.target.matches('.legs li')) { e.preventDefault(); e.target.click(); } });
 
 /* ---------- live scores ---------- */
-const live = { cache: {}, busy: false, again: false };
+const live = { cache: {}, busy: false, again: false, prev: {} };
 function statOf(j, key) { for (const g of (j.statistics || [])) if (g.period === 0) for (const d of g.data || []) if (d.text && d.text.args && d.text.args[0] === 'stats.football.match.' + key) return [Number(d.team1) || 0, Number(d.team2) || 0]; return null; }
 async function getMatch(id, sport) {
   const c = live.cache[id]; if (c && (c.state === 2 || Date.now() - c.t < 55e3)) return c;
@@ -357,6 +360,9 @@ function progs() {
     const L = [...s.querySelectorAll('.legs li')]; const n = L.length;
     const won = L.filter(l => l.dataset.res === 'won').length, lost = L.filter(l => l.dataset.res === 'lost'), on = L.filter(l => l.classList.contains('livenow')).length;
     const todo = n - won - lost.length - on;
+    const segs = s.querySelectorAll('.meter i');
+    L.forEach((l, k) => { if (segs[k]) segs[k].className = l.dataset.res === 'won' ? 'w' : l.dataset.res === 'lost' ? 'l' : l.classList.contains('livenow') ? (l.dataset.res === 'no' ? 'ln' : 'lv') : ''; });
+    if (n && won === n) celebrate(s);
     if (!won && !lost.length && !on) { p.className = 'prog'; continue; }
     p.className = 'prog on'; p.replaceChildren();
     const cnt = el('div', 'cnt');
@@ -377,7 +383,13 @@ async function liveTick() {
     const want = new Map();
     for (const li of lis) { const l = li._leg; if (!l.when || l.when.getTime() - Date.now() < 15 * 6e4) want.set(li.dataset.id, l.sport); }
     const res = {}; await Promise.all([...want].map(async ([id, sp]) => { res[id] = await getMatch(id, sp); }));
-    let liveCount = 0; const counted = new Set();
+    let liveCount = 0; const counted = new Set(); const tick = [];
+    for (const [id, m] of Object.entries(res)) {
+      if (!m || m.h == null) continue;
+      const prev = live.prev[id];
+      if (prev && m.state >= 1 && (m.h + m.a) > (prev.h + prev.a)) goal(id, m, m.h > prev.h);
+      live.prev[id] = { h: m.h, a: m.a };
+    }
     for (const li of lis) {
       const m = res[li.dataset.id]; const lv = li.querySelector('.lv');
       li.classList.remove('livenow');
@@ -386,15 +398,154 @@ async function liveTick() {
       if (r) li.dataset.res = r; else li.removeAttribute('data-res');
       const corn = m.corners && /corner/.test(nrm(li._sel)) ? (m.corners[0] + m.corners[1]) + ' cornere' : '';
       if (m.state === 1) {
-        if (!counted.has(li.dataset.id)) { counted.add(li.dataset.id); liveCount++; }
+        if (!counted.has(li.dataset.id)) { counted.add(li.dataset.id); liveCount++; tick.push({ id: li.dataset.id, meci: li._meci, m }); }
         li.classList.add('livenow'); lv.className = 'lv on live';
         lv.replaceChildren(el('span', 'dot'), document.createTextNode(m.h + ' – ' + m.a + (m.min ? '  ·  ' + m.min + "'" : m.label ? '  ·  ' + m.label : '') + (corn ? '  ·  ' + corn : '')));
       } else { lv.className = 'lv on fin'; lv.textContent = 'Final ' + m.h + ' – ' + m.a + (corn ? ', ' + corn : ''); }
     }
-    progs();
+    progs(); ticker(tick);
     const nx = $('next'); nx.querySelector('.livebadge')?.remove();
     if (liveCount) { const b = el('span', 'livebadge'); b.append(el('span', 'dot'), liveCount + (liveCount === 1 ? ' meci live acum. ' : ' meciuri live acum. ')); nx.prepend(b); }
   } finally { live.busy = false; if (live.again) { live.again = false; liveTick(); } }
+}
+
+
+/* ---------- biletul zilei (hero) ---------- */
+let heroTimer = null;
+function heroPick() {
+  const soon = rows.filter(r => r.status === 'în așteptare' && firstWhen(r) > now && firstWhen(r) - now < 36 * 36e5);
+  if (!soon.length) return null;
+  const pref = ['Pariul zilei', 'Cotă 2', 'Goluri ~5', 'Cotă 5'];
+  soon.sort((a, b) => { const pa = pref.indexOf(a.tip), pb = pref.indexOf(b.tip); return (pa < 0 ? 9 : pa) - (pb < 0 ? 9 : pb) || (b.sansa || 0) - (a.sansa || 0); });
+  return soon[0];
+}
+function hero() {
+  const r = heroPick(); if (!r) return null;
+  const L = parseLegs(r), t0 = firstWhen(r);
+  const h = el('section', 'hero');
+  const left = el('div', 'hero-l');
+  left.append(el('div', 'hero-k', r.tip === 'Pariul zilei' ? 'Pariul zilei, ales de Claude' : 'Biletul zilei'), el('div', 'hero-tip', r.tip === 'Pariul zilei' && L[0] ? L[0].meci : r.tip));
+  const cd = el('div', 'hero-cd'); cd.setAttribute('aria-label', 'Timp până la primul meci');
+  const units = [['h', 'ore'], ['m', 'min'], ['s', 'sec']].map(([k, lab]) => { const u = el('div', 'u'); const b = el('b', null, '00'); u.append(b, el('span', null, lab)); cd.append(u); return b; });
+  left.append(cd, el('div', 'hero-sub', 'până la ' + L[0].meci + ', ' + (dayKey(t0) === dayKey(now) ? 'azi' : 'mâine') + ' la ' + fmtHM(t0)));
+  const right = el('div', 'hero-r');
+  const nums = el('div', 'hero-nums');
+  const a = el('div'); a.append(el('b', null, fmtOdd(r.cota)), el('span', null, 'cotă'));
+  const b = el('div'); b.append(el('b', null, pct(r.sansa)), el('span', null, 'șansă'));
+  nums.append(a, b); right.append(nums);
+  if (r.cod) { const c = el('button', 'hero-code'); c.type = 'button'; c.append(el('span', null, 'Cod'), el('b', null, r.cod)); c.onclick = () => copy(r.cod, null); right.append(c); }
+  const chips = el('div', 'hero-legs');
+  L.forEach(l => { const c = el('span', 'hl'); c.append(el('i', null, fmtHM(l.when)), document.createTextNode(l.meci + ' '), el('b', null, l.sel)); chips.append(c); });
+  h.append(left, right, chips);
+  if (r.motive && r.motive[0] && L.length === 1) h.append(el('p', 'why1', r.motive[0]));
+  clearInterval(heroTimer);
+  const upd = () => { let d = Math.max(0, Math.floor((t0 - Date.now()) / 1000)); const v = [Math.floor(d / 3600), Math.floor(d % 3600 / 60), d % 60]; units.forEach((u, k) => { u.textContent = pad(v[k]); }); if (!d) clearInterval(heroTimer); };
+  upd(); heroTimer = setInterval(() => { if (!document.body.contains(h)) { clearInterval(heroTimer); return; } upd(); }, 1000);
+  return h;
+}
+
+/* ---------- live ticker, goals, sound ---------- */
+function ticker(items) {
+  let t = $('ticker');
+  if (!items.length) { if (t) t.hidden = true; return; }
+  if (!t) { t = el('div', 'ticker'); t.id = 'ticker'; document.body.prepend(t); }
+  t.hidden = false; t.replaceChildren();
+  const lab = el('span', 'tk-l'); lab.append(el('span', 'dot'), 'LIVE'); t.append(lab);
+  const row = el('div', 'tk-row');
+  for (const x of items) {
+    const [h, a] = x.meci.split(' – ');
+    const c = el('button', 'tk'); c.type = 'button';
+    c.append(el('span', null, h), el('b', null, x.m.h + ' – ' + x.m.a), el('span', null, a || ''), el('i', null, x.m.min ? x.m.min + "'" : (x.m.label || '')));
+    c.onclick = () => { const li = document.querySelector('.legs li[data-id="' + x.id + '"]'); if (li) { li.scrollIntoView({ behavior: 'smooth', block: 'center' }); li.classList.add('flash'); setTimeout(() => li.classList.remove('flash'), 1600); } };
+    row.append(c);
+  }
+  t.append(row);
+}
+let sound = store.get('sunet-gol', false), actx = null;
+function beep() {
+  if (!sound) return;
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    const notes = [523, 659, 784, 1047]; const t = actx.currentTime;
+    notes.forEach((f, i) => { const o = actx.createOscillator(), g = actx.createGain(); o.type = 'triangle'; o.frequency.value = f; g.gain.setValueAtTime(0.0001, t + i * .12); g.gain.exponentialRampToValueAtTime(.25, t + i * .12 + .02); g.gain.exponentialRampToValueAtTime(.0001, t + i * .12 + .3); o.connect(g).connect(actx.destination); o.start(t + i * .12); o.stop(t + i * .12 + .32); });
+  } catch (e) {}
+}
+function goal(id, m, home) {
+  const li = document.querySelector('.legs li[data-id="' + id + '"]'); if (!li) return;
+  const [h, a] = li._meci.split(' – ');
+  document.querySelectorAll('.legs li[data-id="' + id + '"]').forEach(x => { x.classList.remove('goalflash'); void x.offsetWidth; x.classList.add('goalflash'); });
+  const g = $('goal') || (() => { const d = el('div', 'goal'); d.id = 'goal'; d.setAttribute('role', 'status'); document.body.append(d); return d; })();
+  g.replaceChildren(el('div', 'g-big', 'GOL!'), el('div', 'g-who', (home ? h : a) + ' marchează'), el('div', 'g-sc', h + ' ' + m.h + ' – ' + m.a + ' ' + a + (m.min ? '  ·  ' + m.min + "'" : '')));
+  g.classList.remove('on'); void g.offsetWidth; g.classList.add('on');
+  clearTimeout(g._t); g._t = setTimeout(() => g.classList.remove('on'), 4200);
+  beep();
+  if (navigator.vibrate) try { navigator.vibrate([120, 60, 120]); } catch (e) {}
+}
+function soundBtn() {
+  const b = el('button', 'snd'); b.type = 'button';
+  const set = () => { b.textContent = sound ? '🔔 Sunet la gol: pornit' : '🔕 Sunet la gol: oprit'; b.setAttribute('aria-pressed', String(sound)); };
+  b.onclick = () => { sound = !sound; store.set('sunet-gol', sound); set(); if (sound) beep(); };
+  set(); return b;
+}
+
+/* ---------- confetti when a ticket wins ---------- */
+function celebrate(slipEl) {
+  const id = slipEl.dataset.row; if (!id) return;
+  const done = store.get('sarbatorite', []); if (done.includes(id)) return;
+  done.push(id); store.set('sarbatorite', done);
+  slipEl.classList.add('winner');
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const r = slipEl.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return;
+  const cv = el('canvas', 'confetti'); cv.width = innerWidth; cv.height = innerHeight; document.body.append(cv);
+  const ctx = cv.getContext('2d'); const cols = ['#f2c230', '#21894f', '#f6f3ea', '#e5322d', '#5fd393'];
+  const P = Array.from({ length: 140 }, () => ({ x: r.left + r.width / 2, y: r.top + 60, vx: (Math.random() - .5) * 14, vy: -Math.random() * 14 - 4, s: 4 + Math.random() * 6, c: cols[Math.floor(Math.random() * cols.length)], a: Math.random() * 6, va: (Math.random() - .5) * .4 }));
+  let f = 0; (function step() { ctx.clearRect(0, 0, cv.width, cv.height); for (const p of P) { p.vy += .35; p.vx *= .99; p.x += p.vx; p.y += p.vy; p.a += p.va; ctx.save(); ctx.translate(p.x, p.y); ctx.rotate(p.a); ctx.fillStyle = p.c; ctx.fillRect(-p.s / 2, -p.s / 4, p.s, p.s / 2); ctx.restore(); } if (++f < 150) requestAnimationFrame(step); else cv.remove(); })();
+  toast('Bilet câștigător: ' + (slipEl._row ? slipEl._row.tip : ''));
+}
+
+/* ---------- share as image ---------- */
+async function shareSlip(r, btn) {
+  const L = parseLegs(r);
+  const W = 1080, rowH = 92, H = 520 + L.length * rowH + (r.cod ? 150 : 0);
+  const cv = document.createElement('canvas'); cv.width = W; cv.height = H; const c = cv.getContext('2d');
+  try { await document.fonts.ready; } catch (e) {}
+  const F = (w, s, f) => w + ' ' + s + 'px ' + f;
+  const disp = '"Barlow Condensed", Arial Narrow, sans-serif', ui = 'Barlow, Arial, sans-serif', mono = '"IBM Plex Mono", Consolas, monospace';
+  c.fillStyle = '#0f2a20'; c.fillRect(0, 0, W, H);
+  // paper with torn bottom
+  const px = 70, py = 140, pw = W - 140, ph = H - 220;
+  c.fillStyle = '#f6f3ea'; c.beginPath(); c.moveTo(px, py); c.lineTo(px + pw, py); c.lineTo(px + pw, py + ph);
+  const nz = Math.round(pw / 24), zw = pw / nz; for (let k = 0; k < nz; k++) { const x = px + pw - k * zw; c.lineTo(x - zw / 2, py + ph + 14); c.lineTo(x - zw, py + ph); }
+  c.closePath(); c.fill();
+  c.fillStyle = '#e9efe9'; c.font = F(800, 64, disp); c.fillText('Biletele mele', px, 100);
+  c.fillStyle = '#1d1f1c'; c.font = F(700, 60, disp); c.fillText(r.tip, px + 40, py + 80);
+  c.font = F(500, 26, mono); c.fillStyle = '#6d6f68'; c.textAlign = 'right'; c.fillText(L.length + ' meciuri', px + pw - 40, py + 76); c.textAlign = 'left';
+  let y = py + 120;
+  if (r.cod) {
+    c.setLineDash([10, 8]); c.strokeStyle = '#c9c4b5'; c.lineWidth = 3; c.strokeRect(px + 40, y, pw - 80, 110); c.setLineDash([]);
+    c.fillStyle = '#6d6f68'; c.font = F(500, 24, mono); c.fillText('Cod agenție', px + 64, y + 38);
+    c.fillStyle = '#1d1f1c'; c.font = F(700, 52, mono); c.fillText(r.cod, px + 64, y + 92); y += 150;
+  }
+  for (const l of L) {
+    c.strokeStyle = '#c9c4b5'; c.setLineDash([3, 6]); c.lineWidth = 2; c.beginPath(); c.moveTo(px + 40, y); c.lineTo(px + pw - 40, y); c.stroke(); c.setLineDash([]);
+    c.fillStyle = '#6d6f68'; c.font = F(500, 24, mono); c.fillText(l.when ? pad(l.when.getDate()) + '.' + pad(l.when.getMonth() + 1) + ' ' + fmtHM(l.when) : '', px + 40, y + 40);
+    c.fillStyle = '#1d1f1c'; c.font = F(600, 30, ui); c.fillText(l.meci, px + 250, y + 40);
+    c.fillStyle = '#3b3d38'; c.font = F(400, 24, mono); c.fillText(l.sel, px + 250, y + 74);
+    c.fillStyle = '#1d1f1c'; c.font = F(600, 30, mono); c.textAlign = 'right'; c.fillText(l.o, px + pw - 40, y + 56); c.textAlign = 'left';
+    y += rowH;
+  }
+  c.fillStyle = '#1d1f1c'; c.fillRect(px + 40, y + 6, pw - 80, 4);
+  c.font = F(500, 26, mono); c.fillStyle = '#6d6f68'; c.fillText('cotă', px + 40, y + 76);
+  c.fillStyle = '#1d1f1c'; c.font = F(800, 84, disp); c.fillText(fmtOdd(r.cota), px + 120, y + 90);
+  c.textAlign = 'right'; c.font = F(600, 34, ui); c.fillText(pct(r.sansa) + ' șansă', px + pw - 40, y + 76); c.textAlign = 'left';
+  c.fillStyle = '#9fb3a8'; c.font = F(500, 24, ui); c.fillText('jurjiuflorin.github.io/bilete', px, H - 30);
+  const blob = await new Promise(res => cv.toBlob(res, 'image/png'));
+  const file = new File([blob], 'bilet-' + r.id + '.png', { type: 'image/png' });
+  try {
+    if (navigator.canShare && navigator.canShare({ files: [file] })) { await navigator.share({ files: [file], title: r.tip, text: r.tip + (r.cod ? ' · cod ' + r.cod : '') }); return; }
+  } catch (e) { if (e && e.name === 'AbortError') return; }
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = file.name; document.body.append(a); a.click(); a.remove();
+  toast('Imaginea biletului s-a salvat');
 }
 
 /* ---------- header, chips, tabs ---------- */
@@ -438,7 +589,7 @@ fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(r => { if (!r.ok) throw new Error('fișierul de bilete nu răspunde (' + r.status + ')'); return r.json(); })
   .then(d => {
     rows = (Array.isArray(d) ? d : (d.rows || [])).filter(r => r.tip !== 'Test');
-    chips(); header(); render();
+    chips(); header(); render(); $('next').after(soundBtn());
     setInterval(() => { now = new Date(); header(); liveTick(); }, 60000);
   })
   .catch(e => { $('next').textContent = ''; $('list').append(el('div', 'err', 'Biletele nu s-au putut încărca: ' + e.message + '. Reîncarcă pagina peste un minut.')); });
