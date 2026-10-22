@@ -281,3 +281,15 @@ body.noscroll{overflow:hidden}
 .hero-legs .hl:hover{background:rgba(29,31,28,.2)}
 .hero-legs .hl.lv:hover{background:#000}
 .hero-legs .hl:focus-visible{outline:2px solid #1d1f1c;outline-offset:2px}
+
+/* cote vs statistici */
+.sh-odds li{grid-template-columns:1fr 3.2em 4.6em 3.6em}
+.sh-odds li.hd{background:none;padding:0 10px;font:500 11px var(--ui);color:var(--ink-dim);text-transform:uppercase;letter-spacing:.04em}
+.sh-odds li.hd .p,.sh-odds li.hd .st,.sh-odds li.hd .v{font:inherit;text-align:right;color:inherit}
+.sh-odds .p{text-align:right}
+.sh-odds .k small{display:block;font:500 11.5px var(--ui);color:var(--ink-dim);margin-top:1px}
+.sh-odds .st{font:700 14px var(--slip);text-align:right;color:var(--ink)}
+.sh-odds .st.val{color:#fff;background:var(--won);border-radius:4px;padding:1px 5px;justify-self:end}
+.sh-odds .st.low{color:var(--lost)}
+.sh-odds li.val{box-shadow:inset 3px 0 0 var(--won)}
+.sh-odds li>.tick{position:absolute;top:4px;bottom:4px;width:2px;background:var(--ink);opacity:.45;z-index:0;transform:translateX(-1px)}
