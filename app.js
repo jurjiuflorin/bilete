@@ -732,7 +732,15 @@ async function liveTick() {
     }
     progs(); ticker(tick); heroLive();
     const nx = $('next'); nx.querySelector('.livebadge')?.remove();
-    if (liveCount) { const b = el('span', 'livebadge'); b.append(el('span', 'dot'), liveCount + (liveCount === 1 ? ' meci live acum. ' : ' meciuri live acum. ')); nx.prepend(b); }
+    if (liveCount) {
+      const b = el('button', 'livebadge'); b.type = 'button'; b.title = 'Vezi biletele care se joacă acum';
+      b.append(el('span', 'dot'), liveCount + (liveCount === 1 ? ' meci live acum. ' : ' meciuri live acum. '));
+      b.onclick = () => {
+        if (tab !== 'p' || tip || q) { tab = 'p'; tip = ''; q = ''; const qi = $('q'); if (qi) qi.value = ''; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); try { history.replaceState(null, '', '#p'); } catch (err) {} chips(); render(); }
+        setTimeout(() => { const li = document.querySelector('#list .legs li.livenow'); const t = (li && li.closest('.slip')) || document.querySelector('#list .day'); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 80);
+      };
+      nx.prepend(b);
+    }
   } finally { live.busy = false; if (live.again) { live.again = false; liveTick(); } }
 }
 
@@ -911,7 +919,9 @@ function header() {
   if (best) {
     const mins = Math.round((best.when - now) / 6e4), h = Math.floor(mins / 60), m = mins % 60;
     const cd = el('span', 'cd', mins < 60 ? 'în ' + mins + ' min' : h < 24 ? 'în ' + h + ' h ' + m + ' min' : (dayLabel(dayKey(best.when))[0].toLowerCase() + ' la ' + fmtHM(best.when)));
-    n.append('Următorul meci de pe bilete: ', el('strong', null, best.meci), ', ', cd, '.');
+    const nm = el('button', 'nextm', best.meci); nm.type = 'button'; nm.title = 'Detalii meci';
+    nm.onclick = () => openSheet({ ...best });
+    n.append('Următorul meci de pe bilete: ', nm, ', ', cd, '.');
   } else n.append('Niciun meci programat pe biletele active.');
 }
 function chips() {

@@ -351,3 +351,9 @@ body.noscroll{overflow:hidden}
 @media (prefers-reduced-motion:reduce){.slip.flash{animation:none;outline:4px solid var(--flood)}}
 .sh-picks li.go{justify-content:flex-start;padding:6px 6px;margin:0 -6px}
 .sh-picks li.go .v{margin-left:auto}
+/* antet: meciul următor și „live acum” se pot apăsa */
+.next .nextm{all:unset;cursor:pointer;color:var(--chalk);font-weight:600;text-decoration:underline;text-decoration-color:rgba(233,239,233,.35);text-underline-offset:3px}
+.next .nextm:hover,.next .nextm:focus-visible{text-decoration-color:var(--flood);color:#fff}
+.next .livebadge{all:unset;cursor:pointer;color:#ffb3a8;font-weight:600;display:inline}
+.next .livebadge:hover,.next .livebadge:focus-visible{text-decoration:underline;text-underline-offset:3px}
+.next .livebadge .dot{display:inline-block}
