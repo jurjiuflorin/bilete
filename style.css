@@ -359,3 +359,10 @@ body.noscroll{overflow:hidden}
 .next .livebadge .dot{display:inline-block}
 button.hero-tip{all:unset;display:block;cursor:pointer;font:800 clamp(30px,5vw,44px)/1 var(--display);margin:2px 0 12px;text-decoration:underline;text-decoration-color:rgba(29,31,28,.25);text-decoration-thickness:2px;text-underline-offset:5px}
 button.hero-tip:hover,button.hero-tip:focus-visible{text-decoration-color:#1d1f1c}
+
+/* arbitru */
+.refbox{margin-top:12px;background:#fff;border:1px solid #e3ddcc;border-radius:12px;padding:10px 14px;display:grid;gap:2px}
+.refbox .rb-k{font:500 11px var(--ui);text-transform:uppercase;letter-spacing:.05em;color:var(--ink-dim)}
+.refbox .rb-n{font:800 20px/1.1 var(--display);color:var(--ink)}
+.refbox .rb-s{font:500 13px/1.4 var(--ui);color:#3b3d38}
+.mk-ref{font:600 13px/1.4 var(--ui);color:#6b4a00;background:#fbe9c2;border-radius:8px;padding:6px 10px}

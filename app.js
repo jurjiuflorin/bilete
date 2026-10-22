@@ -269,6 +269,22 @@ function sameTeam(a, b) {
   const A = teamWords(a), B = teamWords(b); if (!A.length || !B.length) return nrm(a) === nrm(b);
   return A.some(w => B.some(v => v === w || (w.length > 4 && v.length > 4 && (v.startsWith(w) || w.startsWith(v)))));
 }
+// statisticile arbitrului, scrise de sarcina zilnică în meciuri.json (arbitru, arbitru_galbene, arbitru_rosii pe meci, arbitru_meciuri, arbitru_sezon)
+function refText(inf) {
+  if (!inf || inf.arbitru_galbene == null) return '';
+  const f = v => Number(v).toLocaleString('ro-RO', { minimumFractionDigits: 1, maximumFractionDigits: 2 });
+  return f(inf.arbitru_galbene) + ' galbene' + (inf.arbitru_rosii != null ? ' și ' + f(inf.arbitru_rosii) + ' roșii' : '') + ' pe meci'
+    + (inf.arbitru_meciuri || inf.arbitru_sezon ? ' (' + [inf.arbitru_sezon, inf.arbitru_meciuri ? inf.arbitru_meciuri + ' meciuri' : ''].filter(Boolean).join(', ') + ')' : '');
+}
+function refBlock(name, inf) {
+  const box = el('div', 'refbox');
+  const nm = name || (inf && inf.arbitru) || '';
+  if (!nm) return null;
+  box.append(el('div', 'rb-k', 'Arbitru'), el('div', 'rb-n', nm));
+  const t = refText(inf);
+  box.append(el('div', 'rb-s', t || 'Statisticile arbitrului apar dimineața, când e cunoscut și găsit în surse.'));
+  return box;
+}
 function infoFor(l) {
   if (!l || !l.meci) return null; const [h, a] = l.meci.split(' – ');
   const k = l.when ? dayKey(l.when) : '';
@@ -452,6 +468,7 @@ async function sheetOdds(box, l) {
         if (extra && extra.mean) tw.append(el('div', 'mk-mean', extra.mean));
         card.append(tw);
       } else if (extra && extra.mean) card.append(el('div', 'mk-mean', extra.mean));
+      if (extra && extra.ref) card.append(el('div', 'mk-ref', extra.ref));
       if (why) card.append(el('div', 'mk-v ' + cls, why));
       g.append(card);
     };
@@ -470,6 +487,7 @@ async function sheetOdds(box, l) {
     // ---- statistici de joc
     const LINES = [[/^total cornere$/, 'Cornere', ['average_corners', 's_corners'], 'cornere', 'corner_kicks'], [/^total cartonase$/, 'Cartonașe', ['average_cards', 'average_yellow_cards', 's_yellow_cards'], 'cartonașe', 'cards'], [/^total (offside|ofsaid)/, 'Offside-uri', ['s_offsides'], 'offside-uri', 'offsides'], [/^total suturi pe poarta$/, 'Șuturi pe poartă', ['average_shots_on_target', 's_shots_on_target'], 'șuturi pe poartă', 'shots_on_goal']];
     let gJoc = null;
+    const refLine = () => { const inf = infoFor(l); const t = refText(inf); return t ? 'Arbitru ' + (inf.arbitru || '') + ': ' + t + '.' : ''; };
     for (const [re, lab, keys, unit, rk] of LINES) {
       const m = find(re); const b = m && lineNear(m); if (!b) continue;
       if (!gJoc) { gJoc = group('Statistici de joc'); any = true; }
@@ -478,10 +496,10 @@ async function sheetOdds(box, l) {
       const mean = v => v.reduce((x, y) => x + y, 0) / v.length;
       if (v1.length >= 4 && v2.length >= 4) {
         binCard(gJoc, lab + ' peste ' + b.ln, F[0], b.p, v1.map(x => x > ln), v2.map(x => x > ln), lab + ' în meciurile fiecărei echipe (total pe meci, ultimele ' + Math.max(v1.length, v2.length) + '; verde = ' + need + ' sau mai multe)',
-          { vals: [v1, v2], line: ln, unit });
+          { vals: [v1, v2], line: ln, unit, ref: rk === 'cards' ? refLine() : '' });
       } else {
         const k = keys.find(x => A[x]); const v = k && A[k];
-        binCard(gJoc, lab + ' peste ' + b.ln, F[0], b.p, null, null, '', v ? { p: poisOver(v[0] + v[1], ln), mean: 'Media din sezon: ' + v[0] + ' (' + h + ') + ' + v[1] + ' (' + a + ') = ' + (Math.round((v[0] + v[1]) * 10) / 10) + ' ' + unit + ' / meci' } : null);
+        binCard(gJoc, lab + ' peste ' + b.ln, F[0], b.p, null, null, '', v ? { ref: rk === 'cards' ? refLine() : '', p: poisOver(v[0] + v[1], ln), mean: 'Media din sezon: ' + v[0] + ' (' + h + ') + ' + v[1] + ' (' + a + ') = ' + (Math.round((v[0] + v[1]) * 10) / 10) + ' ' + unit + ' / meci' } : null);
       }
     }
 
@@ -620,7 +638,7 @@ async function openSheet(l) {
       stats.append(tbl);
     }
     const ref = (j.referees || []).find(x => x.type === 1);
-    if (ref) stats.append(el('p', 'ref', 'Arbitru: ' + ref.name.split(', ').reverse().join(' ')));
+    const rb = refBlock(ref ? ref.name.split(', ').reverse().join(' ') : '', infoFor(l)); if (rb) stats.append(rb);
     if (!ps.length && !ref) stats.append(el('p', 'note', 'Superbet nu are încă statistici pentru meciul ăsta.'));
   } catch (e) { stats.replaceChildren(el('p', 'note', 'Statisticile nu s-au putut încărca acum. Încearcă din nou peste un minut.')); }
 }
