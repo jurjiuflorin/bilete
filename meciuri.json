@@ -1,6 +1,6 @@
 {
  "data": "2026-10-23",
- "actualizat": "2026-10-23T07:16:55Z",
+ "actualizat": "2026-10-23T13:09:25Z",
  "meciuri": [
   {
    "data": "2026-10-23",
@@ -60,13 +60,21 @@
    "gazde": "Torino",
    "oaspeti": "Monza",
    "absenti_gazde": [
-    "Rodriguez (indisponibil)"
+    "Ilkhan (accidentat)",
+    "Fortini (accidentat)",
+    "Ricardo Rodríguez (accidentat)"
    ],
    "absenti_oaspeti": [
-    "Zeballos (genunchi, incert)"
+    "Ziolkowski (accidentat)",
+    "Pessina (accidentat)",
+    "Idrissa Touré (incert)"
    ],
-   "marcatori_gazde": "",
-   "marcatori_oaspeti": ""
+   "marcatori_gazde": "Che Adams 3 goluri",
+   "marcatori_oaspeti": "Varela 6 goluri",
+   "forma_gazde": "VIEVV",
+   "forma_oaspeti": "EIVIV",
+   "loc_gazde": null,
+   "loc_oaspeti": 14
   },
   {
    "data": "2026-10-23",
@@ -100,14 +108,20 @@
    "loc_gazde": 7,
    "loc_oaspeti": 20,
    "absenti_gazde": [
-    "Joaquín Muñoz (indisponibil)",
+    "Garcés (indisponibil)",
+    "Mikel Rodríguez (indisponibil)"
+   ],
+   "absenti_oaspeti": [
+    "Murillo (accidentat)",
+    "Lobete (accidentat)",
+    "Ochoa (incert)",
     "Juan Cruz (incert)"
    ],
-   "absenti_oaspeti": [],
    "marcatori_gazde": "Boyé 5 goluri",
-   "marcatori_oaspeti": "",
-   "arbitru": "Muñiz Muñoz",
-   "nota": "Málaga nu a câștigat încă și are un singur punct în deplasare."
+   "marcatori_oaspeti": "Niño 3 goluri",
+   "nota": "Málaga nu a câștigat încă și are un singur punct în deplasare.",
+   "forma_gazde": "IIEII",
+   "forma_oaspeti": "EIIEI"
   },
   {
    "data": "2026-10-23",
