@@ -119,7 +119,18 @@ function copy(t, b, label) {
 function toast(t) { const e = $('toast'); e.textContent = t; e.classList.add('on'); clearTimeout(e._t); e._t = setTimeout(() => e.classList.remove('on'), 1800); }
 
 /* ---------- views ---------- */
-const filtered = arr => arr.filter(r => !tip || r.tip === tip).filter(r => !q || nrm(r.selectii).includes(q));
+// categoriile din filtre: puține grupe în loc de un buton pentru fiecare tip de bilet
+const CATS = ['Pariul zilei', 'Zilnice', 'Weekend', 'Săptămânale', 'SuperLiga', 'Biletul meu'];
+function catOf(t) {
+  const s = nrm(t || '');
+  if (s.startsWith('pariul zilei')) return 'Pariul zilei';
+  if (s.startsWith('biletul meu')) return 'Biletul meu';
+  if (s.includes('superliga')) return 'SuperLiga';
+  if (s.includes('weekend')) return 'Weekend';
+  if (/100\+|mega|saptamanal/.test(s)) return 'Săptămânale';
+  return 'Zilnice';
+}
+const filtered = arr => arr.filter(r => !tip || catOf(r.tip) === tip).filter(r => !q || nrm(r.selectii).includes(q));
 
 function viewTickets(pending) {
   const list = $('list');
@@ -156,7 +167,7 @@ function allMatches(fromNow) {
 
 function viewCalendar() {
   const list = $('list');
-  const M = allMatches(false).filter(m => !q || nrm(m.meci).includes(q)).filter(m => !tip || m.picks.some(p => p.row.tip === tip))
+  const M = allMatches(false).filter(m => !q || nrm(m.meci).includes(q)).filter(m => !tip || m.picks.some(p => catOf(p.row.tip) === tip))
     .filter(m => m.when > new Date(now.getTime() - 3 * 36e5));
   if (!M.length) { list.append(el('div', 'empty', 'Niciun meci programat pe biletele active.')); return; }
   const days = new Map(); for (const m of M) { const k = dayKey(m.when); if (!days.has(k)) days.set(k, []); days.get(k).push(m); }
@@ -960,7 +971,7 @@ function resultsData() {
   const S = rows.filter(r => r.status === 'câștigat' || r.status === 'pierdut').sort((a, b) => (a.data + a.id).localeCompare(b.data + b.id));
   const sum = arr => { const n = arr.length, w = arr.filter(r => r.status === 'câștigat').length; const profit = arr.reduce((a, r) => a + (r.status === 'câștigat' ? Number(r.cota) - 1 : -1), 0); return { n, w, profit, roi: n ? profit / n : 0 }; };
   const all = sum(S);
-  const fam = new Map(); for (const r of S) { const k = famOf(r.tip); if (!fam.has(k)) fam.set(k, []); fam.get(k).push(r); }
+  const fam = new Map(); for (const r of S) { const k = catOf(r.tip); if (!fam.has(k)) fam.set(k, []); fam.get(k).push(r); }
   const byTip = [...fam].map(([k, arr]) => ({ k, ...sum(arr), avg: arr.reduce((a, r) => a + Number(r.cota), 0) / arr.length })).sort((a, b) => b.n - a.n);
   // fiecare selecție judecată din scorurile scrise în „rezultat”
   const mk = new Map(); let lw = 0, ll = 0; const seen = new Set();
@@ -995,7 +1006,7 @@ function viewResults() {
   const last = D.S.slice(-15);
   const sec0 = el('section', 'day'); const h0 = el('h2', null, 'Ultimele bilete'); h0.append(el('small', null, 'cel mai recent în dreapta')); sec0.append(h0);
   const strip = el('div', 'rs-strip');
-  for (const r of last) { const d = el('button', 'rs-dot ' + (r.status === 'câștigat' ? 'w' : 'l'), r.status === 'câștigat' ? '✓' : '✗'); d.type = 'button'; d.title = famOf(r.tip) + ', cotă ' + fmtOdd(r.cota) + ', ' + fmtDM(new Date(r.data)); d.onclick = () => goToTicket(r.id); strip.append(d); }
+  for (const r of last) { const d = el('button', 'rs-dot ' + (r.status === 'câștigat' ? 'w' : 'l'), r.status === 'câștigat' ? '✓' : '✗'); d.type = 'button'; d.title = r.tip + ', cotă ' + fmtOdd(r.cota) + ', ' + fmtDM(new Date(r.data)); d.onclick = () => goToTicket(r.id); strip.append(d); }
   sec0.append(strip); list.append(sec0);
   // pe tip de bilet
   const table = (title, sub, head, data, row) => {
@@ -1004,7 +1015,7 @@ function viewResults() {
     const tb = el('tbody'); data.forEach(d => { const r = el('tr'); row(d).forEach((c, i) => { const td = el('td'); if (c instanceof Node) td.append(c); else td.textContent = c; if (i) td.className = 'n'; r.append(td); }); tb.append(r); }); t.append(tb); box.append(t); sec.append(box); list.append(sec);
   };
   const bar = (w, n) => { const f = el('span', 'rs-bar'); const i = el('i'); i.style.width = Math.round(n ? 90 * w / n : 0) + 'px'; f.append(i, el('em', null, pctS(w, n))); return f; };
-  table('Pe tip de bilet', 'cât de des intră fiecare', ['Tip', 'Bilete', 'Câștigate', 'Cotă medie', 'Profit (1 leu)'], D.byTip,
+  table('Pe categorie', 'cât de des intră fiecare', ['Categorie', 'Bilete', 'Câștigate', 'Cotă medie', 'Profit (1 leu)'], D.byTip,
     d => [d.k, String(d.n), bar(d.w, d.n), fmtOdd(d.avg), money(d.profit)]);
   if (D.byMarket.length) table('Pe tip de pariu', 'fiecare meci de pe bilete, judecat separat', ['Piață', 'Meciuri', 'Intrate'], D.byMarket,
     d => [d.k, String(d.n), bar(d.w, d.n)]);
@@ -1030,7 +1041,7 @@ function header() {
 function chips() {
   const box = $('chips'); box.replaceChildren();
   box.hidden = tab === 'm' || tab === 'r';
-  const tips = ['', ...new Set(rows.map(r => r.tip))];
+  const have = new Set(rows.map(r => catOf(r.tip))); const tips = ['', ...CATS.filter(c => have.has(c))];
   for (const t of tips) { const b = el('button', null, t || 'Toate'); b.type = 'button'; b.setAttribute('aria-pressed', String(t === tip)); b.onclick = () => { tip = t; chips(); render(); }; box.append(b); }
 }
 function render() {
