@@ -258,10 +258,17 @@ async function loadDay() {
       day.err = '';
     } catch (e) { day.list = saved; day.err = 'Nu s-au putut încărca meciurile de la Superbet acum.'; }
     day.key = key; day.t = Date.now();
-    if (Date.now() - extra.t > 10 * 6e4) {
-      try { const j = await (await fetch('meciuri.json?v=' + Date.now(), { cache: 'no-store' })).json(); extra = { t: Date.now(), rows: (j && j.meciuri) || [] }; } catch (e) { extra.t = Date.now(); }
-    }
+    await loadExtra();
     day.busy = null;
+  })());
+}
+// meciuri.json (formă, absenți, arbitri) — încărcat o dată la 10 minute, pentru orice fereastră de meci
+let extraBusy = null;
+function loadExtra() {
+  if (Date.now() - extra.t <= 10 * 6e4) return Promise.resolve();
+  return extraBusy || (extraBusy = (async () => {
+    try { const j = await (await fetch('meciuri.json?v=' + Date.now(), { cache: 'no-store' })).json(); extra = { t: Date.now(), rows: (j && j.meciuri) || [] }; } catch (e) { extra.t = Date.now() - 9 * 6e4; }
+    extraBusy = null;
   })());
 }
 function teamWords(t) { return nrm(t).replace(/[^a-z0-9 ]/g, ' ').split(/\s+/).filter(w => w.length > 2 && !['fc', 'cf', 'afc', 'sc', 'ac', 'club', 'united', 'city', 'real', 'sporting'].includes(w)); }
@@ -282,7 +289,7 @@ function refBlock(name, inf) {
   if (!nm) return null;
   box.append(el('div', 'rb-k', 'Arbitru'), el('div', 'rb-n', nm));
   const t = refText(inf);
-  box.append(el('div', 'rb-s', t || 'Statisticile arbitrului apar dimineața, când e cunoscut și găsit în surse.'));
+  box.append(el('div', 'rb-s', t || 'Statisticile arbitrului apar când sunt găsite în surse (actualizare la 10:07 și 16:07).'));
   return box;
 }
 function infoFor(l) {
@@ -570,6 +577,7 @@ function picksFor(l) {
 }
 const STAT_LABEL = { goals_scored_per_game: 'Goluri marcate / meci', goals_conceded_per_game: 'Goluri primite / meci', average_xg: 'Goluri așteptate (xG)', average_shots_on_target: 'Șuturi pe poartă', average_shots_off_target: 'Șuturi pe lângă', average_corners: 'Cornere / meci', average_yellow_cards: 'Cartonașe galbene', average_cards: 'Cartonașe total', average_red_cards: 'Cartonașe roșii' };
 async function openSheet(l) {
+  await loadExtra();
   const box = $('sheet-body'); box.replaceChildren();
   const [h, a] = (l.meci || '').split(' – ');
   const t = el('h3', null, l.meci); t.id = 'sh-title'; box.append(t);
@@ -971,6 +979,7 @@ $('q').addEventListener('input', e => { q = nrm(e.target.value.trim()); render()
 
 /* ---------- start ---------- */
 const h0 = (location.hash || '').slice(1); if (['p', 'm', 'c', 'h'].includes(h0)) { tab = h0; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); }
+loadExtra();
 fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(r => { if (!r.ok) throw new Error('fișierul de bilete nu răspunde (' + r.status + ')'); return r.json(); })
   .then(d => {
