@@ -150,6 +150,32 @@
    "liga": "Liga Portugal",
    "gazde": "Guimaraes",
    "oaspeti": "Maritimo"
+  },
+  {
+   "id": 14231683,
+   "data": "2026-10-23",
+   "ora": "18:00",
+   "liga": "SuperLiga",
+   "gazde": "Botosani",
+   "oaspeti": "Petrolul Ploiesti",
+   "arbitru": "Marcel Bîrsan",
+   "arbitru_galbene": 4.73,
+   "arbitru_rosii": 0.2,
+   "arbitru_meciuri": 15,
+   "arbitru_sezon": "Liga 1 2024/25"
+  },
+  {
+   "id": 14231685,
+   "data": "2026-10-23",
+   "ora": "21:00",
+   "liga": "SuperLiga",
+   "gazde": "Corvinul Hunedoara",
+   "oaspeti": "U Cluj",
+   "arbitru": "Adrian Cojocaru",
+   "arbitru_galbene": 5.13,
+   "arbitru_rosii": 0.27,
+   "arbitru_meciuri": 15,
+   "arbitru_sezon": "Liga 1 2024/25"
   }
  ]
 }
