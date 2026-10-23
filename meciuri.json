@@ -1,5 +1,141 @@
 {
- "data": "",
- "actualizat": "",
- "meciuri": []
+ "data": "2026-10-23",
+ "actualizat": "2026-10-23T07:16:55Z",
+ "meciuri": [
+  {
+   "data": "2026-10-23",
+   "ora": "22:00",
+   "liga": "Premier League",
+   "gazde": "Ipswich",
+   "oaspeti": "Nottm Forest",
+   "forma_gazde": "IVIVI",
+   "forma_oaspeti": "EVIII",
+   "loc_gazde": 10,
+   "loc_oaspeti": 19,
+   "absenti_gazde": [
+    "Lukic (accidentat, incert)"
+   ],
+   "absenti_oaspeti": [
+    "Igor Jesus (accidentat)",
+    "Savona (accidentat)",
+    "Gibbs-White (problemă musculară, incert)"
+   ],
+   "marcatori_gazde": "Flemming 2 goluri",
+   "marcatori_oaspeti": "Delap 1 gol (PL)",
+   "arbitru": "Thomas Bramall",
+   "nota": "Forest vine după trei înfrângeri la rând și a marcat doar 5 goluri în acest sezon."
+  },
+  {
+   "data": "2026-10-23",
+   "ora": "21:30",
+   "liga": "Bundesliga",
+   "gazde": "Stuttgart",
+   "oaspeti": "M'gladbach",
+   "forma_gazde": "VVVIE",
+   "forma_oaspeti": "",
+   "loc_gazde": 13,
+   "loc_oaspeti": 18,
+   "absenti_gazde": [
+    "Diehl (accidentat)",
+    "Zagadou (accidentat)",
+    "Vagnoman (accidentat)",
+    "Tomas (accidentat)"
+   ],
+   "absenti_oaspeti": [
+    "Itakura (accidentat)",
+    "Castrop (accidentat)",
+    "Honorat (accidentat)",
+    "Kleindienst (accidentat)",
+    "Leszczynski (accidentat)",
+    "Leopold (accidentat)"
+   ],
+   "marcatori_gazde": "",
+   "marcatori_oaspeti": "",
+   "nota": "Gladbach nu are nicio victorie în primele 6 etape."
+  },
+  {
+   "data": "2026-10-23",
+   "ora": "21:45",
+   "liga": "Serie A",
+   "gazde": "Torino",
+   "oaspeti": "Monza",
+   "absenti_gazde": [
+    "Rodriguez (indisponibil)"
+   ],
+   "absenti_oaspeti": [
+    "Zeballos (genunchi, incert)"
+   ],
+   "marcatori_gazde": "",
+   "marcatori_oaspeti": ""
+  },
+  {
+   "data": "2026-10-23",
+   "ora": "21:45",
+   "liga": "Ligue 1",
+   "gazde": "Brest",
+   "oaspeti": "Nice",
+   "loc_gazde": 10,
+   "loc_oaspeti": 13,
+   "absenti_gazde": [
+    "Le Guen (indisponibil)",
+    "Chardonnet (indisponibil)",
+    "Versini (incert)"
+   ],
+   "absenti_oaspeti": [
+    "Mendy (indisponibil)",
+    "Abergel (indisponibil)",
+    "Bombito (indisponibil)",
+    "Abdi (incert)"
+   ],
+   "marcatori_gazde": "",
+   "marcatori_oaspeti": "",
+   "nota": "Nice a pierdut toate cele trei deplasări de până acum."
+  },
+  {
+   "data": "2026-10-23",
+   "ora": "22:00",
+   "liga": "LaLiga",
+   "gazde": "Alaves",
+   "oaspeti": "Malaga",
+   "loc_gazde": 7,
+   "loc_oaspeti": 20,
+   "absenti_gazde": [
+    "Joaquín Muñoz (indisponibil)",
+    "Juan Cruz (incert)"
+   ],
+   "absenti_oaspeti": [],
+   "marcatori_gazde": "Boyé 5 goluri",
+   "marcatori_oaspeti": "",
+   "arbitru": "Muñiz Muñoz",
+   "nota": "Málaga nu a câștigat încă și are un singur punct în deplasare."
+  },
+  {
+   "data": "2026-10-23",
+   "ora": "22:00",
+   "liga": "Championship",
+   "gazde": "Bolton",
+   "oaspeti": "Middlesbrough",
+   "forma_gazde": "VVIVE",
+   "forma_oaspeti": "EEVVE",
+   "loc_gazde": 15,
+   "loc_oaspeti": 3,
+   "absenti_gazde": [
+    "Forino (accidentat)"
+   ],
+   "absenti_oaspeti": [
+    "Strelec (accidentat)",
+    "Pukstas (indisponibil)",
+    "Alfie Jones (accidentat)"
+   ],
+   "marcatori_gazde": "",
+   "marcatori_oaspeti": ""
+  },
+  {
+   "data": "2026-10-23",
+   "ora": "22:45",
+   "liga": "Liga Portugal",
+   "gazde": "Guimaraes",
+   "oaspeti": "Maritimo"
+  }
+ ]
 }
