@@ -58,10 +58,10 @@
   "tip": "Cotă 2",
   "cota": 1.88,
   "sansa": 0.528,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "990R-KWH5C4",
   "selectii": "19:45 OFI – Leverkusen: 2 (1.24) · 22:00 Olympiacos – Sparta Praga: 1 (1.52)",
-  "rezultat": "",
+  "rezultat": "OFI–Leverkusen 0-2 · Olympiacos–Sparta Praga 1-0",
   "ids": [
    14744330,
    14744349
@@ -77,10 +77,10 @@
   "tip": "Cotă 5",
   "cota": 4.81,
   "sansa": 0.196,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991G-KNO3IU",
   "selectii": "19:45 OFI – Leverkusen: 2 (1.24) · 22:00 Olympiacos – Sparta Praga: 1 (1.52) · 19:45 Dinamo Zagreb – NEC: 1 (1.68) · 22:00 Lillestrøm – Real Sociedad: 2 (1.52)",
-  "rezultat": "",
+  "rezultat": "OFI–Leverkusen 0-2 · Olympiacos–Sparta Praga 1-0 · Dinamo Zagreb–NEC 2-4 · Lillestrøm–Real Sociedad 0-6",
   "ids": [
    14744330,
    14744349,
@@ -100,10 +100,10 @@
   "tip": "Cotă 10",
   "cota": 9.68,
   "sansa": 0.089,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991R-KNIRRV",
   "selectii": "19:45 OFI – Leverkusen: Peste 2.5 (1.37) · 22:00 Olympiacos – Sparta Praga: 1 (1.52) · 19:45 Dinamo Zagreb – NEC: 1 (1.68) · 22:00 Lillestrøm – Real Sociedad: 2 (1.52) · 22:00 Omonia – Benfica: 2 (1.39) · 19:45 Union SG – Hapoel B. Sheva: 1 (1.31)",
-  "rezultat": "",
+  "rezultat": "OFI–Leverkusen 0-2 · Olympiacos–Sparta Praga 1-0 · Dinamo Zagreb–NEC 2-4 · Lillestrøm–Real Sociedad 0-6 · Omonia–Benfica 1-4 · Union SG–Hapoel B. Sheva 4-0",
   "ids": [
    14744330,
    14744349,
@@ -330,10 +330,10 @@
   "tip": "Cotă 100+",
   "cota": 124.77,
   "sansa": 0.0143,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9917-WWOXJT",
   "selectii": "21.10 22:00 Bayern – Arsenal: Peste 2.5 (1.60) · 22.10 19:45 Dinamo Zagreb – NEC: 1 (1.68) · 22.10 22:00 Olympiacos – Sparta Praga: 1 (1.52) · 23.10 18:00 Botoșani – Petrolul: Sub 2.5 (2.00) · 23.10 21:45 Brest – Nice: GG (1.59) · 24.10 14:30 Aston Villa – Man. City: Peste 2.5 (1.55) · 24.10 22:00 Atlético – Deportivo: 1 (1.26) · 25.10 13:30 Inter – Fiorentina: Peste 2.5 (1.44) · 25.10 18:30 Freiburg – Bayern: Peste 2.5 (1.25) · 25.10 21:45 PSG – Lyon: Peste 2.5 (1.36) · 25.10 21:45 Udinese – AC Milan: 2 (1.66) · 25.10 22:00 Barcelona – Real Madrid: Peste 2.5 (1.21)",
-  "rezultat": "Bayern–Arsenal 2-2",
+  "rezultat": "Bayern–Arsenal 2-2 · Dinamo Zagreb–NEC 2-4",
   "ids": [
    14738990,
    14744324,
@@ -411,10 +411,10 @@
   "tip": "Mega 20+ (refăcut)",
   "cota": 2980.5,
   "sansa": 0.0001,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991C-W3ESD3",
   "selectii": "22.10 19:45 Dinamo Zagreb – NEC: 1 (1.46) · 22.10 19:45 Union SG – Hapoel B. Sheva: 1 (1.40) · 22.10 22:00 Olympiacos – Sparta Praga: 1 (1.49) · 22.10 22:00 Lillestrøm – Real Sociedad: 2 (1.44) · 22.10 22:00 Omonia – Benfica: Peste 2.5 (1.52) · 23.10 21:30 Stuttgart – Gladbach: 1 (1.38) · 23.10 21:45 Brest – Nice: GG (1.58) · 24.10 14:30 Aston Villa – Man. City: Peste 2.5 (1.53) · 24.10 16:00 Como – Sassuolo: 1 (1.51) · 24.10 17:00 Arsenal – Everton: 1 (1.45) · 24.10 19:30 Chelsea – Tottenham: Peste 2.5 (1.51) · 24.10 21:45 Lazio – Parma: 1 (1.39) · 25.10 13:30 Inter – Fiorentina: Peste 2.5 (1.42) · 25.10 18:15 Marseille – Le Havre: 1 (1.57) · 25.10 18:30 Freiburg – Bayern: 2 (1.38) · 25.10 19:30 Real Sociedad – Levante: 1 (1.70) · 25.10 21:45 PSG – Lyon: Peste 2.5 (1.40) · 25.10 21:45 Udinese – AC Milan: 2 (1.67) · 25.10 22:00 Barcelona – Real Madrid: Peste 3.5 (1.50) · 26.10 20:00 Sepsi – Craiova: 2 (1.59)",
-  "rezultat": "",
+  "rezultat": "Dinamo Zagreb–NEC 2-4",
   "ids": [
    14744324,
    14744333,
@@ -466,10 +466,10 @@
   "tip": "Săptămânal ~30",
   "cota": 33.5,
   "sansa": 0.016,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991O-KK8QGF",
   "selectii": "22.10 19:45 Dinamo Zagreb – NEC: 1 (1.46) · 22.10 19:45 Union SG – Hapoel B. Sheva: 1 (1.40) · 22.10 22:00 Olympiacos – Sparta Praga: 1 (1.49) · 22.10 22:00 Lillestrøm – Real Sociedad: 2 (1.44) · 23.10 21:30 Stuttgart – Gladbach: 1 (1.38) · 24.10 17:00 Arsenal – Everton: 1 (1.45) · 24.10 21:45 Lazio – Parma: 1 (1.39) · 25.10 13:30 Inter – Fiorentina: Peste 2.5 (1.42) · 25.10 18:30 Freiburg – Bayern: 2 (1.38) · 25.10 21:45 PSG – Lyon: Peste 2.5 (1.40)",
-  "rezultat": "",
+  "rezultat": "Dinamo Zagreb–NEC 2-4",
   "ids": [
    14744324,
    14744333,
@@ -501,10 +501,10 @@
   "tip": "Goluri ~5",
   "cota": 5.41,
   "sansa": 0.12,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991E-WLM1YK",
   "selectii": "19:45 Juventus – Rennes: Juventus peste 1.5 goluri (1.40) · 19:45 Union SG – Hapoel B. Sheva: Union SG peste 1.5 goluri (1.39) · 19:45 Trabzonspor – Hearts: Peste 2.5 (1.37) · 22:00 Ajax – Atalanta: Peste 2.5 (1.41) · 22:00 Hoffenheim – Lyon: Peste 2.5 (1.44)",
-  "rezultat": "",
+  "rezultat": "Juventus–Rennes 2-2 · Union SG–Hapoel B. Sheva 4-0 · Trabzonspor–Hearts 2-0 · Hoffenheim–Lyon 3-0",
   "ids": [
    14744322,
    14744333,
@@ -526,10 +526,10 @@
   "tip": "Goluri ~13",
   "cota": 12.86,
   "sansa": 0.045,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990N-KMO8R3",
   "selectii": "19:45 Juventus – Rennes: Juventus peste 1.5 goluri (1.40) · 19:45 Union SG – Hapoel B. Sheva: Union SG peste 1.5 goluri (1.39) · 19:45 Trabzonspor – Hearts: Peste 2.5 (1.37) · 22:00 Ajax – Atalanta: Peste 2.5 (1.41) · 22:00 Hoffenheim – Lyon: Peste 2.5 (1.44) · 22:00 Monaco – Freiburg: Peste 2.5 (1.65) · 22:00 Beșiktaș – Crystal Palace: GG (1.44)",
-  "rezultat": "",
+  "rezultat": "Juventus–Rennes 2-2 · Union SG–Hapoel B. Sheva 4-0 · Trabzonspor–Hearts 2-0 · Hoffenheim–Lyon 3-0 · Beșiktaș–Crystal Palace 2-2",
   "ids": [
    14744322,
    14744333,
@@ -555,15 +555,33 @@
   "tip": "Pariul zilei",
   "cota": 1.62,
   "sansa": 0.62,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "991K-WWGMK1",
   "selectii": "22:00 Monaco – Freiburg: Peste 2.5 (1.62)",
-  "rezultat": "",
+  "rezultat": "Monaco–Freiburg 3-0",
   "ids": [
    14744386
   ],
   "motive": [
    "Ambele echipe dau peste 3 goluri pe meci în Conference League (Monaco 3.0, Freiburg 3.3). Pe ultimele 5 meciuri au împreună 33 de goluri, adică 3.3 pe meci, iar Freiburg a marcat 13. Estimarea noastră e în jur de 62%, puțin peste cei 60% din cota de 1.62."
+  ]
+ },
+ {
+  "id": "2026-10-23-pariu",
+  "data": "2026-10-23",
+  "tip": "Pariul zilei",
+  "cota": 1.71,
+  "sansa": 0.57,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:30 Stuttgart – Gladbach: Peste 3.5 goluri (1.71)",
+  "rezultat": "",
+  "motive": [
+   "Gladbach a primit 20 de goluri în 6 meciuri de Bundesliga (3,3/meci, cea mai slabă apărare), Stuttgart a tras 76 de șuturi în ultimele 5 meciuri față de 25 ale oaspeților, iar Stuttgart e favorită clară (1.35). Estimez ~57% pentru 4+ goluri, față de 58,5% probabilitate implicită în cotă (55% fără marjă): avantaj mic, aproape nul."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14231644
   ]
  }
 ]
