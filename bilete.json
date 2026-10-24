@@ -232,10 +232,10 @@
   "tip": "Cotă 10",
   "cota": 9.47,
   "sansa": 0.111,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990H-KKGO8N",
   "selectii": "14:30 Aston Villa – Man. City: Peste 2.5 (1.55) · 21:45 Lazio – Parma: 1 (1.46) · 16:00 Como – Sassuolo: 1 (1.52) · 17:00 Arsenal – Everton: 1 (1.41) · 22:00 Atlético – Deportivo: 1 (1.26) · 19:30 Chelsea – Tottenham: Peste 2.5 (1.55)",
-  "rezultat": "",
+  "rezultat": "Chelsea 0-2 Tottenham · Aston Villa 2-1 City · Arsenal 2-0 Everton",
   "ids": [
    14231731,
    14231674,
@@ -693,10 +693,10 @@
   "tip": "Pariul zilei",
   "cota": 1.45,
   "sansa": 0.72,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "990W-NHX5I7",
   "selectii": "14:30 Aston Villa – Man. City: Peste 2.5 goluri (1.55)",
-  "rezultat": "",
+  "rezultat": "Aston Villa 2-1 Man. City",
   "motive": [
    "Man. City: peste 2.5 goluri în 5 din ultimele 5 meciuri (18 goluri marcate, 10 primite), Aston Villa în 4 din 5 (15-5), iar ambele au scoruri de 3+ goluri recent (Villa–Tottenham 3-2, City–Ipswich 3-2). Estimez ~72% șanse pentru peste 2.5 goluri față de 64.5% implicit în cota 1.55 (avantaj mic, ~7 puncte); riscul principal e un meci închis, ca în ultimele două înfruntări directe (Villa 2-1 și 1-0)."
   ],
@@ -711,10 +711,10 @@
   "tip": "Weekend",
   "cota": 35.13,
   "sansa": 0.0351,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9912-KKOMW0",
   "selectii": "24.10 16:30 Augsburg – Union Berlin: Peste 3.5 goluri (2.20) · 24.10 17:00 Arsenal – Everton: Arsenal câștigă cu 2+ goluri (handicap -1) (2.20) · 24.10 19:30 Chelsea – Tottenham: Chelsea câștigă (1.67) · 25.10 16:30 Hoffenheim – Leverkusen: Leverkusen câștigă (2.30) · 25.10 18:30 Freiburg – Bayern: Peste 3.5 goluri (1.61)",
-  "rezultat": "",
+  "rezultat": "Chelsea 0-2 Tottenham · Arsenal 2-0 Everton",
   "motive": [
    "Augsburg: peste 2.5 goluri în toate cele 6 meciuri de ligă (16-12, ~4.7 goluri/meci), Union a primit 17 goluri în 6 meciuri; cotă ~2.20 (implicit 45%), estimez ~48%.",
    "Arsenal e 2-a cu 18 puncte (4 victorii în ultimele 5 de ligă, 10-6), cotă 1.36 la 1X2 (~70% victorie), 2-0 în ultima înfruntare și 24 victorii din 40 H2H; cota de handicap e estimat (Asian -1 la ~1.72), ~42% pentru victorie la 2+ goluri.",
@@ -763,5 +763,16 @@
    14246836,
    14231678
   ]
+ },
+ {
+  "id": "2026-10-24-weekend-r2026-10-25",
+  "data": "2026-10-25",
+  "tip": "Weekend (refăcut)",
+  "cota": 37.76,
+  "sansa": 0.0125,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "25.10 13:30 Inter – Fiorentina: Peste 2.5 (1.44) · 25.10 16:30 Hoffenheim – Leverkusen: Peste 2.5 (1.39) · 25.10 18:15 Rennes – Strasbourg: Peste 2.5 (1.44) · 25.10 18:15 Marseille – Le Havre: 1 (1.57) · 25.10 18:15 Auxerre – Le Mans: Peste 2.5 (1.69) · 25.10 18:30 Freiburg – Bayern: Peste 3.5 (1.61) · 25.10 19:30 Real Sociedad – Levante: GG (1.64) · 25.10 21:45 Udinese – AC Milan: Peste 2.5 (1.87)",
+  "rezultat": ""
  }
 ]
