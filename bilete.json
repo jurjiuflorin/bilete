@@ -735,33 +735,33 @@
   "id": "2026-10-24-cota100",
   "data": "2026-10-24",
   "tip": "Cotă 100+",
-  "cota": 164.91,
-  "sansa": 0.0301,
+  "cota": 120.78,
+  "sansa": 0.0154,
   "status": "în așteptare",
-  "cod": "991K-WWG3OX",
-  "selectii": "24.10 17:30 Utrecht – Zwolle: Peste 2.5 goluri (1.56) · 24.10 19:00 Napoli – AS Roma: Peste 8.5 cornere (1.72) · 24.10 19:30 Borussia Dortmund – Eintracht Frankfurt: Peste 3.5 cartonașe (2.05) · 25.10 15:00 Thun – Lugano: 2 (1.88) · 25.10 16:00 Hull City – Brentford: Peste 3.5 cartonașe (1.57) · 25.10 18:00 LASK Linz – RB Salzburg: Peste 9.5 cornere (1.82) · 25.10 18:15 Auxerre – Le Mans: Peste 2.5 goluri (1.69) · 25.10 18:30 Freiburg – Bayern Munchen: Peste 9.5 cornere (1.92) · 25.10 21:00 AZ Alkmaar – Twente: Peste 9.5 cornere (1.72)",
+  "cod": "990E-KKF4DV",
+  "selectii": "24.10 16:30 Mainz – Werder Bremen: Peste 2.5 goluri (1.53) · 24.10 17:30 Utrecht – Zwolle: Peste 2.5 goluri (1.56) · 24.10 19:00 Samsunspor – Amedspor: Peste 2.5 goluri (1.83) · 25.10 15:00 Thun – Lugano: 2 (1.88) · 25.10 17:00 AC Horsens – Sonderjyske: Peste 2.5 goluri (1.72) · 25.10 18:00 Goztepe – Corum FK: Peste 2.5 goluri (1.65) · 25.10 18:15 Auxerre – Le Mans: Peste 2.5 goluri (1.69) · 25.10 19:30 Real Sociedad – Levante: GG (1.64) · 25.10 21:45 Udinese – AC Milan: Peste 2.5 goluri (1.87)",
   "rezultat": "",
   "motive": [
-   "Utrecht dă 1,8 și primește 2,9 goluri pe meci, Zwolle dă 1,1 și primește 2,4; modelul dă ~77% pentru 3+ goluri, cota implică 64%.",
-   "Media cornerelor: Napoli 6,4 + Roma 5,1 = 11,5 pe meci; estimez ~68% pentru 9+ față de 58% în cotă.",
-   "Dortmund 2,7 și Frankfurt 2,3 cartonașe pe meci (5 împreună), arbitru Sven Jablonski; ~60% pentru 4+ față de 49% în cotă.",
-   "Lugano dă 3,1 goluri pe meci și primește doar 0,7, Thun primește 2,7; modelul dă ~69% victorie Lugano, cota implică 53%.",
-   "Hull 3,0 și Brentford 3,1 cartonașe pe meci (6 împreună), arbitru Robert Jones; ~73% pentru 4+ față de 64% în cotă.",
-   "LASK 8,2 + Salzburg 7,2 cornere pe meci (15,4 împreună); estimez ~73% pentru 10+ față de 55% în cotă.",
-   "Ambele primesc mult (Auxerre 2,4, Le Mans 2,1 pe meci) și dau câte ~1,5; ~65% pentru 3+ goluri față de 59% în cotă.",
-   "Bayern are 9,7 cornere pe meci, Freiburg 5,2 (14,9 împreună), arbitru Felix Zwayer; ~71% pentru 10+ față de 52% în cotă.",
-   "AZ 8,0 + Twente 7,1 cornere pe meci (15,1 împreună); estimez ~74% pentru 10+ față de 58% în cotă."
+   "Mainz dă 2,3 goluri pe meci, Werder 2,0, iar fiecare primește în jur de 2 (xG 2,3 și 1,7); ~69% pentru 3+ goluri față de 62% în cotă.",
+   "Utrecht primește 2,9 goluri pe meci, Zwolle 2,4, iar Utrecht dă 1,8; ~69% pentru 3+ goluri față de 60% în cotă.",
+   "Amedspor dă 2,3 goluri pe meci, Samsunspor primește 2,4; ~59% pentru 3+ goluri față de 52% în cotă.",
+   "Lugano dă 3,1 goluri pe meci și primește doar 0,7, Thun primește 2,7; ~60% victorie Lugano față de 50% în cotă.",
+   "Horsens 1,6 și Sonderjyske 1,5 goluri marcate pe meci, cu 1,7 și 2,2 primite; ~62% pentru 3+ goluri față de 55% în cotă.",
+   "Goztepe dă 2,1 și Corum 2,3 goluri pe meci, ambele primesc 1,6-2,0; ~65% pentru 3+ goluri față de 57% în cotă.",
+   "Auxerre primește 2,4 și Le Mans 2,1 goluri pe meci, ambele dau ~1,5 (xG 1,6 și 1,5); ~65% pentru 3+ goluri față de 56% în cotă.",
+   "Real Sociedad dă 1,9 și Levante 1,7 goluri pe meci, ambele primesc 1,9; ~63% pentru GG față de 58% în cotă.",
+   "Milan dă 2,0 goluri pe meci, Udinese primește 2,3; ~57% pentru 3+ goluri față de 51% în cotă."
   ],
   "ids": [
+   14231648,
    14231752,
-   14231676,
-   14231642,
+   14246795,
    14858246,
-   14231735,
-   15389023,
+   15198441,
+   14246791,
    14231790,
-   14231646,
-   14246816
+   14246836,
+   14231678
   ]
  }
 ]
