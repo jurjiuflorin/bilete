@@ -686,5 +686,49 @@
    "Selecție cu probabilitate mare din statisticile din campionat (estimăm 69%, cota 1.44 înseamnă 69%).",
    "Selecție cu probabilitate mare din statisticile din campionat (estimăm 71%, cota 1.38 înseamnă 72%)."
   ]
+ },
+ {
+  "id": "2026-10-24-pariu",
+  "data": "2026-10-24",
+  "tip": "Pariul zilei",
+  "cota": 1.45,
+  "sansa": 0.72,
+  "status": "în așteptare",
+  "cod": "990W-NHX5I7",
+  "selectii": "14:30 Aston Villa – Man. City: Peste 2.5 goluri (1.55)",
+  "rezultat": "",
+  "motive": [
+   "Man. City: peste 2.5 goluri în 5 din ultimele 5 meciuri (18 goluri marcate, 10 primite), Aston Villa în 4 din 5 (15-5), iar ambele au scoruri de 3+ goluri recent (Villa–Tottenham 3-2, City–Ipswich 3-2). Estimez ~72% șanse pentru peste 2.5 goluri față de 64.5% implicit în cota 1.55 (avantaj mic, ~7 puncte); riscul principal e un meci închis, ca în ultimele două înfruntări directe (Villa 2-1 și 1-0)."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14231731
+  ]
+ },
+ {
+  "id": "2026-10-24-weekend",
+  "data": "2026-10-24",
+  "tip": "Weekend",
+  "cota": 35.13,
+  "sansa": 0.0351,
+  "status": "în așteptare",
+  "cod": "9912-KKOMW0",
+  "selectii": "24.10 16:30 Augsburg – Union Berlin: Peste 3.5 goluri (2.20) · 24.10 17:00 Arsenal – Everton: Arsenal câștigă cu 2+ goluri (handicap -1) (2.20) · 24.10 19:30 Chelsea – Tottenham: Chelsea câștigă (1.67) · 25.10 16:30 Hoffenheim – Leverkusen: Leverkusen câștigă (2.30) · 25.10 18:30 Freiburg – Bayern: Peste 3.5 goluri (1.61)",
+  "rezultat": "",
+  "motive": [
+   "Augsburg: peste 2.5 goluri în toate cele 6 meciuri de ligă (16-12, ~4.7 goluri/meci), Union a primit 17 goluri în 6 meciuri; cotă ~2.20 (implicit 45%), estimez ~48%.",
+   "Arsenal e 2-a cu 18 puncte (4 victorii în ultimele 5 de ligă, 10-6), cotă 1.36 la 1X2 (~70% victorie), 2-0 în ultima înfruntare și 24 victorii din 40 H2H; cota de handicap e estimat (Asian -1 la ~1.72), ~42% pentru victorie la 2+ goluri.",
+   "Chelsea are 83% victorii acasă și 3.67 goluri/meci pe Stamford Bridge, Tottenham 0 victorii în deplasare (loc 16, 6 puncte); piața dă ~53% Chelsea, cotă 1.67, estimez 60%.",
+   "Leverkusen: 5 victorii din 5 recent (14-4) și 4.33 goluri/meci în deplasare, Hoffenheim (loc 14) a primit 14 goluri în 6 meciuri; piața ~42%, estimez 50% (riscul: 2 victorii Hoffenheim în H2H).",
+   "Bayern 22 goluri marcate și 5 primite în 6 meciuri de ligă (media ultimelor 10: 3.6 marcate), ultimele două H2H cu 8 și 5 goluri (6-2, 2-3), Freiburg 15 goluri marcate; cotă 1.61, ~58%."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14231647,
+   14231702,
+   14231732,
+   14231645,
+   14231646
+  ]
  }
 ]
