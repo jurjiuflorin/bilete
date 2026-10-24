@@ -1,181 +1,145 @@
 {
- "data": "2026-10-23",
- "actualizat": "2026-10-23T13:09:25Z",
+ "data": "2026-10-24",
+ "actualizat": "2026-10-24T13:24:40Z",
  "meciuri": [
   {
-   "data": "2026-10-23",
-   "ora": "22:00",
-   "liga": "Premier League",
-   "gazde": "Ipswich",
-   "oaspeti": "Nottm Forest",
-   "forma_gazde": "IVIVI",
-   "forma_oaspeti": "EVIII",
-   "loc_gazde": 10,
-   "loc_oaspeti": 19,
-   "absenti_gazde": [
-    "Lukic (accidentat, incert)"
-   ],
-   "absenti_oaspeti": [
-    "Igor Jesus (accidentat)",
-    "Savona (accidentat)",
-    "Gibbs-White (problemă musculară, incert)"
-   ],
-   "marcatori_gazde": "Flemming 2 goluri",
-   "marcatori_oaspeti": "Delap 1 gol (PL)",
-   "arbitru": "Thomas Bramall",
-   "nota": "Forest vine după trei înfrângeri la rând și a marcat doar 5 goluri în acest sezon."
+   "id": 14231680,
+   "data": "2026-10-24",
+   "ora": "15:30",
+   "liga": "Romania SuperLiga",
+   "gazde": "Csikszereda",
+   "oaspeti": "Voluntari",
+   "loc_gazde": 16,
+   "loc_oaspeti": 15,
+   "arbitru": "George Găman",
+   "nota": "Csikszereda e ultima, 2 puncte, singura fără victorie după 12 etape."
   },
   {
-   "data": "2026-10-23",
-   "ora": "21:30",
-   "liga": "Bundesliga",
-   "gazde": "Stuttgart",
-   "oaspeti": "M'gladbach",
-   "forma_gazde": "VVVIE",
-   "forma_oaspeti": "",
+   "id": 14231686,
+   "data": "2026-10-24",
+   "ora": "18:00",
+   "liga": "Romania SuperLiga",
+   "gazde": "Argeș",
+   "oaspeti": "UTA",
    "loc_gazde": 13,
-   "loc_oaspeti": 18,
+   "loc_oaspeti": 10,
    "absenti_gazde": [
-    "Diehl (accidentat)",
-    "Zagadou (accidentat)",
-    "Vagnoman (accidentat)",
-    "Tomas (accidentat)"
+    "Oancea (suspendat)",
+    "Tudose (accidentat)",
+    "Sierra (accidentat)",
+    "Moldoveanu (accidentat)"
    ],
    "absenti_oaspeti": [
-    "Itakura (accidentat)",
-    "Castrop (accidentat)",
-    "Honorat (accidentat)",
-    "Kleindienst (accidentat)",
-    "Leszczynski (accidentat)",
-    "Leopold (accidentat)"
+    "Benga (suspendat)",
+    "Pitu (absent)",
+    "Odada (absent)",
+    "Pospelov (absent)",
+    "Dorobanțu (absent)",
+    "Oaidă (absent)"
    ],
-   "marcatori_gazde": "",
-   "marcatori_oaspeti": "",
-   "nota": "Gladbach nu are nicio victorie în primele 6 etape."
+   "marcatori_gazde": "Moldoveanu 3 goluri",
+   "marcatori_oaspeti": "Coman 4 goluri",
+   "arbitru": "Gabriel Mihuleac",
+   "nota": "Argeș nu a câștigat în ultimele 8 meciuri de campionat."
   },
   {
-   "data": "2026-10-23",
+   "id": 14231679,
+   "data": "2026-10-24",
+   "ora": "21:00",
+   "liga": "Romania SuperLiga",
+   "gazde": "FCSB",
+   "oaspeti": "Rapid",
+   "loc_gazde": 6,
+   "loc_oaspeti": 2,
+   "absenti_gazde": [
+    "Drăguș (accidentat)"
+   ],
+   "absenti_oaspeti": [
+    "Vulturar (indisponibil)",
+    "Talisson (indisponibil)",
+    "Graovac (indisponibil)"
+   ],
+   "arbitru": "Horațiu Feșnic",
+   "nota": "Rapid vine după 5 victorii consecutive; FCSB are 2 victorii sub Reghecampf."
+  },
+  {
+   "id": 14231731,
+   "data": "2026-10-24",
+   "ora": "14:30",
+   "liga": "Premier League",
+   "gazde": "Aston Villa",
+   "oaspeti": "Man. City",
+   "loc_gazde": 12,
+   "loc_oaspeti": 1,
+   "absenti_gazde": [
+    "Wan-Bissaka (accidentat, revine ~21 nov)",
+    "Manzambi (gambă, incert)"
+   ],
+   "absenti_oaspeti": [
+    "Semenyo (genunchi)",
+    "O'Reilly (spate, incert)"
+   ],
+   "marcatori_oaspeti": "Haaland"
+  },
+  {
+   "id": 14231702,
+   "data": "2026-10-24",
+   "ora": "17:00",
+   "liga": "Premier League",
+   "gazde": "Arsenal",
+   "oaspeti": "Everton",
+   "loc_gazde": 2,
+   "loc_oaspeti": 8,
+   "absenti_gazde": [
+    "Saka (coapsă, 50%)",
+    "Tzolis (ischiogambieri, revine ~1 nov)",
+    "Hincapie (gleznă, incert)"
+   ],
+   "absenti_oaspeti": []
+  },
+  {
+   "id": 14231732,
+   "data": "2026-10-24",
+   "ora": "19:30",
+   "liga": "Premier League",
+   "gazde": "Chelsea",
+   "oaspeti": "Tottenham",
+   "loc_gazde": 4,
+   "loc_oaspeti": 16,
+   "absenti_gazde": [
+    "Martinez (cap)",
+    "James (genunchi)",
+    "Gusto (boală, incert)",
+    "Chavarria (incert)"
+   ],
+   "absenti_oaspeti": [
+    "Bentancur (suspendat până pe 7 nov)",
+    "Sávio (muscular, revine ~7 nov)",
+    "Robertson (picior, incert)",
+    "Marmoush (gambă, incert)",
+    "Porro (ischiogambieri, aproape de revenire)"
+   ],
+   "marcatori_gazde": "João Pedro"
+  },
+  {
+   "id": 14231674,
+   "data": "2026-10-24",
    "ora": "21:45",
    "liga": "Serie A",
-   "gazde": "Torino",
-   "oaspeti": "Monza",
-   "absenti_gazde": [
-    "Ilkhan (accidentat)",
-    "Fortini (accidentat)",
-    "Ricardo Rodríguez (accidentat)"
-   ],
-   "absenti_oaspeti": [
-    "Ziolkowski (accidentat)",
-    "Pessina (accidentat)",
-    "Idrissa Touré (incert)"
-   ],
-   "marcatori_gazde": "Che Adams 3 goluri",
-   "marcatori_oaspeti": "Varela 6 goluri",
-   "forma_gazde": "VIEVV",
-   "forma_oaspeti": "EIVIV",
-   "loc_gazde": null,
-   "loc_oaspeti": 14
+   "gazde": "Lazio",
+   "oaspeti": "Parma",
+   "loc_gazde": 2,
+   "loc_oaspeti": 19
   },
   {
-   "data": "2026-10-23",
-   "ora": "21:45",
-   "liga": "Ligue 1",
-   "gazde": "Brest",
-   "oaspeti": "Nice",
-   "loc_gazde": 10,
-   "loc_oaspeti": 13,
-   "absenti_gazde": [
-    "Le Guen (indisponibil)",
-    "Chardonnet (indisponibil)",
-    "Versini (incert)"
-   ],
-   "absenti_oaspeti": [
-    "Mendy (indisponibil)",
-    "Abergel (indisponibil)",
-    "Bombito (indisponibil)",
-    "Abdi (incert)"
-   ],
-   "marcatori_gazde": "",
-   "marcatori_oaspeti": "",
-   "nota": "Nice a pierdut toate cele trei deplasări de până acum."
-  },
-  {
-   "data": "2026-10-23",
+   "id": 14246831,
+   "data": "2026-10-24",
    "ora": "22:00",
    "liga": "LaLiga",
-   "gazde": "Alaves",
-   "oaspeti": "Malaga",
-   "loc_gazde": 7,
-   "loc_oaspeti": 20,
-   "absenti_gazde": [
-    "Garcés (indisponibil)",
-    "Mikel Rodríguez (indisponibil)"
-   ],
-   "absenti_oaspeti": [
-    "Murillo (accidentat)",
-    "Lobete (accidentat)",
-    "Ochoa (incert)",
-    "Juan Cruz (incert)"
-   ],
-   "marcatori_gazde": "Boyé 5 goluri",
-   "marcatori_oaspeti": "Niño 3 goluri",
-   "nota": "Málaga nu a câștigat încă și are un singur punct în deplasare.",
-   "forma_gazde": "IIEII",
-   "forma_oaspeti": "EIIEI"
-  },
-  {
-   "data": "2026-10-23",
-   "ora": "22:00",
-   "liga": "Championship",
-   "gazde": "Bolton",
-   "oaspeti": "Middlesbrough",
-   "forma_gazde": "VVIVE",
-   "forma_oaspeti": "EEVVE",
-   "loc_gazde": 15,
-   "loc_oaspeti": 3,
-   "absenti_gazde": [
-    "Forino (accidentat)"
-   ],
-   "absenti_oaspeti": [
-    "Strelec (accidentat)",
-    "Pukstas (indisponibil)",
-    "Alfie Jones (accidentat)"
-   ],
-   "marcatori_gazde": "",
-   "marcatori_oaspeti": ""
-  },
-  {
-   "data": "2026-10-23",
-   "ora": "22:45",
-   "liga": "Liga Portugal",
-   "gazde": "Guimaraes",
-   "oaspeti": "Maritimo"
-  },
-  {
-   "id": 14231683,
-   "data": "2026-10-23",
-   "ora": "18:00",
-   "liga": "SuperLiga",
-   "gazde": "Botosani",
-   "oaspeti": "Petrolul Ploiesti",
-   "arbitru": "Marcel Bîrsan",
-   "arbitru_galbene": 4.73,
-   "arbitru_rosii": 0.2,
-   "arbitru_meciuri": 15,
-   "arbitru_sezon": "Liga 1 2024/25"
-  },
-  {
-   "id": 14231685,
-   "data": "2026-10-23",
-   "ora": "21:00",
-   "liga": "SuperLiga",
-   "gazde": "Corvinul Hunedoara",
-   "oaspeti": "U Cluj",
-   "arbitru": "Adrian Cojocaru",
-   "arbitru_galbene": 5.13,
-   "arbitru_rosii": 0.27,
-   "arbitru_meciuri": 15,
-   "arbitru_sezon": "Liga 1 2024/25"
+   "gazde": "Atlético",
+   "oaspeti": "Deportivo",
+   "loc_gazde": 2,
+   "loc_oaspeti": 9
   }
  ]
 }
