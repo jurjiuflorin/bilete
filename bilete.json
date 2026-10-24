@@ -730,5 +730,38 @@
    14231645,
    14231646
   ]
+ },
+ {
+  "id": "2026-10-24-cota100",
+  "data": "2026-10-24",
+  "tip": "Cotă 100+",
+  "cota": 164.91,
+  "sansa": 0.0301,
+  "status": "în așteptare",
+  "cod": "991K-WWG3OX",
+  "selectii": "24.10 17:30 Utrecht – Zwolle: Peste 2.5 goluri (1.56) · 24.10 19:00 Napoli – AS Roma: Peste 8.5 cornere (1.72) · 24.10 19:30 Borussia Dortmund – Eintracht Frankfurt: Peste 3.5 cartonașe (2.05) · 25.10 15:00 Thun – Lugano: 2 (1.88) · 25.10 16:00 Hull City – Brentford: Peste 3.5 cartonașe (1.57) · 25.10 18:00 LASK Linz – RB Salzburg: Peste 9.5 cornere (1.82) · 25.10 18:15 Auxerre – Le Mans: Peste 2.5 goluri (1.69) · 25.10 18:30 Freiburg – Bayern Munchen: Peste 9.5 cornere (1.92) · 25.10 21:00 AZ Alkmaar – Twente: Peste 9.5 cornere (1.72)",
+  "rezultat": "",
+  "motive": [
+   "Utrecht dă 1,8 și primește 2,9 goluri pe meci, Zwolle dă 1,1 și primește 2,4; modelul dă ~77% pentru 3+ goluri, cota implică 64%.",
+   "Media cornerelor: Napoli 6,4 + Roma 5,1 = 11,5 pe meci; estimez ~68% pentru 9+ față de 58% în cotă.",
+   "Dortmund 2,7 și Frankfurt 2,3 cartonașe pe meci (5 împreună), arbitru Sven Jablonski; ~60% pentru 4+ față de 49% în cotă.",
+   "Lugano dă 3,1 goluri pe meci și primește doar 0,7, Thun primește 2,7; modelul dă ~69% victorie Lugano, cota implică 53%.",
+   "Hull 3,0 și Brentford 3,1 cartonașe pe meci (6 împreună), arbitru Robert Jones; ~73% pentru 4+ față de 64% în cotă.",
+   "LASK 8,2 + Salzburg 7,2 cornere pe meci (15,4 împreună); estimez ~73% pentru 10+ față de 55% în cotă.",
+   "Ambele primesc mult (Auxerre 2,4, Le Mans 2,1 pe meci) și dau câte ~1,5; ~65% pentru 3+ goluri față de 59% în cotă.",
+   "Bayern are 9,7 cornere pe meci, Freiburg 5,2 (14,9 împreună), arbitru Felix Zwayer; ~71% pentru 10+ față de 52% în cotă.",
+   "AZ 8,0 + Twente 7,1 cornere pe meci (15,1 împreună); estimez ~74% pentru 10+ față de 58% în cotă."
+  ],
+  "ids": [
+   14231752,
+   14231676,
+   14231642,
+   14858246,
+   14231735,
+   15389023,
+   14231790,
+   14231646,
+   14246816
+  ]
  }
 ]
