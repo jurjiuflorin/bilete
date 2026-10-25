@@ -46,7 +46,8 @@ if (fs.existsSync(file) && !force) { console.log('exista deja', file); process.e
 const T = new Map(); LEAGUES.forEach(([, , ids], i) => ids.forEach(id => T.set(String(id), i)));
 const st0 = await getJ(OB + '/v2/ro-RO/struct');
 for (const t of ((st0.data || st0).tournaments || [])) { const n = nrm(t.localNames && (t.localNames['ro-RO'] || Object.values(t.localNames)[0])).replace(/\s+/g, ' ').trim(); const i = LEAGUES.findIndex(L => L[1].test(n)); if (i >= 0) T.set(String(t.id), i); }
-const ev = await getJ(OB + '/v3/ro-RO/events?index=active-prematch&startDate=' + new Date(now - 6 * 36e5).toISOString() + '&endDate=2027-04-20T00:00:00.000Z');
+const h0 = Math.floor(now / 36e5) * 36e5; // feedul cere ore întregi (fără milisecunde)
+const ev = await getJ(OB + '/v3/ro-RO/events?index=active-prematch&startDate=' + new Date(h0 - 3 * 36e5).toISOString() + '&endDate=' + new Date(h0 + 30 * 36e5).toISOString());
 const list = [];
 for (const e of (ev.events || [])) {
   const f = e.fixture || {}; if (f.sport_id !== 5) continue;
