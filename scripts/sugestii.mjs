@@ -34,7 +34,7 @@ const dayKey = d => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Buchare
 const f1 = v => String(Math.round(v * 10) / 10).replace('.', ',');
 const pois = (l, k) => { let p = Math.exp(-l); for (let i = 1; i <= k; i++) p *= l / i; return p; };
 const poisOverL = (l, line) => { let c = 0; for (let k = 0; k <= Math.floor(line); k++) c += pois(l, k); return Math.max(0, 1 - c); };
-const getJ = async u => { for (let i = 0; i < 3; i++) { try { const r = await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0', accept: 'application/json' } }); if (r.ok) return await r.json(); } catch (e) {} await new Promise(r => setTimeout(r, 1500)); } return {}; };
+const getJ = async u => { for (let i = 0; i < 3; i++) { try { const r = await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0', accept: 'application/json' } }); if (r.ok) return await r.json(); console.log('HTTP', r.status, u.slice(0, 90)); } catch (e) { console.log('ERR', String(e).slice(0, 120), u.slice(0, 90)); } await new Promise(r => setTimeout(r, 1500)); } return {}; };
 async function pool(items, n, fn) { const out = []; let i = 0; await Promise.all(Array.from({ length: Math.min(n, items.length) }, async () => { while (i < items.length) { const k = i++; try { out[k] = await fn(items[k]); } catch (e) { out[k] = null; } } })); return out; }
 function lines(mk, name) { const m = (mk || []).find(x => x.name === name); const o = {}; if (m) for (const x of m.odds || []) { const r = /^Peste (\d+\.5)$/.exec(x.name); if (r && x.price) o[r[1]] = x.price; } return o; }
 function bestLine(lam, odds) { let b = null; for (const [L, od] of Object.entries(odds)) { if (od < SUG_MIN || od > SUG_MAX) continue; const pm = poisOverL(lam, +L); const p = Math.min(0.88, 0.5 * pm + 0.5 * (1 / od) / 1.06); if (!b || p > b.p) b = { line: L, od, p }; } return b; }
@@ -46,7 +46,7 @@ if (fs.existsSync(file) && !force) { console.log('exista deja', file); process.e
 const T = new Map(); LEAGUES.forEach(([, , ids], i) => ids.forEach(id => T.set(String(id), i)));
 const st0 = await getJ(OB + '/v2/ro-RO/struct');
 for (const t of ((st0.data || st0).tournaments || [])) { const n = nrm(t.localNames && (t.localNames['ro-RO'] || Object.values(t.localNames)[0])).replace(/\s+/g, ' ').trim(); const i = LEAGUES.findIndex(L => L[1].test(n)); if (i >= 0) T.set(String(t.id), i); }
-const ev = await getJ(OB + '/v3/ro-RO/events?index=active-prematch&startDate=' + new Date(now - 6 * 36e5).toISOString() + '&endDate=' + new Date(+now + 30 * 36e5).toISOString());
+const ev = await getJ(OB + '/v3/ro-RO/events?index=active-prematch&startDate=' + new Date(now - 6 * 36e5).toISOString() + '&endDate=2027-04-20T00:00:00.000Z');
 const list = [];
 for (const e of (ev.events || [])) {
   const f = e.fixture || {}; if (f.sport_id !== 5) continue;
