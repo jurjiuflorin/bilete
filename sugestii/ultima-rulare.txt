@@ -1,2 +1,5 @@
+HTTP 400 https://production-superbet-offer-ro.freetls.fastly.net/v3/ro-RO/events?index=active-prema
+HTTP 400 https://production-superbet-offer-ro.freetls.fastly.net/v3/ro-RO/events?index=active-prema
+HTTP 400 https://production-superbet-offer-ro.freetls.fastly.net/v3/ro-RO/events?index=active-prema
 evenimente 0 meciuri azi 0
 nicio sugestie (feed indisponibil?)
