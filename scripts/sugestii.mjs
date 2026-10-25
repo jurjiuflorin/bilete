@@ -42,6 +42,8 @@ function bestLine(lam, odds) { let b = null; for (const [L, od] of Object.entrie
 const force = process.argv.includes('--force');
 const now = new Date(), key = dayKey(now), file = `sugestii/${key}.json`;
 if (fs.existsSync(file) && !force) { console.log('exista deja', file); process.exit(0); }
+const hr = +new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Bucharest', hour: '2-digit', hour12: false }).format(now);
+if (hr < 7 && !force) { console.log('prea devreme pentru lista zilei', hr); process.exit(0); }
 
 const T = new Map(); LEAGUES.forEach(([, , ids], i) => ids.forEach(id => T.set(String(id), i)));
 const st0 = await getJ(OB + '/v2/ro-RO/struct');

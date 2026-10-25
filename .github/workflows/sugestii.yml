@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: '30 6 * * *'   # ~08:30-09:30 la București
     - cron: '30 8 * * *'   # rezervă, dacă prima rulare a picat
+    - cron: '15 22 * * *'  # rezultatele zilei, după ultimele meciuri
   workflow_dispatch:
     inputs:
       force:
@@ -23,6 +24,7 @@ jobs:
       - run: |
           mkdir -p sugestii
           node scripts/sugestii.mjs ${{ inputs.force && '--force' || '' }} 2>&1 | tee sugestii/ultima-rulare.txt
+          node scripts/sugestii-rezultate.mjs 2>&1 | tee -a sugestii/ultima-rulare.txt
       - name: Commit
         run: |
           git add sugestii

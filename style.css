@@ -419,3 +419,15 @@ button.hero-tip:hover,button.hero-tip:focus-visible{text-decoration-color:#1d1f1
 .sg-list li[data-res=won]{box-shadow:inset 3px 0 0 var(--won)}
 .sg-list li[data-res=lost]{box-shadow:inset 3px 0 0 var(--lost)}
 .sg-list li[data-res=lost] .m{text-decoration:line-through;text-decoration-color:var(--lost)}
+.sg-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:0 0 18px}
+.sg-bar .sg-seg{margin:0}
+.sg-pick{background:rgba(0,0,0,.3);color:var(--chalk);border:1px solid rgba(255,255,255,.15);border-radius:999px;font:600 15px var(--ui);padding:8px 14px;max-width:100%}
+.sg-pick option{color:#111}
+.sg-tot{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0 0 14px;color:var(--chalk-dim);font-size:14px}
+.sg-tot b{color:var(--chalk);font:700 16px var(--ui)}
+.sg-tot .c{font-size:13px}
+.sg-bar{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:0 0 14px}
+.sg-bar .sg-seg{margin:0}
+.sg-date{display:inline-flex;align-items:center;gap:8px;color:var(--chalk-dim);font:600 14px var(--ui)}
+.sg-date input{background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.15);color:var(--chalk);font:500 14px var(--ui);padding:7px 10px;border-radius:999px;color-scheme:dark}
+.sg-day{font:800 28px/1 var(--display);margin:0 0 14px;text-transform:capitalize}
