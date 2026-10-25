@@ -190,10 +190,10 @@
   "tip": "Cotă 2",
   "cota": 1.95,
   "sansa": 0.576,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "991D-KKHSVX",
   "selectii": "22:00 Atlético – Deportivo: 1 (1.26) · 14:30 Aston Villa – Man. City: Peste 2.5 (1.55)",
-  "rezultat": "",
+  "rezultat": "Atlético–Deportivo 1-0 · Aston Villa–City 2-1",
   "ids": [
    14246831,
    14231731
@@ -209,10 +209,10 @@
   "tip": "Cotă 5",
   "cota": 4.85,
   "sansa": 0.22,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "9902-KL6PUK",
   "selectii": "14:30 Aston Villa – Man. City: Peste 2.5 (1.55) · 21:45 Lazio – Parma: 1 (1.46) · 16:00 Como – Sassuolo: 1 (1.52) · 17:00 Arsenal – Everton: 1 (1.41)",
-  "rezultat": "",
+  "rezultat": "Aston Villa–City 2-1 · Lazio–Parma 2-1 · Como–Sassuolo 2-0 · Arsenal–Everton 2-0",
   "ids": [
    14231731,
    14231674,
@@ -590,10 +590,10 @@
   "tip": "SuperLiga 26+27",
   "cota": 17.85,
   "sansa": 0.0674,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991L-WLZ6Y5",
   "selectii": "23.10 18:00 Botoșani – Petrolul: Peste 4.5 cartonașe (1.56) · 23.10 21:00 Corvinul – U Cluj: Peste 4.5 cartonașe (1.58) · 24.10 15:30 Csikszereda – Voluntari: X2 (1.43) · 24.10 18:00 Argeș – UTA: Sub 2.5 (1.62) · 25.10 19:00 CFR – Dinamo: 2 (1.85) · 26.10 20:00 Sepsi – Craiova: Craiova peste 1.5 goluri (1.69)",
-  "rezultat": "",
+  "rezultat": "Csikszereda–Voluntari 2-1 (X2 pierdut)",
   "ids": [
    14231683,
    14231685,
@@ -617,10 +617,10 @@
   "tip": "Weekend",
   "cota": 44.52,
   "sansa": 0.0346,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991I-WWTDX4",
   "selectii": "24.10 16:30 Augsburg – Union Berlin: 1 (1.87) · 24.10 15:00 Rayo – Elche: Peste 2.5 (1.87) · 25.10 16:00 Liverpool – Brighton: X2 (1.71) · 25.10 18:15 Auxerre – Le Mans: Peste 2.5 (1.69) · 24.10 16:30 Mainz – Werder: Peste 2.5 (1.54) · 25.10 21:45 Udinese – AC Milan: Peste 2.5 (1.87) · 24.10 21:45 Lens – Paris FC: GG (1.53)",
-  "rezultat": "",
+  "rezultat": "Augsburg–Union Berlin 1-1 (selecția 1 pierdută)",
   "ids": [
    14231647,
    14246835,
@@ -646,10 +646,10 @@
   "tip": "Mega weekend 16",
   "cota": 271.66,
   "sansa": 0.0045,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9917-WWO9TE",
   "selectii": "25.10 16:00 Monaco – Lille: Sub 3.5 (1.39) · 25.10 19:30 Real Sociedad – Levante: Levante peste 0.5 goluri (1.42) · 24.10 17:00 Arsenal – Everton: Sub 3.5 (1.37) · 25.10 16:00 Genoa – Venezia: Venezia peste 0.5 goluri (1.39) · 25.10 16:30 Hoffenheim – Leverkusen: Peste 2.5 (1.39) · 25.10 18:30 Sunderland – Leeds: Peste 1.5 (1.35) · 25.10 13:30 Inter – Fiorentina: Peste 2.5 (1.42) · 24.10 21:45 Lazio – Parma: Sub 3.5 (1.35) · 25.10 16:00 Hull – Brentford: Sub 3.5 (1.49) · 24.10 16:30 Paderborn – Hamburg: 1X (1.38) · 25.10 18:15 Rennes – Strasbourg: Peste 2.5 (1.44) · 24.10 16:30 RB Leipzig – Elversberg: GG (1.42) · 25.10 19:00 Lecce – Juventus: Lecce peste 0.5 goluri (1.73) · 24.10 16:00 Cagliari – Bologna: Cagliari peste 0.5 goluri (1.39) · 24.10 19:00 Napoli – Roma: X2 (1.44) · 25.10 17:15 Celta Vigo – Betis: Sub 3.5 (1.38)",
-  "rezultat": "",
+  "rezultat": "RB Leipzig–Elversberg 4-0 (GG pierdut) · Arsenal–Everton 2-0 · Lazio–Parma 2-1 · Paderborn–Hamburg 1-0",
   "ids": [
    14231794,
    14246836,
@@ -737,10 +737,10 @@
   "tip": "Cotă 100+",
   "cota": 120.78,
   "sansa": 0.0154,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990E-KKF4DV",
   "selectii": "24.10 16:30 Mainz – Werder Bremen: Peste 2.5 goluri (1.53) · 24.10 17:30 Utrecht – Zwolle: Peste 2.5 goluri (1.56) · 24.10 19:00 Samsunspor – Amedspor: Peste 2.5 goluri (1.83) · 25.10 15:00 Thun – Lugano: 2 (1.88) · 25.10 17:00 AC Horsens – Sonderjyske: Peste 2.5 goluri (1.72) · 25.10 18:00 Goztepe – Corum FK: Peste 2.5 goluri (1.65) · 25.10 18:15 Auxerre – Le Mans: Peste 2.5 goluri (1.69) · 25.10 19:30 Real Sociedad – Levante: GG (1.64) · 25.10 21:45 Udinese – AC Milan: Peste 2.5 goluri (1.87)",
-  "rezultat": "",
+  "rezultat": "Utrecht–Zwolle 1-1 (peste 2.5 pierdut) · Mainz–Werder 2-3",
   "motive": [
    "Mainz dă 2,3 goluri pe meci, Werder 2,0, iar fiecare primește în jur de 2 (xG 2,3 și 1,7); ~69% pentru 3+ goluri față de 62% în cotă.",
    "Utrecht primește 2,9 goluri pe meci, Zwolle 2,4, iar Utrecht dă 1,8; ~69% pentru 3+ goluri față de 60% în cotă.",
@@ -768,11 +768,39 @@
   "id": "2026-10-24-weekend-r2026-10-25",
   "data": "2026-10-25",
   "tip": "Weekend (refăcut)",
-  "cota": 37.76,
+  "cota": 34.58,
   "sansa": 0.0125,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "991S-WLYQV3",
   "selectii": "25.10 13:30 Inter – Fiorentina: Peste 2.5 (1.44) · 25.10 16:30 Hoffenheim – Leverkusen: Peste 2.5 (1.39) · 25.10 18:15 Rennes – Strasbourg: Peste 2.5 (1.44) · 25.10 18:15 Marseille – Le Havre: 1 (1.57) · 25.10 18:15 Auxerre – Le Mans: Peste 2.5 (1.69) · 25.10 18:30 Freiburg – Bayern: Peste 3.5 (1.61) · 25.10 19:30 Real Sociedad – Levante: GG (1.64) · 25.10 21:45 Udinese – AC Milan: Peste 2.5 (1.87)",
-  "rezultat": ""
+  "rezultat": "",
+  "ids": [
+   14231673,
+   14231645,
+   14231795,
+   14231793,
+   14231790,
+   14231646,
+   14246836,
+   14231678
+  ]
+ },
+ {
+  "id": "2026-10-25-pariu",
+  "data": "2026-10-25",
+  "tip": "Pariul zilei",
+  "cota": 1.92,
+  "sansa": 0.56,
+  "status": "în așteptare",
+  "cod": "9906-NDP9C5",
+  "selectii": "18:30 Freiburg – Bayern: Bayern peste 2.5 goluri (1.92)",
+  "rezultat": "",
+  "motive": [
+   "Bayern are 3.7 goluri marcate pe meci în Bundesliga (xG 3.5, 10.3 șuturi pe poartă), iar Freiburg primește 1.0 pe meci; la nivelul acesta Bayern are ~55-58% să marcheze 3+ goluri, față de 52% implicit în cota 1.92 (avantaj mic, ~4 puncte). Estimez 56%. Riscuri: Freiburg se apără bine acasă (primește doar 1.0) și Bayern ar putea gestiona avantajul."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14231646
+  ]
  }
 ]
