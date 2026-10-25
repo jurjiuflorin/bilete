@@ -20,7 +20,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/sugestii.mjs ${{ inputs.force && '--force' || '' }}
+      - run: |
+          mkdir -p sugestii
+          node scripts/sugestii.mjs ${{ inputs.force && '--force' || '' }} 2>&1 | tee sugestii/ultima-rulare.txt
       - name: Commit
         run: |
           git add sugestii
