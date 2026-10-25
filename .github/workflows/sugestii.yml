@@ -1,0 +1,30 @@
+name: Sugestii zilnice
+on:
+  schedule:
+    - cron: '30 6 * * *'   # ~08:30-09:30 la București
+    - cron: '30 8 * * *'   # rezervă, dacă prima rulare a picat
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Rescrie lista de azi'
+        type: boolean
+        default: false
+permissions:
+  contents: write
+concurrency: sugestii
+jobs:
+  save:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/sugestii.mjs ${{ inputs.force && '--force' || '' }}
+      - name: Commit
+        run: |
+          git add sugestii
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -m "Sugestii $(TZ=Europe/Bucharest date +%F)"
+          for i in 1 2 3; do git push && exit 0; git pull --rebase; done
+          exit 1
