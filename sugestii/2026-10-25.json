@@ -1,0 +1,215 @@
+{
+ "data": "2026-10-25",
+ "salvat": "2026-10-25T12:14:24.198Z",
+ "n": 55,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14246796,
+    "meci": "Sparta Rotterdam – Ajax Amsterdam",
+    "when": "2026-10-25T15:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.36,
+    "p": 0.745,
+    "why": "Sparta Rotterdam dă 1,8 și primește 2,4 goluri pe meci; Ajax Amsterdam dă 3 și primește 1,3."
+   },
+   {
+    "id": 14858246,
+    "meci": "Thun – Lugano",
+    "when": "2026-10-25T13:00:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.38,
+    "p": 0.733,
+    "why": "Thun dă 1,7 și primește 2,7 goluri pe meci; Lugano dă 3,1 și primește 0,7."
+   },
+   {
+    "id": 14231739,
+    "meci": "Sunderland – Leeds United",
+    "when": "2026-10-25T16:30:00.000Z",
+    "liga": "Premier League",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.37,
+    "p": 0.727,
+    "why": "Sunderland dă 0,9 și primește 2 goluri pe meci; Leeds United dă 1,3 și primește 0,9."
+   },
+   {
+    "id": 14246785,
+    "meci": "NEC Nijmegen – Groningen",
+    "when": "2026-10-25T13:30:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.38,
+    "p": 0.717,
+    "why": "NEC Nijmegen dă 1,7 și primește 1,8 goluri pe meci; Groningen dă 2,4 și primește 2,1."
+   },
+   {
+    "id": 14764526,
+    "meci": "Basel – Grasshopper",
+    "when": "2026-10-25T15:30:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.4,
+    "p": 0.706,
+    "why": "Basel dă 1,7 și primește 2 goluri pe meci; Grasshopper dă 1,3 și primește 2,6."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14231646,
+    "meci": "Freiburg – Bayern Munchen",
+    "when": "2026-10-25T16:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.42,
+    "p": 0.689,
+    "why": "Freiburg marchează 2,5 și primește 1 pe meci; Bayern Munchen marchează 3,7 și primește 0,8."
+   },
+   {
+    "id": 14764526,
+    "meci": "Basel – Grasshopper",
+    "when": "2026-10-25T15:30:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.42,
+    "p": 0.689,
+    "why": "Basel marchează 1,7 și primește 2 pe meci; Grasshopper marchează 1,3 și primește 2,6."
+   },
+   {
+    "id": 14246796,
+    "meci": "Sparta Rotterdam – Ajax Amsterdam",
+    "when": "2026-10-25T15:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.51,
+    "p": 0.689,
+    "why": "Sparta Rotterdam marchează 1,8 și primește 2,4 pe meci; Ajax Amsterdam marchează 3 și primește 1,3."
+   },
+   {
+    "id": 14231795,
+    "meci": "Rennes – Strasbourg",
+    "when": "2026-10-25T16:15:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "GG (ambele marchează)",
+    "od": 1.46,
+    "p": 0.684,
+    "why": "Rennes marchează 2,1 și primește 2 pe meci; Strasbourg marchează 1,7 și primește 2,1."
+   },
+   {
+    "id": 14858246,
+    "meci": "Thun – Lugano",
+    "when": "2026-10-25T13:00:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.39,
+    "p": 0.682,
+    "why": "Thun marchează 1,7 și primește 2,7 pe meci; Lugano marchează 3,1 și primește 0,7."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14231646,
+    "meci": "Freiburg – Bayern Munchen",
+    "when": "2026-10-25T16:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.36,
+    "p": 0.837,
+    "why": "Media cornerelor: Freiburg 5,2, Bayern Munchen 9,7, adică 14,9 pe meci."
+   },
+   {
+    "id": 14231675,
+    "meci": "Lecce – Juventus",
+    "when": "2026-10-25T17:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.35,
+    "p": 0.814,
+    "why": "Media cornerelor: Lecce 4,4, Juventus 8,1, adică 12,5 pe meci."
+   },
+   {
+    "id": 14217144,
+    "meci": "Club Brugge – Sint-Truiden",
+    "when": "2026-10-25T15:00:00.000Z",
+    "liga": "Pro League",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.36,
+    "p": 0.807,
+    "why": "Media cornerelor: Club Brugge 8,1, Sint-Truiden 5,4, adică 13,5 pe meci."
+   },
+   {
+    "id": 14246816,
+    "meci": "AZ Alkmaar – Twente",
+    "when": "2026-10-25T19:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.46,
+    "p": 0.805,
+    "why": "Media cornerelor: AZ Alkmaar 8, Twente 7,1, adică 15,1 pe meci."
+   },
+   {
+    "id": 14231645,
+    "meci": "Hoffenheim – Bayer Leverkusen",
+    "when": "2026-10-25T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.43,
+    "p": 0.799,
+    "why": "Media cornerelor: Hoffenheim 6,7, Bayer Leverkusen 7,3, adică 14 pe meci."
+   }
+  ],
+  "cartonase": [
+   {
+    "id": 15198440,
+    "meci": "Midtjylland – Lyngby",
+    "when": "2026-10-25T13:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.36,
+    "p": 0.76,
+    "why": "Cartonașe pe meci: Midtjylland 2, Lyngby 2,5."
+   },
+   {
+    "id": 14231667,
+    "meci": "Sporting Lisabona – Academico Viseu",
+    "when": "2026-10-25T20:30:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.38,
+    "p": 0.723,
+    "why": "Cartonașe pe meci: Sporting Lisabona 2,3, Academico Viseu 2,9."
+   },
+   {
+    "id": 14231735,
+    "meci": "Hull City – Brentford",
+    "when": "2026-10-25T14:00:00.000Z",
+    "liga": "Premier League",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.68,
+    "p": 0.71,
+    "why": "Cartonașe pe meci: Hull City 3, Brentford 3,1."
+   },
+   {
+    "id": 15388435,
+    "meci": "Sturm Graz – SV Ried",
+    "when": "2026-10-25T13:30:00.000Z",
+    "liga": "Bundesliga (Austria)",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.4,
+    "p": 0.69,
+    "why": "Cartonașe pe meci: Sturm Graz 2,4, SV Ried 2,4."
+   },
+   {
+    "id": 14231662,
+    "meci": "Estoril Praia – Moreirense",
+    "when": "2026-10-25T15:30:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.53,
+    "p": 0.689,
+    "why": "Cartonașe pe meci: Estoril Praia 2,6, Moreirense 2,6."
+   }
+  ]
+ }
+}

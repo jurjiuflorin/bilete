@@ -1,5 +1,2 @@
-HTTP 400 https://production-superbet-offer-ro.freetls.fastly.net/v3/ro-RO/events?index=active-prema
-HTTP 400 https://production-superbet-offer-ro.freetls.fastly.net/v3/ro-RO/events?index=active-prema
-HTTP 400 https://production-superbet-offer-ro.freetls.fastly.net/v3/ro-RO/events?index=active-prema
-evenimente 0 meciuri azi 0
-nicio sugestie (feed indisponibil?)
+evenimente 2134 meciuri azi 55
+scris sugestii/2026-10-25.json { goluri: 5, gg: 5, cornere: 5, cartonase: 5 }
