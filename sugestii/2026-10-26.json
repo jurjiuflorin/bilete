@@ -1,0 +1,215 @@
+{
+ "data": "2026-10-26",
+ "salvat": "2026-10-26T13:27:04.934Z",
+ "n": 8,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14246837,
+    "meci": "Sevilla – Osasuna",
+    "when": "2026-10-26T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.39,
+    "p": 0.76,
+    "why": "Sevilla dă 1,6 și primește 1,8 goluri pe meci; Osasuna dă 1,1 și primește 2."
+   },
+   {
+    "id": 14246793,
+    "meci": "Galatasaray – Fenerbahce",
+    "when": "2026-10-26T18:30:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.49,
+    "p": 0.658,
+    "why": "Galatasaray dă 2,1 și primește 1,4 goluri pe meci; Fenerbahce dă 2,8 și primește 0,8."
+   },
+   {
+    "id": 14246839,
+    "meci": "PSG – Olympique Lyon",
+    "when": "2026-10-26T19:30:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.38,
+    "p": 0.641,
+    "why": "PSG dă 2 și primește 1,3 goluri pe meci; Olympique Lyon dă 1,9 și primește 0,7."
+   },
+   {
+    "id": 14246794,
+    "meci": "Besiktas – Basaksehir",
+    "when": "2026-10-26T16:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.42,
+    "p": 0.64,
+    "why": "Besiktas dă 2 și primește 1,3 goluri pe meci; Basaksehir dă 1,5 și primește 1,5."
+   },
+   {
+    "id": 15214272,
+    "meci": "FC Copenhaga – Odense BK",
+    "when": "2026-10-26T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.57,
+    "p": 0.572,
+    "why": "FC Copenhaga dă 2,3 și primește 1 goluri pe meci; Odense BK dă 0,9 și primește 1,4."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14246793,
+    "meci": "Galatasaray – Fenerbahce",
+    "when": "2026-10-26T18:30:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "GG (ambele marchează)",
+    "od": 1.44,
+    "p": 0.668,
+    "why": "Galatasaray marchează 2,1 și primește 1,4 pe meci; Fenerbahce marchează 2,8 și primește 0,8."
+   },
+   {
+    "id": 14246794,
+    "meci": "Besiktas – Basaksehir",
+    "when": "2026-10-26T16:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "GG (ambele marchează)",
+    "od": 1.63,
+    "p": 0.601,
+    "why": "Besiktas marchează 2 și primește 1,3 pe meci; Basaksehir marchează 1,5 și primește 1,5."
+   },
+   {
+    "id": 14246839,
+    "meci": "PSG – Olympique Lyon",
+    "when": "2026-10-26T19:30:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "GG (ambele marchează)",
+    "od": 1.63,
+    "p": 0.599,
+    "why": "PSG marchează 2 și primește 1,3 pe meci; Olympique Lyon marchează 1,9 și primește 0,7."
+   },
+   {
+    "id": 14246790,
+    "meci": "Rizespor – Trabzonspor",
+    "when": "2026-10-26T16:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "GG (ambele marchează)",
+    "od": 1.51,
+    "p": 0.571,
+    "why": "Rizespor marchează 1 și primește 1,4 pe meci; Trabzonspor marchează 2,3 și primește 0,6."
+   },
+   {
+    "id": 14246837,
+    "meci": "Sevilla – Osasuna",
+    "when": "2026-10-26T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "GG (ambele marchează)",
+    "od": 2.05,
+    "p": 0.555,
+    "why": "Sevilla marchează 1,6 și primește 1,8 pe meci; Osasuna marchează 1,1 și primește 2."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14246793,
+    "meci": "Galatasaray – Fenerbahce",
+    "when": "2026-10-26T18:30:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.5,
+    "p": 0.78,
+    "why": "Media cornerelor: Galatasaray 7,5, Fenerbahce 6,3, adică 13,8 pe meci."
+   },
+   {
+    "id": 14246794,
+    "meci": "Besiktas – Basaksehir",
+    "when": "2026-10-26T16:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.39,
+    "p": 0.759,
+    "why": "Media cornerelor: Besiktas 7,5, Basaksehir 4,4, adică 11,9 pe meci."
+   },
+   {
+    "id": 14231666,
+    "meci": "Santa Clara – Benfica",
+    "when": "2026-10-26T18:45:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.56,
+    "p": 0.722,
+    "why": "Media cornerelor: Santa Clara 4,1, Benfica 7,8, adică 11,9 pe meci."
+   },
+   {
+    "id": 15214272,
+    "meci": "FC Copenhaga – Odense BK",
+    "when": "2026-10-26T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.41,
+    "p": 0.714,
+    "why": "Media cornerelor: FC Copenhaga 4,9, Odense BK 6, adică 10,9 pe meci."
+   },
+   {
+    "id": 14246790,
+    "meci": "Rizespor – Trabzonspor",
+    "when": "2026-10-26T16:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.55,
+    "p": 0.66,
+    "why": "Media cornerelor: Rizespor 5, Trabzonspor 5,4, adică 10,4 pe meci."
+   }
+  ],
+  "cartonase": [
+   {
+    "id": 15214272,
+    "meci": "FC Copenhaga – Odense BK",
+    "when": "2026-10-26T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.46,
+    "p": 0.697,
+    "why": "Cartonașe pe meci: FC Copenhaga 1,7, Odense BK 2,2."
+   },
+   {
+    "id": 14246837,
+    "meci": "Sevilla – Osasuna",
+    "when": "2026-10-26T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 4.5 cartonașe",
+    "od": 1.6,
+    "p": 0.652,
+    "why": "Cartonașe pe meci: Sevilla 3,4, Osasuna 2,6."
+   },
+   {
+    "id": 14246790,
+    "meci": "Rizespor – Trabzonspor",
+    "when": "2026-10-26T16:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.35,
+    "p": 0.633,
+    "why": "Cartonașe pe meci: Rizespor 1,9, Trabzonspor 2,1."
+   },
+   {
+    "id": 14231682,
+    "meci": "Sepsi Sfantu Gheorghe – Universitatea Craiova",
+    "when": "2026-10-26T18:00:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.57,
+    "p": 0.573,
+    "why": "Cartonașe pe meci: Sepsi Sfantu Gheorghe 1,9, Universitatea Craiova 2; arbitrul Horia Mladinovici dă 3,9 pe meci."
+   },
+   {
+    "id": 14231666,
+    "meci": "Santa Clara – Benfica",
+    "when": "2026-10-26T18:45:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 4.5 cartonașe",
+    "od": 1.73,
+    "p": 0.561,
+    "why": "Cartonașe pe meci: Santa Clara 3, Benfica 2,1."
+   }
+  ]
+ }
+}
