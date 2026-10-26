@@ -1,397 +1,161 @@
 {
- "data": "2026-10-25",
- "actualizat": "2026-10-25T08:19:48Z",
+ "data": "2026-10-26",
+ "actualizat": "2026-10-26T08:40:00Z",
  "meciuri": [
   {
-   "id": 14231673,
-   "data": "2026-10-25",
-   "ora": "13:30",
-   "liga": "Serie A",
-   "gazde": "Inter",
-   "oaspeti": "Fiorentina",
-   "forma_gazde": "EVIVV",
-   "forma_oaspeti": "IVEII",
-   "loc_gazde": 2,
-   "loc_oaspeti": 18,
+   "id": 14246790,
+   "data": "2026-10-26",
+   "ora": "18:00",
+   "liga": "Turkey Süper Lig",
+   "gazde": "Rizespor",
+   "oaspeti": "Trabzonspor",
    "absenti_gazde": [
-    "Lautaro Martínez – accidentat",
-    "Luis Henrique – accidentat",
-    "Jones – accidentat",
-    "Pavard – accidentat",
-    "Stones – accidentat (incert)"
+    "Ahmed – accidentat",
+    "Mocsi – accidentat",
+    "Can – accidentat",
+    "Alikulov – accidentat"
    ],
    "absenti_oaspeti": [
-    "Atta – accidentat",
-    "Ranieri – accidentat (incert)",
-    "Parisi – ligamente încrucișate"
-   ],
-   "marcatori_gazde": "Lautaro 4, Thuram 4, Calhanoglu 3",
-   "marcatori_oaspeti": "Mastantuono 3, Pellegrino 2",
-   "arbitru": "Maurizio Mariani",
-   "nota": "Inter fără Lautaro; Fiorentina vine după trei înfrângeri la rând în campionat."
+    "Batagov – accidentat",
+    "Okay – accidentat",
+    "Malinovskyi – accidentat",
+    "Onuachu – accidentat",
+    "Mustafa – accidentat",
+    "Mendy – absent"
+   ]
   },
   {
-   "id": 14231737,
-   "data": "2026-10-25",
-   "ora": "16:00",
-   "liga": "Premier League",
-   "gazde": "Liverpool",
-   "oaspeti": "Brighton",
-   "forma_gazde": "VIVVV",
-   "forma_oaspeti": "VVVVE",
-   "loc_gazde": 5,
+   "id": 14246794,
+   "data": "2026-10-26",
+   "ora": "18:00",
+   "liga": "Turkey Süper Lig",
+   "gazde": "Besiktas",
+   "oaspeti": "Basaksehir",
+   "absenti_gazde": [
+    "Orkun Kökçü – accidentat (incert)",
+    "Rashica – accidentat",
+    "Miretti – accidentat"
+   ],
+   "absenti_oaspeti": [
+    "Opoku – accidentat",
+    "Operi – accidentat",
+    "Selke – accidentat"
+   ]
+  },
+  {
+   "id": 14231682,
+   "data": "2026-10-26",
+   "ora": "20:00",
+   "liga": "Romania SuperLiga",
+   "gazde": "Sepsi",
+   "oaspeti": "U Craiova",
+   "loc_gazde": 12,
+   "loc_oaspeti": 3,
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "arbitru": "Horia Mladinovici",
+   "arbitru_galbene": 3.78,
+   "arbitru_rosii": 0.11,
+   "arbitru_meciuri": 9,
+   "arbitru_sezon": "Liga 1 2024/25",
+   "nota": "Sepsi: 14 puncte din 12 meciuri; Craiova: 26 puncte, 4 victorii și un egal în ultimele 5 meciuri."
+  },
+  {
+   "id": 14246793,
+   "data": "2026-10-26",
+   "ora": "20:30",
+   "liga": "Turkey Süper Lig",
+   "gazde": "Galatasaray",
+   "oaspeti": "Fenerbahce",
+   "loc_gazde": 2,
    "loc_oaspeti": 3,
    "absenti_gazde": [
-    "Conor Bradley – operat la genunchi",
-    "Hugo Ekitike – accidentare lungă",
-    "Giovanni Leoni – accidentare lungă",
-    "Jeremie Frimpong – accidentat muscular",
-    "Dominik Szoboszlai – ischiogambieri",
-    "Victor Muñoz – incert, genunchi"
+    "Rafael Leão – accidentat (incert)"
    ],
    "absenti_oaspeti": [
-    "Kaoru Mitoma – accidentat",
-    "Femi Azeez – accidentat",
-    "Evan Ferguson – accidentare lungă",
-    "Stefanos Tzimas – accidentare lungă",
-    "Mats Wieffer – genunchi",
-    "Zadok Yohanna – accidentat"
+    "Asensio – accidentat",
+    "Oosterwolde – accidentat",
+    "Ake – accidentat",
+    "Mert Müldür – accidentat (incert)"
    ],
-   "marcatori_oaspeti": "Kostoulas 5",
-   "arbitru": "Sam Barrott",
-   "nota": "Brighton are cel mai bun atac din Premier League (23 goluri); Liverpool nu a câștigat niciun meci acasă în campionat."
+   "marcatori_gazde": "Osimhen 6 (ligă)",
+   "marcatori_oaspeti": "Muriqi 7 (ligă)"
   },
   {
-   "id": 14231735,
-   "data": "2026-10-25",
-   "ora": "16:00",
-   "liga": "Premier League",
-   "gazde": "Hull",
-   "oaspeti": "Brentford",
-   "forma_gazde": "IEIEI",
-   "forma_oaspeti": "EVVEI",
-   "loc_gazde": 11,
-   "loc_oaspeti": 7,
+   "id": 14231666,
+   "data": "2026-10-26",
+   "ora": "20:45",
+   "liga": "Liga Portugal",
+   "gazde": "Santa Clara",
+   "oaspeti": "Benfica",
+   "forma_gazde": "VVEVI",
+   "forma_oaspeti": "VIVVV",
    "absenti_gazde": [
-    "Jack Butland – accidentat",
-    "Charlie Hughes – accidentat",
-    "Matt Targett – accidentat",
-    "Eliot Matazo – accidentat",
-    "Darko Gyabi – accidentat",
-    "Ilyas Ansah – accidentat"
+    "Tavares – suspendat",
+    "Matheus Araújo – revenit după ligamente (incert)"
    ],
    "absenti_oaspeti": [
-    "Yehor Yarmolyuk – suspendat",
-    "Vitaly Janelt – suspendat",
-    "Joshua Dasilva – accidentat",
-    "Kaye Furo – accidentat",
-    "Antoni Milambo – accidentat"
-   ],
-   "arbitru": "Rob Jones",
-   "nota": "Brentford are doi mijlocași suspendați."
+    "Barrenechea – meniscul, operat",
+    "Kaminski – accidentat",
+    "Banjaqui – accidentat",
+    "Barreiro – accidentat",
+    "Pavlidis – accidentat (incert)"
+   ]
   },
   {
-   "id": 14231739,
-   "data": "2026-10-25",
-   "ora": "18:30",
-   "liga": "Premier League",
-   "gazde": "Sunderland",
-   "oaspeti": "Leeds",
-   "loc_gazde": 20,
-   "loc_oaspeti": 8,
-   "absenti_gazde": [
-    "Kevin Danso – suspendat",
-    "Daniel Ballard – coapsă",
-    "Romaine Mundle – genunchi",
-    "Thomas Meunier – coapsă",
-    "Wilson Isidor – incert",
-    "Brian Brobbey – incert, ischiogambieri"
-   ],
-   "absenti_oaspeti": [
-    "Joe Rodon – coapsă",
-    "Mateo Joseph – genunchi",
-    "Daniel James – incert, spate",
-    "Dominic Calvert-Lewin – incert",
-    "Anton Stach – incert",
-    "Noah Okafor – adductori"
-   ],
-   "marcatori_gazde": "Brobbey 3",
-   "marcatori_oaspeti": "Calvert-Lewin 4",
-   "arbitru": "Stuart Attwell",
-   "nota": "Sunderland e ultima în clasament, după patru înfrângeri consecutive în campionat."
-  },
-  {
-   "id": 14231672,
-   "data": "2026-10-25",
-   "ora": "16:00",
-   "liga": "Serie A",
-   "gazde": "Genoa",
-   "oaspeti": "Venezia",
-   "forma_gazde": "IEIVI",
-   "forma_oaspeti": "IIIIV",
-   "loc_gazde": 17,
-   "loc_oaspeti": 20,
-   "absenti_gazde": [
-    "Colombo – accidentat",
-    "Meichtry – accidentat",
-    "Sow – accidentat",
-    "Venturino – accidentat",
-    "Baldanzi – incert"
-   ],
-   "absenti_oaspeti": [
-    "Franjic – accidentat",
-    "Busio – incert",
-    "Sverko – accidentat",
-    "Adorante – accidentat",
-    "Correia – incert"
-   ],
-   "marcatori_gazde": "Osmajic 3",
-   "marcatori_oaspeti": "Adams 2, Hainaut 2",
-   "arbitru": "Simone Sozza",
-   "arbitru_galbene": 4.0,
-   "arbitru_rosii": 0.13,
-   "arbitru_meciuri": 15,
-   "arbitru_sezon": "Serie A 2024/25",
-   "nota": "Duel în zona retrogradării; Venezia este ultima."
-  },
-  {
-   "id": 14231675,
-   "data": "2026-10-25",
-   "ora": "19:00",
-   "liga": "Serie A",
-   "gazde": "Lecce",
-   "oaspeti": "Juventus",
-   "forma_gazde": "IVIIV",
-   "forma_oaspeti": "VEVIE",
-   "loc_gazde": 12,
-   "loc_oaspeti": 9,
-   "absenti_gazde": [
-    "Coulibaly – accidentat",
-    "Berisha – accidentat",
-    "Ilic – operat, absență lungă"
-   ],
-   "absenti_oaspeti": [
-    "Nico González – accidentat",
-    "Celik – accidentat",
-    "Conceição – accidentat (umăr)",
-    "Yildiz – accidentat",
-    "Locatelli – absență lungă",
-    "Ekhator – accidentat"
-   ],
-   "marcatori_gazde": "Coulibaly 2",
-   "marcatori_oaspeti": "Bremer 2, Zhegrova 2",
-   "arbitru": "Fabio Maresca",
-   "nota": "Juventus are cel puțin opt indisponibili."
-  },
-  {
-   "id": 14231678,
-   "data": "2026-10-25",
-   "ora": "21:45",
-   "liga": "Serie A",
-   "gazde": "Udinese",
-   "oaspeti": "AC Milan",
-   "forma_gazde": "IIIII",
-   "forma_oaspeti": "VEVVI",
-   "loc_gazde": 16,
-   "loc_oaspeti": 5,
-   "absenti_gazde": [
-    "Bayo – accidentat",
-    "Alaba – accidentat",
-    "Zaniolo – accidentat",
-    "Gueye – accidentat"
-   ],
-   "absenti_oaspeti": [
-    "Rabiot – accidentat",
-    "Gila – accidentat",
-    "Moreira – accidentat",
-    "Gabbia – accidentat",
-    "Saelemaekers – accidentat",
-    "Chukwueze – accidentat"
-   ],
-   "marcatori_gazde": "Ekkelenkamp 3, Kamara 2",
-   "marcatori_oaspeti": "Rabiot 4, Moreira 3",
-   "arbitru": "Matteo Marcenaro",
-   "nota": "Milan fără Rabiot și Moreira, cei mai buni marcatori; Udinese a pierdut ultimele cinci meciuri de campionat."
-  },
-  {
-   "id": 14231794,
-   "data": "2026-10-25",
-   "ora": "16:00",
+   "id": 14246839,
+   "data": "2026-10-26",
+   "ora": "21:30",
    "liga": "Ligue 1",
-   "gazde": "Monaco",
-   "oaspeti": "Lille",
+   "gazde": "PSG",
+   "oaspeti": "Lyon",
+   "forma_gazde": "VVVVV",
    "loc_gazde": 5,
    "loc_oaspeti": 4,
-   "arbitru": "François Letexier",
-   "nota": "Ambele echipe au 14 puncte după etapa 7."
-  },
-  {
-   "id": 14231793,
-   "data": "2026-10-25",
-   "ora": "18:15",
-   "liga": "Ligue 1",
-   "gazde": "Marseille",
-   "oaspeti": "Le Havre",
-   "loc_gazde": 9,
-   "loc_oaspeti": 18,
-   "arbitru": "Clément Turpin",
-   "nota": "Le Havre e ultima (2 puncte); Marseille a câștigat 5-2 la Angers."
-  },
-  {
-   "id": 14231790,
-   "data": "2026-10-25",
-   "ora": "18:15",
-   "liga": "Ligue 1",
-   "gazde": "Auxerre",
-   "oaspeti": "Le Mans",
-   "loc_gazde": 12,
-   "loc_oaspeti": 16,
-   "arbitru": "Willy Delajod",
-   "nota": "Auxerre a bătut Le Havre 3-1; Le Mans, nou-promovată, a pierdut 0-3 cu Toulouse."
-  },
-  {
-   "id": 14231795,
-   "data": "2026-10-25",
-   "ora": "18:15",
-   "liga": "Ligue 1",
-   "gazde": "Rennes",
-   "oaspeti": "Strasbourg",
-   "loc_gazde": 6,
-   "loc_oaspeti": 14,
-   "arbitru": "Ruddy Buquet",
-   "nota": "Rennes a pierdut 3-4 la Paris FC, Strasbourg 1-3 cu PSG."
-  },
-  {
-   "id": 14246836,
-   "data": "2026-10-25",
-   "ora": "19:30",
-   "liga": "LaLiga",
-   "gazde": "Real Sociedad",
-   "oaspeti": "Levante",
-   "loc_gazde": 5,
-   "loc_oaspeti": 13,
    "absenti_gazde": [
-    "Aramburu – incert, muscular",
-    "Beitia – incert, genunchi",
-    "Yangel Herrera – accidentat muscular",
-    "Odriozola – ligamente încrucișate"
+    "Marquinhos – accidentat",
+    "Dembélé – accidentat",
+    "Kvaratskhelia – ligamente rupte",
+    "Nuno Mendes – absent"
    ],
    "absenti_oaspeti": [
-    "Álex Primo – accidentat",
-    "Bardeli – ischiogambieri",
-    "Adrián de la Fuente – incert",
-    "Hugo Sotelo – incert, genunchi"
+    "Openda – fractură de peroneu",
+    "Šulc – menisc",
+    "Nakamura – suspendat",
+    "Tagliafico – absent",
+    "Ouédraogo – absent",
+    "Kango – absent"
    ],
-   "arbitru": "Javier Alberola Rojas",
-   "nota": "Levante nu a câștigat niciun meci în deplasare în acest sezon."
+   "marcatori_oaspeti": "Nuamah 3 (ligă)",
+   "arbitru": "Jérôme Brisard",
+   "arbitru_galbene": 3.83,
+   "arbitru_rosii": 0.28,
+   "arbitru_meciuri": 18,
+   "arbitru_sezon": "Ligue 1 2024/25",
+   "nota": "PSG vine după 7 victorii consecutive în toate competițiile."
   },
   {
-   "id": 14246832,
-   "data": "2026-10-25",
-   "ora": "17:15",
-   "liga": "LaLiga",
-   "gazde": "Celta Vigo",
-   "oaspeti": "Betis",
-   "loc_gazde": 9,
-   "loc_oaspeti": 4
-  },
-  {
-   "id": 14246833,
-   "data": "2026-10-25",
+   "id": 14246837,
+   "data": "2026-10-26",
    "ora": "22:00",
    "liga": "LaLiga",
-   "gazde": "Barcelona",
-   "oaspeti": "Real Madrid",
-   "loc_gazde": 1,
-   "loc_oaspeti": 3,
-   "arbitru": "Juan Martínez Munuera",
-   "nota": "Clasico: Barcelona conduce cu 27 de puncte, Real Madrid are 21."
-  },
-  {
-   "id": 14231646,
-   "data": "2026-10-25",
-   "ora": "18:30",
-   "liga": "Bundesliga",
-   "gazde": "Freiburg",
-   "oaspeti": "Bayern Munchen",
-   "forma_gazde": "EVVII",
-   "forma_oaspeti": "VEEVE",
-   "loc_gazde": 3,
-   "loc_oaspeti": 1,
-   "arbitru": "Felix Zwayer",
-   "nota": "Freiburg vine după 0-3 la Monaco; Bayern a remizat 2-2 cu Arsenal."
-  },
-  {
-   "id": 14231645,
-   "data": "2026-10-25",
-   "ora": "16:30",
-   "liga": "Bundesliga",
-   "gazde": "Hoffenheim",
-   "oaspeti": "Leverkusen",
-   "forma_gazde": "IIIVV",
-   "forma_oaspeti": "VVVVV",
-   "loc_gazde": 14,
-   "loc_oaspeti": 4,
-   "arbitru": "Daniel Siebert",
-   "nota": "Leverkusen are 5 victorii consecutive în toate competițiile."
-  },
-  {
-   "id": 14231681,
-   "data": "2026-10-25",
-   "ora": "16:00",
-   "liga": "Romania SuperLiga",
-   "gazde": "Farul",
-   "oaspeti": "Oțelul",
-   "forma_oaspeti": "IIIIE",
-   "loc_gazde": 8,
-   "loc_oaspeti": 14,
+   "gazde": "Sevilla",
+   "oaspeti": "Osasuna",
+   "forma_gazde": "VIIEI",
+   "forma_oaspeti": "IIEIV",
    "absenti_gazde": [
-    "Alibec – suspendat",
-    "Hyseni – accidentat",
-    "Aberdin – accidentat",
-    "Sylvestre – accidentat",
-    "Sîrbu – accidentat",
-    "Pellegrini – accidentat"
+    "Sierra – accidentat",
+    "Marcão – accidentat",
+    "Guridi – incert",
+    "Stassin – incert"
    ],
    "absenti_oaspeti": [
-    "Sylla – suspendat",
-    "Ne Lopes – accidentat",
-    "Zhelev – accidentat",
-    "Kazu – accidentat"
+    "Aimar Oroz – accidentat",
+    "Del Castillo – accidentat",
+    "Herrando – incert"
    ],
-   "marcatori_gazde": "Radaslavescu 5",
-   "arbitru": "Viorel Flueran",
-   "arbitru_galbene": 2.15,
-   "arbitru_rosii": 0.08,
-   "arbitru_meciuri": 13,
-   "arbitru_sezon": "Superliga 2025/26",
-   "nota": "Oțelul vine fără Sylla (suspendat) și cu mai mulți accidentați; Farul e neînvinsă acasă în acest sezon."
-  },
-  {
-   "id": 14231684,
-   "data": "2026-10-25",
-   "ora": "19:00",
-   "liga": "Romania SuperLiga",
-   "gazde": "CFR Cluj",
-   "oaspeti": "Dinamo București",
-   "forma_gazde": "IVIVI",
-   "forma_oaspeti": "VVVVV",
-   "loc_gazde": 10,
-   "loc_oaspeti": 1,
-   "absenti_gazde": [
-    "Alin Fică – accidentat grav"
-   ],
-   "absenti_oaspeti": [
-    "Epassy – absent",
-    "Musi – accidentat"
-   ],
-   "marcatori_oaspeti": "Armstrong 5",
-   "arbitru": "Florin Andrei",
-   "arbitru_galbene": 3.78,
-   "arbitru_rosii": 0.17,
-   "arbitru_meciuri": 23,
-   "arbitru_sezon": "Superliga 2025/26",
-   "nota": "Dinamo, lider cu 29 de puncte, merge la Cluj; Pușcaș ar putea reveni în lot."
+   "marcatori_oaspeti": "Budimir 7 (ligă)",
+   "arbitru": "Miguel Ángel Ortiz Arias"
   }
  ]
 }
