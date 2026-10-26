@@ -1,2 +1,3 @@
-evenimente 2134 meciuri azi 55
-scris sugestii/2026-10-25.json { goluri: 5, gg: 5, cornere: 5, cartonase: 5 }
+prea devreme pentru lista zilei 2
+judecat 2026-10-25.json
+index 1 zile
