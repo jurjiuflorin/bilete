@@ -934,5 +934,77 @@
   "ids": [
    14246839
   ]
+ },
+ {
+  "id": "2026-10-26-cota2",
+  "data": "2026-10-26",
+  "tip": "Cotă 2",
+  "cota": 1.89,
+  "sansa": 0.504,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "20:45 Santa Clara – Benfica: 2 (1.37) · 21:30 PSG – Lyon: Peste 2.5 (1.38)",
+  "rezultat": "",
+  "motive": [
+   "Benfica dă 2.8 goluri pe meci și primește 0.8 în ultimele 10, câștigă 4 din 4 acasă și 12 din 15 meciuri directe cu Santa Clara. Cota 1.37 înseamnă cam 69% șanse, estimez ~72%.",
+   "Împreună dau 3.9 goluri pe meci în Ligue 1 (xG combinat 4.3), iar Lyon marchează 1.9 pe meci. Cota 1.38 înseamnă cam 72% șanse, estimez ~70%."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14231666,
+   14246839
+  ]
+ },
+ {
+  "id": "2026-10-26-cota5",
+  "data": "2026-10-26",
+  "tip": "Cotă 5",
+  "cota": 5.54,
+  "sansa": 0.1358,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "18:00 Beșiktaș – Basaksehir: Peste 2.5 (1.41) · 20:00 Sepsi – Universitatea Craiova: 2 (1.54) · 20:45 Santa Clara – Benfica: 2 (1.37) · 22:00 Sevilla – Osasuna: Peste 1.5 (1.38) · 23:00 Flamengo – Atlético MG: Flamengo peste 1.5 goluri (1.35)",
+  "rezultat": "",
+  "motive": [
+   "Beșiktaș a avut 3 din ultimele 5 meciuri cu 3+ goluri (2-3, 3-2, 2-2), iar Basaksehir 4 din 5 (5-0, 4-0, 2-1, 2-3 cu Galatasaray). Cota 1.41 înseamnă cam 68% șanse, estimez ~64%.",
+   "Craiova are 5 victorii la rând, locul 3 (26 puncte) față de locul 12 al lui Sepsi (14 puncte, 1V-1E-3Î); în deplasare 2V-2E-1Î. Cota 1.54 înseamnă cam 62% șanse, estimez ~62%.",
+   "Benfica dă 2.8 goluri pe meci și primește 0.8 în ultimele 10, câștigă 4 din 4 acasă și 12 din 15 meciuri directe cu Santa Clara. Cota 1.37 înseamnă cam 69% șanse, estimez ~72%.",
+   "Sevilla vine cu 1-4 de la Real Madrid, Osasuna primește 2.0 goluri pe meci; ~3.1 goluri pe meci în cele două echipe. Cota 1.38 înseamnă cam 72% șanse, estimez ~72% (avantaj aproape zero).",
+   "Flamengo a câștigat 4-0 în ultimul meci direct (aprilie), joacă acasă pe Maracanã, iar Atlético MG are 5 absenți. Cota 1.35 înseamnă cam 74% șanse, estimez ~66% (date limitate, fără forma recentă)."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14246794,
+   14231682,
+   14231666,
+   14246837,
+   14246806
+  ]
+ },
+ {
+  "id": "2026-10-26-cota10",
+  "data": "2026-10-26",
+  "tip": "Cotă 10",
+  "cota": 9.75,
+  "sansa": 0.0818,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "18:00 Beșiktaș – Basaksehir: Peste 2.5 (1.41) · 20:00 Sepsi – Universitatea Craiova: 2 (1.54) · 20:30 Galatasaray – Fenerbahçe: Peste 2.5 (1.50) · 21:30 PSG – Lyon: Peste 2.5 (1.38) · 22:00 Sevilla – Osasuna: Peste 2.5 (2.17)",
+  "rezultat": "",
+  "motive": [
+   "Beșiktaș a avut 3 din ultimele 5 meciuri cu 3+ goluri (2-3, 3-2, 2-2), iar Basaksehir 4 din 5 (5-0, 4-0, 2-1, 2-3 cu Galatasaray). Cota 1.41 înseamnă cam 68% șanse, estimez ~64%.",
+   "Craiova are 5 victorii la rând, locul 3 (26 puncte) față de locul 12 al lui Sepsi (14 puncte, 1V-1E-3Î); în deplasare 2V-2E-1Î. Cota 1.54 înseamnă cam 62% șanse, estimez ~62%.",
+   "4 din ultimele 5 meciuri ale lui Galatasaray și 4 din 5 ale lui Fenerbahçe au avut 3+ goluri (Fenerbahçe a dat 3-0 și 2-2, Galatasaray 4-2). Cota 1.50 înseamnă cam 64% șanse, estimez ~64%; e derby, risc de meci închis.",
+   "Împreună dau 3.9 goluri pe meci în Ligue 1 (xG combinat 4.3), iar Lyon marchează 1.9 pe meci. Cota 1.38 înseamnă cam 72% șanse, estimez ~70%.",
+   "Cele două echipe au ~3.1 goluri pe meci, Sevilla vine cu 1-4, iar Osasuna cu 2-0, dar forma e slabă la ambele. Cota 2.17 înseamnă cam 46% șanse, estimez ~46% (fără avantaj); selecția cea mai riscantă."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14246794,
+   14231682,
+   14246793,
+   14246839,
+   14246837
+  ]
  }
 ]
