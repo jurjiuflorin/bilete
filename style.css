@@ -426,3 +426,11 @@ button.hero-tip:hover,button.hero-tip:focus-visible{text-decoration-color:#1d1f1
 .sg-tot{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px;margin:0 0 14px;color:var(--chalk-dim);font-size:14px}
 .sg-tot b{color:var(--chalk);font:700 16px var(--ui)}
 .sg-tot .c{font-size:13px}
+.hs{margin:0 0 30px}
+.hs h2{font:800 28px/1 var(--display);margin:0 0 12px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.hs h2 small{font:500 14px var(--ui);color:var(--chalk-dim)}
+.hs .rs-tiles{margin:0 0 12px}
+.hs-dots{display:flex;align-items:center;flex-wrap:wrap;gap:6px;font-size:13px;color:var(--chalk-dim)}
+.hs-dots .l{margin-right:4px}
+.hs-dots i{width:14px;height:14px;border-radius:50%;display:inline-block}
+.hs-dots i.w{background:var(--won)}.hs-dots i.x{background:var(--lost)}

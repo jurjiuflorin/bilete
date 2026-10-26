@@ -138,6 +138,7 @@ function viewTickets(pending) {
   let R = filtered(rows.filter(r => pending === (eff(r) === PEND)));
   if (!R.length) { list.append(el('div', 'empty', pending ? 'Niciun bilet de jucat acum. Biletele noi apar dimineața.' : 'Încă nu s-a încheiat niciun bilet.')); return; }
   if (pending && !tip && !q) { const h = hero(); if (h) list.append(h); }
+  if (!pending) list.append(histStats(R));
   const groups = new Map();
   R.sort((a, b) => pending ? firstWhen(a) - firstWhen(b) : (b.data + b.id).localeCompare(a.data + a.id));
   for (const r of R) { const k = pending ? (firstWhen(r) < now ? 'live' : dayKey(firstWhen(r))) : r.data; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(r); }
@@ -148,6 +149,33 @@ function viewTickets(pending) {
     const g = el('div', 'grid'); arr.forEach(r => g.append(slip(r, i++)));
     sec.append(h, g); list.append(sec);
   }
+}
+
+// statistica biletelor încheiate din filtrul ales (ex. doar Cotă 2)
+function histStats(R) {
+  const S = [...R].sort((a, b) => (a.data + a.id).localeCompare(b.data + b.id));
+  const won = r => eff(r) === 'câștigat';
+  const n = S.length, w = S.filter(won).length;
+  const profit = S.reduce((a, r) => a + (won(r) ? Number(r.cota) - 1 : -1), 0) * 10;
+  const avg = n ? S.reduce((a, r) => a + Number(r.cota || 0), 0) / n : 0;
+  let lw = 0, ln = 0; const seen = new Set();
+  for (const r of S) { if (!r.rezultat) continue; for (const l of parseLegs(r)) { const sc = rezScore(r.rezultat, l.meci); if (!sc) continue; const res = judge(l.sel, l.meci, sc); if (res !== 'won' && res !== 'lost') continue; const k = r.id + '|' + nrm(l.meci); if (seen.has(k)) continue; seen.add(k); ln++; if (res === 'won') lw++; } }
+  let streak = 0; const last = S.length ? won(S[S.length - 1]) : null; for (let i = S.length - 1; i >= 0 && won(S[i]) === last; i--) streak++;
+  const pct = (a, b) => b ? Math.round(100 * a / b) + '%' : '–';
+  const box = el('section', 'hs');
+  const h = el('h2', null, (tip || 'Toate biletele')); h.append(el('small', null, q ? 'statistici pentru căutarea „' + q + '”' : 'statistici din biletele încheiate'));
+  const tiles = el('div', 'rs-tiles');
+  const tile = (big, lab, cls) => { const t = el('div', 'rs-tile' + (cls ? ' ' + cls : '')); t.append(el('b', null, big), el('span', null, lab)); return t; };
+  tiles.append(
+    tile(pct(w, n), w + ' din ' + n + ' bilete câștigate'),
+    tile((profit >= 0 ? '+' : '−') + Math.abs(profit).toLocaleString('ro-RO', { maximumFractionDigits: 0 }) + ' lei', 'dacă puneai 10 lei pe fiecare', profit >= 0 ? 'up' : 'down'),
+    tile(avg ? fmtOdd(avg) : '–', 'cota medie'),
+    tile(ln ? pct(lw, ln) : '–', ln ? lw + ' din ' + ln + ' meciuri intrate' : 'meciuri intrate'),
+    tile(n ? streak + (last ? ' ✓' : ' ✗') : '–', last ? 'câștigate la rând acum' : 'pierdute la rând acum'));
+  const dots = el('div', 'hs-dots'); dots.append(el('span', 'l', 'Ultimele ' + Math.min(15, n) + ':'));
+  S.slice(-15).forEach(r => { const d = el('i', won(r) ? 'w' : 'x'); d.title = r.data.split('-').reverse().join('.') + ' · cotă ' + fmtOdd(r.cota) + ' · ' + (won(r) ? 'câștigat' : 'pierdut'); dots.append(d); });
+  box.append(h, tiles); if (n) box.append(dots);
+  return box;
 }
 
 // every match on active tickets, grouped by day
