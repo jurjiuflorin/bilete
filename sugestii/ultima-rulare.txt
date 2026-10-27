@@ -1,3 +1,2 @@
-evenimente 2010 meciuri azi 4
-scris sugestii/2026-10-27.json { goluri: 4, gg: 4, cornere: 4, cartonase: 3 }
+exista deja sugestii/2026-10-27.json
 index 3 zile
