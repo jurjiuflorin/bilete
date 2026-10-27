@@ -15,7 +15,7 @@ async function match(id) {
     const j = await getJ(SA + id);
     if (!j) cache[id] = null;
     else {
-      const sc = (j.scores || []).find(x => x.type === 0);
+      const sc = (j.scores || []).find(x => x.type === 6) || (j.scores || []).find(x => x.type === 0);   // 90 de minute
       cache[id] = { state: j.match_state, status: j.match_status, h: sc ? Number(sc.team1) || 0 : 0, a: sc ? Number(sc.team2) || 0 : 0, corners: statOf(j, 'corner_kicks'), yellow: statOf(j, 'yellow_cards') };
     }
   }

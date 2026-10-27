@@ -705,12 +705,15 @@ async function getMatch(id, sport) {
     let m;
     if (!sport || sport === 'fotbal') {
       const j = await (await fetch(SA + id, { cache: 'no-store' })).json();
-      const sc = (j.scores || []).find(x => x.type === 0);
+      // pariurile se judecă pe 90 de minute: type 6 = scorul la finalul timpului regulamentar (fără prelungiri și penalty-uri)
+      const ET = [32, 33, 34, 41, 42, 50, 110, 120].includes(j.match_status);
+      const reg = (j.scores || []).find(x => x.type === 6), tot = (j.scores || []).find(x => x.type === 0);
+      const sc = (ET || j.match_state === 2) && reg ? reg : tot;
       let min = null; if (j.live_minute) { const lm = j.live_minute; const e = lm.elapsed_seconds + (lm.anchor_date ? Math.max(0, Date.now() / 1000 - lm.anchor_date.seconds) : 0); min = Math.min(Math.floor(e / 60) + 1, lm.max_seconds ? Math.floor(lm.max_seconds / 60) : 120); }
       // before the first goal Superbet sends no score at all: a started match without a score is 0-0
       const started = j.match_state >= 1, num = v => (v == null || v === '' ? null : Number(v));
       const sh = sc ? num(sc.team1) : null, sa = sc ? num(sc.team2) : null;
-      m = { t: Date.now(), state: j.match_state, h: sh != null ? sh : (started ? 0 : null), a: sa != null ? sa : (started ? 0 : null), min, corners: statOf(j, 'corner_kicks'), yellow: statOf(j, 'yellow_cards') };
+      m = { t: Date.now(), state: ET ? 2 : j.match_state, ft90: ET, h: sh != null ? sh : (started ? 0 : null), a: sa != null ? sa : (started ? 0 : null), min, corners: statOf(j, 'corner_kicks'), yellow: statOf(j, 'yellow_cards') };
     } else {
       const j = await (await fetch(OFFER + id + '&includeOnly=fixture,inPlayStats,inPlayStatsMetadata', { cache: 'no-store' })).json();
       const e = j.events && j.events[0]; if (!e) return c || null;
@@ -734,11 +737,16 @@ function judge(sel, meci, m) {
   if ((x = s.match(/^(.+?) peste (\d+(?:\.\d)?) goluri$/))) { const hm = nrm(meci.split(' – ')[0]); const t = nrm(x[1]); const G = (hm.includes(t) || t.includes(hm.split(' ')[0])) ? H : A; const L = +x[2]; return done(G > L, G > L); }
   if ((x = s.match(/cornere (peste|sub) (\d+(?:\.\d)?)/) || s.match(/(peste|sub) (\d+(?:\.\d)?) cornere/))) { if (!m.corners) return null; const C = m.corners[0] + m.corners[1], L = +x[2]; return x[1] === 'peste' ? done(C > L, C > L) : done(C < L, false, C > L); }
   if ((x = s.match(/(peste|sub) (\d+(?:\.\d)?) (?:galbene|cartonase)/))) { if (!m.yellow) return null; const Y = m.yellow[0] + m.yellow[1], L = +x[2]; return x[1] === 'peste' ? done(Y > L, Y > L) : done(Y < L, false, Y > L); }
+  { const [hn, an] = (meci || '').split(' – ').map(t => nrm(t)); const side = t => { t = nrm(t).trim(); const w = x => x.split(/\s+/).filter(y => y.length > 2); if (hn && (hn.includes(t) || t.includes(hn) || w(t).some(y => hn.includes(y)))) return 'h'; if (an && (an.includes(t) || t.includes(an) || w(t).some(y => an.includes(y)))) return 'a'; return null; };
+    if ((x = s.match(/^(.+?) (?:castiga|victorie)$/))) { const d = side(x[1]); if (d) return done(d === 'h' ? H > A : A > H); }
+    if ((x = s.match(/^(.+?) sau egal/))) { const d = side(x[1]); if (d) return done(d === 'h' ? H >= A : A >= H); }
+    if ((x = s.match(/^(.+?) fara gol primit$/))) { const d = side(x[1]); if (d) { const c = d === 'h' ? A : H; return done(c === 0, false, c > 0); } }
+    if ((x = s.match(/^(.+?) castiga cu (\d)\+ goluri/))) { const d = side(x[1]); if (d) return done((d === 'h' ? H - A : A - H) >= +x[2]); } }
   if (s.startsWith('bet builder')) { const parts = sel.replace(/^bet builder\s*/i, '').split(/\s*\+\s*/).map(p => judge(p, meci, m)); if (parts.includes(null)) return null; if (parts.includes('lost')) return 'lost'; if (parts.every(p => p === 'won')) return 'won'; return parts.includes('no') ? 'no' : 'ok'; }
   return null;
 }
 function applyFin() {
-  for (const li of document.querySelectorAll('.legs li[data-fin]')) { const m = li._fin; const r = judge(li._sel, li._meci, m); if (r) li.dataset.res = r; const lv = li.querySelector('.lv'); lv.className = 'lv on fin'; lv.textContent = 'Final ' + m.h + ' – ' + m.a; }
+  for (const li of document.querySelectorAll('.legs li[data-fin]')) { const m = li._fin; const r = judge(li._sel, li._meci, m); if (r) li.dataset.res = r; const lv = li.querySelector('.lv'); lv.className = 'lv on fin'; lv.textContent = (m.ft90 ? 'Final 90′ ' : 'Final ') + m.h + ' – ' + m.a; }
 }
 function markLost(r, matches) {
   if (!r || r.status !== PEND || lostNow.has(r.id)) return false;
@@ -797,7 +805,7 @@ async function liveTick() {
         if (!counted.has(li.dataset.id)) { counted.add(li.dataset.id); liveCount++; tick.push({ id: li.dataset.id, meci: li._meci, m }); }
         li.classList.add('livenow'); lv.className = 'lv on live';
         lv.replaceChildren(el('span', 'dot'), document.createTextNode(m.h + ' – ' + m.a + (m.min ? '  ·  ' + m.min + "'" : m.label ? '  ·  ' + m.label : '') + (corn ? '  ·  ' + corn : '')));
-      } else { lv.className = 'lv on fin'; lv.textContent = 'Final ' + m.h + ' – ' + m.a + (corn ? ', ' + corn : ''); }
+      } else { lv.className = 'lv on fin'; lv.textContent = (m.ft90 ? 'Final 90′ ' : 'Final ') + m.h + ' – ' + m.a + (corn ? ', ' + corn : ''); }
     }
     progs(); ticker(tick); heroLive();
     const nx = $('next'); nx.querySelector('.livebadge')?.remove();
