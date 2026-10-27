@@ -1,0 +1,165 @@
+{
+ "data": "2026-10-27",
+ "salvat": "2026-10-27T12:35:20.358Z",
+ "n": 4,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14292455,
+    "meci": "AIK Stockholm – Elfsborg",
+    "when": "2026-10-27T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.59,
+    "p": 0.579,
+    "why": "AIK Stockholm dă 1,6 și primește 1,7 goluri pe meci; Elfsborg dă 1,5 și primește 1."
+   },
+   {
+    "id": 14276255,
+    "meci": "Sassuolo – Lazio",
+    "when": "2026-10-27T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.71,
+    "p": 0.561,
+    "why": "Sassuolo dă 1,5 și primește 2 goluri pe meci; Lazio dă 2 și primește 0,6."
+   },
+   {
+    "id": 14276256,
+    "meci": "Torino FC – Como",
+    "when": "2026-10-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.69,
+    "p": 0.547,
+    "why": "Torino FC dă 1,6 și primește 1,4 goluri pe meci; Como dă 1,8 și primește 0,9."
+   },
+   {
+    "id": 14276254,
+    "meci": "AS Roma – Cagliari",
+    "when": "2026-10-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.62,
+    "p": 0.532,
+    "why": "AS Roma dă 2,4 și primește 0,8 goluri pe meci; Cagliari dă 0,8 și primește 1,1."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14292455,
+    "meci": "AIK Stockholm – Elfsborg",
+    "when": "2026-10-27T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "GG (ambele marchează)",
+    "od": 1.52,
+    "p": 0.607,
+    "why": "AIK Stockholm marchează 1,6 și primește 1,7 pe meci; Elfsborg marchează 1,5 și primește 1."
+   },
+   {
+    "id": 14276255,
+    "meci": "Sassuolo – Lazio",
+    "when": "2026-10-27T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.6,
+    "p": 0.581,
+    "why": "Sassuolo marchează 1,5 și primește 2 pe meci; Lazio marchează 2 și primește 0,6."
+   },
+   {
+    "id": 14276256,
+    "meci": "Torino FC – Como",
+    "when": "2026-10-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.66,
+    "p": 0.568,
+    "why": "Torino FC marchează 1,6 și primește 1,4 pe meci; Como marchează 1,8 și primește 0,9."
+   },
+   {
+    "id": 14276254,
+    "meci": "AS Roma – Cagliari",
+    "when": "2026-10-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 2.05,
+    "p": 0.463,
+    "why": "AS Roma marchează 2,4 și primește 0,8 pe meci; Cagliari marchează 0,8 și primește 1,1."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14276256,
+    "meci": "Torino FC – Como",
+    "when": "2026-10-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.5,
+    "p": 0.721,
+    "why": "Media cornerelor: Torino FC 3,3, Como 7,1, adică 10,4 pe meci."
+   },
+   {
+    "id": 14276255,
+    "meci": "Sassuolo – Lazio",
+    "when": "2026-10-27T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.42,
+    "p": 0.713,
+    "why": "Media cornerelor: Sassuolo 4,3, Lazio 5,5, adică 9,8 pe meci."
+   },
+   {
+    "id": 14276254,
+    "meci": "AS Roma – Cagliari",
+    "when": "2026-10-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.38,
+    "p": 0.707,
+    "why": "Media cornerelor: AS Roma 5,9, Cagliari 3,6, adică 9,5 pe meci."
+   },
+   {
+    "id": 14292455,
+    "meci": "AIK Stockholm – Elfsborg",
+    "when": "2026-10-27T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.44,
+    "p": 0.65,
+    "why": "Media cornerelor: AIK Stockholm 5,1, Elfsborg 4,7, adică 9,8 pe meci."
+   }
+  ],
+  "cartonase": [
+   {
+    "id": 14276254,
+    "meci": "AS Roma – Cagliari",
+    "when": "2026-10-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.61,
+    "p": 0.659,
+    "why": "Cartonașe pe meci: AS Roma 2,3, Cagliari 1,5."
+   },
+   {
+    "id": 14276256,
+    "meci": "Torino FC – Como",
+    "when": "2026-10-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.4,
+    "p": 0.539,
+    "why": "Cartonașe pe meci: Torino FC 0,9, Como 1,4."
+   },
+   {
+    "id": 14276255,
+    "meci": "Sassuolo – Lazio",
+    "when": "2026-10-27T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.72,
+    "p": 0.484,
+    "why": "Cartonașe pe meci: Sassuolo 1,5, Lazio 1,8."
+   }
+  ]
+ }
+}
