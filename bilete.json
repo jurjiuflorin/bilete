@@ -1164,5 +1164,93 @@
    14879415,
    15028489
   ]
+ },
+ {
+  "id": "2026-10-28-pariu",
+  "data": "2026-10-28",
+  "tip": "Pariul zilei",
+  "cota": 1.61,
+  "sansa": 0.747,
+  "status": "în așteptare",
+  "cod": "991G-KNOO57",
+  "selectii": "22:00 Hearts – Rangers: Peste 9.5 cornere (1.61)",
+  "rezultat": "",
+  "motive": [
+   "Hearts are 6,7 cornere pe meci, iar Rangers 7,7, adică 14,4 împreună, iar arbitrul e Donald Robertson. Estimez ~75% pentru 10+ cornere, față de 59% cât implică cota 1,61, deci cel mai mare avantaj al zilei."
+  ],
+  "ids": [
+   15436092
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-10-28-cota2",
+  "data": "2026-10-28",
+  "tip": "Cotă 2",
+  "cota": 1.96,
+  "sansa": 0.535,
+  "status": "în așteptare",
+  "cod": "991W-WWKWU1",
+  "selectii": "21:45 Bayern – Magdeburg: Peste 3.5 (1.41) · 19:30 Parma – Udinese: Peste 1.5 (1.39)",
+  "rezultat": "",
+  "motive": [
+   "Bayern dă 3,7 goluri pe meci în campionat și are xG 3,1, iar Magdeburg vine din liga a doua; în Cupă Bayern a dat 4. Șansă estimată ~72%.",
+   "Parma primește 1,9 și Udinese 2,3 goluri pe meci, deci modelul dă ~2,3 goluri așteptate. Șansă estimată ~74% pentru 2+ goluri."
+  ],
+  "ids": [
+   14879407,
+   14276253
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-10-28-cota5",
+  "data": "2026-10-28",
+  "tip": "Cotă 5",
+  "cota": 4.95,
+  "sansa": 0.2109,
+  "status": "în așteptare",
+  "cod": "991M-KKV5OG",
+  "selectii": "19:00 Freiburg – Wolfsburg: Peste 2.5 (1.41) · 19:30 Venezia – Inter: Peste 7.5 cornere (1.42) · 21:30 Manchester City – Brighton: Peste 2.5 (1.49) · 21:45 Monza – Napoli: GG (1.66)",
+  "rezultat": "",
+  "motive": [
+   "Wolfsburg a primit 3 goluri pe meci în Cupă, iar Freiburg a dat 5; xG ~3 pentru fiecare. Estimez ~69% pentru 3+ goluri.",
+   "Inter are 5,8 cornere pe meci, Venezia 4,5 (10,3 împreună); estimez ~73% pentru 8+ față de 70% în cotă.",
+   "City a dat 5 goluri în Cupă, Brighton a dat 3 și a primit 2; estimez ~66% pentru 3+ goluri față de 63% în cotă.",
+   "Monza dă 1,9 și primește 2,3 goluri pe meci, Napoli dă 1,6; estimez ~63% pentru GG față de 57% în cotă."
+  ],
+  "ids": [
+   14879676,
+   14276258,
+   15036740,
+   14276252
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-10-28-cota10",
+  "data": "2026-10-28",
+  "tip": "Cotă 10",
+  "cota": 9.66,
+  "sansa": 0.1351,
+  "status": "în așteptare",
+  "cod": "990B-KK51O2",
+  "selectii": "21:45 Genoa – Juventus: Peste 8.5 cornere (1.69) · 21:45 Celtic – Dundee United: Peste 10.5 cornere (1.52) · 21:45 Leverkusen – Nürnberg: Leverkusen peste 2.5 goluri (1.49) · 21:45 Monza – Napoli: Peste 8.5 cornere (1.74) · 22:00 Liverpool – Chelsea: GG (1.45)",
+  "rezultat": "",
+  "motive": [
+   "Juventus are 7,5 cornere pe meci, Genoa 4,1 (11,6 împreună); estimez ~69% pentru 9+ față de 56% în cotă.",
+   "Celtic are 8,7 cornere pe meci, Dundee United 6,0 (14,7 împreună); estimez ~74% pentru 11+ față de 62% în cotă.",
+   "Leverkusen a dat 4 goluri în turul trecut al Cupei, iar Nürnberg e din liga a doua; estimez ~65% ca Leverkusen să dea 3+.",
+   "Napoli are 5,9 cornere pe meci, Monza 4,3 (10,2 împreună); estimez ~62% pentru 9+ față de 54% în cotă. Pe Cotă 5 același meci are GG, nu cornere.",
+   "Ambele marchează des: Liverpool 3 și Chelsea 4 goluri pe meci în Cupă, xG 1,9 și 2,5; estimez ~66% pentru GG."
+  ],
+  "ids": [
+   14276250,
+   15436081,
+   14879326,
+   14276252,
+   15028490
+  ],
+  "sport": "fotbal"
  }
 ]
