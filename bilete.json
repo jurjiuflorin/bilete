@@ -1141,5 +1141,28 @@
    14276256,
    14276255
   ]
+ },
+ {
+  "id": "2026-10-27-cota10",
+  "data": "2026-10-27",
+  "tip": "Cotă 10",
+  "cota": 8.77,
+  "sansa": 0.088,
+  "status": "în așteptare",
+  "cod": "9906-NDP992",
+  "rezultat": "",
+  "selectii": "19:00 Rot-Weiss Essen – RB Leipzig: GG (1.76) · 21:45 Torino – Como: Peste 2.5 (1.68) · 21:45 Dortmund – Werder Bremen: GG (1.63) · 22:00 Fleetwood – Arsenal: Peste 3.5 (1.82)",
+  "motive": [
+   "Leipzig a marcat în 3 din ultimele 5 dar a primit gol în cele 2 înfrângeri, iar Essen vine cu serie bună acasă; GG la ~1.80 (implicit ~55%), estimez 50% din cauza rotației lui Leipzig – încredere mai scăzută, cote din surse externe.",
+   "Como marchează 2,3/meci, Torino primește 1,33 acasă, iar în ultimele 4 dueluri au fost 6-0, 5-1, 1-0, 0-1; estimez 64% pentru peste 2.5 față de ~60% implicit.",
+   "Bremen marchează 2,1/meci și nu a pierdut în ultimele 5 (2V, 3E), Dortmund primește 0,8/meci și marchează 2,1; GG la ~1.65 (implicit ~57%), estimez 55%.",
+   "Arsenal marchează 1,9/meci (3,2 goluri estimate în meciul de azi), Fleetwood primește 1,5/meci și a pierdut ultimele 5 în deplasare; peste 3.5 la ~1.83 are 51% pe piață, estimez 50% (risc de rotație)."
+  ],
+  "ids": [
+   14879733,
+   14276256,
+   14879415,
+   15028489
+  ]
  }
 ]
