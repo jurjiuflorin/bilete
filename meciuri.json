@@ -1,161 +1,38 @@
 {
- "data": "2026-10-26",
- "actualizat": "2026-10-26T08:40:00Z",
+ "data": "2026-10-27",
+ "actualizat": "2026-10-27T08:27:30Z",
  "meciuri": [
   {
-   "id": 14246790,
-   "data": "2026-10-26",
-   "ora": "18:00",
-   "liga": "Turkey Süper Lig",
-   "gazde": "Rizespor",
-   "oaspeti": "Trabzonspor",
-   "absenti_gazde": [
-    "Ahmed – accidentat",
-    "Mocsi – accidentat",
-    "Can – accidentat",
-    "Alikulov – accidentat"
-   ],
-   "absenti_oaspeti": [
-    "Batagov – accidentat",
-    "Okay – accidentat",
-    "Malinovskyi – accidentat",
-    "Onuachu – accidentat",
-    "Mustafa – accidentat",
-    "Mendy – absent"
-   ]
-  },
-  {
-   "id": 14246794,
-   "data": "2026-10-26",
-   "ora": "18:00",
-   "liga": "Turkey Süper Lig",
-   "gazde": "Besiktas",
-   "oaspeti": "Basaksehir",
-   "absenti_gazde": [
-    "Orkun Kökçü – accidentat (incert)",
-    "Rashica – accidentat",
-    "Miretti – accidentat"
-   ],
-   "absenti_oaspeti": [
-    "Opoku – accidentat",
-    "Operi – accidentat",
-    "Selke – accidentat"
-   ]
-  },
-  {
-   "id": 14231682,
-   "data": "2026-10-26",
-   "ora": "20:00",
-   "liga": "Romania SuperLiga",
-   "gazde": "Sepsi",
-   "oaspeti": "U Craiova",
-   "loc_gazde": 12,
-   "loc_oaspeti": 3,
+   "data": "2026-10-27",
+   "ora": "19:30",
+   "liga": "Serie A",
+   "gazde": "Sassuolo",
+   "oaspeti": "Lazio",
+   "loc_oaspeti": 1,
    "absenti_gazde": [],
    "absenti_oaspeti": [],
-   "arbitru": "Horia Mladinovici",
-   "arbitru_galbene": 3.78,
-   "arbitru_rosii": 0.11,
-   "arbitru_meciuri": 9,
-   "arbitru_sezon": "Liga 1 2024/25",
-   "nota": "Sepsi: 14 puncte din 12 meciuri; Craiova: 26 puncte, 4 victorii și un egal în ultimele 5 meciuri."
+   "nota": "Sassuolo: 8 puncte, venind dintr-un 0-2 cu Como; Lazio: lider cu 22 puncte, neînvinsă în campionat."
   },
   {
-   "id": 14246793,
-   "data": "2026-10-26",
-   "ora": "20:30",
-   "liga": "Turkey Süper Lig",
-   "gazde": "Galatasaray",
-   "oaspeti": "Fenerbahce",
-   "loc_gazde": 2,
-   "loc_oaspeti": 3,
-   "absenti_gazde": [
-    "Rafael Leão – accidentat (incert)"
-   ],
-   "absenti_oaspeti": [
-    "Asensio – accidentat",
-    "Oosterwolde – accidentat",
-    "Ake – accidentat",
-    "Mert Müldür – accidentat (incert)"
-   ],
-   "marcatori_gazde": "Osimhen 6 (ligă)",
-   "marcatori_oaspeti": "Muriqi 7 (ligă)"
+   "data": "2026-10-27",
+   "ora": "21:45",
+   "liga": "Serie A",
+   "gazde": "Roma",
+   "oaspeti": "Cagliari",
+   "loc_gazde": 3,
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Roma: locul 3 cu 18 puncte, neînvinsă (3-3 cu Napoli); Cagliari: 13 puncte, două înfrângeri la rând (Monza, Bologna)."
   },
   {
-   "id": 14231666,
-   "data": "2026-10-26",
-   "ora": "20:45",
-   "liga": "Liga Portugal",
-   "gazde": "Santa Clara",
-   "oaspeti": "Benfica",
-   "forma_gazde": "VVEVI",
-   "forma_oaspeti": "VIVVV",
-   "absenti_gazde": [
-    "Tavares – suspendat",
-    "Matheus Araújo – revenit după ligamente (incert)"
-   ],
-   "absenti_oaspeti": [
-    "Barrenechea – meniscul, operat",
-    "Kaminski – accidentat",
-    "Banjaqui – accidentat",
-    "Barreiro – accidentat",
-    "Pavlidis – accidentat (incert)"
-   ]
-  },
-  {
-   "id": 14246839,
-   "data": "2026-10-26",
-   "ora": "21:30",
-   "liga": "Ligue 1",
-   "gazde": "PSG",
-   "oaspeti": "Lyon",
-   "forma_gazde": "VVVVV",
-   "loc_gazde": 5,
-   "loc_oaspeti": 4,
-   "absenti_gazde": [
-    "Marquinhos – accidentat",
-    "Dembélé – accidentat",
-    "Kvaratskhelia – ligamente rupte",
-    "Nuno Mendes – absent"
-   ],
-   "absenti_oaspeti": [
-    "Openda – fractură de peroneu",
-    "Šulc – menisc",
-    "Nakamura – suspendat",
-    "Tagliafico – absent",
-    "Ouédraogo – absent",
-    "Kango – absent"
-   ],
-   "marcatori_oaspeti": "Nuamah 3 (ligă)",
-   "arbitru": "Jérôme Brisard",
-   "arbitru_galbene": 3.83,
-   "arbitru_rosii": 0.28,
-   "arbitru_meciuri": 18,
-   "arbitru_sezon": "Ligue 1 2024/25",
-   "nota": "PSG vine după 7 victorii consecutive în toate competițiile."
-  },
-  {
-   "id": 14246837,
-   "data": "2026-10-26",
-   "ora": "22:00",
-   "liga": "LaLiga",
-   "gazde": "Sevilla",
-   "oaspeti": "Osasuna",
-   "forma_gazde": "VIIEI",
-   "forma_oaspeti": "IIEIV",
-   "absenti_gazde": [
-    "Sierra – accidentat",
-    "Marcão – accidentat",
-    "Guridi – incert",
-    "Stassin – incert"
-   ],
-   "absenti_oaspeti": [
-    "Aimar Oroz – accidentat",
-    "Del Castillo – accidentat",
-    "Herrando – incert"
-   ],
-   "marcatori_oaspeti": "Budimir 7 (ligă)",
-   "arbitru": "Miguel Ángel Ortiz Arias"
+   "data": "2026-10-27",
+   "ora": "21:45",
+   "liga": "Serie A",
+   "gazde": "Torino",
+   "oaspeti": "Como",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Torino a învins Monza cu 3-2; Como are 17 puncte după 2-0 cu Sassuolo."
   }
  ]
 }
