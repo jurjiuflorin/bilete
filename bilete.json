@@ -1037,7 +1037,7 @@
   "sansa": 0.0054,
   "status": "în așteptare",
   "cod": "990A-KKFNAT",
-  "rezultat": "",
+  "rezultat": "Sassuolo–Lazio 2-6",
   "selectii": "27.10 19:30 Sassuolo – Lazio: Peste 2.5 (1.61) · 28.10 21:45 Monza – Napoli: Peste 2.5 (1.52) · 29.10 19:30 Frosinone – Lecce: Peste 2.5 (1.61) · 30.10 21:30 Elversberg – Mainz: Peste 2.5 (1.47) · 31.10 16:30 Bremen – Hoffenheim: Peste 3.5 (1.82) · 31.10 14:30 Chelsea – Man United: Peste 2.5 (1.61) · 31.10 16:30 Mönchengladbach – Paderborn: Peste 2.5 (1.56) · 31.10 22:00 Barcelona – Alavés: Barcelona peste 2.5 goluri (1.52) · 31.10 21:45 Milan – Inter: Peste 2.5 (1.61) · 01.11 18:30 Liverpool – Arsenal: Sub 2.5 (1.72)",
   "ids": [
    14276255,
@@ -1058,9 +1058,9 @@
   "tip": "Mega 20+ (refăcut)",
   "cota": 421.81,
   "sansa": 0.0006,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990X-NNJ656",
-  "rezultat": "",
+  "rezultat": "Roma 4-2 Cagliari · Gladbach–Karlsruher 2-0 (pierdut Peste 2.5)",
   "selectii": "27.10 21:45 Roma – Cagliari: Roma câștigă (1.43) · 27.10 21:45 M'gladbach – Karlsruher: Peste 2.5 (1.39) · 28.10 19:30 Venezia – Inter: Peste 2.5 (1.39) · 28.10 21:45 Leverkusen – Nürnberg: Peste 2.5 (1.43) · 28.10 21:45 Bayern – Magdeburg: Peste 2.5 (1.35) · 28.10 19:30 Milan – Bologna: Milan câștigă (1.43) · 28.10 21:45 Genoa – Juventus: Juventus sau egal (X2) (1.43) · 30.10 20:00 Le Havre – PSG: Peste 2.5 (1.43) · 31.10 19:30 Betis – Málaga: Betis câștigă (1.39) · 31.10 19:00 Udinese – Roma: Roma câștigă (1.43) · 31.10 16:30 Augsburg – Freiburg: Peste 2.5 (1.39) · 31.10 16:30 Leverkusen – Stuttgart: Peste 2.5 (1.37) · 31.10 19:30 Bayern – Dortmund: Peste 2.5 (1.39) · 31.10 17:00 Man City – Brighton: Peste 2.5 (1.39) · 31.10 15:00 Levante – Atlético Madrid: Atlético câștigă (1.43) · 31.10 16:30 Bremen – Hoffenheim: Peste 2.5 (1.35) · 01.11 16:00 Lazio – Cagliari: Lazio câștigă (1.43) · 01.11 13:30 Como – Venezia: Como câștigă (1.39) · 01.11 17:15 Racing Santander – Real Madrid: Real Madrid peste 1.5 goluri (1.35)",
   "ids": [
    14276254,
@@ -1090,10 +1090,10 @@
   "tip": "Pariul zilei",
   "cota": 1.67,
   "sansa": 0.66,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "9905-ND6JXD",
   "selectii": "21:45 Torino – Como: Peste 2.5 (1.67)",
-  "rezultat": "",
+  "rezultat": "Torino–Como 1-3",
   "motive": [
    "Como marchează 2,3/meci (2,2 în deplasare), Torino primește 1,33 acasă; ultimele 4 dueluri: 6-0, 5-1, 1-0, 0-1 și GG în 6 din 8 meciuri ale lui Torino. Estimez 66% probabilitate față de 60% implicit în cota 1.67 (cotă estimată din -150, sursă externă), deci un avantaj de ~6 puncte."
   ],
@@ -1108,10 +1108,10 @@
   "tip": "Cotă 2",
   "cota": 2.02,
   "sansa": 0.47,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "990T-NHMM52",
   "selectii": "21:45 Roma – Cagliari: Roma câștigă (1.36 estimat) · 19:30 Sassuolo – Lazio: GG (1.57)",
-  "rezultat": "",
+  "rezultat": "Roma 4-2 Cagliari · Sassuolo–Lazio 2-6",
   "motive": [
    "Roma e neînvinsă (5V, 3E), 19 goluri marcate și 6 primite în 8 etape, 2,3 marcate/0,6 primite în ultimele 10, iar Cagliari a pierdut ultimele 2 fără gol.",
    "Sassuolo a marcat și primit în 88% din meciuri (2,0 goluri primite/meci), Lazio a marcat în aproape toate meciurile recente (2,0 marcate/meci); GG la ~1.57."
@@ -1127,10 +1127,10 @@
   "tip": "Cotă 5",
   "cota": 4.18,
   "sansa": 0.18,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990Q-KLBIJC",
   "selectii": "21:45 Roma – Cagliari: Roma fără gol primit (2.20) · 21:45 Torino – Como: GG (1.61) · 19:30 Sassuolo – Lazio: X2 (1.38 estimat)",
-  "rezultat": "",
+  "rezultat": "Roma 4-2 Cagliari (a primit gol) · Torino–Como 1-3 · Sassuolo–Lazio 2-6",
   "motive": [
    "Roma primește doar 0,6 goluri/meci, Cagliari are 6 goluri în 8 meciuri și nu a marcat în ultimele 2; estimez ~42% față de 45% implicit.",
    "Como marchează 2,3/meci, GG în 6 din 8 meciuri ale lui Torino; cota ~1.61 (din -163).",
@@ -1148,9 +1148,9 @@
   "tip": "Cotă 10",
   "cota": 8.77,
   "sansa": 0.088,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9906-NDP992",
-  "rezultat": "",
+  "rezultat": "Essen–Leipzig 1-2 · Torino–Como 1-3 · Dortmund–Bremen 3-2 · Fleetwood–Arsenal 1-1 (pierdut Peste 3.5)",
   "selectii": "19:00 Rot-Weiss Essen – RB Leipzig: GG (1.76) · 21:45 Torino – Como: Peste 2.5 (1.68) · 21:45 Dortmund – Werder Bremen: GG (1.63) · 22:00 Fleetwood – Arsenal: Peste 3.5 (1.82)",
   "motive": [
    "Leipzig a marcat în 3 din ultimele 5 dar a primit gol în cele 2 înfrângeri, iar Essen vine cu serie bună acasă; GG la ~1.80 (implicit ~55%), estimez 50% din cauza rotației lui Leipzig – încredere mai scăzută, cote din surse externe.",
@@ -1252,5 +1252,38 @@
    15028490
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-10-26-mega-r2026-10-27-r2026-10-28",
+  "data": "2026-10-28",
+  "tip": "Mega 20+ (refăcut)",
+  "cota": 1177.22,
+  "sansa": 0.0003,
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "selectii": "28.10 19:30 Venezia – Inter: Peste 2.5 (1.39) · 28.10 19:30 Milan – Bologna: Milan câștigă (1.43) · 28.10 21:45 Leverkusen – Nürnberg: Peste 2.5 (1.43) · 28.10 21:45 Bayern – Magdeburg: Peste 2.5 (1.35) · 28.10 21:45 Genoa – Juventus: Juventus sau egal (X2) (1.43) · 30.10 20:00 Le Havre – PSG: Peste 2.5 (1.43) · 31.10 14:30 Chelsea – Man United: Peste 2.5 (1.65) · 31.10 15:00 Levante – Atlético Madrid: Atlético câștigă (1.43) · 31.10 16:30 Augsburg – Freiburg: Peste 2.5 (1.39) · 31.10 16:30 Leverkusen – Stuttgart: Peste 2.5 (1.37) · 31.10 16:30 Bremen – Hoffenheim: Peste 2.5 (1.35) · 31.10 16:30 Mönchengladbach – Paderborn: Peste 2.5 (1.50) · 31.10 16:30 Schalke – RB Leipzig: 2 (1.60) · 31.10 17:00 Man City – Brighton: Peste 2.5 (1.39) · 31.10 19:00 Udinese – Roma: Roma câștigă (1.43) · 31.10 19:30 Betis – Málaga: Betis câștigă (1.39) · 31.10 19:30 Bayern – Dortmund: Peste 2.5 (1.39) · 01.11 13:30 Como – Venezia: Como câștigă (1.39) · 01.11 16:00 Lazio – Cagliari: Lazio câștigă (1.43) · 01.11 17:15 Racing Santander – Real Madrid: Real Madrid peste 1.5 goluri (1.35)",
+  "ids": [
+   14276258,
+   14276251,
+   14879326,
+   14879407,
+   14276250,
+   14335540,
+   14335450,
+   14351075,
+   14335394,
+   14335392,
+   14335397,
+   14335396,
+   14335398,
+   14335455,
+   14335422,
+   14351042,
+   14335391,
+   14335415,
+   14335418,
+   14351076
+  ]
  }
 ]
