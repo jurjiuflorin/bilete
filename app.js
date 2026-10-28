@@ -1149,7 +1149,7 @@ async function loadSnapRes(key) {
   const ids = [...new Set(items.filter(z => !z.rez && new Date(z.when) < new Date()).map(z => z.id))];
   const M = {}; await pool(ids, 6, async id => { M[id] = await getMatch(id); });
   o.res = {}; o.sc = {}; o.live = false;
-  for (const z of items) { if (z.rez) { if (z.rez !== 'void') o.res[z.id + '|' + z.sel] = z.rez; if (z.scor) o.sc[z.id] = z.scor.replace('-', ' – ') + (z.total != null ? ' · ' + z.total + (/corner/.test(z.sel) ? ' cornere' : ' galbene') : ''); continue; } const m = M[z.id]; if (!m) continue; const r = judge(sugSel(z.sel), z.meci, m); if (r) o.res[z.id + '|' + z.sel] = r; if (m.h != null) o.sc[z.id] = m.h + ' – ' + m.a + (m.state === 2 ? '' : (m.min ? ' · ' + m.min + "'" : ' · live')); if (m.state === 1) o.live = true; }
+  for (const z of items) { if (z.rez) { if (z.rez !== 'void') o.res[z.id + '|' + z.sel] = z.rez; if (z.scor) o.sc[z.id + '|' + z.sel] = z.scor.replace('-', ' – ') + (z.total != null && /corner|cartona|galben/i.test(z.sel) ? ' · ' + z.total + (/corner/i.test(z.sel) ? ' cornere' : ' galbene') : ''); continue; } const m = M[z.id]; if (!m) continue; const r = judge(sugSel(z.sel), z.meci, m); if (r) o.res[z.id + '|' + z.sel] = r; if (m.h != null) o.sc[z.id + '|' + z.sel] = m.h + ' – ' + m.a + (/corner/i.test(z.sel) && m.corners ? ' · ' + (m.corners[0] + m.corners[1]) + ' cornere' : /cartona|galben/i.test(z.sel) && m.yellow ? ' · ' + (m.yellow[0] + m.yellow[1]) + ' galbene' : '') + (m.state === 2 ? '' : (m.min ? ' · ' + m.min + "'" : ' · live')); if (m.state === 1) o.live = true; }
   } finally { o.rt = Date.now(); o.rbusy = false; }
 }
 const SUG_CATS = [['goluri', 'Goluri', 'Meciuri cu multe goluri'], ['gg', 'GG', 'Ambele echipe marchează'], ['cornere', 'Cornere', 'Peste numărul de cornere'], ['cartonase', 'Cartonașe', 'Peste numărul de cartonașe']];
@@ -1215,7 +1215,7 @@ function viewSuggest() {
       const li = el('li'); li.tabIndex = 0; li.setAttribute('role', 'button'); li.title = 'Detalii meci'; if (r) li.dataset.res = r;
       const top = el('div', 'sg-top'); top.append(el('span', 't', fmtHM(when)), el('span', 'm', z.meci), el('span', 'sg-p', Math.round(z.p * 100) + '%'));
       const mid = el('div', 'sg-mid'); mid.append(el('b', null, z.sel), el('span', 'o', '@ ' + fmtOdd(z.od)));
-      if (SC[z.id]) mid.append(el('span', 'sg-sc', SC[z.id]));
+      if (SC[z.id + '|' + z.sel]) mid.append(el('span', 'sg-sc', SC[z.id + '|' + z.sel]));
       if (r === 'won' || r === 'lost') mid.append(el('span', 'sg-res ' + r, r === 'won' ? '✓ Intrat' : '✗ Pierdut'));
       mid.append(el('span', 'lg', z.liga));
       li.append(top, mid, el('p', 'sg-why', z.why));
