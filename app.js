@@ -1283,3 +1283,10 @@ fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .catch(e => { $('next').textContent = ''; $('list').append(el('div', 'err', 'Biletele nu s-au putut încărca: ' + e.message + '. Reîncarcă pagina peste un minut.')); });
 
 if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+
+// ceasul din bara de sus, ca la teletext
+(function ttxClock() {
+  const e = document.getElementById('ttx-ck'); if (!e) return;
+  const tick = () => { const d = new Date(); e.textContent = d.toLocaleDateString('ro-RO', { weekday: 'short', day: '2-digit', month: 'short' }) + '  ' + d.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); };
+  tick(); setInterval(tick, 1000);
+})();
