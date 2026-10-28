@@ -1,0 +1,215 @@
+{
+ "data": "2026-10-28",
+ "salvat": "2026-10-28T13:23:27.206Z",
+ "n": 15,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14276258,
+    "meci": "Venezia – Inter Milano",
+    "when": "2026-10-28T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.37,
+    "p": 0.71,
+    "why": "Venezia dă 0,8 și primește 2,1 goluri pe meci; Inter Milano dă 2,9 și primește 1,3."
+   },
+   {
+    "id": 14276250,
+    "meci": "Genoa – Juventus",
+    "when": "2026-10-28T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.45,
+    "p": 0.676,
+    "why": "Genoa dă 0,8 și primește 1,6 goluri pe meci; Juventus dă 1,4 și primește 1."
+   },
+   {
+    "id": 14292459,
+    "meci": "IF Brommapojkarna – Hacken",
+    "when": "2026-10-28T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.46,
+    "p": 0.638,
+    "why": "IF Brommapojkarna dă 1,6 și primește 1,7 goluri pe meci; Hacken dă 1,9 și primește 1,2."
+   },
+   {
+    "id": 14276252,
+    "meci": "Monza – Napoli",
+    "when": "2026-10-28T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.66,
+    "p": 0.633,
+    "why": "Monza dă 1,9 și primește 2,3 goluri pe meci; Napoli dă 1,6 și primește 1,3."
+   },
+   {
+    "id": 14292457,
+    "meci": "IFK Goteborg – Djurgarden IF",
+    "when": "2026-10-28T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.58,
+    "p": 0.603,
+    "why": "IFK Goteborg dă 1,4 și primește 1,8 goluri pe meci; Djurgarden IF dă 2,1 și primește 0,9."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14276252,
+    "meci": "Monza – Napoli",
+    "when": "2026-10-28T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.63,
+    "p": 0.635,
+    "why": "Monza marchează 1,9 și primește 2,3 pe meci; Napoli marchează 1,6 și primește 1,3."
+   },
+   {
+    "id": 14276258,
+    "meci": "Venezia – Inter Milano",
+    "when": "2026-10-28T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.59,
+    "p": 0.635,
+    "why": "Venezia marchează 0,8 și primește 2,1 pe meci; Inter Milano marchează 2,9 și primește 1,3."
+   },
+   {
+    "id": 14292459,
+    "meci": "IF Brommapojkarna – Hacken",
+    "when": "2026-10-28T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "GG (ambele marchează)",
+    "od": 1.58,
+    "p": 0.619,
+    "why": "IF Brommapojkarna marchează 1,6 și primește 1,7 pe meci; Hacken marchează 1,9 și primește 1,2."
+   },
+   {
+    "id": 15436092,
+    "meci": "Hearts – Rangers",
+    "when": "2026-10-28T20:00:00.000Z",
+    "liga": "Premiership (Scoția)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.53,
+    "p": 0.619,
+    "why": "Hearts marchează 2,2 și primește 1,5 pe meci; Rangers marchează 1,7 și primește 0,7."
+   },
+   {
+    "id": 14292457,
+    "meci": "IFK Goteborg – Djurgarden IF",
+    "when": "2026-10-28T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "GG (ambele marchează)",
+    "od": 1.51,
+    "p": 0.616,
+    "why": "IFK Goteborg marchează 1,4 și primește 1,8 pe meci; Djurgarden IF marchează 2,1 și primește 0,9."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 15436092,
+    "meci": "Hearts – Rangers",
+    "when": "2026-10-28T20:00:00.000Z",
+    "liga": "Premiership (Scoția)",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.38,
+    "p": 0.816,
+    "why": "Media cornerelor: Hearts 6,7, Rangers 7,7, adică 14,4 pe meci."
+   },
+   {
+    "id": 14276250,
+    "meci": "Genoa – Juventus",
+    "when": "2026-10-28T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.43,
+    "p": 0.776,
+    "why": "Media cornerelor: Genoa 4,1, Juventus 7,5, adică 11,6 pe meci."
+   },
+   {
+    "id": 15436081,
+    "meci": "Celtic – Dundee United",
+    "when": "2026-10-28T19:45:00.000Z",
+    "liga": "Premiership (Scoția)",
+    "sel": "Peste 10.5 cornere",
+    "od": 1.52,
+    "p": 0.743,
+    "why": "Media cornerelor: Celtic 8,7, Dundee United 6, adică 14,7 pe meci."
+   },
+   {
+    "id": 14292457,
+    "meci": "IFK Goteborg – Djurgarden IF",
+    "when": "2026-10-28T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.41,
+    "p": 0.738,
+    "why": "Media cornerelor: IFK Goteborg 6,8, Djurgarden IF 5,8, adică 12,6 pe meci."
+   },
+   {
+    "id": 14276258,
+    "meci": "Venezia – Inter Milano",
+    "when": "2026-10-28T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.42,
+    "p": 0.735,
+    "why": "Media cornerelor: Venezia 4,5, Inter Milano 5,8, adică 10,3 pe meci."
+   }
+  ],
+  "cartonase": [
+   {
+    "id": 15436081,
+    "meci": "Celtic – Dundee United",
+    "when": "2026-10-28T19:45:00.000Z",
+    "liga": "Premiership (Scoția)",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.36,
+    "p": 0.735,
+    "why": "Cartonașe pe meci: Celtic 1,6, Dundee United 2,5."
+   },
+   {
+    "id": 14276251,
+    "meci": "AC Milan – Bologna",
+    "when": "2026-10-28T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.36,
+    "p": 0.712,
+    "why": "Cartonașe pe meci: AC Milan 1,9, Bologna 1,9."
+   },
+   {
+    "id": 14276250,
+    "meci": "Genoa – Juventus",
+    "when": "2026-10-28T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.46,
+    "p": 0.672,
+    "why": "Cartonașe pe meci: Genoa 2,5, Juventus 1,1."
+   },
+   {
+    "id": 14276253,
+    "meci": "Parma – Udinese",
+    "when": "2026-10-28T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.36,
+    "p": 0.667,
+    "why": "Cartonașe pe meci: Parma 1,5, Udinese 1,8."
+   },
+   {
+    "id": 15436080,
+    "meci": "Aberdeen – Falkirk",
+    "when": "2026-10-28T19:45:00.000Z",
+    "liga": "Premiership (Scoția)",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.54,
+    "p": 0.609,
+    "why": "Cartonașe pe meci: Aberdeen 2,5, Falkirk 1,7."
+   }
+  ]
+ }
+}
