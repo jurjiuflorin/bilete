@@ -1015,7 +1015,7 @@
   "sansa": 0.0193,
   "status": "în așteptare",
   "cod": "990Z-KKLN4Z",
-  "rezultat": "",
+  "rezultat": "Bayern 6-1 Magdeburg",
   "selectii": "28.10 21:45 Bayern – Magdeburg: Peste 2.5 (1.35) · 31.10 14:30 Chelsea – Man United: Peste 2.5 (1.65) · 31.10 16:30 Bremen – Hoffenheim: Peste 2.5 (1.38) · 31.10 16:30 Mönchengladbach – Paderborn: Peste 2.5 (1.50) · 31.10 16:30 Augsburg – Freiburg: Peste 2.5 (1.45) · 31.10 16:30 Leverkusen – Stuttgart: Peste 2.5 (1.45) · 31.10 16:30 Schalke – RB Leipzig: 2 (1.60) · 31.10 17:00 Man City – Brighton: Peste 2.5 (1.50) · 31.10 19:30 Bayern – Dortmund: Peste 2.5 (1.40)",
   "ids": [
    14879407,
@@ -1037,7 +1037,7 @@
   "sansa": 0.0054,
   "status": "în așteptare",
   "cod": "990A-KKFNAT",
-  "rezultat": "Sassuolo–Lazio 2-6",
+  "rezultat": "Sassuolo–Lazio 2-6 · Monza 1-4 Napoli",
   "selectii": "27.10 19:30 Sassuolo – Lazio: Peste 2.5 (1.61) · 28.10 21:45 Monza – Napoli: Peste 2.5 (1.52) · 29.10 19:30 Frosinone – Lecce: Peste 2.5 (1.61) · 30.10 21:30 Elversberg – Mainz: Peste 2.5 (1.47) · 31.10 16:30 Bremen – Hoffenheim: Peste 3.5 (1.82) · 31.10 14:30 Chelsea – Man United: Peste 2.5 (1.61) · 31.10 16:30 Mönchengladbach – Paderborn: Peste 2.5 (1.56) · 31.10 22:00 Barcelona – Alavés: Barcelona peste 2.5 goluri (1.52) · 31.10 21:45 Milan – Inter: Peste 2.5 (1.61) · 01.11 18:30 Liverpool – Arsenal: Sub 2.5 (1.72)",
   "ids": [
    14276255,
@@ -1189,10 +1189,10 @@
   "tip": "Cotă 2",
   "cota": 1.96,
   "sansa": 0.535,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991W-WWKWU1",
   "selectii": "21:45 Bayern – Magdeburg: Peste 3.5 (1.41) · 19:30 Parma – Udinese: Peste 1.5 (1.39)",
-  "rezultat": "",
+  "rezultat": "Bayern 6-1 Magdeburg · Parma–Udinese 0-0",
   "motive": [
    "Bayern dă 3,7 goluri pe meci în campionat și are xG 3,1, iar Magdeburg vine din liga a doua; în Cupă Bayern a dat 4. Șansă estimată ~72%.",
    "Parma primește 1,9 și Udinese 2,3 goluri pe meci, deci modelul dă ~2,3 goluri așteptate. Șansă estimată ~74% pentru 2+ goluri."
@@ -1212,7 +1212,7 @@
   "status": "în așteptare",
   "cod": "991M-KKV5OG",
   "selectii": "19:00 Freiburg – Wolfsburg: Peste 2.5 (1.41) · 19:30 Venezia – Inter: Peste 7.5 cornere (1.42) · 21:30 Manchester City – Brighton: Peste 2.5 (1.49) · 21:45 Monza – Napoli: GG (1.66)",
-  "rezultat": "",
+  "rezultat": "Freiburg 3-2 Wolfsburg · Venezia–Inter 0-2 (cornere neconfirmate) · City–Brighton 2-2 · Monza–Napoli 1-4",
   "motive": [
    "Wolfsburg a primit 3 goluri pe meci în Cupă, iar Freiburg a dat 5; xG ~3 pentru fiecare. Estimez ~69% pentru 3+ goluri.",
    "Inter are 5,8 cornere pe meci, Venezia 4,5 (10,3 împreună); estimez ~73% pentru 8+ față de 70% în cotă.",
@@ -1236,7 +1236,7 @@
   "status": "în așteptare",
   "cod": "990B-KK51O2",
   "selectii": "21:45 Genoa – Juventus: Peste 8.5 cornere (1.69) · 21:45 Celtic – Dundee United: Peste 10.5 cornere (1.52) · 21:45 Leverkusen – Nürnberg: Leverkusen peste 2.5 goluri (1.49) · 21:45 Monza – Napoli: Peste 8.5 cornere (1.74) · 22:00 Liverpool – Chelsea: GG (1.45)",
-  "rezultat": "",
+  "rezultat": "Genoa 2-0 Juventus (15 cornere) · Celtic–Dundee United 2-2 (18 cornere) · Leverkusen 5-2 Nürnberg · Monza–Napoli 1-4 (cornere neconfirmate) · Liverpool 1-1 Chelsea",
   "motive": [
    "Juventus are 7,5 cornere pe meci, Genoa 4,1 (11,6 împreună); estimez ~69% pentru 9+ față de 56% în cotă.",
    "Celtic are 8,7 cornere pe meci, Dundee United 6,0 (14,7 împreună); estimez ~74% pentru 11+ față de 62% în cotă.",
@@ -1259,9 +1259,9 @@
   "tip": "Mega 20+ (refăcut)",
   "cota": 1177.22,
   "sansa": 0.0003,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "",
-  "rezultat": "",
+  "rezultat": "Milan 2-4 Bologna · Genoa 2-0 Juventus · Venezia–Inter 0-2 · Leverkusen 5-2 Nürnberg · Bayern 6-1 Magdeburg",
   "selectii": "28.10 19:30 Venezia – Inter: Peste 2.5 (1.39) · 28.10 19:30 Milan – Bologna: Milan câștigă (1.43) · 28.10 21:45 Leverkusen – Nürnberg: Peste 2.5 (1.43) · 28.10 21:45 Bayern – Magdeburg: Peste 2.5 (1.35) · 28.10 21:45 Genoa – Juventus: Juventus sau egal (X2) (1.43) · 30.10 20:00 Le Havre – PSG: Peste 2.5 (1.43) · 31.10 14:30 Chelsea – Man United: Peste 2.5 (1.65) · 31.10 15:00 Levante – Atlético Madrid: Atlético câștigă (1.43) · 31.10 16:30 Augsburg – Freiburg: Peste 2.5 (1.39) · 31.10 16:30 Leverkusen – Stuttgart: Peste 2.5 (1.37) · 31.10 16:30 Bremen – Hoffenheim: Peste 2.5 (1.35) · 31.10 16:30 Mönchengladbach – Paderborn: Peste 2.5 (1.50) · 31.10 16:30 Schalke – RB Leipzig: 2 (1.60) · 31.10 17:00 Man City – Brighton: Peste 2.5 (1.39) · 31.10 19:00 Udinese – Roma: Roma câștigă (1.43) · 31.10 19:30 Betis – Málaga: Betis câștigă (1.39) · 31.10 19:30 Bayern – Dortmund: Peste 2.5 (1.39) · 01.11 13:30 Como – Venezia: Como câștigă (1.39) · 01.11 16:00 Lazio – Cagliari: Lazio câștigă (1.43) · 01.11 17:15 Racing Santander – Real Madrid: Real Madrid peste 1.5 goluri (1.35)",
   "ids": [
    14276258,
@@ -1285,5 +1285,16 @@
    14335418,
    14351076
   ]
+ },
+ {
+  "id": "2026-10-26-mega-r2026-10-27-r2026-10-28-r2026-10-29",
+  "data": "2026-10-29",
+  "tip": "Mega 20+ (refăcut)",
+  "cota": 1242.55,
+  "sansa": 0.0002,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "29.10 19:30 Frosinone – Lecce: Peste 2.5 (1.61) · 30.10 20:00 Le Havre – PSG: Peste 2.5 (1.43) · 30.10 21:30 Elversberg – Mainz: Peste 2.5 (1.47) · 31.10 14:30 Chelsea – Man United: Peste 2.5 (1.65) · 31.10 15:00 Levante – Atlético Madrid: Atlético câștigă (1.43) · 31.10 16:30 Augsburg – Freiburg: Peste 2.5 (1.39) · 31.10 16:30 Leverkusen – Stuttgart: Peste 2.5 (1.37) · 31.10 16:30 Bremen – Hoffenheim: Peste 2.5 (1.35) · 31.10 16:30 Mönchengladbach – Paderborn: Peste 2.5 (1.50) · 31.10 16:30 Schalke – RB Leipzig: 2 (1.60) · 31.10 17:00 Man City – Brighton: Peste 2.5 (1.39) · 31.10 19:00 Udinese – Roma: Roma câștigă (1.43) · 31.10 19:30 Betis – Málaga: Betis câștigă (1.39) · 31.10 19:30 Bayern – Dortmund: Peste 2.5 (1.39) · 31.10 21:45 Milan – Inter: Peste 2.5 (1.61) · 31.10 22:00 Barcelona – Alavés: Barcelona peste 2.5 goluri (1.52) · 01.11 13:30 Como – Venezia: Como câștigă (1.39) · 01.11 16:00 Lazio – Cagliari: Lazio câștigă (1.43) · 01.11 17:15 Racing Santander – Real Madrid: Real Madrid peste 1.5 goluri (1.35)",
+  "rezultat": ""
  }
 ]
