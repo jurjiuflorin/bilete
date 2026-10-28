@@ -1,3 +1,2 @@
-evenimente 1985 meciuri azi 15
-scris sugestii/2026-10-28.json { goluri: 5, gg: 5, cornere: 5, cartonase: 5 }
+exista deja sugestii/2026-10-28.json
 index 4 zile
