@@ -127,7 +127,7 @@ function toast(t) { const e = $('toast'); e.textContent = t; e.classList.add('on
 
 /* ---------- views ---------- */
 // categoriile din filtre: puține grupe în loc de un buton pentru fiecare tip de bilet
-const CATS = ['Pariul zilei', 'Challenge', 'Cotă 2', 'Zilnice', 'Weekend', 'Săptămânale', 'SuperLiga', 'Biletul meu'];
+const CATS = ['Pariul zilei', 'Cotă 2', 'Zilnice', 'Weekend', 'Săptămânale', 'SuperLiga', 'Biletul meu'];
 function catOf(t) {
   const s = nrm(t || '');
   if (s.startsWith('pariul zilei')) return 'Pariul zilei';
@@ -144,7 +144,6 @@ const filtered = arr => arr.filter(r => !tip || catOf(r.tip) === tip).filter(r =
 function viewTickets(pending) {
   const list = $('list');
   let R = filtered(rows.filter(r => pending === (eff(r) === PEND)));
-  if (tip === 'Challenge') list.append(challengeBox());
   if (!R.length) { list.append(el('div', 'empty', pending ? 'Niciun bilet de jucat acum. Biletele noi apar dimineața.' : 'Încă nu s-a încheiat niciun bilet.')); return; }
   if (pending && !tip && !q) { const h = hero(); if (h) list.append(h); }
   if (!pending) list.append(histStats(R));
@@ -227,6 +226,20 @@ function challengeBox() {
   if (all) box.append(el('p', 'ch-meta', 'Cicluri jucate: ' + cycles + ' · cel mai lung șir: ' + best + ' pași'));
   box.append(el('p', 'ch-note', 'Un singur pas pierdut înseamnă pierderea întregii sume din ciclu. Șansa de a trece toți cei ' + CH_STEPS + ' pași e mică (cam 3 din 100 la ~70% pe pas), așa că pune doar o sumă pe care ești dispus să o pierzi.'));
   return box;
+}
+
+// tabul Challenge: tipurile de challenge (deocamdată unul) + scara și biletele lui
+const CHALLENGES = [{ k: '140', name: 'Challenge 1.40', sub: '10 pași la cota ~1,40, tot câștigul merge mai departe' }];
+let chSel = '140';
+function viewChallenge() {
+  const list = $('list');
+  list.append(el('p', 'intro', 'Provocări pe mai mulți pași: pornești cu o sumă mică și o duci din pas în pas. Biletul fiecărui pas apare dimineața, cu cod de agenție.'));
+  const types = el('div', 'ch-types');
+  for (const c of CHALLENGES) { const b = el('button', 'ch-type'); b.type = 'button'; b.setAttribute('aria-pressed', String(chSel === c.k)); b.append(el('b', null, c.name), el('span', null, c.sub)); b.onclick = () => { chSel = c.k; render(); }; types.append(b); }
+  const soon = el('div', 'ch-type soon'); soon.append(el('b', null, 'Alte challenge-uri'), el('span', null, 'în curând')); types.append(soon);
+  list.append(types, challengeBox());
+  const C = rows.filter(r => catOf(r.tip) === 'Challenge').sort((a, b) => (b.data + b.id).localeCompare(a.data + a.id));
+  if (C.length) { const sec = el('section', 'day'); const h = el('h2', null, 'Biletele challenge-ului'); h.append(el('small', null, 'cel mai nou primul')); const g = el('div', 'grid'); C.forEach((r, i) => g.append(slip(r, i))); sec.append(h, g); list.append(sec); }
 }
 
 // every match on active tickets, grouped by day
@@ -1301,13 +1314,13 @@ function header() {
 }
 function chips() {
   const box = $('chips'); box.replaceChildren();
-  box.hidden = tab === 'm' || tab === 'r' || tab === 's';
-  const have = new Set(rows.map(r => catOf(r.tip))); const tips = ['', ...CATS.filter(c => have.has(c) || c === 'Challenge')];
+  box.hidden = tab === 'm' || tab === 'r' || tab === 's' || tab === 'x';
+  const have = new Set(rows.map(r => catOf(r.tip))); const tips = ['', ...CATS.filter(c => have.has(c))];
   for (const t of tips) { const b = el('button', null, t || 'Toate'); b.type = 'button'; b.setAttribute('aria-pressed', String(t === tip)); b.onclick = () => { tip = t; chips(); render(); }; box.append(b); }
 }
 function render() {
   const list = $('list'); list.replaceChildren();
-  if (tab === 'p') viewTickets(true); else if (tab === 'h') viewTickets(false); else if (tab === 'c') viewCalendar(); else if (tab === 'r') viewResults(); else if (tab === 's') viewSuggest(); else viewMatches();
+  if (tab === 'p') viewTickets(true); else if (tab === 'h') viewTickets(false); else if (tab === 'c') viewCalendar(); else if (tab === 'r') viewResults(); else if (tab === 's') viewSuggest(); else if (tab === 'x') viewChallenge(); else viewMatches();
   liveTick();
 }
 $('tabs').addEventListener('click', e => {
@@ -1320,7 +1333,7 @@ $('tabs').addEventListener('click', e => {
 $('q').addEventListener('input', e => { q = nrm(e.target.value.trim()); render(); });
 
 /* ---------- start ---------- */
-const h0 = (location.hash || '').slice(1); if (['p', 'm', 'c', 'h', 'r', 's'].includes(h0)) { tab = h0; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); }
+const h0 = (location.hash || '').slice(1); if (['p', 'm', 'c', 'h', 'r', 's', 'x'].includes(h0)) { tab = h0; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); }
 loadExtra();
 fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(r => { if (!r.ok) throw new Error('fișierul de bilete nu răspunde (' + r.status + ')'); return r.json(); })

@@ -538,3 +538,8 @@ h1::after{content:"_";color:var(--cyan);margin-left:.04em;font-weight:400}
 .ch-meta{margin:0;font:500 12px var(--slip);color:var(--chalk-dim)}
 .ch-note{margin:10px 0 0;font-size:13px;color:var(--chalk-dim);max-width:70ch}
 @media (max-width:640px){.ch-lad li{grid-template-columns:62px 1fr}.ch-lad .o,.ch-lad .v{grid-column:2}.ch-lad .v{text-align:left}}
+.ch-types{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.ch-type{display:flex;flex-direction:column;gap:2px;text-align:left;border:1px solid var(--line);background:rgba(4,10,30,.6);border-radius:3px;padding:10px 14px;color:var(--chalk);cursor:pointer;min-width:220px}
+.ch-type b{font:700 16px var(--ui)}.ch-type span{font:500 12px var(--slip);font-stretch:87.5%;color:var(--chalk-dim)}
+.ch-type[aria-pressed=true]{border-color:var(--cyan);box-shadow:inset 0 0 0 1px var(--cyan),0 0 18px rgba(69,214,255,.2)}
+.ch-type.soon{cursor:default;opacity:.5;border-style:dashed}
