@@ -133,6 +133,7 @@ function catOf(t) {
   if (s.startsWith('pariul zilei')) return 'Pariul zilei';
   if (s.startsWith('biletul meu')) return 'Biletul meu';
   if (s.startsWith('challenge')) return 'Challenge';
+  if (s.startsWith('supercoins')) return 'SuperCoins';
   if (s.includes('superliga')) return 'SuperLiga';
   if (/^cota 2(\b|$)/.test(s)) return 'Cotă 2';
   if (s.includes('weekend')) return 'Weekend';
@@ -234,8 +235,31 @@ function challengeBox() {
   return box;
 }
 
+// Misiuni SuperCoins: un acumulator (3+ selecții, cotă 4+, miză 20 lei) și un Bet Builder (cotă 2+, miză 40 lei) pe zi
+function superCoinsBox() {
+  const C = rows.filter(r => catOf(r.tip) === 'SuperCoins');
+  const box = el('section', 'ch');
+  const h = el('h2', null, 'Misiuni SuperCoins'); h.append(el('small', null, 'misiunile zilnice din aplicația Superbet: 300 SuperCoins pe fiecare bilet încheiat, chiar dacă pierde'));
+  box.append(h);
+  const kind = r => /bet ?builder/i.test(r.tip) ? 'bb' : 'acc';
+  const REQ = { acc: ['Bilet acumulator', 'cel puțin 3 selecții, cotă totală minimă 4,00, miză minimă 20 lei'], bb: ['Bet Builder', 'pre-meci, fotbal, cotă totală minimă 2,00, miză minimă 40 lei'] };
+  const grid = el('div', 'sc-req');
+  for (const k of ['acc', 'bb']) {
+    const latest = C.filter(r => kind(r) === k).sort((a, b) => (b.data + b.id).localeCompare(a.data + a.id))[0];
+    const c = el('div', 'sc-card'); c.append(el('b', null, REQ[k][0]), el('span', null, REQ[k][1]));
+    if (latest) { const st = eff(latest); c.append(el('p', 'sc-st', (latest.data === dayKey(now) ? 'Azi' : latest.data.split('-').reverse().join('.')) + ': cotă ' + fmtOdd(latest.cota) + (latest.cod ? ' · cod ' + latest.cod : ' · codul vine în curând') + (st !== PEND ? ' · ' + st : ''))); }
+    else c.append(el('p', 'sc-st', 'Primul bilet vine vineri dimineață.'));
+    grid.append(c);
+  }
+  box.append(grid);
+  const done = C.filter(r => eff(r) !== PEND), won = done.filter(r => eff(r) === 'câștigat');
+  box.append(el('p', 'ch-sum', done.length ? 'Bilete încheiate: ' + done.length + ' (≈ ' + (done.length * 300) + ' SuperCoins) · câștigate: ' + won.length : 'Biletele se aleg cu cea mai mare șansă care respectă cerințele misiunii.'));
+  box.append(el('p', 'ch-note', 'Ca misiunea să conteze, biletul trebuie pus din contul tău Superbet (online), cu cel puțin miza cerută. Încarci codul la „Găsește biletul după cod”, verifici că ai intrat în misiune („Înscrie-te”) și plasezi.'));
+  return box;
+}
+
 // tabul Challenge: tipurile de challenge (deocamdată unul) + scara și biletele lui
-const CHALLENGES = [{ k: '140', name: 'Challenge 1.40', sub: '10 pași la cota ~1,40, tot câștigul merge mai departe' }];
+const CHALLENGES = [{ k: '140', name: 'Challenge 1.40', sub: '10 pași la cota ~1,40, tot câștigul merge mai departe' }, { k: 'sc', name: 'Misiuni SuperCoins', sub: '2 bilete pe zi pentru misiunile zilnice: 300 + 300 SuperCoins' }];
 let chSel = '140';
 function viewChallenge() {
   const list = $('list');
@@ -243,8 +267,8 @@ function viewChallenge() {
   const types = el('div', 'ch-types');
   for (const c of CHALLENGES) { const b = el('button', 'ch-type'); b.type = 'button'; b.setAttribute('aria-pressed', String(chSel === c.k)); b.append(el('b', null, c.name), el('span', null, c.sub)); b.onclick = () => { chSel = c.k; render(); }; types.append(b); }
   const soon = el('div', 'ch-type soon'); soon.append(el('b', null, 'Alte challenge-uri'), el('span', null, 'în curând')); types.append(soon);
-  list.append(types, challengeBox());
-  const C = rows.filter(r => catOf(r.tip) === 'Challenge').sort((a, b) => (b.data + b.id).localeCompare(a.data + a.id));
+  list.append(types, chSel === 'sc' ? superCoinsBox() : challengeBox());
+  const C = rows.filter(r => catOf(r.tip) === (chSel === 'sc' ? 'SuperCoins' : 'Challenge')).sort((a, b) => (b.data + b.id).localeCompare(a.data + a.id));
   if (C.length) { const sec = el('section', 'day'); const h = el('h2', null, 'Biletele challenge-ului'); h.append(el('small', null, 'cel mai nou primul')); const g = el('div', 'grid'); C.forEach((r, i) => g.append(slip(r, i))); sec.append(h, g); list.append(sec); }
 }
 
