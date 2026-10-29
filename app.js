@@ -242,7 +242,7 @@ function superCoinsBox() {
   const h = el('h2', null, 'Misiuni SuperCoins'); h.append(el('small', null, 'misiunile zilnice din aplicația Superbet: 300 SuperCoins pe fiecare bilet încheiat, chiar dacă pierde'));
   box.append(h);
   const kind = r => /bet ?builder/i.test(r.tip) ? 'bb' : 'acc';
-  const REQ = { acc: ['Bilet acumulator', 'cel puțin 3 selecții, cotă totală minimă 4,00, miză minimă 20 lei'], bb: ['Bet Builder', 'pre-meci, fotbal, cotă totală minimă 2,00, miză minimă 40 lei'] };
+  const REQ = { acc: ['Bilet acumulator', 'cel puțin 3 selecții, cotă totală minimă 4,00, miză minimă 20 lei'], bb: ['Bet Builder', 'pre-meci, fotbal, unul sau mai multe meciuri (Multi Bet Builder), cotă totală minimă 2,00, miză minimă 40 lei'] };
   const grid = el('div', 'sc-req');
   for (const k of ['acc', 'bb']) {
     const latest = C.filter(r => kind(r) === k).sort((a, b) => (b.data + b.id).localeCompare(a.data + a.id))[0];
