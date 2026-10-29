@@ -35,6 +35,13 @@ const store = {
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 };
 
+// orele de pe bilete sunt scrise în ora României; le transformăm în momentul real, ca site-ul să le arate în ora telefonului
+const RO_TZ = 'Europe/Bucharest';
+const roParts = new Intl.DateTimeFormat('en-GB', { timeZone: RO_TZ, hourCycle: 'h23', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' });
+function roOffset(t) { const p = {}; for (const x of roParts.formatToParts(new Date(t))) p[x.type] = x.value; return Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour, +p.minute) - Math.floor(t / 6e4) * 6e4; }
+function roDate(y, mo, d, h, mi) { const g = Date.UTC(y, mo, d, h, mi); let t = g - roOffset(g); t = g - roOffset(t); return new Date(t); }
+const LOCAL_TZ = (() => { try { return Intl.DateTimeFormat().resolvedOptions().timeZone || RO_TZ; } catch (e) { return RO_TZ; } })();
+const awayFromRO = roOffset(Date.now()) !== -new Date().getTimezoneOffset() * 6e4;
 function parseLegs(r) {
   const [Y, M, D] = r.data.split('-').map(Number);
   return (r.selectii || '').split(' · ').filter(Boolean).map((p, k) => {
@@ -42,7 +49,7 @@ function parseLegs(r) {
     const base = { id: (r.ids || [])[k] || null, motiv: (r.motive || [])[k] || '', sport: r.sport || 'fotbal' };
     if (!m) return { ...base, meci: p, sel: '', o: '', when: null };
     const d = m[1] ? +m[1] : D, mo = m[2] ? +m[2] : M;
-    return { ...base, when: new Date(Y, mo - 1, d, +m[3], +m[4]), meci: m[5], sel: m[6], o: m[7] || '' };
+    return { ...base, when: roDate(Y, mo - 1, d, +m[3], +m[4]), meci: m[5], sel: m[6], o: m[7] || '' };
   });
 }
 function firstWhen(r) { const l = parseLegs(r).find(x => x.when); return l ? l.when : new Date(r.data); }
@@ -1287,6 +1294,8 @@ if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catc
 // ceasul din bara de sus, ca la teletext
 (function ttxClock() {
   const e = document.getElementById('ttx-ck'); if (!e) return;
-  const tick = () => { const d = new Date(); e.textContent = d.toLocaleDateString('ro-RO', { weekday: 'short', day: '2-digit', month: 'short' }) + '  ' + d.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); };
+  const city = LOCAL_TZ.split('/').pop().replace(/_/g, ' ');
+  const tick = () => { const d = new Date(); e.textContent = d.toLocaleDateString('ro-RO', { weekday: 'short', day: '2-digit', month: 'short' }) + '  ' + d.toLocaleTimeString('ro-RO', { hour: '2-digit', minute: '2-digit', second: '2-digit' }) + (awayFromRO ? '  ora ta: ' + city : ''); };
+  if (awayFromRO) e.title = 'Orele meciurilor sunt afișate în ora locală (' + city + '), nu în ora României.';
   tick(); setInterval(tick, 1000);
 })();
