@@ -1171,10 +1171,10 @@
   "tip": "Pariul zilei",
   "cota": 1.61,
   "sansa": 0.747,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991G-KNOO57",
   "selectii": "22:00 Hearts – Rangers: Peste 9.5 cornere (1.61)",
-  "rezultat": "",
+  "rezultat": "Hearts–Rangers 2-2 (8 cornere)",
   "motive": [
    "Hearts are 6,7 cornere pe meci, iar Rangers 7,7, adică 14,4 împreună, iar arbitrul e Donald Robertson. Estimez ~75% pentru 10+ cornere, față de 59% cât implică cota 1,61, deci cel mai mare avantaj al zilei."
   ],
@@ -1209,10 +1209,10 @@
   "tip": "Cotă 5",
   "cota": 4.95,
   "sansa": 0.2109,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "991M-KKV5OG",
   "selectii": "19:00 Freiburg – Wolfsburg: Peste 2.5 (1.41) · 19:30 Venezia – Inter: Peste 7.5 cornere (1.42) · 21:30 Manchester City – Brighton: Peste 2.5 (1.49) · 21:45 Monza – Napoli: GG (1.66)",
-  "rezultat": "Freiburg 3-2 Wolfsburg · Venezia–Inter 0-2 (cornere neconfirmate) · City–Brighton 2-2 · Monza–Napoli 1-4",
+  "rezultat": "Freiburg 3-2 Wolfsburg · Venezia–Inter 0-2 (9 cornere) · City–Brighton 2-2 · Monza–Napoli 1-4",
   "motive": [
    "Wolfsburg a primit 3 goluri pe meci în Cupă, iar Freiburg a dat 5; xG ~3 pentru fiecare. Estimez ~69% pentru 3+ goluri.",
    "Inter are 5,8 cornere pe meci, Venezia 4,5 (10,3 împreună); estimez ~73% pentru 8+ față de 70% în cotă.",
@@ -1233,10 +1233,10 @@
   "tip": "Cotă 10",
   "cota": 9.66,
   "sansa": 0.1351,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990B-KK51O2",
   "selectii": "21:45 Genoa – Juventus: Peste 8.5 cornere (1.69) · 21:45 Celtic – Dundee United: Peste 10.5 cornere (1.52) · 21:45 Leverkusen – Nürnberg: Leverkusen peste 2.5 goluri (1.49) · 21:45 Monza – Napoli: Peste 8.5 cornere (1.74) · 22:00 Liverpool – Chelsea: GG (1.45)",
-  "rezultat": "Genoa 2-0 Juventus (15 cornere) · Celtic–Dundee United 2-2 (18 cornere) · Leverkusen 5-2 Nürnberg · Monza–Napoli 1-4 (cornere neconfirmate) · Liverpool 1-1 Chelsea",
+  "rezultat": "Genoa 2-0 Juventus (15 cornere) · Celtic–Dundee United 2-2 (18 cornere) · Leverkusen 5-2 Nürnberg · Monza–Napoli 1-4 (4 cornere) · Liverpool 1-1 Chelsea",
   "motive": [
    "Juventus are 7,5 cornere pe meci, Genoa 4,1 (11,6 împreună); estimez ~69% pentru 9+ față de 56% în cotă.",
    "Celtic are 8,7 cornere pe meci, Dundee United 6,0 (14,7 împreună); estimez ~74% pentru 11+ față de 62% în cotă.",
@@ -1296,5 +1296,55 @@
   "cod": "",
   "selectii": "29.10 19:30 Frosinone – Lecce: Peste 2.5 (1.61) · 30.10 20:00 Le Havre – PSG: Peste 2.5 (1.43) · 30.10 21:30 Elversberg – Mainz: Peste 2.5 (1.47) · 31.10 14:30 Chelsea – Man United: Peste 2.5 (1.65) · 31.10 15:00 Levante – Atlético Madrid: Atlético câștigă (1.43) · 31.10 16:30 Augsburg – Freiburg: Peste 2.5 (1.39) · 31.10 16:30 Leverkusen – Stuttgart: Peste 2.5 (1.37) · 31.10 16:30 Bremen – Hoffenheim: Peste 2.5 (1.35) · 31.10 16:30 Mönchengladbach – Paderborn: Peste 2.5 (1.50) · 31.10 16:30 Schalke – RB Leipzig: 2 (1.60) · 31.10 17:00 Man City – Brighton: Peste 2.5 (1.39) · 31.10 19:00 Udinese – Roma: Roma câștigă (1.43) · 31.10 19:30 Betis – Málaga: Betis câștigă (1.39) · 31.10 19:30 Bayern – Dortmund: Peste 2.5 (1.39) · 31.10 21:45 Milan – Inter: Peste 2.5 (1.61) · 31.10 22:00 Barcelona – Alavés: Barcelona peste 2.5 goluri (1.52) · 01.11 13:30 Como – Venezia: Como câștigă (1.39) · 01.11 16:00 Lazio – Cagliari: Lazio câștigă (1.43) · 01.11 17:15 Racing Santander – Real Madrid: Real Madrid peste 1.5 goluri (1.35)",
   "rezultat": ""
+ },
+ {
+  "id": "2026-10-29-pariu",
+  "data": "2026-10-29",
+  "tip": "Pariul zilei",
+  "cota": 1.61,
+  "sansa": 0.7,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:30 Frosinone – Lecce: Peste 2.5 (1.61)",
+  "rezultat": "",
+  "motive": [
+   "În ultimele 5 meciuri ambele echipe au avut peste 2,5 goluri de 4 ori (Frosinone 12 marcate/10 primite, Lecce 7/9), inclusiv 4-4 cu Atalanta și 4-2 cu Sassuolo. Estimez ~70% pentru 3+ goluri față de 62% cât implică cota 1,61, deci un avantaj de circa 8 puncte procentuale."
+  ],
+  "ids": [
+   14276249
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-10-29-cota2",
+  "data": "2026-10-29",
+  "tip": "Cotă 2",
+  "cota": 2.04,
+  "sansa": 0.4588,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:45 Benfica – Gil Vicente: 1 (1.36) · 21:45 Fiorentina – Atalanta: GG (1.50)",
+  "rezultat": "",
+  "motive": [
+   "Benfica a câștigat 4 din ultimele 5 și toate cele 8 meciuri directe cu Gil Vicente (3-1 în septembrie), iar cota 1,36 implică ~73%. Șansă estimată ~74%.",
+   "Fiorentina primește 2,4 goluri pe meci, iar Atalanta dă 1,8; modelul dă GG ~63%. Șansă estimată ~62% (sub pragul de 70%, ziua are puține selecții sigure)."
+  ]
+ },
+ {
+  "id": "2026-10-29-cota5",
+  "data": "2026-10-29",
+  "tip": "Cotă 5",
+  "cota": 4.69,
+  "sansa": 0.231,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:30 Frosinone – Lecce: Peste 2.5 (1.61) · 21:45 Fiorentina – Atalanta: Peste 2.5 (1.62) · 21:45 Everton – Newcastle: Peste 2.5 (1.80 estimat)",
+  "rezultat": "",
+  "motive": [
+   "Peste 2.5 în 4 din ultimele 5 meciuri la ambele echipe; estimez ~70% față de 62% în cotă (aceeași selecție ca la Pariul zilei).",
+   "Fiorentina primește 2,4 goluri pe meci, Atalanta 1,9 și dă 1,8; modelul dă ~61% pentru 3+ goluri. Estimez ~60%.",
+   "Everton–Newcastle are goluri în meciurile directe (4-1, 3-2, 3-1) și ambele apărări au primit multe în ultimele meciuri; cota nu a fost găsită, deci 1,80 e estimare, iar șansa ~55%."
+  ],
+  "sport": "fotbal"
  }
 ]
