@@ -1,189 +1,66 @@
 {
- "data": "2026-10-28",
- "actualizat": "2026-10-28T08:15:30Z",
+ "data": "2026-10-29",
+ "actualizat": "2026-10-29T08:25:00Z",
  "meciuri": [
   {
-   "data": "2026-10-28",
-   "ora": "19:00",
-   "liga": "Cupa Germaniei",
-   "gazde": "Freiburg",
-   "oaspeti": "Wolfsburg",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 14879676
-  },
-  {
-   "data": "2026-10-28",
+   "id": 14276249,
+   "data": "2026-10-29",
    "ora": "19:30",
    "liga": "Serie A",
-   "gazde": "Milan",
-   "oaspeti": "Bologna",
+   "gazde": "Frosinone",
+   "oaspeti": "Lecce",
    "absenti_gazde": [],
    "absenti_oaspeti": [],
-   "id": 14276251
+   "nota": "Kialonda Gaspar este suspendat (echipa nu e confirmată în sursă)."
   },
   {
-   "data": "2026-10-28",
-   "ora": "19:30",
+   "data": "2026-10-29",
+   "ora": "21:45",
    "liga": "Serie A",
-   "gazde": "Parma",
-   "oaspeti": "Udinese",
+   "gazde": "Fiorentina",
+   "oaspeti": "Atalanta",
    "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 14276253
+   "absenti_oaspeti": []
   },
   {
-   "data": "2026-10-28",
-   "ora": "19:30",
-   "liga": "Serie A",
-   "gazde": "Venezia",
-   "oaspeti": "Inter",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 14276258
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "22:00",
+   "data": "2026-10-29",
+   "ora": "21:45",
    "liga": "Cupa Ligii Angliei",
-   "gazde": "Liverpool",
-   "oaspeti": "Chelsea",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 15028490
+   "gazde": "Everton",
+   "oaspeti": "Newcastle",
+   "absenti_gazde": [
+    "Grealish (probabil absent)",
+    "Branthwaite (probabil absent)",
+    "Mykolenko (probabil absent)"
+   ],
+   "absenti_oaspeti": [
+    "Livramento (accidentat)",
+    "Jaouen (accidentat)"
+   ],
+   "arbitru": "Farai Hallam"
   },
   {
-   "data": "2026-10-28",
-   "ora": "21:30",
-   "liga": "Cupa Ligii Angliei",
-   "gazde": "Manchester City",
-   "oaspeti": "Brighton",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 15036740
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "21:45",
-   "liga": "Cupa Germaniei",
-   "gazde": "Bayern Munchen",
-   "oaspeti": "Magdeburg",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 14879407
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "21:45",
-   "liga": "Cupa Germaniei",
-   "gazde": "Leverkusen",
-   "oaspeti": "Nurnberg",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 14879326
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "21:45",
-   "liga": "Serie A",
-   "gazde": "Genoa",
-   "oaspeti": "Juventus",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 14276250
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "21:45",
-   "liga": "Serie A",
-   "gazde": "Monza",
-   "oaspeti": "Napoli",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 14276252
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "21:45",
-   "liga": "Scotia Premiership",
-   "gazde": "Celtic",
-   "oaspeti": "Dundee United",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 15436081,
-   "loc_gazde": 1,
-   "loc_oaspeti": 4,
-   "marcatori_gazde": "Nygren 6, Camilo Durán 6",
-   "nota": "Celtic: 9V-0E-1I în campionat, 2-1 la Hibernian (25 oct), 7-1 cu Hearts (18 oct); Dundee United a bătut Aberdeen 3-2."
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "22:00",
-   "liga": "Scotia Premiership",
-   "gazde": "Hearts",
-   "oaspeti": "Rangers",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "id": 15436092,
-   "loc_gazde": 3,
-   "loc_oaspeti": 2,
-   "marcatori_gazde": "Cláudio Braga 4, Calvin Miller 4",
-   "marcatori_oaspeti": "Ryan Naderi 5",
-   "arbitru": "Donald Robertson",
-   "arbitru_galbene": 3.71,
-   "arbitru_rosii": 0.18,
-   "arbitru_meciuri": 173,
-   "arbitru_sezon": "Premiership (carieră)",
-   "nota": "Hearts: 0-2 la Motherwell, 1-7 cu Celtic; Rangers: 4-0 cu St Johnstone, 2-2 la Dundee."
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "21:45",
-   "liga": "Scotia Premiership",
-   "gazde": "Aberdeen",
-   "oaspeti": "Falkirk",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "loc_gazde": 9,
-   "loc_oaspeti": 7,
-   "marcatori_gazde": "Kevin Nisbet 4",
-   "marcatori_oaspeti": "Jacob Murrell 5"
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "21:45",
-   "liga": "Scotia Premiership",
-   "gazde": "Dundee",
-   "oaspeti": "Kilmarnock",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "loc_gazde": 5,
-   "loc_oaspeti": 11,
-   "marcatori_gazde": "Bradley Fink 4"
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "21:45",
-   "liga": "Scotia Premiership",
-   "gazde": "St Johnstone",
-   "oaspeti": "Motherwell",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "loc_gazde": 8,
-   "loc_oaspeti": 10,
-   "marcatori_gazde": "Josh Fowler 6",
-   "marcatori_oaspeti": "Alex Lowry 3"
-  },
-  {
-   "data": "2026-10-28",
-   "ora": "21:45",
-   "liga": "Scotia Premiership",
-   "gazde": "St Mirren",
-   "oaspeti": "Hibernian",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "loc_gazde": 6,
-   "loc_oaspeti": 12
+   "data": "2026-10-29",
+   "ora": "22:45",
+   "liga": "Cupa Ligii Portugaliei",
+   "gazde": "Benfica",
+   "oaspeti": "Gil Vicente",
+   "absenti_gazde": [
+    "Banjaqui (accidentat)",
+    "Barrenechea (accidentat)",
+    "Barreiro (accidentat)",
+    "Umeh (accidentat)",
+    "Kaminski (accidentat)",
+    "Durán (absent după eliminare)"
+   ],
+   "absenti_oaspeti": [
+    "Weverson",
+    "Tchaptchet",
+    "Bamba",
+    "Hector Hernandez",
+    "Elimbi (suspendat, roșu)"
+   ],
+   "arbitru": "José Bessa"
   }
  ]
 }
