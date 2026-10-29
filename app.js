@@ -8,7 +8,7 @@ const ZI = ['duminică','luni','marți','miercuri','joi','vineri','sâmbătă'];
 const REPO = 'jurjiuflorin/bilete';
 const SA = 'https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro-RO?fixture-id=ax%3Amatch%3A';
 const OFFER = 'https://production-superbet-offer-ro.freetls.fastly.net/v3/ro-RO/events?events=';
-let rows = [], tab = 'p', tip = '', q = '', now = new Date();
+let rows = [], tab = 'p', tip = '', q = '', now = new Date(), liveOnly = false;
 // tickets already lost live (a match is certainly lost) but not yet settled by the nightly task
 const lostNow = new Map(Object.entries((() => { try { return JSON.parse(localStorage.getItem('lostNow') || '{}'); } catch (e) { return {}; } })()));
 const PEND = 'în așteptare';
@@ -145,8 +145,12 @@ const filtered = arr => arr.filter(r => !tip || catOf(r.tip) === tip).filter(r =
 function viewTickets(pending) {
   const list = $('list');
   let R = filtered(rows.filter(r => pending === (eff(r) === PEND)));
+  if (pending && liveOnly) {
+    R = R.filter(isLiveTicket);
+    if (!R.length) { list.append(el('div', 'empty', 'Niciun meci de pe bilete nu se joacă acum. Apasă din nou pe Live ca să vezi toate biletele.')); return; }
+  }
   if (!R.length) { list.append(el('div', 'empty', pending ? 'Niciun bilet de jucat acum. Biletele noi apar dimineața.' : 'Încă nu s-a încheiat niciun bilet.')); return; }
-  if (pending && !tip && !q) { const h = hero(); if (h) list.append(h); }
+  if (pending && !tip && !q && !liveOnly) { const h = hero(); if (h) list.append(h); }
   if (!pending) list.append(histStats(R));
   if (!pending && OWNER && !tip && !q) list.append(visitsBox());
   const groups = new Map();
@@ -903,17 +907,23 @@ async function liveTick() {
       } else { lv.className = 'lv on fin'; lv.textContent = (m.ft90 ? 'Final 90′ ' : 'Final ') + m.h + ' – ' + m.a + (corn ? ', ' + corn : ''); }
     }
     progs(); ticker(tick); heroLive();
+    if (tab === 'p') {
+      const sig = rows.filter(r => eff(r) === PEND && isLiveTicket(r)).map(r => r.id).join(',');
+      if (live.sig !== undefined && sig !== live.sig) { live.sig = sig; chips(); if (liveOnly) live.rerender = true; }
+      live.sig = sig;
+    }
     const nx = $('next'); nx.querySelector('.livebadge')?.remove();
     if (liveCount) {
       const b = el('button', 'livebadge'); b.type = 'button'; b.title = 'Vezi biletele care se joacă acum';
       b.append(el('span', 'dot'), liveCount + (liveCount === 1 ? ' meci live acum. ' : ' meciuri live acum. '));
       b.onclick = () => {
+        if (!liveOnly) { liveOnly = true; if (tab === 'p' && !tip && !q) { chips(); render(); } }
         if (tab !== 'p' || tip || q) { tab = 'p'; tip = ''; q = ''; const qi = $('q'); if (qi) qi.value = ''; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); try { history.replaceState(null, '', '#p'); } catch (err) {} chips(); render(); }
         setTimeout(() => { const li = document.querySelector('#list .legs li.livenow'); const t = (li && li.closest('.slip')) || document.querySelector('#list .day'); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 80);
       };
       nx.prepend(b);
     }
-  } finally { live.busy = false; if (live.again) { live.again = false; liveTick(); } }
+  } finally { live.busy = false; if (live.rerender) { live.rerender = false; live.again = false; render(); } else if (live.again) { live.again = false; liveTick(); } }
 }
 
 
@@ -1347,6 +1357,13 @@ function chips() {
   const box = $('chips'); box.replaceChildren();
   box.hidden = tab === 'm' || tab === 'r' || tab === 's' || tab === 'x';
   const have = new Set(rows.map(r => catOf(r.tip))); const tips = ['', ...CATS.filter(c => have.has(c))];
+  if (tab === 'p') {
+    const n = rows.filter(r => eff(r) === PEND && isLiveTicket(r)).length;
+    const b = el('button', 'chip-live'); b.type = 'button'; b.setAttribute('aria-pressed', String(liveOnly));
+    b.title = 'Doar biletele cu meciuri în desfășurare';
+    b.append(el('span', 'dot'), 'Live' + (n ? ' ' + n : ''));
+    b.onclick = () => { liveOnly = !liveOnly; chips(); render(); }; box.append(b);
+  }
   for (const t of tips) { const b = el('button', null, t || 'Toate'); b.type = 'button'; b.setAttribute('aria-pressed', String(t === tip)); b.onclick = () => { tip = t; chips(); render(); }; box.append(b); }
 }
 function render() {
@@ -1424,3 +1441,13 @@ function visitsBox() {
   });
   return box;
 }
+
+/* ---------- filtrul Live: bilete cu cel puțin un meci în desfășurare ---------- */
+function legLive(l) {
+  const m = l.id ? live.cache[l.id] : null;
+  if (m && m.state != null) return m.state === 1;
+  if (!l.when) return false;
+  const dur = (l.sport && l.sport !== 'fotbal' ? 180 : 115) * 6e4, t = Date.now();
+  return l.when.getTime() <= t && t < l.when.getTime() + dur;
+}
+function isLiveTicket(r) { return parseLegs(r).some(legLive); }
