@@ -551,3 +551,11 @@ h1::after{content:"_";color:var(--cyan);margin-left:.04em;font-weight:400}
 .sc-card b{display:block;font:700 17px var(--ui)}
 .sc-card span{display:block;font:500 12px var(--slip);font-stretch:87.5%;color:var(--chalk-dim);margin-top:2px}
 .sc-st{margin:8px 0 0;font:600 13px var(--slip);color:var(--flood)}
+
+.vz-rows{display:grid;gap:6px;font:500 13px var(--mono,monospace)}
+.vz-row{display:grid;grid-template-columns:56px 1fr 40px 92px;align-items:center;gap:10px}
+.vz-bar{height:10px;background:rgba(69,214,255,.1);border-radius:2px;overflow:hidden}
+.vz-bar i{display:block;height:100%;background:var(--cyan)}
+.vz-row b{text-align:right;color:var(--ink)}
+.vz-d,.vz-p,.vz-sum{color:var(--ink-dim)}
+.vz-sum{margin:8px 0 0}

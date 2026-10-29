@@ -148,6 +148,7 @@ function viewTickets(pending) {
   if (!R.length) { list.append(el('div', 'empty', pending ? 'Niciun bilet de jucat acum. Biletele noi apar dimineața.' : 'Încă nu s-a încheiat niciun bilet.')); return; }
   if (pending && !tip && !q) { const h = hero(); if (h) list.append(h); }
   if (!pending) list.append(histStats(R));
+  if (!pending && OWNER && !tip && !q) list.append(visitsBox());
   const groups = new Map();
   R.sort((a, b) => pending ? firstWhen(a) - firstWhen(b) : (b.data + b.id).localeCompare(a.data + a.id));
   for (const r of R) { const k = pending ? (firstWhen(r) < now ? 'live' : dayKey(firstWhen(r))) : r.data; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(r); }
@@ -1386,3 +1387,40 @@ if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catc
   if (awayFromRO) e.title = 'Orele meciurilor sunt afișate în ora locală (' + city + '), nu în ora României.';
   tick(); setInterval(tick, 1000);
 })();
+
+/* ---------- vizitatori pe zi ----------
+   Fiecare dispozitiv e numărat o singură dată pe zi (ziua României) + numărul de afișări.
+   Nu se salvează IP-uri sau date personale; contoarele sunt pe abacus.jasoncameron.dev.
+   Proprietarul: deschide o dată site-ul cu ?eu=1 (vizitele lui nu se mai numără și vede tabelul în Istoric); ?eu=0 anulează. */
+const VZ = 'https://abacus.jasoncameron.dev', VZ_NS = 'jurjiu-bilete';
+const OWNER = (() => { const m = /[?&]eu=([01])/.exec(location.search); if (m) { store.set('owner', m[1] === '1'); try { history.replaceState(null, '', location.pathname + location.hash); } catch (e) {} } return store.get('owner', false); })();
+function roDayKey(t) { const p = {}; for (const x of roParts.formatToParts(new Date(t))) p[x.type] = x.value; return p.year + p.month + p.day; }
+(function countVisit() {
+  if (OWNER || navigator.webdriver) return;
+  const d = roDayKey(Date.now()), seen = store.get('vz', '');
+  const hit = k => fetch(VZ + '/hit/' + VZ_NS + '/' + k, { keepalive: true }).catch(() => {});
+  hit('p-' + d);
+  if (seen !== d) { store.set('vz', d); hit('u-' + d); }
+})();
+function visitsBox() {
+  const box = el('section', 'hs vz');
+  const h = el('h2', null, 'Vizitatori'); h.append(el('small', null, 'dispozitive unice pe zi · afișări · vizibil doar pentru tine'));
+  const t = el('div', 'vz-rows', 'Se încarcă…'); box.append(h, t);
+  const days = [...Array(14)].map((_, i) => roDayKey(Date.now() - i * 864e5));
+  const get = k => fetch(VZ + '/get/' + VZ_NS + '/' + k).then(r => r.ok ? r.json() : { value: 0 }).then(j => j.value || 0).catch(() => 0);
+  Promise.all(days.map(d => Promise.all([get('u-' + d), get('p-' + d)]))).then(v => {
+    t.textContent = '';
+    const max = Math.max(1, ...v.map(x => x[0]));
+    const tot = v.slice(0, 7).reduce((a, x) => a + x[0], 0);
+    days.forEach((d, i) => {
+      const [u, p] = v[i]; const row = el('div', 'vz-row');
+      const lab = i === 0 ? 'Azi' : i === 1 ? 'Ieri' : d.slice(6) + '.' + d.slice(4, 6);
+      const bar = el('i'); bar.style.width = (100 * u / max) + '%';
+      const tr = el('span', 'vz-bar'); tr.append(bar);
+      row.append(el('span', 'vz-d', lab), tr, el('b', null, String(u)), el('span', 'vz-p', p + ' afișări'));
+      t.append(row);
+    });
+    t.append(el('p', 'vz-sum', 'Ultimele 7 zile: ' + tot + ' vizitatori-zi'));
+  });
+  return box;
+}
