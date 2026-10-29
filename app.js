@@ -198,7 +198,12 @@ function challengeBox() {
   const set = el('label', 'ch-set'); set.append(el('span', null, 'Miza de start'));
   const inp = el('input'); inp.type = 'number'; inp.min = '1'; inp.step = '1'; inp.value = start; inp.inputMode = 'decimal';
   inp.onchange = () => { const v = Math.max(1, Number(inp.value) || 10); store.set('chStart', v); render(); };
-  set.append(inp, el('span', null, 'lei')); box.append(set);
+  set.append(inp, el('span', null, 'lei'));
+  const out = Number(store.get('chOut', 2));
+  const so = el('label', 'ch-set'); so.append(el('span', null, 'Scoți miza de start după pasul'));
+  const sel = el('select'); [[0, 'niciodată'], [2, '2'], [3, '3'], [4, '4'], [5, '5']].forEach(([v, t]) => { const o = new Option(t, v); if (v === out) o.selected = true; sel.append(o); });
+  sel.onchange = () => { store.set('chOut', Number(sel.value)); render(); }; so.append(sel);
+  const sets = el('div', 'ch-sets'); sets.append(set, so); box.append(sets);
   const cyc = C.length ? Math.max(...C.map(r => Number(r.ciclu) || 1)) : 1;
   const cur = C.filter(r => (Number(r.ciclu) || 1) === cyc).sort((a, b) => (Number(a.pas) || 0) - (Number(b.pas) || 0));
   // banii la fiecare pas, cu cotele reale ale pașilor jucați și 1,40 pentru cei care urmează
@@ -214,14 +219,15 @@ function challengeBox() {
     lad.append(li);
     if (st === 'pierdut') { bank = 0; break; }
     bank = win;
+    if (out && i === out && i < CH_STEPS) { lad.append(el('li', 'ch-out', 'Scoți ' + money(start) + ' (miza de start) — de aici joci doar pe profit, cu ' + money(bank - start))); bank -= start; }
   }
   box.append(lad);
   const done = cur.filter(r => eff(r) === 'câștigat').length, lost = cur.some(r => eff(r) === 'pierdut');
   const all = C.length; const cycles = new Set(C.map(r => Number(r.ciclu) || 1)).size;
   const best = Math.max(0, ...[...new Set(C.map(r => Number(r.ciclu) || 1))].map(c => C.filter(r => (Number(r.ciclu) || 1) === c && eff(r) === 'câștigat').length));
-  const target = start * Math.pow(1.4, CH_STEPS);
+  const target = out ? (start * Math.pow(1.4, out) - start) * Math.pow(1.4, CH_STEPS - out) : start * Math.pow(1.4, CH_STEPS);
   box.append(el('p', 'ch-sum', lost ? 'Ciclul ' + cyc + ' s-a oprit la pasul ' + (done + 1) + '. Următorul ciclu pornește de la pasul 1 cu ' + money(start) + '.'
-    : !all ? 'Prima treaptă se publică vineri dimineață. La ' + CH_STEPS + ' pași reușiți la cota ~1,40, ' + money(start) + ' devin ~' + money(target) + '.'
+    : !all ? 'Prima treaptă se publică vineri dimineață. La ' + CH_STEPS + ' pași reușiți la cota ~1,40, ' + money(start) + ' devin ~' + money(target) + (out ? ' (plus miza de start, retrasă după pasul ' + out + ')' : '') + '.'
     : 'Ciclul ' + cyc + ': ' + done + ' din ' + CH_STEPS + ' pași reușiți. Ținta: ~' + money(target) + '.'));
   if (all) box.append(el('p', 'ch-meta', 'Cicluri jucate: ' + cycles + ' · cel mai lung șir: ' + best + ' pași'));
   box.append(el('p', 'ch-note', 'Un singur pas pierdut înseamnă pierderea întregii sume din ciclu. Șansa de a trece toți cei ' + CH_STEPS + ' pași e mică (cam 3 din 100 la ~70% pe pas), așa că pune doar o sumă pe care ești dispus să o pierzi.'));
