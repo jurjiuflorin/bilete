@@ -127,11 +127,12 @@ function toast(t) { const e = $('toast'); e.textContent = t; e.classList.add('on
 
 /* ---------- views ---------- */
 // categoriile din filtre: puține grupe în loc de un buton pentru fiecare tip de bilet
-const CATS = ['Pariul zilei', 'Cotă 2', 'Zilnice', 'Weekend', 'Săptămânale', 'SuperLiga', 'Biletul meu'];
+const CATS = ['Pariul zilei', 'Challenge', 'Cotă 2', 'Zilnice', 'Weekend', 'Săptămânale', 'SuperLiga', 'Biletul meu'];
 function catOf(t) {
   const s = nrm(t || '');
   if (s.startsWith('pariul zilei')) return 'Pariul zilei';
   if (s.startsWith('biletul meu')) return 'Biletul meu';
+  if (s.startsWith('challenge')) return 'Challenge';
   if (s.includes('superliga')) return 'SuperLiga';
   if (/^cota 2(\b|$)/.test(s)) return 'Cotă 2';
   if (s.includes('weekend')) return 'Weekend';
@@ -143,6 +144,7 @@ const filtered = arr => arr.filter(r => !tip || catOf(r.tip) === tip).filter(r =
 function viewTickets(pending) {
   const list = $('list');
   let R = filtered(rows.filter(r => pending === (eff(r) === PEND)));
+  if (tip === 'Challenge') list.append(challengeBox());
   if (!R.length) { list.append(el('div', 'empty', pending ? 'Niciun bilet de jucat acum. Biletele noi apar dimineața.' : 'Încă nu s-a încheiat niciun bilet.')); return; }
   if (pending && !tip && !q) { const h = hero(); if (h) list.append(h); }
   if (!pending) list.append(histStats(R));
@@ -182,6 +184,48 @@ function histStats(R) {
   const dots = el('div', 'hs-dots'); dots.append(el('span', 'l', 'Ultimele ' + Math.min(15, n) + ':'));
   S.slice(-15).forEach(r => { const d = el('i', won(r) ? 'w' : 'x'); d.title = r.data.split('-').reverse().join('.') + ' · cotă ' + fmtOdd(r.cota) + ' · ' + (won(r) ? 'câștigat' : 'pierdut'); dots.append(d); });
   box.append(h, tiles); if (n) box.append(dots);
+  return box;
+}
+
+/* ---------- Challenge 1.40: piramida (toată suma trece la pasul următor) ---------- */
+const CH_STEPS = 10;
+function challengeBox() {
+  const C = rows.filter(r => catOf(r.tip) === 'Challenge').sort((a, b) => (a.data + a.id).localeCompare(b.data + b.id));
+  const start = Number(store.get('chStart', 10)) || 10;
+  const money = v => v.toLocaleString('ro-RO', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' lei';
+  const box = el('section', 'ch');
+  const h = el('h2', null, 'Challenge 1.40'); h.append(el('small', null, 'piramidă de ' + CH_STEPS + ' pași, câte un pariu pe zi; tot câștigul trece la pasul următor'));
+  box.append(h);
+  const set = el('label', 'ch-set'); set.append(el('span', null, 'Miza de start'));
+  const inp = el('input'); inp.type = 'number'; inp.min = '1'; inp.step = '1'; inp.value = start; inp.inputMode = 'decimal';
+  inp.onchange = () => { const v = Math.max(1, Number(inp.value) || 10); store.set('chStart', v); render(); };
+  set.append(inp, el('span', null, 'lei')); box.append(set);
+  const cyc = C.length ? Math.max(...C.map(r => Number(r.ciclu) || 1)) : 1;
+  const cur = C.filter(r => (Number(r.ciclu) || 1) === cyc).sort((a, b) => (Number(a.pas) || 0) - (Number(b.pas) || 0));
+  // banii la fiecare pas, cu cotele reale ale pașilor jucați și 1,40 pentru cei care urmează
+  let bank = start; const lad = el('ol', 'ch-lad');
+  for (let i = 1; i <= CH_STEPS; i++) {
+    const r = cur.find(x => Number(x.pas) === i); const st = r ? eff(r) : null;
+    const o = r ? Number(r.cota) : 1.40; const win = bank * o;
+    const li = el('li', st === 'câștigat' ? 'w' : st === 'pierdut' ? 'l' : r ? 'p' : 'f');
+    const leg = r ? parseLegs(r)[0] : null;
+    li.append(el('b', null, 'Pasul ' + i), el('span', 'm', leg ? leg.meci + ': ' + leg.sel : 'urmează'), el('span', 'o', '@ ' + fmtOdd(o)), el('span', 'v', money(bank) + ' → ' + money(win)));
+    if (r && r.cod) li.append(el('span', 'c', r.cod));
+    if (leg) { li.tabIndex = 0; li.setAttribute('role', 'button'); li.onclick = () => openSheet({ ...leg }); }
+    lad.append(li);
+    if (st === 'pierdut') { bank = 0; break; }
+    bank = win;
+  }
+  box.append(lad);
+  const done = cur.filter(r => eff(r) === 'câștigat').length, lost = cur.some(r => eff(r) === 'pierdut');
+  const all = C.length; const cycles = new Set(C.map(r => Number(r.ciclu) || 1)).size;
+  const best = Math.max(0, ...[...new Set(C.map(r => Number(r.ciclu) || 1))].map(c => C.filter(r => (Number(r.ciclu) || 1) === c && eff(r) === 'câștigat').length));
+  const target = start * Math.pow(1.4, CH_STEPS);
+  box.append(el('p', 'ch-sum', lost ? 'Ciclul ' + cyc + ' s-a oprit la pasul ' + (done + 1) + '. Următorul ciclu pornește de la pasul 1 cu ' + money(start) + '.'
+    : !all ? 'Prima treaptă se publică vineri dimineață. La ' + CH_STEPS + ' pași reușiți la cota ~1,40, ' + money(start) + ' devin ~' + money(target) + '.'
+    : 'Ciclul ' + cyc + ': ' + done + ' din ' + CH_STEPS + ' pași reușiți. Ținta: ~' + money(target) + '.'));
+  if (all) box.append(el('p', 'ch-meta', 'Cicluri jucate: ' + cycles + ' · cel mai lung șir: ' + best + ' pași'));
+  box.append(el('p', 'ch-note', 'Un singur pas pierdut înseamnă pierderea întregii sume din ciclu. Șansa de a trece toți cei ' + CH_STEPS + ' pași e mică (cam 3 din 100 la ~70% pe pas), așa că pune doar o sumă pe care ești dispus să o pierzi.'));
   return box;
 }
 
@@ -1258,7 +1302,7 @@ function header() {
 function chips() {
   const box = $('chips'); box.replaceChildren();
   box.hidden = tab === 'm' || tab === 'r' || tab === 's';
-  const have = new Set(rows.map(r => catOf(r.tip))); const tips = ['', ...CATS.filter(c => have.has(c))];
+  const have = new Set(rows.map(r => catOf(r.tip))); const tips = ['', ...CATS.filter(c => have.has(c) || c === 'Challenge')];
   for (const t of tips) { const b = el('button', null, t || 'Toate'); b.type = 'button'; b.setAttribute('aria-pressed', String(t === tip)); b.onclick = () => { tip = t; chips(); render(); }; box.append(b); }
 }
 function render() {

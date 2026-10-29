@@ -517,3 +517,24 @@ h1::after{content:"_";color:var(--cyan);margin-left:.04em;font-weight:400}
 .stamp{mix-blend-mode:normal;opacity:1;transform:none;top:4px;font:600 12px/1 var(--slip);letter-spacing:.04em;border-width:1px;border-radius:2px;padding:5px 8px;background:rgba(4,10,30,.5)}
 .stamp.won{box-shadow:0 0 14px rgba(22,209,138,.3)}.stamp.lost{box-shadow:0 0 14px rgba(255,77,94,.25)}
 .hero-cd .u,.hero-code{border-radius:3px}
+/* challenge */
+.ch{margin:0 0 30px;padding:18px;border:1px solid var(--line);border-radius:3px;background:rgba(4,10,30,.6)}
+.ch h2{font:800 28px/1 var(--display);font-stretch:118%;margin:0 0 12px;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.ch h2 small{font:500 12px var(--slip);font-stretch:87.5%;color:var(--chalk-dim)}
+.ch-set{display:inline-flex;align-items:center;gap:8px;font:500 13px var(--slip);color:var(--chalk-dim);margin:0 0 14px}
+.ch-set input{width:90px;background:rgba(4,10,30,.75);border:1px solid var(--line);border-radius:2px;color:var(--flood);font:700 16px var(--slip);padding:6px 8px}
+.ch-lad{list-style:none;margin:0;padding:0;display:grid;gap:4px;counter-reset:none}
+.ch-lad li{display:grid;grid-template-columns:76px 1fr auto auto;gap:4px 12px;align-items:baseline;padding:8px 10px;border-left:3px solid rgba(120,200,255,.25);background:rgba(120,200,255,.04);font-size:14px}
+.ch-lad li b{font:600 12px var(--slip);color:var(--chalk-dim)}
+.ch-lad .m{font-weight:600}.ch-lad .o{font:600 13px var(--slip);color:var(--chalk-dim)}
+.ch-lad .v{font:700 13px var(--slip);font-variant-numeric:tabular-nums;text-align:right}
+.ch-lad .c{grid-column:2/-1;font:700 13px var(--slip);color:var(--flood)}
+.ch-lad li.f{opacity:.55}.ch-lad li.f .m{font-weight:400;color:var(--chalk-dim)}
+.ch-lad li.p{border-left-color:var(--cyan);background:rgba(69,214,255,.08)}
+.ch-lad li.w{border-left-color:var(--won)}.ch-lad li.w .v{color:var(--won)}
+.ch-lad li.l{border-left-color:var(--lost)}.ch-lad li.l .v{color:var(--lost)}
+.ch-lad li[role=button]{cursor:pointer}
+.ch-sum{margin:14px 0 4px;font-weight:600}
+.ch-meta{margin:0;font:500 12px var(--slip);color:var(--chalk-dim)}
+.ch-note{margin:10px 0 0;font-size:13px;color:var(--chalk-dim);max-width:70ch}
+@media (max-width:640px){.ch-lad li{grid-template-columns:62px 1fr}.ch-lad .o,.ch-lad .v{grid-column:2}.ch-lad .v{text-align:left}}
