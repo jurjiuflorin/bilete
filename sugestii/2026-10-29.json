@@ -1,0 +1,215 @@
+{
+ "data": "2026-10-29",
+ "salvat": "2026-10-29T13:31:41.810Z",
+ "n": 5,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14276248,
+    "meci": "Fiorentina – Atalanta",
+    "when": "2026-10-29T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.48,
+    "p": 0.674,
+    "why": "Fiorentina dă 1,1 și primește 2,4 goluri pe meci; Atalanta dă 1,8 și primește 1,9."
+   },
+   {
+    "id": 14276249,
+    "meci": "Frosinone – Lecce",
+    "when": "2026-10-29T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.36,
+    "p": 0.667,
+    "why": "Frosinone dă 2,1 și primește 1,6 goluri pe meci; Lecce dă 1,1 și primește 1,8."
+   },
+   {
+    "id": 14292456,
+    "meci": "Hammarby IF – Sirius",
+    "when": "2026-10-29T17:30:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.53,
+    "p": 0.624,
+    "why": "Hammarby IF dă 2,1 și primește 0,8 goluri pe meci; Sirius dă 2,2 și primește 1,3."
+   },
+   {
+    "id": 14292458,
+    "meci": "Orgryte – Mjallby",
+    "when": "2026-10-29T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.77,
+    "p": 0.571,
+    "why": "Orgryte dă 1,2 și primește 2,2 goluri pe meci; Mjallby dă 1,1 și primește 1,7."
+   },
+   {
+    "id": 14292462,
+    "meci": "Kalmar FF – GAIS",
+    "when": "2026-10-29T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.9,
+    "p": 0.463,
+    "why": "Kalmar FF dă 0,9 și primește 1,6 goluri pe meci; GAIS dă 1,2 și primește 1."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14276248,
+    "meci": "Fiorentina – Atalanta",
+    "when": "2026-10-29T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.42,
+    "p": 0.684,
+    "why": "Fiorentina marchează 1,1 și primește 2,4 pe meci; Atalanta marchează 1,8 și primește 1,9."
+   },
+   {
+    "id": 14276249,
+    "meci": "Frosinone – Lecce",
+    "when": "2026-10-29T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.4,
+    "p": 0.656,
+    "why": "Frosinone marchează 2,1 și primește 1,6 pe meci; Lecce marchează 1,1 și primește 1,8."
+   },
+   {
+    "id": 14292458,
+    "meci": "Orgryte – Mjallby",
+    "when": "2026-10-29T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "GG (ambele marchează)",
+    "od": 1.63,
+    "p": 0.604,
+    "why": "Orgryte marchează 1,2 și primește 2,2 pe meci; Mjallby marchează 1,1 și primește 1,7."
+   },
+   {
+    "id": 14292456,
+    "meci": "Hammarby IF – Sirius",
+    "when": "2026-10-29T17:30:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "GG (ambele marchează)",
+    "od": 1.67,
+    "p": 0.602,
+    "why": "Hammarby IF marchează 2,1 și primește 0,8 pe meci; Sirius marchează 2,2 și primește 1,3."
+   },
+   {
+    "id": 14292462,
+    "meci": "Kalmar FF – GAIS",
+    "when": "2026-10-29T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "GG (ambele marchează)",
+    "od": 1.7,
+    "p": 0.518,
+    "why": "Kalmar FF marchează 0,9 și primește 1,6 pe meci; GAIS marchează 1,2 și primește 1."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14292456,
+    "meci": "Hammarby IF – Sirius",
+    "when": "2026-10-29T17:30:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.4,
+    "p": 0.782,
+    "why": "Media cornerelor: Hammarby IF 6,8, Sirius 6, adică 12,8 pe meci."
+   },
+   {
+    "id": 14276249,
+    "meci": "Frosinone – Lecce",
+    "when": "2026-10-29T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.45,
+    "p": 0.68,
+    "why": "Media cornerelor: Frosinone 5,9, Lecce 4,5, adică 10,4 pe meci."
+   },
+   {
+    "id": 14276248,
+    "meci": "Fiorentina – Atalanta",
+    "when": "2026-10-29T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.36,
+    "p": 0.673,
+    "why": "Media cornerelor: Fiorentina 4,8, Atalanta 4, adică 8,8 pe meci."
+   },
+   {
+    "id": 14292462,
+    "meci": "Kalmar FF – GAIS",
+    "when": "2026-10-29T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.46,
+    "p": 0.668,
+    "why": "Media cornerelor: Kalmar FF 4,9, GAIS 5,3, adică 10,2 pe meci."
+   },
+   {
+    "id": 14292458,
+    "meci": "Orgryte – Mjallby",
+    "when": "2026-10-29T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.44,
+    "p": 0.573,
+    "why": "Media cornerelor: Orgryte 3,9, Mjallby 4,7, adică 8,6 pe meci."
+   }
+  ],
+  "cartonase": [
+   {
+    "id": 14292458,
+    "meci": "Orgryte – Mjallby",
+    "when": "2026-10-29T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.37,
+    "p": 0.684,
+    "why": "Cartonașe pe meci: Orgryte 1,4, Mjallby 2,1."
+   },
+   {
+    "id": 14292462,
+    "meci": "Kalmar FF – GAIS",
+    "when": "2026-10-29T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.4,
+    "p": 0.647,
+    "why": "Cartonașe pe meci: Kalmar FF 1, GAIS 2,2."
+   },
+   {
+    "id": 14276248,
+    "meci": "Fiorentina – Atalanta",
+    "when": "2026-10-29T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.4,
+    "p": 0.614,
+    "why": "Cartonașe pe meci: Fiorentina 1,9, Atalanta 1."
+   },
+   {
+    "id": 14276249,
+    "meci": "Frosinone – Lecce",
+    "when": "2026-10-29T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.6,
+    "p": 0.568,
+    "why": "Cartonașe pe meci: Frosinone 2, Lecce 1,9."
+   },
+   {
+    "id": 14292456,
+    "meci": "Hammarby IF – Sirius",
+    "when": "2026-10-29T17:30:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.65,
+    "p": 0.527,
+    "why": "Cartonașe pe meci: Hammarby IF 1,3, Sirius 1,3."
+   }
+  ]
+ }
+}
