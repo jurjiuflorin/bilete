@@ -1,6 +1,6 @@
 {
  "data": "2026-10-29",
- "actualizat": "2026-10-29T08:25:00Z",
+ "actualizat": "2026-10-29T14:45:00Z",
  "meciuri": [
   {
    "id": 14276249,
@@ -11,7 +11,8 @@
    "oaspeti": "Lecce",
    "absenti_gazde": [],
    "absenti_oaspeti": [],
-   "nota": "Kialonda Gaspar este suspendat (echipa nu e confirmată în sursă)."
+   "nota": "Kialonda Gaspar este suspendat (echipa nu e confirmată în sursă). Îndoieli de formă: Calvani și Calò (Frosinone), Tiago Gabriel (Lecce).",
+   "arbitru": "Abisso"
   },
   {
    "data": "2026-10-29",
@@ -29,15 +30,22 @@
    "gazde": "Everton",
    "oaspeti": "Newcastle",
    "absenti_gazde": [
-    "Grealish (probabil absent)",
-    "Branthwaite (probabil absent)",
-    "Mykolenko (probabil absent)"
+    "Jack Grealish (probabil lipsă, condiție fizică)",
+    "Jarrad Branthwaite (probabil lipsă, condiție fizică)",
+    "Vitaliy Mykolenko (probabil lipsă, condiție fizică)"
    ],
    "absenti_oaspeti": [
-    "Livramento (accidentat)",
-    "Jaouen (accidentat)"
+    "Valentino Livramento (accidentat)",
+    "Ewen Jaouen (accidentat)"
    ],
-   "arbitru": "Farai Hallam"
+   "arbitru": "Farai Hallam",
+   "id": 15028487,
+   "marcatori_gazde": "Thierno Barry (3 goluri în Cupa Ligii)",
+   "arbitru_galbene": 3.69,
+   "arbitru_rosii": 0.08,
+   "arbitru_meciuri": 13,
+   "arbitru_sezon": "Championship 2024/25",
+   "nota": "Everton fără gol în ultimele două meciuri; Newcastle a învins Crystal Palace cu 2-0 în ultimul meci."
   },
   {
    "data": "2026-10-29",
@@ -61,6 +69,43 @@
     "Elimbi (suspendat, roșu)"
    ],
    "arbitru": "José Bessa"
+  },
+  {
+   "id": 14292456,
+   "data": "2026-10-29",
+   "ora": "19:30",
+   "liga": "Allsvenskan",
+   "gazde": "Hammarby",
+   "oaspeti": "Sirius",
+   "forma_gazde": "VVIVV",
+   "forma_oaspeti": "VVVEI",
+   "absenti_gazde": [],
+   "absenti_oaspeti": []
+  },
+  {
+   "id": 14292462,
+   "data": "2026-10-29",
+   "ora": "20:00",
+   "liga": "Allsvenskan",
+   "gazde": "Kalmar FF",
+   "oaspeti": "GAIS",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "arbitru": "Fredrik Klitte",
+   "arbitru_galbene": 3.83,
+   "arbitru_rosii": 0.04,
+   "arbitru_meciuri": 24,
+   "arbitru_sezon": "Allsvenskan 2024"
+  },
+  {
+   "id": 14292458,
+   "data": "2026-10-29",
+   "ora": "20:00",
+   "liga": "Allsvenskan",
+   "gazde": "Orgryte",
+   "oaspeti": "Mjallby",
+   "absenti_gazde": [],
+   "absenti_oaspeti": []
   }
  ]
 }
