@@ -1,3 +1,3 @@
-prea devreme pentru lista zilei 3
-judecat 2026-10-29.json
-index 5 zile
+evenimente 2809 meciuri azi 13
+scris sugestii/2026-10-30.json { goluri: 5, gg: 5, cornere: 5, cartonase: 5 }
+index 6 zile

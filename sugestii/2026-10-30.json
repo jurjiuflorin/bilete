@@ -1,0 +1,215 @@
+{
+ "data": "2026-10-30",
+ "salvat": "2026-10-30T13:23:26.820Z",
+ "n": 13,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14335399,
+    "meci": "Elversberg – Mainz",
+    "when": "2026-10-30T19:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.5,
+    "p": 0.694,
+    "why": "Elversberg dă 1,7 și primește 2,1 goluri pe meci; Mainz dă 2,3 și primește 1,9."
+   },
+   {
+    "id": 14335540,
+    "meci": "Le Havre – PSG",
+    "when": "2026-10-30T18:00:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.41,
+    "p": 0.657,
+    "why": "Le Havre dă 1 și primește 1,9 goluri pe meci; PSG dă 2 și primește 1,1."
+   },
+   {
+    "id": 14335467,
+    "meci": "Zulte Waregem – Club Brugge",
+    "when": "2026-10-30T19:45:00.000Z",
+    "liga": "Pro League",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.41,
+    "p": 0.614,
+    "why": "Zulte Waregem dă 1,1 și primește 1,3 goluri pe meci; Club Brugge dă 2,4 și primește 0,7."
+   },
+   {
+    "id": 14351078,
+    "meci": "Villarreal – Espanyol",
+    "when": "2026-10-30T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.42,
+    "p": 0.612,
+    "why": "Villarreal dă 1,5 și primește 1,4 goluri pe meci; Espanyol dă 1,2 și primește 1,4."
+   },
+   {
+    "id": 15280024,
+    "meci": "Lyngby – Randers FC",
+    "when": "2026-10-30T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.58,
+    "p": 0.609,
+    "why": "Lyngby dă 1,4 și primește 2,3 goluri pe meci; Randers FC dă 1 și primește 1,6."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14335399,
+    "meci": "Elversberg – Mainz",
+    "when": "2026-10-30T19:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.46,
+    "p": 0.694,
+    "why": "Elversberg marchează 1,7 și primește 2,1 pe meci; Mainz marchează 2,3 și primește 1,9."
+   },
+   {
+    "id": 14351015,
+    "meci": "Bodo/Glimt – Viking",
+    "when": "2026-10-30T18:00:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "GG (ambele marchează)",
+    "od": 1.36,
+    "p": 0.688,
+    "why": "Bodo/Glimt marchează 2,4 și primește 0,9 pe meci; Viking marchează 2,6 și primește 1."
+   },
+   {
+    "id": 15280024,
+    "meci": "Lyngby – Randers FC",
+    "when": "2026-10-30T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.49,
+    "p": 0.635,
+    "why": "Lyngby marchează 1,4 și primește 2,3 pe meci; Randers FC marchează 1 și primește 1,6."
+   },
+   {
+    "id": 14335545,
+    "meci": "Nice – Rennes",
+    "when": "2026-10-30T18:00:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "GG (ambele marchează)",
+    "od": 1.55,
+    "p": 0.624,
+    "why": "Nice marchează 1 și primește 1,3 pe meci; Rennes marchează 2,3 și primește 1,8."
+   },
+   {
+    "id": 15467054,
+    "meci": "Grazer AK – TSV Hartberg",
+    "when": "2026-10-30T18:30:00.000Z",
+    "liga": "Bundesliga (Austria)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.64,
+    "p": 0.613,
+    "why": "Grazer AK marchează 0,8 și primește 2,3 pe meci; TSV Hartberg marchează 1,6 și primește 1,9."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14351015,
+    "meci": "Bodo/Glimt – Viking",
+    "when": "2026-10-30T18:00:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.45,
+    "p": 0.777,
+    "why": "Media cornerelor: Bodo/Glimt 7,6, Viking 6,7, adică 14,3 pe meci."
+   },
+   {
+    "id": 14351010,
+    "meci": "Konyaspor – Galatasaray",
+    "when": "2026-10-30T17:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.36,
+    "p": 0.775,
+    "why": "Media cornerelor: Konyaspor 3,2, Galatasaray 7,8, adică 11 pe meci."
+   },
+   {
+    "id": 14335467,
+    "meci": "Zulte Waregem – Club Brugge",
+    "when": "2026-10-30T19:45:00.000Z",
+    "liga": "Pro League",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.45,
+    "p": 0.751,
+    "why": "Media cornerelor: Zulte Waregem 4,4, Club Brugge 7,7, adică 12,1 pe meci."
+   },
+   {
+    "id": 14335545,
+    "meci": "Nice – Rennes",
+    "when": "2026-10-30T18:00:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.46,
+    "p": 0.72,
+    "why": "Media cornerelor: Nice 5,9, Rennes 5,4, adică 11,3 pe meci."
+   },
+   {
+    "id": 14335541,
+    "meci": "Lille – Lens",
+    "when": "2026-10-30T20:05:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.38,
+    "p": 0.707,
+    "why": "Media cornerelor: Lille 3, Lens 6,5, adică 9,5 pe meci."
+   }
+  ],
+  "cartonase": [
+   {
+    "id": 14335545,
+    "meci": "Nice – Rennes",
+    "when": "2026-10-30T18:00:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.37,
+    "p": 0.763,
+    "why": "Cartonașe pe meci: Nice 2,3, Rennes 2,3."
+   },
+   {
+    "id": 14335431,
+    "meci": "Rapid Bucuresti – Csikszereda Miercurea Ciuc",
+    "when": "2026-10-30T18:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.44,
+    "p": 0.709,
+    "why": "Cartonașe pe meci: Rapid Bucuresti 2,4, Csikszereda Miercurea Ciuc 2,8."
+   },
+   {
+    "id": 14350996,
+    "meci": "Casa Pia – Sporting Lisabona",
+    "when": "2026-10-30T20:15:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.4,
+    "p": 0.666,
+    "why": "Cartonașe pe meci: Casa Pia 2,3, Sporting Lisabona 2,2."
+   },
+   {
+    "id": 14321779,
+    "meci": "Sheffield United – Wrexham",
+    "when": "2026-10-30T20:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.51,
+    "p": 0.643,
+    "why": "Cartonașe pe meci: Sheffield United 2,1, Wrexham 1,3."
+   },
+   {
+    "id": 14335399,
+    "meci": "Elversberg – Mainz",
+    "when": "2026-10-30T19:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.64,
+    "p": 0.599,
+    "why": "Cartonașe pe meci: Elversberg 2, Mainz 2,3."
+   }
+  ]
+ }
+}
