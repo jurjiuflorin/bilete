@@ -566,3 +566,6 @@ h1::after{content:"_";color:var(--cyan);margin-left:.04em;font-weight:400}
 .chips .chip-live[aria-pressed=true] .dot{background:#fff;box-shadow:none}
 @keyframes lvp{50%{opacity:.35}}
 .chips .chip-live .dot{margin:0}
+
+.hs-seg{margin:0 0 14px}
+.hs-seg button{padding:6px 14px;font-size:14px}
