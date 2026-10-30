@@ -1037,7 +1037,7 @@
   "sansa": 0.0054,
   "status": "în așteptare",
   "cod": "990A-KKFNAT",
-  "rezultat": "Sassuolo–Lazio 2-6 · Monza 1-4 Napoli",
+  "rezultat": "Sassuolo–Lazio 2-6 · Monza 1-4 Napoli · Frosinone–Lecce 5-1",
   "selectii": "27.10 19:30 Sassuolo – Lazio: Peste 2.5 (1.61) · 28.10 21:45 Monza – Napoli: Peste 2.5 (1.52) · 29.10 19:30 Frosinone – Lecce: Peste 2.5 (1.61) · 30.10 21:30 Elversberg – Mainz: Peste 2.5 (1.47) · 31.10 16:30 Bremen – Hoffenheim: Peste 3.5 (1.82) · 31.10 14:30 Chelsea – Man United: Peste 2.5 (1.61) · 31.10 16:30 Mönchengladbach – Paderborn: Peste 2.5 (1.56) · 31.10 22:00 Barcelona – Alavés: Barcelona peste 2.5 goluri (1.52) · 31.10 21:45 Milan – Inter: Peste 2.5 (1.61) · 01.11 18:30 Liverpool – Arsenal: Sub 2.5 (1.72)",
   "ids": [
    14276255,
@@ -1295,7 +1295,7 @@
   "status": "în așteptare",
   "cod": "990B-KK51RI",
   "selectii": "29.10 19:30 Frosinone – Lecce: Peste 2.5 (1.40) · 30.10 21:30 Elversberg – Mainz: Peste 2.5 (1.48) · 31.10 14:30 Chelsea – Man United: Peste 2.5 (1.59) · 31.10 15:00 Levante – Atlético Madrid: Atlético câștigă (1.58) · 31.10 16:30 Augsburg – Freiburg: Peste 2.5 (1.48) · 31.10 16:30 Leverkusen – Stuttgart: Leverkusen peste 1.5 goluri (1.43) · 31.10 16:30 Bremen – Hoffenheim: Peste 2.5 (1.41) · 31.10 16:30 Mönchengladbach – Paderborn: Peste 2.5 (1.50) · 31.10 16:30 Schalke – RB Leipzig: 2 (1.85) · 31.10 17:00 Man City – Brighton: Peste 2.5 (1.42) · 31.10 19:00 Udinese – Roma: Roma câștigă (1.54) · 31.10 19:30 Betis – Málaga: Betis câștigă (1.36) · 31.10 19:30 Bayern – Dortmund: GG (1.45) · 31.10 21:45 Milan – Inter: Peste 2.5 (1.63) · 31.10 22:00 Barcelona – Alavés: Barcelona peste 2.5 goluri (1.38) · 01.11 13:30 Como – Venezia: Peste 2.5 (1.40) · 01.11 16:00 Lazio – Cagliari: Lazio câștigă (1.43) · 01.11 17:15 Racing Santander – Real Madrid: Real Madrid peste 2.5 goluri (1.51)",
-  "rezultat": "",
+  "rezultat": "Frosinone–Lecce 5-1",
   "ids": [
    14276249,
    14335399,
@@ -1324,10 +1324,10 @@
   "tip": "Pariul zilei",
   "cota": 1.4,
   "sansa": 0.7,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "991D-KKHBSV",
   "selectii": "19:30 Frosinone – Lecce: Peste 2.5 (1.40)",
-  "rezultat": "",
+  "rezultat": "Frosinone–Lecce 5-1",
   "motive": [
    "În ultimele 5 meciuri ambele echipe au avut peste 2,5 goluri de 4 ori (Frosinone 12 marcate/10 primite, Lecce 7/9), inclusiv 4-4 cu Atalanta și 4-2 cu Sassuolo. Estimez ~70% pentru 3+ goluri față de 62% cât implică cota 1,61, deci un avantaj de circa 8 puncte procentuale."
   ],
@@ -1342,10 +1342,10 @@
   "tip": "Cotă 2",
   "cota": 2.07,
   "sansa": 0.6319,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "990D-KLWSI4",
   "selectii": "21:45 Everton – Newcastle: Peste 8.5 cornere (1.48) · 19:30 Hammarby – Sirius: Peste 8.5 cornere (1.40)",
-  "rezultat": "",
+  "rezultat": "Everton–Newcastle 3-1 (14 cornere) · Hammarby–Sirius 2-0 (18 cornere)",
   "motive": [
    "Newcastle are 10,5 cornere pe meci în Cupă și Everton 5,5 (16 împreună); șansă estimată ~81% pentru 9+ cornere.",
    "Hammarby are 6,8 și Sirius 6,0 cornere pe meci (12,8 împreună); șansă estimată ~78% pentru 9+ cornere."
@@ -1362,10 +1362,10 @@
   "tip": "Cotă 5",
   "cota": 4.9,
   "sansa": 0.2621,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "990Z-KKLN9K",
   "selectii": "21:45 Everton – Newcastle: Peste 9.5 cornere (1.75) · 21:45 Fiorentina – Atalanta: GG (1.43) · 19:30 Frosinone – Lecce: Peste 2.5 (1.40) · 19:30 Hammarby – Sirius: Peste 8.5 cornere (1.40)",
-  "rezultat": "",
+  "rezultat": "Everton–Newcastle 3-1 (14 cornere) · Fiorentina–Atalanta 2-2 · Frosinone–Lecce 5-1 · Hammarby–Sirius 2-0 (18 cornere)",
   "motive": [
    "Cele două echipe adună ~16 cornere pe meci în Cupă; estimez ~75% pentru 10+ față de 57% cât implică cota.",
    "Fiorentina primește 2,4 și Atalanta 1,9 goluri pe meci, iar amândouă marchează; estimez ~68% pentru GG.",
@@ -1386,10 +1386,10 @@
   "tip": "Cotă 10",
   "cota": 9.54,
   "sansa": 0.15,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "9913-WLBVED",
   "selectii": "21:45 Everton – Newcastle: Peste 9.5 cornere (1.75) · 19:30 Hammarby – Sirius: Peste 9.5 cornere (1.63) · 21:45 Fiorentina – Atalanta: Peste 2.5 (1.50) · 19:30 Frosinone – Lecce: GG (1.42) · 20:00 Kalmar – GAIS: X2 (1.57)",
-  "rezultat": "",
+  "rezultat": "Everton–Newcastle 3-1 (14 cornere) · Hammarby–Sirius 2-0 (18 cornere) · Fiorentina–Atalanta 2-2 · Frosinone–Lecce 5-1 · Kalmar–GAIS 0-1",
   "motive": [
    "Repetat de pe Cotă 5: e pronosticul cu cel mai mare avantaj al zilei (~75% față de 57% în cotă).",
    "Hammarby și Sirius adună 12,8 cornere pe meci; estimez ~70% pentru 10+ față de 61% în cotă.",
@@ -1463,5 +1463,139 @@
    14335430
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-10-30-pariu",
+  "data": "2026-10-30",
+  "tip": "Pariul zilei",
+  "cota": 1.47,
+  "sansa": 0.7,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:30 Elversberg – Mainz: Peste 2.5 (1.47)",
+  "rezultat": "",
+  "motive": [
+   "Elversberg dă 1,7 și primește 2,1 goluri pe meci, Mainz dă 2,3 și primește 1,9 (xG 1,5 vs 2,2); media combinată de ~4 goluri implică peste 2,5 în ~76% după statistici. Estimez ~70% (după amestec cu piața) față de 68% implicat de cota 1,47 – avantaj mic, de ~2 puncte. Piețele de cornere/GG nu apar în feed azi, deci am comparat piețele de goluri și 1X2; peste 2,5 are cel mai bun raport șansă/cotă, dar avantajul este mic."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335399
+  ]
+ },
+ {
+  "id": "2026-10-30-cota2",
+  "data": "2026-10-30",
+  "tip": "Cotă 2",
+  "cota": 2.09,
+  "sansa": 0.49,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Zulte Waregem – Club Brugge: Club Brugge câștigă (1.42) · 21:30 Elversberg – Mainz: Peste 2.5 (1.47)",
+  "rezultat": "",
+  "motive": [
+   "Brugge dă 2,4 goluri/meci (xG 2,7) și primește 0,7, Zulte dă 1,1 (xG 1,3); cota 1,42 implică ~70%, estimez ~70%. (~70%)",
+   "Elversberg dă 1,7 și primește 2,1 goluri pe meci, Mainz dă 2,3 și primește 1,9 (xG 1,5 vs 2,2); media combinată de ~4 goluri implică peste 2,5 în ~76% după statistici. Estimez ~70% (după amestec cu piața) față de 68% implicat de cota 1,47 – avantaj mic, de ~2 puncte."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335467,
+   14335399
+  ]
+ },
+ {
+  "id": "2026-10-30-cota5",
+  "data": "2026-10-30",
+  "tip": "Cotă 5",
+  "cota": 4.51,
+  "sansa": 0.2167,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:00 Konyaspor – Galatasaray: Galatasaray câștigă (1.51) · 21:30 Elversberg – Mainz: Peste 2.5 (1.47) · 21:45 Zulte Waregem – Club Brugge: Club Brugge câștigă (1.42) · 22:00 Villarreal – Espanyol: Villarreal câștigă (1.43)",
+  "rezultat": "",
+  "motive": [
+   "Galatasaray dă 2,1 (xG 2,3) și 7,8 cornere/meci, Konyaspor dă doar 0,7 (xG 1,1); estimez ~67% față de 66% implicat de cota 1,51.",
+   "Elversberg dă 1,7 și primește 2,1 goluri pe meci, Mainz dă 2,3 și primește 1,9 (xG 1,5 vs 2,2); media combinată de ~4 goluri implică peste 2,5 în ~76% după statistici. Estimez ~70% (după amestec cu piața) față de 68% implicat de cota 1,47 – avantaj mic, de ~2 puncte. Repetată pentru că are cea mai mare șansă.",
+   "Brugge dă 2,4 goluri/meci (xG 2,7) și primește 0,7, Zulte dă 1,1 (xG 1,3); cota 1,42 implică ~70%, estimez ~70%. Repetată pentru că are cea mai mare șansă.",
+   "Villarreal e favorită clară acasă (cota 1,43, ~70% implicat); Espanyol poate marca peste 1,5 la doar 3,45. Estimez ~66%."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14351010,
+   14335399,
+   14335467,
+   14351078
+  ]
+ },
+ {
+  "id": "2026-10-30-cota10",
+  "data": "2026-10-30",
+  "tip": "Cotă 10",
+  "cota": 10.09,
+  "sansa": 0.0831,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:00 Konyaspor – Galatasaray: Galatasaray câștigă (1.51) · 20:00 Le Havre – PSG: Peste 2.5 (1.39) · 21:30 Elversberg – Mainz: Peste 2.5 (1.47) · 21:45 Zulte Waregem – Club Brugge: Club Brugge câștigă (1.42) · 22:00 Villarreal – Espanyol: Villarreal câștigă (1.43) · 22:15 Casa Pia – Sporting: Peste 2.5 (1.61)",
+  "rezultat": "",
+  "motive": [
+   "Galatasaray dă 2,1 (xG 2,3) și 7,8 cornere/meci, Konyaspor dă doar 0,7 (xG 1,1); estimez ~67% față de 66% implicat de cota 1,51.",
+   "PSG dă 2,0 (xG 2,5), Le Havre primește 1,9; Le Havre dă 1,0 – total așteptat ~3 goluri. Estimez ~65% pentru peste 2,5.",
+   "Elversberg dă 1,7 și primește 2,1 goluri pe meci, Mainz dă 2,3 și primește 1,9 (xG 1,5 vs 2,2); media combinată de ~4 goluri implică peste 2,5 în ~76% după statistici. Estimez ~70% (după amestec cu piața) față de 68% implicat de cota 1,47 – avantaj mic, de ~2 puncte.",
+   "Brugge dă 2,4 goluri/meci (xG 2,7) și primește 0,7, Zulte dă 1,1 (xG 1,3); cota 1,42 implică ~70%, estimez ~70%.",
+   "Villarreal e favorită clară acasă (cota 1,43, ~70% implicat); Espanyol poate marca peste 1,5 la doar 3,45. Estimez ~66%.",
+   "Sporting dă 2,3 goluri (xG 1,9), Casa Pia primește 1,9 și dă 0,6; total așteptat ~3 goluri. Estimez ~59% față de 62% implicat – selecție cu șansă mai mică, folosită doar pentru cota 10."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14351010,
+   14335540,
+   14335399,
+   14335467,
+   14351078,
+   14350996
+  ]
+ },
+ {
+  "id": "2026-10-30-sc-acc",
+  "data": "2026-10-30",
+  "tip": "SuperCoins – Acumulator",
+  "cota": 4.13,
+  "sansa": 0.2462,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:00 Konyaspor – Galatasaray: Galatasaray câștigă (1.51) · 21:30 Elversberg – Mainz: Peste 2.5 (1.47) · 21:45 Zulte Waregem – Club Brugge: Club Brugge câștigă (1.42) · 22:15 Casa Pia – Sporting: Sporting câștigă (1.31)",
+  "rezultat": "",
+  "motive": [
+   "Galatasaray dă 2,1 (xG 2,3) și 7,8 cornere/meci, Konyaspor dă doar 0,7 (xG 1,1); estimez ~67% față de 66% implicat de cota 1,51.",
+   "Elversberg dă 1,7 și primește 2,1 goluri pe meci, Mainz dă 2,3 și primește 1,9 (xG 1,5 vs 2,2); media combinată de ~4 goluri implică peste 2,5 în ~76% după statistici. Estimez ~70% (după amestec cu piața) față de 68% implicat de cota 1,47 – avantaj mic, de ~2 puncte.",
+   "Brugge dă 2,4 goluri/meci (xG 2,7) și primește 0,7, Zulte dă 1,1 (xG 1,3); cota 1,42 implică ~70%, estimez ~70%.",
+   "Sporting dă 2,3 goluri (xG 1,9) și Casa Pia dă 0,6 și primește 1,9; cota 1,31 implică ~76%, estimez ~75%. Variantele: 3 selecții ~23,5%, 4 selecții ~24,6% (aleasă), 8-9 selecții foarte sigure ~20% (fiecare selecție în plus adaugă marja casei)."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14351010,
+   14335399,
+   14335467,
+   14350996
+  ]
+ },
+ {
+  "id": "2026-10-30-sc-bb",
+  "data": "2026-10-30",
+  "tip": "SuperCoins – Bet Builder",
+  "cota": 2.33,
+  "sansa": 0.4485,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Zulte Waregem – Club Brugge: Bet Builder 2 + Peste 1.5 (1.55) · 22:15 Casa Pia – Sporting: Bet Builder 2 + Peste 1.5 (1.50)",
+  "rezultat": "",
+  "motive": [
+   "Brugge câștigă (~70%) și 2+ goluri în meci (~93% dacă câștigă); împreună ~65% (preț real Superbet 1.55).",
+   "Sporting câștigă (~75%) și 2+ goluri în meci (~92% dacă câștigă); împreună ~69% (preț real Superbet 1.50). Variante: 1 meci (nevoie de 3 selecții) ~45%, 2 meciuri ~45% (aleasă, cotă 2.33), 3 meciuri cu prețuri ~1.3 ~35-40%."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335467,
+   14350996
+  ]
  }
 ]
