@@ -1473,7 +1473,6 @@ let notifOn = store.get('notificari', false);
 const notifOK = () => 'Notification' in window && Notification.permission === 'granted';
 function notify(title, body, tag) {
   if (!notifOn || !notifOK()) return;
-  if (document.visibilityState === 'visible' && document.hasFocus()) return;   // pe ecran se vede deja
   const opt = { body, tag, renotify: true, icon: 'icon-192.png', badge: 'icon-192.png', data: { url: location.href } };
   (navigator.serviceWorker ? navigator.serviceWorker.ready.then(r => r.showNotification(title, opt)) : Promise.reject())
     .catch(() => { try { new Notification(title, opt); } catch (e) {} });
@@ -1491,17 +1490,25 @@ function legDone(li, m, r) {
   notify((r === 'won' ? '✅ A intrat: ' : '❌ A picat: ') + li._sel, li._meci + ' ' + m.h + ' – ' + m.a + ticketsOf(li.dataset.id), 'leg-' + k);
 }
 function notifBtn() {
+  const w = el('span', 'nt-wrap');
   const b = el('button', 'snd'); b.type = 'button';
-  const set = () => { const on = notifOn && notifOK(); b.textContent = on ? '📣 Notificări: pornite' : '📴 Notificări: oprite'; b.setAttribute('aria-pressed', String(on)); };
+  const t = el('button', 'snd nt-test', 'Trimite test'); t.type = 'button';
+  const set = () => { const on = notifOn && notifOK(); b.textContent = on ? '📣 Notificări: pornite' : '📴 Notificări: oprite'; b.setAttribute('aria-pressed', String(on)); t.hidden = !on; };
+  const test = () => {
+    const opt = { body: 'Așa arată o notificare de gol. Dacă o vezi, totul e în regulă.', icon: 'icon-192.png', tag: 'test', renotify: true };
+    const fail = e => toast('Browserul n-a putut afișa notificarea: ' + (e && e.message || e));
+    if (navigator.serviceWorker && navigator.serviceWorker.controller) navigator.serviceWorker.ready.then(r => r.showNotification('⚽ Test notificare', opt)).then(() => toast('Notificare trimisă. Dacă n-a apărut, verifică setările de notificări ale sistemului pentru browser.'), fail);
+    else { try { new Notification('⚽ Test notificare', opt); toast('Notificare trimisă'); } catch (e) { fail(e); } }
+  };
   b.onclick = async () => {
     if (!('Notification' in window)) { b.textContent = 'Browserul nu suportă notificări (pe iPhone: adaugă site-ul pe ecranul principal)'; return; }
     if (notifOn && notifOK()) { notifOn = false; store.set('notificari', false); return set(); }
     const p = Notification.permission === 'granted' ? 'granted' : await Notification.requestPermission();
-    if (p !== 'granted') { b.textContent = '🚫 Notificări blocate în setările browserului'; return; }
-    notifOn = true; store.set('notificari', true); set();
-    navigator.serviceWorker && navigator.serviceWorker.ready.then(r => r.showNotification('Notificări pornite', { body: 'Primești gol, meci intrat/picat și bilet câștigat cât timp site-ul e deschis.', icon: 'icon-192.png', tag: 'test' })).catch(() => {});
+    if (p !== 'granted') { b.textContent = '🚫 Notificări blocate: permite-le din lacătul de lângă adresă'; return; }
+    notifOn = true; store.set('notificari', true); set(); test();
   };
-  set(); return b;
+  t.onclick = test;
+  set(); w.append(b, t); return w;
 }
 
 /* ---------- biletele jucate de tine: miză și bani reali (salvate pe dispozitivul acesta) ---------- */
