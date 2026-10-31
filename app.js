@@ -1387,7 +1387,7 @@ function chips() {
 function render() {
   const list = $('list'); list.replaceChildren();
   if (tab === 'p') viewTickets(true); else if (tab === 'h') viewTickets(false); else if (tab === 'c') viewCalendar(); else if (tab === 'r') viewResults(); else if (tab === 's') viewSuggest(); else if (tab === 'x') viewChallenge(); else viewMatches();
-  liveTick();
+  liveTick(); syncMNav();
 }
 $('tabs').addEventListener('click', e => {
   const b = e.target.closest('button[data-tab]'); if (!b) return;
@@ -1630,4 +1630,30 @@ async function checkSA(li, m) {
   saWon.add(k); store.set('sa-won', [...saWon]);
   li.dataset.res = 'won'; progs();
   notify('✅ SuperAvantaj: ' + li._sel, li._meci + ' ' + m.h + ' – ' + m.a + ' · 2 goluri avans, pronosticul e câștigat' + ticketsOf(id), 'sa-' + k);
+}
+
+/* ---------- meniu jos pe telefon (ca într-o aplicație) ---------- */
+const MNAV = [['p', '🎟️', 'De jucat'], ['x', '🏆', 'Challenge'], ['m', '⚽', 'Meciuri'], ['h', '📊', 'Istoric']];
+const MMORE = [['s', '💡', 'Sugestii'], ['c', '📅', 'Calendar'], ['r', '🧾', 'Rezultate']];
+const goTab = t => { const b = $('tabs').querySelector('button[data-tab="' + t + '"]'); if (b) b.click(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+(function buildMNav() {
+  const nav = el('nav', 'mnav'); nav.id = 'mnav'; nav.setAttribute('aria-label', 'Meniu');
+  for (const [t, ic, lab] of MNAV) { const b = el('button'); b.type = 'button'; b.dataset.t = t; b.append(el('span', 'ic', ic), el('span', 'lb', lab)); if (t === 'p') b.append(el('span', 'cnt')); b.onclick = () => { closeMore(); goTab(t); }; nav.append(b); }
+  const more = el('button', 'more-b'); more.type = 'button'; more.dataset.t = 'more'; more.append(el('span', 'ic', '☰'), el('span', 'lb', 'Mai mult'));
+  const pop = el('div', 'mpop'); pop.id = 'mpop'; pop.hidden = true;
+  for (const [t, ic, lab] of MMORE) { const b = el('button'); b.type = 'button'; b.dataset.t = t; b.append(el('span', 'ic', ic), document.createTextNode(lab)); b.onclick = () => { closeMore(); goTab(t); }; pop.append(b); }
+  more.onclick = e => { e.stopPropagation(); pop.hidden = !pop.hidden; more.classList.toggle('open', !pop.hidden); };
+  nav.append(more); document.body.append(pop, nav);
+  document.addEventListener('click', e => { if (!pop.hidden && !pop.contains(e.target)) closeMore(); });
+  // căutarea pe telefon: buton care o deschide
+  const sb = el('button', 'sbtn', '🔍'); sb.type = 'button'; sb.setAttribute('aria-label', 'Caută o echipă');
+  sb.onclick = () => { const bar = document.querySelector('.bar'); bar.classList.toggle('sopen'); if (bar.classList.contains('sopen')) $('q').focus(); };
+  document.querySelector('.bar').append(sb);
+})();
+function closeMore() { const p = $('mpop'); if (p) p.hidden = true; const m = document.querySelector('.mnav .more-b'); if (m) m.classList.remove('open'); }
+function syncMNav() {
+  const nav = $('mnav'); if (!nav) return;
+  for (const b of nav.querySelectorAll('button')) b.classList.toggle('on', b.dataset.t === tab || (b.dataset.t === 'more' && MMORE.some(x => x[0] === tab)));
+  for (const b of $('mpop').querySelectorAll('button')) b.classList.toggle('on', b.dataset.t === tab);
+  const c = nav.querySelector('.cnt'); const n = $('n-p'); if (c && n) c.textContent = n.textContent;
 }
