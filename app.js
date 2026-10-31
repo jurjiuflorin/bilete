@@ -113,6 +113,7 @@ function slip(r, i) {
   tot.append(cc, pp);
   if (settled) { const st = el('div', 'stamp ' + (eff(r) === 'câștigat' ? 'won' : 'lost'), eff(r) === 'câștigat' ? 'Câștigat' : 'Pierdut'); st.style.setProperty('--d', (Math.min(i, 8) * .06) + 's'); tot.append(st); }
   s.append(tot);
+  s.append(playRow(r));
   if (r.rezultat) s.append(el('div', 'rez', r.rezultat));
   if (early) s.append(el('div', 'rez', 'Picat la ' + lostNow.get(r.id).join(', ') + '. Restul meciurilor nu mai contează; rezultatul final se confirmă la verificarea de noapte.'));
   const sh = el('button', 'share', 'Trimite ca imagine'); sh.type = 'button'; sh.onclick = () => shareSlip(r, sh); s.append(sh);
@@ -180,7 +181,7 @@ function histStats(R) {
   for (const r of S) { if (!r.rezultat) continue; for (const l of parseLegs(r)) { const sc = rezScore(r.rezultat, l.meci); if (!sc) continue; const res = judge(l.sel, l.meci, sc); if (res !== 'won' && res !== 'lost') continue; const k = r.id + '|' + nrm(l.meci); if (seen.has(k)) continue; seen.add(k); ln++; if (res === 'won') lw++; } }
   let streak = 0; const last = S.length ? won(S[S.length - 1]) : null; for (let i = S.length - 1; i >= 0 && won(S[i]) === last; i--) streak++;
   const pct = (a, b) => b ? Math.round(100 * a / b) + '%' : '–';
-  const box = el('section', 'hs');
+  const box = el('section', 'hs'); box._R = R;
   const h = el('h2', null, (tip || 'Toate biletele')); h.append(el('small', null, (q ? 'căutarea „' + q + '”, ' : '') + (N && ALL.length > N ? 'ultimele ' + n + ' bilete încheiate' : 'toate cele ' + n + ' bilete încheiate')));
   const seg = el('div', 'sg-seg hs-seg');
   for (const [v, lab] of [[5, 'Ultimele 5'], [15, '15'], [20, '20'], [0, 'Toate']]) {
@@ -198,6 +199,8 @@ function histStats(R) {
   const dots = el('div', 'hs-dots'); dots.append(el('span', 'l', (N ? 'Ultimele ' + n : 'Toate') + ':'));
   S.forEach(r => { const d = el('i', won(r) ? 'w' : 'x'); d.title = r.data.split('-').reverse().join('.') + ' · cotă ' + fmtOdd(r.cota) + ' · ' + (won(r) ? 'câștigat' : 'pierdut'); dots.append(d); });
   box.append(h, seg, tiles); if (n) box.append(dots);
+  const mb = moneyBox(S); if (mb) box.append(mb);
+  if (n) box.append(marketBox(S));
   return box;
 }
 
@@ -576,12 +579,12 @@ async function sheetOdds(box, l) {
         const raw = [(fr(G1, W) + fr(G2, Lo)) / 2, (fr(G1, D) + fr(G2, D)) / 2, (fr(G2, W) + fr(G1, Lo)) / 2], t = raw[0] + raw[1] + raw[2] || 1;
         S = raw.map(x => x / t);
       }
-      const card = el('div', 'mk');
+      const card = el('div', 'mks');
       const labs = ['Câștigă ' + (h || 'gazdele'), 'Egal', 'Câștigă ' + (a || 'oaspeții')];
       labs.forEach((lab, k) => {
         const [cls, why] = S[k] != null ? verdict(F[k], S[k], P[k], inPlay) : ['', ''];
         const row = el('div', 'mk-out' + (cls ? ' ' + cls : ''));
-        const hd = el('div', 'mk-h'); hd.append(el('span', 'mk-t', lab), el('span', 'mk-o', fmtOdd(P[k])));
+        const hd = el('div', 'mk-h'); hd.append(el('span', 'mks-t', lab), el('span', 'mk-o', fmtOdd(P[k])));
         row.append(hd, barsBlock(F[k], S[k]));
         if (cls === 'val') row.append(el('div', 'mk-v val', why));
         card.append(row);
@@ -597,13 +600,13 @@ async function sheetOdds(box, l) {
 
     // ---- goluri
     const binCard = (g, title, pOdds, prc, seq1, seq2, capText, extra) => {
-      const card = el('div', 'mk');
+      const card = el('div', 'mks');
       const n1 = seq1 ? seq1.length : 0, n2 = seq2 ? seq2.length : 0;
       const k1 = seq1 ? seq1.filter(Boolean).length : 0, k2 = seq2 ? seq2.filter(Boolean).length : 0;
       const pStat = extra && extra.p != null ? extra.p : (n1 >= 4 && n2 >= 4 ? (shrink(k1, n1) + shrink(k2, n2)) / 2 : null);
       const [cls, why] = pStat != null ? verdict(pOdds, pStat, prc, inPlay) : ['', ''];
       if (cls) card.classList.add(cls);
-      const hd = el('div', 'mk-h'); hd.append(el('span', 'mk-t', title), el('span', 'mk-o', fmtOdd(prc)));
+      const hd = el('div', 'mk-h'); hd.append(el('span', 'mks-t', title), el('span', 'mk-o', fmtOdd(prc)));
       card.append(hd, barsBlock(pOdds, pStat));
       if (extra && extra.vals) {
         // media pe meci a fiecărei echipe, cu valorile din fiecare meci dedesubt
@@ -1499,4 +1502,96 @@ function notifBtn() {
     navigator.serviceWorker && navigator.serviceWorker.ready.then(r => r.showNotification('Notificări pornite', { body: 'Primești gol, meci intrat/picat și bilet câștigat cât timp site-ul e deschis.', icon: 'icon-192.png', tag: 'test' })).catch(() => {});
   };
   set(); return b;
+}
+
+/* ---------- biletele jucate de tine: miză și bani reali (salvate pe dispozitivul acesta) ---------- */
+const played = () => store.get('jucate', {});
+const lei = v => (Math.round(v * 100) / 100).toLocaleString('ro-RO', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' lei';
+function playRow(r) {
+  const P = played(), on = r.id in P;
+  const d = el('div', 'play' + (on ? ' on' : ''));
+  const lab = el('label', 'pl-chk'); const cb = el('input'); cb.type = 'checkbox'; cb.checked = on; lab.append(cb, document.createTextNode(' L-am jucat'));
+  const stake = el('label', 'pl-st'); const inp = el('input'); inp.type = 'number'; inp.min = '0'; inp.step = '0.5'; inp.inputMode = 'decimal'; inp.placeholder = '10'; inp.value = on ? P[r.id] : '';
+  stake.append(document.createTextNode('miză '), inp, document.createTextNode(' lei'));
+  const out = el('span', 'pl-out');
+  const show = () => {
+    const P2 = played(), v = P2[r.id]; d.classList.toggle('on', r.id in P2); stake.hidden = !(r.id in P2);
+    if (!(r.id in P2) || !v) { out.textContent = ''; return; }
+    const st = eff(r); out.textContent = st === 'câștigat' ? 'încasat ' + lei(v * r.cota) : st === 'pierdut' ? 'pierdut ' + lei(v) : 'câștig posibil ' + lei(v * r.cota);
+    out.className = 'pl-out ' + (st === 'câștigat' ? 'up' : st === 'pierdut' ? 'down' : '');
+  };
+  const save = () => { const P2 = played(); if (cb.checked) P2[r.id] = Math.max(0, Number(inp.value) || 0); else delete P2[r.id]; store.set('jucate', P2); show(); if (tab === 'h') { const b = document.querySelector('.hs'); if (b && b._R) b.replaceWith(histStats(b._R)); } };
+  cb.onchange = () => { if (cb.checked && !inp.value) inp.value = store.get('mizaImplicita', 10); save(); if (cb.checked) inp.focus(); };
+  inp.onchange = () => { store.set('mizaImplicita', Number(inp.value) || 10); save(); };
+  d.append(lab, stake, out); show(); return d;
+}
+function moneyBox(S) {
+  const P = played(), J = S.filter(r => r.id in P && P[r.id] > 0);
+  const pend = rows.filter(r => eff(r) === PEND && r.id in P && P[r.id] > 0 && (!tip || catOf(r.tip) === tip));
+  if (!J.length && !pend.length) return null;
+  const put = J.reduce((a, r) => a + P[r.id], 0), got = J.reduce((a, r) => a + (eff(r) === 'câștigat' ? P[r.id] * r.cota : 0), 0), pr = got - put;
+  const w = J.filter(r => eff(r) === 'câștigat').length;
+  const box = el('div', 'money');
+  box.append(el('h3', null, 'Banii tăi'), el('small', null, 'doar biletele bifate „L-am jucat”, salvate pe acest dispozitiv'));
+  const t = el('div', 'rs-tiles');
+  const tile = (big, lab, cls) => { const x = el('div', 'rs-tile' + (cls ? ' ' + cls : '')); x.append(el('b', null, big), el('span', null, lab)); return x; };
+  t.append(tile(String(J.length), J.length ? w + ' câștigate din ' + J.length + ' jucate' : 'bilete jucate încheiate'),
+    tile(lei(put), 'puși în total'), tile(lei(got), 'încasați'),
+    tile((pr >= 0 ? '+' : '−') + lei(Math.abs(pr)), put ? 'profit (' + (pr >= 0 ? '+' : '') + Math.round(100 * pr / put) + '% din miză)' : 'profit', pr >= 0 ? 'up' : 'down'));
+  if (pend.length) { const a = pend.reduce((x, r) => x + P[r.id], 0), b = pend.reduce((x, r) => x + P[r.id] * r.cota, 0); t.append(tile(lei(a), 'în joc acum pe ' + pend.length + ' bilete · posibil ' + lei(b))); }
+  box.append(t); return box;
+}
+
+/* ---------- ce merge și ce nu: pe tipuri de pariu și pe ligi ---------- */
+function marketOf(sel) {
+  const s = nrm(sel).trim();
+  if (s.startsWith('bet builder')) return 'Bet Builder';
+  if (/cornere/.test(s)) return 'Cornere';
+  if (/cartonase/.test(s)) return 'Cartonașe';
+  if (s === 'gg') return 'GG'; if (s === 'ng') return 'NG';
+  if (/^(1x|x2|12)$/.test(s)) return 'Șansă dublă';
+  if (/^[12]$/.test(s) || / (castiga|victorie)$/.test(s)) return 'Victorie';
+  if (s === 'x') return 'Egal';
+  let m = /^(peste|sub) (\d)\.5$/.exec(s); if (m) return (m[1] === 'peste' ? 'Peste ' : 'Sub ') + m[2] + '.5 goluri';
+  if (/ (peste|sub) \d\.5 goluri$/.test(s)) return 'Goluri echipă';
+  return 'Altele';
+}
+const ligaCache = store.get('liga-cache', {});
+async function ligaOf(id) {
+  if (ligaCache[id]) return ligaCache[id];
+  try {
+    const j = await (await fetch('https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro-RO?fixture-id=ax%3Amatch%3A' + id)).json();
+    const c = j.competition || {}; const n = (c.names && c.names[0] && c.names[0].value && c.names[0].value.string_value) || c.name || '';
+    const cc = c.country_code && c.country_code.value; const name = n ? n + (cc && !/liga campionilor|champions|europa|conference/i.test(n) ? ' (' + cc + ')' : '') : '';
+    if (name) { ligaCache[id] = name; store.set('liga-cache', ligaCache); }
+    return name;
+  } catch (e) { return ''; }
+}
+function marketBox(S) {
+  const legs = []; const seen = new Set();
+  for (const r of S) { if (!r.rezultat) continue; for (const l of parseLegs(r)) { const sc = rezScore(r.rezultat, l.meci); if (!sc) continue; const res = judge(l.sel, l.meci, sc); if (res !== 'won' && res !== 'lost') continue; const k = nrm(l.meci) + '|' + nrm(l.sel) + '|' + r.data; if (seen.has(k)) continue; seen.add(k); legs.push({ ...l, won: res === 'won', od: parseFloat(String(l.o).replace(',', '.')) || 0 }); } }
+  const box = el('div', 'mks');
+  box.append(el('h3', null, 'Ce merge și ce nu'), el('small', null, legs.length + ' pronosticuri încheiate (fiecare meci o dată); profitul e pentru 1 leu pus pe fiecare pronostic separat'));
+  if (!legs.length) return box;
+  const table = (title, groups) => {
+    const w = el('div', 'mks-t'); w.append(el('h4', null, title));
+    const tb = el('table'); const hd = el('tr'); ['', 'Intrate', '%', 'Cotă medie', 'Profit/leu'].forEach(x => hd.append(el('th', null, x))); tb.append(hd);
+    [...groups].filter(([, a]) => a.length >= 2).sort((a, b) => b[1].length - a[1].length).forEach(([k, a]) => {
+      const w2 = a.filter(x => x.won).length, odds = a.filter(x => x.od), avg = odds.length ? odds.reduce((s, x) => s + x.od, 0) / odds.length : 0;
+      const pr = odds.reduce((s, x) => s + (x.won ? x.od - 1 : -1), 0) / (odds.length || 1);
+      const tr = el('tr'); const pc = Math.round(100 * w2 / a.length);
+      tr.append(el('td', null, k), el('td', null, w2 + '/' + a.length), el('td', 'pc ' + (pc >= 70 ? 'up' : pc < 55 ? 'down' : ''), pc + '%'), el('td', null, avg ? fmtOdd(avg) : '–'), el('td', pr >= 0 ? 'up' : 'down', (pr >= 0 ? '+' : '') + pr.toFixed(2)));
+      tb.append(tr);
+    });
+    w.append(tb); return w;
+  };
+  const by = f => { const g = new Map(); for (const l of legs) { const k = f(l); if (!k) continue; if (!g.has(k)) g.set(k, []); g.get(k).push(l); } return g; };
+  box.append(table('Pe tipuri de pariu', by(l => marketOf(l.sel))));
+  const lg = el('div', 'mks-t'); lg.append(el('h4', null, 'Pe ligi'), el('p', 'mks-load', 'Se încarcă ligile…')); box.append(lg);
+  (async () => {
+    const ids = [...new Set(legs.filter(l => l.id).map(l => l.id))]; let i = 0;
+    await Promise.all(Array.from({ length: 6 }, async () => { while (i < ids.length) await ligaOf(ids[i++]); }));
+    lg.replaceWith(table('Pe ligi', by(l => l.id ? (ligaCache[l.id] || 'Necunoscută') : 'Necunoscută')));
+  })();
+  return box;
 }
