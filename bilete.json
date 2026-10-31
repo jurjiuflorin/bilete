@@ -1729,5 +1729,26 @@
    14335391,
    14351000
   ]
+ },
+ {
+  "id": "2026-10-31-weekend",
+  "data": "2026-10-31",
+  "tip": "Weekend",
+  "cota": 40.83,
+  "sansa": 0.0245,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "31.10 14:30 Chelsea – Manchester United: Chelsea câștigă (1.85) · 31.10 17:00 Manchester City – Brighton: Manchester City câștigă (1.60) · 31.10 17:00 Bournemouth – Leeds: Peste 2.5 goluri (1.90) · 31.10 19:30 Tottenham – Crystal Palace: Tottenham câștigă (1.65) · 31.10 19:30 Bayern – Dortmund: Bet Builder: 1 + peste 2.5 (1.55) · 31.10 22:00 Aston Villa – Fulham: Peste 2.5 goluri (1.67) · 01.11 18:30 Liverpool – Arsenal: Ambele marchează (GG) (1.70)",
+  "rezultat": "",
+  "motive": [
+   "Piețele dau Chelsea ~53% (egal 24%); Chelsea 2.6 goluri/meci acasă, United a marcat doar 0.6/meci și a primit 2.2 în ultimele 5 (cotă estimată).",
+   "City: 4 victorii la rând acasă, 7 din ultimele 10 în ligă, Haaland 10 goluri; Brighton a pierdut 3 din ultimele 5 în deplasare (cotă ~-167).",
+   "Bournemouth 5 victorii la rând, 3.2 goluri/meci (2.3 marcate); ultimele 8 direct: peste 2.5 în 7 și GG în 7, 2-2 în aprilie (cotă ~-111).",
+   "Palace fără victorie în ultimele 4 deplasări, Tottenham 2.0 goluri/meci acasă și 18 victorii în 28 direct; lipsește Bentancur (suspendat), de aceea șansa e moderată (cotă estimată).",
+   "Bayern acasă 5.2 goluri marcate/meci și 4.7 goluri/meci în ultimele 10; peste 2.5 cotat ~80%, DNB Bayern ~90%; Neuer/Musiala incerți.",
+   "Villa 3.7 goluri/meci (4.0 acasă), Fulham 2.2; peste 2.5 cotat 60%, dar direct doar 15/31; Sessegnon (Fulham) suspendat (cotă ~-150).",
+   "GG la 60% din meciurile Liverpool și 68% (32/47) din direct, cotat 59%; Arsenal primește doar 0.9/meci și Saka lipsește, deci șansa e sub piață (cotă ~-143)."
+  ],
+  "sport": "fotbal"
  }
 ]
