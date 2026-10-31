@@ -908,8 +908,10 @@ async function liveTick() {
       if (!m || m.state === 0 || m.h == null) { lv.className = 'lv'; li.removeAttribute('data-res'); continue; }
       const r = judge(li._sel, li._meci, m);
       if (r) li.dataset.res = r; else li.removeAttribute('data-res');
+      if (m.state === 2 && (r === 'won' || r === 'lost')) legDone(li, m, r);
       const corn = m.corners && /corner/.test(nrm(li._sel)) ? (m.corners[0] + m.corners[1]) + ' cornere' : '';
       if (m.state === 1) {
+        liveSeen.add(li.dataset.id);
         if (!counted.has(li.dataset.id)) { counted.add(li.dataset.id); liveCount++; tick.push({ id: li.dataset.id, meci: li._meci, m }); }
         li.classList.add('livenow'); lv.className = 'lv on live';
         lv.replaceChildren(el('span', 'dot'), document.createTextNode(m.h + ' – ' + m.a + (m.min ? '  ·  ' + m.min + "'" : m.label ? '  ·  ' + m.label : '') + (corn ? '  ·  ' + corn : '')));
@@ -1035,6 +1037,7 @@ function goal(id, m, home) {
   clearTimeout(g._t); g._t = setTimeout(() => g.classList.remove('on'), 4200);
   beep();
   if (navigator.vibrate) try { navigator.vibrate([120, 60, 120]); } catch (e) {}
+  notify('⚽ GOL! ' + (home ? h : a) + ' marchează', h + ' ' + m.h + ' – ' + m.a + ' ' + a + (m.min ? ' · ' + m.min + "'" : '') + ticketsOf(id), 'gol-' + id);
 }
 function soundBtn() {
   const b = el('button', 'snd'); b.type = 'button';
@@ -1049,6 +1052,7 @@ function celebrate(slipEl) {
   const done = store.get('sarbatorite', []); if (done.includes(id)) return;
   done.push(id); store.set('sarbatorite', done);
   slipEl.classList.add('winner');
+  { const r = rows.find(x => x.id === id); if (r) notify('🏆 Bilet câștigat: ' + r.tip, 'Cotă ' + fmtOdd(r.cota) + (r.cod ? ' · cod ' + r.cod : ''), 'win-' + id); }
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   const r = slipEl.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return;
   const cv = el('canvas', 'confetti'); cv.width = innerWidth; cv.height = innerHeight; document.body.append(cv);
@@ -1398,7 +1402,7 @@ fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
     rows = (Array.isArray(d) ? d : (d.rows || [])).filter(r => r.tip !== 'Test');
     for (const id of [...lostNow.keys()]) { const r = rows.find(x => x.id === id); if (!r || r.status !== PEND) lostNow.delete(id); }
     try { localStorage.setItem('lostNow', JSON.stringify(Object.fromEntries(lostNow))); } catch (e) {}
-    chips(); header(); render(); $('next').after(soundBtn());
+    chips(); header(); render(); $('next').after(soundBtn()); $('next').nextSibling.after(notifBtn());
     setInterval(() => { now = new Date(); header(); liveTick(); if (tab === 'm' && Date.now() - day.t > 5 * 6e4) loadDay().then(() => { if (tab === 'm') render(); }); }, 60000);
   })
   .catch(e => { $('next').textContent = ''; $('list').append(el('div', 'err', 'Biletele nu s-au putut încărca: ' + e.message + '. Reîncarcă pagina peste un minut.')); });
@@ -1460,3 +1464,39 @@ function legLive(l) {
   return l.when.getTime() <= t && t < l.when.getTime() + dur;
 }
 function isLiveTicket(r) { return parseLegs(r).some(legLive); }
+
+/* ---------- notificări (gol, meci intrat/picat, bilet câștigat) cât timp site-ul e deschis ---------- */
+let notifOn = store.get('notificari', false);
+const notifOK = () => 'Notification' in window && Notification.permission === 'granted';
+function notify(title, body, tag) {
+  if (!notifOn || !notifOK()) return;
+  if (document.visibilityState === 'visible' && document.hasFocus()) return;   // pe ecran se vede deja
+  const opt = { body, tag, renotify: true, icon: 'icon-192.png', badge: 'icon-192.png', data: { url: location.href } };
+  (navigator.serviceWorker ? navigator.serviceWorker.ready.then(r => r.showNotification(title, opt)) : Promise.reject())
+    .catch(() => { try { new Notification(title, opt); } catch (e) {} });
+}
+function ticketsOf(id) {
+  const t = rows.filter(r => eff(r) === PEND && (r.ids || []).map(String).includes(String(id))).map(r => r.tip);
+  return t.length ? '\nPe biletele: ' + [...new Set(t)].join(', ') : '';
+}
+const legSeen = {}, liveSeen = new Set();
+function legDone(li, m, r) {
+  const k = li.dataset.id + '|' + nrm(li._sel);
+  if (legSeen[k] === r) return;
+  legSeen[k] = r;
+  if (!liveSeen.has(li.dataset.id)) return;   // anunțăm doar meciurile urmărite live în sesiunea asta
+  notify((r === 'won' ? '✅ A intrat: ' : '❌ A picat: ') + li._sel, li._meci + ' ' + m.h + ' – ' + m.a + ticketsOf(li.dataset.id), 'leg-' + k);
+}
+function notifBtn() {
+  const b = el('button', 'snd'); b.type = 'button';
+  const set = () => { const on = notifOn && notifOK(); b.textContent = on ? '📣 Notificări: pornite' : '📴 Notificări: oprite'; b.setAttribute('aria-pressed', String(on)); };
+  b.onclick = async () => {
+    if (!('Notification' in window)) { b.textContent = 'Browserul nu suportă notificări (pe iPhone: adaugă site-ul pe ecranul principal)'; return; }
+    if (notifOn && notifOK()) { notifOn = false; store.set('notificari', false); return set(); }
+    const p = Notification.permission === 'granted' ? 'granted' : await Notification.requestPermission();
+    if (p !== 'granted') { b.textContent = '🚫 Notificări blocate în setările browserului'; return; }
+    notifOn = true; store.set('notificari', true); set();
+    navigator.serviceWorker && navigator.serviceWorker.ready.then(r => r.showNotification('Notificări pornite', { body: 'Primești gol, meci intrat/picat și bilet câștigat cât timp site-ul e deschis.', icon: 'icon-192.png', tag: 'test' })).catch(() => {});
+  };
+  set(); return b;
+}
