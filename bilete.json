@@ -1605,7 +1605,7 @@
   "cota": 1.55,
   "sansa": 0.65,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "990U-NHU3LQ",
   "selectii": "19:30 Bayern – Dortmund: Bet Builder 1 + Peste 2.5 (1.55)",
   "rezultat": "",
   "motive": [
@@ -1623,7 +1623,7 @@
   "cota": 1.88,
   "sansa": 0.4556,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "990P-NNSV7W",
   "selectii": "19:45 PSV – Willem II: Peste 3.5 (1.36) · 22:00 Ajax – AZ: Peste 2.5 (1.38)",
   "rezultat": "",
   "motive": [
@@ -1643,7 +1643,7 @@
   "cota": 4.67,
   "sansa": 0.1836,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "990N-KMOCQE",
   "selectii": "16:30 Werder Bremen – Hoffenheim: Peste 2.5 (1.41) · 16:30 Schalke – RB Leipzig: Leipzig peste 1.5 goluri (1.55) · 19:30 Bayern – Dortmund: Bet Builder 1 + Peste 2.5 (1.55) · 22:00 Ajax – AZ: Peste 2.5 (1.38)",
   "rezultat": "",
   "motive": [
@@ -1664,10 +1664,10 @@
   "id": "2026-10-31-cota10",
   "data": "2026-10-31",
   "tip": "Cotă 10",
-  "cota": 10.49,
+  "cota": 11.05,
   "sansa": 0.0701,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "9916-KHX7VE",
   "selectii": "16:30 Werder Bremen – Hoffenheim: Peste 2.5 (1.41) · 16:30 Schalke – RB Leipzig: Leipzig peste 1.5 goluri (1.55) · 19:30 Tottenham – Crystal Palace: Peste 2.5 (1.65) · 19:30 Bayern – Dortmund: Bet Builder 1 + Peste 2.5 (1.55) · 19:45 PSV – Willem II: Peste 3.5 (1.36) · 22:00 Ajax – AZ: Peste 2.5 (1.38)",
   "rezultat": "",
   "motive": [
@@ -1692,10 +1692,10 @@
   "id": "2026-10-31-sc-acc",
   "data": "2026-10-31",
   "tip": "SuperCoins – Acumulator",
-  "cota": 4.25,
+  "cota": 4.67,
   "sansa": 0.1984,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "991E-WLMS3X",
   "selectii": "17:00 Udinese – AS Roma: Roma câștigă (1.56) · 19:30 Tottenham – Crystal Palace: Tottenham câștigă (1.63) · 22:00 Ajax – AZ: Ajax câștigă (1.67)",
   "rezultat": "",
   "motive": [
@@ -1717,7 +1717,7 @@
   "cota": 2.09,
   "sansa": 0.5016,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "990S-KWS1T2",
   "selectii": "19:30 Bayern – Dortmund: Bet Builder 1 + Peste 2.5 (1.55) · 22:30 Porto – Estoril: Bet Builder 1 + Peste 1.5 (1.35)",
   "rezultat": "",
   "motive": [
@@ -1734,10 +1734,10 @@
   "id": "2026-10-31-weekend",
   "data": "2026-10-31",
   "tip": "Weekend",
-  "cota": 40.83,
+  "cota": 48.37,
   "sansa": 0.0245,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "9915-KKI47V",
   "selectii": "31.10 14:30 Chelsea – Manchester United: Chelsea câștigă (1.85) · 31.10 17:00 Manchester City – Brighton: Manchester City câștigă (1.60) · 31.10 17:00 Bournemouth – Leeds: Peste 2.5 goluri (1.90) · 31.10 19:30 Tottenham – Crystal Palace: Tottenham câștigă (1.65) · 31.10 19:30 Bayern – Dortmund: Bet Builder: 1 + peste 2.5 (1.55) · 31.10 22:00 Aston Villa – Fulham: Peste 2.5 goluri (1.67) · 01.11 18:30 Liverpool – Arsenal: Ambele marchează (GG) (1.70)",
   "rezultat": "",
   "motive": [
@@ -1749,6 +1749,15 @@
    "Villa 3.7 goluri/meci (4.0 acasă), Fulham 2.2; peste 2.5 cotat 60%, dar direct doar 15/31; Sessegnon (Fulham) suspendat (cotă ~-150).",
    "GG la 60% din meciurile Liverpool și 68% (32/47) din direct, cotat 59%; Arsenal primește doar 0.9/meci și Saka lipsește, deci șansa e sub piață (cotă ~-143)."
   ],
-  "sport": "fotbal"
+  "sport": "fotbal",
+  "ids": [
+   14335450,
+   14335455,
+   14335448,
+   14335457,
+   14335391,
+   14335447,
+   14335454
+  ]
  }
 ]
