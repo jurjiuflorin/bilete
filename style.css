@@ -623,3 +623,13 @@ body{background:radial-gradient(1000px 460px at 10% -160px,rgba(232,20,27,.22),t
   .search{order:-1;margin:0;flex:none;width:100%;min-width:0;border-radius:6px}
 }
 .hero-state .cw,.hero-state .cl,.hero-state .co{color:#fff!important}.hero-state .cl{opacity:.75}
+/* v58: erou închis la culoare, roșul doar ca accent */
+.hero{background:linear-gradient(135deg,#1d0c0d 0%,#141416 60%)!important;color:#fff;border:1px solid rgba(232,20,27,.35);box-shadow:inset 4px 0 0 var(--flood),0 24px 50px -30px rgba(232,20,27,.45)}
+.hero::after{border-color:rgba(232,20,27,.12)!important}
+.hero-k,.hero-nums span,.hero-state .ct{color:var(--chalk-dim)!important;opacity:1}
+.hero-nums b{color:#fff}
+.hero-legs .hl{background:rgba(255,255,255,.06);color:#fff}
+.hero-legs .hl.lv{background:rgba(232,20,27,.18);border:1px solid rgba(232,20,27,.5)}
+.hero-state .cw{color:var(--won)!important}.hero-state .cl{color:var(--lost)!important;opacity:1}
+.hero .why1{color:#d6d6db}
+.hero-code{background:#000;border:1px solid rgba(232,20,27,.4)}
