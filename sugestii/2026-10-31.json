@@ -1,0 +1,215 @@
+{
+ "data": "2026-10-31",
+ "salvat": "2026-10-31T12:57:20.234Z",
+ "n": 51,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14335550,
+    "meci": "Cambuur – Go Ahead Eagles",
+    "when": "2026-10-31T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.45,
+    "p": 0.722,
+    "why": "Cambuur dă 1,9 și primește 2,2 goluri pe meci; Go Ahead Eagles dă 2,3 și primește 2,3."
+   },
+   {
+    "id": 14335397,
+    "meci": "Werder Bremen – Hoffenheim",
+    "when": "2026-10-31T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.41,
+    "p": 0.717,
+    "why": "Werder Bremen dă 2,1 și primește 2 goluri pe meci; Hoffenheim dă 2 și primește 2."
+   },
+   {
+    "id": 14351077,
+    "meci": "Rayo Vallecano – Celta Vigo",
+    "when": "2026-10-31T15:15:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.37,
+    "p": 0.715,
+    "why": "Rayo Vallecano dă 1,3 și primește 2,2 goluri pe meci; Celta Vigo dă 1 și primește 0,7."
+   },
+   {
+    "id": 14858394,
+    "meci": "Luzern – Sion",
+    "when": "2026-10-31T19:30:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.36,
+    "p": 0.712,
+    "why": "Luzern dă 1,6 și primește 2,2 goluri pe meci; Sion dă 2,2 și primește 1,5."
+   },
+   {
+    "id": 14858381,
+    "meci": "Grasshopper – Vaduz",
+    "when": "2026-10-31T17:00:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.44,
+    "p": 0.701,
+    "why": "Grasshopper dă 1,2 și primește 2,4 goluri pe meci; Vaduz dă 2 și primește 2,1."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14335550,
+    "meci": "Cambuur – Go Ahead Eagles",
+    "when": "2026-10-31T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.39,
+    "p": 0.726,
+    "why": "Cambuur marchează 1,9 și primește 2,2 pe meci; Go Ahead Eagles marchează 2,3 și primește 2,3."
+   },
+   {
+    "id": 14335397,
+    "meci": "Werder Bremen – Hoffenheim",
+    "when": "2026-10-31T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.37,
+    "p": 0.719,
+    "why": "Werder Bremen marchează 2,1 și primește 2 pe meci; Hoffenheim marchează 2 și primește 2."
+   },
+   {
+    "id": 14858381,
+    "meci": "Grasshopper – Vaduz",
+    "when": "2026-10-31T17:00:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.39,
+    "p": 0.704,
+    "why": "Grasshopper marchează 1,2 și primește 2,4 pe meci; Vaduz marchează 2 și primește 2,1."
+   },
+   {
+    "id": 14335392,
+    "meci": "Bayer Leverkusen – Stuttgart",
+    "when": "2026-10-31T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.36,
+    "p": 0.703,
+    "why": "Bayer Leverkusen marchează 2,3 și primește 1,7 pe meci; Stuttgart marchează 1,4 și primește 1,9."
+   },
+   {
+    "id": 14335549,
+    "meci": "Ajax Amsterdam – AZ Alkmaar",
+    "when": "2026-10-31T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.41,
+    "p": 0.687,
+    "why": "Ajax Amsterdam marchează 2,9 și primește 1,3 pe meci; AZ Alkmaar marchează 2 și primește 1,2."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14335391,
+    "meci": "Bayern Munchen – Borussia Dortmund",
+    "when": "2026-10-31T17:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.48,
+    "p": 0.801,
+    "why": "Media cornerelor: Bayern Munchen 9,1, Borussia Dortmund 6, adică 15,1 pe meci."
+   },
+   {
+    "id": 14335392,
+    "meci": "Bayer Leverkusen – Stuttgart",
+    "when": "2026-10-31T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.39,
+    "p": 0.796,
+    "why": "Media cornerelor: Bayer Leverkusen 6,7, Stuttgart 6,6, adică 13,3 pe meci."
+   },
+   {
+    "id": 15074565,
+    "meci": "LASK Linz – WSG Tirol",
+    "when": "2026-10-31T18:30:00.000Z",
+    "liga": "Bundesliga (Austria)",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.41,
+    "p": 0.795,
+    "why": "Media cornerelor: LASK Linz 7,8, WSG Tirol 5,7, adică 13,5 pe meci."
+   },
+   {
+    "id": 14335549,
+    "meci": "Ajax Amsterdam – AZ Alkmaar",
+    "when": "2026-10-31T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.46,
+    "p": 0.795,
+    "why": "Media cornerelor: Ajax Amsterdam 6,7, AZ Alkmaar 7,5, adică 14,2 pe meci."
+   },
+   {
+    "id": 14335464,
+    "meci": "West Ham – West Bromwich Albion",
+    "when": "2026-10-31T15:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.35,
+    "p": 0.79,
+    "why": "Media cornerelor: West Ham 6,8, West Bromwich Albion 5,8, adică 12,6 pe meci."
+   }
+  ],
+  "cartonase": [
+   {
+    "id": 14335464,
+    "meci": "West Ham – West Bromwich Albion",
+    "when": "2026-10-31T15:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.35,
+    "p": 0.737,
+    "why": "Cartonașe pe meci: West Ham 2,1, West Bromwich Albion 2."
+   },
+   {
+    "id": 14335414,
+    "meci": "Bologna – Monza",
+    "when": "2026-10-31T14:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.35,
+    "p": 0.698,
+    "why": "Cartonașe pe meci: Bologna 1,9, Monza 1,7."
+   },
+   {
+    "id": 14350999,
+    "meci": "Moreirense – Estrela Amadora",
+    "when": "2026-10-31T15:30:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.35,
+    "p": 0.678,
+    "why": "Cartonașe pe meci: Moreirense 2,4, Estrela Amadora 2,1."
+   },
+   {
+    "id": 14335449,
+    "meci": "Brentford – Nottingham Forest",
+    "when": "2026-10-31T15:00:00.000Z",
+    "liga": "Premier League",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.56,
+    "p": 0.67,
+    "why": "Cartonașe pe meci: Brentford 2,9, Nottingham Forest 2,1."
+   },
+   {
+    "id": 14335460,
+    "meci": "Middlesbrough – Charlton Athletic",
+    "when": "2026-10-31T15:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.35,
+    "p": 0.659,
+    "why": "Cartonașe pe meci: Middlesbrough 1, Charlton Athletic 2,2."
+   }
+  ]
+ }
+}
