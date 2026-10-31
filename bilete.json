@@ -1759,5 +1759,27 @@
    14335447,
    14335454
   ]
+ },
+ {
+  "id": "2026-10-31-challenge",
+  "data": "2026-10-31",
+  "tip": "Challenge 1.40",
+  "ciclu": 1,
+  "pas": 1,
+  "cota": 1.36,
+  "sansa": 0.69,
+  "status": "în așteptare",
+  "cod": "9909-KMLVSH",
+  "rezultat": "",
+  "selectii": "17:30 Feyenoord – Fortuna Sittard: 1 (1.16) · 22:30 Porto – Estoril: 1 (1.17)",
+  "motive": [
+   "Varianta cu 2 meciuri (~69%) a ieșit puțin peste cel mai bun pronostic simplu, Barcelona peste 2.5 goluri @1.39 (~67%). Feyenoord dă 3.2 goluri pe meci (xG 2.7), iar Fortuna Sittard are xG doar 0.9; estimez ~83% pentru victoria Feyenoord.",
+   "Porto marchează 2.3 pe meci, a păstrat poarta intactă în 5 din 9 meciuri, iar Estoril dă doar 0.6 goluri pe meci; estimez ~83% pentru victoria Porto acasă."
+  ],
+  "ids": [
+   14335466,
+   14351000
+  ],
+  "sport": "fotbal"
  }
 ]
