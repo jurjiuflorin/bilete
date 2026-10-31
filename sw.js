@@ -1,6 +1,6 @@
 // Offline cache: shows the last loaded tickets when there is no internet.
-const CACHE = 'bilete-v51';
-const CORE = ['./', 'index.html', 'style.css?v=50', 'app.js?v=51', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
+const CACHE = 'bilete-v52';
+const CORE = ['./', 'index.html', 'style.css?v=50', 'app.js?v=52', 'manifest.webmanifest', 'icon-192.png', 'icon-512.png'];
 self.addEventListener('install', e => { e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', e => { e.waitUntil(caches.keys().then(ks => Promise.all(ks.filter(k => k !== CACHE).map(k => caches.delete(k)))).then(() => self.clients.claim())); });
 self.addEventListener('fetch', e => {

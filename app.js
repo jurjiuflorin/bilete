@@ -127,7 +127,7 @@ function toast(t) { const e = $('toast'); e.textContent = t; e.classList.add('on
 
 /* ---------- views ---------- */
 // categoriile din filtre: puține grupe în loc de un buton pentru fiecare tip de bilet
-const CATS = ['Pariul zilei', 'Cotă 2', 'Zilnice', 'Weekend', 'Săptămânale', 'SuperLiga', 'Biletul meu'];
+const CATS = ['Pariul zilei', 'Cotă 2', 'Cotă 5', 'Cotă 10', 'Zilnice', 'Weekend', 'Săptămânale', 'SuperLiga', 'Biletul meu'];
 function catOf(t) {
   const s = nrm(t || '');
   if (s.startsWith('pariul zilei')) return 'Pariul zilei';
@@ -136,6 +136,8 @@ function catOf(t) {
   if (s.startsWith('supercoins')) return 'SuperCoins';
   if (s.includes('superliga')) return 'SuperLiga';
   if (/^cota 2(\b|$)/.test(s)) return 'Cotă 2';
+  if (/^cota 5(\b|$)/.test(s)) return 'Cotă 5';
+  if (/^cota 10(\b|$)/.test(s)) return 'Cotă 10';
   if (s.includes('weekend')) return 'Weekend';
   if (/100\+|mega|saptamanal/.test(s)) return 'Săptămânale';
   return 'Zilnice';
