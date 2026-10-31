@@ -152,7 +152,7 @@ function viewTickets(pending) {
   if (!R.length) { list.append(el('div', 'empty', pending ? 'Niciun bilet de jucat acum. Biletele noi apar dimineața.' : 'Încă nu s-a încheiat niciun bilet.')); return; }
   if (pending && !tip && !q && !liveOnly) { const h = hero(); if (h) list.append(h); }
   if (!pending) list.append(histStats(R));
-  if (!pending && OWNER && !tip && !q) list.append(visitsBox());
+  if (!pending && OWNER) list.append(visitsBox());
   const groups = new Map();
   R.sort((a, b) => pending ? firstWhen(a) - firstWhen(b) : (b.data + b.id).localeCompare(a.data + a.id));
   for (const r of R) { const k = pending ? (firstWhen(r) < now ? 'live' : dayKey(firstWhen(r))) : r.data; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(r); }
