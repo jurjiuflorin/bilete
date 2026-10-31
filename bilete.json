@@ -1597,5 +1597,137 @@
    14335467,
    14350996
   ]
+ },
+ {
+  "id": "2026-10-31-pariu",
+  "data": "2026-10-31",
+  "tip": "Pariul zilei",
+  "cota": 1.55,
+  "sansa": 0.65,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:30 Bayern – Dortmund: Bet Builder 1 + Peste 2.5 (1.55)",
+  "rezultat": "",
+  "motive": [
+   "Cea mai bună opțiune a zilei la cotă ≥1.40: Bayern acasă (3.6 goluri/meci, xG 3.4) cu Dortmund care primește doar 0.6/meci în deplasare; Bayern câștigă ~72% și marcăm 3+ goluri ~90% condiționat, deci ~65% față de 64.5% implicit în cota 1.55 (preț real Bet Builder). Avantaj mic (~0-1%): nu am găsit o piață cu edge clar azi; absențe neverificate în această rulare."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335391
+  ]
+ },
+ {
+  "id": "2026-10-31-cota2",
+  "data": "2026-10-31",
+  "tip": "Cotă 2",
+  "cota": 1.88,
+  "sansa": 0.4556,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:45 PSV – Willem II: Peste 3.5 (1.36) · 22:00 Ajax – AZ: Peste 2.5 (1.38)",
+  "rezultat": "",
+  "motive": [
+   "PSV 2.8 goluri/meci (xG 2.5), Willem II primește 3.2/meci; piața dă ~70% pentru 4+ goluri, statisticile brute ~60%; estimat ~67%. Cotă 2 = bilet sigur.",
+   "Ajax 2.9 goluri/meci, AZ 2.0 (xG 2.5 și 2.2), ambele primesc ~1.2-1.3; piața dă ~69% pentru 3+ goluri; estimat ~68%. Cotă 2 = bilet sigur."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335488,
+   14335549
+  ]
+ },
+ {
+  "id": "2026-10-31-cota5",
+  "data": "2026-10-31",
+  "tip": "Cotă 5",
+  "cota": 4.67,
+  "sansa": 0.1836,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "16:30 Werder Bremen – Hoffenheim: Peste 2.5 (1.41) · 16:30 Schalke – RB Leipzig: Leipzig peste 1.5 goluri (1.55) · 19:30 Bayern – Dortmund: Bet Builder 1 + Peste 2.5 (1.55) · 22:00 Ajax – AZ: Peste 2.5 (1.38)",
+  "rezultat": "",
+  "motive": [
+   "Piața dă ~67% pentru 3+ goluri (cota 1.41, probabilitate implicită 71% cu marjă); estimare proprie ~67%, ambele echipe au cote aproape identice (2.55/2.47) deci meci deschis; formă și absențe neverificate în această rulare.",
+   "Leipzig marchează 2.9/meci (xG 2.4, 20 goluri în sezon), Schalke primește 1.0/meci dar înscrie doar 0.6; estimat ~62% pentru 2+ goluri Leipzig față de 65% implicit (cota 1.55).",
+   "Bayern acasă 3.6 goluri/meci (xG 3.4), Dortmund 0.6 primite/meci în deplasare; Bayern câștigă ~72% și cu 3+ goluri în meci ~90% din cazuri, deci ~65% față de 64.5% implicit (preț real Superbet 1.55).",
+   "Ajax 2.9 goluri/meci, AZ 2.0 (xG 2.5 și 2.2), ambele primesc ~1.2-1.3; piața dă ~69% pentru 3+ goluri; estimat ~68%. Repetat din Cotă 2 pentru că are cea mai mare șansă (~68%) dintre variantele din intervalul de cote."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335397,
+   14335398,
+   14335391,
+   14335549
+  ]
+ },
+ {
+  "id": "2026-10-31-cota10",
+  "data": "2026-10-31",
+  "tip": "Cotă 10",
+  "cota": 10.49,
+  "sansa": 0.0701,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "16:30 Werder Bremen – Hoffenheim: Peste 2.5 (1.41) · 16:30 Schalke – RB Leipzig: Leipzig peste 1.5 goluri (1.55) · 19:30 Tottenham – Crystal Palace: Peste 2.5 (1.65) · 19:30 Bayern – Dortmund: Bet Builder 1 + Peste 2.5 (1.55) · 19:45 PSV – Willem II: Peste 3.5 (1.36) · 22:00 Ajax – AZ: Peste 2.5 (1.38)",
+  "rezultat": "",
+  "motive": [
+   "Piața dă ~67% pentru 3+ goluri (cota 1.41, probabilitate implicită 71% cu marjă); estimare proprie ~67%, ambele echipe au cote aproape identice (2.55/2.47) deci meci deschis; formă și absențe neverificate în această rulare.",
+   "Leipzig marchează 2.9/meci (xG 2.4, 20 goluri în sezon), Schalke primește 1.0/meci dar înscrie doar 0.6; estimat ~62% pentru 2+ goluri Leipzig față de 65% implicit (cota 1.55).",
+   "Tottenham favorit (cota 1.63), piața dă ~57% pentru 3+ goluri (cota 1.65); fără statistici suplimentare, estimat ~57%.",
+   "Bayern acasă 3.6 goluri/meci (xG 3.4), Dortmund 0.6 primite/meci în deplasare; Bayern câștigă ~72% și cu 3+ goluri în meci ~90% din cazuri, deci ~65% față de 64.5% implicit (preț real Superbet 1.55).",
+   "PSV 2.8 goluri/meci (xG 2.5), Willem II primește 3.2/meci; piața dă ~70% pentru 4+ goluri, statisticile brute ~60%; estimat ~67%. Repetat din Cotă 2 (~67%, cea mai mare șansă disponibilă).",
+   "Ajax 2.9 goluri/meci, AZ 2.0 (xG 2.5 și 2.2), ambele primesc ~1.2-1.3; piața dă ~69% pentru 3+ goluri; estimat ~68%. Repetat din Cotă 2/5 (~68%, cea mai mare șansă disponibilă)."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335397,
+   14335398,
+   14335457,
+   14335391,
+   14335488,
+   14335549
+  ]
+ },
+ {
+  "id": "2026-10-31-sc-acc",
+  "data": "2026-10-31",
+  "tip": "SuperCoins – Acumulator",
+  "cota": 4.25,
+  "sansa": 0.1984,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "17:00 Udinese – AS Roma: Roma câștigă (1.56) · 19:30 Tottenham – Crystal Palace: Tottenham câștigă (1.63) · 22:00 Ajax – AZ: Ajax câștigă (1.67)",
+  "rezultat": "",
+  "motive": [
+   "Roma mare favorită (cota 1.56, ~60% fair), Udinese la 5.40.",
+   "Tottenham acasă, cota 1.63, ~58% fair.",
+   "Ajax acasă, 2.9 goluri/meci (xG 2.5) față de AZ 2.0, cota 1.67 (~57% fair). Variante comparate: 3 selecții ~19.8% (aleasă, cotă 4.25), 5 selecții ~16%, 6+ selecții foarte sigure ~12%; fiecare selecție în plus adaugă marja caselei."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335422,
+   14335457,
+   14335549
+  ]
+ },
+ {
+  "id": "2026-10-31-sc-bb",
+  "data": "2026-10-31",
+  "tip": "SuperCoins – Bet Builder",
+  "cota": 2.09,
+  "sansa": 0.5016,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:30 Bayern – Dortmund: Bet Builder 1 + Peste 2.5 (1.55) · 22:30 Porto – Estoril: Bet Builder 1 + Peste 1.5 (1.35)",
+  "rezultat": "",
+  "motive": [
+   "Bayern câștigă (~72%) și 3+ goluri în meci (~90% dacă câștigă) ≈66%; preț real Superbet 1.55.",
+   "Porto câștigă (~80%, 2.3 goluri/meci, 0.4 primite) și 2+ goluri în meci (~95% dacă câștigă) ≈76%; preț real Superbet 1.35. Variante: 1 meci (PSV 1+Peste 3.5 doar 1.40, sub 2.00), 2 meciuri ~50% (aleasă, cotă 2.09), 3 meciuri ~45%."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335391,
+   14351000
+  ]
  }
 ]
