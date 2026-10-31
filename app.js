@@ -836,8 +836,9 @@ async function getMatch(id, sport) {
   } catch (e) { return c || null; }
 }
 // result of one selection: 'won' | 'lost' | 'ok' | 'no' | null
-function judge(sel, meci, m) {
+function judge(sel, meci, m, inBB) {
   if (!sel || !m || m.h == null || m.state === 0) return null;
+  if (!inBB && saWon.has(saKey(meci, sel))) return 'won';   // SuperAvantaj: 2 goluri avans = câștigat
   const fin = m.state === 2, H = m.h, A = m.a, T = H + A, s = nrm(sel).trim();
   const done = (win, certainWin, certainLose) => fin ? (win ? 'won' : 'lost') : (certainWin ? 'won' : certainLose ? 'lost' : (win ? 'ok' : 'no'));
   let x;
@@ -853,7 +854,7 @@ function judge(sel, meci, m) {
     if ((x = s.match(/^(.+?) sau egal/))) { const d = side(x[1]); if (d) return done(d === 'h' ? H >= A : A >= H); }
     if ((x = s.match(/^(.+?) fara gol primit$/))) { const d = side(x[1]); if (d) { const c = d === 'h' ? A : H; return done(c === 0, false, c > 0); } }
     if ((x = s.match(/^(.+?) castiga cu (\d)\+ goluri/))) { const d = side(x[1]); if (d) return done((d === 'h' ? H - A : A - H) >= +x[2]); } }
-  if (s.startsWith('bet builder')) { const parts = sel.replace(/^bet builder\s*/i, '').split(/\s*\+\s*/).map(p => judge(p, meci, m)); if (parts.includes(null)) return null; if (parts.includes('lost')) return 'lost'; if (parts.every(p => p === 'won')) return 'won'; return parts.includes('no') ? 'no' : 'ok'; }
+  if (s.startsWith('bet builder')) { const parts = sel.replace(/^bet builder\s*/i, '').split(/\s*\+\s*/).map(p => judge(p, meci, m, true)); if (parts.includes(null)) return null; if (parts.includes('lost')) return 'lost'; if (parts.every(p => p === 'won')) return 'won'; return parts.includes('no') ? 'no' : 'ok'; }
   return null;
 }
 function applyFin() {
@@ -911,14 +912,15 @@ async function liveTick() {
       if (!m || m.state === 0 || m.h == null) { lv.className = 'lv'; li.removeAttribute('data-res'); continue; }
       const r = judge(li._sel, li._meci, m);
       if (r) li.dataset.res = r; else li.removeAttribute('data-res');
+      if (m.state === 1) checkSA(li, m);
       if (m.state === 2 && (r === 'won' || r === 'lost')) legDone(li, m, r);
       const corn = m.corners && /corner/.test(nrm(li._sel)) ? (m.corners[0] + m.corners[1]) + ' cornere' : '';
       if (m.state === 1) {
         liveSeen.add(li.dataset.id);
         if (!counted.has(li.dataset.id)) { counted.add(li.dataset.id); liveCount++; tick.push({ id: li.dataset.id, meci: li._meci, m }); }
         li.classList.add('livenow'); lv.className = 'lv on live';
-        lv.replaceChildren(el('span', 'dot'), document.createTextNode(m.h + ' – ' + m.a + (m.min ? '  ·  ' + m.min + "'" : m.label ? '  ·  ' + m.label : '') + (corn ? '  ·  ' + corn : '')));
-      } else { lv.className = 'lv on fin'; lv.textContent = (m.ft90 ? 'Final 90′ ' : 'Final ') + m.h + ' – ' + m.a + (corn ? ', ' + corn : ''); }
+        lv.replaceChildren(el('span', 'dot'), document.createTextNode(m.h + ' – ' + m.a + (m.min ? '  ·  ' + m.min + "'" : m.label ? '  ·  ' + m.label : '') + (corn ? '  ·  ' + corn : '') + (saWon.has(saKey(li._meci, li._sel)) ? '  ·  SuperAvantaj ✓' : '')));
+      } else { lv.className = 'lv on fin'; lv.textContent = (m.ft90 ? 'Final 90′ ' : 'Final ') + m.h + ' – ' + m.a + (corn ? ', ' + corn : '') + (saWon.has(saKey(li._meci, li._sel)) ? ' · SuperAvantaj ✓' : ''); }
     }
     progs(); ticker(tick); heroLive();
     if (tab === 'p') {
@@ -1601,4 +1603,31 @@ function marketBox(S) {
     lg.replaceWith(table('Pe ligi', by(l => l.id ? (ligaCache[l.id] || 'Necunoscută') : 'Necunoscută')));
   })();
   return box;
+}
+
+/* ---------- SuperAvantaj Superbet: la 2 goluri avans, pronosticul 1/2 (Final) e câștigat ---------- */
+const saKey = (meci, sel) => nrm(meci) + '|' + nrm(sel).trim();
+const saWon = new Set(store.get('sa-won', []));
+const saElig = store.get('sa-elig', {});
+function saSide(sel, meci) {
+  const s = nrm(sel).trim(); if (s === '1') return 'h'; if (s === '2') return 'a';
+  const x = s.match(/^(.+?) (?:castiga|victorie)$/); if (!x) return null;
+  const [hn, an] = (meci || '').split(' – ').map(t => nrm(t)); const t = x[1]; const w = y => y.split(/\s+/).filter(z => z.length > 2);
+  if (hn && (hn.includes(t) || t.includes(hn) || w(t).some(y => hn.includes(y)))) return 'h';
+  if (an && (an.includes(t) || t.includes(an) || w(t).some(y => an.includes(y)))) return 'a';
+  return null;
+}
+async function checkSA(li, m) {
+  const l = li._leg; if (!l || (l.sport && l.sport !== 'fotbal')) return;
+  const k = saKey(li._meci, li._sel); if (saWon.has(k)) return;
+  const d = saSide(li._sel, li._meci); if (!d) return;
+  if ((d === 'h' ? m.h - m.a : m.a - m.h) < 2) return;
+  const id = li.dataset.id;
+  if (!(id in saElig)) {
+    try { const j = await (await fetch(OB + '/v3/ro-RO/events?events=' + id + '&includeOnly=fixture')).json(); const f = j.events && j.events[0] && j.events[0].fixture; saElig[id] = !!(f && f.super_advantage); store.set('sa-elig', saElig); } catch (e) { return; }
+  }
+  if (!saElig[id]) return;
+  saWon.add(k); store.set('sa-won', [...saWon]);
+  li.dataset.res = 'won'; progs();
+  notify('✅ SuperAvantaj: ' + li._sel, li._meci + ' ' + m.h + ' – ' + m.a + ' · 2 goluri avans, pronosticul e câștigat' + ticketsOf(id), 'sa-' + k);
 }
