@@ -1936,19 +1936,19 @@
   "id": "2026-11-01-cota2",
   "data": "2026-11-01",
   "tip": "Cotă 2",
-  "cota": 1.92,
+  "cota": 1.93,
   "sansa": 0.624,
   "status": "în așteptare",
-  "cod": "9903-NHD3H7",
+  "cod": "990J-KMQML7",
   "rezultat": "",
-  "selectii": "15:00 Getafe – Sevilla: Sevilla peste 0.5 goluri (1.41) · 18:00 Panetolikos – OFI Creta: Peste 1.5 (1.36)",
+  "selectii": "15:00 Getafe – Sevilla: Sevilla peste 0.5 goluri (1.41) · 17:00 Levadiakos – Aris: Peste 1.5 (1.37)",
   "motive": [
-   "Sevilla a marcat în 4 din ultimele 5 directe și în 95% din meciurile recente; Getafe primește 1.9/meci. Estimez ~78% față de 66% în cotă.",
-   "Peste 1.5 în 90% din meciurile recente ale celor două; Panetolikos primește 2.2/meci (5 înfrângeri la rând), OFI 1.5. Estimez ~80% față de 70% în cotă."
+   "Sevilla a marcat în 4 din ultimele 5 directe și în 95% din meciurile recente; Getafe primește 1.9/meci. Cotă ~66%, formă ~90%, directe 80% → estimez ~78%.",
+   "Peste 1.5 în toate ultimele 5 meciuri directe și în 80% din meciurile recente ale celor două; Aris primește 1.6/meci. Cotă ~70%, formă ~80%, directe 100% → estimez ~80%."
   ],
   "ids": [
    14351074,
-   15439017
+   15439015
   ],
   "sport": "fotbal"
  },
@@ -2012,17 +2012,17 @@
   "id": "2026-11-01-challenge",
   "data": "2026-11-01",
   "tip": "Challenge 1.40",
-  "cota": 1.36,
+  "cota": 1.37,
   "sansa": 0.8,
   "status": "în așteptare",
-  "cod": "9917-WWO9L1",
+  "cod": "9910-WWQUUU",
   "rezultat": "",
-  "selectii": "18:00 Panetolikos – OFI Creta: Peste 1.5 (1.36)",
+  "selectii": "17:00 Levadiakos – Aris: Peste 1.5 (1.37)",
   "motive": [
-   "Peste 1.5 în 90% din meciurile recente ale celor două; Panetolikos primește 2.2/meci (5 înfrângeri la rând), OFI 1.5. Estimez ~80% față de 70% în cotă."
+   "Peste 1.5 în toate ultimele 5 meciuri directe și în 80% din meciurile recente ale celor două; Aris primește 1.6/meci. Cotă ~70%, formă ~80%, directe 100% → estimez ~80%."
   ],
   "ids": [
-   15439017
+   15439015
   ],
   "sport": "fotbal",
   "ciclu": 2,
@@ -2032,23 +2032,23 @@
   "id": "2026-11-01-sc-acc",
   "data": "2026-11-01",
   "tip": "SuperCoins – Acumulator",
-  "cota": 4.14,
-  "sansa": 0.3699,
+  "cota": 4.17,
+  "sansa": 0.374,
   "status": "în așteptare",
-  "cod": "991P-WWW5YG",
+  "cod": "991H-WMEZCS",
   "rezultat": "",
-  "selectii": "15:00 Getafe – Sevilla: Sevilla peste 0.5 goluri (1.41) · 17:30 Lugano – Basel: Peste 2.5 (1.43) · 18:00 Kasımpaşa – Beșiktaș: Kasımpaşa peste 0.5 goluri (1.51) · 18:00 Panetolikos – OFI Creta: Peste 1.5 (1.36)",
+  "selectii": "15:00 Getafe – Sevilla: Sevilla peste 0.5 goluri (1.41) · 17:30 Lugano – Basel: Peste 2.5 (1.43) · 18:00 Kasımpaşa – Beșiktaș: Kasımpaşa peste 0.5 goluri (1.51) · 17:00 Levadiakos – Aris: Peste 1.5 (1.37)",
   "motive": [
-   "Sevilla a marcat în 4 din ultimele 5 directe și în 95% din meciurile recente; Getafe primește 1.9/meci. Estimez ~78% față de 66% în cotă.",
-   "Lugano are 5 victorii la rând și 3.3 goluri/meci; Basel primește 2/meci; peste 2.5 în 3 din ultimele 5 directe și în 95% din meciurile recente. Estimez ~78%.",
-   "Kasımpaşa a marcat în toate ultimele 5 meciuri directe cu Beșiktaș și are 4 victorii în ultimele 5 (1.7 goluri/meci); Beșiktaș primește 1.4/meci. Forma dă ~90%, cota implică 62%; estimez ~76%.",
-   "Peste 1.5 în 90% din meciurile recente ale celor două; Panetolikos primește 2.2/meci (5 înfrângeri la rând), OFI 1.5. Estimez ~80% față de 70% în cotă."
+   "Sevilla a marcat în 4 din ultimele 5 directe și în 95% din meciurile recente; Getafe primește 1.9/meci. Cotă ~66%, formă ~90%, directe 80% → estimez ~78%.",
+   "Lugano are 5 victorii la rând și 3.3 goluri/meci; Basel primește 2/meci; peste 2.5 în 95% din meciurile recente, dar doar în 3 din ultimele 5 directe → estimez ~74%.",
+   "Kasımpaşa a marcat în toate ultimele 5 meciuri directe cu Beșiktaș și are 4 victorii în ultimele 5 (1.7 goluri/meci). Cotă ~62%, formă ~90%, directe 100% → estimez ~81%.",
+   "Peste 1.5 în toate ultimele 5 meciuri directe și în 80% din meciurile recente ale celor două; Aris primește 1.6/meci. Cotă ~70%, formă ~80%, directe 100% → estimez ~80%."
   ],
   "ids": [
    14351074,
    14858463,
    14351006,
-   15439017
+   15439015
   ],
   "sport": "fotbal"
  },
