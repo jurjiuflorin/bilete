@@ -1,227 +1,344 @@
 {
- "data": "2026-10-31",
- "actualizat": "2026-10-31T06:19:09Z",
+ "data": "2026-11-01",
+ "actualizat": "2026-11-01T06:25:11Z",
  "meciuri": [
   {
-   "data": "2026-10-31",
-   "ora": "16:00",
-   "liga": "Superliga",
-   "gazde": "Corvinul",
-   "oaspeti": "FC Argeș",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile).",
-   "loc_gazde": 10,
-   "loc_oaspeti": 13
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "19:00",
-   "liga": "Superliga",
-   "gazde": "Petrolul",
-   "oaspeti": "CFR Cluj",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile).",
-   "loc_gazde": 4,
-   "loc_oaspeti": 9
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "14:30",
-   "liga": "Premier League",
-   "gazde": "Chelsea",
-   "oaspeti": "Manchester United",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "17:00",
-   "liga": "Premier League",
-   "gazde": "Bournemouth",
-   "oaspeti": "Leeds",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "17:00",
-   "liga": "Premier League",
-   "gazde": "Brentford",
-   "oaspeti": "Nottingham Forest",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "17:00",
-   "liga": "Premier League",
-   "gazde": "Manchester City",
-   "oaspeti": "Brighton",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "19:30",
-   "liga": "Premier League",
-   "gazde": "Tottenham",
-   "oaspeti": "Crystal Palace",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "22:00",
-   "liga": "Premier League",
-   "gazde": "Aston Villa",
-   "oaspeti": "Fulham",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
+   "data": "2026-11-01",
    "ora": "15:00",
-   "liga": "LaLiga",
-   "gazde": "Levante",
-   "oaspeti": "Atletico Madrid",
+   "liga": "Superliga",
+   "gazde": "Oțelul",
+   "oaspeti": "Sepsi",
    "absenti_gazde": [],
    "absenti_oaspeti": [],
    "nota": "Absențe neverificate în această rulare (surse indisponibile)."
   },
   {
-   "data": "2026-10-31",
+   "data": "2026-11-01",
+   "ora": "17:30",
+   "liga": "Superliga",
+   "gazde": "U Craiova",
+   "oaspeti": "Botoșani",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "20:30",
+   "liga": "Superliga",
+   "gazde": "Dinamo",
+   "oaspeti": "UTA",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "18:30",
+   "liga": "Premier League",
+   "gazde": "Liverpool",
+   "oaspeti": "Arsenal",
+   "absenti_gazde": [
+    "Ekitike (atacant) – accidentat (Ahile)",
+    "Frimpong (fundaș) – accidentat (mușchi)",
+    "Barcola (atacant) – accidentat (mușchi)",
+    "Bradley (fundaș) – accidentat (genunchi)",
+    "Leoni (fundaș) – accidentat (genunchi)",
+    "Szoboszlai (mijlocaș) – incert (mușchi)"
+   ],
+   "absenti_oaspeti": [
+    "Saka (extremă, titular) – accidentat (coapsă)",
+    "Saliba (fundaș central) – accidentat (spate)",
+    "Dowman – suspendat (cartonaș roșu)",
+    "Calafiori (fundaș) – incert (coaste)",
+    "Hincapié (fundaș) – incert (gleznă)",
+    "Madueke (extremă) – incert (gleznă)"
+   ],
+   "nota": ""
+  },
+  {
+   "data": "2026-11-01",
    "ora": "17:15",
    "liga": "LaLiga",
-   "gazde": "Rayo Vallecano",
-   "oaspeti": "Celta Vigo",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+   "gazde": "Racing Santander",
+   "oaspeti": "Real Madrid",
+   "absenti_gazde": [
+    "André Almeida – suspendat (cartonaș roșu)",
+    "Salinas – suspendat (cartonașe galbene)",
+    "Andrés Martín – incert (leziune musculară)",
+    "Eriksson – incert (umăr)"
+   ],
+   "absenti_oaspeti": [
+    "Vinícius (atacant) – suspendat (cartonaș roșu)",
+    "Rodrygo (atacant) – accidentat (genunchi)",
+    "Valverde (mijlocaș) – accidentat (ischiogambieri)",
+    "Mendy (fundaș) – accidentat (șold)",
+    "Asencio (fundaș) – picior rupt",
+    "Courtois (portar) – bolnav, situație neclară"
+   ],
+   "nota": ""
   },
   {
-   "data": "2026-10-31",
+   "id": 14351074,
+   "data": "2026-11-01",
+   "ora": "15:00",
+   "liga": "LaLiga",
+   "gazde": "Getafe",
+   "oaspeti": "Sevilla",
+   "absenti_gazde": [
+    "Mayoral (atacant) – suspendat (cartonașe)",
+    "Martín – suspendat (cartonaș roșu)",
+    "Mojica (fundaș) – suspendat (cartonașe)",
+    "Uche (atacant) – accidentat (genunchi)",
+    "Mangala (mijlocaș) – accidentat (mușchi)",
+    "Ünal (atacant) – incert (gleznă)"
+   ],
+   "absenti_oaspeti": [
+    "Marcão (fundaș) – accidentat (mușchi)",
+    "Guridi (mijlocaș) – accidentat (mușchi)",
+    "Ángel (atacant) – accidentat (umăr)",
+    "Muñoz – accidentat",
+    "Stassin (atacant) – incert"
+   ],
+   "nota": "Ambele echipe au jucat în Cupa Regelui în urmă cu 3 zile; rotații probabile."
+  },
+  {
+   "data": "2026-11-01",
    "ora": "19:30",
    "liga": "LaLiga",
-   "gazde": "Real Betis",
-   "oaspeti": "Malaga",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+   "gazde": "Elche",
+   "oaspeti": "Valencia",
+   "absenti_gazde": [
+    "Aguado (mijlocaș) – accidentat (gleznă)",
+    "Niño (atacant) – incert"
+   ],
+   "absenti_oaspeti": [
+    "Elliott (mijlocaș) – suspendat (cartonaș roșu)",
+    "Sergi Canós (mijlocaș) – accidentat (genunchi)",
+    "Diego López (atacant) – accidentat (genunchi)",
+    "Sadiq (atacant) – accidentat (mușchi)",
+    "Foulquier (fundaș) – accidentat (genunchi)",
+    "Gayà (fundaș, căpitan) – incert (nas rupt)"
+   ],
+   "nota": ""
   },
   {
-   "data": "2026-10-31",
+   "data": "2026-11-01",
    "ora": "22:00",
    "liga": "LaLiga",
-   "gazde": "Barcelona",
-   "oaspeti": "Alaves",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+   "gazde": "Athletic Bilbao",
+   "oaspeti": "Real Sociedad",
+   "absenti_gazde": [
+    "Sancet (mijlocaș) – accidentat (mușchi)",
+    "Guruzeta (atacant) – accidentat (genunchi)",
+    "de Galarreta (mijlocaș) – accidentat (ischiogambieri)",
+    "Eguíluz – accidentat (genunchi)",
+    "Djaló – bolnav"
+   ],
+   "absenti_oaspeti": [
+    "Odriozola (fundaș) – accidentat (genunchi)",
+    "Aramburu (fundaș) – accidentat",
+    "Beitia (portar) – accidentat (gleznă)",
+    "Zakharyan (mijlocaș) – incert (gleznă)",
+    "Herrera (mijlocaș) – incert (gambă)"
+   ],
+   "nota": ""
   },
   {
-   "data": "2026-10-31",
-   "ora": "16:30",
-   "liga": "Bundesliga",
-   "gazde": "Augsburg",
-   "oaspeti": "Freiburg",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "16:30",
-   "liga": "Bundesliga",
-   "gazde": "Bayer Leverkusen",
-   "oaspeti": "Stuttgart",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "16:30",
-   "liga": "Bundesliga",
-   "gazde": "Monchengladbach",
-   "oaspeti": "Paderborn",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "16:30",
-   "liga": "Bundesliga",
-   "gazde": "Schalke 04",
-   "oaspeti": "RB Leipzig",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "16:30",
-   "liga": "Bundesliga",
-   "gazde": "Werder Bremen",
-   "oaspeti": "Hoffenheim",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
-   "ora": "19:30",
-   "liga": "Bundesliga",
-   "gazde": "Bayern Munchen",
-   "oaspeti": "Borussia Dortmund",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
+   "data": "2026-11-01",
    "ora": "16:00",
    "liga": "Serie A",
-   "gazde": "Bologna",
-   "oaspeti": "Monza",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+   "gazde": "Lazio",
+   "oaspeti": "Cagliari",
+   "absenti_gazde": [
+    "Guðmundsson (atacant) – accidentat (umăr)",
+    "Rovella (mijlocaș) – accidentat (gambă)",
+    "Marušić (fundaș) – accidentat (mușchi)",
+    "Patric (fundaș) – accidentat (gleznă)",
+    "Furlanetto – accidentat (genunchi)",
+    "Pinamonti (atacant) – incert (boală)"
+   ],
+   "absenti_oaspeti": [
+    "Winks (mijlocaș) – accidentat (spate)",
+    "Idrissi – accidentat (genunchi)",
+    "Felici – accidentat (genunchi)",
+    "Trepy – accidentat"
+   ],
+   "nota": ""
   },
   {
-   "data": "2026-10-31",
-   "ora": "19:00",
-   "liga": "Serie A",
-   "gazde": "Udinese",
-   "oaspeti": "AS Roma",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
-  },
-  {
-   "data": "2026-10-31",
+   "data": "2026-11-01",
    "ora": "21:45",
    "liga": "Serie A",
-   "gazde": "AC Milan",
-   "oaspeti": "Inter",
+   "gazde": "Juventus",
+   "oaspeti": "Napoli",
+   "absenti_gazde": [
+    "Thuram (atacant) – accidentat (genunchi)",
+    "Yıldız (atacant) – accidentat (picior)",
+    "Locatelli (mijlocaș) – accidentat (genunchi)",
+    "Conceição (extremă) – accidentat (umăr)",
+    "González (extremă) – accidentat (gambă)",
+    "Çelik (fundaș) – accidentat (mușchi)"
+   ],
+   "absenti_oaspeti": [
+    "Lobotka (mijlocaș) – accidentat",
+    "Buongiorno (fundaș central) – accidentat (genunchi)",
+    "Neres (extremă) – accidentat (coapsă)",
+    "Spinazzola (fundaș) – accidentat (coapsă)",
+    "Politano (extremă) – incert",
+    "Rrahmani (fundaș central) – incert (boală)"
+   ],
+   "nota": ""
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "13:30",
+   "liga": "Serie A",
+   "gazde": "Como",
+   "oaspeti": "Venezia",
    "absenti_gazde": [],
    "absenti_oaspeti": [],
    "nota": "Absențe neverificate în această rulare (surse indisponibile)."
   },
   {
-   "data": "2026-10-31",
-   "ora": "21:00",
-   "liga": "Brasileirão",
-   "gazde": "Coritiba",
-   "oaspeti": "Vitoria",
+   "data": "2026-11-01",
+   "ora": "16:00",
+   "liga": "Serie A",
+   "gazde": "Frosinone",
+   "oaspeti": "Torino",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "19:00",
+   "liga": "Serie A",
+   "gazde": "Lecce",
+   "oaspeti": "Genoa",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "15:00",
+   "liga": "Süper Lig",
+   "gazde": "Trabzonspor",
+   "oaspeti": "Gaziantep",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "id": 14351006,
+   "data": "2026-11-01",
+   "ora": "18:00",
+   "liga": "Süper Lig",
+   "gazde": "Kasımpaşa",
+   "oaspeti": "Beșiktaș",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "id": 14350995,
+   "data": "2026-11-01",
+   "ora": "22:30",
+   "liga": "Liga Portugal",
+   "gazde": "Braga",
+   "oaspeti": "Famalicão",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "20:00",
+   "liga": "Liga Portugal",
+   "gazde": "Marítimo",
+   "oaspeti": "Santa Clara",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "id": 15439015,
+   "data": "2026-11-01",
+   "ora": "17:00",
+   "liga": "Grecia Super League",
+   "gazde": "Levadiakos",
+   "oaspeti": "Aris",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "18:00",
+   "liga": "Grecia Super League",
+   "gazde": "Panetolikos",
+   "oaspeti": "OFI Creta",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "19:30",
+   "liga": "Grecia Super League",
+   "gazde": "Panathinaikos",
+   "oaspeti": "AEK Atena",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "15:30",
+   "liga": "Eredivisie",
+   "gazde": "Telstar",
+   "oaspeti": "Utrecht",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "17:45",
+   "liga": "Eredivisie",
+   "gazde": "Groningen",
+   "oaspeti": "Sparta Rotterdam",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "17:30",
+   "liga": "Super League Elveția",
+   "gazde": "Lugano",
+   "oaspeti": "Basel",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "18:00",
+   "liga": "Eliteserien",
+   "gazde": "KFUM Oslo",
+   "oaspeti": "HamKam",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate în această rulare (surse indisponibile)."
+  },
+  {
+   "data": "2026-11-01",
+   "ora": "19:00",
+   "liga": "Superliga Danemarca",
+   "gazde": "Brøndby",
+   "oaspeti": "AGF Aarhus",
    "absenti_gazde": [],
    "absenti_oaspeti": [],
    "nota": "Absențe neverificate în această rulare (surse indisponibile)."
