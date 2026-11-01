@@ -12,7 +12,8 @@ let rows = [], tab = 'p', tip = '', q = '', now = new Date(), liveOnly = false;
 // tickets already lost live (a match is certainly lost) but not yet settled by the nightly task
 const lostNow = new Map(Object.entries((() => { try { return JSON.parse(localStorage.getItem('lostNow') || '{}'); } catch (e) { return {}; } })()));
 const PEND = 'în așteptare';
-const eff = r => r.status === PEND && lostNow.has(r.id) ? 'pierdut' : r.status;
+const wonNow = new Set((() => { try { return JSON.parse(localStorage.getItem('wonNow') || '[]'); } catch (e) { return []; } })());
+const eff = r => r.status === PEND && lostNow.has(r.id) ? 'pierdut' : r.status === PEND && wonNow.has(r.id) ? 'câștigat' : r.status;
 
 /* ---------- helpers ---------- */
 const nrm = x => (x || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
@@ -78,7 +79,7 @@ function legItem(l, opts = {}) {
 }
 
 function slip(r, i) {
-  const L = parseLegs(r), settled = eff(r) !== PEND, early = r.status === PEND && settled;
+  const L = parseLegs(r), settled = eff(r) !== PEND, early = r.status === PEND && settled && lostNow.has(r.id);
   const s = el('article', 'slip' + (settled ? ' settled' : '')); s.dataset.row = r.id; s._row = r;
   const top = el('div', 'slip-top');
   const first = L.find(l => l.when), last = [...L].reverse().find(l => l.when);
@@ -866,6 +867,12 @@ function markLost(r, matches) {
   try { localStorage.setItem('lostNow', JSON.stringify(Object.fromEntries(lostNow))); } catch (e) {}
   return true;
 }
+function markWon(r) {
+  if (!r || r.status !== PEND || wonNow.has(r.id)) return false;
+  wonNow.add(r.id);
+  try { localStorage.setItem('wonNow', JSON.stringify([...wonNow])); } catch (e) {}
+  return true;
+}
 let moveTimer = null;
 function progs() {
   let moved = false;
@@ -876,7 +883,7 @@ function progs() {
     const todo = n - won - lost.length - on;
     const segs = s.querySelectorAll('.meter i');
     L.forEach((l, k) => { if (segs[k]) segs[k].className = l.dataset.res === 'won' ? 'w' : l.dataset.res === 'lost' ? 'l' : l.classList.contains('livenow') ? (l.dataset.res === 'no' ? 'ln' : 'lv') : ''; });
-    if (n && won === n) celebrate(s);
+    if (n && won === n) { celebrate(s); if (markWon(s._row)) moved = true; }
     if (!won && !lost.length && !on) { p.className = 'prog'; continue; }
     p.className = 'prog on'; p.replaceChildren();
     const cnt = el('div', 'cnt');
@@ -1406,6 +1413,8 @@ fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(d => {
     rows = (Array.isArray(d) ? d : (d.rows || [])).filter(r => r.tip !== 'Test');
     for (const id of [...lostNow.keys()]) { const r = rows.find(x => x.id === id); if (!r || r.status !== PEND) lostNow.delete(id); }
+    for (const id of [...wonNow]) { const r = rows.find(x => x.id === id); if (!r || r.status !== PEND) wonNow.delete(id); }
+    try { localStorage.setItem('wonNow', JSON.stringify([...wonNow])); } catch (e) {}
     try { localStorage.setItem('lostNow', JSON.stringify(Object.fromEntries(lostNow))); } catch (e) {}
     chips(); header(); render(); $('next').after(soundBtn()); $('next').nextSibling.after(notifBtn());
     setInterval(() => { now = new Date(); header(); liveTick(); if (tab === 'm' && Date.now() - day.t > 5 * 6e4) loadDay().then(() => { if (tab === 'm') render(); }); }, 60000);
