@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-01",
+ "salvat": "2026-11-01T13:42:00.152Z",
+ "n": 37,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14351014,
+    "meci": "Groningen – Sparta Rotterdam",
+    "when": "2026-11-01T15:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.45,
+    "p": 0.725,
+    "why": "Groningen dă 2,4 și primește 2,1 goluri pe meci; Sparta Rotterdam dă 1,7 și primește 2,4."
+   },
+   {
+    "id": 14335419,
+    "meci": "Lecce – Genoa",
+    "when": "2026-11-01T17:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.44,
+    "p": 0.718,
+    "why": "Lecce dă 1,1 și primește 2,1 goluri pe meci; Genoa dă 0,9 și primește 1,4."
+   },
+   {
+    "id": 14350998,
+    "meci": "Maritimo – Santa Clara",
+    "when": "2026-11-01T18:00:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.47,
+    "p": 0.692,
+    "why": "Maritimo dă 1 și primește 2,1 goluri pe meci; Santa Clara dă 1,4 și primește 0,7."
+   },
+   {
+    "id": 14335393,
+    "meci": "Eintracht Frankfurt – Hamburger",
+    "when": "2026-11-01T16:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.41,
+    "p": 0.688,
+    "why": "Eintracht Frankfurt dă 1,4 și primește 2,4 goluri pe meci; Hamburger dă 0,9 și primește 2,3."
+   },
+   {
+    "id": 14858463,
+    "meci": "Lugano – Basel",
+    "when": "2026-11-01T15:30:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.43,
+    "p": 0.683,
+    "why": "Lugano dă 3,1 și primește 0,8 goluri pe meci; Basel dă 1,5 și primește 1,8."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14351014,
+    "meci": "Groningen – Sparta Rotterdam",
+    "when": "2026-11-01T15:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.45,
+    "p": 0.712,
+    "why": "Groningen marchează 2,4 și primește 2,1 pe meci; Sparta Rotterdam marchează 1,7 și primește 2,4."
+   },
+   {
+    "id": 14335416,
+    "meci": "Frosinone – Torino FC",
+    "when": "2026-11-01T14:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.37,
+    "p": 0.675,
+    "why": "Frosinone marchează 2,4 și primește 1,6 pe meci; Torino FC marchează 1,6 și primește 1,6."
+   },
+   {
+    "id": 14335547,
+    "meci": "Strasbourg – Auxerre",
+    "when": "2026-11-01T14:00:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "GG (ambele marchează)",
+    "od": 1.52,
+    "p": 0.672,
+    "why": "Strasbourg marchează 1,5 și primește 2,3 pe meci; Auxerre marchează 1,5 și primește 2,3."
+   },
+   {
+    "id": 14351021,
+    "meci": "Valerenga – Tromso",
+    "when": "2026-11-01T18:15:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "GG (ambele marchează)",
+    "od": 1.43,
+    "p": 0.663,
+    "why": "Valerenga marchează 1,6 și primește 1,9 pe meci; Tromso marchează 1,8 și primește 1,4."
+   },
+   {
+    "id": 14335393,
+    "meci": "Eintracht Frankfurt – Hamburger",
+    "when": "2026-11-01T16:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.52,
+    "p": 0.659,
+    "why": "Eintracht Frankfurt marchează 1,4 și primește 2,4 pe meci; Hamburger marchează 0,9 și primește 2,3."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14335417,
+    "meci": "Juventus – Napoli",
+    "when": "2026-11-01T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.38,
+    "p": 0.816,
+    "why": "Media cornerelor: Juventus 7,7, Napoli 5,4, adică 13,1 pe meci."
+   },
+   {
+    "id": 15310461,
+    "meci": "Brondby – AGF Aarhus",
+    "when": "2026-11-01T17:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.43,
+    "p": 0.78,
+    "why": "Media cornerelor: Brondby 6,5, AGF Aarhus 6,5, adică 13 pe meci."
+   },
+   {
+    "id": 15310459,
+    "meci": "Nordsjalland – Midtjylland",
+    "when": "2026-11-01T15:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.41,
+    "p": 0.772,
+    "why": "Media cornerelor: Nordsjalland 6,1, Midtjylland 5,2, adică 11,3 pe meci."
+   },
+   {
+    "id": 14351041,
+    "meci": "Athletic Bilbao – Real Sociedad",
+    "when": "2026-11-01T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.46,
+    "p": 0.761,
+    "why": "Media cornerelor: Athletic Bilbao 6, Real Sociedad 6,5, adică 12,5 pe meci."
+   },
+   {
+    "id": 15090220,
+    "meci": "Austria Viena – Rapid Viena",
+    "when": "2026-11-01T16:00:00.000Z",
+    "liga": "Bundesliga (Austria)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.36,
+    "p": 0.758,
+    "why": "Media cornerelor: Austria Viena 4,9, Rapid Viena 5,6, adică 10,5 pe meci."
+   }
+  ],
+  "cartonase": [
+   {
+    "id": 14335419,
+    "meci": "Lecce – Genoa",
+    "when": "2026-11-01T17:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.45,
+    "p": 0.72,
+    "why": "Cartonașe pe meci: Lecce 2, Genoa 2,2."
+   },
+   {
+    "id": 14351006,
+    "meci": "Kasımpasa – Besiktas",
+    "when": "2026-11-01T16:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.41,
+    "p": 0.702,
+    "why": "Cartonașe pe meci: Kasımpasa 2,7, Besiktas 2,3."
+   },
+   {
+    "id": 14335434,
+    "meci": "Universitatea Craiova – Botosani",
+    "when": "2026-11-01T15:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.42,
+    "p": 0.693,
+    "why": "Cartonașe pe meci: Universitatea Craiova 1,8, Botosani 3,1."
+   },
+   {
+    "id": 14350998,
+    "meci": "Maritimo – Santa Clara",
+    "when": "2026-11-01T18:00:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.5,
+    "p": 0.682,
+    "why": "Cartonașe pe meci: Maritimo 1,9, Santa Clara 3,1."
+   },
+   {
+    "id": 14351076,
+    "meci": "Racing Santander – Real Madrid",
+    "when": "2026-11-01T15:15:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.54,
+    "p": 0.681,
+    "why": "Cartonașe pe meci: Racing Santander 2,8, Real Madrid 2,3."
+   }
+  ]
+ }
+}
