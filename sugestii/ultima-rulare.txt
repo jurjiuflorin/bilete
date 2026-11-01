@@ -1,3 +1,2 @@
-evenimente 1859 meciuri azi 37
-scris sugestii/2026-11-01.json { goluri: 5, gg: 5, cornere: 5, cartonase: 5 }
+exista deja sugestii/2026-11-01.json
 index 8 zile
