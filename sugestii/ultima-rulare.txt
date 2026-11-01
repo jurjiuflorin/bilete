@@ -1,2 +1,3 @@
-exista deja sugestii/2026-10-31.json
+prea devreme pentru lista zilei 3
+judecat 2026-10-31.json
 index 7 zile
