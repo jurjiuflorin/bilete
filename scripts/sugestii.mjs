@@ -7,6 +7,18 @@ const OB = 'https://production-superbet-offer-ro.freetls.fastly.net';
 const SA = 'https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro-RO?fixture-id=ax%3Amatch%3A';
 const BB = 'https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMatch?lang=ro-RO&target=SB_RO&match_id=';
 const SUG_MIN = 1.35, SUG_MAX = 2.6;
+const SAH = 'https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/h2h/rosuperbetsport/ro-RO?';
+const CUPS = ['Liga Campionilor', 'Europa League', 'Conference League'];
+// Cupe europene: media de goluri pe ultimele 10 meciuri oficiale din TOATE competițiile (nu doar din cupă)
+async function cupForm(st, getj) {
+  const t1 = st.team1 && st.team1.id, t2 = st.team2 && st.team2.id; if (!t1 || !t2) return null;
+  const h = await getj(SAH + 'team1-id=' + t1 + '&team2-id=' + t2);
+  const sc = e => { const s = e.scores || []; const x = s.find(z => z.type === 6) || s.find(z => z.type === 0); return x ? [x.team1, x.team2] : null; };
+  const one = (evs, id) => { const L = (evs || []).filter(e => e.match_state === 2 && sc(e)).sort((a, b) => b.match_date.seconds - a.match_date.seconds).slice(0, 10); if (L.length < 5) return null; let gf = 0, ga = 0; for (const e of L) { const [a, b] = sc(e); const home = e.team1.id === id; gf += home ? a : b; ga += home ? b : a; } return [gf / L.length, ga / L.length]; };
+  const A = one(h.team1_events, t1), B = one(h.team2_events, t2); if (!A || !B) return null;
+  return { g: [A[0], B[0]], c: [A[1], B[1]] };
+}
+
 const LEAGUES = [
   ['Liga Campionilor', /^(uefa - |uefa )?(liga campionilor|champions league)( - (faza (ligii|eliminatorie)|gr\.?\s?[a-h]|play-?off))?$/, [69433, 80794]],
   ['Europa League', /^(uefa - |uefa )?(europa league|liga europa)( - (faza (ligii|eliminatorie)|gr\.?\s?[a-l]|play-?off))?$/, []],
@@ -64,7 +76,9 @@ let extra = []; try { const j = JSON.parse(fs.readFileSync('meciuri.json', 'utf8
 const res = await pool(list, 6, async m => {
   const [st, bb] = await Promise.all([getJ(SA + m.id), getJ(BB + m.id)]);
   const S = {}; (st.prematch_stats || []).forEach(x => { S[x.text.args[0].split('.').pop()] = [parseFloat(x.team1), parseFloat(x.team2)]; });
-  const g = S.goals_scored_per_game, c = S.goals_conceded_per_game, x = S.average_xg || g; if (!g || !c) return null;
+  let g = S.goals_scored_per_game, c = S.goals_conceded_per_game, x = S.average_xg || g;
+  if (CUPS.includes(m.liga)) { const cf = await cupForm(st, getJ).catch(() => null); if (cf) { g = cf.g; c = cf.c; x = g; } }
+  if (!g || !c) return null;
   const mk = bb.markets || []; const out = [];
   const lh = Math.max(0.2, 0.5 * (g[0] + c[1]) / 2 + 0.5 * (x[0] + c[1]) / 2 + 0.1), la = Math.max(0.2, 0.5 * (g[1] + c[0]) / 2 + 0.5 * (x[1] + c[0]) / 2 - 0.05);
   const base = { id: m.id, meci: m.meci, when: m.when.toISOString(), liga: m.liga };

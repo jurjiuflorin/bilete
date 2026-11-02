@@ -1221,6 +1221,16 @@ function bestLine(lam, odds) {
   for (const [L, od] of Object.entries(odds)) { if (od < SUG_MIN || od > SUG_MAX) continue; const pm = poisOverL(lam, +L); const p = Math.min(0.88, 0.5 * pm + 0.5 * (1 / od) / 1.06); if (!b || p > b.p) b = { line: L, od, p, pm }; }
   return b;
 }
+const CUPS = ['Liga Campionilor', 'Europa League', 'Conference League'];
+// Cupe europene: media de goluri pe ultimele 10 meciuri oficiale din TOATE competițiile (nu doar din cupă)
+async function cupForm(st) {
+  const t1 = st.team1 && st.team1.id, t2 = st.team2 && st.team2.id; if (!t1 || !t2) return null;
+  const h = await fetch(SAH + 'team1-id=' + t1 + '&team2-id=' + t2).then(r => r.json()).catch(() => ({}));
+  const sc = e => { const s = e.scores || []; const x = s.find(z => z.type === 6) || s.find(z => z.type === 0); return x ? [x.team1, x.team2] : null; };
+  const one = (evs, id) => { const L = (evs || []).filter(e => e.match_state === 2 && sc(e)).sort((a, b) => b.match_date.seconds - a.match_date.seconds).slice(0, 10); if (L.length < 5) return null; let gf = 0, ga = 0; for (const e of L) { const [a, b] = sc(e); const home = e.team1.id === id; gf += home ? a : b; ga += home ? b : a; } return [gf / L.length, ga / L.length]; };
+  const A = one(h.team1_events, t1), B = one(h.team2_events, t2); if (!A || !B) return null;
+  return { g: [A[0], B[0]], c: [A[1], B[1]] };
+}
 async function buildSug(off) {
   const { key, list } = await dayMatches(off);
   await loadExtra();
@@ -1228,7 +1238,9 @@ async function buildSug(off) {
   const res = await pool(list, 6, async m => {
     const [st, bb] = await Promise.all([fetch(SA + m.id).then(r => r.json()).catch(() => ({})), fetch(BB + m.id).then(r => r.json()).catch(() => ({}))]);
     const S = {}; (st.prematch_stats || []).forEach(x => { S[x.text.args[0].split('.').pop()] = [parseFloat(x.team1), parseFloat(x.team2)]; });
-    const g = S.goals_scored_per_game, c = S.goals_conceded_per_game, x = S.average_xg || g; if (!g || !c) return null;
+    let g = S.goals_scored_per_game, c = S.goals_conceded_per_game, x = S.average_xg || g;
+    if (CUPS.includes(m.liga)) { const cf = await cupForm(st); if (cf) { g = cf.g; c = cf.c; x = g; } }
+    if (!g || !c) return null;
     const mk = bb.markets || []; const out = [];
     const lh = Math.max(0.2, 0.5 * (g[0] + c[1]) / 2 + 0.5 * (x[0] + c[1]) / 2 + 0.1), la = Math.max(0.2, 0.5 * (g[1] + c[0]) / 2 + 0.5 * (x[1] + c[0]) / 2 - 0.05);
     const base = { id: m.id, meci: m.meci, when: m.when, liga: m.liga };
