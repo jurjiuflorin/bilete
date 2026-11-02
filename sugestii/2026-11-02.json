@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-02",
+ "salvat": "2026-11-02T16:28:08.983Z",
+ "n": 12,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14351043,
+    "meci": "Deportivo de A Coruna – Osasuna",
+    "when": "2026-11-02T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.4,
+    "p": 0.734,
+    "why": "Deportivo de A Coruna dă 1,3 și primește 1,3 goluri pe meci; Osasuna dă 1 și primește 2."
+   },
+   {
+    "id": 14335542,
+    "meci": "Lorient – Brest",
+    "when": "2026-11-02T19:45:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.37,
+    "p": 0.718,
+    "why": "Lorient dă 0,9 și primește 0,8 goluri pe meci; Brest dă 1,8 și primește 1,5."
+   },
+   {
+    "id": 14335421,
+    "meci": "Sassuolo – Fiorentina",
+    "when": "2026-11-02T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.52,
+    "p": 0.678,
+    "why": "Sassuolo dă 1,6 și primește 2,4 goluri pe meci; Fiorentina dă 1,2 și primește 2,3."
+   },
+   {
+    "id": 14350997,
+    "meci": "Gil Vicente – Vitoria Guimaraes",
+    "when": "2026-11-02T20:15:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.37,
+    "p": 0.673,
+    "why": "Gil Vicente dă 0,9 și primește 0,8 goluri pe meci; Vitoria Guimaraes dă 1,1 și primește 1,1."
+   },
+   {
+    "id": 15325490,
+    "meci": "Sonderjyske – FC Copenhaga",
+    "when": "2026-11-02T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.56,
+    "p": 0.647,
+    "why": "Sonderjyske dă 1,4 și primește 2,4 goluri pe meci; FC Copenhaga dă 2,2 și primește 1."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14335421,
+    "meci": "Sassuolo – Fiorentina",
+    "when": "2026-11-02T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.44,
+    "p": 0.69,
+    "why": "Sassuolo marchează 1,6 și primește 2,4 pe meci; Fiorentina marchează 1,2 și primește 2,3."
+   },
+   {
+    "id": 14335430,
+    "meci": "U Cluj – FCSB",
+    "when": "2026-11-02T18:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.52,
+    "p": 0.64,
+    "why": "U Cluj marchează 1,9 și primește 1,5 pe meci; FCSB marchează 1,5 și primește 1,5."
+   },
+   {
+    "id": 15325490,
+    "meci": "Sonderjyske – FC Copenhaga",
+    "when": "2026-11-02T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.72,
+    "p": 0.6,
+    "why": "Sonderjyske marchează 1,4 și primește 2,4 pe meci; FC Copenhaga marchează 2,2 și primește 1."
+   },
+   {
+    "id": 14350986,
+    "meci": "GAIS – AIK Stockholm",
+    "when": "2026-11-02T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "GG (ambele marchează)",
+    "od": 1.53,
+    "p": 0.589,
+    "why": "GAIS marchează 1,2 și primește 1 pe meci; AIK Stockholm marchează 1,6 și primește 1,7."
+   },
+   {
+    "id": 14335413,
+    "meci": "Atalanta – Parma",
+    "when": "2026-11-02T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.67,
+    "p": 0.577,
+    "why": "Atalanta marchează 1,8 și primește 1,9 pe meci; Parma marchează 0,6 și primește 1,7."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14351001,
+    "meci": "Benfica – Alverca",
+    "when": "2026-11-02T20:15:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.44,
+    "p": 0.743,
+    "why": "Media cornerelor: Benfica 7,2, Alverca 4,6, adică 11,8 pe meci."
+   },
+   {
+    "id": 14335430,
+    "meci": "U Cluj – FCSB",
+    "when": "2026-11-02T18:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.47,
+    "p": 0.718,
+    "why": "Media cornerelor: U Cluj 5,3, FCSB 6, adică 11,3 pe meci."
+   },
+   {
+    "id": 14350986,
+    "meci": "GAIS – AIK Stockholm",
+    "when": "2026-11-02T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.43,
+    "p": 0.68,
+    "why": "Media cornerelor: GAIS 5,3, AIK Stockholm 5, adică 10,3 pe meci."
+   },
+   {
+    "id": 14350997,
+    "meci": "Gil Vicente – Vitoria Guimaraes",
+    "when": "2026-11-02T20:15:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.41,
+    "p": 0.673,
+    "why": "Media cornerelor: Gil Vicente 3,2, Vitoria Guimaraes 5,8, adică 9 pe meci."
+   },
+   {
+    "id": 14335421,
+    "meci": "Sassuolo – Fiorentina",
+    "when": "2026-11-02T17:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.44,
+    "p": 0.671,
+    "why": "Media cornerelor: Sassuolo 4, Fiorentina 5,1, adică 9,1 pe meci."
+   }
+  ],
+  "cartonase": [
+   {
+    "id": 14335430,
+    "meci": "U Cluj – FCSB",
+    "when": "2026-11-02T18:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.38,
+    "p": 0.695,
+    "why": "Cartonașe pe meci: U Cluj 2,7, FCSB 2,1."
+   },
+   {
+    "id": 14351043,
+    "meci": "Deportivo de A Coruna – Osasuna",
+    "when": "2026-11-02T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.39,
+    "p": 0.692,
+    "why": "Cartonașe pe meci: Deportivo de A Coruna 2,3, Osasuna 2,5."
+   },
+   {
+    "id": 14350997,
+    "meci": "Gil Vicente – Vitoria Guimaraes",
+    "when": "2026-11-02T20:15:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.59,
+    "p": 0.664,
+    "why": "Cartonașe pe meci: Gil Vicente 2,1, Vitoria Guimaraes 2,9."
+   },
+   {
+    "id": 14351001,
+    "meci": "Benfica – Alverca",
+    "when": "2026-11-02T20:15:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 3.5 cartonașe",
+    "od": 1.5,
+    "p": 0.66,
+    "why": "Cartonașe pe meci: Benfica 2,4, Alverca 2,3."
+   },
+   {
+    "id": 15325490,
+    "meci": "Sonderjyske – FC Copenhaga",
+    "when": "2026-11-02T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 2.5 cartonașe",
+    "od": 1.5,
+    "p": 0.645,
+    "why": "Cartonașe pe meci: Sonderjyske 1,8, FC Copenhaga 1,6."
+   }
+  ]
+ }
+}
