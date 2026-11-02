@@ -2175,5 +2175,207 @@
    14350995,
    14335430
   ]
+ },
+ {
+  "id": "2026-11-02-cota100",
+  "data": "2026-11-02",
+  "tip": "Cotă 100+",
+  "cota": 143.36,
+  "sansa": 0.0126,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "02.11 21:45 Atalanta – Parma: Peste 2.5 (1.59) · 02.11 22:15 Benfica – Alverca: Peste 2.5 (1.36) · 03.11 22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.41) · 04.11 19:45 AEK Atena – Real Madrid: AEK peste 0.5 goluri (1.55) · 04.11 19:45 Fenerbahce – Liverpool: Fenerbahce peste 0.5 goluri (1.40) · 04.11 22:00 RB Leipzig – Manchester City: Peste 2.5 (1.35) · 05.11 19:45 AC Milan – Ferencvaros: Ferencvaros peste 0.5 goluri (1.70) · 05.11 22:00 Benfica – Lech Poznań: Lech peste 0.5 goluri (1.80) · 05.11 22:00 Bayer Leverkusen – Marseille: Peste 2.5 (1.46) · 07.11 16:30 Borussia Dortmund – Elversberg: Elversberg peste 0.5 goluri (1.49) · 07.11 19:30 Stuttgart – Werder Bremen: Ambele marchează (1.41) · 08.11 21:15 Lech Poznań – Zagłębie Lubin: Zagłębie peste 0.5 goluri (1.71)",
+  "rezultat": "",
+  "motive": [
+   "Atalanta 4.0 goluri/meci acasă, Parma 2.75 în deplasare, 15/21 H2H cu peste 2.5 (4-0 în ianuarie), dar 7 absenți la Atalanta; estimat 65%.",
+   "Benfica 4.0 goluri/meci acasă (3.2 marcate, 0.9 primite în sezon), Alverca 3.4 goluri/meci în deplasare; ambele meciuri directe au avut peste 2.5; estimat 76%.",
+   "Villa a marcat 2.4 goluri/meci în ultimele 10 (70% GG), Barcelona a primit 1.6/meci și lipsesc Olmo și Christensen; estimat 77%.",
+   "AEK 1.4 marcate/meci și 4 victorii în 4 acasă, Real primește 1.7/meci și are patru absenți (Vinícius suspendat, Valverde, Rodrygo, Mendy); estimat 68%.",
+   "Fenerbahce 2.0 marcate/meci, doar 20% meciuri fără gol, acasă 3.83 goluri/meci; Liverpool a primit 1.3/meci; estimat 74%.",
+   "City: 5 din ultimele 6 cu peste 2.5, Leipzig 4 din 6; 5 din 6 meciuri directe cu peste 2.5; modelul extern 67%; estimat 75%.",
+   "Ferencvaros 2.3 marcate/meci, Milan primește 1.7/meci (1 meci fără gol primit); estimat 70%.",
+   "Lech 2.3 marcate/meci (xG 1.8), dar Benfica primește doar 0.9/meci; cotă 1.80 ≈ 52% fără marjă; estimat 62%.",
+   "Ultimele 5: Leverkusen 18 goluri în meciurile sale, Marseille 18, medii 4.0 și 3.3 goluri/meci; 7 absenți la Leverkusen scad ușor; estimat 67%.",
+   "Elversberg 2.0 marcate/meci (xG 1.4), Dortmund primește 0.8/meci; Elversberg a marcat în victoria cu Leverkusen; estimat 70%.",
+   "Stuttgart xG 2.1 și Bremen xG 1.7 pe meci, ambele cu un singur meci fără gol primit în sezon (1.9 și 1.8 primite/meci); estimat 75%.",
+   "Zagłębie 1.3 marcate/meci, dar Lech primește 0.9/meci; estimat 58%."
+  ]
+ },
+ {
+  "id": "2026-11-02-mega",
+  "data": "2026-11-02",
+  "tip": "Mega 20+",
+  "cota": 1063.06,
+  "sansa": 0.0011,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "02.11 21:45 Atalanta – Parma: Peste 2.5 (1.59) · 02.11 22:00 Mallorca – Cadiz: Mallorca câștigă (1.51) · 02.11 22:15 Benfica – Alverca: Peste 2.5 (1.36) · 03.11 22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.41) · 04.11 19:45 Fenerbahce – Liverpool: Fenerbahce peste 0.5 goluri (1.40) · 04.11 19:45 AEK Atena – Real Madrid: AEK peste 0.5 goluri (1.55) · 04.11 22:00 RB Leipzig – Manchester City: Peste 2.5 (1.35) · 04.11 22:00 Slavia Praga – Arsenal: Arsenal peste 1.5 goluri (1.38) · 05.11 19:45 AC Milan – Ferencvaros: Ferencvaros peste 0.5 goluri (1.70) · 05.11 22:00 Bayer Leverkusen – Marseille: Peste 2.5 (1.46) · 05.11 22:00 Benfica – Lech Poznań: Lech peste 0.5 goluri (1.80) · 06.11 20:00 Hammarby – Elfsborg: Hammarby câștigă (1.39) · 07.11 16:30 Borussia Dortmund – Elversberg: Elversberg peste 0.5 goluri (1.49) · 07.11 16:30 Mainz – Bayern: Ambele marchează (1.36) · 07.11 16:30 RB Leipzig – Augsburg: RB Leipzig câștigă (1.48) · 07.11 19:30 Stuttgart – Werder Bremen: Ambele marchează (1.41) · 08.11 18:30 Freiburg – Union Berlin: Freiburg peste 1.5 goluri (1.50) · 08.11 21:15 Lech Poznań – Zagłębie Lubin: Lech câștigă (1.45)",
+  "rezultat": "",
+  "motive": [
+   "Atalanta 4.0 goluri/meci acasă, Parma 2.75 în deplasare, 15/21 H2H cu peste 2.5 (4-0 în ianuarie), dar 7 absenți la Atalanta; estimat 65%.",
+   "Mallorca primește doar 0.5 goluri/meci cu 6 meciuri fără gol primit, Cadiz 1.3 primite; cotă 1.51 ≈ 63% fără marjă; estimat 62%.",
+   "Benfica 4.0 goluri/meci acasă (3.2 marcate, 0.9 primite în sezon), Alverca 3.4 goluri/meci în deplasare; ambele meciuri directe au avut peste 2.5; estimat 76%.",
+   "Villa a marcat 2.4 goluri/meci în ultimele 10 (70% GG), Barcelona a primit 1.6/meci și lipsesc Olmo și Christensen; estimat 77%.",
+   "Fenerbahce 2.0 marcate/meci, doar 20% meciuri fără gol, acasă 3.83 goluri/meci; Liverpool a primit 1.3/meci; estimat 74%.",
+   "AEK 1.4 marcate/meci și 4 victorii în 4 acasă, Real primește 1.7/meci și are patru absenți (Vinícius suspendat, Valverde, Rodrygo, Mendy); estimat 68%.",
+   "City: 5 din ultimele 6 cu peste 2.5, Leipzig 4 din 6; 5 din 6 meciuri directe cu peste 2.5; modelul extern 67%; estimat 75%.",
+   "Arsenal 2.0 marcate și xG 2.5/meci, Slavia primește 2.3/meci (0 meciuri fără gol primit); estimat 69%.",
+   "Ferencvaros 2.3 marcate/meci, Milan primește 1.7/meci (1 meci fără gol primit); estimat 70%.",
+   "Ultimele 5: Leverkusen 18 goluri în meciurile sale, Marseille 18, medii 4.0 și 3.3 goluri/meci; 7 absenți la Leverkusen scad ușor; estimat 67%.",
+   "Lech 2.3 marcate/meci (xG 1.8), dar Benfica primește doar 0.9/meci; cotă 1.80 ≈ 52% fără marjă; estimat 62%.",
+   "Hammarby 2.1 marcate și 0.8 primite/meci (12 meciuri fără gol primit) față de Elfsborg 1.5/1.0; a câștigat 3 din ultimele 4 H2H (2-1, 3-0, 2-0); estimat 66%.",
+   "Elversberg 2.0 marcate/meci (xG 1.4), Dortmund primește 0.8/meci; Elversberg a marcat în victoria cu Leverkusen; estimat 70%.",
+   "Mainz 2.1 marcate și 2.1 primite/meci, Bayern 3.4 marcate (xG 3.5/meci); estimat 68%.",
+   "Leipzig a câștigat ultimele 3 meciuri (2-0, 2-1, 4-0) iar cota 1.48 ≈ 64% fără marjă; statisticile Augsburg nu au putut fi verificate, deci estimare prudentă 62%.",
+   "Stuttgart xG 2.1 și Bremen xG 1.7 pe meci, ambele cu un singur meci fără gol primit în sezon (1.9 și 1.8 primite/meci); estimat 75%.",
+   "Freiburg 2.3 marcate/meci, Union primește 2.4/meci și marchează doar 0.9; estimat 65%.",
+   "Lech 2.7 marcate și 0.9 primite/meci (xG 2.3) față de Zagłębie 1.3/1.3 (xG 1.4), acasă; estimat 68%."
+  ]
+ },
+ {
+  "id": "2026-11-02-7zile",
+  "data": "2026-11-02",
+  "tip": "Săptămânal 7 zile",
+  "cota": 10.74,
+  "sansa": 0.099,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "02.11 22:15 Benfica – Alverca: Peste 2.5 (1.36) · 03.11 22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.41) · 04.11 22:00 RB Leipzig – Manchester City: Peste 2.5 (1.35) · 05.11 22:00 Bayer Leverkusen – Marseille: Peste 2.5 (1.46) · 06.11 20:00 Hammarby – Elfsborg: Hammarby câștigă (1.39) · 07.11 19:30 Stuttgart – Werder Bremen: Ambele marchează (1.41) · 08.11 21:15 Lech Poznań – Zagłębie Lubin: Lech câștigă (1.45)",
+  "rezultat": "",
+  "motive": [
+   "Benfica 4.0 goluri/meci acasă (3.2 marcate, 0.9 primite în sezon), Alverca 3.4 goluri/meci în deplasare; ambele meciuri directe au avut peste 2.5; estimat 76%.",
+   "Villa a marcat 2.4 goluri/meci în ultimele 10 (70% GG), Barcelona a primit 1.6/meci și lipsesc Olmo și Christensen; estimat 77%.",
+   "City: 5 din ultimele 6 cu peste 2.5, Leipzig 4 din 6; 5 din 6 meciuri directe cu peste 2.5; modelul extern 67%; estimat 75%.",
+   "Ultimele 5: Leverkusen 18 goluri în meciurile sale, Marseille 18, medii 4.0 și 3.3 goluri/meci; 7 absenți la Leverkusen scad ușor; estimat 67%.",
+   "Hammarby 2.1 marcate și 0.8 primite/meci (12 meciuri fără gol primit) față de Elfsborg 1.5/1.0; a câștigat 3 din ultimele 4 H2H (2-1, 3-0, 2-0); estimat 66%.",
+   "Stuttgart xG 2.1 și Bremen xG 1.7 pe meci, ambele cu un singur meci fără gol primit în sezon (1.9 și 1.8 primite/meci); estimat 75%.",
+   "Lech 2.7 marcate și 0.9 primite/meci (xG 2.3) față de Zagłębie 1.3/1.3 (xG 1.4), acasă; estimat 68%."
+  ]
+ },
+ {
+  "id": "2026-11-02-pariu",
+  "data": "2026-11-02",
+  "tip": "Pariul zilei",
+  "cota": 1.62,
+  "sansa": 0.68,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:15 Benfica – Alverca: Benfica peste 2.5 goluri (1.62)",
+  "rezultat": "",
+  "motive": [
+   "Benfica a marcat în medie 3,2 goluri/meci în sezon (4,0 total goluri acasă), iar Alverca primește mult în deplasare (3,4 goluri/meci în meciurile sale); piața (cotă 1,62) implică ~62%, iar eu estimez ~68% pentru 3+ goluri Benfica, deci un avantaj mic dar real (~6 puncte). Absențele nu au putut fi verificate azi, cota se poate mișca."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14351001
+  ]
+ },
+ {
+  "id": "2026-11-02-cota2",
+  "data": "2026-11-02",
+  "tip": "Cotă 2",
+  "cota": 1.88,
+  "sansa": 0.532,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "17:30 Voluntari – Farul: X2 (1.38) · 22:15 Benfica – Alverca: Peste 2.5 (1.36)",
+  "rezultat": "",
+  "motive": [
+   "Voluntari a pierdut 6 din ultimele 10 (ultimele 5 toate) și primește 2,2 goluri/meci, Farul a pierdut doar 3 din 10; estimat ~70% ca Farul să nu piardă (formă 7/10, directe în echilibru).",
+   "Benfica are 4,0 goluri/meci acasă (3,2 marcate, 0,9 primite în sezon), Alverca 3,4 goluri/meci în deplasare; ambele directe au avut peste 2,5; estimat 76% (formă ~8/10, directe 2/2); absențe neverificate. Repetat pe mai multe bilete fiindcă are cea mai mare șansă (76%)."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335432,
+   14351001
+  ]
+ },
+ {
+  "id": "2026-11-02-cota5",
+  "data": "2026-11-02",
+  "tip": "Cotă 5",
+  "cota": 4.86,
+  "sansa": 0.2352,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "17:30 Voluntari – Farul: X2 (1.38) · 20:30 U Cluj – FCSB: Peste 2.5 (1.63) · 21:45 Atalanta – Parma: Peste 2.5 (1.59) · 22:15 Benfica – Alverca: Peste 2.5 (1.36)",
+  "rezultat": "",
+  "motive": [
+   "Voluntari a pierdut 6 din ultimele 10 (ultimele 5 toate) și primește 2,2 goluri/meci, Farul a pierdut doar 3 din 10; estimat ~70% ca Farul să nu piardă (formă 7/10, directe în echilibru).",
+   "Peste 2,5 goluri în 8 din ultimele 10 meciuri ale ambelor echipe; U Cluj dă 1,9 și FCSB 1,5 goluri/meci, xG 1,8 și 2,0; estimat ~68% față de 58% în cotă (formă 8/10, directe 3/5).",
+   "Atalanta 4,0 goluri/meci acasă, Parma 2,75 în deplasare, 15/21 directe cu peste 2,5 (4-0 în ianuarie), dar 7 absenți la Atalanta; estimat 65% (formă 6/10, directe 4/5).",
+   "Benfica are 4,0 goluri/meci acasă (3,2 marcate, 0,9 primite în sezon), Alverca 3,4 goluri/meci în deplasare; ambele directe au avut peste 2,5; estimat 76% (formă ~8/10, directe 2/2); absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335432,
+   14335430,
+   14335413,
+   14351001
+  ]
+ },
+ {
+  "id": "2026-11-02-challenge",
+  "data": "2026-11-02",
+  "tip": "Challenge 1.40",
+  "cota": 1.36,
+  "sansa": 0.76,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:15 Benfica – Alverca: Peste 2.5 (1.36)",
+  "rezultat": "",
+  "motive": [
+   "Benfica 4,0 goluri/meci acasă, Alverca 3,4 goluri/meci în deplasare, ambele directe cu peste 2,5; cota 1,36 ≈ 72% fără marjă, estimat 76% (cea mai mare șansă a zilei în intervalul 1.35-1.50). Absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14351001
+  ],
+  "ciclu": 2,
+  "pas": 2
+ },
+ {
+  "id": "2026-11-02-sc-acc",
+  "data": "2026-11-02",
+  "tip": "SuperCoins – Acumulator",
+  "cota": 4.3,
+  "sansa": 0.262,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:15 Benfica – Alverca: Peste 2.5 (1.36) · 21:45 Atalanta – Parma: Peste 2.5 (1.59) · 20:30 U Cluj – FCSB: Peste 2.5 (1.63) · 22:00 Newcastle – Everton: Peste 1.5 (1.22)",
+  "rezultat": "",
+  "motive": [
+   "Benfica are 4,0 goluri/meci acasă (3,2 marcate, 0,9 primite în sezon), Alverca 3,4 goluri/meci în deplasare; ambele directe au avut peste 2,5; estimat 76% (formă ~8/10, directe 2/2); absențe neverificate.",
+   "Atalanta 4,0 goluri/meci acasă, Parma 2,75 în deplasare, 15/21 directe cu peste 2,5 (4-0 în ianuarie), dar 7 absenți la Atalanta; estimat 65% (formă 6/10, directe 4/5).",
+   "Peste 2,5 goluri în 8 din ultimele 10 meciuri ale ambelor echipe; U Cluj dă 1,9 și FCSB 1,5 goluri/meci, xG 1,8 și 2,0; estimat ~68% față de 58% în cotă (formă 8/10, directe 3/5).",
+   "Newcastle–Everton: peste 1,5 goluri, cotă 1,22 (≈78% fără marjă); verificare de formă limitată, estimat 78%; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14351001,
+   14335413,
+   14335430,
+   14335456
+  ]
+ },
+ {
+  "id": "2026-11-02-sc-bb",
+  "data": "2026-11-02",
+  "tip": "SuperCoins – Bet Builder",
+  "cota": 2.47,
+  "sansa": 0.4234,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Atalanta – Parma: Bet Builder 1 + Peste 1.5 (1.70) · 22:15 Benfica – Alverca: Bet Builder 1 + Peste 2.5 (1.45)",
+  "rezultat": "",
+  "motive": [
+   "Atalanta câștigă (cotă 1,53, ~64%) și cel puțin 2 goluri în meci (~93% dacă câștigă); 7 absenți la Atalanta scad ușor șansa; Bet Builder estimat 58%.",
+   "Benfica câștigă (cotă 1,14, ~86%) și peste 2,5 goluri (~85% dacă câștigă); Bet Builder estimat 73% față de 69% implicat de cota 1,45."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14335413,
+   14351001
+  ]
  }
 ]
