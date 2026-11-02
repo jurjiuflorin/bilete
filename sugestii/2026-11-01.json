@@ -12,7 +12,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.45,
     "p": 0.725,
-    "why": "Groningen dă 2,4 și primește 2,1 goluri pe meci; Sparta Rotterdam dă 1,7 și primește 2,4."
+    "why": "Groningen dă 2,4 și primește 2,1 goluri pe meci; Sparta Rotterdam dă 1,7 și primește 2,4.",
+    "rez": "won",
+    "scor": "2-3"
    },
    {
     "id": 14335419,
@@ -22,7 +24,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.44,
     "p": 0.718,
-    "why": "Lecce dă 1,1 și primește 2,1 goluri pe meci; Genoa dă 0,9 și primește 1,4."
+    "why": "Lecce dă 1,1 și primește 2,1 goluri pe meci; Genoa dă 0,9 și primește 1,4.",
+    "rez": "won",
+    "scor": "1-2"
    },
    {
     "id": 14350998,
@@ -32,7 +36,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.47,
     "p": 0.692,
-    "why": "Maritimo dă 1 și primește 2,1 goluri pe meci; Santa Clara dă 1,4 și primește 0,7."
+    "why": "Maritimo dă 1 și primește 2,1 goluri pe meci; Santa Clara dă 1,4 și primește 0,7.",
+    "rez": "won",
+    "scor": "0-2"
    },
    {
     "id": 14335393,
@@ -42,7 +48,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.41,
     "p": 0.688,
-    "why": "Eintracht Frankfurt dă 1,4 și primește 2,4 goluri pe meci; Hamburger dă 0,9 și primește 2,3."
+    "why": "Eintracht Frankfurt dă 1,4 și primește 2,4 goluri pe meci; Hamburger dă 0,9 și primește 2,3.",
+    "rez": "won",
+    "scor": "3-1"
    },
    {
     "id": 14858463,
@@ -52,7 +60,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.43,
     "p": 0.683,
-    "why": "Lugano dă 3,1 și primește 0,8 goluri pe meci; Basel dă 1,5 și primește 1,8."
+    "why": "Lugano dă 3,1 și primește 0,8 goluri pe meci; Basel dă 1,5 și primește 1,8.",
+    "rez": "won",
+    "scor": "2-1"
    }
   ],
   "gg": [
@@ -64,7 +74,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.45,
     "p": 0.712,
-    "why": "Groningen marchează 2,4 și primește 2,1 pe meci; Sparta Rotterdam marchează 1,7 și primește 2,4."
+    "why": "Groningen marchează 2,4 și primește 2,1 pe meci; Sparta Rotterdam marchează 1,7 și primește 2,4.",
+    "rez": "won",
+    "scor": "2-3"
    },
    {
     "id": 14335416,
@@ -74,7 +86,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.37,
     "p": 0.675,
-    "why": "Frosinone marchează 2,4 și primește 1,6 pe meci; Torino FC marchează 1,6 și primește 1,6."
+    "why": "Frosinone marchează 2,4 și primește 1,6 pe meci; Torino FC marchează 1,6 și primește 1,6.",
+    "rez": "lost",
+    "scor": "2-0"
    },
    {
     "id": 14335547,
@@ -84,7 +98,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.52,
     "p": 0.672,
-    "why": "Strasbourg marchează 1,5 și primește 2,3 pe meci; Auxerre marchează 1,5 și primește 2,3."
+    "why": "Strasbourg marchează 1,5 și primește 2,3 pe meci; Auxerre marchează 1,5 și primește 2,3.",
+    "rez": "won",
+    "scor": "5-1"
    },
    {
     "id": 14351021,
@@ -94,7 +110,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.43,
     "p": 0.663,
-    "why": "Valerenga marchează 1,6 și primește 1,9 pe meci; Tromso marchează 1,8 și primește 1,4."
+    "why": "Valerenga marchează 1,6 și primește 1,9 pe meci; Tromso marchează 1,8 și primește 1,4.",
+    "rez": "lost",
+    "scor": "4-0"
    },
    {
     "id": 14335393,
@@ -104,7 +122,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.52,
     "p": 0.659,
-    "why": "Eintracht Frankfurt marchează 1,4 și primește 2,4 pe meci; Hamburger marchează 0,9 și primește 2,3."
+    "why": "Eintracht Frankfurt marchează 1,4 și primește 2,4 pe meci; Hamburger marchează 0,9 și primește 2,3.",
+    "rez": "won",
+    "scor": "3-1"
    }
   ],
   "cornere": [
@@ -116,7 +136,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.38,
     "p": 0.816,
-    "why": "Media cornerelor: Juventus 7,7, Napoli 5,4, adică 13,1 pe meci."
+    "why": "Media cornerelor: Juventus 7,7, Napoli 5,4, adică 13,1 pe meci.",
+    "rez": "won",
+    "scor": "2-0",
+    "total": 17
    },
    {
     "id": 15310461,
@@ -126,7 +149,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.43,
     "p": 0.78,
-    "why": "Media cornerelor: Brondby 6,5, AGF Aarhus 6,5, adică 13 pe meci."
+    "why": "Media cornerelor: Brondby 6,5, AGF Aarhus 6,5, adică 13 pe meci.",
+    "rez": "won",
+    "scor": "2-0",
+    "total": 15
    },
    {
     "id": 15310459,
@@ -136,7 +162,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.41,
     "p": 0.772,
-    "why": "Media cornerelor: Nordsjalland 6,1, Midtjylland 5,2, adică 11,3 pe meci."
+    "why": "Media cornerelor: Nordsjalland 6,1, Midtjylland 5,2, adică 11,3 pe meci.",
+    "rez": "won",
+    "scor": "2-3",
+    "total": 8
    },
    {
     "id": 14351041,
@@ -146,7 +175,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.46,
     "p": 0.761,
-    "why": "Media cornerelor: Athletic Bilbao 6, Real Sociedad 6,5, adică 12,5 pe meci."
+    "why": "Media cornerelor: Athletic Bilbao 6, Real Sociedad 6,5, adică 12,5 pe meci.",
+    "rez": "won",
+    "scor": "2-1",
+    "total": 13
    },
    {
     "id": 15090220,
@@ -156,7 +188,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.36,
     "p": 0.758,
-    "why": "Media cornerelor: Austria Viena 4,9, Rapid Viena 5,6, adică 10,5 pe meci."
+    "why": "Media cornerelor: Austria Viena 4,9, Rapid Viena 5,6, adică 10,5 pe meci.",
+    "rez": "won",
+    "scor": "0-2",
+    "total": 9
    }
   ],
   "cartonase": [
@@ -168,7 +203,10 @@
     "sel": "Peste 2.5 cartonașe",
     "od": 1.45,
     "p": 0.72,
-    "why": "Cartonașe pe meci: Lecce 2, Genoa 2,2."
+    "why": "Cartonașe pe meci: Lecce 2, Genoa 2,2.",
+    "rez": "won",
+    "scor": "1-2",
+    "total": 3
    },
    {
     "id": 14351006,
@@ -178,7 +216,10 @@
     "sel": "Peste 3.5 cartonașe",
     "od": 1.41,
     "p": 0.702,
-    "why": "Cartonașe pe meci: Kasımpasa 2,7, Besiktas 2,3."
+    "why": "Cartonașe pe meci: Kasımpasa 2,7, Besiktas 2,3.",
+    "rez": "lost",
+    "scor": "2-2",
+    "total": 2
    },
    {
     "id": 14335434,
@@ -188,7 +229,10 @@
     "sel": "Peste 3.5 cartonașe",
     "od": 1.42,
     "p": 0.693,
-    "why": "Cartonașe pe meci: Universitatea Craiova 1,8, Botosani 3,1."
+    "why": "Cartonașe pe meci: Universitatea Craiova 1,8, Botosani 3,1.",
+    "rez": "lost",
+    "scor": "2-1",
+    "total": 2
    },
    {
     "id": 14350998,
@@ -198,7 +242,10 @@
     "sel": "Peste 3.5 cartonașe",
     "od": 1.5,
     "p": 0.682,
-    "why": "Cartonașe pe meci: Maritimo 1,9, Santa Clara 3,1."
+    "why": "Cartonașe pe meci: Maritimo 1,9, Santa Clara 3,1.",
+    "rez": "won",
+    "scor": "0-2",
+    "total": 6
    },
    {
     "id": 14351076,
@@ -208,7 +255,10 @@
     "sel": "Peste 3.5 cartonașe",
     "od": 1.54,
     "p": 0.681,
-    "why": "Cartonașe pe meci: Racing Santander 2,8, Real Madrid 2,3."
+    "why": "Cartonașe pe meci: Racing Santander 2,8, Real Madrid 2,3.",
+    "rez": "lost",
+    "scor": "0-3",
+    "total": 2
    }
   ]
  }
