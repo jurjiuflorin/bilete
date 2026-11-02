@@ -1,6 +1,6 @@
 {
-  "name": "Biletele mele",
-  "short_name": "Bilete",
+  "name": "Gazeta de Bilete",
+  "short_name": "Gazeta",
   "description": "Biletele zilnice, codurile de agenție și scorurile live.",
   "start_url": "./",
   "scope": "./",

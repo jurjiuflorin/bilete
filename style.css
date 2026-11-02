@@ -608,7 +608,7 @@ body{background:radial-gradient(1000px 460px at 10% -160px,rgba(232,20,27,.22),t
   .wrap{max-width:1100px}
   .bar{position:fixed;left:0;top:0;bottom:0;width:250px;margin:0;z-index:20;flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:18px;
     padding:26px 16px 24px;background:linear-gradient(180deg,#120607,#070708 40%);border-right:1px solid rgba(232,20,27,.25);overflow-y:auto;scrollbar-width:thin}
-  .bar::before{order:-2;content:"BILETE";font:900 26px/1 var(--display);font-stretch:125%;letter-spacing:.04em;color:#fff;padding:0 6px 12px;border-bottom:2px solid var(--flood)}
+  .bar::before{order:-2;content:"GAZETA";font:900 26px/1 var(--display);font-stretch:125%;letter-spacing:.04em;color:#fff;padding:0 6px 12px;border-bottom:2px solid var(--flood)}
   .ticker + .wrap .bar{top:0}
   .ticker{margin-left:-250px;padding-left:262px}
   .tabs{flex-direction:column;align-items:stretch;background:none;border:0;padding:0;gap:4px;width:auto;overflow:visible}

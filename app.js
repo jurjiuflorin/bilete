@@ -1088,7 +1088,7 @@ async function shareSlip(r, btn) {
   c.fillStyle = '#f6f3ea'; c.beginPath(); c.moveTo(px, py); c.lineTo(px + pw, py); c.lineTo(px + pw, py + ph);
   const nz = Math.round(pw / 24), zw = pw / nz; for (let k = 0; k < nz; k++) { const x = px + pw - k * zw; c.lineTo(x - zw / 2, py + ph + 14); c.lineTo(x - zw, py + ph); }
   c.closePath(); c.fill();
-  c.fillStyle = '#e9efe9'; c.font = F(800, 64, disp); c.fillText('Biletele mele', px, 100);
+  c.fillStyle = '#e9efe9'; c.font = F(800, 64, disp); c.fillText('Gazeta de Bilete', px, 100);
   c.fillStyle = '#1d1f1c'; c.font = F(700, 60, disp); c.fillText(r.tip, px + 40, py + 80);
   c.font = F(500, 26, mono); c.fillStyle = '#6d6f68'; c.textAlign = 'right'; c.fillText(L.length + ' meciuri', px + pw - 40, py + 76); c.textAlign = 'left';
   let y = py + 120;
