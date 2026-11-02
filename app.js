@@ -331,9 +331,9 @@ function viewCalendar() {
 const OB = 'https://production-superbet-offer-ro.freetls.fastly.net';
 // [nume afișat, regex pe numele Superbet fără diacritice, id-uri Superbet cunoscute]
 const LEAGUES = [
-  ['Liga Campionilor', /^(liga campionilor|uefa champions league)( - (faza (ligii|eliminatorie)|gr\.?\s?[a-h]|play-?off))?$/, [69433]],
-  ['Europa League', /^(uefa )?(europa league|liga europa)( - (faza (ligii|eliminatorie)|gr\.?\s?[a-l]|play-?off))?$/, []],
-  ['Conference League', /^(uefa )?(europa )?(conference league|liga conferintelor)( - (faza (ligii|eliminatorie)|gr\.?\s?[a-h]|play-?off))?$/, []],
+  ['Liga Campionilor', /^(uefa - |uefa )?(liga campionilor|champions league)( - (faza (ligii|eliminatorie)|gr\.?\s?[a-h]|play-?off))?$/, [69433, 80794]],
+  ['Europa League', /^(uefa - |uefa )?(europa league|liga europa)( - (faza (ligii|eliminatorie)|gr\.?\s?[a-l]|play-?off))?$/, []],
+  ['Conference League', /^(uefa - |uefa )?(europa )?(conference league|liga conferintelor)( - (faza (ligii|eliminatorie)|gr\.?\s?[a-h]|play-?off))?$/, []],
   ['Premier League', /^anglia - premier league$/, []],
   ['LaLiga', /^spania - (laliga|la liga|primera division|liga 1)$/, []],
   ['Serie A', /^italia - seri[ae] a$/, [30336]],
