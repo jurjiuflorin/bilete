@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 
 const SA = 'https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro-RO?fixture-id=ax%3Amatch%3A';
-const CATS = ['goluri', 'gg', 'cornere', 'cartonase'];
+const CATS = ['goluri', 'gg', 'cornere'];
 const dayKey = d => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Bucharest' }).format(d);
 const today = dayKey(new Date());
 const getJ = async u => { for (let i = 0; i < 3; i++) { try { const r = await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0', accept: 'application/json' } }); if (r.ok) return await r.json(); console.log('HTTP', r.status); } catch (e) { console.log('ERR', String(e).slice(0, 100)); } await new Promise(r => setTimeout(r, 1500)); } return null; };

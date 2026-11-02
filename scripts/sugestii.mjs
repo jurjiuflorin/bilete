@@ -1,4 +1,4 @@
-// Salvează lista zilei din tabul „Sugestii” (5 meciuri pentru goluri, GG, cornere, cartonașe)
+// Salvează lista zilei din tabul „Sugestii” (5 meciuri pentru goluri, GG, cornere)
 // în sugestii/<YYYY-MM-DD>.json, ca site-ul să arate a doua zi dacă au intrat.
 // Aceeași logică ca buildSug() din app.js. Rulat de .github/workflows/sugestii.yml.
 import fs from 'node:fs';
@@ -85,7 +85,7 @@ const res = await pool(list, 6, async m => {
 const all = res.filter(Boolean).flat();
 if (!all.length) { console.log('nicio sugestie (feed indisponibil?)'); process.exit(list.length ? 1 : 0); }
 const data = {};
-for (const c of ['goluri', 'gg', 'cornere', 'cartonase']) data[c] = all.filter(z => z.cat === c).sort((a, b) => b.p - a.p).slice(0, 5).map(({ cat, ...z }) => ({ ...z, p: Math.round(z.p * 1000) / 1000 }));
+for (const c of ['goluri', 'gg', 'cornere']) data[c] = all.filter(z => z.cat === c).sort((a, b) => b.p - a.p).slice(0, 5).map(({ cat, ...z }) => ({ ...z, p: Math.round(z.p * 1000) / 1000 }));
 fs.mkdirSync('sugestii', { recursive: true });
 fs.writeFileSync(file, JSON.stringify({ data: key, salvat: now.toISOString(), n: list.length, sugestii: data }, null, 1) + '\n');
 console.log('scris', file, Object.fromEntries(Object.entries(data).map(([k, v]) => [k, v.length])));

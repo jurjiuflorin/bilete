@@ -1190,7 +1190,7 @@ function viewResults() {
 }
 
 
-/* ---------- Sugestii: 5 meciuri pe zi pentru goluri, GG, cornere, cartonașe ---------- */
+/* ---------- Sugestii: 5 meciuri pe zi pentru goluri, GG, cornere ---------- */
 const BB = 'https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMatch?lang=ro-RO&target=SB_RO&match_id=';
 const SUG_MIN = 1.35, SUG_MAX = 2.6;
 let sugDay = 0;   // -1 = ieri, 0 = azi, 1 = mâine
@@ -1242,17 +1242,11 @@ async function buildSug(off) {
     // cornere
     const k = S.average_corners; if (k) { const co = bestLine(k[0] + k[1], lines(mk, 'Total cornere'));
       if (co) out.push({ ...base, cat: 'cornere', sel: 'Peste ' + co.line + ' cornere', od: co.od, p: co.p, why: 'Media cornerelor: ' + m.h + ' ' + f1(k[0]) + ', ' + m.a + ' ' + f1(k[1]) + ', adică ' + f1(k[0] + k[1]) + ' pe meci.' }); }
-    // cartonașe
-    const y = S.average_cards || S.average_yellow_cards; if (y) {
-      const inf = infoFor({ id: m.id, meci: m.meci, when: m.when }); const ref = inf && inf.arbitru_galbene != null ? inf.arbitru_galbene + (inf.arbitru_rosii || 0) : null;
-      const lam = ref != null ? 0.5 * (y[0] + y[1]) + 0.5 * ref : y[0] + y[1];
-      const ca = bestLine(lam, lines(mk, 'Total cartonașe'));
-      if (ca) out.push({ ...base, cat: 'cartonase', sel: 'Peste ' + ca.line + ' cartonașe', od: ca.od, p: ca.p, why: 'Cartonașe pe meci: ' + m.h + ' ' + f1(y[0]) + ', ' + m.a + ' ' + f1(y[1]) + (ref != null ? '; arbitrul ' + (inf.arbitru || '') + ' dă ' + f1(ref) + ' pe meci.' : '.') }); }
     return out;
   });
   const all = res.filter(Boolean).flat();
   const data = {};
-  for (const c of ['goluri', 'gg', 'cornere', 'cartonase']) data[c] = all.filter(z => z.cat === c).sort((a, b) => b.p - a.p).slice(0, 5);
+  for (const c of ['goluri', 'gg', 'cornere']) data[c] = all.filter(z => z.cat === c).sort((a, b) => b.p - a.p).slice(0, 5);
   return { key, n: list.length, data };
 }
 function loadSug(off) {
@@ -1282,7 +1276,7 @@ async function loadSnapRes(key) {
   for (const z of items) { if (z.rez) { if (z.rez !== 'void') o.res[z.id + '|' + z.sel] = z.rez; if (z.scor) o.sc[z.id + '|' + z.sel] = z.scor.replace('-', ' – ') + (z.total != null && /corner|cartona|galben/i.test(z.sel) ? ' · ' + z.total + (/corner/i.test(z.sel) ? ' cornere' : ' galbene') : ''); continue; } const m = M[z.id]; if (!m) continue; const r = judge(sugSel(z.sel), z.meci, m); if (r) o.res[z.id + '|' + z.sel] = r; if (m.h != null) o.sc[z.id + '|' + z.sel] = m.h + ' – ' + m.a + (/corner/i.test(z.sel) && m.corners ? ' · ' + (m.corners[0] + m.corners[1]) + ' cornere' : /cartona|galben/i.test(z.sel) && m.yellow ? ' · ' + (m.yellow[0] + m.yellow[1]) + ' galbene' : '') + (m.state === 2 ? '' : (m.min ? ' · ' + m.min + "'" : ' · live')); if (m.state === 1) o.live = true; }
   } finally { o.rt = Date.now(); o.rbusy = false; }
 }
-const SUG_CATS = [['goluri', 'Goluri', 'Meciuri cu multe goluri'], ['gg', 'GG', 'Ambele echipe marchează'], ['cornere', 'Cornere', 'Peste numărul de cornere'], ['cartonase', 'Cartonașe', 'Peste numărul de cartonașe']];
+const SUG_CATS = [['goluri', 'Goluri', 'Meciuri cu multe goluri'], ['gg', 'GG', 'Ambele echipe marchează'], ['cornere', 'Cornere', 'Peste numărul de cornere']];
 function viewSuggest() {
   const list = $('list');
   const seg = el('div', 'sg-seg');
@@ -1297,7 +1291,7 @@ function viewSuggest() {
     sel.value = sugDate; sel.onchange = () => { sugDate = sel.value; render(); };
     bar.append(sel);
   } else if (!sugIdxT) loadSugIdx().then(() => { if (tab === 's') render(); });
-  list.append(el('p', 'intro', 'Câte 5 meciuri pentru fiecare tip de pariu, alese după cea mai mare șansă de reușită din statisticile echipelor (și ale arbitrului, la cartonașe), combinate cu cota Superbet. Doar cote de la 1,35 în sus. Nu e un bilet: le alegi tu.'), bar);
+  list.append(el('p', 'intro', 'Câte 5 meciuri pentru fiecare tip de pariu, alese după cea mai mare șansă de reușită din statisticile echipelor combinate cu cota Superbet. Doar cote de la 1,35 în sus. Nu e un bilet: le alegi tu.'), bar);
   if (sugIdx && sugIdx.some(r => r.n)) {
     const T = { w: 0, n: 0 }, C = {}; for (const r of sugIdx) { T.w += r.w; T.n += r.n; for (const [k, [w, n]] of Object.entries(r.cat || {})) { C[k] = C[k] || [0, 0]; C[k][0] += w; C[k][1] += n; } }
     const tot = el('div', 'sg-tot'); const first = sugIdx[sugIdx.length - 1].data;
