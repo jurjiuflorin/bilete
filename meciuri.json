@@ -1,53 +1,202 @@
 {
- "data": "2026-11-02",
- "actualizat": "2026-11-02T06:20:00Z",
+ "data": "2026-11-03",
+ "actualizat": "2026-11-03T06:15:25Z",
  "meciuri": [
   {
-   "data": "2026-11-02",
-   "ora": "17:30",
-   "liga": "Superliga",
-   "gazde": "Voluntari",
-   "oaspeti": "Farul",
-   "forma_gazde": "IIIII",
-   "loc_gazde": 15,
-   "loc_oaspeti": 7,
-   "absenti_gazde": [],
-   "absenti_oaspeti": [
-    "Sîrbu – accidentat",
-    "Pellegrini – accidentat",
-    "Cercel – accidentat",
-    "Sima – accidentat",
-    "Hyseni – accidentat",
-    "Aberdin – accidentat"
-   ],
-   "nota": "Farul are 9 absențe confirmate de Sabău (și Sylvestre, Marincean, Kitala); Alibec revine după suspendare. Voluntari: 5 înfrângeri consecutive în campionat, cea mai slabă apărare (29 primite). Absențe Voluntari neverificate."
-  },
-  {
-   "data": "2026-11-02",
-   "ora": "20:30",
-   "liga": "Superliga",
-   "gazde": "U Cluj",
-   "oaspeti": "FCSB",
-   "loc_gazde": 5,
+   "data": "2026-11-03",
+   "ora": "19:45",
+   "liga": "Champions League",
+   "gazde": "Galatasaray",
+   "oaspeti": "Stuttgart",
+   "forma_gazde": "IVVVV",
+   "forma_oaspeti": "IEIVV",
+   "loc_gazde": 23,
    "loc_oaspeti": 6,
    "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "U Cluj vine după 3-0 la Corvinul și 3-1 la CFR în Cupă; FCSB are 3 înfrângeri în ultimele 4 deplasări. Absențe neverificate în această rulare (surse fără date proaspete)."
+   "absenti_oaspeti": [
+    "Stiller (mijlocaș) – accidentat",
+    "Sauer (atacant) – accidentat",
+    "Vagnoman (fundaș) – accidentat",
+    "Diehl – indisponibil",
+    "Zagadou (fundaș) – indisponibil"
+   ],
+   "marcatori_gazde": "Osimhen (10 goluri în 10 meciuri)",
+   "marcatori_oaspeti": "Demirović (dublă vs Leverkusen)"
   },
   {
-   "data": "2026-11-02",
-   "ora": "20:00",
-   "liga": "Premier League",
-   "gazde": "Newcastle",
-   "oaspeti": "Everton",
+   "data": "2026-11-03",
+   "ora": "19:45",
+   "liga": "Champions League",
+   "gazde": "Shakhtar Donetsk",
+   "oaspeti": "Sporting",
+   "loc_gazde": 17,
+   "loc_oaspeti": 11,
    "absenti_gazde": [
-    "Livramento (fundaș) – accidentat la genunchi",
-    "Miley (mijlocaș) – incert, accidentare musculară",
-    "Osula (atacant) – incert, gleznă",
-    "Fernández-Pardo – incert, boală"
+    "Marlon Santos (fundaș) – accidentat"
    ],
-   "absenti_oaspeti": [],
-   "nota": "Listă oficială FPL din 30.10; Everton fără semnalări."
+   "absenti_oaspeti": [
+    "Nuno Santos (fundaș) – accidentat",
+    "Debast (fundaș) – accidentat",
+    "Zalazar (mijlocaș) – revine după 5 meciuri"
+   ],
+   "nota": "Sporting are antrenor interimar (Tiago Fernandes) după plecarea lui Rui Borges."
+  },
+  {
+   "data": "2026-11-03",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Atletico Madrid",
+   "oaspeti": "Bayern Munchen",
+   "loc_gazde": 16,
+   "loc_oaspeti": 14,
+   "absenti_gazde": [
+    "Hjulmand (mijlocaș) – suspendat",
+    "Cardoso (mijlocaș) – accidentat",
+    "Koke (mijlocaș) – incert"
+   ],
+   "absenti_oaspeti": [
+    "Luis Díaz (atacant) – accidentat",
+    "Gnabry (atacant) – accidentat",
+    "Musiala (mijlocaș ofensiv) – accidentat",
+    "Saibari – accidentat",
+    "Neuer (portar) – incert",
+    "Olise (extremă) – incert"
+   ],
+   "nota": "Bayern a remizat 2-2 cu Dortmund în weekend."
+  },
+  {
+   "data": "2026-11-03",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Barcelona",
+   "oaspeti": "Aston Villa",
+   "loc_gazde": 8,
+   "loc_oaspeti": 2,
+   "absenti_gazde": [
+    "Christensen (fundaș) – accidentat",
+    "Eric García (fundaș) – accidentat",
+    "Koundé (fundaș) – accidentat",
+    "Xavi Espart – accidentat",
+    "Olmo (mijlocaș ofensiv) – accidentat"
+   ],
+   "absenti_oaspeti": [
+    "Ruggeri (fundaș) – accidentat",
+    "Wan-Bissaka (fundaș) – accidentat",
+    "Onana (mijlocaș) – accidentat"
+   ],
+   "nota": "Aston Villa a câștigat toate cele 3 meciuri din faza ligii; Barcelona a pierdut Clásico cu Real Madrid."
+  },
+  {
+   "data": "2026-11-03",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Feyenoord",
+   "oaspeti": "Inter",
+   "loc_gazde": 26,
+   "loc_oaspeti": 20,
+   "absenti_gazde": [
+    "Bos – accidentat",
+    "Moder (mijlocaș) – incert",
+    "Nelson – accidentat",
+    "Nieuwkoop (fundaș) – accidentat",
+    "Smal – accidentat",
+    "St. Juste (fundaș) – incert"
+   ],
+   "absenti_oaspeti": [
+    "Bastoni (fundaș) – suspendat",
+    "Lautaro Martínez (atacant) – bolnav/accidentat",
+    "Stones – accidentat",
+    "Jones – accidentat",
+    "Luis Henrique – incert"
+   ]
+  },
+  {
+   "data": "2026-11-03",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Bodo/Glimt",
+   "oaspeti": "Lille",
+   "loc_gazde": 28,
+   "loc_oaspeti": 35,
+   "absenti_gazde": [
+    "Ejven – accidentat",
+    "Faye Lund – accidentat",
+    "Riisnæs – accidentat",
+    "Mikkelsen – accidentat"
+   ],
+   "absenti_oaspeti": [
+    "Mbappé – suspendat",
+    "Tiago Santos (fundaș) – accidentat",
+    "Ueda – accidentat"
+   ],
+   "nota": "Lille are 0 puncte după 3 etape; Bodo/Glimt a câștigat ultimele 6 meciuri de acasă în CL."
+  },
+  {
+   "data": "2026-11-03",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "LASK",
+   "oaspeti": "Slovan Bratislava",
+   "loc_gazde": 24,
+   "loc_oaspeti": 36,
+   "absenti_gazde": [
+    "Bello – incert",
+    "Kebe – accidentat",
+    "Smakaj – accidentat",
+    "Harakate – accidentat"
+   ],
+   "absenti_oaspeti": [
+    "Čerepkai – accidentat/incert"
+   ],
+   "nota": "Slovan a pierdut toate meciurile de CL."
+  },
+  {
+   "data": "2026-11-03",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Manchester United",
+   "oaspeti": "Roma",
+   "forma_gazde": "IEIII",
+   "forma_oaspeti": "VVEVV",
+   "loc_gazde": 21,
+   "loc_oaspeti": 15,
+   "absenti_gazde": [
+    "Šeško (atacant) – accidentat",
+    "Rashford (atacant) – accidentat",
+    "Shaw (fundaș) – accidentat",
+    "Dorgu (fundaș) – accidentat/incert",
+    "Diallo – incert"
+   ],
+   "absenti_oaspeti": [
+    "Koné (mijlocaș) – accidentat",
+    "Pellegrini (mijlocaș) – accidentat",
+    "Svilar (portar) – accidentat",
+    "Dybala (atacant) – incert"
+   ],
+   "marcatori_oaspeti": "Malen (3 goluri în ultimele 2 meciuri de CL)",
+   "nota": "United nu a câștigat în ultimele 9 meciuri."
+  },
+  {
+   "data": "2026-11-03",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Villarreal",
+   "oaspeti": "PSG",
+   "loc_gazde": 19,
+   "loc_oaspeti": 1,
+   "absenti_gazde": [
+    "Akhomach – accidentat",
+    "Foyth (fundaș) – accidentat",
+    "Moreno (atacant) – accidentat",
+    "Saliba – accidentat"
+   ],
+   "absenti_oaspeti": [
+    "Dembélé (atacant) – accidentat",
+    "Kvaratskhelia (extremă) – accidentat",
+    "Marquinhos (fundaș) – accidentat",
+    "Nuno Mendes (fundaș) – accidentat"
+   ],
+   "nota": "PSG a câștigat ultimele 6 meciuri la diferență de minim 2 goluri."
   }
  ]
 }
