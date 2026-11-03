@@ -2546,5 +2546,66 @@
   "ids": [
    14738995
   ]
+ },
+ {
+  "id": "2026-11-03-cota2",
+  "data": "2026-11-03",
+  "tip": "Cotă 2",
+  "cota": 1.9,
+  "sansa": 0.52,
+  "status": "în așteptare",
+  "cod": "9917-WWO6SX",
+  "selectii": "22:00 Feyenoord – Inter: 2 (1.90)",
+  "rezultat": "",
+  "motive": [
+   "Inter a câștigat 4 din ultimele 5 meciuri și a dus ambele dubluri cu Feyenoord (2-0, 2-1); Feyenoord are doar 2 victorii din 5 (WWLDD), probabilitate de piață ~50%."
+  ],
+  "ids": [
+   14739002
+  ]
+ },
+ {
+  "id": "2026-11-03-cota5",
+  "data": "2026-11-03",
+  "tip": "Cotă 5",
+  "cota": 5.55,
+  "sansa": 0.1747,
+  "status": "în așteptare",
+  "cod": "991U-W3B8YW",
+  "selectii": "22:00 Feyenoord – Inter: 2 (1.90) · 22:00 Bodo/Glimt – Lille: 1 (1.69) · 22:00 Villarreal – PSG: 2 (1.73)",
+  "rezultat": "",
+  "motive": [
+   "Inter a câștigat 4 din ultimele 5 meciuri și a dus ambele dubluri cu Feyenoord (2-0, 2-1); Feyenoord are doar 2 victorii din 5 (WWLDD), probabilitate de piață ~50%.",
+   "Bodo are 4 victorii, 1 egal în 5 meciuri acasă (12:3), iar Lille a luat 0 puncte din primele 3 etape și are 2V-1E-2Î în deplasare; piață ~56%.",
+   "PSG vine cu 5 victorii din 5 (5-1 la Le Havre), iar Villarreal are 2 victorii din 5 și a pierdut cu 0-1 acasă cu Espanyol; piață ~55%."
+  ],
+  "ids": [
+   14739002,
+   14739003,
+   14739004
+  ]
+ },
+ {
+  "id": "2026-11-03-cota10",
+  "data": "2026-11-03",
+  "tip": "Cotă 10",
+  "cota": 11.64,
+  "sansa": 0.0843,
+  "status": "în așteptare",
+  "cod": "991V-WM8721",
+  "selectii": "22:00 Bodo/Glimt – Lille: 1 (1.69) · 22:00 Villarreal – PSG: 2 (1.73) · 22:00 Manchester United – AS Roma: 2 (2.95) · 22:00 LASK Linz – Slovan Bratislava: 1 (1.37)",
+  "rezultat": "",
+  "motive": [
+   "Bodo are 4 victorii, 1 egal în 5 meciuri acasă (12:3), iar Lille a luat 0 puncte din primele 3 etape și are 2V-1E-2Î în deplasare; piață ~56%.",
+   "PSG vine cu 5 victorii din 5 (5-1 la Le Havre), iar Villarreal are 2 victorii din 5 și a pierdut cu 0-1 acasă cu Espanyol; piață ~55%.",
+   "United nu are nicio victorie în ultimele 5 (LDLLL, 0-2 cu Chelsea), Roma are 4 victorii din 5 (5-2 la Udinese); cotă mare, încredere mai scăzută.",
+   "Slovan are 1 victorie din 5 (4 goluri marcate, 15 primite), iar LASK are 2V-3Î dar 11 goluri marcate; încredere moderată, piață ~69%."
+  ],
+  "ids": [
+   14739003,
+   14739004,
+   14738996,
+   14739005
+  ]
  }
 ]
