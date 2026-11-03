@@ -2551,60 +2551,170 @@
   "id": "2026-11-03-cota2",
   "data": "2026-11-03",
   "tip": "Cotă 2",
-  "cota": 1.9,
-  "sansa": 0.52,
+  "cota": 1.95,
+  "sansa": 0.5925,
   "status": "în așteptare",
-  "cod": "9917-WWO6SX",
-  "selectii": "22:00 Feyenoord – Inter: 2 (1.90)",
+  "cod": "9916-KHX7FW",
+  "selectii": "22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.36) · 22:00 LASK Linz – Slovan Bratislava: Slovan Bratislava peste 0.5 goluri (1.44)",
   "rezultat": "",
   "motive": [
-   "Inter a câștigat 4 din ultimele 5 meciuri și a dus ambele dubluri cu Feyenoord (2-0, 2-1); Feyenoord are doar 2 victorii din 5 (WWLDD), probabilitate de piață ~50%."
+   "Barcelona fără Koundé, Christensen și E. García în apărare; formă combinată (ultimele 10, toate competițiile) ~90% ca Villa să marcheze, piață ~68%. Fără H2H. Șansă estimată ~79%.",
+   "LASK fără Kebe, Smakaj, Harakate în lot; formă combinată ~85% ca Slovan să marcheze (2 goluri date/meci în ultimele 10), piață ~65%. Șansă ~75%."
   ],
   "ids": [
-   14739002
+   14738995,
+   14739005
   ]
  },
  {
   "id": "2026-11-03-cota5",
   "data": "2026-11-03",
   "tip": "Cotă 5",
-  "cota": 5.55,
-  "sansa": 0.1747,
+  "cota": 4.5,
+  "sansa": 0.2458,
   "status": "în așteptare",
-  "cod": "991U-W3B8YW",
-  "selectii": "22:00 Feyenoord – Inter: 2 (1.90) · 22:00 Bodo/Glimt – Lille: 1 (1.69) · 22:00 Villarreal – PSG: 2 (1.73)",
+  "cod": "9906-NDP689",
+  "selectii": "22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.36) · 22:00 LASK Linz – Slovan Bratislava: Slovan Bratislava peste 0.5 goluri (1.44) · 22:00 Villarreal – PSG: Peste 2.5 (1.38) · 19:45 Shakhtar Donetsk – Sporting Lisabona: Peste 2.5 (1.68)",
   "rezultat": "",
   "motive": [
-   "Inter a câștigat 4 din ultimele 5 meciuri și a dus ambele dubluri cu Feyenoord (2-0, 2-1); Feyenoord are doar 2 victorii din 5 (WWLDD), probabilitate de piață ~50%.",
-   "Bodo are 4 victorii, 1 egal în 5 meciuri acasă (12:3), iar Lille a luat 0 puncte din primele 3 etape și are 2V-1E-2Î în deplasare; piață ~56%.",
-   "PSG vine cu 5 victorii din 5 (5-1 la Le Havre), iar Villarreal are 2 victorii din 5 și a pierdut cu 0-1 acasă cu Espanyol; piață ~55%."
+   "Barcelona fără Koundé, Christensen și E. García în apărare; formă combinată (ultimele 10, toate competițiile) ~90% ca Villa să marcheze, piață ~68%. Fără H2H. Șansă estimată ~79%.",
+   "LASK fără Kebe, Smakaj, Harakate în lot; formă combinată ~85% ca Slovan să marcheze (2 goluri date/meci în ultimele 10), piață ~65%. Șansă ~75%.",
+   "PSG 3.1 goluri date și 1.1 primite pe meci în ultimele 10, Villarreal 2.0/1.2; formă ~75% peste 2.5, piață ~69%; PSG fără Dembélé, Kvaratskhelia, Marquinhos, N. Mendes. Șansă ~68%.",
+   "Shakhtar 2.2 goluri date/meci, Sporting 2.0 date și 1.1 primite (antrenor interimar, Nuno Santos și Debast out); formă ~65% peste 2.5, piață ~56%. Șansă ~61%."
   ],
   "ids": [
-   14739002,
-   14739003,
-   14739004
+   14738995,
+   14739005,
+   14739004,
+   14738992
   ]
  },
  {
   "id": "2026-11-03-cota10",
   "data": "2026-11-03",
   "tip": "Cotă 10",
-  "cota": 11.64,
-  "sansa": 0.0843,
+  "cota": 9.55,
+  "sansa": 0.1475,
   "status": "în așteptare",
-  "cod": "991V-WM8721",
-  "selectii": "22:00 Bodo/Glimt – Lille: 1 (1.69) · 22:00 Villarreal – PSG: 2 (1.73) · 22:00 Manchester United – AS Roma: 2 (2.95) · 22:00 LASK Linz – Slovan Bratislava: 1 (1.37)",
+  "cod": "990I-ND6V0I",
+  "selectii": "22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.36) · 22:00 LASK Linz – Slovan Bratislava: Slovan Bratislava peste 0.5 goluri (1.44) · 22:00 Villarreal – PSG: Peste 2.5 (1.38) · 19:45 Shakhtar Donetsk – Sporting Lisabona: Peste 2.5 (1.68) · 22:00 Manchester United – AS Roma: AS Roma peste 1.5 goluri (2.12)",
   "rezultat": "",
   "motive": [
-   "Bodo are 4 victorii, 1 egal în 5 meciuri acasă (12:3), iar Lille a luat 0 puncte din primele 3 etape și are 2V-1E-2Î în deplasare; piață ~56%.",
-   "PSG vine cu 5 victorii din 5 (5-1 la Le Havre), iar Villarreal are 2 victorii din 5 și a pierdut cu 0-1 acasă cu Espanyol; piață ~55%.",
-   "United nu are nicio victorie în ultimele 5 (LDLLL, 0-2 cu Chelsea), Roma are 4 victorii din 5 (5-2 la Udinese); cotă mare, încredere mai scăzută.",
-   "Slovan are 1 victorie din 5 (4 goluri marcate, 15 primite), iar LASK are 2V-3Î dar 11 goluri marcate; încredere moderată, piață ~69%."
+   "Barcelona fără Koundé, Christensen și E. García în apărare; formă combinată (ultimele 10, toate competițiile) ~90% ca Villa să marcheze, piață ~68%. Fără H2H. Șansă estimată ~79%.",
+   "LASK fără Kebe, Smakaj, Harakate în lot; formă combinată ~85% ca Slovan să marcheze (2 goluri date/meci în ultimele 10), piață ~65%. Șansă ~75%.",
+   "PSG 3.1 goluri date și 1.1 primite pe meci în ultimele 10, Villarreal 2.0/1.2; formă ~75% peste 2.5, piață ~69%; PSG fără Dembélé, Kvaratskhelia, Marquinhos, N. Mendes. Șansă ~68%.",
+   "Shakhtar 2.2 goluri date/meci, Sporting 2.0 date și 1.1 primite (antrenor interimar, Nuno Santos și Debast out); formă ~65% peste 2.5, piață ~56%. Șansă ~61%.",
+   "Roma 2.6 goluri date/meci în ultimele 10, United 1.0 date și 1.8 primite și fără victorie în ultimele 9; absențe de ambele părți (Dybala incert, Svilar, Koné / Šeško, Rashford). Încredere moderată, ~60%."
   ],
   "ids": [
-   14739003,
+   14738995,
+   14739005,
    14739004,
-   14738996,
+   14738992,
+   14738996
+  ]
+ },
+ {
+  "id": "2026-11-03-cl10",
+  "data": "2026-11-03",
+  "tip": "Cotă 10 CL",
+  "cota": 10.73,
+  "sansa": 0.1143,
+  "status": "în așteptare",
+  "cod": "990J-KMQ31I",
+  "selectii": "22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.36) · 22:00 LASK Linz – Slovan Bratislava: Slovan Bratislava peste 0.5 goluri (1.44) · 22:00 Villarreal – PSG: Peste 2.5 (1.38) · 04.11 22:00 Viking – Sabah Baku: Peste 2.5 (1.36) · 04.11 22:00 RB Leipzig – Manchester City: Peste 2.5 (1.35) · 04.11 19:45 AEK Atena – Real Madrid: AEK peste 0.5 goluri (1.58) · 04.11 19:45 Fenerbahce – Liverpool: Fenerbahce peste 0.5 goluri (1.38)",
+  "rezultat": "",
+  "motive": [
+   "Barcelona fără Koundé, Christensen și E. García în apărare; formă combinată (ultimele 10, toate competițiile) ~90% ca Villa să marcheze, piață ~68%. Fără H2H. Șansă estimată ~79%.",
+   "LASK fără Kebe, Smakaj, Harakate în lot; formă combinată ~85% ca Slovan să marcheze (2 goluri date/meci în ultimele 10), piață ~65%. Șansă ~75%.",
+   "PSG 3.1 goluri date și 1.1 primite pe meci în ultimele 10, Villarreal 2.0/1.2; formă ~75% peste 2.5, piață ~69%; PSG fără Dembélé, Kvaratskhelia, Marquinhos, N. Mendes. Șansă ~68%.",
+   "Formă combinată ~80% peste 2.5, piață ~70%; absențele nu au putut fi verificate. Șansă ~75%.",
+   "Formă ~75% peste 2.5, H2H 4/5 cu peste 2.5, piață ~70%; absențele nu au putut fi verificate. Șansă ~74%.",
+   "Formă combinată ~85% ca AEK să marcheze, piață ~59%; cotă mare 1.58; absențe neverificate. Șansă ~72%.",
+   "Formă combinată ~75%, piață ~67%; Liverpool cu probleme de lot raportate; absențe neverificate. Șansă ~71%."
+  ],
+  "ids": [
+   14738995,
+   14739005,
+   14739004,
+   14739010,
+   14739006,
+   14738997,
+   14738998
+  ]
+ },
+ {
+  "id": "2026-11-03-clmare",
+  "data": "2026-11-03",
+  "tip": "CL mare",
+  "cota": 28.39,
+  "sansa": 0.0338,
+  "status": "în așteptare",
+  "cod": "9902-KL68DP",
+  "selectii": "22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.36) · 22:00 LASK Linz – Slovan Bratislava: Slovan Bratislava peste 0.5 goluri (1.44) · 22:00 Villarreal – PSG: Peste 2.5 (1.38) · 04.11 22:00 Viking – Sabah Baku: Peste 2.5 (1.36) · 04.11 22:00 RB Leipzig – Manchester City: Peste 2.5 (1.35) · 04.11 19:45 AEK Atena – Real Madrid: AEK peste 0.5 goluri (1.58) · 04.11 19:45 Fenerbahce – Liverpool: Fenerbahce peste 0.5 goluri (1.38) · 04.11 22:00 Porto – Napoli: Napoli peste 0.5 goluri (1.36) · 04.11 22:00 PSV Eindhoven – Club Brugge: Peste 2.5 (1.35) · 22:00 Feyenoord Rotterdam – Inter Milano: Peste 2.5 (1.44)",
+  "rezultat": "",
+  "motive": [
+   "Barcelona fără Koundé, Christensen și E. García în apărare; formă combinată (ultimele 10, toate competițiile) ~90% ca Villa să marcheze, piață ~68%. Fără H2H. Șansă estimată ~79%.",
+   "LASK fără Kebe, Smakaj, Harakate în lot; formă combinată ~85% ca Slovan să marcheze (2 goluri date/meci în ultimele 10), piață ~65%. Șansă ~75%.",
+   "PSG 3.1 goluri date și 1.1 primite pe meci în ultimele 10, Villarreal 2.0/1.2; formă ~75% peste 2.5, piață ~69%; PSG fără Dembélé, Kvaratskhelia, Marquinhos, N. Mendes. Șansă ~68%.",
+   "Formă combinată ~80% peste 2.5, piață ~70%; absențele nu au putut fi verificate. Șansă ~75%.",
+   "Formă ~75% peste 2.5, H2H 4/5 cu peste 2.5, piață ~70%; absențele nu au putut fi verificate. Șansă ~74%.",
+   "Formă combinată ~85% ca AEK să marcheze, piață ~59%; cotă mare 1.58; absențe neverificate. Șansă ~72%.",
+   "Formă combinată ~75%, piață ~67%; Liverpool cu probleme de lot raportate; absențe neverificate. Șansă ~71%.",
+   "Formă combinată ~70% ca Napoli să marcheze, piață ~68%; absențe neverificate. Șansă ~69%.",
+   "Formă ~65% peste 2.5, piață ~70%; absențe neverificate. Șansă ~68%.",
+   "Formă ~70% peste 2.5 (Feyenoord 2.7 date/1.4 primite, Inter 2.3/1.6), piață ~66%; Inter fără Lautaro și Bastoni, Feyenoord fără 4 titulari în apărare — am coborât la ~63%. H2H doar 2 meciuri."
+  ],
+  "ids": [
+   14738995,
+   14739005,
+   14739004,
+   14739010,
+   14739006,
+   14738997,
+   14738998,
+   14739009,
+   14739011,
+   14739002
+  ]
+ },
+ {
+  "id": "2026-11-03-sc-acc",
+  "data": "2026-11-03",
+  "tip": "SuperCoins – Acumulator",
+  "cota": 4.12,
+  "sansa": 0.3555,
+  "status": "în așteptare",
+  "cod": "991H-WMEZ6N",
+  "selectii": "22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.36) · 22:00 LASK Linz – Slovan Bratislava: Slovan Bratislava peste 0.5 goluri (1.44) · 22:00 Manchester United – AS Roma: AS Roma peste 1.5 goluri (2.12)",
+  "rezultat": "",
+  "motive": [
+   "Barcelona fără Koundé, Christensen și E. García; formă ~90% ca Villa să marcheze. Șansă ~79%.",
+   "LASK fără 3 jucători din lot; formă ~85% ca Slovan să marcheze. Șansă ~75%.",
+   "Roma 2.6 goluri date/meci, United 1.8 primite; încredere moderată ~60%. Am comparat 3 selecții (cota 4.15, șansă ~36%) cu 4 selecții (cota ~4.06, șansă ~24%): 3 selecții au cea mai mare șansă. Miză minimă 20 lei."
+  ],
+  "ids": [
+   14738995,
+   14739005,
+   14738996
+  ]
+ },
+ {
+  "id": "2026-11-03-sc-bb",
+  "data": "2026-11-03",
+  "tip": "SuperCoins – Bet Builder",
+  "cota": 2.39,
+  "sansa": 0.45,
+  "status": "în așteptare",
+  "cod": "9904-KWMPEA",
+  "selectii": "22:00 Barcelona – Aston Villa: Bet Builder Aston Villa peste 0.5 goluri + Peste 2.5 (1.5) · 22:00 LASK Linz – Slovan Bratislava: Bet Builder Slovan Bratislava peste 0.5 goluri + Peste 2.5 (1.65)",
+  "rezultat": "",
+  "motive": [
+   "Barcelona fără 3 fundași titulari; Villa marchează (~79%) și meciul are peste 2.5 goluri (~66%), corelate pozitiv; preț real Superbet 1.50.",
+   "LASK primește gol des, Slovan marchează (~75%) și meciul are peste 2.5 (~78%); preț real Superbet 1.65. Cota totală 2.48, șansă ~45%; am comparat cu varianta pe un singur meci (cota 1.5, sub minimul de 2.00). Miză minimă 40 lei."
+  ],
+  "ids": [
+   14738995,
    14739005
   ]
  }
