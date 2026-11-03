@@ -2446,7 +2446,7 @@
   ],
   "ids": [
    14738995,
-   null,
+   14738996,
    14738997,
    14738998,
    14739006,
@@ -2489,10 +2489,10 @@
    "Lech 2.7 marcate și 0.9 primite/meci (xG 2.3) față de Zagłębie 1.3/1.3 (xG 1.4), acasă; estimat 68%."
   ],
   "ids": [
-   null,
+   14739001,
    14738995,
-   null,
-   null,
+   14738996,
+   14739002,
    14738998,
    14738997,
    14739006,
@@ -2522,7 +2522,10 @@
   "motive": [
    "Barcelona fără Koundé, Christensen și E. García în apărare și a primit gol în toate cele 3 meciuri de Liga Campionilor (toate cu GG și peste 2.5), iar Villa a marcat 12 goluri în 3 meciuri, câștigate toate. Estimez 80% șansă ca Villa să marcheze, față de ~71% implicit în cota 1.41; absențele Villa (Onana, Ruggeri, Wan-Bissaka) sunt în defensivă/mijloc, nu în atac."
   ],
-  "sport": "fotbal"
+  "sport": "fotbal",
+  "ids": [
+   14738995
+  ]
  },
  {
   "id": "2026-11-03-challenge",
@@ -2531,7 +2534,7 @@
   "cota": 1.41,
   "sansa": 0.8,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "990G-KK8BTN",
   "selectii": "22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.41)",
   "rezultat": "",
   "motive": [
@@ -2539,6 +2542,9 @@
   ],
   "sport": "fotbal",
   "ciclu": 3,
-  "pas": 1
+  "pas": 1,
+  "ids": [
+   14738995
+  ]
  }
 ]
