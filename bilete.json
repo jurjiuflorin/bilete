@@ -1412,10 +1412,10 @@
   "tip": "SuperLiga",
   "cota": 6.78,
   "sansa": 0.1727,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9905-ND6DOP",
   "selectii": "30.10 20:30 Rapid – Csikszereda: Rapid peste 1.5 goluri (1.36) · 01.11 17:30 U Craiova – Botoșani: Bet Builder 1 + Craiova peste 0.5 goluri (1.39) · 01.11 20:30 Dinamo – UTA: Peste 8.5 cornere (1.54) · 02.11 17:30 Voluntari – Farul: X2 (1.43) · 02.11 20:30 U Cluj – FCSB: Peste 2.5 (1.63)",
-  "rezultat": "Rapid 2-0 Csikszereda · Craiova 2-1 Botoșani · Dinamo–UTA 2-0 (9 cornere) · Voluntari–Farul și U Cluj–FCSB încă de jucat",
+  "rezultat": "Rapid 2-0 Csikszereda · Craiova 2-1 Botoșani · Dinamo–UTA 2-0 (9 cornere) · Voluntari–Farul 1-2 (X2 câștigat) · U Cluj–FCSB 1-0 (Peste 2.5 pierdut)",
   "motive": [
    "Rapid a câștigat 7 din ultimele 10 și dă 1,6 goluri pe meci, iar Csikszereda a pierdut 7 din 10 și primește 2 pe meci; estimez ~72% pentru 2+ goluri ale Rapidului.",
    "Craiova e neînvinsă în ultimele 10 (8 victorii), primește doar 0,7 goluri pe meci și are xG 2,5; Botoșani a pierdut 4 din ultimele 10. Estimez ~72%. Pus ca Bet Builder (1 + Craiova marchează, cotă practic aceeași) ca biletul să aibă minimum un Bet Builder.",
@@ -2159,10 +2159,10 @@
   "tip": "Weekend (refăcut)",
   "cota": 40.55,
   "sansa": 0.0148,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9908-KWQXA0",
   "selectii": "01.11 15:00 Getafe – Sevilla: Sevilla peste 0.5 goluri (1.41) · 01.11 17:15 Racing Santander – Real Madrid: Real Madrid peste 2.5 goluri (1.51) · 01.11 17:30 U Craiova – Botoșani: 1 (1.36) · 01.11 18:00 Kasımpaşa – Beșiktaș: Kasımpaşa peste 0.5 goluri (1.51) · 01.11 18:00 KFUM Oslo – HamKam: HamKam peste 0.5 goluri (1.35) · 01.11 18:30 Liverpool – Arsenal: Sub 2.5 (1.72) · 01.11 19:00 Brøndby – AGF Aarhus: 1X (1.37) · 01.11 19:30 Elche – Valencia: Valencia peste 0.5 goluri (1.35) · 01.11 22:30 Braga – Famalicão: Peste 1.5 (1.41) · 02.11 20:30 U Cluj – FCSB: Peste 2.5 (1.63)",
-  "rezultat": "Getafe 3-1 Sevilla · Racing 0-3 Real Madrid · Craiova 2-1 Botoșani · Kasımpaşa 2-2 Beșiktaș · KFUM 2-2 HamKam · Liverpool 0-1 Arsenal · Brøndby 2-0 AGF · Elche 0-1 Valencia · Braga 3-0 Famalicão · U Cluj–FCSB încă de jucat",
+  "rezultat": "Getafe 3-1 Sevilla · Racing 0-3 Real Madrid · Craiova 2-1 Botoșani · Kasımpaşa 2-2 Beșiktaș · KFUM 2-2 HamKam · Liverpool 0-1 Arsenal · Brøndby 2-0 AGF · Elche 0-1 Valencia · Braga 3-0 Famalicão · U Cluj–FCSB 1-0 (Peste 2.5 pierdut)",
   "ids": [
    14351074,
    14351076,
@@ -2508,5 +2508,37 @@
    14438665,
    14438715
   ]
+ },
+ {
+  "id": "2026-11-03-pariu",
+  "data": "2026-11-03",
+  "tip": "Pariul zilei",
+  "cota": 1.41,
+  "sansa": 0.8,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.41)",
+  "rezultat": "",
+  "motive": [
+   "Barcelona fără Koundé, Christensen și E. García în apărare și a primit gol în toate cele 3 meciuri de Liga Campionilor (toate cu GG și peste 2.5), iar Villa a marcat 12 goluri în 3 meciuri, câștigate toate. Estimez 80% șansă ca Villa să marcheze, față de ~71% implicit în cota 1.41; absențele Villa (Onana, Ruggeri, Wan-Bissaka) sunt în defensivă/mijloc, nu în atac."
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-03-challenge",
+  "data": "2026-11-03",
+  "tip": "Challenge 1.40",
+  "cota": 1.41,
+  "sansa": 0.8,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:00 Barcelona – Aston Villa: Aston Villa peste 0.5 goluri (1.41)",
+  "rezultat": "",
+  "motive": [
+   "Cea mai sigură selecție a zilei în intervalul 1.35-1.50: Villa a marcat 12 goluri în 3 meciuri europene, iar Barcelona primește goluri constant și are 3 apărători out. Ciclul 3 începe după pierderea de ieri (Benfica–Alverca), șansă estimată 80%."
+  ],
+  "sport": "fotbal",
+  "ciclu": 3,
+  "pas": 1
  }
 ]
