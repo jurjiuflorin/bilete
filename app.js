@@ -1410,6 +1410,11 @@ $('tabs').addEventListener('click', e => {
   chips(); render();
 });
 $('q').addEventListener('input', e => { q = nrm(e.target.value.trim()); render(); });
+// click pe titlu = înapoi la prima pagină (De jucat, fără filtre)
+{ const h1 = document.querySelector('.head h1'); if (h1) { h1.style.cursor = 'pointer'; h1.setAttribute('role', 'link'); h1.tabIndex = 0; h1.title = 'Prima pagină';
+  const home = () => { tab = 'p'; tip = ''; q = ''; liveOnly = false; const qi = $('q'); if (qi) qi.value = ''; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === 'p')); try { history.replaceState(null, '', '#p'); } catch (err) {} chips(); render(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
+  h1.addEventListener('click', home); h1.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); home(); } }); } }
+
 
 /* ---------- start ---------- */
 const h0 = (location.hash || '').slice(1); if (['p', 'm', 'c', 'h', 'r', 's', 'x'].includes(h0)) { tab = h0; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); }
