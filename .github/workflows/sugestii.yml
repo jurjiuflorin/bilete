@@ -3,11 +3,17 @@ on:
   schedule:
     - cron: '30 6 * * *'   # ~08:30-09:30 la București
     - cron: '30 8 * * *'   # rezervă, dacă prima rulare a picat
+    - cron: '0 5 * * *'    # rezervă suplimentară (GitHub întârzie rulările programate)
+    - cron: '0 7 * * *'
     - cron: '15 22 * * *'  # rezultatele zilei, după ultimele meciuri
   workflow_dispatch:
     inputs:
       force:
         description: 'Rescrie lista de azi'
+        type: boolean
+        default: false
+      candidati:
+        description: 'Rescrie doar tabelul de candidați de azi'
         type: boolean
         default: false
 permissions:
@@ -24,10 +30,12 @@ jobs:
       - run: |
           mkdir -p sugestii
           node scripts/sugestii.mjs ${{ inputs.force && '--force' || '' }} 2>&1 | tee sugestii/ultima-rulare.txt
+          mkdir -p candidati
+          node scripts/candidati.mjs ${{ (inputs.force || inputs.candidati) && '--force' || '' }} 2>&1 | tee -a sugestii/ultima-rulare.txt
           node scripts/sugestii-rezultate.mjs 2>&1 | tee -a sugestii/ultima-rulare.txt
       - name: Commit
         run: |
-          git add sugestii
+          git add sugestii candidati
           if git diff --cached --quiet; then exit 0; fi
           git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -m "Sugestii $(TZ=Europe/Bucharest date +%F)"
           for i in 1 2 3; do git push && exit 0; git pull --rebase; done
