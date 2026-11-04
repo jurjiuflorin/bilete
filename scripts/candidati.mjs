@@ -170,5 +170,5 @@ if (clM >= 4) {
 }
 const total = Object.values(plan).length;
 fs.mkdirSync('candidati', { recursive: true });
-fs.writeFileSync(file, JSON.stringify({ data: key, salvat: now.toISOString(), meciuri: infos.length, nota: 'p = 0,4 piață + 0,4 formă(ultimele 10, toate competițiile) + 0,2 H2H; pm = piață fără marjă; pform = doar formă. plan = variantă fără meciuri repetate pe cât posibil; propuneri = variante alternative. Fiecare selecție are mk/ou pentru cod.', plan, propuneri, picks: picks.sort((a, b) => b.p - a.p) }) + '\n');
+fs.writeFileSync(file, JSON.stringify({ data: key, salvat: now.toISOString(), meciuri: infos.length, nota: 'p = 0,4 piață + 0,4 formă(ultimele 10, toate competițiile) + 0,2 H2H; pm = piață fără marjă; pform = doar formă. plan = variantă fără meciuri repetate pe cât posibil; propuneri = variante alternative. Fiecare selecție are mk/ou pentru cod.', plan, propuneri, info: infos, picks: picks.sort((a, b) => b.p - a.p) }) + '\n');
 console.log('scris', file, 'plan', Object.fromEntries(Object.entries(plan).map(([k, v]) => [k, v.cota + ' / ' + v.p])), 'variante', Object.fromEntries(Object.entries(propuneri).map(([k, v]) => [k, v.length])), total);
