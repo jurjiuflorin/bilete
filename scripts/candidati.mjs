@@ -119,9 +119,9 @@ picks.forEach((p, i) => { p.k = 'c' + i; });
 console.log('candidati', picks.length, 'din', infos.length, 'meciuri');
 
 // ---- optimizare ----
-const eligible = (p, minP) => p.p >= minP && p.pform >= p.pm - 0.03 && !(p.kind === 'tot' && /3\.5/.test(p.sel));
+const eligible = (p, minP) => p.p >= minP && p.pform >= p.pm - 0.03 && p.pform <= p.pm + 0.15 && !(p.kind === 'tot' && /3\.5/.test(p.sel));
 const S = {
-  cota2: { n: [2, 3], cota: [1.85, 2.30], minP: 0.62, odds: [1.35, 1.50], comb: 0.50, tg: 1 },
+  cota2: { n: [2, 3], cota: [1.85, 2.30], minP: 0.62, odds: [1.35, 1.50], comb: 0.46, tg: 1 },
   cota5: { n: [3, 4], cota: [4.5, 6.0], minP: 0.60, odds: [1.35, 2.1], comb: 0.18, tg: 2 },
   cota10: { n: [4, 6], cota: [9.0, 12.0], minP: 0.60, odds: [1.35, 2.1], comb: 0.08, tg: 2 },
 };
@@ -139,7 +139,7 @@ function search(pool_, spec, usage, top = 3) {
       cur.push(x); used.add(x.id); rec(j + 1, prod * x.od, pp * x.p, used, tg + (x.kind === 'tg' ? 1 : 0)); cur.pop(); used.delete(x.id); }
   };
   rec(0, 1, 1, new Set(), 0);
-  const sc_ = s => s.p * Math.pow(0.85, s.m.filter(id => usage.match[id]).length);
+  const sc_ = s => s.p * Math.pow(0.6, s.m.filter(id => usage.match[id]).length);
   sols.sort((a, b) => sc_(b) - sc_(a));
   // variante cât mai diferite: maximum 1 meci comun cu o variantă deja aleasă
   const chosen = []; for (const s of sols) { if (chosen.every(c => c.m.filter(id => s.m.includes(id)).length <= 1)) chosen.push(s); if (chosen.length >= top) break; }
