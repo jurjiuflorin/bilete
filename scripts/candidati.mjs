@@ -155,7 +155,7 @@ const single = (spec, excl) => { const L = todayP.filter(p => eligible(p, spec.m
   for (const p of L) { if (spec.edge && p.p - 1 / p.od < spec.edge) continue; if (seen.has(p.id)) continue; seen.add(p.id); o.push({ legs: [p.k], cota: p.od, p: p.p, m: [p.id], edge: r3(p.p - 1 / p.od) }); if (o.length >= 4) break; } return o; };
 // ordine: Cotă 2, Pariul zilei, Challenge, Cotă 5, Cotă 10 (cele mai importante primele); fiecare ia în calcul meciurile deja folosite
 propuneri.cota2 = search(todayP, S.cota2, usage); if (propuneri.cota2[0]) { plan.cota2 = propuneri.cota2[0]; use(plan.cota2); }
-const ex = { k: new Set(), m: new Set() };
+const ex = { k: new Set(), m: new Set(plan.cota2 ? plan.cota2.m : []) }; // Cotă 2 are prioritate: își alege primul cele mai bune meciuri, iar Pariul zilei și Challenge nu le iau
 propuneri.pariu = single({ minP: 0.55, odds: [1.40, 2.6], edge: 0.05 }, ex); if (propuneri.pariu[0]) { plan.pariu = propuneri.pariu[0]; use(plan.pariu); reserved.add(plan.pariu.legs[0]); ex.k.add(plan.pariu.legs[0]); ex.m.add(plan.pariu.m[0]); }
 propuneri.challenge = single({ minP: 0.65, odds: [1.35, 1.50] }, ex); if (propuneri.challenge[0]) { plan.challenge = propuneri.challenge[0]; use(plan.challenge); reserved.add(plan.challenge.legs[0]); }
 propuneri.cota5 = search(todayP, S.cota5, usage); if (propuneri.cota5[0]) { plan.cota5 = propuneri.cota5[0]; use(plan.cota5); }
