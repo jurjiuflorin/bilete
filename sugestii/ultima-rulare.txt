@@ -1,5 +1,5 @@
 exista deja sugestii/2026-11-04.json
-evenimente 1891 meciuri 48
+evenimente 1888 meciuri 48
 candidati 245 din 48 meciuri
 scris candidati/2026-11-04.json plan {
   cota2: '1.92 / 0.473',
