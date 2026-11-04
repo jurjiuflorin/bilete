@@ -1,18 +1,19 @@
 exista deja sugestii/2026-11-04.json
-evenimente 1876 meciuri 48
+evenimente 1883 meciuri 48
 candidati 246 din 48 meciuri
 scris candidati/2026-11-04.json plan {
-  pariu: '2.32 / 0.56',
+  cota2: '1.92 / 0.473',
+  pariu: '1.74 / 0.657',
   challenge: '1.37 / 0.697',
-  cota5: '4.65 / 0.273',
-  cota10: '9.66 / 0.112'
+  cota5: '4.59 / 0.258',
+  cota10: '9.13 / 0.115'
 } variante {
-  cota2: 0,
-  pariu: 3,
+  cota2: 2,
+  pariu: 1,
   challenge: 4,
   cota5: 3,
   cota10: 3,
   cl10: 0,
   clmare: 0
-} 4
+} 5
 index 11 zile
