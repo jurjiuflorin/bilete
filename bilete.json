@@ -2717,5 +2717,71 @@
    14738995,
    14739005
   ]
+ },
+ {
+  "id": "2026-11-04-cota2",
+  "data": "2026-11-04",
+  "tip": "Cotă 2",
+  "cota": 2.21,
+  "sansa": 0.42,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:00 RB Leipzig – Manchester City: 2 (Manchester City câștigă) (1.58) · 22:00 Lens – Como: X2 (1.4)",
+  "rezultat": "",
+  "motive": [
+   "City 62% pe piață (Kalshi), 30 de goluri în 6 dueluri directe cu Leipzig, Haaland 12 goluri în 8 meciuri vs Leipzig; șansă ~60%.",
+   "Como 45% victorie pe piață, a bătut United cu 4-1; Lens acasă puternic, dar dublă șansă acoperă egalul; șansă ~70%.",
+   "Încredere redusă: cotele sunt estimate din piețele publice (feed-ul Superbet nu a fost accesibil), nu cotele exacte Superbet."
+  ],
+  "ids": [
+   14739006,
+   14739008
+  ]
+ },
+ {
+  "id": "2026-11-04-cota5",
+  "data": "2026-11-04",
+  "tip": "Cotă 5",
+  "cota": 4.57,
+  "sansa": 0.1814,
+  "status": "în așteptare",
+  "cod": "9908-KWQXJ5",
+  "selectii": "22:00 RB Leipzig – Manchester City: 2 (Manchester City câștigă) (1.58) · 22:00 Borussia Dortmund – Real Betis: 1 (Dortmund câștigă) (1.7) · 22:00 Slavia Praga – Arsenal: Peste 2.5 (1.7)",
+  "rezultat": "",
+  "motive": [
+   "City 62% pe piață (Kalshi), 30 de goluri în 6 dueluri directe cu Leipzig, Haaland 12 goluri în 8 meciuri vs Leipzig; șansă ~60%.",
+   "Dortmund 56% pe piață, 4 victorii consecutive acasă cu echipe spaniole; Betis 3/3 în CL, risc real; șansă ~54%.",
+   "Arsenal neînvins în 18 meciuri CL consecutive, multe goluri în deplasare; Slavia permite spațiu; piață+formă ~56% peste 2.5.",
+   "Încredere redusă: cotele sunt estimate din piețele publice (feed-ul Superbet nu a fost accesibil), nu cotele exacte Superbet."
+  ],
+  "ids": [
+   14739006,
+   14738999,
+   14739007
+  ]
+ },
+ {
+  "id": "2026-11-04-cota10",
+  "data": "2026-11-04",
+  "tip": "Cotă 10",
+  "cota": 7.62,
+  "sansa": 0.0699,
+  "status": "în așteptare",
+  "cod": "990C-KLY3IK",
+  "selectii": "22:00 Borussia Dortmund – Real Betis: 1 (Dortmund câștigă) (1.7) · 22:00 PSV Eindhoven – Club Brugge: Peste 2.5 (1.55) · 22:00 Lens – Como: 2 (Como câștigă) (2.12) · 22:00 Slavia Praga – Arsenal: Peste 2.5 (1.7)",
+  "rezultat": "",
+  "motive": [
+   "Dortmund 56% pe piață, 4 victorii consecutive acasă cu echipe spaniole; Betis 3/3 în CL, risc real; șansă ~54%.",
+   "PSV a marcat în 21 meciuri europene consecutive acasă, Brugge a bătut Inter și Lens; formă ~60% peste 2.5, șansă ~55%.",
+   "Como 45% victorie pe piață, formă bună (4-1 cu United), Lens favorit la dublă; șansă ~42%.",
+   "Arsenal neînvins în 18 meciuri CL consecutive, multe goluri în deplasare; Slavia permite spațiu; piață+formă ~56% peste 2.5.",
+   "Încredere redusă: cotele sunt estimate din piețele publice (feed-ul Superbet nu a fost accesibil), nu cotele exacte Superbet."
+  ],
+  "ids": [
+   14738999,
+   14739011,
+   14739008,
+   14739007
+  ]
  }
 ]
