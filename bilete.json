@@ -2722,16 +2722,17 @@
   "id": "2026-11-04-cota2",
   "data": "2026-11-04",
   "tip": "Cotă 2",
-  "cota": 2.21,
+  "cota": 2.0,
   "sansa": 0.42,
   "status": "în așteptare",
-  "cod": "",
-  "selectii": "22:00 RB Leipzig – Manchester City: 2 (Manchester City câștigă) (1.58) · 22:00 Lens – Como: X2 (1.4)",
+  "cod": "991B-KK42FB",
+  "selectii": "22:00 RB Leipzig – Manchester City: 2 (Manchester City câștigă) (1.54) · 22:00 Lens – Como: X2 (1.3)",
   "rezultat": "",
   "motive": [
    "City 62% pe piață (Kalshi), 30 de goluri în 6 dueluri directe cu Leipzig, Haaland 12 goluri în 8 meciuri vs Leipzig; șansă ~60%.",
    "Como 45% victorie pe piață, a bătut United cu 4-1; Lens acasă puternic, dar dublă șansă acoperă egalul; șansă ~70%.",
-   "Încredere redusă: cotele sunt estimate din piețele publice (feed-ul Superbet nu a fost accesibil), nu cotele exacte Superbet."
+   "Încredere redusă: cotele sunt estimate din piețele publice (feed-ul Superbet nu a fost accesibil), nu cotele exacte Superbet.",
+   "Cotele s-au mișcat până la generarea codului (City 1.54, Como X2 1.30), total 2.00 pe site."
   ],
   "ids": [
    14739006,
@@ -2783,5 +2784,43 @@
    14739008,
    14739007
   ]
+ },
+ {
+  "id": "2026-11-04-pariu",
+  "data": "2026-11-04",
+  "tip": "Pariul zilei",
+  "cota": 1.55,
+  "sansa": 0.72,
+  "status": "în așteptare",
+  "cod": "9909-KMLV07",
+  "rezultat": "",
+  "selectii": "19:45 AEK Atena – Real Madrid: AEK peste 0.5 goluri (1.55)",
+  "motive": [
+   "AEK a marcat în 9 din ultimele 10 meciuri (2,3 goluri/meci), iar Real Madrid a primit gol în 8 din ultimele 10; piața dă ~61% (cota 1.55 implică 64.5%), estimarea mea ~72%. Real vine fără Asencio, Mendy, Rodrygo și Valverde, Courtois e incert, deci apărarea e slăbită; riscul: Real poate face rotații și AEK joacă acasă cu un favorit mare."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14738997
+  ]
+ },
+ {
+  "id": "2026-11-04-challenge",
+  "data": "2026-11-04",
+  "tip": "Challenge 1.40",
+  "cota": 1.36,
+  "sansa": 0.74,
+  "status": "în așteptare",
+  "cod": "991B-KK42F1",
+  "rezultat": "",
+  "selectii": "22:00 Fenerbahce – Liverpool: Fenerbahce peste 0.5 goluri (1.36)",
+  "motive": [
+   "Fenerbahce a marcat în 8 din ultimele 10 meciuri (2,1 goluri/meci) și joacă acasă; Liverpool a primit gol în 7 din ultimele 10, iar în apărare lipsesc Frimpong, Bradley și Leoni. Piața ~69%, formă ~75%, estimat 74%. Fenerbahce are și ea absențe la apărare, dar asta nu afectează ținta (să marcheze). Ciclul 4 începe după pierderea de ieri (Aston Villa)."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14738998
+  ],
+  "ciclu": 4,
+  "pas": 1
  }
 ]
