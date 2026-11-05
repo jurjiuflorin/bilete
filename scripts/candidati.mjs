@@ -91,6 +91,17 @@ const res = await pool(list, 5, async m => {
     push({ mk: 'Total goluri', ou: 'Peste ' + L, sel: 'Peste ' + L, kind: 'tot', od, pm, pform: pfm, ph, p: mix(pm, pfm, ph) }); }
   { const od = price(mk, 'Ambele echipe marchează (GG)', 'Da'); if (od) { const pm = fairPair(od, price(mk, 'Ambele echipe marchează (GG)', 'Nu')); const pfm = avg(share(H, x => x.gf >= 1 && x.ga >= 1), share(A, x => x.gf >= 1 && x.ga >= 1)); const ph = hs(x => x.gf >= 1 && x.ga >= 1);
     push({ mk: 'Ambele echipe marchează (GG)', ou: 'Da', sel: 'GG', kind: 'gg', od, pm, pform: pfm, ph, p: mix(pm, pfm, ph) }); } }
+  // cornere (media din feed + piața „Total cornere”); doar „Peste”
+  { const S = {}; (st.prematch_stats || []).forEach(x => { try { S[x.text.args[0].split('.').pop()] = [parseFloat(x.team1), parseFloat(x.team2)]; } catch (e) {} });
+    const k = S.average_corners; const cm = mk.find(x => x.name === 'Total cornere');
+    if (k && isFinite(k[0]) && isFinite(k[1]) && cm) { const lam = k[0] + k[1];
+      const pois = (l, L) => { let c = 0, t = Math.exp(-l); for (let i = 0; i <= Math.floor(L); i++) { c += t; t *= l / (i + 1); } return 1 - c; };
+      let bestC = null;
+      for (const x of cm.odds || []) { const r = /^Peste (\d+\.5)$/.exec(x.name); if (!r || !x.price) continue; const L = +r[1]; const un = (cm.odds || []).find(y => y.name === 'Sub ' + r[1]);
+        const pm = fairPair(x.price, un && un.price), pfm = pois(lam, L);
+        const c = { mk: 'Total cornere', ou: 'Peste ' + r[1], sel: 'Peste ' + r[1] + ' cornere', kind: 'cor', od: x.price, pm, pform: pfm, ph: null, p: Math.min(0.85, 0.5 * pm + 0.5 * pfm), cm: Math.round(lam * 10) / 10 };
+        if (x.price >= 1.35 && x.price <= 2.6 && pfm >= pm - 0.03 && pfm <= pm + 0.15 && (!bestC || c.p > bestC.p)) bestC = c; }
+      if (bestC) push(bestC); } }
   // goluri pe echipă
   for (const [side, name, me, opp, gfIdx] of [['home', m.h, H, A, 'h'], ['away', m.a, A, H, 'a']]) {
     for (const L of ['0.5', '1.5']) { const mn = 'Total goluri ' + name; const od = price(mk, mn, 'Peste ' + L); if (!od) continue; const n = Math.floor(+L) + 1;
