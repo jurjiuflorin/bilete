@@ -1,0 +1,163 @@
+{
+ "data": "2026-11-05",
+ "salvat": "2026-11-05T10:24:34.841Z",
+ "n": 35,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14744406,
+    "meci": "Lugano – Kauno Zalgiris",
+    "when": "2026-11-05T20:00:00.000Z",
+    "liga": "Conference League",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.35,
+    "p": 0.723,
+    "why": "Lugano dă 3,2 și primește 1,3 goluri pe meci; Kauno Zalgiris dă 1,9 și primește 1,3."
+   },
+   {
+    "id": 14744352,
+    "meci": "Bayer Leverkusen – Olympique Marseille",
+    "when": "2026-11-05T20:00:00.000Z",
+    "liga": "Europa League",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.37,
+    "p": 0.688,
+    "why": "Bayer Leverkusen dă 2,5 și primește 1,5 goluri pe meci; Olympique Marseille dă 1,5 și primește 1,5."
+   },
+   {
+    "id": 14744402,
+    "meci": "Midtjylland – Ajax Amsterdam",
+    "when": "2026-11-05T17:45:00.000Z",
+    "liga": "Conference League",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.48,
+    "p": 0.68,
+    "why": "Midtjylland dă 2,5 și primește 1,1 goluri pe meci; Ajax Amsterdam dă 2,5 și primește 1,3."
+   },
+   {
+    "id": 14744407,
+    "meci": "Sint-Truiden – Brann",
+    "when": "2026-11-05T20:00:00.000Z",
+    "liga": "Conference League",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.43,
+    "p": 0.669,
+    "why": "Sint-Truiden dă 1,7 și primește 1,7 goluri pe meci; Brann dă 1,9 și primește 1,6."
+   },
+   {
+    "id": 14744350,
+    "meci": "AC Milan – Ferencvaros",
+    "when": "2026-11-05T17:45:00.000Z",
+    "liga": "Europa League",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.5,
+    "p": 0.667,
+    "why": "AC Milan dă 2 și primește 1,5 goluri pe meci; Ferencvaros dă 3 și primește 0,7."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14744402,
+    "meci": "Midtjylland – Ajax Amsterdam",
+    "when": "2026-11-05T17:45:00.000Z",
+    "liga": "Conference League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.43,
+    "p": 0.687,
+    "why": "Midtjylland marchează 2,5 și primește 1,1 pe meci; Ajax Amsterdam marchează 2,5 și primește 1,3."
+   },
+   {
+    "id": 14744340,
+    "meci": "Lillestrom – Viktoria Plzen",
+    "when": "2026-11-05T17:45:00.000Z",
+    "liga": "Europa League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.5,
+    "p": 0.672,
+    "why": "Lillestrom marchează 1,7 și primește 1,8 pe meci; Viktoria Plzen marchează 2,2 și primește 1,7."
+   },
+   {
+    "id": 14744353,
+    "meci": "Celtic – Besiktas",
+    "when": "2026-11-05T20:00:00.000Z",
+    "liga": "Europa League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.46,
+    "p": 0.668,
+    "why": "Celtic marchează 1,6 și primește 1,9 pe meci; Besiktas marchează 2,2 și primește 1,4."
+   },
+   {
+    "id": 14744397,
+    "meci": "Thun – Hearts",
+    "when": "2026-11-05T17:45:00.000Z",
+    "liga": "Conference League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.47,
+    "p": 0.666,
+    "why": "Thun marchează 1,6 și primește 2 pe meci; Hearts marchează 1,7 și primește 1,7."
+   },
+   {
+    "id": 14744407,
+    "meci": "Sint-Truiden – Brann",
+    "when": "2026-11-05T20:00:00.000Z",
+    "liga": "Conference League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.47,
+    "p": 0.662,
+    "why": "Sint-Truiden marchează 1,7 și primește 1,7 pe meci; Brann marchează 1,9 și primește 1,6."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14744408,
+    "meci": "Getafe – Brighton",
+    "when": "2026-11-05T20:00:00.000Z",
+    "liga": "Conference League",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.38,
+    "p": 0.838,
+    "why": "Media cornerelor: Getafe 6,8, Brighton 9,5, adică 16,3 pe meci."
+   },
+   {
+    "id": 14744435,
+    "meci": "Panathinaikos – CSKA Sofia FC",
+    "when": "2026-11-05T20:00:00.000Z",
+    "liga": "Conference League",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.38,
+    "p": 0.825,
+    "why": "Media cornerelor: Panathinaikos 6,9, CSKA Sofia FC 7, adică 13,9 pe meci."
+   },
+   {
+    "id": 14744405,
+    "meci": "Trabzonspor – Freiburg",
+    "when": "2026-11-05T17:45:00.000Z",
+    "liga": "Conference League",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.42,
+    "p": 0.815,
+    "why": "Media cornerelor: Trabzonspor 6, Freiburg 7,8, adică 13,8 pe meci."
+   },
+   {
+    "id": 14744352,
+    "meci": "Bayer Leverkusen – Olympique Marseille",
+    "when": "2026-11-05T20:00:00.000Z",
+    "liga": "Europa League",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.36,
+    "p": 0.808,
+    "why": "Media cornerelor: Bayer Leverkusen 7, Olympique Marseille 5,3, adică 12,3 pe meci."
+   },
+   {
+    "id": 14744402,
+    "meci": "Midtjylland – Ajax Amsterdam",
+    "when": "2026-11-05T17:45:00.000Z",
+    "liga": "Conference League",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.55,
+    "p": 0.784,
+    "why": "Media cornerelor: Midtjylland 6,3, Ajax Amsterdam 8,5, adică 14,8 pe meci."
+   }
+  ]
+ }
+}
