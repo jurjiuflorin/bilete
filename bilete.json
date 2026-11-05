@@ -2822,5 +2822,95 @@
   ],
   "ciclu": 4,
   "pas": 1
+ },
+ {
+  "id": "2026-11-05-challenge",
+  "data": "2026-11-05",
+  "tip": "Challenge 1.40",
+  "cota": 1.39,
+  "sansa": 0.72,
+  "status": "în așteptare",
+  "cod": "990B-KK51NN",
+  "selectii": "19:45 Real Sociedad – Olympique Lyon: Olympique Lyon peste 0.5 goluri (1.39)",
+  "rezultat": "",
+  "motive": [
+   "Olympique Lyon peste 0.5 goluri (1.39): piață fără marjă 67%, formă 80%, estimat 72%; Lyon fără Openda (atacant) și Tagliafico, dar atacul rămâne puternic; Real Sociedad are 3 absențe, în apărare/mijloc."
+  ],
+  "ids": [
+   14744351
+  ],
+  "sport": "fotbal",
+  "ciclu": 4,
+  "pas": 2
+ },
+ {
+  "id": "2026-11-05-cota2",
+  "data": "2026-11-05",
+  "tip": "Cotă 2",
+  "cota": 1.9,
+  "sansa": 0.552,
+  "status": "în așteptare",
+  "cod": "990X-NNJI53",
+  "selectii": "22:00 Lugano – Kauno Zalgiris: Peste 2.5 (1.35) · 22:00 Riga FC – Jablonec: 1X (1.41)",
+  "rezultat": "",
+  "motive": [
+   "Peste 2.5 (1.35): piață fără marjă 70%, formă 80%, estimat 75%; fără absențe în lista de azi.",
+   "1X (1.41): piață fără marjă 67%, formă 80%, estimat 74%; fără absențe în lista de azi."
+  ],
+  "ids": [
+   14744406,
+   14744404
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-05-cota5",
+  "data": "2026-11-05",
+  "tip": "Cotă 5",
+  "cota": 4.74,
+  "sansa": 0.2087,
+  "status": "în așteptare",
+  "cod": "9908-KWQXN1",
+  "selectii": "22:00 Celtic – Besiktas: Peste 2.5 (1.52) · 22:00 Sint-Truiden – Brann: Peste 2.5 (1.43) · 19:45 Trabzonspor – Freiburg: Peste 2.5 (1.57) · 19:45 Levski Sofia – Jagiellonia Bialystok: Jagiellonia Bialystok peste 0.5 goluri (1.39)",
+  "rezultat": "",
+  "motive": [
+   "Peste 2.5 (1.52): piață fără marjă 62%, formă 75%, estimat 69%; Celtic are 2 absențe ofensive minore (Johnston, Yang), Besiktas fără 2 mijlocași și un fundaș suspendat, ceea ce nu scade golurile.",
+   "Peste 2.5 (1.43): piață fără marjă 66%, formă 70%, estimat 68%; absențe neverificate.",
+   "Peste 2.5 (1.57): piață fără marjă 60%, formă 75%, estimat 68%; Trabzonspor fără 4-5 titulari (Malinovskyi, Yokuslu), Salah a marcat în ambele meciuri din faza ligii, Freiburg locul 18; absențe parțial verificate.",
+   "Jagiellonia Bialystok peste 0.5 goluri (1.39): piață fără marjă 67%, formă 65%, estimat 66%; absențe neverificate."
+  ],
+  "ids": [
+   14744353,
+   14744407,
+   14744405,
+   14744342
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-05-cota10",
+  "data": "2026-11-05",
+  "tip": "Cotă 10",
+  "cota": 9.18,
+  "sansa": 0.1008,
+  "status": "în așteptare",
+  "cod": "9914-WM80A3",
+  "selectii": "19:45 AGF Aarhus – Braga: AGF Aarhus peste 0.5 goluri (1.44) · 19:45 AC Milan – Ferencvaros: Peste 2.5 (1.5) · 22:00 Monaco – Nordsjalland: GG (1.6) · 19:45 Lillestrom – Viktoria Plzen: 1X (1.63) · 19:45 Thun – Hearts: X2 (1.63)",
+  "rezultat": "",
+  "motive": [
+   "AGF Aarhus peste 0.5 goluri (1.44): piață fără marjă 64%, formă 70%, estimat 67%; absențe neverificate.",
+   "Peste 2.5 (1.5): piață fără marjă 63%, formă 65%, estimat 64%; Milan are ~10 absenți (Maignan suspendat, Tomori, Gabbia), apărare slăbită favorizează golurile; sursă neoficială.",
+   "GG (1.6): piață fără marjă 59%, formă 65%, estimat 62%; Monaco fără Fati și Idumbo, Nordsjaelland fără Alio și Mohammed, ambele atacuri rămân funcționale.",
+   "1X (1.63): piață fără marjă 58%, formă 65%, estimat 62%; absențe neverificate.",
+   "X2 (1.63): piață fără marjă 58%, formă 65%, estimat 62%; absențe neverificate."
+  ],
+  "ids": [
+   14744401,
+   14744350,
+   14744442,
+   14744340,
+   14744397
+  ],
+  "sport": "fotbal"
  }
 ]
