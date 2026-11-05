@@ -1,190 +1,484 @@
 {
- "data": "2026-11-04",
- "actualizat": "2026-11-04T06:19:52Z",
+ "data": "2026-11-05",
+ "actualizat": "2026-11-05T06:17:34Z",
  "meciuri": [
   {
-   "data": "2026-11-04",
+   "data": "2026-11-05",
    "ora": "19:45",
-   "liga": "Champions League",
-   "gazde": "AEK Atena",
-   "oaspeti": "Real Madrid",
-   "loc_gazde": 29,
-   "loc_oaspeti": 4,
-   "absenti_gazde": [],
-   "absenti_oaspeti": [
-    "Asencio (fundaș) – picior fracturat",
-    "Rodrygo (atacant) – accidentat la genunchi",
-    "Valverde (mijlocaș) – accidentat la ischiogambieri",
-    "Mendy (fundaș) – accidentat la șold",
-    "Courtois (portar) – incert, boală"
+   "liga": "Europa League",
+   "gazde": "Milan",
+   "oaspeti": "Ferencvaros",
+   "absenti_gazde": [
+    "Maignan (portar) – suspendat (roșu)",
+    "Tomori (fundaș) – accidentare musculară",
+    "Saelemaekers – accidentare la gleznă",
+    "Chukwueze – accidentare la șold",
+    "Loftus-Cheek (mijlocaș) – accidentare la coapsă",
+    "Gabbia (fundaș) – accidentare la coapsă"
    ],
-   "nota": "Rotații posibile la ambele echipe."
+   "absenti_oaspeti": [
+    "Yusuf – suspendat (3 galbene)",
+    "Ötvös – accidentare la genunchi",
+    "Kovačević – incert, accidentare"
+   ],
+   "nota": "Milan are în total ~10 absenți (și Rabiot, Gila, Moreira); sursă neoficială."
   },
   {
-   "data": "2026-11-04",
+   "data": "2026-11-05",
    "ora": "19:45",
-   "liga": "Champions League",
-   "gazde": "Fenerbahce",
-   "oaspeti": "Liverpool",
-   "loc_gazde": 31,
+   "liga": "Europa League",
+   "gazde": "Crystal Palace",
+   "oaspeti": "Hoffenheim",
+   "absenti_gazde": [
+    "Mateta (atacant) – suspendat (roșu)",
+    "Sarr – accidentare inghinală",
+    "Tomiyasu – accidentare la gambă",
+    "Riad – accidentare la genunchi",
+    "Larsen – incert, gleznă",
+    "Timber – incert, ischiogambier"
+   ],
+   "absenti_oaspeti": [
+    "Prass – suspendat (2 galbene)",
+    "Gendrey – accidentare la gleznă",
+    "Conté – accidentare inghinală",
+    "Hranáč – accidentare la genunchi",
+    "Hajdari – accidentare la picior",
+    "Wimmer – accidentare la coapsă"
+   ],
+   "nota": "Sursă neoficială de disponibilitate, nu lot confirmat."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Europa League",
+   "gazde": "Real Sociedad",
+   "oaspeti": "Lyon",
+   "absenti_gazde": [
+    "Beitia (fundaș) – accidentare la gleznă",
+    "Zakharyan (mijlocaș) – accidentare la gleznă",
+    "Odriozola (fundaș) – accidentare la genunchi"
+   ],
+   "absenti_oaspeti": [
+    "Morton (mijlocaș) – accidentare inghinală",
+    "Šulc (mijlocaș) – accidentare la genunchi",
+    "Kango (fundaș) – comoție",
+    "Openda (atacant) – accidentare la picior",
+    "Ouédraogo (fundaș) – accidentare la genunchi",
+    "Tagliafico (fundaș) – accidentare musculară"
+   ],
+   "nota": "Sursă neoficială de disponibilitate, nu lot confirmat."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Conference League",
+   "gazde": "Atalanta",
+   "oaspeti": "Kairat Almaty",
+   "loc_gazde": 15,
+   "loc_oaspeti": 31,
+   "absenti_gazde": [
+    "Hien (fundaș) – contuzie musculară",
+    "Raspadori (atacant) – absent",
+    "Scamacca (atacant) – absent",
+    "Kolasinac (fundaș) – absent"
+   ],
+   "absenti_oaspeti": [],
+   "nota": "Motivele absențelor la Raspadori, Scamacca și Kolasinac nu sunt confirmate; De Ketelaere – incert (neverificat)."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Europa League",
+   "gazde": "Sparta Praha",
+   "oaspeti": "Bournemouth",
+   "loc_gazde": 16,
    "loc_oaspeti": 3,
    "absenti_gazde": [
-    "Škriniar (fundaș) – suspendat",
-    "Asensio (atacant) – accidentat la genunchi",
-    "Aké (fundaș) – accidentat",
-    "Oosterwolde (fundaș) – accidentat la tendonul lui Ahile",
-    "Oppong – incert"
+    "Andersen – genunchi",
+    "Karabec – gleznă",
+    "Mercado – gambă",
+    "Penxa – genunchi",
+    "Rynes – gleznă",
+    "Uchenna – inghinal"
    ],
    "absenti_oaspeti": [
-    "Ekitike (atacant) – accidentat la tendonul lui Ahile",
-    "Frimpong (fundaș) – accidentat",
-    "Bradley (fundaș) – accidentat la genunchi",
-    "Leoni (fundaș) – accidentat la genunchi",
-    "Gravenberch (mijlocaș) – incert",
-    "Szoboszlai (mijlocaș) – incert"
+    "Araujo – coapsă",
+    "Scott (mijlocaș) – coapsă",
+    "Toth – accidentare musculară"
    ],
-   "nota": "Absențe din starting11 (actualizat 4 nov)."
+   "nota": "Bournemouth are 9 puncte după 3 etape, Sparta 4 puncte."
   },
   {
-   "data": "2026-11-04",
-   "ora": "22:00",
-   "liga": "Champions League",
-   "gazde": "Borussia Dortmund",
-   "oaspeti": "Real Betis",
-   "loc_gazde": 13,
-   "loc_oaspeti": 5,
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Conference League",
+   "gazde": "Trabzonspor",
+   "oaspeti": "Freiburg",
+   "loc_oaspeti": 18,
    "absenti_gazde": [
-    "Lerma (mijlocaș) – accidentat",
-    "Konstantelias – accidentat la genunchi",
-    "Can (mijlocaș) – accidentat la genunchi",
-    "Prates – incert",
-    "Bensebaïni (fundaș) – incert"
+    "Batagov – genunchi",
+    "Cevikkan – tendon",
+    "Malinovskyi – genunchi",
+    "Yokuslu – genunchi",
+    "Lopes Cabral – suspendat (neconfirmat)"
    ],
    "absenti_oaspeti": [
-    "Firpo (fundaș) – accidentat la vintre",
-    "Hernández – accidentat la gambă",
-    "Fidalgo (mijlocaș) – bolnav"
-   ]
+    "Treu – gleznă",
+    "Yilmaz – lipsă de formă fizică"
+   ],
+   "marcatori_gazde": "Salah a marcat în ambele meciuri din faza ligii",
+   "nota": "Sursă neoficială (din 3 nov); absențe parțial verificate."
   },
   {
-   "data": "2026-11-04",
-   "ora": "22:00",
-   "liga": "Champions League",
-   "gazde": "Porto",
-   "oaspeti": "Napoli",
-   "loc_gazde": 34,
-   "loc_oaspeti": 22,
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Conference League",
+   "gazde": "Midtjylland",
+   "oaspeti": "Ajax",
    "absenti_gazde": [
-    "Smalling (fundaș) – accidentat la genunchi",
-    "William – accidentat la gleznă",
-    "Sanusi – incert",
-    "Pietuszewski (atacant) – incert"
+    "Brumado (atacant) – genunchi",
+    "Krüger-Johnsen (atacant) – șold",
+    "Erlić (fundaș) – accidentare la picior",
+    "Jensen (fundaș) – accidentare la picior",
+    "Ólafsson (portar) – boală",
+    "Billing (mijlocaș) – incert"
    ],
    "absenti_oaspeti": [
-    "Marianucci (fundaș) – suspendat",
-    "Højlund (atacant) – bolnav",
-    "Milinković-Savić (portar) – accidentat",
-    "Di Lorenzo (fundaș, căpitan) – accidentat",
-    "Lobotka (mijlocaș) – accidentat la gleznă",
-    "Buongiorno (fundaș) – accidentat la genunchi"
+    "Henrique (fundaș) – coapsă",
+    "Dolberg (atacant) – genunchi",
+    "Gaaei (fundaș) – accidentare",
+    "Adingra (atacant) – lipsă de formă",
+    "Berghuis (atacant) – incert"
    ],
-   "nota": "Napoli are mulți absenți importanți."
+   "nota": "Sursă neoficială de disponibilitate, din 4 nov."
   },
   {
-   "data": "2026-11-04",
-   "ora": "22:00",
-   "liga": "Champions League",
-   "gazde": "PSV Eindhoven",
-   "oaspeti": "Club Brugge",
-   "loc_gazde": 18,
-   "loc_oaspeti": 11,
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Europa League",
+   "gazde": "Anderlecht",
+   "oaspeti": "Salzburg",
+   "loc_gazde": 22,
+   "loc_oaspeti": 21,
    "absenti_gazde": [
-    "Wanner (mijlocaș) – accidentat",
-    "Pléa (atacant) – operat",
-    "Schouten (mijlocaș) – accidentat la genunchi",
-    "Nagalo (fundaș) – accidentat",
-    "Pepi (atacant) – incert"
+    "Camara – accidentare la picior",
+    "Hey – fractură de picior"
    ],
    "absenti_oaspeti": [
-    "Ordoñez (atacant) – accidentat la picior"
-   ]
+    "Aguilar – accidentare musculară",
+    "Omoregie – tendonul lui Ahile",
+    "Veratschnig – genunchi",
+    "Mellberg – accidentare"
+   ],
+   "nota": "Sursă neoficială din 2 nov; absențe parțial verificate."
   },
   {
-   "data": "2026-11-04",
-   "ora": "22:00",
-   "liga": "Champions League",
-   "gazde": "RB Leipzig",
-   "oaspeti": "Manchester City",
-   "loc_gazde": 29,
-   "loc_oaspeti": 10,
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Conference League",
+   "gazde": "Crvena Zvezda",
+   "oaspeti": "Inter Club d'Escaldes",
    "absenti_gazde": [
-    "Guiu (atacant) – accidentat la ischiogambieri",
-    "Finkgräfe (fundaș) – accidentat",
-    "Estève (fundaș) – accidentat",
-    "Ouédraogo (mijlocaș) – accidentat la umăr",
-    "Nkunku (atacant) – incert"
+    "Gudelj (fundaș) – suspendat (roșu)"
    ],
-   "absenti_oaspeti": [
-    "Semenyo (atacant) – accidentat la genunchi",
-    "Matheus Nunes (fundaș) – incert"
-   ]
+   "absenti_oaspeti": [],
+   "nota": "Rotații posibile la Steaua Roșie (meci de campionat în două zile)."
   },
   {
-   "data": "2026-11-04",
-   "ora": "22:00",
-   "liga": "Champions League",
-   "gazde": "Lens",
-   "oaspeti": "Como",
-   "loc_gazde": 27,
-   "loc_oaspeti": 9,
-   "absenti_gazde": [
-    "Édouard (atacant) – accidentat la vintre",
-    "Sima (atacant) – accidentat",
-    "Nawrocki (fundaș) – accidentat la genunchi",
-    "Ganiou – accidentat la genunchi",
-    "Gradit (fundaș) – incert"
-   ],
-   "absenti_oaspeti": [
-    "Kean (atacant) – accidentat",
-    "Diao (mijlocaș) – accidentat",
-    "Chalobah – accidentat",
-    "Addai – accidentat",
-    "Liberali (mijlocaș) – incert"
-   ]
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Conference League",
+   "gazde": "AGF Aarhus",
+   "oaspeti": "Braga",
+   "nota": "Absențe neverificate"
   },
   {
-   "data": "2026-11-04",
-   "ora": "22:00",
-   "liga": "Champions League",
-   "gazde": "Slavia Praga",
-   "oaspeti": "Arsenal",
-   "loc_gazde": 32,
-   "loc_oaspeti": 7,
-   "absenti_gazde": [
-    "Ogbu (fundaș) – accidentat la tendonul lui Ahile",
-    "Ouanda – accidentat",
-    "Markovič – incert",
-    "Provod (mijlocaș) – incert",
-    "Piták – incert"
-   ],
-   "absenti_oaspeti": [
-    "Saliba (fundaș) – accidentat la spate",
-    "Saka (atacant) – accidentat la coapsă",
-    "Tzolis – incert",
-    "Calafiori (fundaș) – incert",
-    "Madueke (atacant) – incert"
-   ]
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Conference League",
+   "gazde": "Thun",
+   "oaspeti": "Hearts",
+   "nota": "Absențe neverificate"
   },
   {
-   "data": "2026-11-04",
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Conference League",
+   "gazde": "KuPS Kuopio",
+   "oaspeti": "Gent",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Conference League",
+   "gazde": "Lincoln Red Imps",
+   "oaspeti": "Hajduk Split",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Conference League",
+   "gazde": "Mjallby",
+   "oaspeti": "Borac",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Europa League",
+   "gazde": "Lillestrom",
+   "oaspeti": "Viktoria Plzen",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Europa League",
+   "gazde": "NEC Nijmegen",
+   "oaspeti": "Omonia",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "19:45",
+   "liga": "Europa League",
+   "gazde": "Levski Sofia",
+   "oaspeti": "Jagiellonia",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
    "ora": "22:00",
-   "liga": "Champions League",
-   "gazde": "Viking",
-   "oaspeti": "Sabah",
-   "loc_gazde": 33,
-   "loc_oaspeti": 25,
+   "liga": "Conference League",
+   "gazde": "U Craiova",
+   "oaspeti": "Egnatia",
    "absenti_gazde": [],
    "absenti_oaspeti": [],
+   "nota": "Fără absențe menționate de presă (Sport.ro); Egnatia e lider în Albania, venită după 2-1 cu Tirana. Absențe neverificate complet."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Europa League",
+   "gazde": "Bayer Leverkusen",
+   "oaspeti": "Marseille",
+   "absenti_gazde": [
+    "Doué – accidentare la gambă",
+    "Diaby – accidentare la ischiogambieri",
+    "Seghir – accidentare musculară",
+    "Kofane – accidentare musculară",
+    "Terrier – accidentare musculară",
+    "Badé – lovitură la cap"
+   ],
+   "absenti_oaspeti": [
+    "Cornelius – accidentare la șold",
+    "Emerson – incert, genunchi",
+    "Harit – incert, accidentare"
+   ],
+   "nota": "Sursă neoficială de disponibilitate (starting11), nu lot confirmat."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Europa League",
+   "gazde": "AZ Alkmaar",
+   "oaspeti": "Juventus",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [
+    "McKennie – accidentare la adductor",
+    "Alajbegovic – oboseală",
+    "Cabal – incert, accidentare musculară"
+   ],
+   "nota": "Juventus are aproximativ 14 indisponibili în lot, doar 3 confirmați aici; absențe incomplete."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Europa League",
+   "gazde": "Celtic",
+   "oaspeti": "Besiktas",
+   "absenti_gazde": [
+    "Johnston – accidentare la picior",
+    "Yang Hyun-Jun – accidentare la ischiogambier"
+   ],
+   "absenti_oaspeti": [
+    "Akdağ – suspendat (roșu)",
+    "Miretti (mijlocaș) – accidentare la umăr",
+    "Kökçü (mijlocaș) – accidentare la picior",
+    "Černý – incert, accidentare"
+   ],
+   "nota": "Sursă neoficială de disponibilitate, nu lot confirmat."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Europa League",
+   "gazde": "Benfica",
+   "oaspeti": "Lech Poznan",
+   "absenti_gazde": [
+    "Barrenechea (mijlocaș) – accidentare",
+    "Lukebakio (atacant) – incert, accidentare"
+   ],
+   "absenti_oaspeti": [
+    "Mońka (fundaș) – accidentare",
+    "Douglas (fundaș) – accidentare la gleznă",
+    "Sayyadmanesh (atacant) – accidentare inghinală",
+    "Gholizadeh (mijlocaș) – accidentare la genunchi"
+   ],
+   "nota": "Benfica a jucat în campionat acum 3 zile, rotații posibile."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Conference League",
+   "gazde": "Getafe",
+   "oaspeti": "Brighton",
+   "absenti_gazde": [
+    "Borja Mayoral (atacant) – suspendat (galbene)",
+    "Romero (fundaș) – accidentare musculară",
+    "Juanmi (atacant) – accidentare la genunchi",
+    "Uche (mijlocaș) – accidentare la genunchi",
+    "Mangala (mijlocaș) – incert, musculară"
+   ],
+   "absenti_oaspeti": [
+    "Ferguson (atacant) – gleznă",
+    "Mitoma (atacant) – ischiogambieri",
+    "Azeez (mijlocaș) – abdominal",
+    "Tzimas (atacant) – genunchi",
+    "Kadioglu (fundaș) – incert, șold"
+   ],
+   "nota": "Sursă neoficială de disponibilitate, data neclară."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Conference League",
+   "gazde": "Monaco",
+   "oaspeti": "Nordsjaelland",
+   "loc_gazde": 6,
+   "loc_oaspeti": 19,
+   "absenti_gazde": [
+    "Fati (atacant) – ischiogambieri",
+    "Idumbo – accidentare inghinală"
+   ],
+   "absenti_oaspeti": [
+    "Alio – genunchi",
+    "Mohammed – genunchi"
+   ],
+   "nota": "Sursă neoficială, nedatată; absențe parțial verificate."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Europa League",
+   "gazde": "Sunderland",
+   "oaspeti": "Dinamo Zagreb",
+   "loc_gazde": 9,
+   "loc_oaspeti": 18,
+   "absenti_gazde": [
+    "Ballard (fundaș) – accidentare musculară",
+    "Diarra (mijlocaș) – accidentare musculară",
+    "Mundle – genunchi",
+    "Mukiele (fundaș) – incert, comoție"
+   ],
+   "absenti_oaspeti": [
+    "Radeljić – incert"
+   ],
+   "nota": "Sursă neoficială; absențe parțial verificate."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Europa League",
+   "gazde": "Celta Vigo",
+   "oaspeti": "Union SG",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "marcatori_gazde": "Rodríguez Galiano (2), Álvarez (1) în Europa League",
+   "marcatori_oaspeti": "Carvalho (2), Ratomo (1), Florucz (1) în Europa League",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Conference League",
+   "gazde": "Twente",
+   "oaspeti": "Pafos",
+   "loc_gazde": 5,
+   "loc_oaspeti": 27,
+   "absenti_gazde": [
+    "Lemkin – accidentare musculară"
+   ],
+   "absenti_oaspeti": [
+    "Kyriakidis (portar) – accidentat"
+   ],
+   "marcatori_gazde": "Weghorst (4 goluri într-un meci de campionat)",
+   "nota": "Weidmann – situație contradictorie (suspendat/revine); neverificat."
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Conference League",
+   "gazde": "Copenhagen",
+   "oaspeti": "Iberia 1999",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Conference League",
+   "gazde": "Lugano",
+   "oaspeti": "Kauno Zalgiris",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Conference League",
+   "gazde": "Panathinaikos",
+   "oaspeti": "CSKA Sofia",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Conference League",
+   "gazde": "Riga",
+   "oaspeti": "Jablonec",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Conference League",
+   "gazde": "Sint-Truiden",
+   "oaspeti": "Brann",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Europa League",
+   "gazde": "Hapoel Beer Sheva",
+   "oaspeti": "OFI Creta",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Europa League",
+   "gazde": "Torreense",
+   "oaspeti": "Ararat-Armenia",
+   "nota": "Absențe neverificate"
+  },
+  {
+   "data": "2026-11-05",
+   "ora": "22:00",
+   "liga": "Europa League",
+   "gazde": "Sturm Graz",
+   "oaspeti": "Celje",
    "nota": "Absențe neverificate"
   }
  ]
