@@ -2829,10 +2829,10 @@
   "tip": "Challenge 1.40",
   "cota": 1.39,
   "sansa": 0.72,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "990B-KK51NN",
   "selectii": "19:45 Real Sociedad – Olympique Lyon: Olympique Lyon peste 0.5 goluri (1.39)",
-  "rezultat": "",
+  "rezultat": "Real Sociedad–Lyon 1-1",
   "motive": [
    "Olympique Lyon peste 0.5 goluri (1.39): piață fără marjă 67%, formă 80%, estimat 72%; Lyon fără Openda (atacant) și Tagliafico, dar atacul rămâne puternic; Real Sociedad are 3 absențe, în apărare/mijloc."
   ],
@@ -2849,10 +2849,10 @@
   "tip": "Cotă 2",
   "cota": 1.9,
   "sansa": 0.552,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "990X-NNJI53",
   "selectii": "22:00 Lugano – Kauno Zalgiris: Peste 2.5 (1.35) · 22:00 Riga FC – Jablonec: 1X (1.41)",
-  "rezultat": "",
+  "rezultat": "Lugano–Zalgiris 3-0 · Riga–Jablonec 1-1",
   "motive": [
    "Peste 2.5 (1.35): piață fără marjă 70%, formă 80%, estimat 75%; fără absențe în lista de azi.",
    "1X (1.41): piață fără marjă 67%, formă 80%, estimat 74%; fără absențe în lista de azi."
@@ -2869,10 +2869,10 @@
   "tip": "Cotă 5",
   "cota": 4.74,
   "sansa": 0.2087,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9908-KWQXN1",
   "selectii": "22:00 Celtic – Besiktas: Peste 2.5 (1.52) · 22:00 Sint-Truiden – Brann: Peste 2.5 (1.43) · 19:45 Trabzonspor – Freiburg: Peste 2.5 (1.57) · 19:45 Levski Sofia – Jagiellonia Bialystok: Jagiellonia Bialystok peste 0.5 goluri (1.39)",
-  "rezultat": "",
+  "rezultat": "Celtic–Besiktas 3-2 · Trabzonspor–Freiburg 0-1 · Levski–Jagiellonia 1-0",
   "motive": [
    "Peste 2.5 (1.52): piață fără marjă 62%, formă 75%, estimat 69%; Celtic are 2 absențe ofensive minore (Johnston, Yang), Besiktas fără 2 mijlocași și un fundaș suspendat, ceea ce nu scade golurile.",
    "Peste 2.5 (1.43): piață fără marjă 66%, formă 70%, estimat 68%; absențe neverificate.",
@@ -2893,10 +2893,10 @@
   "tip": "Cotă 10",
   "cota": 9.18,
   "sansa": 0.1008,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9914-WM80A3",
   "selectii": "19:45 AGF Aarhus – Braga: AGF Aarhus peste 0.5 goluri (1.44) · 19:45 AC Milan – Ferencvaros: Peste 2.5 (1.5) · 22:00 Monaco – Nordsjalland: GG (1.6) · 19:45 Lillestrom – Viktoria Plzen: 1X (1.63) · 19:45 Thun – Hearts: X2 (1.63)",
-  "rezultat": "",
+  "rezultat": "Monaco–Nordsjaelland 2-0 · Lillestrom–Plzen 0-1 · Thun–Hearts 3-1",
   "motive": [
    "AGF Aarhus peste 0.5 goluri (1.44): piață fără marjă 64%, formă 70%, estimat 67%; absențe neverificate.",
    "Peste 2.5 (1.5): piață fără marjă 63%, formă 65%, estimat 64%; Milan are ~10 absenți (Maignan suspendat, Tomori, Gabbia), apărare slăbită favorizează golurile; sursă neoficială.",
