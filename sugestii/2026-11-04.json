@@ -12,7 +12,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.35,
     "p": 0.702,
-    "why": "PSV Eindhoven dă 2,2 și primește 1 goluri pe meci; Club Brugge dă 2,8 și primește 1,2."
+    "why": "PSV Eindhoven dă 2,2 și primește 1 goluri pe meci; Club Brugge dă 2,8 și primește 1,2.",
+    "rez": "won",
+    "scor": "1-2"
    },
    {
     "id": 14395791,
@@ -22,7 +24,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.37,
     "p": 0.682,
-    "why": "Cardiff City dă 1,5 și primește 1,5 goluri pe meci; West Ham dă 2,5 și primește 1,4."
+    "why": "Cardiff City dă 1,5 și primește 1,5 goluri pe meci; West Ham dă 2,5 și primește 1,4.",
+    "rez": "won",
+    "scor": "3-3"
    },
    {
     "id": 14738999,
@@ -32,7 +36,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.5,
     "p": 0.614,
-    "why": "Borussia Dortmund dă 1,7 și primește 1 goluri pe meci; Betis dă 2 și primește 1,4."
+    "why": "Borussia Dortmund dă 1,7 și primește 1 goluri pe meci; Betis dă 2 și primește 1,4.",
+    "rez": "won",
+    "scor": "2-1"
    },
    {
     "id": 14395792,
@@ -42,7 +48,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.6,
     "p": 0.6,
-    "why": "Wrexham dă 1,2 și primește 1,5 goluri pe meci; Middlesbrough dă 2,3 și primește 1,3."
+    "why": "Wrexham dă 1,2 și primește 1,5 goluri pe meci; Middlesbrough dă 2,3 și primește 1,3.",
+    "rez": "lost",
+    "scor": "2-0"
    },
    {
     "id": 14739008,
@@ -52,7 +60,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.58,
     "p": 0.593,
-    "why": "Lens dă 1,3 și primește 1,6 goluri pe meci; Como dă 2,1 și primește 1."
+    "why": "Lens dă 1,3 și primește 1,6 goluri pe meci; Como dă 2,1 și primește 1.",
+    "rez": "won",
+    "scor": "1-9"
    }
   ],
   "gg": [
@@ -64,7 +74,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.41,
     "p": 0.717,
-    "why": "RB Leipzig marchează 2,3 și primește 1,7 pe meci; Manchester City marchează 2,7 și primește 1,5."
+    "why": "RB Leipzig marchează 2,3 și primește 1,7 pe meci; Manchester City marchează 2,7 și primește 1,5.",
+    "rez": "won",
+    "scor": "2-3"
    },
    {
     "id": 14739011,
@@ -74,7 +86,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.35,
     "p": 0.701,
-    "why": "PSV Eindhoven marchează 2,2 și primește 1 pe meci; Club Brugge marchează 2,8 și primește 1,2."
+    "why": "PSV Eindhoven marchează 2,2 și primește 1 pe meci; Club Brugge marchează 2,8 și primește 1,2.",
+    "rez": "won",
+    "scor": "1-2"
    },
    {
     "id": 14395791,
@@ -84,7 +98,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.36,
     "p": 0.686,
-    "why": "Cardiff City marchează 1,5 și primește 1,5 pe meci; West Ham marchează 2,5 și primește 1,4."
+    "why": "Cardiff City marchează 1,5 și primește 1,5 pe meci; West Ham marchează 2,5 și primește 1,4.",
+    "rez": "won",
+    "scor": "3-3"
    },
    {
     "id": 14739010,
@@ -94,7 +110,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.53,
     "p": 0.668,
-    "why": "Viking marchează 2,9 și primește 1,6 pe meci; Sabah Baku marchează 2 și primește 1."
+    "why": "Viking marchează 2,9 și primește 1,6 pe meci; Sabah Baku marchează 2 și primește 1.",
+    "rez": "won",
+    "scor": "4-1"
    },
    {
     "id": 14738997,
@@ -104,7 +122,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.69,
     "p": 0.651,
-    "why": "AEK Atena marchează 2,3 și primește 1,6 pe meci; Real Madrid marchează 2,8 și primește 1,2."
+    "why": "AEK Atena marchează 2,3 și primește 1,6 pe meci; Real Madrid marchează 2,8 și primește 1,2.",
+    "rez": "won",
+    "scor": "2-3"
    }
   ],
   "cornere": [
@@ -116,7 +136,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.55,
     "p": 0.796,
-    "why": "Media cornerelor: Rennes 7,3, Olympiacos 9,3, adică 16,6 pe meci."
+    "why": "Media cornerelor: Rennes 7,3, Olympiacos 9,3, adică 16,6 pe meci.",
+    "rez": "lost",
+    "scor": "0-0",
+    "total": 6
    },
    {
     "id": 14739007,
@@ -126,7 +149,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.36,
     "p": 0.795,
-    "why": "Media cornerelor: Slavia Praga 5,7, Arsenal 6, adică 11,7 pe meci."
+    "why": "Media cornerelor: Slavia Praga 5,7, Arsenal 6, adică 11,7 pe meci.",
+    "rez": "lost",
+    "scor": "1-2",
+    "total": 6
    },
    {
     "id": 14738999,
@@ -136,7 +162,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.5,
     "p": 0.779,
-    "why": "Media cornerelor: Borussia Dortmund 9, Betis 4,7, adică 13,7 pe meci."
+    "why": "Media cornerelor: Borussia Dortmund 9, Betis 4,7, adică 13,7 pe meci.",
+    "rez": "lost",
+    "scor": "2-1",
+    "total": 7
    },
    {
     "id": 14738998,
@@ -146,7 +175,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.52,
     "p": 0.771,
-    "why": "Media cornerelor: Fenerbahce 5,2, Liverpool 8,3, adică 13,5 pe meci."
+    "why": "Media cornerelor: Fenerbahce 5,2, Liverpool 8,3, adică 13,5 pe meci.",
+    "rez": "won",
+    "scor": "3-2",
+    "total": 16
    },
    {
     "id": 14395793,
@@ -156,7 +188,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.4,
     "p": 0.766,
-    "why": "Media cornerelor: Bristol City 5,4, Wolverhampton 6,8, adică 12,2 pe meci."
+    "why": "Media cornerelor: Bristol City 5,4, Wolverhampton 6,8, adică 12,2 pe meci.",
+    "rez": "lost",
+    "scor": "1-2",
+    "total": 7
    }
   ]
  }
