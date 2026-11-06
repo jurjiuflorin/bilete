@@ -2912,5 +2912,111 @@
    14744397
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-06-pariu",
+  "data": "2026-11-06",
+  "tip": "Pariul zilei",
+  "cota": 1.82,
+  "sansa": 0.628,
+  "status": "în așteptare",
+  "cod": "990A-KKFKGB",
+  "rezultat": "",
+  "selectii": "19:00 Gaziantep – Kasımpasa: Peste 2.5 (1.82)",
+  "motive": [
+   "Gaziantep – Kasımpasa: piață 52%, formă 65%, H2H 80% → p 63%; absențe neverificate."
+  ],
+  "ids": [
+   14453966
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-06-challenge",
+  "data": "2026-11-06",
+  "tip": "Challenge 1.40",
+  "cota": 1.4,
+  "sansa": 0.709,
+  "status": "în așteptare",
+  "cod": "990Q-KLBJDB",
+  "rezultat": "",
+  "selectii": "22:00 Derby County – Bolton Wanderers: Peste 8.5 cornere (1.40)",
+  "motive": [
+   "Derby County – Bolton Wanderers: piață 66%, formă 76% → p 71%; absențe neverificate."
+  ],
+  "ids": [
+   14424110
+  ],
+  "sport": "fotbal",
+  "ciclu": 4,
+  "pas": 3
+ },
+ {
+  "id": "2026-11-06-cota2",
+  "data": "2026-11-06",
+  "tip": "Cotă 2",
+  "cota": 1.89,
+  "sansa": 0.5548,
+  "status": "în așteptare",
+  "cod": "991M-KKV5ME",
+  "rezultat": "",
+  "selectii": "20:30 FC Arges – Dinamo Bucuresti: Peste 1.5 (1.35) · 22:00 Sevilla – Alaves: Peste 1.5 (1.40)",
+  "motive": [
+   "FC Arges – Dinamo Bucuresti: piață 70%, formă 80%, H2H 80% → p 76%; absențe neverificate.",
+   "Sevilla – Alaves: piață 68%, formă 75%, H2H 80% → p 73%; absențe neverificate."
+  ],
+  "ids": [
+   14438705,
+   14454001
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-06-cota5",
+  "data": "2026-11-06",
+  "tip": "Cotă 5",
+  "cota": 4.63,
+  "sansa": 0.2548,
+  "status": "în așteptare",
+  "cod": "991P-WWW5AQ",
+  "rezultat": "",
+  "selectii": "20:00 Silkeborg – Lyngby: X2 (1.57) · 21:00 Willem II Tilburg – Zwolle: Peste 2.5 (1.64) · 21:45 Venezia – Udinese: Peste 2.5 (1.80)",
+  "motive": [
+   "Silkeborg – Lyngby: piață 60%, formă 75%, H2H 60% → p 66%; absențe neverificate.",
+   "Willem II Tilburg – Zwolle: piață 58%, formă 70%, H2H 60% → p 63%; absențe neverificate.",
+   "Venezia – Udinese: piață 53%, formă 50%, H2H 100% → p 61%; absențe neverificate."
+  ],
+  "ids": [
+   15406041,
+   14424109,
+   14438691
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-06-cota10",
+  "data": "2026-11-06",
+  "tip": "Cotă 10",
+  "cota": 9.78,
+  "sansa": 0.0998,
+  "status": "în așteptare",
+  "cod": "990W-NHXPQZ",
+  "rezultat": "",
+  "selectii": "17:30 UTA Arad – Petrolul Ploiesti: Petrolul Ploiesti peste 0.5 goluri (1.47) · 22:45 Famalicao – Arouca: Arouca peste 0.5 goluri (1.42) · 21:45 Standard Liege – SK Beveren: Peste 2.5 (1.65) · 21:45 Toulouse – Strasbourg: Peste 2.5 (1.66) · 21:30 Hamburger – Borussia Monchengladbach: Peste 2.5 (1.71)",
+  "motive": [
+   "UTA Arad – Petrolul Ploiesti: piață 63%, formă 70%, H2H 60% → p 65%; absențe neverificate.",
+   "Famalicao – Arouca: piață 66%, formă 75%, H2H 40% → p 64%; absențe neverificate.",
+   "Standard Liege – SK Beveren: piață 57%, formă 60%, H2H 80% → p 63%; absențe neverificate.",
+   "Toulouse – Strasbourg: piață 57%, formă 70%, H2H 60% → p 63%; absențe neverificate.",
+   "Hamburger – Borussia Monchengladbach: piață 55%, formă 65% → p 60%; absențe neverificate."
+  ],
+  "ids": [
+   14438704,
+   14453956,
+   14438746,
+   14438786,
+   14438667
+  ],
+  "sport": "fotbal"
  }
 ]
