@@ -1384,9 +1384,30 @@ function header() {
     n.append('Următorul meci de pe bilete: ', nm, ', ', cd, '.');
   } else n.append('Niciun meci programat pe biletele active.');
 }
+/* ---------- blog: articole zilnice (blog/index.json) ---------- */
+let blogPosts = null, blogOpen = null;
+function viewBlog() {
+  const list = $('list');
+  list.append(el('p', 'intro', 'Zilnic: ce bilete s-au făcut dimineața și de ce, apoi rezumatul zilei cu rezultatele. Articolele sunt scrise automat și nu conțin coduri de agenție.'));
+  if (blogPosts === null) { list.append(el('p', 'note', 'Se încarcă articolele…')); fetch('blog/index.json?v=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : []).catch(() => []).then(j => { blogPosts = Array.isArray(j) ? j : []; if (tab === 'b') render(); }); return; }
+  if (!blogPosts.length) { list.append(el('p', 'note', 'Primul articol apare în curând.')); return; }
+  for (const p of blogPosts) {
+    const art = el('article', 'blog-post'); const open = blogOpen === p.id || (blogOpen == null && p === blogPosts[0]);
+    const head = el('button', 'blog-head'); head.type = 'button'; head.setAttribute('aria-expanded', String(open));
+    const dl = p.data ? p.data.split('-').reverse().join('.') : '';
+    head.append(el('span', 'blog-kind', (p.tip === 'rezumat' ? 'Rezumat' : 'Bilete') + ' · ' + dl), el('b', 'blog-title', p.titlu || ''));
+    if (p.intro) head.append(el('span', 'blog-intro', p.intro));
+    head.onclick = () => { blogOpen = open ? '' : p.id; render(); };
+    art.append(head);
+    if (open) { const body = el('div', 'blog-body');
+      for (const s of p.sectiuni || []) { if (s.h) body.append(el('h4', null, s.h)); for (const t of s.p || []) body.append(el('p', 'why', t)); if (s.li && s.li.length) { const ul = el('ul', 'blog-ul'); for (const t of s.li) ul.append(el('li', null, t)); body.append(ul); } }
+      art.append(body); }
+    list.append(art);
+  }
+}
 function chips() {
   const box = $('chips'); box.replaceChildren();
-  box.hidden = tab === 'm' || tab === 'r' || tab === 's' || tab === 'x';
+  box.hidden = tab === 'm' || tab === 'r' || tab === 's' || tab === 'x' || tab === 'b';
   const have = new Set(rows.map(r => catOf(r.tip))); const tips = ['', ...CATS.filter(c => have.has(c))];
   if (tab === 'p') {
     const n = rows.filter(r => eff(r) === PEND && isLiveTicket(r)).length;
@@ -1399,7 +1420,7 @@ function chips() {
 }
 function render() {
   const list = $('list'); list.replaceChildren();
-  if (tab === 'p') viewTickets(true); else if (tab === 'h') viewTickets(false); else if (tab === 'c') viewCalendar(); else if (tab === 'r') viewResults(); else if (tab === 's') viewSuggest(); else if (tab === 'x') viewChallenge(); else viewMatches();
+  if (tab === 'p') viewTickets(true); else if (tab === 'h') viewTickets(false); else if (tab === 'c') viewCalendar(); else if (tab === 'r') viewResults(); else if (tab === 's') viewSuggest(); else if (tab === 'x') viewChallenge(); else if (tab === 'b') viewBlog(); else viewMatches();
   liveTick(); syncMNav();
 }
 $('tabs').addEventListener('click', e => {
@@ -1417,7 +1438,7 @@ $('q').addEventListener('input', e => { q = nrm(e.target.value.trim()); render()
 
 
 /* ---------- start ---------- */
-const h0 = (location.hash || '').slice(1); if (['p', 'm', 'c', 'h', 'r', 's', 'x'].includes(h0)) { tab = h0; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); }
+const h0 = (location.hash || '').slice(1); if (['p', 'm', 'c', 'h', 'r', 's', 'x', 'b'].includes(h0)) { tab = h0; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); }
 loadExtra();
 fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(r => { if (!r.ok) throw new Error('fișierul de bilete nu răspunde (' + r.status + ')'); return r.json(); })

@@ -664,3 +664,12 @@ body{background:radial-gradient(1000px 460px at 10% -160px,rgba(232,20,27,.22),t
   .bar.sopen .sbtn{border-color:var(--flood)}
   .toast{bottom:calc(96px + env(safe-area-inset-bottom))}
 }
+
+.blog-post{border:1px solid var(--line,rgba(255,255,255,.12));border-radius:12px;margin:0 0 12px;overflow:hidden}
+.blog-head{display:flex;flex-direction:column;gap:4px;width:100%;text-align:left;background:none;border:0;color:inherit;font:inherit;padding:14px 16px;cursor:pointer}
+.blog-kind{font-size:12px;opacity:.7;text-transform:uppercase;letter-spacing:.04em}
+.blog-title{font-size:17px}
+.blog-intro{font-size:14px;opacity:.8}
+.blog-body{padding:0 16px 14px}
+.blog-ul{margin:6px 0 10px;padding-left:20px}
+.blog-ul li{margin:3px 0}
