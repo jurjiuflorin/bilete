@@ -1,5 +1,278 @@
 [
  {
+  "id": "2026-11-06-rezumat",
+  "data": "2026-11-06",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 6 noiembrie: 0 câștigate, 0 pierdute, 5 nevalidate",
+  "intro": "Pariul zilei în așteptare · Challenge 1.40 în așteptare · Cotă 2 în așteptare · Cotă 5 în așteptare · Cotă 10 în așteptare",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [
+     "Niciun bilet pierdut."
+    ],
+    "li": []
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 12. 5 bilete nevalidate încă."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "12 bilete câștigate din 50 validate (24%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 1.82,
+    "sansa": 62.8,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "19:00",
+      "meci": "Gaziantep – Kasımpasa",
+      "liga": "Süper Lig",
+      "selectie": "Peste 2.5",
+      "cota": 1.82,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Gaziantep dă 1,2 și primește 1,6 goluri pe meci; Kasımpasa dă 1,8 și primește 1,2.",
+       "Meciurile Gaziantep au în medie 2,8 goluri, cele ale Kasımpasa 3,0.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 63,
+      "pm": 52,
+      "pf": 65,
+      "ph": 80,
+      "val": 8
+     }
+    ]
+   },
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.4,
+    "sansa": 70.9,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "Derby County – Bolton Wanderers",
+      "liga": "Championship",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.4,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 10,9 cu cele două echipe împreună (din statistica Superbet pe sezon)."
+      ],
+      "p": 71,
+      "pm": 66,
+      "pf": 76,
+      "ph": null,
+      "val": -1
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.89,
+    "sansa": 55.5,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "20:30",
+      "meci": "FC Arges – Dinamo Bucuresti",
+      "liga": "SuperLiga",
+      "selectie": "Peste 1.5",
+      "cota": 1.35,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): FC Arges dă 0,9 și primește 1,2 goluri pe meci; Dinamo Bucuresti dă 2,7 și primește 0,8.",
+       "Meciurile FC Arges au în medie 2,1 goluri, cele ale Dinamo Bucuresti 3,5.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 76,
+      "pm": 70,
+      "pf": 80,
+      "ph": 80,
+      "val": 2
+     },
+     {
+      "ora": "22:00",
+      "meci": "Sevilla – Alaves",
+      "liga": "LaLiga",
+      "selectie": "Peste 1.5",
+      "cota": 1.4,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Sevilla dă 1,5 și primește 1,7 goluri pe meci; Alaves dă 1,2 și primește 1,7.",
+       "Meciurile Sevilla au în medie 3,2 goluri, cele ale Alaves 2,9.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 73,
+      "pm": 68,
+      "pf": 75,
+      "ph": 80,
+      "val": 2
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 4.63,
+    "sansa": 25.5,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "20:00",
+      "meci": "Silkeborg – Lyngby",
+      "liga": "Superliga (Danemarca)",
+      "selectie": "X2",
+      "cota": 1.57,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Silkeborg dă 1,4 și primește 2,2 goluri pe meci; Lyngby dă 1,8 și primește 2,1.",
+       "Diferența de goluri pe meci: Silkeborg -0,8, Lyngby -0,3.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 66,
+      "pm": 60,
+      "pf": 75,
+      "ph": 60,
+      "val": 2
+     },
+     {
+      "ora": "21:00",
+      "meci": "Willem II Tilburg – Zwolle",
+      "liga": "Eredivisie",
+      "selectie": "Peste 2.5",
+      "cota": 1.64,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Willem II Tilburg dă 1,2 și primește 3,4 goluri pe meci; Zwolle dă 1,2 și primește 2,0.",
+       "Meciurile Willem II Tilburg au în medie 4,6 goluri, cele ale Zwolle 3,2.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 63,
+      "pm": 58,
+      "pf": 70,
+      "ph": 60,
+      "val": 2
+     },
+     {
+      "ora": "21:45",
+      "meci": "Venezia – Udinese",
+      "liga": "Serie A",
+      "selectie": "Peste 2.5",
+      "cota": 1.8,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Venezia dă 0,8 și primește 1,8 goluri pe meci; Udinese dă 1,0 și primește 2,2.",
+       "Meciurile Venezia au în medie 2,6 goluri, cele ale Udinese 3,2.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 61,
+      "pm": 53,
+      "pf": 50,
+      "ph": 100,
+      "val": 6
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10",
+    "cota": 9.78,
+    "sansa": 10,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "17:30",
+      "meci": "UTA Arad – Petrolul Ploiesti",
+      "liga": "SuperLiga",
+      "selectie": "Petrolul Ploiesti peste 0.5 goluri",
+      "cota": 1.47,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): UTA Arad dă 1,6 și primește 1,1 goluri pe meci; Petrolul Ploiesti dă 2,1 și primește 1,1.",
+       "Petrolul Ploiesti marchează 2,1 pe meci, iar UTA Arad primește 1,1.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 65,
+      "pm": 63,
+      "pf": 70,
+      "ph": 60,
+      "val": -3
+     },
+     {
+      "ora": "22:45",
+      "meci": "Famalicao – Arouca",
+      "liga": "Liga Portugal",
+      "selectie": "Arouca peste 0.5 goluri",
+      "cota": 1.42,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Famalicao dă 1,4 și primește 1,4 goluri pe meci; Arouca dă 1,5 și primește 1,0.",
+       "Arouca marchează 1,5 pe meci, iar Famalicao primește 1,4.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 64,
+      "pm": 66,
+      "pf": 75,
+      "ph": 40,
+      "val": -6
+     },
+     {
+      "ora": "21:45",
+      "meci": "Standard Liege – SK Beveren",
+      "liga": "Pro League",
+      "selectie": "Peste 2.5",
+      "cota": 1.65,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Standard Liege dă 1,5 și primește 1,4 goluri pe meci; SK Beveren dă 1,5 și primește 1,8.",
+       "Meciurile Standard Liege au în medie 2,9 goluri, cele ale SK Beveren 3,3.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 63,
+      "pm": 57,
+      "pf": 60,
+      "ph": 80,
+      "val": 2
+     },
+     {
+      "ora": "21:45",
+      "meci": "Toulouse – Strasbourg",
+      "liga": "Ligue 1",
+      "selectie": "Peste 2.5",
+      "cota": 1.66,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Toulouse dă 1,4 și primește 1,6 goluri pe meci; Strasbourg dă 1,8 și primește 2,0.",
+       "Meciurile Toulouse au în medie 3,0 goluri, cele ale Strasbourg 3,8.",
+       "Meciuri directe analizate: 5."
+      ],
+      "p": 63,
+      "pm": 57,
+      "pf": 70,
+      "ph": 60,
+      "val": 3
+     },
+     {
+      "ora": "21:30",
+      "meci": "Hamburger – Borussia Monchengladbach",
+      "liga": "Bundesliga",
+      "selectie": "Peste 2.5",
+      "cota": 1.71,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Hamburger dă 1,0 și primește 2,2 goluri pe meci; Borussia Monchengladbach dă 1,7 și primește 2,0.",
+       "Meciurile Hamburger au în medie 3,2 goluri, cele ale Borussia Monchengladbach 3,7.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare."
+      ],
+      "p": 60,
+      "pm": 55,
+      "pf": 65,
+      "ph": null,
+      "val": 2
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-06-bilete",
   "data": "2026-11-06",
   "tip": "bilete",
