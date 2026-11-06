@@ -1,0 +1,163 @@
+{
+ "data": "2026-11-06",
+ "salvat": "2026-11-06T10:24:30.290Z",
+ "n": 15,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14454001,
+    "meci": "Sevilla – Alaves",
+    "when": "2026-11-06T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.4,
+    "p": 0.734,
+    "why": "Sevilla dă 1,5 și primește 1,7 goluri pe meci; Alaves dă 1,4 și primește 1,5."
+   },
+   {
+    "id": 14438705,
+    "meci": "FC Arges – Dinamo Bucuresti",
+    "when": "2026-11-06T18:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.35,
+    "p": 0.701,
+    "why": "FC Arges dă 0,6 și primește 1,1 goluri pe meci; Dinamo Bucuresti dă 2,2 și primește 0,6."
+   },
+   {
+    "id": 14453956,
+    "meci": "Famalicao – Arouca",
+    "when": "2026-11-06T20:45:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.38,
+    "p": 0.679,
+    "why": "Famalicao dă 1,4 și primește 1,4 goluri pe meci; Arouca dă 1,3 și primește 0,7."
+   },
+   {
+    "id": 14424109,
+    "meci": "Willem II Tilburg – Zwolle",
+    "when": "2026-11-06T19:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.64,
+    "p": 0.667,
+    "why": "Willem II Tilburg dă 0,9 și primește 3,5 goluri pe meci; Zwolle dă 1,1 și primește 2,1."
+   },
+   {
+    "id": 14438667,
+    "meci": "Hamburger – Borussia Monchengladbach",
+    "when": "2026-11-06T19:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.71,
+    "p": 0.647,
+    "why": "Hamburger dă 0,9 și primește 2,4 goluri pe meci; Borussia Monchengladbach dă 1,4 și primește 2,8."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14424109,
+    "meci": "Willem II Tilburg – Zwolle",
+    "when": "2026-11-06T19:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.54,
+    "p": 0.673,
+    "why": "Willem II Tilburg marchează 0,9 și primește 3,5 pe meci; Zwolle marchează 1,1 și primește 2,1."
+   },
+   {
+    "id": 14438667,
+    "meci": "Hamburger – Borussia Monchengladbach",
+    "when": "2026-11-06T19:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.59,
+    "p": 0.663,
+    "why": "Hamburger marchează 0,9 și primește 2,4 pe meci; Borussia Monchengladbach marchează 1,4 și primește 2,8."
+   },
+   {
+    "id": 15406041,
+    "meci": "Silkeborg – Lyngby",
+    "when": "2026-11-06T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.53,
+    "p": 0.645,
+    "why": "Silkeborg marchează 1,3 și primește 1,8 pe meci; Lyngby marchează 1,5 și primește 2,2."
+   },
+   {
+    "id": 14438786,
+    "meci": "Toulouse – Strasbourg",
+    "when": "2026-11-06T19:45:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "GG (ambele marchează)",
+    "od": 1.57,
+    "p": 0.629,
+    "why": "Toulouse marchează 1,3 și primește 1,4 pe meci; Strasbourg marchează 1,9 și primește 2,1."
+   },
+   {
+    "id": 14438746,
+    "meci": "Standard Liege – SK Beveren",
+    "when": "2026-11-06T19:45:00.000Z",
+    "liga": "Pro League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.56,
+    "p": 0.62,
+    "why": "Standard Liege marchează 1,5 și primește 1,6 pe meci; SK Beveren marchează 1,3 și primește 2."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14438705,
+    "meci": "FC Arges – Dinamo Bucuresti",
+    "when": "2026-11-06T18:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.36,
+    "p": 0.775,
+    "why": "Media cornerelor: FC Arges 5,1, Dinamo Bucuresti 5,9, adică 11 pe meci."
+   },
+   {
+    "id": 14453936,
+    "meci": "Hammarby IF – Elfsborg",
+    "when": "2026-11-06T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.36,
+    "p": 0.766,
+    "why": "Media cornerelor: Hammarby IF 6,8, Elfsborg 5,1, adică 11,9 pe meci."
+   },
+   {
+    "id": 14438746,
+    "meci": "Standard Liege – SK Beveren",
+    "when": "2026-11-06T19:45:00.000Z",
+    "liga": "Pro League",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.46,
+    "p": 0.735,
+    "why": "Media cornerelor: Standard Liege 6,1, SK Beveren 5,6, adică 11,7 pe meci."
+   },
+   {
+    "id": 14424110,
+    "meci": "Derby County – Bolton Wanderers",
+    "when": "2026-11-06T20:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.4,
+    "p": 0.716,
+    "why": "Media cornerelor: Derby County 5,5, Bolton Wanderers 5,4, adică 10,9 pe meci."
+   },
+   {
+    "id": 14453956,
+    "meci": "Famalicao – Arouca",
+    "when": "2026-11-06T20:45:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.35,
+    "p": 0.657,
+    "why": "Media cornerelor: Famalicao 4,9, Arouca 3,6, adică 8,5 pe meci."
+   }
+  ]
+ }
+}
