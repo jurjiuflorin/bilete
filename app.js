@@ -1386,6 +1386,30 @@ function header() {
 }
 /* ---------- blog: articole zilnice (blog/index.json) ---------- */
 let blogPosts = null, blogOpen = null;
+function blogTicket(b) {
+  const box = el('section', 'bt bt-' + (b.status === 'câștigat' ? 'w' : b.status === 'pierdut' ? 'l' : 'p'));
+  const h = el('header', 'bt-h'); h.append(el('b', 'bt-t', b.tip), el('span', 'bt-o', b.cota != null ? fmtOdd(b.cota) : ''));
+  const meta = []; if (b.sansa != null) meta.push('șansă ' + String(b.sansa).replace('.', ',') + '%'); meta.push(b.status); h.append(el('span', 'bt-m', meta.join(' · '))); box.append(h);
+  (b.evenimente || []).forEach((e, i) => {
+    const ev = el('div', 'be');
+    const top = el('div', 'be-top'); top.append(el('span', 'be-n', String(i + 1)), el('div', 'be-match', e.meci));
+    if (e.ora || e.liga) top.append(el('div', 'be-when', [e.liga, e.ora ? 'ora ' + e.ora : ''].filter(Boolean).join(' · ')));
+    ev.append(top);
+    const pick = el('div', 'be-pick'); pick.append(el('b', null, e.selectie || ''), el('span', 'be-od', e.cota != null ? fmtOdd(e.cota) : ''));
+    if (e.rezultat) pick.append(el('span', 'be-res', e.rezultat));
+    ev.append(pick);
+    if (e.p != null) {
+      const bars = el('div', 'be-bars');
+      for (const [lab, v, cls] of [['Piață', e.pm, ''], ['Formă', e.pf, ''], ['H2H', e.ph, ''], ['Estimare', e.p, 'main']]) {
+        const r = el('div', 'be-bar ' + cls); r.append(el('span', null, lab), el('i')); r.lastChild.style.setProperty('--w', (v == null ? 0 : v) + '%'); r.append(el('em', null, v == null ? '–' : v + '%')); bars.append(r); }
+      ev.append(bars);
+      if (e.val != null) ev.append(el('div', 'be-val ' + (e.val >= 3 ? 'pos' : e.val < 0 ? 'neg' : ''), 'Cota implică ' + Math.round(100 / e.cota) + '%, estimarea mea ' + e.p + '%: ' + (e.val >= 0 ? '+' : '') + e.val + ' puncte'));
+    }
+    if ((e.linii || []).length) { const ul = el('ul', 'be-ul'); for (const t of e.linii) ul.append(el('li', null, t)); ev.append(ul); }
+    box.append(ev);
+  });
+  return box;
+}
 function viewBlog() {
   const list = $('list');
   list.append(el('p', 'intro', 'Zilnic: ce bilete s-au făcut dimineața și de ce, apoi rezumatul zilei cu rezultatele. Articolele sunt scrise automat și nu conțin coduri de agenție.'));
@@ -1400,7 +1424,9 @@ function viewBlog() {
     head.onclick = () => { blogOpen = open ? '' : p.id; render(); };
     art.append(head);
     if (open) { const body = el('div', 'blog-body');
-      for (const s of p.sectiuni || []) { if (s.h) body.append(el('h4', null, s.h)); for (const t of s.p || []) body.append(el('p', 'why', t)); if (s.li && s.li.length) { const ul = el('ul', 'blog-ul'); for (const t of s.li) ul.append(el('li', null, t)); body.append(ul); } }
+      const sec = s => { if (s.h) body.append(el('h4', null, s.h)); for (const t of s.p || []) body.append(el('p', 'why', t)); if (s.li && s.li.length) { const ul = el('ul', 'blog-ul'); for (const t of s.li) ul.append(el('li', null, t)); body.append(ul); } };
+      const ss = p.sectiuni || [];
+      if (p.bilete && p.bilete.length) { if (ss[0]) sec(ss[0]); for (const b of p.bilete) body.append(blogTicket(b)); ss.slice(1).forEach(sec); } else ss.forEach(sec);
       art.append(body); }
     list.append(art);
   }
