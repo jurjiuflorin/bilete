@@ -1,5 +1,409 @@
 [
  {
+  "id": "2026-11-07-rezumat",
+  "data": "2026-11-07",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 7 noiembrie: 0 câștigate, 2 pierdute, 4 nevalidate",
+  "intro": "Pariul zilei în așteptare · Challenge 1.40 în așteptare · Cotă 2 pierdut · Cotă 5 în așteptare · Cotă 10 în așteptare · Weekend pierdut",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [],
+    "li": [
+     "Cotă 2: Leeds United – Tottenham Leeds–Tottenham 1-0 (X2)",
+     "Weekend: Nottingham Forest – Manchester City Nottingham Forest–Manchester City 3-1 (2 Manchester City); Arsenal – Hull City Arsenal–Hull 1-0 (Arsenal handicap -1)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 20. 4 bilete nevalidate încă."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "12 bilete câștigate din 47 validate (26%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 1.49,
+    "sansa": 74.9,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "19:00",
+      "meci": "Luzern – Young Boys",
+      "selectie": "Young Boys peste 1.5 goluri",
+      "cota": 1.49,
+      "linii": [
+       "Luzern – Young Boys: piață 62%, formă 75%, H2H 100% → p 75%; absențe neverificate."
+      ],
+      "p": 75,
+      "pm": 62,
+      "pf": 75,
+      "ph": 100,
+      "val": 8
+     }
+    ]
+   },
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.35,
+    "sansa": 75.6,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "19:00",
+      "meci": "Vaduz – Sion",
+      "selectie": "Peste 2.5",
+      "cota": 1.35,
+      "linii": [
+       "Vaduz – Sion: piață 69%, formă 80%, H2H 80% → p 76%; absențe neverificate."
+      ],
+      "p": 76,
+      "pm": 69,
+      "pf": 80,
+      "ph": 80,
+      "val": 2
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 2.1,
+    "sansa": 57.5,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "14:30",
+      "meci": "Leeds United – Tottenham",
+      "selectie": "X2",
+      "cota": 1.46,
+      "linii": [
+       "Leeds United – Tottenham: piață 65%, formă 75%, H2H 100% → p 76%; absențe neverificate."
+      ],
+      "p": 76,
+      "pm": 65,
+      "pf": 75,
+      "ph": 100,
+      "val": 8,
+      "rezultat": "Leeds–Tottenham 1-0"
+     },
+     {
+      "ora": "14:30",
+      "meci": "Portsmouth – Stoke City",
+      "selectie": "Stoke City peste 0.5 goluri",
+      "cota": 1.44,
+      "linii": [
+       "Portsmouth – Stoke City: piață 64%, formă 75%, H2H 100% → p 76%; absențe neverificate."
+      ],
+      "p": 76,
+      "pm": 64,
+      "pf": 75,
+      "ph": 100,
+      "val": 7
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 4.6,
+    "sansa": 27.6,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "17:00",
+      "meci": "Blackburn Rovers – West Ham",
+      "liga": "Championship",
+      "selectie": "Blackburn Rovers peste 0.5 goluri",
+      "cota": 1.43,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Blackburn Rovers dă 1,5 și primește 1,7 goluri pe meci; West Ham dă 2,7 și primește 1,7.",
+       "Blackburn Rovers marchează 1,5 pe meci, iar West Ham primește 1,7.",
+       "Meciuri directe analizate: 5.",
+       "Blackburn Rovers – West Ham: piață 65%, formă 80%, H2H 80% → p 74%; absențe neverificate."
+      ],
+      "p": 74,
+      "pm": 66,
+      "pf": 80,
+      "ph": 80,
+      "val": 4
+     },
+     {
+      "ora": "17:00",
+      "meci": "Watford – Middlesbrough",
+      "liga": "Championship",
+      "selectie": "Watford peste 0.5 goluri",
+      "cota": 1.49,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Watford dă 0,9 și primește 1,8 goluri pe meci; Middlesbrough dă 2,2 și primește 1,7.",
+       "Watford marchează 0,9 pe meci, iar Middlesbrough primește 1,7.",
+       "Meciuri directe analizate: 5.",
+       "Watford – Middlesbrough: piață 62%, formă 70%, H2H 100% → p 73%; absențe neverificate."
+      ],
+      "p": 72,
+      "pm": 61,
+      "pf": 70,
+      "ph": 100,
+      "val": 5
+     },
+     {
+      "ora": "21:30",
+      "meci": "Grasshopper – Lausanne Sport",
+      "selectie": "1X",
+      "cota": 1.43,
+      "linii": [
+       "Grasshopper – Lausanne Sport: piață 65%, formă 75%, H2H 80% → p 72%; absențe neverificate."
+      ],
+      "p": 72,
+      "pm": 65,
+      "pf": 75,
+      "ph": 80,
+      "val": 2
+     },
+     {
+      "ora": "19:45",
+      "meci": "ADO Den Haag – Sparta Rotterdam",
+      "liga": "Eredivisie",
+      "selectie": "X2",
+      "cota": 1.51,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): ADO Den Haag dă 1,3 și primește 1,9 goluri pe meci; Sparta Rotterdam dă 1,9 și primește 2,6.",
+       "Diferența de goluri pe meci: ADO Den Haag -0,6, Sparta Rotterdam -0,7.",
+       "Meciuri directe analizate: 5.",
+       "ADO Den Haag – Sparta Rotterdam: piață 63%, formă 75%, H2H 80% → p 71%; absențe neverificate."
+      ],
+      "p": 71,
+      "pm": 63,
+      "pf": 75,
+      "ph": 80,
+      "val": 5
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10",
+    "cota": 9.07,
+    "sansa": 12.4,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "17:15",
+      "meci": "Espanyol – Deportivo de A Coruna",
+      "selectie": "Deportivo de A Coruna peste 0.5 goluri",
+      "cota": 1.35,
+      "linii": [
+       "Espanyol – Deportivo de A Coruna: piață 69%, formă 80%, H2H indisponibil → p 74%; absențe neverificate."
+      ],
+      "p": 74,
+      "pm": 69,
+      "pf": 80,
+      "ph": null,
+      "val": 0
+     },
+     {
+      "ora": "19:00",
+      "meci": "Odense BK – Viborg",
+      "selectie": "GG",
+      "cota": 1.45,
+      "linii": [
+       "Odense BK – Viborg: piață 64%, formă 75%, H2H 80% → p 72%; absențe neverificate."
+      ],
+      "p": 72,
+      "pm": 64,
+      "pf": 75,
+      "ph": 80,
+      "val": 3
+     },
+     {
+      "ora": "18:00",
+      "meci": "Galatasaray – Amedspor",
+      "liga": "Süper Lig",
+      "selectie": "Peste 2.5",
+      "cota": 1.43,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Galatasaray dă 2,1 și primește 1,5 goluri pe meci; Amedspor dă 2,5 și primește 1,1.",
+       "Meciurile Galatasaray au în medie 3,6 goluri, cele ale Amedspor 3,6.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Galatasaray – Amedspor: piață 66%, formă 75%, H2H indisponibil → p 70%; absențe neverificate."
+      ],
+      "p": 71,
+      "pm": 66,
+      "pf": 75,
+      "ph": null,
+      "val": 1
+     },
+     {
+      "ora": "22:00",
+      "meci": "Valencia – Real Madrid",
+      "selectie": "Peste 2.5",
+      "cota": 1.47,
+      "linii": [
+       "Valencia – Real Madrid: piață 64%, formă 70%, H2H 80% → p 70%; absențe neverificate."
+      ],
+      "p": 70,
+      "pm": 64,
+      "pf": 70,
+      "ph": 80,
+      "val": 2
+     },
+     {
+      "ora": "19:45",
+      "meci": "Aberdeen – Hibernian",
+      "selectie": "Peste 9.5 cornere",
+      "cota": 1.46,
+      "linii": [
+       "Aberdeen – Hibernian: piață 63%, formă 76%, H2H indisponibil → p 69%; absențe neverificate."
+      ],
+      "p": 69,
+      "pm": 63,
+      "pf": 76,
+      "ph": null,
+      "val": 1
+     },
+     {
+      "ora": "19:30",
+      "meci": "Nottingham Forest – Manchester City",
+      "liga": "Premier League",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.51,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 10,7 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Nottingham Forest – Manchester City: piață 62%, formă 74%, H2H indisponibil → p 68%; absențe neverificate."
+      ],
+      "p": 67,
+      "pm": 60,
+      "pf": 74,
+      "ph": null,
+      "val": 1
+     }
+    ]
+   },
+   {
+    "tip": "Weekend",
+    "cota": 21.05,
+    "sansa": 2,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "19:30",
+      "meci": "Nottingham Forest – Manchester City",
+      "liga": "Premier League",
+      "selectie": "2 Manchester City",
+      "cota": 1.75,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Nottingham Forest dă 0,6 și primește 1,4 goluri pe meci; Manchester City dă 2,9 și primește 1,7.",
+       "Diferența de goluri pe meci: Nottingham Forest -0,8, Manchester City 1,2.",
+       "Meciuri directe analizate: 5.",
+       "Forest – City: piață 54%, formă City 3V din ultimele 5 (deplasări 9p din 4) vs Forest 0V acasă (1p din 4), H2H indisponibil → p 56%; Semenyo absent."
+      ],
+      "p": 56,
+      "pm": 54,
+      "pf": null,
+      "ph": null,
+      "val": -1,
+      "rezultat": "Nottingham Forest–Manchester City 3-1"
+     },
+     {
+      "ora": "16:00",
+      "meci": "Crystal Palace – Liverpool",
+      "liga": "Premier League",
+      "selectie": "2 Liverpool",
+      "cota": 1.58,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Crystal Palace dă 0,9 și primește 1,8 goluri pe meci; Liverpool dă 2,1 și primește 1,6.",
+       "Diferența de goluri pe meci: Crystal Palace -0,9, Liverpool 0,5.",
+       "Meciuri directe analizate: 5.",
+       "Palace – Liverpool: piață 60%, formă Liverpool 10p din 4 în deplasare vs Palace 3 înfrângeri la rând fără gol, H2H 2V-2E-1Î pentru Liverpool → p 57%; Mateta suspendat, Ekitike/Frimpong absenți la Liverpool."
+      ],
+      "p": 57,
+      "pm": 60,
+      "pf": null,
+      "ph": null,
+      "val": -6
+     },
+     {
+      "ora": "22:00",
+      "meci": "Atletico Madrid – Barcelona",
+      "liga": "LaLiga",
+      "selectie": "2 Barcelona",
+      "cota": 1.8,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Atletico Madrid dă 1,8 și primește 0,5 goluri pe meci; Barcelona dă 3,8 și primește 1,5.",
+       "Diferența de goluri pe meci: Atletico Madrid 1,3, Barcelona 2,3.",
+       "Meciuri directe analizate: 5.",
+       "Atletico – Barcelona: piață 53%, formă Barcelona 15p din 5 în deplasare, 46 goluri în 11 meciuri vs Atletico 13p din 5 acasă, H2H Barcelona 4V din 5 → p 54%; absențe neconfirmate."
+      ],
+      "p": 54,
+      "pm": 53,
+      "pf": null,
+      "ph": null,
+      "val": -2
+     },
+     {
+      "ora": "16:00",
+      "meci": "Sunderland – Chelsea",
+      "liga": "Premier League",
+      "selectie": "2 Chelsea",
+      "cota": 2,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Sunderland dă 1,1 și primește 1,8 goluri pe meci; Chelsea dă 2,3 și primește 1,7.",
+       "Diferența de goluri pe meci: Sunderland -0,7, Chelsea 0,6.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Sunderland – Chelsea: piață 48%, formă Chelsea 5V din ultimele 10 vs Sunderland loc 20 cu 17 goluri primite în 9, H2H Sunderland 2V la rând (2-1, 2-1) → p 44%; Palmer incert, Alderete suspendat."
+      ],
+      "p": 44,
+      "pm": 48,
+      "pf": null,
+      "ph": null,
+      "val": -6
+     },
+     {
+      "ora": "17:00",
+      "meci": "Arsenal – Hull City",
+      "liga": "Premier League",
+      "selectie": "Arsenal handicap -1",
+      "cota": 1.8,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Arsenal dă 1,8 și primește 1,0 goluri pe meci; Hull City dă 1,0 și primește 1,2.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Arsenal – Hull: piață 82% victorie, formă Arsenal 5V din 5 acasă (12-2) vs Hull 1V în 4 deplasări (5 primite), H2H indisponibil → p 50%; Saka absent; cotă estimată."
+      ],
+      "p": 50,
+      "pm": 82,
+      "pf": null,
+      "ph": null,
+      "val": -6,
+      "rezultat": "Arsenal–Hull 1-0"
+     },
+     {
+      "ora": "16:30",
+      "meci": "Köln – Bayer Leverkusen",
+      "liga": "Bundesliga",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.75,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Köln dă 1,6 și primește 1,4 goluri pe meci; Bayer Leverkusen dă 2,3 și primește 1,4.",
+       "Meciurile Köln au în medie 3,0 goluri, cele ale Bayer Leverkusen 3,7.",
+       "Meciuri directe analizate: 5.",
+       "Köln – Leverkusen: piață 58%, formă peste 2.5 la Köln 2/5 și Leverkusen 3/5 (medie 3.0 și 3.7 goluri/meci), H2H peste 2.5 în 3 din 5 → p 52%; Diaby, Doué absenți; cotă estimată."
+      ],
+      "p": 52,
+      "pm": 58,
+      "pf": null,
+      "ph": null,
+      "val": -5
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-07-bilete",
   "data": "2026-11-07",
   "tip": "bilete",
