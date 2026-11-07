@@ -2919,9 +2919,9 @@
   "tip": "Pariul zilei",
   "cota": 1.82,
   "sansa": 0.628,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990A-KKFKGB",
-  "rezultat": "",
+  "rezultat": "Gaziantep–Kasımpasa 0-2",
   "selectii": "19:00 Gaziantep – Kasımpasa: Peste 2.5 (1.82)",
   "motive": [
    "Gaziantep – Kasımpasa: piață 52%, formă 65%, H2H 80% → p 63%; absențe neverificate."
@@ -2937,9 +2937,9 @@
   "tip": "Challenge 1.40",
   "cota": 1.4,
   "sansa": 0.709,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "990Q-KLBJDB",
-  "rezultat": "",
+  "rezultat": "Derby–Bolton 3-1 (10 cornere)",
   "selectii": "22:00 Derby County – Bolton Wanderers: Peste 8.5 cornere (1.40)",
   "motive": [
    "Derby County – Bolton Wanderers: piață 66%, formă 76% → p 71%; absențe neverificate."
@@ -2957,9 +2957,9 @@
   "tip": "Cotă 2",
   "cota": 1.89,
   "sansa": 0.5548,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991M-KKV5ME",
-  "rezultat": "",
+  "rezultat": "Argeș–Dinamo 2-1 · Sevilla–Alaves 0-0",
   "selectii": "20:30 FC Arges – Dinamo Bucuresti: Peste 1.5 (1.35) · 22:00 Sevilla – Alaves: Peste 1.5 (1.40)",
   "motive": [
    "FC Arges – Dinamo Bucuresti: piață 70%, formă 80%, H2H 80% → p 76%; absențe neverificate.",
@@ -2977,9 +2977,9 @@
   "tip": "Cotă 5",
   "cota": 4.63,
   "sansa": 0.2548,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991P-WWW5AQ",
-  "rezultat": "",
+  "rezultat": "Silkeborg–Lyngby 1-0 · Willem II–Zwolle 1-1 · Venezia–Udinese 2-1",
   "selectii": "20:00 Silkeborg – Lyngby: X2 (1.57) · 21:00 Willem II Tilburg – Zwolle: Peste 2.5 (1.64) · 21:45 Venezia – Udinese: Peste 2.5 (1.80)",
   "motive": [
    "Silkeborg – Lyngby: piață 60%, formă 75%, H2H 60% → p 66%; absențe neverificate.",
@@ -2999,9 +2999,9 @@
   "tip": "Cotă 10",
   "cota": 9.78,
   "sansa": 0.0998,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990W-NHXPQZ",
-  "rezultat": "",
+  "rezultat": "UTA–Petrolul 0-1 · Famalicão–Arouca 1-0 · Standard–Beveren 3-0 · Toulouse–Strasbourg 3-1 · Hamburg–Gladbach 3-1",
   "selectii": "17:30 UTA Arad – Petrolul Ploiesti: Petrolul Ploiesti peste 0.5 goluri (1.47) · 22:45 Famalicao – Arouca: Arouca peste 0.5 goluri (1.42) · 21:45 Standard Liege – SK Beveren: Peste 2.5 (1.65) · 21:45 Toulouse – Strasbourg: Peste 2.5 (1.66) · 21:30 Hamburger – Borussia Monchengladbach: Peste 2.5 (1.71)",
   "motive": [
    "UTA Arad – Petrolul Ploiesti: piață 63%, formă 70%, H2H 60% → p 65%; absențe neverificate.",
@@ -3063,6 +3063,26 @@
    14858548
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-07-challenge",
+  "data": "2026-11-07",
+  "tip": "Challenge 1.40",
+  "cota": 1.35,
+  "sansa": 0.756,
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "selectii": "19:00 Vaduz – Sion: Peste 2.5 (1.35)",
+  "motive": [
+   "Vaduz – Sion: piață 69%, formă 80%, H2H 80% → p 76%; absențe neverificate."
+  ],
+  "ids": [
+   14858547
+  ],
+  "sport": "fotbal",
+  "ciclu": 4,
+  "pas": 4
  },
  {
   "id": "2026-11-07-cota2",
