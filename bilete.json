@@ -3045,5 +3045,95 @@
    14438716,
    14438668
   ]
+ },
+ {
+  "id": "2026-11-07-pariu",
+  "data": "2026-11-07",
+  "tip": "Pariul zilei",
+  "cota": 1.49,
+  "sansa": 0.749,
+  "status": "în așteptare",
+  "cod": "9908-KWQ93B",
+  "rezultat": "",
+  "selectii": "19:00 Luzern – Young Boys: Young Boys peste 1.5 goluri (1.49)",
+  "motive": [
+   "Luzern – Young Boys: piață 62%, formă 75%, H2H 100% → p 75%; absențe neverificate."
+  ],
+  "ids": [
+   14858548
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-07-cota2",
+  "data": "2026-11-07",
+  "tip": "Cotă 2",
+  "cota": 2.1,
+  "sansa": 0.5753,
+  "status": "în așteptare",
+  "cod": "991N-KK8KLY",
+  "rezultat": "",
+  "selectii": "14:30 Leeds United – Tottenham: X2 (1.46) · 14:30 Portsmouth – Stoke City: Stoke City peste 0.5 goluri (1.44)",
+  "motive": [
+   "Leeds United – Tottenham: piață 65%, formă 75%, H2H 100% → p 76%; absențe neverificate.",
+   "Portsmouth – Stoke City: piață 64%, formă 75%, H2H 100% → p 76%; absențe neverificate."
+  ],
+  "ids": [
+   14438722,
+   14438680
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-07-cota5",
+  "data": "2026-11-07",
+  "tip": "Cotă 5",
+  "cota": 4.6,
+  "sansa": 0.2758,
+  "status": "în așteptare",
+  "cod": "990D-KLWB82",
+  "rezultat": "",
+  "selectii": "17:00 Blackburn Rovers – West Ham: Blackburn Rovers peste 0.5 goluri (1.43) · 17:00 Watford – Middlesbrough: Watford peste 0.5 goluri (1.49) · 21:30 Grasshopper – Lausanne Sport: 1X (1.43) · 19:45 ADO Den Haag – Sparta Rotterdam: X2 (1.51)",
+  "motive": [
+   "Blackburn Rovers – West Ham: piață 65%, formă 80%, H2H 80% → p 74%; absențe neverificate.",
+   "Watford – Middlesbrough: piață 62%, formă 70%, H2H 100% → p 73%; absențe neverificate.",
+   "Grasshopper – Lausanne Sport: piață 65%, formă 75%, H2H 80% → p 72%; absențe neverificate.",
+   "ADO Den Haag – Sparta Rotterdam: piață 63%, formă 75%, H2H 80% → p 71%; absențe neverificate."
+  ],
+  "ids": [
+   14438727,
+   14438732,
+   14858549,
+   14438764
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-07-cota10",
+  "data": "2026-11-07",
+  "tip": "Cotă 10",
+  "cota": 9.07,
+  "sansa": 0.1237,
+  "status": "în așteptare",
+  "cod": "990Z-KKLKPV",
+  "rezultat": "",
+  "selectii": "17:15 Espanyol – Deportivo de A Coruna: Deportivo de A Coruna peste 0.5 goluri (1.35) · 19:00 Odense BK – Viborg: GG (1.45) · 18:00 Galatasaray – Amedspor: Peste 2.5 (1.43) · 22:00 Valencia – Real Madrid: Peste 2.5 (1.47) · 19:45 Aberdeen – Hibernian: Peste 9.5 cornere (1.46) · 19:30 Nottingham Forest – Manchester City: Peste 8.5 cornere (1.51)",
+  "motive": [
+   "Espanyol – Deportivo de A Coruna: piață 69%, formă 80%, H2H indisponibil → p 74%; absențe neverificate.",
+   "Odense BK – Viborg: piață 64%, formă 75%, H2H 80% → p 72%; absențe neverificate.",
+   "Galatasaray – Amedspor: piață 66%, formă 75%, H2H indisponibil → p 70%; absențe neverificate.",
+   "Valencia – Real Madrid: piață 64%, formă 70%, H2H 80% → p 70%; absențe neverificate.",
+   "Aberdeen – Hibernian: piață 63%, formă 76%, H2H indisponibil → p 69%; absențe neverificate.",
+   "Nottingham Forest – Manchester City: piață 62%, formă 74%, H2H indisponibil → p 68%; absențe neverificate."
+  ],
+  "ids": [
+   14453997,
+   15406042,
+   14453971,
+   14454002,
+   15595068,
+   14438724
+  ],
+  "sport": "fotbal"
  }
 ]
