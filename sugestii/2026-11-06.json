@@ -12,7 +12,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.4,
     "p": 0.734,
-    "why": "Sevilla dă 1,5 și primește 1,7 goluri pe meci; Alaves dă 1,4 și primește 1,5."
+    "why": "Sevilla dă 1,5 și primește 1,7 goluri pe meci; Alaves dă 1,4 și primește 1,5.",
+    "rez": "lost",
+    "scor": "0-0"
    },
    {
     "id": 14438705,
@@ -22,7 +24,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.35,
     "p": 0.701,
-    "why": "FC Arges dă 0,6 și primește 1,1 goluri pe meci; Dinamo Bucuresti dă 2,2 și primește 0,6."
+    "why": "FC Arges dă 0,6 și primește 1,1 goluri pe meci; Dinamo Bucuresti dă 2,2 și primește 0,6.",
+    "rez": "won",
+    "scor": "2-1"
    },
    {
     "id": 14453956,
@@ -32,7 +36,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.38,
     "p": 0.679,
-    "why": "Famalicao dă 1,4 și primește 1,4 goluri pe meci; Arouca dă 1,3 și primește 0,7."
+    "why": "Famalicao dă 1,4 și primește 1,4 goluri pe meci; Arouca dă 1,3 și primește 0,7.",
+    "rez": "lost",
+    "scor": "1-0"
    },
    {
     "id": 14424109,
@@ -42,7 +48,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.64,
     "p": 0.667,
-    "why": "Willem II Tilburg dă 0,9 și primește 3,5 goluri pe meci; Zwolle dă 1,1 și primește 2,1."
+    "why": "Willem II Tilburg dă 0,9 și primește 3,5 goluri pe meci; Zwolle dă 1,1 și primește 2,1.",
+    "rez": "lost",
+    "scor": "1-1"
    },
    {
     "id": 14438667,
@@ -52,7 +60,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.71,
     "p": 0.647,
-    "why": "Hamburger dă 0,9 și primește 2,4 goluri pe meci; Borussia Monchengladbach dă 1,4 și primește 2,8."
+    "why": "Hamburger dă 0,9 și primește 2,4 goluri pe meci; Borussia Monchengladbach dă 1,4 și primește 2,8.",
+    "rez": "won",
+    "scor": "3-1"
    }
   ],
   "gg": [
@@ -64,7 +74,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.54,
     "p": 0.673,
-    "why": "Willem II Tilburg marchează 0,9 și primește 3,5 pe meci; Zwolle marchează 1,1 și primește 2,1."
+    "why": "Willem II Tilburg marchează 0,9 și primește 3,5 pe meci; Zwolle marchează 1,1 și primește 2,1.",
+    "rez": "won",
+    "scor": "1-1"
    },
    {
     "id": 14438667,
@@ -74,7 +86,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.59,
     "p": 0.663,
-    "why": "Hamburger marchează 0,9 și primește 2,4 pe meci; Borussia Monchengladbach marchează 1,4 și primește 2,8."
+    "why": "Hamburger marchează 0,9 și primește 2,4 pe meci; Borussia Monchengladbach marchează 1,4 și primește 2,8.",
+    "rez": "won",
+    "scor": "3-1"
    },
    {
     "id": 15406041,
@@ -84,7 +98,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.53,
     "p": 0.645,
-    "why": "Silkeborg marchează 1,3 și primește 1,8 pe meci; Lyngby marchează 1,5 și primește 2,2."
+    "why": "Silkeborg marchează 1,3 și primește 1,8 pe meci; Lyngby marchează 1,5 și primește 2,2.",
+    "rez": "lost",
+    "scor": "1-0"
    },
    {
     "id": 14438786,
@@ -94,7 +110,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.57,
     "p": 0.629,
-    "why": "Toulouse marchează 1,3 și primește 1,4 pe meci; Strasbourg marchează 1,9 și primește 2,1."
+    "why": "Toulouse marchează 1,3 și primește 1,4 pe meci; Strasbourg marchează 1,9 și primește 2,1.",
+    "rez": "won",
+    "scor": "3-1"
    },
    {
     "id": 14438746,
@@ -104,7 +122,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.56,
     "p": 0.62,
-    "why": "Standard Liege marchează 1,5 și primește 1,6 pe meci; SK Beveren marchează 1,3 și primește 2."
+    "why": "Standard Liege marchează 1,5 și primește 1,6 pe meci; SK Beveren marchează 1,3 și primește 2.",
+    "rez": "lost",
+    "scor": "3-0"
    }
   ],
   "cornere": [
@@ -116,7 +136,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.36,
     "p": 0.775,
-    "why": "Media cornerelor: FC Arges 5,1, Dinamo Bucuresti 5,9, adică 11 pe meci."
+    "why": "Media cornerelor: FC Arges 5,1, Dinamo Bucuresti 5,9, adică 11 pe meci.",
+    "rez": "won",
+    "scor": "2-1",
+    "total": 13
    },
    {
     "id": 14453936,
@@ -126,7 +149,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.36,
     "p": 0.766,
-    "why": "Media cornerelor: Hammarby IF 6,8, Elfsborg 5,1, adică 11,9 pe meci."
+    "why": "Media cornerelor: Hammarby IF 6,8, Elfsborg 5,1, adică 11,9 pe meci.",
+    "rez": "lost",
+    "scor": "4-1",
+    "total": 6
    },
    {
     "id": 14438746,
@@ -136,7 +162,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.46,
     "p": 0.735,
-    "why": "Media cornerelor: Standard Liege 6,1, SK Beveren 5,6, adică 11,7 pe meci."
+    "why": "Media cornerelor: Standard Liege 6,1, SK Beveren 5,6, adică 11,7 pe meci.",
+    "rez": "lost",
+    "scor": "3-0",
+    "total": 8
    },
    {
     "id": 14424110,
@@ -146,7 +175,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.4,
     "p": 0.716,
-    "why": "Media cornerelor: Derby County 5,5, Bolton Wanderers 5,4, adică 10,9 pe meci."
+    "why": "Media cornerelor: Derby County 5,5, Bolton Wanderers 5,4, adică 10,9 pe meci.",
+    "rez": "won",
+    "scor": "3-1",
+    "total": 10
    },
    {
     "id": 14453956,
@@ -156,7 +188,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.35,
     "p": 0.657,
-    "why": "Media cornerelor: Famalicao 4,9, Arouca 3,6, adică 8,5 pe meci."
+    "why": "Media cornerelor: Famalicao 4,9, Arouca 3,6, adică 8,5 pe meci.",
+    "rez": "won",
+    "scor": "1-0",
+    "total": 11
    }
   ]
  }
