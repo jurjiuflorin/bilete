@@ -33,7 +33,7 @@ function parseMotiv(m) {
   if (a) o.pm = +a[1] / 100; if (b) o.pf = +b[1] / 100; if (c) o.ph = +c[1] / 100; if (d) o.p = +d[1] / 100; return o;
 }
 function kindOf(sel, h, a) {
-  const s = nrm(sel);
+  const s = nrm(sel).replace(/^([12]) .+$/, '$1');
   if (/cornere/.test(s)) return 'cor';
   if (/^(1x|x2|12)$/.test(s)) return 'dc';
   if (/^[12]$/.test(s) || /castiga/.test(s)) return '1x2';
@@ -71,7 +71,7 @@ function build() {
     const res = String(t.rezultat || '').split(' · ');
     const ev = [];
     sels.forEach((s, i) => {
-      const m = /^(\d\d:\d\d) (.+?): (.+) \((\d+(?:\.\d+)?)\)$/.exec(s);
+      const m = /^(?:\d\d\.\d\d )?(\d\d:\d\d) (.+?): (.+?) \((\d+(?:\.\d+)?)(?: estimat)?\)$/.exec(s);
       if (!m) { ev.push({ ora: '', meci: s, selectie: '', cota: null, linii: [] }); return; }
       const [, ora, meci, sel, od] = m; const [h, a] = meci.split(' – ');
       const id = (t.ids || [])[i]; const info = infoById.get(id); const kind0 = kindOf(sel, h, a);
@@ -79,6 +79,7 @@ function build() {
       const mp = parseMotiv(mot[i]);
       const pm = pick ? pick.pm : mp.pm, pf = pick ? pick.pform : mp.pf, ph = pick ? pick.ph : mp.ph, p = pick ? pick.p : mp.p;
       const stats = describe(kind0, sel, h || '', a || '', info && info.form, pick);
+      if (mot[i]) stats.push(String(mot[i]));
       const r = res.find(x => nrm(x).startsWith(nrm(h || '').slice(0, 5)));
       const e = { ora, meci, liga: info && info.liga, selectie: sel, cota: +od, linii: stats };
       if (p != null) { e.p = pc(p); e.pm = pc(pm); e.pf = pc(pf); e.ph = pc(ph); e.val = Math.round((p - 1 / +od) * 100); }

@@ -27,46 +27,88 @@
     "status": "în așteptare",
     "evenimente": [
      {
-      "ora": "",
-      "meci": "07.11 19:30 Nottingham Forest – Manchester City: 2 Manchester City (1.75)",
-      "selectie": "",
-      "cota": null,
-      "linii": []
+      "ora": "19:30",
+      "meci": "Nottingham Forest – Manchester City",
+      "selectie": "2 Manchester City",
+      "cota": 1.75,
+      "linii": [
+       "Forest – City: piață 54%, formă City 3V din ultimele 5 (deplasări 9p din 4) vs Forest 0V acasă (1p din 4), H2H indisponibil → p 56%; Semenyo absent."
+      ],
+      "p": 56,
+      "pm": 54,
+      "pf": null,
+      "ph": null,
+      "val": -1
      },
      {
-      "ora": "",
-      "meci": "08.11 16:00 Crystal Palace – Liverpool: 2 Liverpool (1.58)",
-      "selectie": "",
-      "cota": null,
-      "linii": []
+      "ora": "16:00",
+      "meci": "Crystal Palace – Liverpool",
+      "selectie": "2 Liverpool",
+      "cota": 1.58,
+      "linii": [
+       "Palace – Liverpool: piață 60%, formă Liverpool 10p din 4 în deplasare vs Palace 3 înfrângeri la rând fără gol, H2H 2V-2E-1Î pentru Liverpool → p 57%; Mateta suspendat, Ekitike/Frimpong absenți la Liverpool."
+      ],
+      "p": 57,
+      "pm": 60,
+      "pf": null,
+      "ph": null,
+      "val": -6
      },
      {
-      "ora": "",
-      "meci": "08.11 22:00 Atletico Madrid – Barcelona: 2 Barcelona (1.80)",
-      "selectie": "",
-      "cota": null,
-      "linii": []
+      "ora": "22:00",
+      "meci": "Atletico Madrid – Barcelona",
+      "selectie": "2 Barcelona",
+      "cota": 1.8,
+      "linii": [
+       "Atletico – Barcelona: piață 53%, formă Barcelona 15p din 5 în deplasare, 46 goluri în 11 meciuri vs Atletico 13p din 5 acasă, H2H Barcelona 4V din 5 → p 54%; absențe neconfirmate."
+      ],
+      "p": 54,
+      "pm": 53,
+      "pf": null,
+      "ph": null,
+      "val": -2
      },
      {
-      "ora": "",
-      "meci": "08.11 16:00 Sunderland – Chelsea: 2 Chelsea (2.00)",
-      "selectie": "",
-      "cota": null,
-      "linii": []
+      "ora": "16:00",
+      "meci": "Sunderland – Chelsea",
+      "selectie": "2 Chelsea",
+      "cota": 2,
+      "linii": [
+       "Sunderland – Chelsea: piață 48%, formă Chelsea 5V din ultimele 10 vs Sunderland loc 20 cu 17 goluri primite în 9, H2H Sunderland 2V la rând (2-1, 2-1) → p 44%; Palmer incert, Alderete suspendat."
+      ],
+      "p": 44,
+      "pm": 48,
+      "pf": null,
+      "ph": null,
+      "val": -6
      },
      {
-      "ora": "",
-      "meci": "07.11 17:00 Arsenal – Hull City: Arsenal handicap -1 (1.80 estimat)",
-      "selectie": "",
-      "cota": null,
-      "linii": []
+      "ora": "17:00",
+      "meci": "Arsenal – Hull City",
+      "selectie": "Arsenal handicap -1",
+      "cota": 1.8,
+      "linii": [
+       "Arsenal – Hull: piață 82% victorie, formă Arsenal 5V din 5 acasă (12-2) vs Hull 1V în 4 deplasări (5 primite), H2H indisponibil → p 50%; Saka absent; cotă estimată."
+      ],
+      "p": 50,
+      "pm": 82,
+      "pf": null,
+      "ph": null,
+      "val": -6
      },
      {
-      "ora": "",
-      "meci": "08.11 16:30 Köln – Bayer Leverkusen: Peste 2.5 goluri (1.75 estimat)",
-      "selectie": "",
-      "cota": null,
-      "linii": []
+      "ora": "16:30",
+      "meci": "Köln – Bayer Leverkusen",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.75,
+      "linii": [
+       "Köln – Leverkusen: piață 58%, formă peste 2.5 la Köln 2/5 și Leverkusen 3/5 (medie 3.0 și 3.7 goluri/meci), H2H peste 2.5 în 3 din 5 → p 52%; Diaby, Doué absenți; cotă estimată."
+      ],
+      "p": 52,
+      "pm": 58,
+      "pf": null,
+      "ph": null,
+      "val": -5
      }
     ]
    }
