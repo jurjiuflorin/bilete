@@ -1,0 +1,163 @@
+{
+ "data": "2026-11-07",
+ "salvat": "2026-11-07T10:24:26.530Z",
+ "n": 59,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14453999,
+    "meci": "Osasuna – Athletic Bilbao",
+    "when": "2026-11-07T17:30:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.35,
+    "p": 0.742,
+    "why": "Osasuna dă 1 și primește 2 goluri pe meci; Athletic Bilbao dă 1,4 și primește 1."
+   },
+   {
+    "id": 14453957,
+    "meci": "CD Nacional – Academico Viseu",
+    "when": "2026-11-07T15:30:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.36,
+    "p": 0.729,
+    "why": "CD Nacional dă 1 și primește 1,9 goluri pe meci; Academico Viseu dă 1,5 și primește 1,2."
+   },
+   {
+    "id": 14858547,
+    "meci": "Vaduz – Sion",
+    "when": "2026-11-07T17:00:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.35,
+    "p": 0.723,
+    "why": "Vaduz dă 2 și primește 2,1 goluri pe meci; Sion dă 2,1 și primește 1,5."
+   },
+   {
+    "id": 14438689,
+    "meci": "AS Roma – Sassuolo",
+    "when": "2026-11-07T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.35,
+    "p": 0.721,
+    "why": "AS Roma dă 2,8 și primește 1 goluri pe meci; Sassuolo dă 1,6 și primește 2,6."
+   },
+   {
+    "id": 14438663,
+    "meci": "Stuttgart – Werder Bremen",
+    "when": "2026-11-07T17:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.35,
+    "p": 0.717,
+    "why": "Stuttgart dă 1,8 și primește 1,9 goluri pe meci; Werder Bremen dă 2,1 și primește 1,8."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14438662,
+    "meci": "RB Leipzig – Augsburg",
+    "when": "2026-11-07T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.38,
+    "p": 0.716,
+    "why": "RB Leipzig marchează 2,8 și primește 1,4 pe meci; Augsburg marchează 2,3 și primește 1,9."
+   },
+   {
+    "id": 14858547,
+    "meci": "Vaduz – Sion",
+    "when": "2026-11-07T17:00:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.37,
+    "p": 0.711,
+    "why": "Vaduz marchează 2 și primește 2,1 pe meci; Sion marchează 2,1 și primește 1,5."
+   },
+   {
+    "id": 14438788,
+    "meci": "Excelsior – Go Ahead Eagles",
+    "when": "2026-11-07T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.45,
+    "p": 0.711,
+    "why": "Excelsior marchează 1,5 și primește 2,5 pe meci; Go Ahead Eagles marchează 2,1 și primește 2,5."
+   },
+   {
+    "id": 14438663,
+    "meci": "Stuttgart – Werder Bremen",
+    "when": "2026-11-07T17:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.37,
+    "p": 0.707,
+    "why": "Stuttgart marchează 1,8 și primește 1,9 pe meci; Werder Bremen marchează 2,1 și primește 1,8."
+   },
+   {
+    "id": 14438749,
+    "meci": "Westerlo – Sporting Charleroi",
+    "when": "2026-11-07T15:00:00.000Z",
+    "liga": "Pro League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.44,
+    "p": 0.693,
+    "why": "Westerlo marchează 2,5 și primește 2,5 pe meci; Sporting Charleroi marchează 2,1 și primește 1,2."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14438666,
+    "meci": "Mainz – Bayern Munchen",
+    "when": "2026-11-07T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.44,
+    "p": 0.802,
+    "why": "Media cornerelor: Mainz 5,8, Bayern Munchen 8,6, adică 14,4 pe meci."
+   },
+   {
+    "id": 14453971,
+    "meci": "Galatasaray – Amedspor",
+    "when": "2026-11-07T16:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.46,
+    "p": 0.773,
+    "why": "Media cornerelor: Galatasaray 7,9, Amedspor 5,1, adică 13 pe meci."
+   },
+   {
+    "id": 14438784,
+    "meci": "PSG – Troyes",
+    "when": "2026-11-07T20:05:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.5,
+    "p": 0.765,
+    "why": "Media cornerelor: PSG 5,6, Troyes 6,2, adică 11,8 pe meci."
+   },
+   {
+    "id": 14438722,
+    "meci": "Leeds United – Tottenham",
+    "when": "2026-11-07T12:30:00.000Z",
+    "liga": "Premier League",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.48,
+    "p": 0.741,
+    "why": "Media cornerelor: Leeds United 4,1, Tottenham 7,9, adică 12 pe meci."
+   },
+   {
+    "id": 14438727,
+    "meci": "Blackburn Rovers – West Ham",
+    "when": "2026-11-07T15:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.45,
+    "p": 0.736,
+    "why": "Media cornerelor: Blackburn Rovers 5,9, West Ham 6,9, adică 12,8 pe meci."
+   }
+  ]
+ }
+}
