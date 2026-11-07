@@ -1,5 +1,78 @@
 [
  {
+  "id": "2026-11-07-bilete",
+  "data": "2026-11-07",
+  "tip": "bilete",
+  "titlu": "Biletele zilei de 7 noiembrie: 1 bilete, 6 evenimente analizate",
+  "intro": "Weekend 31,36",
+  "sectiuni": [
+   {
+    "h": "Cum citești analiza",
+    "p": [
+     "Pentru fiecare eveniment vezi trei numere: ce spune piața (cota fără marja casei), ce spune forma pe ultimele 10 meciuri ale ambelor echipe și ce spun meciurile directe (H2H). Estimarea finală e 40% piață, 40% formă și 20% H2H, iar „valoarea” e diferența dintre estimare și probabilitatea din cotă. Cotă 2 are prioritate la alegere, iar meciurile se repetă cât mai puțin între bilete."
+    ]
+   },
+   {
+    "h": "Ce trebuie verificat",
+    "p": [
+     "Absențele nu sunt verificate. Estimările sunt statistice, nu garanții, iar cotele se pot mișca până la meci. Pune doar o miză mică."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Weekend",
+    "cota": 31.36,
+    "sansa": 2,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "",
+      "meci": "07.11 19:30 Nottingham Forest – Manchester City: 2 Manchester City (1.75)",
+      "selectie": "",
+      "cota": null,
+      "linii": []
+     },
+     {
+      "ora": "",
+      "meci": "08.11 16:00 Crystal Palace – Liverpool: 2 Liverpool (1.58)",
+      "selectie": "",
+      "cota": null,
+      "linii": []
+     },
+     {
+      "ora": "",
+      "meci": "08.11 22:00 Atletico Madrid – Barcelona: 2 Barcelona (1.80)",
+      "selectie": "",
+      "cota": null,
+      "linii": []
+     },
+     {
+      "ora": "",
+      "meci": "08.11 16:00 Sunderland – Chelsea: 2 Chelsea (2.00)",
+      "selectie": "",
+      "cota": null,
+      "linii": []
+     },
+     {
+      "ora": "",
+      "meci": "07.11 17:00 Arsenal – Hull City: Arsenal handicap -1 (1.80 estimat)",
+      "selectie": "",
+      "cota": null,
+      "linii": []
+     },
+     {
+      "ora": "",
+      "meci": "08.11 16:30 Köln – Bayer Leverkusen: Peste 2.5 goluri (1.75 estimat)",
+      "selectie": "",
+      "cota": null,
+      "linii": []
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-06-rezumat",
   "data": "2026-11-06",
   "tip": "rezumat",
