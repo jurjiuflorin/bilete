@@ -3023,10 +3023,10 @@
   "id": "2026-11-07-weekend",
   "data": "2026-11-07",
   "tip": "Weekend",
-  "cota": 31.36,
+  "cota": 21.05,
   "sansa": 0.0197,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "9901-KWW25R",
   "selectii": "07.11 19:30 Nottingham Forest – Manchester City: 2 Manchester City (1.75) · 08.11 16:00 Crystal Palace – Liverpool: 2 Liverpool (1.58) · 08.11 22:00 Atletico Madrid – Barcelona: 2 Barcelona (1.80) · 08.11 16:00 Sunderland – Chelsea: 2 Chelsea (2.00) · 07.11 17:00 Arsenal – Hull City: Arsenal handicap -1 (1.80 estimat) · 08.11 16:30 Köln – Bayer Leverkusen: Peste 2.5 goluri (1.75 estimat)",
   "rezultat": "",
   "motive": [
@@ -3036,6 +3036,14 @@
    "Sunderland – Chelsea: piață 48%, formă Chelsea 5V din ultimele 10 vs Sunderland loc 20 cu 17 goluri primite în 9, H2H Sunderland 2V la rând (2-1, 2-1) → p 44%; Palmer incert, Alderete suspendat.",
    "Arsenal – Hull: piață 82% victorie, formă Arsenal 5V din 5 acasă (12-2) vs Hull 1V în 4 deplasări (5 primite), H2H indisponibil → p 50%; Saka absent; cotă estimată.",
    "Köln – Leverkusen: piață 58%, formă peste 2.5 la Köln 2/5 și Leverkusen 3/5 (medie 3.0 și 3.7 goluri/meci), H2H peste 2.5 în 3 din 5 → p 52%; Diaby, Doué absenți; cotă estimată."
+  ],
+  "ids": [
+   14438724,
+   14438718,
+   14453994,
+   14438725,
+   14438716,
+   14438668
   ]
  }
 ]
