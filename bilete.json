@@ -3052,9 +3052,9 @@
   "tip": "Pariul zilei",
   "cota": 1.49,
   "sansa": 0.749,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "9908-KWQ93B",
-  "rezultat": "",
+  "rezultat": "Luzern–Young Boys 2-3",
   "selectii": "19:00 Luzern – Young Boys: Young Boys peste 1.5 goluri (1.49)",
   "motive": [
    "Luzern – Young Boys: piață 62%, formă 75%, H2H 100% → p 75%; absențe neverificate."
@@ -3070,9 +3070,9 @@
   "tip": "Challenge 1.40",
   "cota": 1.35,
   "sansa": 0.756,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "",
-  "rezultat": "",
+  "rezultat": "Vaduz–Sion 0-4",
   "selectii": "19:00 Vaduz – Sion: Peste 2.5 (1.35)",
   "motive": [
    "Vaduz – Sion: piață 69%, formă 80%, H2H 80% → p 76%; absențe neverificate."
@@ -3110,9 +3110,9 @@
   "tip": "Cotă 5",
   "cota": 4.6,
   "sansa": 0.2758,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990D-KLWB82",
-  "rezultat": "",
+  "rezultat": "Blackburn–West Ham 2-1 · Watford–Middlesbrough 0-0 · Grasshopper–Lausanne 1-1 · ADO–Sparta 3-1",
   "selectii": "17:00 Blackburn Rovers – West Ham: Blackburn Rovers peste 0.5 goluri (1.43) · 17:00 Watford – Middlesbrough: Watford peste 0.5 goluri (1.49) · 21:30 Grasshopper – Lausanne Sport: 1X (1.43) · 19:45 ADO Den Haag – Sparta Rotterdam: X2 (1.51)",
   "motive": [
    "Blackburn Rovers – West Ham: piață 65%, formă 80%, H2H 80% → p 74%; absențe neverificate.",
@@ -3134,9 +3134,9 @@
   "tip": "Cotă 10",
   "cota": 9.07,
   "sansa": 0.1237,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990Z-KKLKPV",
-  "rezultat": "",
+  "rezultat": "Espanyol–Deportivo 0-0 · Odense–Viborg 1-2 · Galatasaray–Amedspor 4-3 · Valencia–Real Madrid 0-3 · Aberdeen–Hibernian 0-4 (14 cornere) · Forest–Man City 3-1 (10 cornere)",
   "selectii": "17:15 Espanyol – Deportivo de A Coruna: Deportivo de A Coruna peste 0.5 goluri (1.35) · 19:00 Odense BK – Viborg: GG (1.45) · 18:00 Galatasaray – Amedspor: Peste 2.5 (1.43) · 22:00 Valencia – Real Madrid: Peste 2.5 (1.47) · 19:45 Aberdeen – Hibernian: Peste 9.5 cornere (1.46) · 19:30 Nottingham Forest – Manchester City: Peste 8.5 cornere (1.51)",
   "motive": [
    "Espanyol – Deportivo de A Coruna: piață 69%, formă 80%, H2H indisponibil → p 74%; absențe neverificate.",
@@ -3173,6 +3173,26 @@
    14453951
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-08-challenge",
+  "data": "2026-11-08",
+  "tip": "Challenge 1.40",
+  "cota": 1.39,
+  "sansa": 0.71,
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "selectii": "18:15 Le Havre – Lorient: X2 (1.39)",
+  "motive": [
+   "Le Havre – Lorient: piață 68%, formă 80%, H2H 60% → p 71%; absențe neverificate."
+  ],
+  "ids": [
+   14438781
+  ],
+  "sport": "fotbal",
+  "ciclu": 4,
+  "pas": 5
  },
  {
   "id": "2026-11-08-cota2",
