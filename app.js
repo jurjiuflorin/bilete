@@ -1365,7 +1365,7 @@ function viewSuggest() {
   list.append(el('p', 'note rs-note', saved
     ? 'Lista a fost salvată la ' + fmtHM(new Date(saved.d.salvat)) + ', cu cotele de atunci, și nu se mai schimbă, ca să se vadă cinstit câte au intrat. Cornerele și cartonașele se judecă din statisticile Superbet ale meciului (la cartonașe se numără galbenele). ' + (c.n ? c.n + ' meciuri analizate.' : '')
     : 'Procentul e șansa estimată de noi; cota arată ce crede casa. Sugestiile se recalculează la fiecare 30 de minute, cu cotele de atunci. ' + (c.n ? c.n + ' meciuri analizate.' : '')));
-  if (saved && saved.live) setTimeout(() => { if (tab === 's' && !past) { loadSnapRes(key).then(again); } }, 60e3);
+  if (saved && !past) setTimeout(() => { if (tab === 's') { loadSnapRes(key).then(again); } }, 60e3);   // reîmprospătează la 60 s cât timp lista are meciuri de jucat/nejudecate
 }
 
 /* ---------- header, chips, tabs ---------- */
@@ -1725,3 +1725,6 @@ function syncMNav() {
   for (const b of $('mpop').querySelectorAll('button')) b.classList.toggle('on', b.dataset.t === tab);
   const c = nav.querySelector('.cnt'); const n = $('n-p'); if (c && n) c.textContent = n.textContent;
 }
+
+// la revenirea în pagină (telefon/PC în fundal), reîmprospătează sugestiile și biletele
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible' && tab === 's') { const o = snap && Object.values(snap); if (o) for (const x of o) x.rt = 0; render(); } });
