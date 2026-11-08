@@ -3155,5 +3155,93 @@
    14438724
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-08-pariu",
+  "data": "2026-11-08",
+  "tip": "Pariul zilei",
+  "cota": 2.05,
+  "sansa": 0.58,
+  "status": "în așteptare",
+  "cod": "991X-WWNXBH",
+  "selectii": "17:30 Kalmar FF – Sirius: Sirius câștigă (2.05)",
+  "rezultat": "",
+  "motive": [
+   "Sirius câștigă: piață fără marjă 45%, formă 60%, H2H 80%, p combinat 58%; absențe neverificate."
+  ],
+  "ids": [
+   14453951
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-08-cota2",
+  "data": "2026-11-08",
+  "tip": "Cotă 2",
+  "cota": 1.92,
+  "sansa": 0.5445,
+  "status": "în așteptare",
+  "cod": "9902-KL6CRR",
+  "selectii": "18:00 HamKam – Sarpsborg 08: X2 (1.37) · 16:00 Crystal Palace – Liverpool: Crystal Palace peste 0.5 goluri (1.40)",
+  "rezultat": "",
+  "motive": [
+   "X2: piață fără marjă 68%, formă 70%, H2H 100%, p combinat 75%; absențe neverificate.",
+   "Crystal Palace peste 0.5 goluri: piață fără marjă 66%, formă 65%, H2H 100%, p combinat 73%; absențe neverificate."
+  ],
+  "ids": [
+   14453976,
+   14438718
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-08-cota5",
+  "data": "2026-11-08",
+  "tip": "Cotă 5",
+  "cota": 4.64,
+  "sansa": 0.2646,
+  "status": "în așteptare",
+  "cod": "991I-WWTNB5",
+  "selectii": "21:45 Lens – Olympique Marseille: Peste 7.5 cornere (1.35) · 21:00 Utrecht – NEC Nijmegen: 1X (1.43) · 16:00 Genoa – AC Milan: Genoa peste 0.5 goluri (1.53) · 17:30 Brommapojkarna – Mjallby: X2 (1.57)",
+  "rezultat": "",
+  "motive": [
+   "Peste 7.5 cornere: piață fără marjă 69%, formă 81%, p combinat 75%; absențe neverificate.",
+   "1X: piață fără marjă 66%, formă 75%, H2H 80%, p combinat 72%; absențe neverificate.",
+   "Genoa peste 0.5 goluri: piață fără marjă 61%, formă 75%, H2H 80%, p combinat 70%; absențe neverificate.",
+   "X2: piață fără marjă 59%, formă 65%, H2H 100%, p combinat 70%; absențe neverificate."
+  ],
+  "ids": [
+   14438777,
+   14453965,
+   14438684,
+   14453949
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-08-cota10",
+  "data": "2026-11-08",
+  "tip": "Cotă 10",
+  "cota": 9.01,
+  "sansa": 0.14,
+  "status": "în așteptare",
+  "cod": "9908-KWQ91S",
+  "selectii": "17:30 Alanyaspor – Trabzonspor: Peste 7.5 cornere (1.41) · 16:30 FC Koln – Bayer Leverkusen: Bayer Leverkusen peste 1.5 goluri (1.58) · 16:00 Monza – Atalanta: Atalanta peste 1.5 goluri (1.62) · 17:15 Real Sociedad – Rayo Vallecano: Peste 2.5 (1.56) · 19:30 Royale Union SG – Genk: Peste 2.5 (1.60)",
+  "rezultat": "",
+  "motive": [
+   "Peste 7.5 cornere: piață fără marjă 65%, formă 77%, p combinat 71%; absențe neverificate.",
+   "Bayer Leverkusen peste 1.5 goluri: piață fără marjă 59%, formă 60%, H2H 100%, p combinat 68%; absențe neverificate.",
+   "Atalanta peste 1.5 goluri: piață fără marjă 57%, formă 60%, H2H 100%, p combinat 67%; absențe neverificate.",
+   "Peste 2.5: piață fără marjă 61%, formă 65%, H2H 80%, p combinat 66%; absențe neverificate.",
+   "Peste 2.5: piață fără marjă 59%, formă 65%, H2H 80%, p combinat 66%; absențe neverificate."
+  ],
+  "ids": [
+   14453967,
+   14438668,
+   14438686,
+   14454000,
+   14438744
+  ],
+  "sport": "fotbal"
  }
 ]
