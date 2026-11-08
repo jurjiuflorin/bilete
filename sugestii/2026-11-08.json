@@ -1,0 +1,163 @@
+{
+ "data": "2026-11-08",
+ "salvat": "2026-11-08T10:25:18.865Z",
+ "n": 66,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14438684,
+    "meci": "Genoa – AC Milan",
+    "when": "2026-11-08T14:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.38,
+    "p": 0.726,
+    "why": "Genoa dă 1 și primește 1,4 goluri pe meci; AC Milan dă 2,1 și primește 1,2."
+   },
+   {
+    "id": 14453974,
+    "meci": "AZ Alkmaar – Groningen",
+    "when": "2026-11-08T15:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.42,
+    "p": 0.7,
+    "why": "AZ Alkmaar dă 1,8 și primește 1,2 goluri pe meci; Groningen dă 2,4 și primește 2,2."
+   },
+   {
+    "id": 14453965,
+    "meci": "Utrecht – NEC Nijmegen",
+    "when": "2026-11-08T19:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.44,
+    "p": 0.699,
+    "why": "Utrecht dă 1,7 și primește 2,8 goluri pe meci; NEC Nijmegen dă 1,5 și primește 1,7."
+   },
+   {
+    "id": 14438686,
+    "meci": "Monza – Atalanta",
+    "when": "2026-11-08T14:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.47,
+    "p": 0.692,
+    "why": "Monza dă 1,7 și primește 2,4 goluri pe meci; Atalanta dă 1,6 și primește 2."
+   },
+   {
+    "id": 14453964,
+    "meci": "Twente – Ajax Amsterdam",
+    "when": "2026-11-08T13:30:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.4,
+    "p": 0.686,
+    "why": "Twente dă 2,5 și primește 0,9 goluri pe meci; Ajax Amsterdam dă 2,7 și primește 1,2."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14453965,
+    "meci": "Utrecht – NEC Nijmegen",
+    "when": "2026-11-08T19:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.4,
+    "p": 0.7,
+    "why": "Utrecht marchează 1,7 și primește 2,8 pe meci; NEC Nijmegen marchează 1,5 și primește 1,7."
+   },
+   {
+    "id": 14438686,
+    "meci": "Monza – Atalanta",
+    "when": "2026-11-08T14:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.43,
+    "p": 0.696,
+    "why": "Monza marchează 1,7 și primește 2,4 pe meci; Atalanta marchează 1,6 și primește 2."
+   },
+   {
+    "id": 14438776,
+    "meci": "Cambuur – PSV Eindhoven",
+    "when": "2026-11-08T15:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.44,
+    "p": 0.69,
+    "why": "Cambuur marchează 2,1 și primește 2 pe meci; PSV Eindhoven marchează 3,2 și primește 1,2."
+   },
+   {
+    "id": 14453964,
+    "meci": "Twente – Ajax Amsterdam",
+    "when": "2026-11-08T13:30:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.39,
+    "p": 0.686,
+    "why": "Twente marchează 2,5 și primește 0,9 pe meci; Ajax Amsterdam marchează 2,7 și primește 1,2."
+   },
+   {
+    "id": 14453978,
+    "meci": "Lillestrom – Aalesund",
+    "when": "2026-11-08T16:00:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "GG (ambele marchează)",
+    "od": 1.35,
+    "p": 0.678,
+    "why": "Lillestrom marchează 1,4 și primește 1,3 pe meci; Aalesund marchează 1,7 și primește 2,3."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14438743,
+    "meci": "Club Brugge – Anderlecht",
+    "when": "2026-11-08T12:30:00.000Z",
+    "liga": "Pro League",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.38,
+    "p": 0.819,
+    "why": "Media cornerelor: Club Brugge 8,3, Anderlecht 6,3, adică 14,6 pe meci."
+   },
+   {
+    "id": 14438685,
+    "meci": "Inter Milano – Como",
+    "when": "2026-11-08T17:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.39,
+    "p": 0.817,
+    "why": "Media cornerelor: Inter Milano 6,3, Como 7,1, adică 13,4 pe meci."
+   },
+   {
+    "id": 14453981,
+    "meci": "Tromso – Bodo/Glimt",
+    "when": "2026-11-08T13:30:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.38,
+    "p": 0.807,
+    "why": "Media cornerelor: Tromso 5, Bodo/Glimt 7,5, adică 12,5 pe meci."
+   },
+   {
+    "id": 14453961,
+    "meci": "Vitoria Guimaraes – Porto",
+    "when": "2026-11-08T18:00:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.42,
+    "p": 0.797,
+    "why": "Media cornerelor: Vitoria Guimaraes 5,5, Porto 7, adică 12,5 pe meci."
+   },
+   {
+    "id": 14438668,
+    "meci": "FC Koln – Bayer Leverkusen",
+    "when": "2026-11-08T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.4,
+    "p": 0.796,
+    "why": "Media cornerelor: FC Koln 6, Bayer Leverkusen 7,4, adică 13,4 pe meci."
+   }
+  ]
+ }
+}
