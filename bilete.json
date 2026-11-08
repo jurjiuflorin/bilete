@@ -3162,10 +3162,10 @@
   "tip": "Pariul zilei",
   "cota": 2.05,
   "sansa": 0.58,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991X-WWNXBH",
   "selectii": "17:30 Kalmar FF – Sirius: Sirius câștigă (2.05)",
-  "rezultat": "",
+  "rezultat": "Kalmar 1-0 Sirius",
   "motive": [
    "Sirius câștigă: piață fără marjă 45%, formă 60%, H2H 80%, p combinat 58%; absențe neverificate."
   ],
@@ -3220,10 +3220,10 @@
   "tip": "Cotă 5",
   "cota": 4.64,
   "sansa": 0.2646,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "991I-WWTNB5",
   "selectii": "21:45 Lens – Olympique Marseille: Peste 7.5 cornere (1.35) · 21:00 Utrecht – NEC Nijmegen: 1X (1.43) · 16:00 Genoa – AC Milan: Genoa peste 0.5 goluri (1.53) · 17:30 Brommapojkarna – Mjallby: X2 (1.57)",
-  "rezultat": "",
+  "rezultat": "Lens–Marseille 1-2 (10 cornere) · Utrecht–NEC 2-3 · Genoa–Milan 1-2 · Brommapojkarna–Mjallby 0-0",
   "motive": [
    "Peste 7.5 cornere: piață fără marjă 69%, formă 81%, p combinat 75%; absențe neverificate.",
    "1X: piață fără marjă 66%, formă 75%, H2H 80%, p combinat 72%; absențe neverificate.",
