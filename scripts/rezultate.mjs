@@ -11,7 +11,8 @@ const getJ = async u => { for (let i = 0; i < 3; i++) { try { const r = await fe
 
 const all = JSON.parse(fs.readFileSync('bilete.json', 'utf8'));
 const rows = Array.isArray(all) ? all : (all.rows || all.bilete || []);
-let settle = {}; try { settle = JSON.parse(fs.readFileSync('settle.json', 'utf8')); } catch (e) {}
+const TEST = process.argv.includes('--test');   // test: judecă toate biletele din ultimele zile, scrie settle-test.json
+let settle = {}; if (!TEST) try { settle = JSON.parse(fs.readFileSync('settle.json', 'utf8')); } catch (e) {}
 
 const cache = {};
 function statOf(j, key) { for (const g of (j.statistics || [])) if (g.period === 0) for (const d of g.data || []) if (d.text && d.text.args && d.text.args[0] === 'stats.football.match.' + key) return (Number(d.team1) || 0) + (Number(d.team2) || 0);
@@ -60,7 +61,7 @@ function judge(sel, meci, m, inBB) {
 const out = { ...settle };
 let changed = 0;
 for (const r of rows) {
-  if (r.status !== 'în așteptare' || settle[r.id]) continue;
+  if (TEST ? !(r.data >= '2026-11-05' && r.data <= '2026-11-07') : (r.status !== 'în așteptare' || settle[r.id])) continue;
   const sels = String(r.selectii || '').split(' · ');
   const ids = r.ids || [];
   if (!sels.length || ids.length !== sels.length) continue;
@@ -86,5 +87,5 @@ for (const r of rows) {
 }
 // păstrează doar ultimele 400 de intrări
 const keys = Object.keys(out); if (keys.length > 400) for (const k of keys.slice(0, keys.length - 400)) delete out[k];
-fs.writeFileSync('settle.json', JSON.stringify(out, null, 1));
+if (TEST) { for (const k of Object.keys(out)) out[k].dashboard = (rows.find(r => r.id === k) || {}).status; fs.writeFileSync('settle-test.json', JSON.stringify(out, null, 1)); } else fs.writeFileSync('settle.json', JSON.stringify(out, null, 1));
 console.log('validate noi:', changed);
