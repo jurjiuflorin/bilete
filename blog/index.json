@@ -1,5 +1,322 @@
 [
  {
+  "id": "2026-11-08-rezumat",
+  "data": "2026-11-08",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 8 noiembrie: 1 câștigate, 4 pierdute",
+  "intro": "Pariul zilei pierdut · Challenge 1.40 câștigat · Cotă 2 pierdut · Cotă 5 pierdut · Cotă 10 pierdut",
+  "sectiuni": [
+   {
+    "h": "Biletele pierdute: selecții și scoruri",
+    "p": [],
+    "li": [
+     "Pariul zilei: Kalmar FF – Sirius Kalmar 1-0 Sirius (Sirius câștigă)",
+     "Cotă 2: HamKam – Sarpsborg 08 HamKam–Sarpsborg 08 3-0 (X2); Crystal Palace – Liverpool Crystal Palace–Liverpool 1-3 (Crystal Palace peste 0.5 goluri)",
+     "Cotă 5: Lens – Olympique Marseille Lens–Marseille 1-2 (Peste 7.5 cornere); Utrecht – NEC Nijmegen Utrecht–NEC 2-3 (1X); Genoa – AC Milan Genoa–Milan 1-2 (Genoa peste 0.5 goluri); Brommapojkarna – Mjallby Brommapojkarna–Mjallby 0-0 (X2)",
+     "Cotă 10: Alanyaspor – Trabzonspor Alanyaspor–Trabzonspor 0-2 (Peste 7.5 cornere); FC Koln – Bayer Leverkusen FC Koln–Bayer Leverkusen 1-2 (Bayer Leverkusen peste 1.5 goluri); Monza – Atalanta Monza–Atalanta 0-1 (Atalanta peste 1.5 goluri); Real Sociedad – Rayo Vallecano Real Sociedad–Rayo Vallecano 1-0 (Peste 2.5)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 13."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "11 bilete câștigate din 45 validate (24%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 2.05,
+    "sansa": 58,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "17:30",
+      "meci": "Kalmar FF – Sirius",
+      "liga": "Allsvenskan",
+      "selectie": "Sirius câștigă",
+      "cota": 2.05,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Kalmar FF dă 0,2 și primește 1,4 goluri pe meci; Sirius dă 1,2 și primește 0,9.",
+       "Diferența de goluri pe meci: Kalmar FF -1,2, Sirius 0,3.",
+       "Meciuri directe analizate: 5.",
+       "Sirius câștigă: piață fără marjă 45%, formă 60%, H2H 80%, p combinat 58%; absențe neverificate."
+      ],
+      "p": 58,
+      "pm": 45,
+      "pf": 60,
+      "ph": 80,
+      "val": 9,
+      "rezultat": "Kalmar 1-0 Sirius"
+     }
+    ]
+   },
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.39,
+    "sansa": 71,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "18:15",
+      "meci": "Le Havre – Lorient",
+      "liga": "Ligue 1",
+      "selectie": "X2",
+      "cota": 1.39,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Le Havre dă 1,5 și primește 2,1 goluri pe meci; Lorient dă 0,9 și primește 0,9.",
+       "Diferența de goluri pe meci: Le Havre -0,6, Lorient 0,0.",
+       "Meciuri directe analizate: 5.",
+       "Le Havre – Lorient: piață 68%, formă 80%, H2H 60% → p 71%; absențe neverificate."
+      ],
+      "p": 71,
+      "pm": 68,
+      "pf": 80,
+      "ph": 60,
+      "val": -1,
+      "rezultat": "Le Havre–Lorient 0-2"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.92,
+    "sansa": 54.5,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "18:00",
+      "meci": "HamKam – Sarpsborg 08",
+      "liga": "Eliteserien",
+      "selectie": "X2",
+      "cota": 1.37,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): HamKam dă 1,5 și primește 2,4 goluri pe meci; Sarpsborg 08 dă 1,7 și primește 1,8.",
+       "Diferența de goluri pe meci: HamKam -0,9, Sarpsborg 08 -0,1.",
+       "Meciuri directe analizate: 5.",
+       "X2: piață fără marjă 68%, formă 70%, H2H 100%, p combinat 75%; absențe neverificate."
+      ],
+      "p": 75,
+      "pm": 68,
+      "pf": 70,
+      "ph": 100,
+      "val": 2,
+      "rezultat": "HamKam–Sarpsborg 08 3-0"
+     },
+     {
+      "ora": "16:00",
+      "meci": "Crystal Palace – Liverpool",
+      "liga": "Premier League",
+      "selectie": "Crystal Palace peste 0.5 goluri",
+      "cota": 1.4,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Crystal Palace dă 0,9 și primește 1,8 goluri pe meci; Liverpool dă 2,1 și primește 1,6.",
+       "Crystal Palace marchează 0,9 pe meci, iar Liverpool primește 1,6.",
+       "Meciuri directe analizate: 5.",
+       "Crystal Palace peste 0.5 goluri: piață fără marjă 66%, formă 65%, H2H 100%, p combinat 73%; absențe neverificate."
+      ],
+      "p": 73,
+      "pm": 66,
+      "pf": 65,
+      "ph": 100,
+      "val": 1,
+      "rezultat": "Crystal Palace–Liverpool 1-3"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 4.64,
+    "sansa": 26.5,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "Lens – Olympique Marseille",
+      "liga": "Ligue 1",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.35,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 10,3 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Peste 7.5 cornere: piață fără marjă 69%, formă 81%, p combinat 75%; absențe neverificate."
+      ],
+      "p": 75,
+      "pm": 69,
+      "pf": 81,
+      "ph": null,
+      "val": 1,
+      "rezultat": "Lens–Marseille 1-2"
+     },
+     {
+      "ora": "21:00",
+      "meci": "Utrecht – NEC Nijmegen",
+      "liga": "Eredivisie",
+      "selectie": "1X",
+      "cota": 1.43,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Utrecht dă 1,8 și primește 2,5 goluri pe meci; NEC Nijmegen dă 1,4 și primește 1,9.",
+       "Diferența de goluri pe meci: Utrecht -0,7, NEC Nijmegen -0,5.",
+       "Meciuri directe analizate: 5.",
+       "1X: piață fără marjă 66%, formă 75%, H2H 80%, p combinat 72%; absențe neverificate."
+      ],
+      "p": 72,
+      "pm": 66,
+      "pf": 75,
+      "ph": 80,
+      "val": 2,
+      "rezultat": "Utrecht–NEC 2-3"
+     },
+     {
+      "ora": "16:00",
+      "meci": "Genoa – AC Milan",
+      "liga": "Serie A",
+      "selectie": "Genoa peste 0.5 goluri",
+      "cota": 1.53,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Genoa dă 1,1 și primește 1,3 goluri pe meci; AC Milan dă 1,8 și primește 1,5.",
+       "Genoa marchează 1,1 pe meci, iar AC Milan primește 1,5.",
+       "Meciuri directe analizate: 5.",
+       "Genoa peste 0.5 goluri: piață fără marjă 61%, formă 75%, H2H 80%, p combinat 70%; absențe neverificate."
+      ],
+      "p": 70,
+      "pm": 61,
+      "pf": 75,
+      "ph": 80,
+      "val": 5,
+      "rezultat": "Genoa–Milan 1-2"
+     },
+     {
+      "ora": "17:30",
+      "meci": "Brommapojkarna – Mjallby",
+      "liga": "Allsvenskan",
+      "selectie": "X2",
+      "cota": 1.57,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Brommapojkarna dă 1,3 și primește 1,9 goluri pe meci; Mjallby dă 0,8 și primește 1,0.",
+       "Diferența de goluri pe meci: Brommapojkarna -0,6, Mjallby -0,2.",
+       "Meciuri directe analizate: 5.",
+       "X2: piață fără marjă 59%, formă 65%, H2H 100%, p combinat 70%; absențe neverificate."
+      ],
+      "p": 70,
+      "pm": 59,
+      "pf": 65,
+      "ph": 100,
+      "val": 6,
+      "rezultat": "Brommapojkarna–Mjallby 0-0"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10",
+    "cota": 9.01,
+    "sansa": 14,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "17:30",
+      "meci": "Alanyaspor – Trabzonspor",
+      "liga": "Süper Lig",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.41,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 9,9 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Peste 7.5 cornere: piață fără marjă 65%, formă 77%, p combinat 71%; absențe neverificate."
+      ],
+      "p": 71,
+      "pm": 65,
+      "pf": 77,
+      "ph": null,
+      "val": 0,
+      "rezultat": "Alanyaspor–Trabzonspor 0-2"
+     },
+     {
+      "ora": "16:30",
+      "meci": "FC Koln – Bayer Leverkusen",
+      "liga": "Bundesliga",
+      "selectie": "Bayer Leverkusen peste 1.5 goluri",
+      "cota": 1.58,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): FC Koln dă 1,6 și primește 1,4 goluri pe meci; Bayer Leverkusen dă 2,3 și primește 1,4.",
+       "Bayer Leverkusen marchează 2,3 pe meci, iar FC Koln primește 1,4.",
+       "Meciuri directe analizate: 5.",
+       "Bayer Leverkusen peste 1.5 goluri: piață fără marjă 59%, formă 60%, H2H 100%, p combinat 68%; absențe neverificate."
+      ],
+      "p": 68,
+      "pm": 59,
+      "pf": 60,
+      "ph": 100,
+      "val": 4,
+      "rezultat": "FC Koln–Bayer Leverkusen 1-2"
+     },
+     {
+      "ora": "16:00",
+      "meci": "Monza – Atalanta",
+      "liga": "Serie A",
+      "selectie": "Atalanta peste 1.5 goluri",
+      "cota": 1.62,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Monza dă 1,8 și primește 2,2 goluri pe meci; Atalanta dă 1,6 și primește 2,1.",
+       "Atalanta marchează 1,6 pe meci, iar Monza primește 2,2.",
+       "Meciuri directe analizate: 5.",
+       "Atalanta peste 1.5 goluri: piață fără marjă 57%, formă 60%, H2H 100%, p combinat 67%; absențe neverificate."
+      ],
+      "p": 67,
+      "pm": 57,
+      "pf": 60,
+      "ph": 100,
+      "val": 5,
+      "rezultat": "Monza–Atalanta 0-1"
+     },
+     {
+      "ora": "17:15",
+      "meci": "Real Sociedad – Rayo Vallecano",
+      "liga": "LaLiga",
+      "selectie": "Peste 2.5",
+      "cota": 1.56,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Real Sociedad dă 2,3 și primește 1,4 goluri pe meci; Rayo Vallecano dă 1,5 și primește 1,9.",
+       "Meciurile Real Sociedad au în medie 3,7 goluri, cele ale Rayo Vallecano 3,4.",
+       "Meciuri directe analizate: 5.",
+       "Peste 2.5: piață fără marjă 61%, formă 65%, H2H 80%, p combinat 66%; absențe neverificate."
+      ],
+      "p": 66,
+      "pm": 61,
+      "pf": 65,
+      "ph": 80,
+      "val": 2,
+      "rezultat": "Real Sociedad–Rayo Vallecano 1-0"
+     },
+     {
+      "ora": "19:30",
+      "meci": "Royale Union SG – Genk",
+      "liga": "Pro League",
+      "selectie": "Peste 2.5",
+      "cota": 1.6,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Royale Union SG dă 2,8 și primește 0,6 goluri pe meci; Genk dă 1,7 și primește 1,2.",
+       "Meciurile Royale Union SG au în medie 3,4 goluri, cele ale Genk 2,9.",
+       "Meciuri directe analizate: 5.",
+       "Peste 2.5: piață fără marjă 59%, formă 65%, H2H 80%, p combinat 66%; absențe neverificate."
+      ],
+      "p": 66,
+      "pm": 59,
+      "pf": 65,
+      "ph": 80,
+      "val": 3
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-07-rezumat",
   "data": "2026-11-07",
   "tip": "rezumat",
