@@ -1468,8 +1468,9 @@ const h0 = (location.hash || '').slice(1); if (['p', 'm', 'c', 'h', 'r', 's', 'x
 loadExtra();
 fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(r => { if (!r.ok) throw new Error('fișierul de bilete nu răspunde (' + r.status + ')'); return r.json(); })
-  .then(d => {
+  .then(async d => {
     rows = (Array.isArray(d) ? d : (d.rows || [])).filter(r => r.tip !== 'Test');
+    try { const sj = await fetch('settle.json?v=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : {}).catch(() => ({})); for (const r of rows) { const z = sj && sj[r.id]; if (z && r.status === PEND && (z.status === 'câștigat' || z.status === 'pierdut')) { r.status = z.status; if (z.rezultat && !r.rezultat) r.rezultat = z.rezultat; } } } catch (e) {}
     for (const id of [...lostNow.keys()]) { const r = rows.find(x => x.id === id); if (!r || r.status !== PEND) lostNow.delete(id); }
     for (const id of [...wonNow]) { const r = rows.find(x => x.id === id); if (!r || r.status !== PEND) wonNow.delete(id); }
     try { localStorage.setItem('wonNow', JSON.stringify([...wonNow])); } catch (e) {}
