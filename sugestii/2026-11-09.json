@@ -1,0 +1,63 @@
+{
+ "data": "2026-11-09",
+ "salvat": "2026-11-09T10:24:47.103Z",
+ "n": 2,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 15822027,
+    "meci": "Kristiansund – Valerenga",
+    "when": "2026-11-09T18:00:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.36,
+    "p": 0.677,
+    "why": "Kristiansund dă 1,2 și primește 2 goluri pe meci; Valerenga dă 1,7 și primește 1,8."
+   },
+   {
+    "id": 14438702,
+    "meci": "Botosani – Otelul Galati",
+    "when": "2026-11-09T18:00:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.9,
+    "p": 0.531,
+    "why": "Botosani dă 1,3 și primește 1,4 goluri pe meci; Otelul Galati dă 1,1 și primește 1,6."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14438702,
+    "meci": "Botosani – Otelul Galati",
+    "when": "2026-11-09T18:00:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.71,
+    "p": 0.567,
+    "why": "Botosani marchează 1,3 și primește 1,4 pe meci; Otelul Galati marchează 1,1 și primește 1,6."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 15822027,
+    "meci": "Kristiansund – Valerenga",
+    "when": "2026-11-09T18:00:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.38,
+    "p": 0.649,
+    "why": "Media cornerelor: Kristiansund 4, Valerenga 6,6, adică 10,6 pe meci."
+   },
+   {
+    "id": 14438702,
+    "meci": "Botosani – Otelul Galati",
+    "when": "2026-11-09T18:00:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.48,
+    "p": 0.641,
+    "why": "Media cornerelor: Botosani 4,6, Otelul Galati 5,2, adică 9,8 pe meci."
+   }
+  ]
+ }
+}
