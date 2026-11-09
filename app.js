@@ -12,6 +12,12 @@ let rows = [], tab = 'p', tip = '', q = '', now = new Date(), liveOnly = false;
 // tickets already lost live (a match is certainly lost) but not yet settled by the nightly task
 const lostNow = new Map(Object.entries((() => { try { return JSON.parse(localStorage.getItem('lostNow') || '{}'); } catch (e) { return {}; } })()));
 const PEND = 'în așteptare';
+let LEGS = {}, nevOnly = false;   // LEGS: rezultatul fiecărei selecții (legs.json), nevOnly: filtru „Nevalidate” în Istoric
+function legRes(r, i, l) {
+  const a = LEGS[r.id]; if (a && a[i] && a[i].res) return a[i].res;
+  if (!r.rezultat) return null; const sc = rezScore(r.rezultat, l.meci); return sc ? judge(l.sel, l.meci, sc) : null;
+}
+function nevCount(r) { if (eff(r) === PEND) return 0; const L = parseLegs(r); return L.filter((l, i) => { const v = legRes(r, i, l); return v !== 'won' && v !== 'lost'; }).length; }
 const wonNow = new Set((() => { try { return JSON.parse(localStorage.getItem('wonNow') || '[]'); } catch (e) { return []; } })());
 const eff = r => r.status === PEND && lostNow.has(r.id) ? 'pierdut' : r.status === PEND && wonNow.has(r.id) ? 'câștigat' : r.status;
 
@@ -179,6 +185,7 @@ function viewTickets(pending) {
   if (!R.length) { list.append(el('div', 'empty', pending ? 'Niciun bilet de jucat acum. Biletele noi apar dimineața.' : 'Încă nu s-a încheiat niciun bilet.')); return; }
   if (pending && !tip && !q && !liveOnly) { const h = hero(); if (h) list.append(h); }
   if (!pending) list.append(histStats(R));
+  if (!pending && nevOnly) { R = R.filter(r => nevCount(r) > 0); if (!R.length) { list.append(el('div', 'empty', 'Toate selecțiile biletelor încheiate au rezultat validat.')); return; } }
   if (!pending && OWNER) list.append(visitsBox());
   const groups = new Map();
   R.sort((a, b) => pending ? firstWhen(a) - firstWhen(b) : (b.data + b.id).localeCompare(a.data + a.id));
@@ -205,7 +212,7 @@ function histStats(R) {
   const profit = S.reduce((a, r) => a + (won(r) ? Number(r.cota) - 1 : -1), 0) * 10;
   const avg = n ? S.reduce((a, r) => a + Number(r.cota || 0), 0) / n : 0;
   let lw = 0, ln = 0; const seen = new Set();
-  for (const r of S) { if (!r.rezultat) continue; for (const l of parseLegs(r)) { const sc = rezScore(r.rezultat, l.meci); if (!sc) continue; const res = judge(l.sel, l.meci, sc); if (res !== 'won' && res !== 'lost') continue; const k = r.id + '|' + nrm(l.meci); if (seen.has(k)) continue; seen.add(k); ln++; if (res === 'won') lw++; } }
+  for (const r of S) { if (!r.rezultat && !LEGS[r.id]) continue; for (const [li, l] of parseLegs(r).entries()) { const res = legRes(r, li, l); if (!res) continue; if (res !== 'won' && res !== 'lost') continue; const k = r.id + '|' + nrm(l.meci); if (seen.has(k)) continue; seen.add(k); ln++; if (res === 'won') lw++; } }
   let streak = 0; const last = S.length ? won(S[S.length - 1]) : null; for (let i = S.length - 1; i >= 0 && won(S[i]) === last; i--) streak++;
   const pct = (a, b) => b ? Math.round(100 * a / b) + '%' : '–';
   const box = el('section', 'hs'); box._R = R;
@@ -1173,10 +1180,10 @@ function resultsData() {
   // fiecare selecție judecată din scorurile scrise în „rezultat”
   const mk = new Map(); let lw = 0, ll = 0; const seen = new Set();
   for (const r of rows) {
-    if (!r.rezultat) continue;
-    for (const l of parseLegs(r)) {
-      const sc = rezScore(r.rezultat, l.meci); if (!sc) continue;
-      const res = judge(l.sel, l.meci, sc); if (res !== 'won' && res !== 'lost') continue;
+    if (!r.rezultat && !LEGS[r.id]) continue;
+    for (const [li, l] of parseLegs(r).entries()) {
+      const res = legRes(r, li, l); if (!res) continue;
+      if (res !== 'won' && res !== 'lost') continue;
       const key = nrm(l.meci) + '|' + nrm(l.sel) + '|' + (l.when ? dayKey(l.when) : r.data); if (seen.has(key)) continue; seen.add(key);
       const m = marketOf(l.sel); if (!mk.has(m)) mk.set(m, { k: m, w: 0, n: 0 });
       const o = mk.get(m); o.n++; if (res === 'won') { o.w++; lw++; } else ll++;
@@ -1472,6 +1479,12 @@ function chips() {
     b.append(el('span', 'dot'), 'Live' + (n ? ' ' + n : ''));
     b.onclick = () => { liveOnly = !liveOnly; chips(); render(); }; box.append(b);
   }
+  if (tab === 'h') {
+    const n = rows.filter(r => nevCount(r) > 0).length;
+    const b = el('button', null, 'Nevalidate' + (n ? ' ' + n : '')); b.type = 'button'; b.setAttribute('aria-pressed', String(nevOnly));
+    b.title = 'Bilete încheiate cu selecții fără rezultat validat';
+    b.onclick = () => { nevOnly = !nevOnly; chips(); render(); }; box.append(b);
+  }
   for (const t of tips) { const b = el('button', null, t || 'Toate'); b.type = 'button'; b.setAttribute('aria-pressed', String(t === tip)); b.onclick = () => { tip = t; chips(); render(); }; box.append(b); }
 }
 function render() {
@@ -1500,6 +1513,7 @@ fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(r => { if (!r.ok) throw new Error('fișierul de bilete nu răspunde (' + r.status + ')'); return r.json(); })
   .then(async d => {
     rows = (Array.isArray(d) ? d : (d.rows || [])).filter(r => r.tip !== 'Test');
+    try { LEGS = await fetch('legs.json?v=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : {}).catch(() => ({})); } catch (e) {}
     try { const sj = await fetch('settle.json?v=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : {}).catch(() => ({})); for (const r of rows) { const z = sj && sj[r.id]; if (z && r.status === PEND && (z.status === 'câștigat' || z.status === 'pierdut')) { r.status = z.status; if (z.rezultat && !r.rezultat) r.rezultat = z.rezultat; } } } catch (e) {}
     for (const id of [...lostNow.keys()]) { const r = rows.find(x => x.id === id); if (!r || r.status !== PEND) lostNow.delete(id); }
     for (const id of [...wonNow]) { const r = rows.find(x => x.id === id); if (!r || r.status !== PEND) wonNow.delete(id); }
@@ -1676,7 +1690,7 @@ async function ligaOf(id) {
 }
 function marketBox(S) {
   const legs = []; const seen = new Set();
-  for (const r of S) { if (!r.rezultat) continue; for (const l of parseLegs(r)) { const sc = rezScore(r.rezultat, l.meci); if (!sc) continue; const res = judge(l.sel, l.meci, sc); if (res !== 'won' && res !== 'lost') continue; const k = nrm(l.meci) + '|' + nrm(l.sel) + '|' + r.data; if (seen.has(k)) continue; seen.add(k); legs.push({ ...l, won: res === 'won', od: parseFloat(String(l.o).replace(',', '.')) || 0 }); } }
+  for (const r of S) { if (!r.rezultat && !LEGS[r.id]) continue; for (const [li, l] of parseLegs(r).entries()) { const res = legRes(r, li, l); if (!res) continue; if (res !== 'won' && res !== 'lost') continue; const k = nrm(l.meci) + '|' + nrm(l.sel) + '|' + r.data; if (seen.has(k)) continue; seen.add(k); legs.push({ ...l, won: res === 'won', od: parseFloat(String(l.o).replace(',', '.')) || 0 }); } }
   const box = el('div', 'mks');
   box.append(el('h3', null, 'Ce merge și ce nu'), el('small', null, legs.length + ' pronosticuri încheiate (fiecare meci o dată); profitul e pentru 1 leu pus pe fiecare pronostic separat'));
   if (!legs.length) return box;
