@@ -53,7 +53,7 @@ function judge(sel, meci, m, inBB) {
   if ((x = s.match(/^(.+?) fara gol primit$/))) { const d = side(x[1]); if (!d) return null; return R((d === 'h' ? A : H) === 0); }
   if ((x = s.match(/^(.+?) handicap ([+-]?\d+(?:\.\d)?)$/))) { const d = side(x[1]); if (!d) return null; const diff = (d === 'h' ? H - A : A - H) + parseFloat(x[2]); return R(diff > 0); }   // handicap 3 căi: egalitate după handicap = pierdut
   if (s.startsWith('bet builder')) {
-    const parts = String(sel).replace(/^bet builder\s*/i, '').split(/\s*\+\s*/).map(p => judge(p, meci, m, true));
+    const parts = String(sel).replace(/^bet builder:?\s*/i, '').split(/\s*\+\s*/).map(p => judge(p, meci, m, true));
     if (parts.includes('lost')) return 'lost'; if (parts.includes(null)) return null; return 'won';
   }
   return null;
@@ -62,26 +62,38 @@ function judge(sel, meci, m, inBB) {
 
 // ---- mod --legs: rezultatul fiecărei selecții pentru biletele încheiate (completează statisticile din Istoric) ----
 if (process.argv.includes('--legs')) {
-  let legs = {}; try { legs = JSON.parse(fs.readFileSync('legs.json', 'utf8')); } catch (e) {}
   let sj = {}; try { sj = JSON.parse(fs.readFileSync('settle.json', 'utf8')); } catch (e) {}
-  let n = 0;
-  for (const r of rows) {
-    const st = r.status !== 'în așteptare' ? r.status : (sj[r.id] && sj[r.id].status);
-    if (st !== 'câștigat' && st !== 'pierdut') continue;
+  const legs = {};
+  const tk = t => nrm(t).replace(/[^a-z ]/g, ' ').split(/\s+/).filter(w => w.length > 2)[0] || '';
+  const mk = meci => { const [h, a] = (meci || '').split(' – '); return tk(h) + '|' + tk(a); };
+  const known = {};   // meci -> {h,a,corners} din feed sau din câmpul „rezultat” al biletelor
+  for (const r of rows) for (const part of String(r.rezultat || '').split(' · ')) {   // ex. "Sporting–LASK 2-3 (11 cornere)"
+    const m = part.match(/^(.+?)\s*[–-]\s*(.+?)\s+(\d+)\s*-\s*(\d+)(?:\s*\((\d+) cornere\))?/); if (m) known[tk(m[1]) + '|' + tk(m[2])] = { h: +m[3], a: +m[4], corners: m[5] ? +m[5] : null, yellow: null };
+  }
+  const done = r => r.status !== 'în așteptare' ? r.status : (sj[r.id] && sj[r.id].status);
+  const todo = rows.filter(r => done(r) === 'câștigat' || done(r) === 'pierdut');
+  const rowLegs = {};
+  for (const r of todo) {   // pasul 1: scoruri din feed (după id)
     const sels = String(r.selectii || '').split(' · '); const ids = r.ids || [];
-    if (legs[r.id] && legs[r.id].length === sels.length && !legs[r.id].some(x => x.res == null) && legs[r.id].every(x => x.sc)) continue;
-    const out = [];
+    rowLegs[r.id] = [];
     for (let i = 0; i < sels.length; i++) {
       const mt = /^(?:\d\d\.\d\d )?\d\d:\d\d (.+?): (.+?)(?: \(\d+(?:\.\d+)?(?: estimat)?\))?$/.exec(sels[i]);
-      const o = { res: st === 'câștigat' ? 'won' : null };
-      const m = mt && ids[i] ? await match(ids[i]) : null;
-      if (m && m.state === 2) { o.sc = m.h + '-' + m.a; if (m.corners != null) o.cor = m.corners; if (st === 'pierdut') { const v = judge(mt[2], mt[1], m, true); if (v) o.res = v; } }
-      out.push(o);
+      let m = mt && ids[i] ? await match(ids[i]) : null; if (m && m.state !== 2) m = null;
+      if (m && mt) known[mk(mt[1])] = m;
+      rowLegs[r.id].push({ mt, m });
     }
-    legs[r.id] = out; n++;
+  }
+  for (const r of todo) {   // pasul 2: judecă; la selecțiile fără id folosește scorul aceluiași meci din alte bilete
+    const st = done(r);
+    legs[r.id] = rowLegs[r.id].map(({ mt, m }) => {
+      const o = { res: st === 'câștigat' ? 'won' : null };
+      if (!m && mt) m = known[mk(mt[1])] || null;
+      if (m) { o.sc = m.h + '-' + m.a; if (m.corners != null) o.cor = m.corners; if (st === 'pierdut' && mt) { const v = judge(mt[2], mt[1], m, true); if (v) o.res = v; } }
+      return o;
+    });
   }
   fs.writeFileSync('legs.json', JSON.stringify(legs));
-  console.log('legs actualizate:', n);
+  const all = Object.values(legs).flat(); console.log('legs:', all.filter(x => x.res).length + '/' + all.length);
   process.exit(0);
 }
 
