@@ -136,7 +136,7 @@ console.log('candidati', picks.length, 'din', infos.length, 'meciuri');
 // praguri minime pe tip de pariu (decizie 09.11, după analiza pe 210 pronosticuri): Peste 2.5 ≥0,65; GG ≥0,70; șansă dublă ≥0,65
 const minPFor = (p, minP) => p.kind === 'gg' ? Math.max(minP, 0.70) : (p.kind === 'dc' || (p.kind === 'tot' && /2\.5/.test(p.sel))) ? Math.max(minP, 0.65) : minP;
 const eligible = (p, minP) => p.p >= minPFor(p, minP) && p.pform >= p.pm - 0.03 && p.pform <= p.pm + 0.15 && !(p.kind === 'tot' && /3\.5/.test(p.sel));
-const reserved = new Set(); // selecțiile Pariului zilei și Challenge nu apar pe alte bilete
+// (nu mai există selecții rezervate: același pronostic poate apărea pe maximum 2 bilete)
 const S = {
   cota2: { n: [2, 4], cota: [1.85, 2.30], minP: 0.62, odds: [1.20, 1.50], comb: 0.50, tg: 1 },
   cota5: { n: [3, 4], cota: [4.5, 6.0], minP: 0.60, odds: [1.35, 2.1], comb: 0.18, tg: 2 },
@@ -152,7 +152,7 @@ function search(pool_, spec, usage, top = 3) {
     if (cur.length >= spec.n[0] && prod >= spec.cota[0] && prod <= spec.cota[1] && pp >= spec.comb) sols.push({ legs: cur.map(x => x.k), cota: Math.round(prod * 100) / 100, p: pp, m: cur.map(x => x.id) });
     if (cur.length >= spec.n[1] || prod > spec.cota[1]) return;
     for (let j = i; j < L.length; j++) { const x = L[j]; if (used.has(x.id)) continue; if (x.kind === 'tg' && tg >= spec.tg) continue;
-      if (reserved.has(x.k) || (usage.pick[x.k] || 0) >= 3 || (usage.match[x.id] || 0) >= 4) continue;
+      if ((usage.pick[x.k] || 0) >= 2 || (usage.match[x.id] || 0) >= 4) continue;
       cur.push(x); used.add(x.id); rec(j + 1, prod * x.od, pp * x.p, used, tg + (x.kind === 'tg' ? 1 : 0)); cur.pop(); used.delete(x.id); }
   };
   rec(0, 1, 1, new Set(), 0);
@@ -167,14 +167,16 @@ function search(pool_, spec, usage, top = 3) {
 const todayP = picks.filter(p => p.zi === key);
 const usage = { pick: {}, match: {} }; const use = s => { for (const k of s.legs) { usage.pick[k] = (usage.pick[k] || 0) + 1; } for (const id of new Set(s.m)) usage.match[id] = (usage.match[id] || 0) + 1; };
 const propuneri = {}, plan = {};
-const single = (spec, excl) => { const L = todayP.filter(p => eligible(p, spec.minP) && p.od >= spec.odds[0] && p.od <= spec.odds[1] && !excl.k.has(p.k) && !excl.m.has(p.id) && !usage.pick[p.k] && (usage.match[p.id] || 0) < 4)
+const single = (spec, excl) => { const L = todayP.filter(p => eligible(p, spec.minP) && p.od >= spec.odds[0] && p.od <= spec.odds[1] && !excl.k.has(p.k) && !excl.m.has(p.id) && (usage.pick[p.k] || 0) < 2 && (usage.match[p.id] || 0) < 4)
   .sort((a, b) => spec.edge ? ((b.p - 1 / b.od) - (a.p - 1 / a.od)) : (b.p - a.p)); const seen = new Set(), o = [];
   for (const p of L) { if (spec.edge && p.p - 1 / p.od < spec.edge) continue; if (seen.has(p.id)) continue; seen.add(p.id); o.push({ legs: [p.k], cota: p.od, p: p.p, m: [p.id], edge: r3(p.p - 1 / p.od) }); if (o.length >= 4) break; } return o; };
 // ordine: Cotă 2, Pariul zilei, Challenge, Cotă 5, Cotă 10 (cele mai importante primele); fiecare ia în calcul meciurile deja folosite
+// prioritate: Challenge > Cotă 2 > Pariul zilei > Cotă 5 > Cotă 10. Același pronostic pe maximum 2 dintre aceste bilete (usage.pick < 2).
+// Biletele mari (restul) pot relua pronosticuri din cele anterioare, fără această limită.
+const ex = { k: new Set(), m: new Set() };
+propuneri.challenge = single({ minP: 0.65, odds: [1.35, 1.50] }, ex); if (propuneri.challenge[0]) { plan.challenge = propuneri.challenge[0]; use(plan.challenge); }
 propuneri.cota2 = search(todayP, S.cota2, usage); if (propuneri.cota2[0]) { plan.cota2 = propuneri.cota2[0]; use(plan.cota2); }
-const ex = { k: new Set(), m: new Set(plan.cota2 ? plan.cota2.m : []) }; // Cotă 2 are prioritate: își alege primul cele mai bune meciuri, iar Pariul zilei și Challenge nu le iau
-propuneri.pariu = single({ minP: 0.55, odds: [1.40, 2.6], edge: 0.05 }, ex); if (propuneri.pariu[0]) { plan.pariu = propuneri.pariu[0]; use(plan.pariu); reserved.add(plan.pariu.legs[0]); ex.k.add(plan.pariu.legs[0]); ex.m.add(plan.pariu.m[0]); }
-propuneri.challenge = single({ minP: 0.65, odds: [1.35, 1.50] }, ex); if (propuneri.challenge[0]) { plan.challenge = propuneri.challenge[0]; use(plan.challenge); reserved.add(plan.challenge.legs[0]); }
+propuneri.pariu = single({ minP: 0.55, odds: [1.40, 2.6], edge: 0.05 }, ex); if (propuneri.pariu[0]) { plan.pariu = propuneri.pariu[0]; use(plan.pariu); }
 propuneri.cota5 = search(todayP, S.cota5, usage); if (propuneri.cota5[0]) { plan.cota5 = propuneri.cota5[0]; use(plan.cota5); }
 propuneri.cota10 = search(todayP, S.cota10, usage); if (propuneri.cota10[0]) { plan.cota10 = propuneri.cota10[0]; use(plan.cota10); }
 // runda de Champions League (azi + mâine): Cotă 10 CL și CL mare
