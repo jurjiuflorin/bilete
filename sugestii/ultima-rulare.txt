@@ -1,3 +1,5 @@
-exista deja sugestii/2026-11-08.json
-exista deja candidati/2026-11-08.json
+prea devreme pentru lista zilei 3
+prea devreme 3
+judecat 2026-11-07.json
+judecat 2026-11-08.json
 index 15 zile
