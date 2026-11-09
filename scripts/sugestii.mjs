@@ -49,6 +49,8 @@ const poisOverL = (l, line) => { let c = 0; for (let k = 0; k <= Math.floor(line
 const getJ = async u => { for (let i = 0; i < 3; i++) { try { const r = await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0', accept: 'application/json' } }); if (r.ok) return await r.json(); console.log('HTTP', r.status, u.slice(0, 90)); } catch (e) { console.log('ERR', String(e).slice(0, 120), u.slice(0, 90)); } await new Promise(r => setTimeout(r, 1500)); } return {}; };
 async function pool(items, n, fn) { const out = []; let i = 0; await Promise.all(Array.from({ length: Math.min(n, items.length) }, async () => { while (i < items.length) { const k = i++; try { out[k] = await fn(items[k]); } catch (e) { out[k] = null; } } })); return out; }
 function lines(mk, name) { const m = (mk || []).find(x => x.name === name); const o = {}; if (m) for (const x of m.odds || []) { const r = /^Peste (\d+\.5)$/.exec(x.name); if (r && x.price) o[r[1]] = x.price; } return o; }
+function linesU(mk, name) { const m = (mk || []).find(x => x.name === name); const o = {}; if (m) for (const x of m.odds || []) { const r = /^Sub (\d+\.5)$/.exec(x.name); if (r && x.price) o[r[1]] = x.price; } return o; }
+function bestUnder(lam, odds) { let b = null; for (const [L, od] of Object.entries(odds)) { if (od < SUG_MIN || od > SUG_MAX) continue; const pm = 1 - poisOverL(lam, +L); const p = Math.min(0.88, 0.5 * pm + 0.5 * (1 / od) / 1.06); if (!b || p > b.p) b = { line: L, od, p }; } return b; }
 function bestLine(lam, odds) { let b = null; for (const [L, od] of Object.entries(odds)) { if (od < SUG_MIN || od > SUG_MAX) continue; const pm = poisOverL(lam, +L); const p = Math.min(0.88, 0.5 * pm + 0.5 * (1 / od) / 1.06); if (!b || p > b.p) b = { line: L, od, p }; } return b; }
 
 const force = process.argv.includes('--force');
@@ -84,6 +86,8 @@ const res = await pool(list, 6, async m => {
   const base = { id: m.id, meci: m.meci, when: m.when.toISOString(), liga: m.liga };
   const go = bestLine(lh + la, lines(mk, 'Total goluri'));
   if (go) out.push({ ...base, cat: 'goluri', sel: 'Peste ' + go.line + ' goluri', od: go.od, p: go.p, why: m.h + ' dă ' + f1(g[0]) + ' și primește ' + f1(c[0]) + ' goluri pe meci; ' + m.a + ' dă ' + f1(g[1]) + ' și primește ' + f1(c[1]) + '.' });
+  const su = bestUnder(lh + la, linesU(mk, 'Total goluri'));   // Sub: doar date pentru statistică, nu intră pe bilete
+  if (su) out.push({ ...base, cat: 'sub', sel: 'Sub ' + su.line + ' goluri', od: su.od, p: su.p, why: m.h + ' dă ' + f1(g[0]) + ' și primește ' + f1(c[0]) + ' goluri pe meci; ' + m.a + ' dă ' + f1(g[1]) + ' și primește ' + f1(c[1]) + '. Se urmărește doar pentru statistică.' });
   const ggm = mk.find(y => y.name === 'Ambele echipe marchează (GG)'); const ggo = ggm && (ggm.odds || []).find(y => y.name === 'Da');
   if (ggo && ggo.price >= SUG_MIN && ggo.price <= SUG_MAX) { const pm = (1 - Math.exp(-lh)) * (1 - Math.exp(-la)); const p = Math.min(0.88, 0.5 * pm + 0.5 * (1 / ggo.price) / 1.06);
     out.push({ ...base, cat: 'gg', sel: 'GG (ambele marchează)', od: ggo.price, p, why: m.h + ' marchează ' + f1(g[0]) + ' și primește ' + f1(c[0]) + ' pe meci; ' + m.a + ' marchează ' + f1(g[1]) + ' și primește ' + f1(c[1]) + '.' }); }
@@ -99,7 +103,7 @@ const res = await pool(list, 6, async m => {
 const all = res.filter(Boolean).flat();
 if (!all.length) { console.log('nicio sugestie (feed indisponibil?)'); process.exit(list.length ? 1 : 0); }
 const data = {};
-for (const c of ['goluri', 'gg', 'cornere']) data[c] = all.filter(z => z.cat === c).sort((a, b) => b.p - a.p).slice(0, 5).map(({ cat, ...z }) => ({ ...z, p: Math.round(z.p * 1000) / 1000 }));
+for (const c of ['goluri', 'gg', 'cornere', 'sub']) data[c] = all.filter(z => z.cat === c).sort((a, b) => b.p - a.p).slice(0, 5).map(({ cat, ...z }) => ({ ...z, p: Math.round(z.p * 1000) / 1000 }));
 fs.mkdirSync('sugestii', { recursive: true });
 fs.writeFileSync(file, JSON.stringify({ data: key, salvat: now.toISOString(), n: list.length, sugestii: data }, null, 1) + '\n');
 console.log('scris', file, Object.fromEntries(Object.entries(data).map(([k, v]) => [k, v.length])));

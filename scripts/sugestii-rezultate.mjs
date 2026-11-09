@@ -3,7 +3,7 @@
 import fs from 'node:fs';
 
 const SA = 'https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro-RO?fixture-id=ax%3Amatch%3A';
-const CATS = ['goluri', 'gg', 'cornere'];
+const CATS = ['goluri', 'gg', 'cornere', 'sub'];
 const dayKey = d => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Bucharest' }).format(d);
 const today = dayKey(new Date());
 const getJ = async u => { for (let i = 0; i < 3; i++) { try { const r = await fetch(u, { headers: { 'user-agent': 'Mozilla/5.0', accept: 'application/json' } }); if (r.ok) return await r.json(); console.log('HTTP', r.status); } catch (e) { console.log('ERR', String(e).slice(0, 100)); } await new Promise(r => setTimeout(r, 1500)); } return null; };
@@ -25,6 +25,7 @@ function judge(z, m) {
   const L = parseFloat((z.sel.match(/(\d+(?:\.\d)?)/) || [])[1]);
   if (z.cat === 'gg') return m.h > 0 && m.a > 0 ? 'won' : 'lost';
   if (z.cat === 'goluri') return m.h + m.a > L ? 'won' : 'lost';
+  if (z.cat === 'sub') return m.h + m.a < L ? 'won' : 'lost';
   if (z.cat === 'cornere') return m.corners == null ? null : (m.corners > L ? 'won' : 'lost');
   if (z.cat === 'cartonase') return m.yellow == null ? null : (m.yellow > L ? 'won' : 'lost');
   return null;

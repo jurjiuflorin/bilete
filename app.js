@@ -1258,6 +1258,8 @@ async function dayMatches(off) {
   return { key: dayKey(d0), list: out.sort((x, y) => x.when - y.when) };
 }
 function lines(mk, name) { const m = (mk || []).find(x => x.name === name); const o = {}; if (m) for (const x of m.odds || []) { const r = /^Peste (\d+\.5)$/.exec(x.name); if (r && x.price) o[r[1]] = x.price; } return o; }
+function linesU(mk, name) { const m = (mk || []).find(x => x.name === name); const o = {}; if (m) for (const x of m.odds || []) { const r = /^Sub (\d+\.5)$/.exec(x.name); if (r && x.price) o[r[1]] = x.price; } return o; }
+function bestUnder(lam, odds) { let b = null; for (const [L, od] of Object.entries(odds)) { if (od < SUG_MIN || od > SUG_MAX) continue; const pm = 1 - poisOverL(lam, +L); const p = Math.min(0.88, 0.5 * pm + 0.5 * (1 / od) / 1.06); if (!b || p > b.p) b = { line: L, od, p }; } return b; }
 function bestLine(lam, odds) {
   let b = null;
   for (const [L, od] of Object.entries(odds)) { if (od < SUG_MIN || od > SUG_MAX) continue; const pm = poisOverL(lam, +L); const p = Math.min(0.88, 0.5 * pm + 0.5 * (1 / od) / 1.06); if (!b || p > b.p) b = { line: L, od, p, pm }; }
@@ -1289,6 +1291,8 @@ async function buildSug(off) {
     // goluri
     const go = bestLine(lh + la, lines(mk, 'Total goluri'));
     if (go) out.push({ ...base, cat: 'goluri', sel: 'Peste ' + go.line + ' goluri', od: go.od, p: go.p, why: m.h + ' dă ' + f1(g[0]) + ' și primește ' + f1(c[0]) + ' goluri pe meci; ' + m.a + ' dă ' + f1(g[1]) + ' și primește ' + f1(c[1]) + '.' });
+    const su = bestUnder(lh + la, linesU(mk, 'Total goluri'));   // Sub: doar date pentru statistică, nu intră pe bilete
+    if (su) out.push({ ...base, cat: 'sub', sel: 'Sub ' + su.line + ' goluri', od: su.od, p: su.p, why: m.h + ' dă ' + f1(g[0]) + ' și primește ' + f1(c[0]) + ' goluri pe meci; ' + m.a + ' dă ' + f1(g[1]) + ' și primește ' + f1(c[1]) + '. Se urmărește doar pentru statistică.' });
     // GG
     const ggm = mk.find(y => y.name === 'Ambele echipe marchează (GG)'); const ggo = ggm && (ggm.odds || []).find(y => y.name === 'Da');
     if (ggo && ggo.price >= SUG_MIN && ggo.price <= SUG_MAX) { const pm = (1 - Math.exp(-lh)) * (1 - Math.exp(-la)); const p = Math.min(0.88, 0.5 * pm + 0.5 * (1 / ggo.price) / 1.06);
@@ -1300,7 +1304,7 @@ async function buildSug(off) {
   });
   const all = res.filter(Boolean).flat();
   const data = {};
-  for (const c of ['goluri', 'gg', 'cornere']) data[c] = all.filter(z => z.cat === c).sort((a, b) => b.p - a.p).slice(0, 5);
+  for (const c of ['goluri', 'gg', 'cornere', 'sub']) data[c] = all.filter(z => z.cat === c).sort((a, b) => b.p - a.p).slice(0, 5);
   return { key, n: list.length, data };
 }
 function loadSug(off) {
@@ -1330,7 +1334,7 @@ async function loadSnapRes(key) {
   for (const z of items) { if (z.rez) { if (z.rez !== 'void') o.res[z.id + '|' + z.sel] = z.rez; if (z.scor) o.sc[z.id + '|' + z.sel] = z.scor.replace('-', ' – ') + (z.total != null && /corner|cartona|galben/i.test(z.sel) ? ' · ' + z.total + (/corner/i.test(z.sel) ? ' cornere' : ' galbene') : ''); continue; } const m = M[z.id]; if (!m) continue; const r = judge(sugSel(z.sel), z.meci, m); if (r) o.res[z.id + '|' + z.sel] = r; if (m.h != null) o.sc[z.id + '|' + z.sel] = m.h + ' – ' + m.a + (/corner/i.test(z.sel) && m.corners ? ' · ' + (m.corners[0] + m.corners[1]) + ' cornere' : /cartona|galben/i.test(z.sel) && m.yellow ? ' · ' + (m.yellow[0] + m.yellow[1]) + ' galbene' : '') + (m.state === 2 ? '' : (m.min ? ' · ' + m.min + "'" : ' · live')); if (m.state === 1) o.live = true; }
   } finally { o.rt = Date.now(); o.rbusy = false; }
 }
-const SUG_CATS = [['goluri', 'Goluri', 'Meciuri cu multe goluri'], ['gg', 'GG', 'Ambele echipe marchează'], ['cornere', 'Cornere', 'Peste numărul de cornere']];
+const SUG_CATS = [['goluri', 'Goluri', 'Meciuri cu multe goluri'], ['gg', 'GG', 'Ambele echipe marchează'], ['cornere', 'Cornere', 'Peste numărul de cornere'], ['sub', 'Sub goluri', 'Doar pentru statistică, nu intră pe bilete']];
 function viewSuggest() {
   const list = $('list');
   const seg = el('div', 'sg-seg');
