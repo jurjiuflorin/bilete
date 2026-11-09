@@ -146,8 +146,31 @@ function catOf(t) {
 }
 const filtered = arr => arr.filter(r => !tip || catOf(r.tip) === tip).filter(r => !q || nrm(r.selectii).includes(q));
 
+/* ---------- mesaj „azi nu sunt meciuri favorabile” ---------- */
+let candAzi = null;   // {key, n} din candidati/<azi>.json
+function roNowParts() { const f = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Bucharest', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23' }).formatToParts(new Date()); const g = t => f.find(x => x.type === t).value; return { key: g('year') + '-' + g('month') + '-' + g('day'), hour: +g('hour') }; }
+function dayNote() {
+  const { key, hour } = roNowParts();
+  if (!candAzi || candAzi.key !== key) { candAzi = { key, n: null, busy: true }; fetch('candidati/' + key + '.json?v=' + Date.now(), { cache: 'no-store' }).then(r => r.ok ? r.json() : null).catch(() => null).then(j => { candAzi = { key, n: j && j.meciuri != null ? j.meciuri : null }; if (tab === 'p') render(); }); }
+  const TYPES = [['Pariul zilei', /^Pariul zilei/], ['Challenge', /^Challenge/], ['Cotă 2', /^Cotă 2$/], ['Cotă 5', /^Cotă 5$/], ['Cotă 10', /^Cotă 10$/]];
+  const today = rows.filter(r => r.data === key);
+  const miss = TYPES.filter(([, re]) => !today.some(r => re.test(r.tip))).map(t => t[0]);
+  if (!miss.length) return null;
+  if (hour < 13) { if (miss.length < TYPES.length) return null; const b = el('div', 'nofav soft'); b.append(el('b', null, 'Biletele de azi se pregătesc'), el('span', null, 'Apar de obicei până la 9:30, ora României. Dacă nu există meciuri bune, se completează până la 12:30 sau se renunță la bilet.')); return b; }
+  const none = miss.length === TYPES.length;
+  const b = el('div', 'nofav');
+  b.append(el('div', 'nofav-ic', none ? '🛋️' : '🎯'));
+  const t = el('div', 'nofav-t');
+  t.append(el('b', null, none ? 'Azi nu sunt meciuri favorabile de jucat' : 'Azi sunt doar ' + (TYPES.length - miss.length) + ' din ' + TYPES.length + ' bilete'));
+  t.append(el('span', null, none
+    ? 'Am analizat oferta zilei' + (candAzi && candAzi.n ? ' (' + candAzi.n + ' meciuri)' : '') + ' și nicio selecție nu trece de regulile mele: șansă estimată suficientă, cotă de la 1,35 și meciuri care nu se repetă. E mai bine să nu joci decât să joci pe bilete slabe. Revin cu bilete mâine dimineață.'
+    : 'Pentru restul nu am găsit selecții care să treacă de reguli (șansă, cotă de la 1,35, fără meciuri repetate), așa că am renunțat la ele în loc să forțez bilete slabe.'));
+  if (!none) { const c = el('div', 'nofav-c'); for (const m of miss) c.append(el('em', null, 'fără ' + m)); t.append(c); }
+  b.append(t); return b;
+}
 function viewTickets(pending) {
   const list = $('list');
+  if (pending && !tip && !q && !liveOnly) { const nf = dayNote(); if (nf) list.append(nf); }
   let R = filtered(rows.filter(r => pending === (eff(r) === PEND)));
   if (pending && liveOnly) {
     R = R.filter(isLiveTicket);
