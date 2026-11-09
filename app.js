@@ -883,6 +883,11 @@ function judge(sel, meci, m, inBB) {
   if (s === '1') return done(H > A); if (s === 'x') return done(H === A); if (s === '2') return done(A > H);
   if (s === '1x') return done(H >= A); if (s === 'x2') return done(A >= H); if (s === '12') return done(H !== A);
   if (s === 'gg') return done(H > 0 && A > 0, H > 0 && A > 0); if (s === 'ng') return done(!(H > 0 && A > 0), false, H > 0 && A > 0);
+  if ((x = s.match(/^(.+?) handicap ([+-]?\d+(?:\.\d)?)$/))) {   // handicap 3 căi: egalitate după handicap = pierdut
+    const [hn, an] = (meci || '').split(' – ').map(t => nrm(t)), t = x[1], w = y => y.split(/\s+/).filter(z => z.length > 2);
+    const d = hn && (hn.includes(t) || t.includes(hn) || w(t).some(y => hn.includes(y))) ? 'h' : an && (an.includes(t) || t.includes(an) || w(t).some(y => an.includes(y))) ? 'a' : null;
+    if (d) { const diff = (d === 'h' ? H - A : A - H) + parseFloat(x[2]); return done(diff > 0, false, false); }
+  }
   if ((x = s.match(/^(peste|sub) (\d+(?:\.\d)?)(?: goluri| puncte)?$/))) { const L = +x[2]; return x[1] === 'peste' ? done(T > L, T > L) : done(T < L, false, T > L); }
   if ((x = s.match(/^(.+?) peste (\d+(?:\.\d)?) goluri$/))) { const hm = nrm(meci.split(' – ')[0]); const t = nrm(x[1]); const G = (hm.includes(t) || t.includes(hm.split(' ')[0])) ? H : A; const L = +x[2]; return done(G > L, G > L); }
   if ((x = s.match(/cornere (peste|sub) (\d+(?:\.\d)?)/) || s.match(/(peste|sub) (\d+(?:\.\d)?) cornere/))) { if (!m.corners) return null; const C = m.corners[0] + m.corners[1], L = +x[2]; return x[1] === 'peste' ? done(C > L, C > L) : done(C < L, false, C > L); }

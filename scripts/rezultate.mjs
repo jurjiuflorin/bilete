@@ -51,6 +51,7 @@ function judge(sel, meci, m, inBB) {
   if ((x = s.match(/^(.+?) (?:castiga|victorie)$/))) { const d = side(x[1]); if (!d) return null; const win = d === 'h' ? H > A : A > H; if (!win && !inBB) return null; return R(win); }
   if ((x = s.match(/^(.+?) sau egal/))) { const d = side(x[1]); if (!d) return null; return R(d === 'h' ? H >= A : A >= H); }
   if ((x = s.match(/^(.+?) fara gol primit$/))) { const d = side(x[1]); if (!d) return null; return R((d === 'h' ? A : H) === 0); }
+  if ((x = s.match(/^(.+?) handicap ([+-]?\d+(?:\.\d)?)$/))) { const d = side(x[1]); if (!d) return null; const diff = (d === 'h' ? H - A : A - H) + parseFloat(x[2]); return R(diff > 0); }   // handicap 3 căi: egalitate după handicap = pierdut
   if (s.startsWith('bet builder')) {
     const parts = String(sel).replace(/^bet builder\s*/i, '').split(/\s*\+\s*/).map(p => judge(p, meci, m, true));
     if (parts.includes('lost')) return 'lost'; if (parts.includes(null)) return null; return 'won';
