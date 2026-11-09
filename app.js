@@ -1696,15 +1696,30 @@ function marketBox(S) {
   if (!legs.length) return box;
   const table = (title, groups) => {
     const w = el('div', 'mks-t'); w.append(el('h4', null, title));
-    const tb = el('table'); const hd = el('tr'); ['', 'Intrate', '%', 'Cotă medie', 'Profit/leu'].forEach(x => hd.append(el('th', null, x))); tb.append(hd);
-    [...groups].filter(([, a]) => a.length >= 2).sort((a, b) => b[1].length - a[1].length).forEach(([k, a]) => {
+    const rowsT = [...groups].filter(([, a]) => a.length >= 2).map(([k, a]) => {
       const w2 = a.filter(x => x.won).length, odds = a.filter(x => x.od), avg = odds.length ? odds.reduce((s, x) => s + x.od, 0) / odds.length : 0;
       const pr = odds.reduce((s, x) => s + (x.won ? x.od - 1 : -1), 0) / (odds.length || 1);
-      const tr = el('tr'); const pc = Math.round(100 * w2 / a.length);
-      tr.append(el('td', null, k), el('td', null, w2 + '/' + a.length), el('td', 'pc ' + (pc >= 70 ? 'up' : pc < 55 ? 'down' : ''), pc + '%'), el('td', null, avg ? fmtOdd(avg) : '–'), el('td', pr >= 0 ? 'up' : 'down', (pr >= 0 ? '+' : '') + pr.toFixed(2)));
-      tb.append(tr);
+      return { k, w2, n: a.length, pc: Math.round(100 * w2 / a.length), pcx: w2 / a.length, avg, pr };
     });
-    w.append(tb); return w;
+    let sk = 'n', dir = -1;
+    const KEYS = [null, 'n', 'pcx', 'avg', 'pr'];
+    const tb = el('table'); w.append(tb);
+    const draw = () => {
+      tb.replaceChildren();
+      const hd = el('tr');
+      ['', 'Intrate', '%', 'Cotă medie', 'Profit/leu'].forEach((x, i) => {
+        const th = el('th', null, x + (KEYS[i] && KEYS[i] === sk ? (dir < 0 ? ' ▼' : ' ▲') : ''));
+        if (KEYS[i]) { th.style.cursor = 'pointer'; th.title = 'Sortează după ' + x; th.onclick = () => { if (sk === KEYS[i]) dir = -dir; else { sk = KEYS[i]; dir = -1; } draw(); }; }
+        hd.append(th);
+      });
+      tb.append(hd);
+      [...rowsT].sort((x, y) => dir * ((x[sk] - y[sk]) || (x.n - y.n))).forEach(o => {
+        const tr = el('tr');
+        tr.append(el('td', null, o.k), el('td', null, o.w2 + '/' + o.n), el('td', 'pc ' + (o.pc >= 70 ? 'up' : o.pc < 55 ? 'down' : ''), o.pc + '%'), el('td', null, o.avg ? fmtOdd(o.avg) : '–'), el('td', o.pr >= 0 ? 'up' : 'down', (o.pr >= 0 ? '+' : '') + o.pr.toFixed(2)));
+        tb.append(tr);
+      });
+    };
+    draw(); return w;
   };
   const by = f => { const g = new Map(); for (const l of legs) { const k = f(l); if (!k) continue; if (!g.has(k)) g.set(k, []); g.get(k).push(l); } return g; };
   box.append(table('Pe tipuri de pariu', by(l => marketOf(l.sel))));
