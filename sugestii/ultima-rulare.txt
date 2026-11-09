@@ -1,3 +1,5 @@
 exista deja sugestii/2026-11-09.json
-exista deja candidati/2026-11-09.json
+evenimente 1498 meciuri 2
+candidati 17 din 2 meciuri
+scris candidati/2026-11-09.json plan { pariu: '1.66 / 0.664' } variante { cota2: 0, pariu: 1, challenge: 0, cota5: 0, cota10: 0 } 1
 index 16 zile
