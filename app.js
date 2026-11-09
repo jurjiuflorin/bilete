@@ -195,8 +195,11 @@ function viewTickets(pending) {
 // statistica biletelor încheiate din filtrul ales (ex. doar Cotă 2)
 function histStats(R) {
   const ALL = [...R].sort((a, b) => (a.data + a.id).localeCompare(b.data + b.id));
-  const N = Number(store.get('hsN', 0)) || 0;   // 0 = toate
-  const S = N ? ALL.slice(-N) : ALL;
+  const D1 = store.get('hsFrom', '') || '', D2 = store.get('hsTo', '') || '';   // interval de date (YYYY-MM-DD), gol = fără limită
+  const RANGE = !!(D1 || D2);
+  const N = RANGE ? 0 : (Number(store.get('hsN', 0)) || 0);   // 0 = toate
+  const S = RANGE ? ALL.filter(r => (!D1 || r.data >= D1) && (!D2 || r.data <= D2)) : (N ? ALL.slice(-N) : ALL);
+  const dRo = k => k.split('-').reverse().join('.');
   const won = r => eff(r) === 'câștigat';
   const n = S.length, w = S.filter(won).length;
   const profit = S.reduce((a, r) => a + (won(r) ? Number(r.cota) - 1 : -1), 0) * 10;
@@ -206,12 +209,16 @@ function histStats(R) {
   let streak = 0; const last = S.length ? won(S[S.length - 1]) : null; for (let i = S.length - 1; i >= 0 && won(S[i]) === last; i--) streak++;
   const pct = (a, b) => b ? Math.round(100 * a / b) + '%' : '–';
   const box = el('section', 'hs'); box._R = R;
-  const h = el('h2', null, (tip || 'Toate biletele')); h.append(el('small', null, (q ? 'căutarea „' + q + '”, ' : '') + (N && ALL.length > N ? 'ultimele ' + n + ' bilete încheiate' : 'toate cele ' + n + ' bilete încheiate')));
+  const h = el('h2', null, (tip || 'Toate biletele')); h.append(el('small', null, (q ? 'căutarea „' + q + '”, ' : '') + (RANGE ? n + ' bilete încheiate între ' + (D1 ? dRo(D1) : 'început') + ' și ' + (D2 ? dRo(D2) : 'azi') : N && ALL.length > N ? 'ultimele ' + n + ' bilete încheiate' : 'toate cele ' + n + ' bilete încheiate')));
   const seg = el('div', 'sg-seg hs-seg');
   for (const [v, lab] of [[5, 'Ultimele 5'], [15, '15'], [20, '20'], [0, 'Toate']]) {
-    const b = el('button', null, lab); b.type = 'button'; b.setAttribute('aria-pressed', String(v === N));
-    b.onclick = () => { store.set('hsN', v); box.replaceWith(histStats(R)); }; seg.append(b);
+    const b = el('button', null, lab); b.type = 'button'; b.setAttribute('aria-pressed', String(!RANGE && v === N));
+    b.onclick = () => { store.set('hsN', v); store.set('hsFrom', ''); store.set('hsTo', ''); box.replaceWith(histStats(R)); }; seg.append(b);
   }
+  const rng = el('div', 'hs-range');
+  const mkD = (lab, key, val) => { const l = el('label', null); l.append(el('span', null, lab)); const i = el('input'); i.type = 'date'; i.value = val; i.setAttribute('aria-label', lab + ' data'); i.onchange = () => { store.set(key, i.value || ''); box.replaceWith(histStats(R)); }; l.append(i); return l; };
+  rng.append(mkD('De la', 'hsFrom', D1), mkD('Până la', 'hsTo', D2));
+  if (RANGE) { const x = el('button', 'hs-clear', 'Șterge intervalul'); x.type = 'button'; x.onclick = () => { store.set('hsFrom', ''); store.set('hsTo', ''); box.replaceWith(histStats(R)); }; rng.append(x); }
   const tiles = el('div', 'rs-tiles');
   const tile = (big, lab, cls) => { const t = el('div', 'rs-tile' + (cls ? ' ' + cls : '')); t.append(el('b', null, big), el('span', null, lab)); return t; };
   tiles.append(
@@ -220,9 +227,9 @@ function histStats(R) {
     tile(avg ? fmtOdd(avg) : '–', 'cota medie'),
     tile(ln ? pct(lw, ln) : '–', ln ? lw + ' din ' + ln + ' meciuri intrate' : 'meciuri intrate'),
     tile(n ? streak + (last ? ' ✓' : ' ✗') : '–', last ? 'câștigate la rând acum' : 'pierdute la rând acum'));
-  const dots = el('div', 'hs-dots'); dots.append(el('span', 'l', (N ? 'Ultimele ' + n : 'Toate') + ':'));
+  const dots = el('div', 'hs-dots'); dots.append(el('span', 'l', (RANGE ? 'Interval' : N ? 'Ultimele ' + n : 'Toate') + ':'));
   S.forEach(r => { const d = el('i', won(r) ? 'w' : 'x'); d.title = r.data.split('-').reverse().join('.') + ' · cotă ' + fmtOdd(r.cota) + ' · ' + (won(r) ? 'câștigat' : 'pierdut'); dots.append(d); });
-  box.append(h, seg, tiles); if (n) box.append(dots);
+  box.append(h, seg, rng, tiles); if (n) box.append(dots);
   const mb = moneyBox(S); if (mb) box.append(mb);
   if (n) box.append(marketBox(S));
   return box;
