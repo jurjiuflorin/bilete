@@ -31,7 +31,7 @@ async function match(id) {
 // Judecă o selecție pe un meci terminat. Returnează 'won' | 'lost' | null (nu se poate sigur).
 function judge(sel, meci, m, inBB) {
   const H = m.h, A = m.a, T = H + A;
-  let s = nrm(sel).trim();
+  let s = nrm(sel).trim().replace(/^ambele (echipe )?marcheaza( \(gg\))?$/, 'gg');
   if (/^[12x] \S.*$/.test(s)) s = s[0];            // "2 Manchester City" / "2 (City câștigă)" = "2"
   const [hn, an] = (meci || '').split(' – ').map(t => nrm(t));
   const side = t => { t = nrm(t).trim(); const w = x => x.split(/\s+/).filter(y => y.length > 2); if (hn && (hn.includes(t) || t.includes(hn) || w(t).some(y => hn.includes(y)))) return 'h'; if (an && (an.includes(t) || t.includes(an) || w(t).some(y => an.includes(y)))) return 'a'; return null; };
@@ -56,6 +56,32 @@ function judge(sel, meci, m, inBB) {
     if (parts.includes('lost')) return 'lost'; if (parts.includes(null)) return null; return 'won';
   }
   return null;
+}
+
+
+// ---- mod --legs: rezultatul fiecărei selecții pentru biletele încheiate (completează statisticile din Istoric) ----
+if (process.argv.includes('--legs')) {
+  let legs = {}; try { legs = JSON.parse(fs.readFileSync('legs.json', 'utf8')); } catch (e) {}
+  let sj = {}; try { sj = JSON.parse(fs.readFileSync('settle.json', 'utf8')); } catch (e) {}
+  let n = 0;
+  for (const r of rows) {
+    const st = r.status !== 'în așteptare' ? r.status : (sj[r.id] && sj[r.id].status);
+    if (st !== 'câștigat' && st !== 'pierdut') continue;
+    const sels = String(r.selectii || '').split(' · '); const ids = r.ids || [];
+    if (legs[r.id] && legs[r.id].length === sels.length && !legs[r.id].some(x => x.res == null) && legs[r.id].every(x => x.sc)) continue;
+    const out = [];
+    for (let i = 0; i < sels.length; i++) {
+      const mt = /^(?:\d\d\.\d\d )?\d\d:\d\d (.+?): (.+?)(?: \(\d+(?:\.\d+)?(?: estimat)?\))?$/.exec(sels[i]);
+      const o = { res: st === 'câștigat' ? 'won' : null };
+      const m = mt && ids[i] ? await match(ids[i]) : null;
+      if (m && m.state === 2) { o.sc = m.h + '-' + m.a; if (m.corners != null) o.cor = m.corners; if (st === 'pierdut') { const v = judge(mt[2], mt[1], m, true); if (v) o.res = v; } }
+      out.push(o);
+    }
+    legs[r.id] = out; n++;
+  }
+  fs.writeFileSync('legs.json', JSON.stringify(legs));
+  console.log('legs actualizate:', n);
+  process.exit(0);
 }
 
 const out = { ...settle };

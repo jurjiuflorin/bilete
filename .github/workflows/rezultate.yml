@@ -19,10 +19,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/rezultate.mjs ${{ inputs.test && '--test' || '' }} 2>&1 | tee ultima-validare.txt
+      - run: |
+          node scripts/rezultate.mjs ${{ inputs.test && '--test' || '' }} 2>&1 | tee ultima-validare.txt
+          node scripts/rezultate.mjs --legs 2>&1 | tee -a ultima-validare.txt
       - name: Commit
         run: |
-          git add settle.json settle-test.json 2>/dev/null || git add settle.json
+          git add settle.json legs.json 2>/dev/null || git add settle.json
           if git diff --cached --quiet; then exit 0; fi
           git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -m "Validare automata $(TZ=Europe/Bucharest date +'%F %H:%M')"
           for i in 1 2 3; do git push && exit 0; git pull --rebase; done

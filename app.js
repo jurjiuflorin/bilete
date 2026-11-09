@@ -870,7 +870,7 @@ async function getMatch(id, sport) {
 function judge(sel, meci, m, inBB) {
   if (!sel || !m || m.h == null || m.state === 0) return null;
   if (!inBB && saWon.has(saKey(meci, sel))) return 'won';   // SuperAvantaj: 2 goluri avans = câștigat
-  const fin = m.state === 2, H = m.h, A = m.a, T = H + A, s0 = nrm(sel).trim(), s = /^[12x] \S.*$/.test(s0) ? s0[0] : s0;   // "2 (City câștigă)" = "2"
+  const fin = m.state === 2, H = m.h, A = m.a, T = H + A, s0 = nrm(sel).trim().replace(/^ambele (echipe )?marcheaza( \(gg\))?$/, 'gg'), s = /^[12x] \S.*$/.test(s0) ? s0[0] : s0;   // "2 (City câștigă)" = "2"
   const done = (win, certainWin, certainLose) => fin ? (win ? 'won' : 'lost') : (certainWin ? 'won' : certainLose ? 'lost' : (win ? 'ok' : 'no'));
   let x;
   if (s === '1') return done(H > A); if (s === 'x') return done(H === A); if (s === '2') return done(A > H);
@@ -1153,7 +1153,7 @@ async function shareSlip(r, btn) {
 /* ---------- Rezultate: cât de bine merg ponturile ---------- */
 const famOf = t => (t || '').replace(/\s*\(refăcut\)\s*$/i, '').trim();
 function marketOf(sel) {
-  let s = nrm(sel).trim(); if (/^[12x] \S.*$/.test(s)) s = s[0];
+  let s = nrm(sel).trim().replace(/^ambele (echipe )?marcheaza( \(gg\))?$/, 'gg'); if (/^[12x] \S.*$/.test(s)) s = s[0];
   if (s.startsWith('bet builder')) return 'Bet Builder';
   if (/cornere/.test(s)) return 'Cornere';
   if (/galbene|cartonase/.test(s)) return 'Cartonașe';
@@ -1651,7 +1651,7 @@ function moneyBox(S) {
 
 /* ---------- ce merge și ce nu: pe tipuri de pariu și pe ligi ---------- */
 function marketOf(sel) {
-  let s = nrm(sel).trim(); if (/^[12x] \S.*$/.test(s)) s = s[0];
+  let s = nrm(sel).trim().replace(/^ambele (echipe )?marcheaza( \(gg\))?$/, 'gg'); if (/^[12x] \S.*$/.test(s)) s = s[0];
   if (s.startsWith('bet builder')) return 'Bet Builder';
   if (/cornere/.test(s)) return 'Cornere';
   if (/cartonase/.test(s)) return 'Cartonașe';
