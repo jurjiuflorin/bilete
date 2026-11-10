@@ -78,7 +78,7 @@ if (process.argv.includes('--legs')) {
     const sels = String(r.selectii || '').split(' · '); const ids = r.ids || [];
     rowLegs[r.id] = [];
     for (let i = 0; i < sels.length; i++) {
-      const mt = /^(?:\d\d\.\d\d )?\d\d:\d\d (.+?): (.+?)(?: \(\d+(?:\.\d+)?(?: estimat)?\))?$/.exec(sels[i]);
+      const mt = /^(?:\d\d\.\d\d )?\d\d:\d\d (.+?): (.+?)(?: \(\d+(?:\.\d+)?(?:, live)?(?: estimat)?\))?$/.exec(sels[i]);
       let m = mt && ids[i] ? await match(ids[i]) : null; if (m && m.state !== 2) m = null;
       if (m && mt) known[mk(mt[1])] = m;
       rowLegs[r.id].push({ mt, m });
@@ -107,7 +107,7 @@ for (const r of rows) {
   if (!sels.length || ids.length !== sels.length) continue;
   const verd = [], rez = [];
   for (let i = 0; i < sels.length; i++) {
-    const mt = /^(?:\d\d\.\d\d )?\d\d:\d\d (.+?): (.+?)(?: \(\d+(?:\.\d+)?(?: estimat)?\))?$/.exec(sels[i]);
+    const mt = /^(?:\d\d\.\d\d )?\d\d:\d\d (.+?): (.+?)(?: \(\d+(?:\.\d+)?(?:, live)?(?: estimat)?\))?$/.exec(sels[i]);
     if (!mt) { verd.push(null); continue; }
     const [, meci, sel] = mt;
     const m = await match(ids[i]);

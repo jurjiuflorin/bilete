@@ -15,6 +15,7 @@ const PEND = 'în așteptare';
 let LEGS = {}, nevOnly = false;   // LEGS: rezultatul fiecărei selecții (legs.json), nevOnly: filtru „Nevalidate” în Istoric
 function legRes(r, i, l) {
   const a = LEGS[r.id]; if (a && a[i] && a[i].res) return a[i].res;
+  if (a && a[i] && a[i].sc) { const [h, g] = a[i].sc.split('-').map(Number); const v = judge(l.sel, l.meci, { state: 2, h, a: g, corners: a[i].cor != null ? [a[i].cor, 0] : null, yellow: null }); if (v === 'won' || v === 'lost') return v; }
   if (!r.rezultat) return null; const sc = rezScore(r.rezultat, l.meci); return sc ? judge(l.sel, l.meci, sc) : null;
 }
 function nevCount(r) { if (eff(r) === PEND) return 0; const L = parseLegs(r); return L.filter((l, i) => { const v = legRes(r, i, l); return v !== 'won' && v !== 'lost'; }).length; }
