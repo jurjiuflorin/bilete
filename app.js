@@ -1799,7 +1799,7 @@ async function checkSA(li, m) {
 }
 
 /* ---------- meniu jos pe telefon (ca într-o aplicație) ---------- */
-const MNAV = [['p', '🎟️', 'De jucat'], ['x', '🏆', 'Challenge'], ['m', '⚽', 'Meciuri'], ['h', '📊', 'Istoric']];
+const MNAV = [['p', '🎟️', 'De jucat'], ['x', '🏆', 'Challenge'], ['m', '⚽', 'Meciuri'], ['k', '🏀', 'Baschet'], ['h', '📊', 'Istoric']];
 const MMORE = [['s', '💡', 'Sugestii'], ['c', '📅', 'Calendar'], ['r', '🧾', 'Rezultate']];
 const goTab = t => { const b = $('tabs').querySelector('button[data-tab="' + t + '"]'); if (b) b.click(); window.scrollTo({ top: 0, behavior: 'smooth' }); };
 (function buildMNav() {
