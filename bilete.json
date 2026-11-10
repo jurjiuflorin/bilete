@@ -3263,5 +3263,28 @@
    14438744
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-11-baschet20",
+  "data": "2026-11-11",
+  "tip": "Baschet",
+  "cota": 15.81,
+  "sansa": 0.06,
+  "status": "în așteptare",
+  "cod": "990T-NHM3KL",
+  "selectii": "02:30 New York Knicks – Milwaukee Bucks: Peste 219.5 puncte (1.76) · 04:00 Utah Jazz – Miami Heat: Miami Heat câștigă (1.22) · 04:00 Phoenix Suns – Los Angeles Clippers: Phoenix Suns câștigă (1.59) · 05:00 Sacramento Kings – Orlando Magic: Orlando Magic handicap -4.5 (1.72) · 21:00 Le Mans – San Pablo Burgos: Le Mans câștigă (1.21) · 21:00 BC Roma SPQR – Ulm: BC Roma SPQR câștigă (1.27) · 21:45 Partizan – Baskonia: Partizan câștigă (1.27) · 21:45 Paris – Fenerbahce: Fenerbahce câștigă (1.38)",
+  "rezultat": "",
+  "motive": [
+   "Linia a urcat de la 218.5 la 219.5. Selecția cu cea mai slabă fundamentare din bilet: n-am avut medii de puncte pe meci pentru aceste echipe.",
+   "Utah 1-9, fără Jaren Jackson Jr., Keyonte George și Nurkic; Miami cu Giannis incert (încheietură, probabil).",
+   "Clippers 2-7 fără Beal și Ingram; Phoenix 3-6 dar acasă. Phoenix a pierdut cu 26 la San Antonio aseară.",
+   "Sacramento 1-9 (Sabonis, Murray incerți); Orlando 2-7 și fără Banchero, Suggs, Isaac, deci handicapul e riscant.",
+   "EuroCup: aleasă doar după cota Superbet, fără statistici proprii.",
+   "EuroCup: aleasă doar după cota Superbet, fără statistici proprii.",
+   "EuroLeague: Partizan 5-5 (+2), 88-67 cu Maccabi; Baskonia 1-9, -118, cea mai slabă apărare.",
+   "EuroLeague: Fenerbahce 7-3 (+49) vs Paris 4-6 (-36); deplasare."
+  ],
+  "sport": "baschet",
+  "nota": "Cote reale Superbet din 10.11, ora 16:00 (Mexic). Orele sunt ora României; meciurile NBA sunt în noaptea 10→11.11. Cotele se pot schimba la plasare. Cod pregătit pentru agenție, cu miza implicită de 2 RON; nu s-a plasat niciun pariu."
  }
 ]

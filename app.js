@@ -151,6 +151,7 @@ function catOf(t) {
   return 'Zilnice';
 }
 const filtered = arr => arr.filter(r => !tip || catOf(r.tip) === tip).filter(r => !q || nrm(r.selectii).includes(q));
+const isBk = r => r.sport === 'baschet';   // biletele de baschet au fila lor (Baschet)
 
 /* ---------- mesaj „azi nu sunt meciuri favorabile” ---------- */
 let candAzi = null;   // {key, n} din candidati/<azi>.json
@@ -177,7 +178,7 @@ function dayNote() {
 function viewTickets(pending) {
   const list = $('list');
   if (pending && !tip && !q && !liveOnly) { const nf = dayNote(); if (nf) list.append(nf); }
-  let R = filtered(rows.filter(r => pending === (eff(r) === PEND)));
+  let R = filtered(rows.filter(r => !isBk(r) && pending === (eff(r) === PEND)));
   if (pending && liveOnly) {
     R = R.filter(isLiveTicket);
     if (!R.length) { list.append(el('div', 'empty', 'Niciun meci de pe bilete nu se joacă acum. Apasă din nou pe Live ca să vezi toate biletele.')); return; }
@@ -1419,6 +1420,7 @@ function header() {
   const P = rows.filter(r => eff(r) === PEND), W = rows.filter(r => eff(r) === 'câștigat').length, Lo = rows.filter(r => eff(r) === 'pierdut').length;
   $('s-p').textContent = P.length; $('s-w').textContent = W; $('s-l').textContent = Lo;
   $('n-p').textContent = P.length; $('n-h').textContent = W + Lo;
+  { const nk = $('n-k'); if (nk) { const c = rows.filter(r => isBk(r) && eff(r) === PEND).length; nk.textContent = c || ''; } }
   let best = null;
   for (const r of P) for (const l of parseLegs(r)) if (l.when && l.when > now && (!best || l.when < best.when)) best = l;
   const n = $('next'); const badge = n.querySelector('.livebadge'); n.replaceChildren(); if (badge) n.append(badge);
@@ -1477,9 +1479,37 @@ function viewBlog() {
     list.append(art);
   }
 }
+/* ---------- baschet: un bilet pe săptămână (NBA + Europa) ---------- */
+function viewBask() {
+  const list = $('list'), R = rows.filter(isBk);
+  list.append(el('p', 'intro', 'Un bilet pe săptămână, cu cotă între 15 și 25, din NBA și baschet european. Selecțiile vin din clasamente, formă și absențe; cotele sunt cele de pe Superbet de la pregătirea biletului și se pot schimba până plasezi.'));
+  if (!R.length) { list.append(el('div', 'empty', 'Încă nu e niciun bilet de baschet. Primul apare în curând.')); return; }
+  const done = R.filter(r => eff(r) !== PEND), won = done.filter(r => eff(r) === 'câștigat');
+  if (done.length) {
+    const profit = done.reduce((s, r) => s + (eff(r) === 'câștigat' ? Number(r.cota) - 1 : -1), 0);
+    list.append(el('p', 'note', 'Încheiate: ' + done.length + ', câștigate: ' + won.length + '. La 1 RON pe bilet: ' + (profit > 0 ? '+' : '') + profit.toFixed(2).replace('.', ',') + ' RON.'));
+  }
+  const block = (title, arr, pending) => {
+    if (!arr.length) return;
+    arr.sort((a, b) => pending ? firstWhen(a) - firstWhen(b) : (b.data + b.id).localeCompare(a.data + a.id));
+    const sec = el('section', 'day'); sec.append(el('h2', null, title));
+    const g = el('div', 'grid'); let i = 0; arr.forEach(r => g.append(slip(r, i++))); sec.append(g);
+    for (const r of arr) {
+      const L = parseLegs(r), why = el('div', 'bk-why');
+      why.append(el('h4', null, 'De ce aceste selecții (' + r.tip + ', ' + fmtOdd(r.cota) + ')'));
+      const ul = el('ul', 'blog-ul'); L.forEach(l => { if (l.motiv) { const li = el('li'); li.append(el('b', null, l.meci + ': '), document.createTextNode(l.motiv)); ul.append(li); } });
+      if (ul.children.length) why.append(ul);
+      if (r.nota) why.append(el('p', 'note', r.nota));
+      if (ul.children.length || r.nota) sec.append(why);
+    }
+    list.append(sec);
+  };
+  block('De jucat', R.filter(r => eff(r) === PEND), true);
+  block('Încheiate', done, false);
+}
 function chips() {
   const box = $('chips'); box.replaceChildren();
-  box.hidden = tab === 'm' || tab === 'r' || tab === 's' || tab === 'x' || tab === 'b';
+  box.hidden = tab === 'm' || tab === 'r' || tab === 's' || tab === 'x' || tab === 'b' || tab === 'k';
   const have = new Set(rows.map(r => catOf(r.tip))); const tips = ['', ...CATS.filter(c => have.has(c))];
   if (tab === 'p') {
     const n = rows.filter(r => eff(r) === PEND && isLiveTicket(r)).length;
@@ -1498,7 +1528,7 @@ function chips() {
 }
 function render() {
   const list = $('list'); list.replaceChildren();
-  if (tab === 'p') viewTickets(true); else if (tab === 'h') viewTickets(false); else if (tab === 'c') viewCalendar(); else if (tab === 'r') viewResults(); else if (tab === 's') viewSuggest(); else if (tab === 'x') viewChallenge(); else if (tab === 'b') viewBlog(); else viewMatches();
+  if (tab === 'p') viewTickets(true); else if (tab === 'h') viewTickets(false); else if (tab === 'c') viewCalendar(); else if (tab === 'r') viewResults(); else if (tab === 's') viewSuggest(); else if (tab === 'x') viewChallenge(); else if (tab === 'b') viewBlog(); else if (tab === 'k') viewBask(); else viewMatches();
   liveTick(); syncMNav();
 }
 $('tabs').addEventListener('click', e => {
@@ -1516,7 +1546,7 @@ $('q').addEventListener('input', e => { q = nrm(e.target.value.trim()); render()
 
 
 /* ---------- start ---------- */
-const h0 = (location.hash || '').slice(1); if (['p', 'm', 'c', 'h', 'r', 's', 'x', 'b'].includes(h0)) { tab = h0; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); }
+const h0 = (location.hash || '').slice(1); if (['p', 'm', 'c', 'h', 'r', 's', 'x', 'b', 'k'].includes(h0)) { tab = h0; for (const x of $('tabs').querySelectorAll('button')) x.setAttribute('aria-selected', String(x.dataset.tab === tab)); }
 loadExtra();
 fetch('bilete.json?v=' + Date.now(), { cache: 'no-store' })
   .then(r => { if (!r.ok) throw new Error('fișierul de bilete nu răspunde (' + r.status + ')'); return r.json(); })
