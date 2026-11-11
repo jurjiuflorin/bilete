@@ -3270,10 +3270,10 @@
   "tip": "Baschet",
   "cota": 15.81,
   "sansa": 0.06,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990T-NHM3KL",
   "selectii": "02:30 New York Knicks – Milwaukee Bucks: Peste 219.5 puncte (1.76) · 04:00 Utah Jazz – Miami Heat: Miami Heat câștigă (1.22) · 04:00 Phoenix Suns – Los Angeles Clippers: Phoenix Suns câștigă (1.59) · 05:00 Sacramento Kings – Orlando Magic: Orlando Magic handicap -4.5 (1.72) · 21:00 Le Mans – San Pablo Burgos: Le Mans câștigă (1.21) · 21:00 BC Roma SPQR – Ulm: BC Roma SPQR câștigă (1.27) · 21:45 Partizan – Baskonia: Partizan câștigă (1.27) · 21:45 Paris – Fenerbahce: Fenerbahce câștigă (1.38)",
-  "rezultat": "",
+  "rezultat": "Knicks–Bucks 117-85 (total 202, Peste 219.5 pierdut) · Jazz–Heat 109-115 · Suns–Clippers 133-110 · Kings–Magic 100-107",
   "motive": [
    "Linia a urcat de la 218.5 la 219.5. Selecția cu cea mai slabă fundamentare din bilet: n-am avut medii de puncte pe meci pentru aceste echipe.",
    "Utah 1-9, fără Jaren Jackson Jr., Keyonte George și Nurkic; Miami cu Giannis incert (încheietură, probabil).",
