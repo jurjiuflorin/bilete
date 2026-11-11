@@ -1,24 +1,5 @@
 {
- "data": "2026-11-09",
- "actualizat": "2026-11-09T06:17:30Z",
- "meciuri": [
-  {
-   "data": "2026-11-09",
-   "ora": "20:00",
-   "liga": "Romania SuperLiga",
-   "gazde": "Botosani",
-   "oaspeti": "Otelul Galati",
-   "loc_gazde": 12,
-   "loc_oaspeti": 13,
-   "absenti_gazde": [
-    "Ilaș (suspendat)",
-    "Încă 2 jucători cu accidentări mai vechi (nenominalizați)"
-   ],
-   "absenti_oaspeti": [
-    "Ne Lopes (accidentat de lungă durată)",
-    "Jelev (accidentat de lungă durată)"
-   ],
-   "nota": "Doar acest meci a putut fi verificat azi; lista celorlalte meciuri nu a fost disponibilă, absențele rămân neverificate. Oră din surse locale (20:00)."
-  }
- ]
+ "data": "2026-11-11",
+ "actualizat": "2026-11-11T06:14:24Z",
+ "meciuri": []
 }
