@@ -139,7 +139,7 @@ console.log('candidati', picks.length, 'din', infos.length, 'meciuri');
 
 // ---- optimizare ----
 // praguri minime pe tip de pariu (decizie 09.11, după analiza pe 210 pronosticuri): Peste 2.5 ≥0,65; GG ≥0,70; șansă dublă ≥0,65
-const minPFor = (p, minP) => p.liga === 'Amicale internaționale' ? Math.max(minP, 0.70) : p.kind === 'gg' ? Math.max(minP, 0.70) : (p.kind === 'dc' || (p.kind === 'tot' && /2\.5/.test(p.sel))) ? Math.max(minP, 0.65) : minP;
+const minPFor = (p, minP) => p.liga === 'Amicale internaționale' ? Math.max(minP, 0.75) : p.kind === 'gg' ? Math.max(minP, 0.70) : (p.kind === 'dc' || (p.kind === 'tot' && /2\.5/.test(p.sel))) ? Math.max(minP, 0.65) : minP;
 const eligible = (p, minP) => p.p >= minPFor(p, minP) && p.pform >= p.pm - 0.03 && p.pform <= p.pm + 0.15 && !(p.kind === 'tot' && /3\.5/.test(p.sel));
 // (nu mai există selecții rezervate: același pronostic poate apărea pe maximum 2 bilete)
 const S = {
