@@ -8,7 +8,7 @@ const SA = 'https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overv
 const BB = 'https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMatch?lang=ro-RO&target=SB_RO&match_id=';
 const SUG_MIN = 1.35, SUG_MAX = 2.6;
 const SAH = 'https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/h2h/rosuperbetsport/ro-RO?';
-const CUPS = ['Liga Campionilor', 'Europa League', 'Conference League'];
+const CUPS = ['Liga Campionilor', 'Europa League', 'Conference League', 'Liga Națiunilor UEFA', 'CONCACAF Nations League', 'Cupa Africii (calificări)', 'Cupa Asiei', 'Amicale internaționale'];
 // Cupe europene: media de goluri pe ultimele 10 meciuri oficiale din TOATE competițiile (nu doar din cupă)
 async function cupForm(st, getj) {
   const t1 = st.team1 && st.team1.id, t2 = st.team2 && st.team2.id; if (!t1 || !t2) return null;
@@ -40,6 +40,11 @@ const LEAGUES = [
   ['Superliga (Danemarca)', /^danemarca - superliga(en)?$/, []],
   ['Eliteserien', /^norvegia - eliteserien$/, []],
   ['Allsvenskan', /^suedia - allsvenskan$/, [983]],
+  ['Liga Națiunilor UEFA', /^uefa - liga natiunilor [a-d]( - gr\.?\s?\d)?$/, []],
+  ['CONCACAF Nations League', /^concacaf - liga natiunilor/, []],
+  ['Cupa Africii (calificări)', /^cupa africii pe natiuni 2027 - calificari( - gr\.[a-l])?$/, []],
+  ['Cupa Asiei', /^afc cupa asiei - gr\.[a-f]$/, []],
+  ['Amicale internaționale', /^amicale internationale$/, [12664, 292]],
 ];
 const nrm = x => (x || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const dayKey = d => new Intl.DateTimeFormat('sv-SE', { timeZone: 'Europe/Bucharest' }).format(d);

@@ -390,6 +390,11 @@ const LEAGUES = [
   ['Superliga (Danemarca)', /^danemarca - superliga(en)?$/, []],
   ['Eliteserien', /^norvegia - eliteserien$/, []],
   ['Allsvenskan', /^suedia - allsvenskan$/, [983]],
+  ['Liga Națiunilor UEFA', /^uefa - liga natiunilor [a-d]( - gr\.?\s?\d)?$/, []],
+  ['CONCACAF Nations League', /^concacaf - liga natiunilor/, []],
+  ['Cupa Africii (calificări)', /^cupa africii pe natiuni 2027 - calificari( - gr\.[a-l])?$/, []],
+  ['Cupa Asiei', /^afc cupa asiei - gr\.[a-f]$/, []],
+  ['Amicale internaționale', /^amicale internationale$/, [12664, 292]],
 ];
 let day = { key: '', t: 0, list: [], err: '', busy: null };
 let extra = { t: 0, rows: [] };   // meciuri.json: formă, absenți (scris zilnic de sarcina programată)
@@ -1267,7 +1272,7 @@ function bestLine(lam, odds) {
   for (const [L, od] of Object.entries(odds)) { if (od < SUG_MIN || od > SUG_MAX) continue; const pm = poisOverL(lam, +L); const p = Math.min(0.88, 0.5 * pm + 0.5 * (1 / od) / 1.06); if (!b || p > b.p) b = { line: L, od, p, pm }; }
   return b;
 }
-const CUPS = ['Liga Campionilor', 'Europa League', 'Conference League'];
+const CUPS = ['Liga Campionilor', 'Europa League', 'Conference League', 'Liga Națiunilor UEFA', 'CONCACAF Nations League', 'Cupa Africii (calificări)', 'Cupa Asiei', 'Amicale internaționale'];
 // Cupe europene: media de goluri pe ultimele 10 meciuri oficiale din TOATE competițiile (nu doar din cupă)
 async function cupForm(st) {
   const t1 = st.team1 && st.team1.id, t2 = st.team2 && st.team2.id; if (!t1 || !t2) return null;
