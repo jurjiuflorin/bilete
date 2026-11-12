@@ -1,5 +1,216 @@
 [
  {
+  "id": "2026-11-12-rezumat",
+  "data": "2026-11-12",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 12 noiembrie: 1 câștigate, 3 pierdute, 1 nevalidate",
+  "intro": "Pariul zilei în așteptare · Challenge 1.40 pierdut · Cotă 2 câștigat · Cotă 5 pierdut · Cotă 10 pierdut",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [],
+    "li": [
+     "Challenge 1.40: Turcia – Belgia Turcia–Belgia 1-2 (Peste 7.5 cornere)",
+     "Cotă 5: Benin – Republica Centrafricana Benin–R.C.A. 4-1 (Peste 1.5); Guineea Ecuatoriala – Zimbabwe Guineea Ecuatorială–Zimbabwe 0-0 (Guineea Ecuatoriala peste 0.5 goluri); Madagascar – Guinea Bissau Madagascar–Guinea-Bissau 1-1 (1X); Albania – Finlanda Albania–Finlanda 2-0 (Finlanda peste 0.5 goluri)",
+     "Cotă 10: Italia – Franta Italia–Franța 3-1 (Peste 7.5 cornere); Armenia – Cipru Armenia–Cipru 1-1 (X2); Anglia – Croatia Anglia–Croația 2-1 (Peste 2.5); Guineea Ecuatoriala – Zimbabwe Guineea Ecuatorială–Zimbabwe 0-0 (Peste 1.5); Camerun – Namibia Camerun–Namibia 2-0 (Peste 1.5); Albania – Finlanda Albania–Finlanda 2-0 (Finlanda peste 0.5 goluri)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 0. 1 bilete nevalidate încă."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "5 bilete câștigate din 20 validate (25%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 1.58,
+    "sansa": 68.9,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "00:00",
+      "meci": "Aruba – Martinica",
+      "selectie": "Aruba peste 0.5 goluri",
+      "cota": 1.58,
+      "linii": [
+       "Aruba – Martinica – Aruba peste 0.5 goluri: pm 58%, formă 80%, p estimat 69%; absențe neverificate."
+      ]
+     }
+    ]
+   },
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.35,
+    "sansa": 72.5,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "19:00",
+      "meci": "Turcia – Belgia",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.35,
+      "linii": [
+       "Turcia – Belgia – Peste 7.5 cornere: pm 69%, formă 76%, p estimat 72%; absențe neverificate."
+      ],
+      "rezultat": "Turcia–Belgia 1-2"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.94,
+    "sansa": 53,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "19:00",
+      "meci": "Armenia – Cipru",
+      "selectie": "Cipru peste 0.5 goluri",
+      "cota": 1.32,
+      "linii": [
+       "Armenia – Cipru – Cipru peste 0.5 goluri: pm 70%, formă 75%, H2H 100%, p estimat 78%; absențe neverificate."
+      ],
+      "rezultat": "Armenia–Cipru 1-1"
+     },
+     {
+      "ora": "21:00",
+      "meci": "Barbados – Guadelupa",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.47,
+      "linii": [
+       "Barbados – Guadelupa – Peste 7.5 cornere: pm 62%, formă 73%, p estimat 68%; absențe neverificate."
+      ],
+      "rezultat": "Barbados–Guadelupa 0-3"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 5.04,
+    "sansa": 19.5,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "21:00",
+      "meci": "Benin – Republica Centrafricana",
+      "selectie": "Peste 1.5",
+      "cota": 1.36,
+      "linii": [
+       "Benin – Republica Centrafricana – Peste 1.5: pm 68%, formă 75%, p estimat 71%; absențe neverificate."
+      ],
+      "rezultat": "Benin–R.C.A. 4-1"
+     },
+     {
+      "ora": "18:00",
+      "meci": "Guineea Ecuatoriala – Zimbabwe",
+      "selectie": "Guineea Ecuatoriala peste 0.5 goluri",
+      "cota": 1.4,
+      "linii": [
+       "Guineea Ecuatoriala – Zimbabwe – Guineea Ecuatoriala peste 0.5 goluri: pm 66%, formă 70%, p estimat 68%; absențe neverificate."
+      ],
+      "rezultat": "Guineea Ecuatorială–Zimbabwe 0-0"
+     },
+     {
+      "ora": "18:00",
+      "meci": "Madagascar – Guinea Bissau",
+      "selectie": "1X",
+      "cota": 1.52,
+      "linii": [
+       "Madagascar – Guinea Bissau – 1X: pm 60%, formă 70%, p estimat 65%; absențe neverificate."
+      ],
+      "rezultat": "Madagascar–Guinea-Bissau 1-1"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Albania – Finlanda",
+      "selectie": "Finlanda peste 0.5 goluri",
+      "cota": 1.6,
+      "linii": [
+       "Albania – Finlanda – Finlanda peste 0.5 goluri: pm 58%, formă 65%, p estimat 62%; absențe neverificate."
+      ],
+      "rezultat": "Albania–Finlanda 2-0"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10",
+    "cota": 9.77,
+    "sansa": 8.1,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "Italia – Franta",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.35,
+      "linii": [
+       "Italia – Franta – Peste 7.5 cornere: pm 69%, formă 71%, p estimat 70%; absențe neverificate."
+      ],
+      "rezultat": "Italia–Franța 3-1"
+     },
+     {
+      "ora": "19:00",
+      "meci": "Armenia – Cipru",
+      "selectie": "X2",
+      "cota": 1.45,
+      "linii": [
+       "Armenia – Cipru – X2: pm 65%, formă 75%, H2H 67%, p estimat 69%; absențe neverificate."
+      ],
+      "rezultat": "Armenia–Cipru 1-1"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Anglia – Croatia",
+      "selectie": "Peste 2.5",
+      "cota": 1.42,
+      "linii": [
+       "Anglia – Croatia – Peste 2.5: pm 66%, formă 75%, H2H 60%, p estimat 69%; absențe neverificate."
+      ],
+      "rezultat": "Anglia–Croația 2-1"
+     },
+     {
+      "ora": "18:00",
+      "meci": "Guineea Ecuatoriala – Zimbabwe",
+      "selectie": "Peste 1.5",
+      "cota": 1.49,
+      "linii": [
+       "Guineea Ecuatoriala – Zimbabwe – Peste 1.5: pm 62%, formă 65%, p estimat 63%; absențe neverificate."
+      ],
+      "rezultat": "Guineea Ecuatorială–Zimbabwe 0-0"
+     },
+     {
+      "ora": "21:00",
+      "meci": "Camerun – Namibia",
+      "selectie": "Peste 1.5",
+      "cota": 1.39,
+      "linii": [
+       "Camerun – Namibia – Peste 1.5: pm 66%, formă 65%, H2H 50%, p estimat 63%; absențe neverificate."
+      ],
+      "rezultat": "Camerun–Namibia 2-0"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Albania – Finlanda",
+      "selectie": "Finlanda peste 0.5 goluri",
+      "cota": 1.6,
+      "linii": [
+       "Albania – Finlanda – Finlanda peste 0.5 goluri: pm 58%, formă 65%, p estimat 62%; absențe neverificate."
+      ],
+      "rezultat": "Albania–Finlanda 2-0"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-08-rezumat",
   "data": "2026-11-08",
   "tip": "rezumat",
