@@ -69,10 +69,10 @@ const st0 = await getJ(OB + '/v2/ro-RO/struct');
 for (const t of ((st0.data || st0).tournaments || [])) { const n = nrm(t.localNames && (t.localNames['ro-RO'] || Object.values(t.localNames)[0])).replace(/\s+/g, ' ').trim(); const i = LEAGUES.findIndex(L => L[1].test(n)); if (i >= 0) T.set(String(t.id), i); }
 const h0 = Math.floor(now / 36e5) * 36e5; // feedul cere ore întregi (fără milisecunde)
 const ev = await getJ(OB + '/v3/ro-RO/events?index=active-prematch&startDate=' + new Date(h0 - 3 * 36e5).toISOString() + '&endDate=' + new Date(h0 + 30 * 36e5).toISOString());
-// Competiții de echipe naționale: doar echipe mari (cerere utilizator 12.11) – ambele echipe trebuie să fie din lista de mai jos
+// Competiții de echipe naționale: doar echipe mari (cerere utilizator 12.11) – cel puțin o echipă trebuie să fie din lista de mai jos
 const NAT = new Set(['Liga Națiunilor UEFA', 'CONCACAF Nations League', 'Cupa Africii (calificări)', 'Cupa Asiei', 'Amicale internaționale']);
 const BIG = /^(anglia|franta|spania|germania|italia|portugalia|olanda|tarile de jos|belgia|croatia|turcia|elvetia|danemarca|austria|norvegia|suedia|polonia|scotia|ucraina|serbia|cehia|grecia|romania|ungaria|brazilia|argentina|uruguay|columbia|ecuador|chile|paraguay|peru|venezuela|sua|statele unite|mexic|canada|costa rica|panama|jamaica|maroc|senegal|egipt|nigeria|algeria|camerun|coasta de fildes|tunisia|ghana|mali|africa de sud|rd congo|japonia|coreea de sud|iran|australia|arabia saudita|qatar|irak|uzbekistan|emiratele arabe unite)$/;
-const bigOk = (liga, h, a) => !NAT.has(liga) || (BIG.test(nrm(h).trim()) && BIG.test(nrm(a).trim()));
+const bigOk = (liga, h, a) => !NAT.has(liga) || (BIG.test(nrm(h).trim()) || BIG.test(nrm(a).trim()));
 const list = [];
 for (const e of (ev.events || [])) {
   const f = e.fixture || {}; if (f.sport_id !== 5) continue;
