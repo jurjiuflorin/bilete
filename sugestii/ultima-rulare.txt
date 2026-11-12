@@ -1,4 +1,3 @@
-evenimente 1707 meciuri azi 0
-nicio sugestie (feed indisponibil?)
-exista deja candidati/2026-11-11.json
+prea devreme pentru lista zilei 4
+prea devreme 4
 index 16 zile
