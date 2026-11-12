@@ -18,5 +18,25 @@
   "status": "pierdut",
   "rezultat": "Lens–Olympique Marseille 1-2 (10 cornere) · Utrecht–NEC Nijmegen 2-3 · Genoa–AC Milan 1-2 · Brommapojkarna–Mjallby 0-0",
   "at": "2026-11-08T22:20:18.072Z"
+ },
+ "2026-11-12-challenge": {
+  "status": "pierdut",
+  "rezultat": "Turcia–Belgia 1-2 (5 cornere)",
+  "at": "2026-11-12T23:03:39.657Z"
+ },
+ "2026-11-12-cota2": {
+  "status": "câștigat",
+  "rezultat": "Armenia–Cipru 1-1 · Barbados–Guadelupa 0-3 (11 cornere)",
+  "at": "2026-11-12T23:03:40.214Z"
+ },
+ "2026-11-12-cota5": {
+  "status": "pierdut",
+  "rezultat": "Benin–Republica Centrafricana 4-1 · Guineea Ecuatoriala–Zimbabwe 0-0 · Madagascar–Guinea Bissau 1-1 · Albania–Finlanda 2-0",
+  "at": "2026-11-12T23:03:41.308Z"
+ },
+ "2026-11-12-cota10": {
+  "status": "pierdut",
+  "rezultat": "Italia–Franta 3-1 (7 cornere) · Armenia–Cipru 1-1 · Anglia–Croatia 2-1 · Guineea Ecuatoriala–Zimbabwe 0-0 · Camerun–Namibia 2-0 · Albania–Finlanda 2-0",
+  "at": "2026-11-12T23:03:42.040Z"
  }
 }
