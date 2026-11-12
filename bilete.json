@@ -3319,10 +3319,10 @@
   "tip": "Challenge 1.40",
   "cota": 1.35,
   "sansa": 0.725,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9916-KHXEEQ",
   "selectii": "19:00 Turcia – Belgia: Peste 7.5 cornere (1.35)",
-  "rezultat": "",
+  "rezultat": "Turcia–Belgia 1-2 (5 cornere)",
   "motive": [
    "Turcia – Belgia – Peste 7.5 cornere: pm 69%, formă 76%, p estimat 72%; absențe neverificate."
   ],
@@ -3339,10 +3339,10 @@
   "tip": "Cotă 2",
   "cota": 1.94,
   "sansa": 0.5295,
-  "status": "în așteptare",
+  "status": "câștigat",
   "cod": "9911-WLQXQC",
   "selectii": "19:00 Armenia – Cipru: Cipru peste 0.5 goluri (1.32) · 21:00 Barbados – Guadelupa: Peste 7.5 cornere (1.47)",
-  "rezultat": "",
+  "rezultat": "Armenia–Cipru 1-1 · Barbados–Guadelupa 0-3 (11 cornere)",
   "motive": [
    "Armenia – Cipru – Cipru peste 0.5 goluri: pm 70%, formă 75%, H2H 100%, p estimat 78%; absențe neverificate.",
    "Barbados – Guadelupa – Peste 7.5 cornere: pm 62%, formă 73%, p estimat 68%; absențe neverificate."
@@ -3377,10 +3377,10 @@
   "tip": "Cotă 5",
   "cota": 5.04,
   "sansa": 0.195,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "990P-NNS74C",
   "selectii": "21:00 Benin – Republica Centrafricana: Peste 1.5 (1.36) · 18:00 Guineea Ecuatoriala – Zimbabwe: Guineea Ecuatoriala peste 0.5 goluri (1.4) · 18:00 Madagascar – Guinea Bissau: 1X (1.52) · 21:45 Albania – Finlanda: Finlanda peste 0.5 goluri (1.6)",
-  "rezultat": "",
+  "rezultat": "Benin–R.C.A. 4-1 · Guineea Ecuatorială–Zimbabwe 0-0 · Madagascar–Guinea-Bissau 1-1 · Albania–Finlanda 2-0",
   "motive": [
    "Benin – Republica Centrafricana – Peste 1.5: pm 68%, formă 75%, p estimat 71%; absențe neverificate.",
    "Guineea Ecuatoriala – Zimbabwe – Guineea Ecuatoriala peste 0.5 goluri: pm 66%, formă 70%, p estimat 68%; absențe neverificate.",
@@ -3401,10 +3401,10 @@
   "tip": "Cotă 10",
   "cota": 9.77,
   "sansa": 0.0812,
-  "status": "în așteptare",
+  "status": "pierdut",
   "cod": "9900-NH7K05",
   "selectii": "21:45 Italia – Franta: Peste 7.5 cornere (1.35) · 19:00 Armenia – Cipru: X2 (1.45) · 21:45 Anglia – Croatia: Peste 2.5 (1.42) · 18:00 Guineea Ecuatoriala – Zimbabwe: Peste 1.5 (1.49) · 21:00 Camerun – Namibia: Peste 1.5 (1.39) · 21:45 Albania – Finlanda: Finlanda peste 0.5 goluri (1.6)",
-  "rezultat": "",
+  "rezultat": "Italia–Franța 3-1 (7 cornere) · Armenia–Cipru 1-1 · Anglia–Croația 2-1 · Guineea Ecuatorială–Zimbabwe 0-0 · Camerun–Namibia 2-0 · Albania–Finlanda 2-0",
   "motive": [
    "Italia – Franta – Peste 7.5 cornere: pm 69%, formă 71%, p estimat 70%; absențe neverificate.",
    "Armenia – Cipru – X2: pm 65%, formă 75%, H2H 67%, p estimat 69%; absențe neverificate.",
