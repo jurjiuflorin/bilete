@@ -1,5 +1,5 @@
 exista deja sugestii/2026-11-12.json
-evenimente 2241 meciuri 4
-candidati 29 din 4 meciuri
+evenimente 2209 meciuri 14
+candidati 71 din 14 meciuri
 scris candidati/2026-11-12.json plan {} variante { challenge: 0, cota2: 0, pariu: 0, cota5: 0, cota10: 0 } 0
 index 17 zile
