@@ -3312,5 +3312,115 @@
    15673169,
    15673228
   ]
+ },
+ {
+  "id": "2026-11-12-challenge",
+  "data": "2026-11-12",
+  "tip": "Challenge 1.40",
+  "cota": 1.35,
+  "sansa": 0.725,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:00 Turcia – Belgia: Peste 7.5 cornere (1.35)",
+  "rezultat": "",
+  "motive": [
+   "Turcia – Belgia – Peste 7.5 cornere: pm 69%, formă 76%, p estimat 72%; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   15339572
+  ],
+  "ciclu": 4,
+  "pas": 6
+ },
+ {
+  "id": "2026-11-12-cota2",
+  "data": "2026-11-12",
+  "tip": "Cotă 2",
+  "cota": 1.94,
+  "sansa": 0.5295,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:00 Armenia – Cipru: Cipru peste 0.5 goluri (1.32) · 21:00 Barbados – Guadelupa: Peste 7.5 cornere (1.47)",
+  "rezultat": "",
+  "motive": [
+   "Armenia – Cipru – Cipru peste 0.5 goluri: pm 70%, formă 75%, H2H 100%, p estimat 78%; absențe neverificate.",
+   "Barbados – Guadelupa – Peste 7.5 cornere: pm 62%, formă 73%, p estimat 68%; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   15339620,
+   15564691
+  ]
+ },
+ {
+  "id": "2026-11-12-pariu",
+  "data": "2026-11-12",
+  "tip": "Pariul zilei",
+  "cota": 1.58,
+  "sansa": 0.689,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "13.11 00:00 Aruba – Martinica: Aruba peste 0.5 goluri (1.58)",
+  "rezultat": "",
+  "motive": [
+   "Aruba – Martinica – Aruba peste 0.5 goluri: pm 58%, formă 80%, p estimat 69%; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   15673399
+  ]
+ },
+ {
+  "id": "2026-11-12-cota5",
+  "data": "2026-11-12",
+  "tip": "Cotă 5",
+  "cota": 4.63,
+  "sansa": 0.195,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:00 Benin – Republica Centrafricana: Peste 1.5 (1.36) · 18:00 Guineea Ecuatoriala – Zimbabwe: Guineea Ecuatoriala peste 0.5 goluri (1.4) · 18:00 Madagascar – Guinea Bissau: 1X (1.52) · 21:45 Albania – Finlanda: Finlanda peste 0.5 goluri (1.6)",
+  "rezultat": "",
+  "motive": [
+   "Benin – Republica Centrafricana – Peste 1.5: pm 68%, formă 75%, p estimat 71%; absențe neverificate.",
+   "Guineea Ecuatoriala – Zimbabwe – Guineea Ecuatoriala peste 0.5 goluri: pm 66%, formă 70%, p estimat 68%; absențe neverificate.",
+   "Madagascar – Guinea Bissau – 1X: pm 60%, formă 70%, p estimat 65%; absențe neverificate.",
+   "Albania – Finlanda – Finlanda peste 0.5 goluri: pm 58%, formă 65%, p estimat 62%; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   15673402,
+   15667847,
+   15673322,
+   15339616
+  ]
+ },
+ {
+  "id": "2026-11-12-cota10",
+  "data": "2026-11-12",
+  "tip": "Cotă 10",
+  "cota": 9.21,
+  "sansa": 0.0812,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Italia – Franta: Peste 7.5 cornere (1.35) · 19:00 Armenia – Cipru: X2 (1.45) · 21:45 Anglia – Croatia: Peste 2.5 (1.42) · 18:00 Guineea Ecuatoriala – Zimbabwe: Peste 1.5 (1.49) · 21:00 Camerun – Namibia: Peste 1.5 (1.39) · 21:45 Albania – Finlanda: Finlanda peste 0.5 goluri (1.6)",
+  "rezultat": "",
+  "motive": [
+   "Italia – Franta – Peste 7.5 cornere: pm 69%, formă 71%, p estimat 70%; absențe neverificate.",
+   "Armenia – Cipru – X2: pm 65%, formă 75%, H2H 67%, p estimat 69%; absențe neverificate.",
+   "Anglia – Croatia – Peste 2.5: pm 66%, formă 75%, H2H 60%, p estimat 69%; absențe neverificate.",
+   "Guineea Ecuatoriala – Zimbabwe – Peste 1.5: pm 62%, formă 65%, p estimat 63%; absențe neverificate.",
+   "Camerun – Namibia – Peste 1.5: pm 66%, formă 65%, H2H 50%, p estimat 63%; absențe neverificate.",
+   "Albania – Finlanda – Finlanda peste 0.5 goluri: pm 58%, formă 65%, p estimat 62%; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   15140346,
+   15339620,
+   15318683,
+   15667847,
+   15673404,
+   15339616
+  ]
  }
 ]
