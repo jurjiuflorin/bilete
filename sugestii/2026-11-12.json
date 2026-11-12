@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-12",
+ "salvat": "2026-11-12T10:24:39.460Z",
+ "n": 23,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 15553157,
+    "meci": "Uzbekistan – Rusia",
+    "when": "2026-11-12T15:00:00.000Z",
+    "liga": "Amicale internaționale",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.36,
+    "p": 0.758,
+    "why": "Uzbekistan dă 1,3 și primește 2 goluri pe meci; Rusia dă 2,1 și primește 0,8."
+   },
+   {
+    "id": 15755858,
+    "meci": "Malta – Eswatini",
+    "when": "2026-11-12T17:30:00.000Z",
+    "liga": "Amicale internaționale",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.37,
+    "p": 0.715,
+    "why": "Malta dă 1,2 și primește 1,2 goluri pe meci; Eswatini dă 0,8 și primește 2."
+   },
+   {
+    "id": 15673322,
+    "meci": "Madagascar – Guinea Bissau",
+    "when": "2026-11-12T16:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.43,
+    "p": 0.714,
+    "why": "Madagascar dă 1,8 și primește 1,6 goluri pe meci; Guinea Bissau dă 0,9 și primește 1,2."
+   },
+   {
+    "id": 15318683,
+    "meci": "Anglia – Croatia",
+    "when": "2026-11-12T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.42,
+    "p": 0.709,
+    "why": "Anglia dă 2,9 și primește 1,3 goluri pe meci; Croatia dă 1,2 și primește 2,4."
+   },
+   {
+    "id": 15673402,
+    "meci": "Benin – Republica Centrafricana",
+    "when": "2026-11-12T19:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.36,
+    "p": 0.708,
+    "why": "Benin dă 0,9 și primește 1,5 goluri pe meci; Republica Centrafricana dă 0,5 și primește 2,1."
+   }
+  ],
+  "gg": [
+   {
+    "id": 15564691,
+    "meci": "Barbados – Guadelupa",
+    "when": "2026-11-12T19:00:00.000Z",
+    "liga": "CONCACAF Nations League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.55,
+    "p": 0.627,
+    "why": "Barbados marchează 1,8 și primește 1,8 pe meci; Guadelupa marchează 1,2 și primește 1,7."
+   },
+   {
+    "id": 15339572,
+    "meci": "Turcia – Belgia",
+    "when": "2026-11-12T17:00:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.51,
+    "p": 0.613,
+    "why": "Turcia marchează 1,2 și primește 1,7 pe meci; Belgia marchează 1,9 și primește 1,2."
+   },
+   {
+    "id": 15318683,
+    "meci": "Anglia – Croatia",
+    "when": "2026-11-12T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.77,
+    "p": 0.594,
+    "why": "Anglia marchează 2,9 și primește 1,3 pe meci; Croatia marchează 1,2 și primește 2,4."
+   },
+   {
+    "id": 15140346,
+    "meci": "Italia – Franta",
+    "when": "2026-11-12T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.6,
+    "p": 0.592,
+    "why": "Italia marchează 1,6 și primește 1 pe meci; Franta marchează 2,1 și primește 1,1."
+   },
+   {
+    "id": 15553157,
+    "meci": "Uzbekistan – Rusia",
+    "when": "2026-11-12T15:00:00.000Z",
+    "liga": "Amicale internaționale",
+    "sel": "GG (ambele marchează)",
+    "od": 1.92,
+    "p": 0.541,
+    "why": "Uzbekistan marchează 1,3 și primește 2 pe meci; Rusia marchează 2,1 și primește 0,8."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 15673404,
+    "meci": "Camerun – Namibia",
+    "when": "2026-11-12T19:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.42,
+    "p": 0.811,
+    "why": "Media cornerelor: Camerun 7,5, Namibia 6, adică 13,5 pe meci."
+   },
+   {
+    "id": 15339616,
+    "meci": "Albania – Finlanda",
+    "when": "2026-11-12T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.55,
+    "p": 0.774,
+    "why": "Media cornerelor: Albania 6,8, Finlanda 6, adică 12,8 pe meci."
+   },
+   {
+    "id": 15339620,
+    "meci": "Armenia – Cipru",
+    "when": "2026-11-12T17:00:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.42,
+    "p": 0.77,
+    "why": "Media cornerelor: Armenia 6,3, Cipru 5, adică 11,3 pe meci."
+   },
+   {
+    "id": 15673402,
+    "meci": "Benin – Republica Centrafricana",
+    "when": "2026-11-12T19:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 6.5 cornere",
+    "od": 1.36,
+    "p": 0.764,
+    "why": "Media cornerelor: Benin 4, Republica Centrafricana 5,5, adică 9,5 pe meci."
+   },
+   {
+    "id": 15564698,
+    "meci": "Bonaire – Cuba",
+    "when": "2026-11-12T20:00:00.000Z",
+    "liga": "CONCACAF Nations League",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.42,
+    "p": 0.747,
+    "why": "Media cornerelor: Bonaire 4,3, Cuba 6,3, adică 10,6 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 15339619,
+    "meci": "Muntenegru – Letonia",
+    "when": "2026-11-12T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.38,
+    "p": 0.731,
+    "why": "Muntenegru dă 1,8 și primește 1,3 goluri pe meci; Letonia dă 0,6 și primește 1. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15673321,
+    "meci": "Guineea – Eritrea",
+    "when": "2026-11-12T16:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.37,
+    "p": 0.723,
+    "why": "Guineea dă 1,2 și primește 1 goluri pe meci; Eritrea dă 1,3 și primește 1,4. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15564698,
+    "meci": "Bonaire – Cuba",
+    "when": "2026-11-12T20:00:00.000Z",
+    "liga": "CONCACAF Nations League",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.37,
+    "p": 0.712,
+    "why": "Bonaire dă 1,4 și primește 2,4 goluri pe meci; Cuba dă 2 și primește 1. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15564696,
+    "meci": "Insulele Cayman – Guyana",
+    "when": "2026-11-12T19:00:00.000Z",
+    "liga": "CONCACAF Nations League",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.59,
+    "p": 0.708,
+    "why": "Insulele Cayman dă 0,8 și primește 1,4 goluri pe meci; Guyana dă 3 și primește 0,6. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15673307,
+    "meci": "Ghana – Somalia",
+    "when": "2026-11-12T15:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.65,
+    "p": 0.696,
+    "why": "Ghana dă 0,7 și primește 1,9 goluri pe meci; Somalia dă 0,3 și primește 1,4. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}
