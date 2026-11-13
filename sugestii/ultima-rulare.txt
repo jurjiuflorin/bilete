@@ -1,6 +1,3 @@
-evenimente 2038 meciuri azi 14
-scris sugestii/2026-11-13.json { goluri: 5, gg: 5, cornere: 5, sub: 5 }
-evenimente 2692 meciuri 30
-candidati 165 din 30 meciuri
-scris candidati/2026-11-13.json plan {} variante { challenge: 0, cota2: 0, pariu: 0, cota5: 0, cota10: 0 } 0
+exista deja sugestii/2026-11-13.json
+exista deja candidati/2026-11-13.json
 index 18 zile
