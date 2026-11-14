@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-14",
+ "salvat": "2026-11-14T10:23:41.155Z",
+ "n": 11,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 15695379,
+    "meci": "Haiti – SUA",
+    "when": "2026-11-14T21:30:00.000Z",
+    "liga": "CONCACAF Nations League",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.54,
+    "p": 0.65,
+    "why": "Haiti dă 1,7 și primește 1,6 goluri pe meci; SUA dă 2,4 și primește 1,3."
+   },
+   {
+    "id": 15339586,
+    "meci": "Norvegia – Tara Galilor",
+    "when": "2026-11-14T17:00:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.38,
+    "p": 0.647,
+    "why": "Norvegia dă 1,9 și primește 1,8 goluri pe meci; Tara Galilor dă 1,4 și primește 1,1."
+   },
+   {
+    "id": 15339605,
+    "meci": "Georgia – Ungaria",
+    "when": "2026-11-14T17:00:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.46,
+    "p": 0.613,
+    "why": "Georgia dă 0,8 și primește 1,1 goluri pe meci; Ungaria dă 1,2 și primește 0,7."
+   },
+   {
+    "id": 15339613,
+    "meci": "Romania – Polonia",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.75,
+    "p": 0.604,
+    "why": "Romania dă 1,4 și primește 2,2 goluri pe meci; Polonia dă 1,7 și primește 1,5."
+   },
+   {
+    "id": 15339585,
+    "meci": "Portugalia – Danemarca",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.52,
+    "p": 0.604,
+    "why": "Portugalia dă 1,9 și primește 0,8 goluri pe meci; Danemarca dă 1,8 și primește 1,5."
+   }
+  ],
+  "gg": [
+   {
+    "id": 15339613,
+    "meci": "Romania – Polonia",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.73,
+    "p": 0.608,
+    "why": "Romania marchează 1,4 și primește 2,2 pe meci; Polonia marchează 1,7 și primește 1,5."
+   },
+   {
+    "id": 15339585,
+    "meci": "Portugalia – Danemarca",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.58,
+    "p": 0.596,
+    "why": "Portugalia marchează 1,9 și primește 0,8 pe meci; Danemarca marchează 1,8 și primește 1,5."
+   },
+   {
+    "id": 15695379,
+    "meci": "Haiti – SUA",
+    "when": "2026-11-14T21:30:00.000Z",
+    "liga": "CONCACAF Nations League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.9,
+    "p": 0.591,
+    "why": "Haiti marchează 1,7 și primește 1,6 pe meci; SUA marchează 2,4 și primește 1,3."
+   },
+   {
+    "id": 15339586,
+    "meci": "Norvegia – Tara Galilor",
+    "when": "2026-11-14T17:00:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.75,
+    "p": 0.584,
+    "why": "Norvegia marchează 1,9 și primește 1,8 pe meci; Tara Galilor marchează 1,4 și primește 1,1."
+   },
+   {
+    "id": 15339612,
+    "meci": "Suedia – Bosnia si Hertegovina",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.9,
+    "p": 0.55,
+    "why": "Suedia marchează 1,7 și primește 1,8 pe meci; Bosnia si Hertegovina marchează 1,2 și primește 1,2."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 15706226,
+    "meci": "Algeria – Togo",
+    "when": "2026-11-14T19:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.4,
+    "p": 0.765,
+    "why": "Media cornerelor: Algeria 4, Togo 7, adică 11 pe meci."
+   },
+   {
+    "id": 15339585,
+    "meci": "Portugalia – Danemarca",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.38,
+    "p": 0.736,
+    "why": "Media cornerelor: Portugalia 6,3, Danemarca 3,8, adică 10,1 pe meci."
+   },
+   {
+    "id": 15339605,
+    "meci": "Georgia – Ungaria",
+    "when": "2026-11-14T17:00:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.54,
+    "p": 0.687,
+    "why": "Media cornerelor: Georgia 5,3, Ungaria 4,5, adică 9,8 pe meci."
+   },
+   {
+    "id": 15339604,
+    "meci": "Irlanda de Nord – Ucraina",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 6.5 cornere",
+    "od": 1.37,
+    "p": 0.604,
+    "why": "Media cornerelor: Irlanda de Nord 3,3, Ucraina 3,5, adică 6,8 pe meci."
+   },
+   {
+    "id": 15339613,
+    "meci": "Romania – Polonia",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.47,
+    "p": 0.594,
+    "why": "Media cornerelor: Romania 2,5, Polonia 5,5, adică 8 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 15339586,
+    "meci": "Norvegia – Tara Galilor",
+    "when": "2026-11-14T17:00:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.36,
+    "p": 0.742,
+    "why": "Norvegia dă 1,9 și primește 1,8 goluri pe meci; Tara Galilor dă 1,4 și primește 1,1. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15706226,
+    "meci": "Algeria – Togo",
+    "when": "2026-11-14T19:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.41,
+    "p": 0.708,
+    "why": "Algeria dă 1,7 și primește 1,3 goluri pe meci; Togo dă 1,1 și primește 0,9. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15339604,
+    "meci": "Irlanda de Nord – Ucraina",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Sub 2.5 goluri",
+    "od": 1.46,
+    "p": 0.668,
+    "why": "Irlanda de Nord dă 0,8 și primește 0,7 goluri pe meci; Ucraina dă 0,9 și primește 1,4. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15339612,
+    "meci": "Suedia – Bosnia si Hertegovina",
+    "when": "2026-11-14T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.43,
+    "p": 0.653,
+    "why": "Suedia dă 1,7 și primește 1,8 goluri pe meci; Bosnia si Hertegovina dă 1,2 și primește 1,2. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15339605,
+    "meci": "Georgia – Ungaria",
+    "when": "2026-11-14T17:00:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Sub 2.5 goluri",
+    "od": 1.55,
+    "p": 0.649,
+    "why": "Georgia dă 0,8 și primește 1,1 goluri pe meci; Ungaria dă 1,2 și primește 0,7. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}
