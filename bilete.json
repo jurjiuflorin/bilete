@@ -3422,5 +3422,63 @@
    15673404,
    15339616
   ]
+ },
+ {
+  "id": "2026-11-14-challenge",
+  "data": "2026-11-14",
+  "tip": "Challenge 1.40",
+  "cota": 1.38,
+  "sansa": 0.741,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:00 Georgia – Ungaria: X2 (1.38)",
+  "rezultat": "",
+  "motive": [
+   "Georgia – Ungaria – X2: pm 68%, formă 80%, p estimat 74%; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   15339605
+  ],
+  "ciclu": 5,
+  "pas": 1
+ },
+ {
+  "id": "2026-11-14-cota2",
+  "data": "2026-11-14",
+  "tip": "Cotă 2",
+  "cota": 1.96,
+  "sansa": 0.532,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:00 Georgia – Ungaria: X2 (1.38) · 21:45 Portugalia – Danemarca: Danemarca peste 0.5 goluri (1.42)",
+  "rezultat": "",
+  "motive": [
+   "Georgia – Ungaria – X2: pm 68%, formă 80%, p estimat 74%; absențe neverificate.",
+   "Portugalia – Danemarca – Danemarca peste 0.5 goluri: pm 66%, formă 80%, H2H 75%, p estimat 72%; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   15339605,
+   15339585
+  ]
+ },
+ {
+  "id": "2026-11-14-pariu",
+  "data": "2026-11-14",
+  "tip": "Pariul zilei",
+  "cota": 1.75,
+  "sansa": 0.657,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 România – Polonia: Peste 2.5 goluri (1.75)",
+  "rezultat": "",
+  "motive": [
+   "România – Polonia – Peste 2.5: pm 54%, formă 60%, H2H 100%, p estimat 66%, valoare +8.6%; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   15339613
+  ]
  }
 ]
