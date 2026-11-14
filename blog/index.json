@@ -1,5 +1,130 @@
 [
  {
+  "id": "2026-11-14-rezumat",
+  "data": "2026-11-14",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 14 noiembrie: 3 câștigate, 0 pierdute",
+  "intro": "Pariul zilei câștigat · Challenge 1.40 câștigat · Cotă 2 câștigat",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [
+     "Niciun bilet pierdut."
+    ],
+    "li": []
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 3."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "5 bilete câștigate din 13 validate (38%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 1.75,
+    "sansa": 65.7,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "România – Polonia",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.75,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): România dă 1,4 și primește 2,2 goluri pe meci; Polonia dă 1,7 și primește 1,5.",
+       "Meciurile România au în medie 3,6 goluri, cele ale Polonia 3,2.",
+       "Meciuri directe analizate: 3.",
+       "România – Polonia – Peste 2.5: pm 54%, formă 60%, H2H 100%, p estimat 66%, valoare +8.6%; absențe neverificate."
+      ],
+      "rezultat": "România–Polonia 2-1"
+     }
+    ]
+   },
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.38,
+    "sansa": 74.1,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "19:00",
+      "meci": "Georgia – Ungaria",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "X2",
+      "cota": 1.38,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Georgia dă 0,8 și primește 1,1 goluri pe meci; Ungaria dă 1,2 și primește 0,7.",
+       "Diferența de goluri pe meci: Georgia -0,3, Ungaria 0,5.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Georgia – Ungaria – X2: pm 68%, formă 80%, p estimat 74%; absențe neverificate."
+      ],
+      "p": 74,
+      "pm": 68,
+      "pf": 80,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Georgia–Ungaria 0-2"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.96,
+    "sansa": 53.2,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "19:00",
+      "meci": "Georgia – Ungaria",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "X2",
+      "cota": 1.38,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Georgia dă 0,8 și primește 1,1 goluri pe meci; Ungaria dă 1,2 și primește 0,7.",
+       "Diferența de goluri pe meci: Georgia -0,3, Ungaria 0,5.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Georgia – Ungaria – X2: pm 68%, formă 80%, p estimat 74%; absențe neverificate."
+      ],
+      "p": 74,
+      "pm": 68,
+      "pf": 80,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Georgia–Ungaria 0-2"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Portugalia – Danemarca",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "Danemarca peste 0.5 goluri",
+      "cota": 1.42,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Portugalia dă 1,9 și primește 0,8 goluri pe meci; Danemarca dă 1,8 și primește 1,5.",
+       "Danemarca marchează 1,8 pe meci, iar Portugalia primește 0,8.",
+       "Meciuri directe analizate: 4.",
+       "Portugalia – Danemarca – Danemarca peste 0.5 goluri: pm 66%, formă 80%, H2H 75%, p estimat 72%; absențe neverificate."
+      ],
+      "p": 72,
+      "pm": 66,
+      "pf": 80,
+      "ph": 75,
+      "val": 1,
+      "rezultat": "Portugalia–Danemarca 1-4"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-12-rezumat",
   "data": "2026-11-12",
   "tip": "rezumat",
