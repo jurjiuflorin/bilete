@@ -12,7 +12,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.37,
     "p": 0.729,
-    "why": "Irak dă 0,9 și primește 2,1 goluri pe meci; Liban dă 1,8 și primește 0,7."
+    "why": "Irak dă 0,9 și primește 2,1 goluri pe meci; Liban dă 1,8 și primește 0,7.",
+    "rez": "lost",
+    "scor": "0-0"
    },
    {
     "id": 15688996,
@@ -22,7 +24,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.39,
     "p": 0.696,
-    "why": "Tunisia dă 0,6 și primește 2,1 goluri pe meci; Libia dă 1,1 și primește 1,1."
+    "why": "Tunisia dă 0,6 și primește 2,1 goluri pe meci; Libia dă 1,1 și primește 1,1.",
+    "rez": "won",
+    "scor": "0-2"
    },
    {
     "id": 15315992,
@@ -32,7 +36,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.35,
     "p": 0.684,
-    "why": "Qatar dă 0,6 și primește 1,5 goluri pe meci; Australia dă 1,3 și primește 1,1."
+    "why": "Qatar dă 0,6 și primește 1,5 goluri pe meci; Australia dă 1,3 și primește 1,1.",
+    "rez": "won",
+    "scor": "0-3"
    },
    {
     "id": 15339589,
@@ -42,7 +48,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.51,
     "p": 0.669,
-    "why": "Slovenia dă 1,1 și primește 1,2 goluri pe meci; Elvetia dă 2,1 și primește 0,5."
+    "why": "Slovenia dă 1,1 și primește 1,2 goluri pe meci; Elvetia dă 2,1 și primește 0,5.",
+    "rez": "lost",
+    "scor": "0-0"
    },
    {
     "id": 15645119,
@@ -52,7 +60,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.37,
     "p": 0.641,
-    "why": "Arabia Saudita dă 1,2 și primește 0,5 goluri pe meci; Coreea de Sud dă 1,4 și primește 0,8."
+    "why": "Arabia Saudita dă 1,2 și primește 0,5 goluri pe meci; Coreea de Sud dă 1,4 și primește 0,8.",
+    "rez": "won",
+    "scor": "3-2"
    }
   ],
   "gg": [
@@ -64,7 +74,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.72,
     "p": 0.53,
-    "why": "Olanda marchează 2 și primește 1,2 pe meci; Grecia marchează 1 și primește 0,9."
+    "why": "Olanda marchează 2 și primește 1,2 pe meci; Grecia marchează 1 și primește 0,9.",
+    "rez": "lost",
+    "scor": "7-0"
    },
    {
     "id": 15339576,
@@ -74,7 +86,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.83,
     "p": 0.518,
-    "why": "Serbia marchează 0,8 și primește 2,3 pe meci; Germania marchează 2 și primește 0,8."
+    "why": "Serbia marchează 0,8 și primește 2,3 pe meci; Germania marchează 2 și primește 0,8.",
+    "rez": "won",
+    "scor": "1-3"
    },
    {
     "id": 15688998,
@@ -84,7 +98,9 @@
     "sel": "GG (ambele marchează)",
     "od": 2.57,
     "p": 0.481,
-    "why": "Nigeria marchează 1,7 și primește 1,4 pe meci; Tanzania marchează 1,3 și primește 1,5."
+    "why": "Nigeria marchează 1,7 și primește 1,4 pe meci; Tanzania marchează 1,3 și primește 1,5.",
+    "rez": "won",
+    "scor": "3-1"
    },
    {
     "id": 15315992,
@@ -94,7 +110,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.92,
     "p": 0.473,
-    "why": "Qatar marchează 0,6 și primește 1,5 pe meci; Australia marchează 1,3 și primește 1,1."
+    "why": "Qatar marchează 0,6 și primește 1,5 pe meci; Australia marchează 1,3 și primește 1,1.",
+    "rez": "lost",
+    "scor": "0-3"
    },
    {
     "id": 15865954,
@@ -104,7 +122,9 @@
     "sel": "GG (ambele marchează)",
     "od": 2.55,
     "p": 0.437,
-    "why": "Irak marchează 0,9 și primește 2,1 pe meci; Liban marchează 1,8 și primește 0,7."
+    "why": "Irak marchează 0,9 și primește 2,1 pe meci; Liban marchează 1,8 și primește 0,7.",
+    "rez": "lost",
+    "scor": "0-0"
    }
   ],
   "cornere": [
@@ -116,7 +136,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.42,
     "p": 0.805,
-    "why": "Media cornerelor: Tunisia 6, Libia 7, adică 13 pe meci."
+    "why": "Media cornerelor: Tunisia 6, Libia 7, adică 13 pe meci.",
+    "rez": "won",
+    "scor": "0-2",
+    "total": 12
    },
    {
     "id": 15689324,
@@ -126,7 +149,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.35,
     "p": 0.778,
-    "why": "Media cornerelor: Egipt 7, Malawi 4, adică 11 pe meci."
+    "why": "Media cornerelor: Egipt 7, Malawi 4, adică 11 pe meci.",
+    "rez": "won",
+    "scor": "5-0",
+    "total": 13
    },
    {
     "id": 15339575,
@@ -136,7 +162,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.41,
     "p": 0.778,
-    "why": "Media cornerelor: Olanda 7,5, Grecia 4, adică 11,5 pe meci."
+    "why": "Media cornerelor: Olanda 7,5, Grecia 4, adică 11,5 pe meci.",
+    "rez": "won",
+    "scor": "7-0",
+    "total": 9
    },
    {
     "id": 15688994,
@@ -146,7 +175,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.52,
     "p": 0.753,
-    "why": "Media cornerelor: Africa de Sud 6,5, Kenya 5, adică 11,5 pe meci."
+    "why": "Media cornerelor: Africa de Sud 6,5, Kenya 5, adică 11,5 pe meci.",
+    "rez": "won",
+    "scor": "2-2",
+    "total": 9
    },
    {
     "id": 15339589,
@@ -156,7 +188,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.52,
     "p": 0.713,
-    "why": "Media cornerelor: Slovenia 4,5, Elvetia 5,8, adică 10,3 pe meci."
+    "why": "Media cornerelor: Slovenia 4,5, Elvetia 5,8, adică 10,3 pe meci.",
+    "rez": "won",
+    "scor": "0-0",
+    "total": 18
    }
   ],
   "sub": [
@@ -168,7 +203,9 @@
     "sel": "Sub 4.5 goluri",
     "od": 1.38,
     "p": 0.797,
-    "why": "Singapore dă 1 și primește 1,6 goluri pe meci; Paraguay dă 1,2 și primește 0,8. Se urmărește doar pentru statistică."
+    "why": "Singapore dă 1 și primește 1,6 goluri pe meci; Paraguay dă 1,2 și primește 0,8. Se urmărește doar pentru statistică.",
+    "rez": "lost",
+    "scor": "1-4"
    },
    {
     "id": 15689324,
@@ -178,7 +215,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.46,
     "p": 0.723,
-    "why": "Egipt dă 1,5 și primește 1 goluri pe meci; Malawi dă 0,9 și primește 1,1. Se urmărește doar pentru statistică."
+    "why": "Egipt dă 1,5 și primește 1 goluri pe meci; Malawi dă 0,9 și primește 1,1. Se urmărește doar pentru statistică.",
+    "rez": "lost",
+    "scor": "5-0"
    },
    {
     "id": 15689416,
@@ -188,7 +227,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.63,
     "p": 0.694,
-    "why": "Maroc dă 1,6 și primește 0,8 goluri pe meci; Niger dă 0,8 și primește 1,2. Se urmărește doar pentru statistică."
+    "why": "Maroc dă 1,6 și primește 0,8 goluri pe meci; Niger dă 0,8 și primește 1,2. Se urmărește doar pentru statistică.",
+    "rez": "lost",
+    "scor": "5-1"
    },
    {
     "id": 15339591,
@@ -198,7 +239,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.5,
     "p": 0.693,
-    "why": "Scotia dă 1,2 și primește 1,1 goluri pe meci; Macedonia de Nord dă 0,1 și primește 2,5. Se urmărește doar pentru statistică."
+    "why": "Scotia dă 1,2 și primește 1,1 goluri pe meci; Macedonia de Nord dă 0,1 și primește 2,5. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "2-1"
    },
    {
     "id": 15339575,
@@ -208,7 +251,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.48,
     "p": 0.687,
-    "why": "Olanda dă 2 și primește 1,2 goluri pe meci; Grecia dă 1 și primește 0,9. Se urmărește doar pentru statistică."
+    "why": "Olanda dă 2 și primește 1,2 goluri pe meci; Grecia dă 1 și primește 0,9. Se urmărește doar pentru statistică.",
+    "rez": "lost",
+    "scor": "7-0"
    }
   ]
  }
