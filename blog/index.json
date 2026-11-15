@@ -1,5 +1,57 @@
 [
  {
+  "id": "2026-11-15-rezumat",
+  "data": "2026-11-15",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 15 noiembrie: 1 câștigate, 0 pierdute",
+  "intro": "Pariul zilei câștigat",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [
+     "Niciun bilet pierdut."
+    ],
+    "li": []
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 0."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "5 bilete câștigate din 9 validate (56%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 1.6,
+    "sansa": 71.7,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "Spania – Anglia",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.6,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Spania dă 2,2 și primește 0,6 goluri pe meci; Anglia dă 2,9 și primește 1,4.",
+       "Meciurile Spania au în medie 2,8 goluri, cele ale Anglia 4,3.",
+       "Meciuri directe analizate: 5.",
+       "Piață fără marjă 59,2%, formă 70% (peste 2.5 în 7 din ultimele 10), H2H 100% (5 din 5); șansă combinată 71,7%, avantaj +9,2 pp față de cota 1.60; absențe verificate sumar, fără lipsuri majore confirmate."
+      ],
+      "rezultat": "Spania 2-3 Anglia"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-14-rezumat",
   "data": "2026-11-14",
   "tip": "rezumat",
