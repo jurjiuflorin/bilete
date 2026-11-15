@@ -1,6 +1,3 @@
-evenimente 1957 meciuri azi 4
-scris sugestii/2026-11-15.json { goluri: 4, gg: 4, cornere: 4, sub: 4 }
-evenimente 2090 meciuri 11
-candidati 66 din 11 meciuri
-scris candidati/2026-11-15.json plan { pariu: '1.6 / 0.717' } variante { challenge: 0, cota2: 0, pariu: 1, cota5: 0, cota10: 0 } 1
+exista deja sugestii/2026-11-15.json
+exista deja candidati/2026-11-15.json
 index 20 zile
