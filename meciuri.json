@@ -1,36 +1,5 @@
 {
- "data": "2026-11-14",
- "actualizat": "2026-11-14T06:13:57Z",
- "meciuri": [
-  {
-   "data": "2026-11-14",
-   "ora": "15:00",
-   "liga": "Cupa Franței",
-   "gazde": "Tourcoing",
-   "oaspeti": "Reims",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate; ora orientativă (sursă nesigură). Pauză internațională, puține meciuri azi."
-  },
-  {
-   "data": "2026-11-14",
-   "ora": "15:00",
-   "liga": "Cupa Franței",
-   "gazde": "Balagne",
-   "oaspeti": "Montpellier",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate; ora orientativă (sursă nesigură). Pauză internațională, puține meciuri azi."
-  },
-  {
-   "data": "2026-11-14",
-   "ora": "17:00",
-   "liga": "Cupa Franței",
-   "gazde": "Choisy au Bac",
-   "oaspeti": "Caen",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate; ora orientativă (sursă nesigură). Pauză internațională, puține meciuri azi."
-  }
- ]
+ "data": "2026-11-15",
+ "actualizat": "2026-11-15T06:13:17Z",
+ "meciuri": []
 }
