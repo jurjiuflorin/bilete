@@ -1,5 +1,340 @@
 [
  {
+  "id": "2026-11-16-bilete",
+  "data": "2026-11-16",
+  "tip": "bilete",
+  "titlu": "Biletele zilei de 16 noiembrie: 3 bilete, 32 evenimente analizate",
+  "intro": "Cotă 100+ 100,87 · Mega 20+ 853,70 · Săptămânal 7 zile 1,88",
+  "sectiuni": [
+   {
+    "h": "Cum citești analiza",
+    "p": [
+     "Pentru fiecare eveniment vezi trei numere: ce spune piața (cota fără marja casei), ce spune forma pe ultimele 10 meciuri ale ambelor echipe și ce spun meciurile directe (H2H). Estimarea finală e 40% piață, 40% formă și 20% H2H, iar „valoarea” e diferența dintre estimare și probabilitatea din cotă. Cotă 2 are prioritate la alegere, iar meciurile se repetă cât mai puțin între bilete."
+    ]
+   },
+   {
+    "h": "Ce trebuie verificat",
+    "p": [
+     "Absențele nu sunt verificate. Estimările sunt statistice, nu garanții, iar cotele se pot mișca până la meci. Pune doar o miză mică."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Cotă 100+",
+    "cota": 100.87,
+    "sansa": 0.6,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "14:30",
+      "meci": "Manchester City – Fulham",
+      "selectie": "Manchester City peste 1.5 goluri",
+      "cota": 1.39,
+      "linii": [
+       "Manchester City – Fulham – Manchester City peste 1.5 goluri: Piață 68%, formă 68% (City 7V 3Î loc 3, Fulham loc 15 cu 4Î), p estimat 68%; City a pierdut 1-3 la Forest; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:00",
+      "meci": "Como – Cagliari",
+      "selectie": "Como peste 1.5 goluri",
+      "cota": 1.35,
+      "linii": [
+       "Como – Cagliari – Como peste 1.5 goluri: Piață 70%, formă 70% (Como 7V 2Î loc 5, Cagliari 5Î din 11), p estimat 70%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:00",
+      "meci": "Lazio – Lecce",
+      "selectie": "Lazio câștigă",
+      "cota": 1.36,
+      "linii": [
+       "Lazio – Lecce – Lazio câștigă: Piață 70%, formă 73% (Lazio 9V 2E 0Î lider, 2.3 goluri/meci și 0.8 primite; Lecce 7Î din 11, 2.0 primite/meci), p estimat 72%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:30",
+      "meci": "Mönchengladbach – Dortmund",
+      "selectie": "Dortmund câștigă",
+      "cota": 1.63,
+      "linii": [
+       "Mönchengladbach – Dortmund – Dortmund câștigă: Piață 58%, formă 72% (BVB neînvinsă 6V 3E; Gladbach ultima, 1V 7Î), p estimat 66%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:30",
+      "meci": "Union Berlin – RB Leipzig",
+      "selectie": "RB Leipzig câștigă",
+      "cota": 1.56,
+      "linii": [
+       "Union Berlin – RB Leipzig – RB Leipzig câștigă: Piață 60%, formă 56% (Leipzig 6V 3Î, 5-2 cu Augsburg; Union 1V 4E 4Î loc 16), p estimat 58%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "19:00",
+      "meci": "Parma – Roma",
+      "selectie": "Roma peste 1.5 goluri",
+      "cota": 1.36,
+      "linii": [
+       "Parma – Roma – Roma peste 1.5 goluri: Piață 69%, formă 72% (Roma neînvinsă 8V 3E, 3-0 cu Sassuolo; Parma loc 16, 7Î din 11), p estimat 71%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "19:30",
+      "meci": "Newcastle – Arsenal",
+      "selectie": "Arsenal câștigă",
+      "cota": 1.59,
+      "linii": [
+       "Newcastle – Arsenal – Arsenal câștigă: Piață 60%, formă 65% (Arsenal 9V 1Î lider; Newcastle loc 12, 4Î din 10), p estimat 63%; Arsenal a câștigat doar 1-0 cu Hull; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "13:30",
+      "meci": "Juventus – Venezia",
+      "selectie": "Juventus câștigă",
+      "cota": 1.38,
+      "linii": [
+       "Juventus – Venezia – Juventus câștigă: Piață 69%, formă 64% (Juventus loc 7, 5 clean sheet-uri, 8.5 cornere/meci; Venezia penultima 2V 9Î, 1.9 primite/meci), p estimat 66%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "15:00",
+      "meci": "Barcelona – Villarreal",
+      "selectie": "Barcelona peste 2.5 goluri",
+      "cota": 1.48,
+      "linii": [
+       "Barcelona – Villarreal – Barcelona peste 2.5 goluri: Piață 64%, formă 66% (Barça 48 goluri în 12 meciuri = 4.0/meci, 11V 1Î; Villarreal 1.3 primite/meci), p estimat 65%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:00",
+      "meci": "Paris FC – Angers",
+      "selectie": "Paris FC peste 1.5 goluri",
+      "cota": 1.42,
+      "linii": [
+       "Paris FC – Angers – Paris FC peste 1.5 goluri: Piață 66%, formă 68% (Paris FC loc 3 cu 6V 2Î; Angers loc 16, 6Î din 10), p estimat 67%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:00",
+      "meci": "Hull City – Brighton",
+      "selectie": "Brighton câștigă",
+      "cota": 1.53,
+      "linii": [
+       "Hull City – Brighton – Brighton câștigă: Piață 62%, formă 50% (Brighton loc 2 cu 7V 2Î, 2-0 cu Brentford; Hull 5 egaluri din 10), p estimat 55%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "21:45",
+      "meci": "Atalanta – Inter",
+      "selectie": "Inter câștigă",
+      "cota": 1.62,
+      "linii": [
+       "Atalanta – Inter – Inter câștigă: Piață 59%, formă 64% (Inter 9V 1Î loc 2, 2-0 cu Como; Atalanta loc 12 cu 5Î), p estimat 62%; absențe neverificate."
+      ]
+     }
+    ]
+   },
+   {
+    "tip": "Mega 20+",
+    "cota": 853.7,
+    "sansa": 0,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "01:30",
+      "meci": "Flamengo – Athletico PR",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.48,
+      "linii": [
+       "Flamengo – Athletico PR – Peste 2.5 goluri: Piață fără marjă 64%, formă estimată 55% (fără date locale pentru Brasileirão), p estimat 58,5%; Flamengo 1.23 favorită; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Athletic Bilbao – Espanyol",
+      "selectie": "Athletic Bilbao câștigă",
+      "cota": 1.49,
+      "linii": [
+       "Athletic Bilbao – Espanyol – Athletic Bilbao câștigă: Piață 64%, formă 43% (Athletic 4V 4E 3Î loc 7, Espanyol 6Î din 12 loc 13), p estimat 51%; cea mai slabă selecție; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "14:30",
+      "meci": "Manchester City – Fulham",
+      "selectie": "Manchester City peste 1.5 goluri",
+      "cota": 1.39,
+      "linii": [
+       "Manchester City – Fulham – Manchester City peste 1.5 goluri: Piață 68%, formă 68% (City 7V 3Î loc 3, Fulham loc 15 cu 4Î), p estimat 68%; City a pierdut 1-3 la Forest; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:00",
+      "meci": "Como – Cagliari",
+      "selectie": "Como peste 1.5 goluri",
+      "cota": 1.35,
+      "linii": [
+       "Como – Cagliari – Como peste 1.5 goluri: Piață 70%, formă 70% (Como 7V 2Î loc 5, Cagliari 5Î din 11), p estimat 70%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:00",
+      "meci": "Lazio – Lecce",
+      "selectie": "Lazio câștigă",
+      "cota": 1.36,
+      "linii": [
+       "Lazio – Lecce – Lazio câștigă: Piață 70%, formă 73% (Lazio 9V 2E 0Î lider, 2.3 goluri/meci și 0.8 primite; Lecce 7Î din 11, 2.0 primite/meci), p estimat 72%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:30",
+      "meci": "Mönchengladbach – Dortmund",
+      "selectie": "Dortmund câștigă",
+      "cota": 1.63,
+      "linii": [
+       "Mönchengladbach – Dortmund – Dortmund câștigă: Piață 58%, formă 72% (BVB neînvinsă 6V 3E; Gladbach ultima, 1V 7Î), p estimat 66%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:30",
+      "meci": "Union Berlin – RB Leipzig",
+      "selectie": "RB Leipzig câștigă",
+      "cota": 1.56,
+      "linii": [
+       "Union Berlin – RB Leipzig – RB Leipzig câștigă: Piață 60%, formă 56% (Leipzig 6V 3Î, 5-2 cu Augsburg; Union 1V 4E 4Î loc 16), p estimat 58%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "18:15",
+      "meci": "Nice – PSG",
+      "selectie": "PSG peste 1.5 goluri",
+      "cota": 1.35,
+      "linii": [
+       "Nice – PSG – PSG peste 1.5 goluri: Piață 70%, formă 68% (PSG 7V 2E loc 1, Nice loc 6 cu 3Î), p estimat 69%; PSG a câștigat doar 1-0 ultima oară; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "19:00",
+      "meci": "Parma – Roma",
+      "selectie": "Roma peste 1.5 goluri",
+      "cota": 1.36,
+      "linii": [
+       "Parma – Roma – Roma peste 1.5 goluri: Piață 69%, formă 72% (Roma neînvinsă 8V 3E, 3-0 cu Sassuolo; Parma loc 16, 7Î din 11), p estimat 71%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "19:30",
+      "meci": "Newcastle – Arsenal",
+      "selectie": "Arsenal câștigă",
+      "cota": 1.59,
+      "linii": [
+       "Newcastle – Arsenal – Arsenal câștigă: Piață 60%, formă 65% (Arsenal 9V 1Î lider; Newcastle loc 12, 4Î din 10), p estimat 63%; Arsenal a câștigat doar 1-0 cu Hull; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "21:45",
+      "meci": "Monaco – Auxerre",
+      "selectie": "Monaco câștigă",
+      "cota": 1.43,
+      "linii": [
+       "Monaco – Auxerre – Monaco câștigă: Piață 66%, formă 50% (Monaco 4V 4E 2Î, Auxerre loc 14 cu 6Î), p estimat 56%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Real Madrid – Celta Vigo",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.4,
+      "linii": [
+       "Real Madrid – Celta Vigo – Peste 2.5 goluri: Piață 67%, formă 62% (Real 10V 2Î, 3-0 la Valencia; Celta 7 egaluri din 12, meciuri cu puține goluri), p estimat 64%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "13:30",
+      "meci": "Juventus – Venezia",
+      "selectie": "Juventus câștigă",
+      "cota": 1.38,
+      "linii": [
+       "Juventus – Venezia – Juventus câștigă: Piață 69%, formă 64% (Juventus loc 7, 5 clean sheet-uri, 8.5 cornere/meci; Venezia penultima 2V 9Î, 1.9 primite/meci), p estimat 66%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "15:00",
+      "meci": "Barcelona – Villarreal",
+      "selectie": "Barcelona peste 2.5 goluri",
+      "cota": 1.48,
+      "linii": [
+       "Barcelona – Villarreal – Barcelona peste 2.5 goluri: Piață 64%, formă 66% (Barça 48 goluri în 12 meciuri = 4.0/meci, 11V 1Î; Villarreal 1.3 primite/meci), p estimat 65%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:00",
+      "meci": "Paris FC – Angers",
+      "selectie": "Paris FC peste 1.5 goluri",
+      "cota": 1.42,
+      "linii": [
+       "Paris FC – Angers – Paris FC peste 1.5 goluri: Piață 66%, formă 68% (Paris FC loc 3 cu 6V 2Î; Angers loc 16, 6Î din 10), p estimat 67%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "16:00",
+      "meci": "Hull City – Brighton",
+      "selectie": "Brighton câștigă",
+      "cota": 1.53,
+      "linii": [
+       "Hull City – Brighton – Brighton câștigă: Piață 62%, formă 50% (Brighton loc 2 cu 7V 2Î, 2-0 cu Brentford; Hull 5 egaluri din 10), p estimat 55%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "21:45",
+      "meci": "Marseille – Le Mans",
+      "selectie": "Marseille câștigă",
+      "cota": 1.42,
+      "linii": [
+       "Marseille – Le Mans – Marseille câștigă: Piață 66%, formă 50% (OM loc 4 cu 6V 4Î; Le Mans 5 egaluri din 10), p estimat 57%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "21:45",
+      "meci": "Atalanta – Inter",
+      "selectie": "Inter câștigă",
+      "cota": 1.62,
+      "linii": [
+       "Atalanta – Inter – Inter câștigă: Piață 59%, formă 64% (Inter 9V 1Î loc 2, 2-0 cu Como; Atalanta loc 12 cu 5Î), p estimat 62%; absențe neverificate."
+      ]
+     }
+    ]
+   },
+   {
+    "tip": "Săptămânal 7 zile",
+    "cota": 1.88,
+    "sansa": 47.5,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "16:00",
+      "meci": "Lazio – Lecce",
+      "selectie": "Lazio câștigă",
+      "cota": 1.36,
+      "linii": [
+       "Sâmbătă: Lazio – Lecce – Lazio câștigă: Piață 70%, formă 73% (Lazio 9V 2E 0Î lider, 2.3 goluri/meci și 0.8 primite; Lecce 7Î din 11, 2.0 primite/meci), p estimat 72%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "13:30",
+      "meci": "Juventus – Venezia",
+      "selectie": "Juventus câștigă",
+      "cota": 1.38,
+      "linii": [
+       "Duminică: Juventus – Venezia – Juventus câștigă: Piață 69%, formă 64% (Juventus loc 7, 5 clean sheet-uri, 8.5 cornere/meci; Venezia penultima 2V 9Î, 1.9 primite/meci), p estimat 66%; absențe neverificate."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-15-rezumat",
   "data": "2026-11-15",
   "tip": "rezumat",
