@@ -11,52 +11,52 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Martian+Mono:wdth,wght@87.5..112.5,400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css?v=82">
-<link rel="stylesheet" href="generator.css?v=1">
+<link rel="stylesheet" href="generator.css?v=2">
 </head>
 <body>
 <div class="wrap gen">
-  <a class="back" href="./">← Gazeta de Bilete</a>
-  <header class="gh">
+  <a class="g-back" href="./">← Gazeta de Bilete</a>
+  <header class="g-gh">
     <h1>Generator de bilete</h1>
-    <p class="sub" id="sub">Se încarcă meciurile…</p>
+    <p class="g-sub" id="sub">Se încarcă meciurile…</p>
   </header>
 
-  <section class="modes" id="modes" aria-label="Alege cota țintă"></section>
+  <section class="g-modes" id="modes" aria-label="Alege cota țintă"></section>
 
-  <details class="adv" id="adv">
+  <details class="g-adv" id="adv">
     <summary><span><b>Filtre avansate</b><small id="adv-sum">Piețe implicite</small></span><i aria-hidden="true">⌄</i></summary>
     <div class="adv-body">
       <h3>Piață</h3>
       <div class="chips2" id="types"></div>
-      <div class="two">
+      <div class="g-two">
         <label>Cotă minimă pe selecție<input id="minO" type="number" step="0.01" min="1" placeholder="ex. 1.30" inputmode="decimal"></label>
         <label>Cotă maximă pe selecție<input id="maxO" type="number" step="0.01" min="1" placeholder="ex. 1.80" inputmode="decimal"></label>
       </div>
-      <button type="button" class="lnk" id="reset">Resetează filtrele</button>
+      <button type="button" class="g-lnk" id="reset">Resetează filtrele</button>
     </div>
   </details>
 
-  <div class="cta">
-    <button type="button" class="go" id="go">Generează bilet</button>
-    <button type="button" class="go ghost" id="again" hidden>Generează din nou</button>
+  <div class="g-cta">
+    <button type="button" class="g-go" id="go">Generează bilet</button>
+    <button type="button" class="g-go ghost" id="again" hidden>Generează din nou</button>
   </div>
 
   <div id="out"></div>
 
-  <section class="sec" id="mine-sec" hidden>
+  <section class="g-sec" id="mine-sec" hidden>
     <h2>Biletele mele generate</h2>
     <div id="mine"></div>
   </section>
 
-  <section class="sec">
-    <h2>Meciuri vulnerabile <span class="cnt" id="vcnt"></span></h2>
-    <p class="hint">Vulnerabil = cel puțin 2 piețe la care ambele echipe au ≥ 4/5 în ultimele 5 meciuri. La cornere nu avem istoric pe meci, deci semnalul vine din media pe sezon.</p>
+  <section class="g-sec">
+    <h2>Meciuri vulnerabile <span class="g-cnt" id="vcnt"></span></h2>
+    <p class="g-hint">Vulnerabil = cel puțin 2 piețe la care ambele echipe au ≥ 4/5 în ultimele 5 meciuri. La cornere nu avem istoric pe meci, deci semnalul vine din media pe sezon.</p>
     <div id="vul"></div>
   </section>
 
-  <footer class="gf">18+ · Joacă responsabil. Statisticile pe ultimele 5 meciuri nu garantează rezultate, iar cotele se pot schimba până plasezi biletul. Cotele și statisticile vin de la Superbet. Nu plasăm pariuri în numele tău.</footer>
+  <footer class="g-gf">18+ · Joacă responsabil. Statisticile pe ultimele 5 meciuri nu garantează rezultate, iar cotele se pot schimba până plasezi biletul. Cotele și statisticile vin de la Superbet. Nu plasăm pariuri în numele tău.</footer>
 </div>
 <div class="toast" id="toast" role="status"></div>
-<script type="module" src="generator.js?v=1"></script>
+<script type="module" src="generator.js?v=2"></script>
 </body>
 </html>
