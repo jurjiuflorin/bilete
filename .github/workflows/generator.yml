@@ -3,6 +3,10 @@ on:
   schedule:
     - cron: '20 5,8,11,14,17,20 * * *'
   workflow_dispatch:
+    inputs:
+      zile:
+        description: 'Câte zile înainte (2 = azi și mâine)'
+        default: '2'
 permissions:
   contents: write
 concurrency: generator
@@ -16,6 +20,8 @@ jobs:
           node-version: 20
       - run: node --test tests/generator.test.mjs
       - run: node scripts/generator-date.mjs 2>&1 | tee generator-rulare.txt
+        env:
+          GEN_ZILE: ${{ inputs.zile || '2' }}
       - name: Commit
         run: |
           mkdir -p generator && mv generator-rulare.txt generator/ultima-rulare.txt
