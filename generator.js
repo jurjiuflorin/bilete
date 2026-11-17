@@ -61,7 +61,7 @@ let outMsg = '';
 const showT = () => { $('#out').innerHTML = outMsg + renderTicket(ticket); };
 function generate() {
   outMsg = '';
-  if (!DATA.matches.length) { $('#out').innerHTML = '<div class="g-msg">Nu avem încă meciuri analizate pentru azi. Datele se actualizează de câteva ori pe zi.</div>'; return; }
+  if (!DATA.matches.length) { $('#out').innerHTML = '<div class="g-msg">Nu avem încă meciuri analizate pentru următoarele zile. Datele se actualizează de câteva ori pe zi.</div>'; return; }
   const t = generateTicket({ matches: M(), mode, filters: filters(), recentSignatures: recent() });
   $('#again').hidden = false;
   if (t.error === 'not_enough_matches') { ticket = null; $('#out').innerHTML = '<div class="g-msg"><b>Prea puține meciuri vulnerabile</b> pentru filtrele alese. Încearcă să bifezi mai multe piețe sau să lărgești intervalul de cote.</div>'; return; }

@@ -53,7 +53,7 @@ for (const t of ((st0.data || st0).tournaments || [])) {
   const i = LEAGUES.findIndex(L => L[1].test(n)); if (i >= 0) T.set(String(t.id), i); else if (/^(cehia|grecia|polonia|croatia|elvetia|scotia|austria) - /.test(n)) unmatched.add(n);
 }
 console.log('turnee potrivite', T.size, 'nepotrivite (verifică numele):', [...unmatched].slice(0, 20).join(' | '));
-const ZILE = Math.max(2, Math.min(7, +process.env.GEN_ZILE || 2)); // implicit azi + mâine; poate fi mărit manual (cel mult 7)
+const ZILE = Math.max(2, Math.min(7, +process.env.GEN_ZILE || 7)); // implicit azi + mâine; poate fi mărit manual (cel mult 7)
 const h0 = Math.floor(now / 36e5) * 36e5;
 const ev = await getJ(OB + '/v3/ro-RO/events?index=active-prematch&startDate=' + new Date(h0 - 3 * 36e5).toISOString().replace(/\.\d+Z/, '.000Z') + '&endDate=' + new Date(h0 + (ZILE * 24 + 6) * 36e5).toISOString().replace(/\.\d+Z/, '.000Z'));
 const days = new Set(Array.from({ length: ZILE }, (_, i) => dayKey(new Date(+now + i * 24 * 36e5)))); const list = [];

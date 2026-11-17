@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       zile:
-        description: 'Câte zile înainte (2 = azi și mâine)'
+        description: 'Câte zile înainte (7 = o săptămână)'
         default: '2'
 permissions:
   contents: write
@@ -21,7 +21,7 @@ jobs:
       - run: node --test tests/generator.test.mjs
       - run: node scripts/generator-date.mjs 2>&1 | tee generator-rulare.txt
         env:
-          GEN_ZILE: ${{ inputs.zile || '2' }}
+          GEN_ZILE: ${{ inputs.zile || '7' }}
       - run: node scripts/generator-bilete.mjs 2>&1 | tee -a generator-rulare.txt
       - name: Commit
         run: |
