@@ -64,6 +64,7 @@ for (const e of (ev.events || [])) {
   const [h, a] = (f.event_name || '').split('·'); if (!h || !a || /\b(u1[7-9]|u2[0-3]|feminin|women)\b/i.test(f.event_name) || /\((f|r)\)/i.test(f.event_name) || EVITA.test(f.event_name)) continue;
   list.push({ id: e.event_id, home: h.trim(), away: a.trim(), when, league: LEAGUES[li][0] });
 }
+{ const d = {}; for (const e of (ev.events || [])) { const k = ((e.fixture || {}).utc_date || '?').slice(0, 10); d[k] = (d[k] || 0) + 1; } console.log('zile în feed', JSON.stringify(d), 'chei', Object.keys(ev).join(','), 'ligi potrivite în feed', (ev.events || []).filter(e => T.has(String((e.fixture || {}).tournament_id))).length); }
 console.log('evenimente', (ev.events || []).length, 'meciuri în ligile alese', list.length);
 
 // ---- 2. statistici + cote (DataProvider.form / odds) ----
