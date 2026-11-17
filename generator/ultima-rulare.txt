@@ -1,6 +1,6 @@
 turnee potrivite 68 nepotrivite (verifică numele): cehia - extraliga | elvetia - nla | croatia - hmnl | austria - ice league | grecia - a1 | scotia - cupa | grecia - volley league | scotia - championship | elvetia - nlb | elvetia - elite u21 | croatia - premijer liga - gr.a | cehia - 1. liga (f) | cehia - 1. liga - gr.a | grecia - cupa superbet | grecia - superbet league 2 | austria - abl | polonia - phl | elvetia - lna | polonia - obl | scotia - cupa challenge
-zile în feed {"2026-11-20":7,"2026-11-18":1551,"2026-11-19":213,"2026-11-17":59} chei events ligi potrivite în feed 30
-evenimente 1830 meciuri în ligile alese 0
+zile în feed {"2026-11-20":7,"2026-11-18":1554,"2026-11-19":213,"2026-11-17":58} chei events ligi potrivite în feed 30
+evenimente 1832 meciuri în ligile alese 0
 analizate 0 păstrate (≥3/5 la o piață) 0 vulnerabile 0
 arhivă 141 scoruri 0
 Challenge nu se poate azi: no_challenge
