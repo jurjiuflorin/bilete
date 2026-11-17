@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-17",
+ "salvat": "2026-11-17T10:23:53.462Z",
+ "n": 22,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 15752054,
+    "meci": "Tanzania – Nigeria",
+    "when": "2026-11-17T13:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.35,
+    "p": 0.77,
+    "why": "Tanzania dă 1,4 și primește 1,6 goluri pe meci; Nigeria dă 2 și primește 1,5."
+   },
+   {
+    "id": 15752172,
+    "meci": "Gambia – Coasta de Fildes",
+    "when": "2026-11-17T16:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.39,
+    "p": 0.757,
+    "why": "Gambia dă 2,6 și primește 1,7 goluri pe meci; Coasta de Fildes dă 1,4 și primește 0,7."
+   },
+   {
+    "id": 15683192,
+    "meci": "Arabia Saudita – Uzbekistan",
+    "when": "2026-11-17T15:30:00.000Z",
+    "liga": "Amicale internaționale",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.36,
+    "p": 0.723,
+    "why": "Arabia Saudita dă 1,2 și primește 0,7 goluri pe meci; Uzbekistan dă 1,2 și primește 2,2."
+   },
+   {
+    "id": 15752174,
+    "meci": "Sierra Leone – RD Congo",
+    "when": "2026-11-17T16:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.36,
+    "p": 0.713,
+    "why": "Sierra Leone dă 1,1 și primește 1,4 goluri pe meci; RD Congo dă 1,4 și primește 1,2."
+   },
+   {
+    "id": 15865955,
+    "meci": "Irak – Iran",
+    "when": "2026-11-17T16:15:00.000Z",
+    "liga": "Amicale internaționale",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.44,
+    "p": 0.712,
+    "why": "Irak dă 0,7 și primește 2 goluri pe meci; Iran dă 1,7 și primește 1,1."
+   }
+  ],
+  "gg": [
+   {
+    "id": 15339583,
+    "meci": "Danemarca – Norvegia",
+    "when": "2026-11-17T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.4,
+    "p": 0.677,
+    "why": "Danemarca marchează 2 și primește 1,4 pe meci; Norvegia marchează 1,8 și primește 1,8."
+   },
+   {
+    "id": 15339610,
+    "meci": "Polonia – Suedia",
+    "when": "2026-11-17T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.47,
+    "p": 0.662,
+    "why": "Polonia marchează 1,7 și primește 1,6 pe meci; Suedia marchează 1,9 și primește 1,7."
+   },
+   {
+    "id": 15339611,
+    "meci": "Bosnia si Hertegovina – Romania",
+    "when": "2026-11-17T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.59,
+    "p": 0.616,
+    "why": "Bosnia si Hertegovina marchează 1,4 și primește 1,5 pe meci; Romania marchează 1,5 și primește 2."
+   },
+   {
+    "id": 15339607,
+    "meci": "Israel – Austria",
+    "when": "2026-11-17T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.56,
+    "p": 0.575,
+    "why": "Israel marchează 0,9 și primește 1,3 pe meci; Austria marchează 1,7 și primește 1,4."
+   },
+   {
+    "id": 15339582,
+    "meci": "Tara Galilor – Portugalia",
+    "when": "2026-11-17T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "GG (ambele marchează)",
+    "od": 1.69,
+    "p": 0.571,
+    "why": "Tara Galilor marchează 1,4 și primește 1,4 pe meci; Portugalia marchează 1,8 și primește 1,1."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 15752172,
+    "meci": "Gambia – Coasta de Fildes",
+    "when": "2026-11-17T16:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.44,
+    "p": 0.796,
+    "why": "Media cornerelor: Gambia 3,7, Coasta de Fildes 9, adică 12,7 pe meci."
+   },
+   {
+    "id": 15752175,
+    "meci": "Libia – Tunisia",
+    "when": "2026-11-17T16:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.5,
+    "p": 0.791,
+    "why": "Media cornerelor: Libia 5,3, Tunisia 8, adică 13,3 pe meci."
+   },
+   {
+    "id": 15752025,
+    "meci": "Malawi – Egipt",
+    "when": "2026-11-17T13:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.46,
+    "p": 0.771,
+    "why": "Media cornerelor: Malawi 5, Egipt 6,7, adică 11,7 pe meci."
+   },
+   {
+    "id": 15752173,
+    "meci": "Kenya – Africa de Sud",
+    "when": "2026-11-17T16:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.53,
+    "p": 0.726,
+    "why": "Media cornerelor: Kenya 4,7, Africa de Sud 6, adică 10,7 pe meci."
+   },
+   {
+    "id": 15752176,
+    "meci": "Togo – Algeria",
+    "when": "2026-11-17T16:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.48,
+    "p": 0.722,
+    "why": "Media cornerelor: Togo 5, Algeria 5,3, adică 10,3 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 15716970,
+    "meci": "Qatar – Coreea de Sud",
+    "when": "2026-11-17T14:00:00.000Z",
+    "liga": "Amicale internaționale",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.37,
+    "p": 0.734,
+    "why": "Qatar dă 0,6 și primește 1,5 goluri pe meci; Coreea de Sud dă 1,6 și primește 1. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15555551,
+    "meci": "Rusia – Venezuela",
+    "when": "2026-11-17T16:00:00.000Z",
+    "liga": "Amicale internaționale",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.38,
+    "p": 0.721,
+    "why": "Rusia dă 2,3 și primește 0,9 goluri pe meci; Venezuela dă 0,9 și primește 0,8. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15752025,
+    "meci": "Malawi – Egipt",
+    "when": "2026-11-17T13:00:00.000Z",
+    "liga": "Cupa Africii (calificări)",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.38,
+    "p": 0.71,
+    "why": "Malawi dă 0,7 și primește 1,5 goluri pe meci; Egipt dă 1,9 și primește 1. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15316005,
+    "meci": "Japonia – Paraguay",
+    "when": "2026-11-17T13:10:00.000Z",
+    "liga": "Amicale internaționale",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.4,
+    "p": 0.694,
+    "why": "Japonia dă 1,9 și primește 1 goluri pe meci; Paraguay dă 1,5 și primește 0,9. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15339607,
+    "meci": "Israel – Austria",
+    "when": "2026-11-17T19:45:00.000Z",
+    "liga": "Liga Națiunilor UEFA",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.52,
+    "p": 0.667,
+    "why": "Israel dă 0,9 și primește 1,3 goluri pe meci; Austria dă 1,7 și primește 1,4. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}
