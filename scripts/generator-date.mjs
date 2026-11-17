@@ -87,9 +87,9 @@ const res = await pool(list, 5, async m => {
   const lite = L => L.map(x => ({ opp: x.opp, home: x.home, ft: x.ft, ht: x.ht }));
   return { ...a, last5: { home: lite(homeLast), away: lite(awayLast) } };
 });
-const matches = res.filter(Boolean).filter(m => m.signals >= 1).sort((a, b) => (b.signals - a.signals) || (new Date(a.kickoff) - new Date(b.kickoff)));
+const matches = res.filter(Boolean).filter(m => m.markets.some(x => x.sampleSize ? Math.min(x.hitHome, x.hitAway) >= 3 : x.percentage >= 60)).sort((a, b) => (b.signals - a.signals) || (new Date(a.kickoff) - new Date(b.kickoff)));
 fs.writeFileSync('generator/azi.json', JSON.stringify({ generatedAt: now.toISOString(), day: key, analyzed: res.filter(Boolean).length, defaultTypes: DEFAULT_TYPES, matches }) + '\n');
-console.log('analizate', res.filter(Boolean).length, 'cu semnale', matches.length, 'vulnerabile', matches.filter(m => m.vulnerable).length);
+console.log('analizate', res.filter(Boolean).length, 'păstrate (≥3/5 la o piață)', matches.length, 'vulnerabile', matches.filter(m => m.vulnerable).length);
 
 // ---- 3. arhivă + scoruri finale pentru decontare (DataProvider.result) ----
 const arh = readJ('generator/arhiva.json', {}), sc = readJ('generator/scoruri.json', {});
