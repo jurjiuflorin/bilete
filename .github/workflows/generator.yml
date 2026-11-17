@@ -6,7 +6,7 @@ on:
     inputs:
       zile:
         description: 'Câte zile înainte (7 = o săptămână)'
-        default: '2'
+        default: '7'
 permissions:
   contents: write
 concurrency: generator
