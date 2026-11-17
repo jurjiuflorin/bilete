@@ -715,11 +715,5 @@ body{background:radial-gradient(1000px 460px at 10% -160px,rgba(246,226,74,.22),
 .hs-range input[type=date]{background:var(--pitch,#0f0f12);color:var(--chalk);border:1px solid var(--line);border-radius:8px;padding:6px 8px;font:inherit;font-size:14px;color-scheme:dark}
 .hs-clear{background:none;border:1px solid var(--line);color:var(--chalk-dim);border-radius:8px;padding:7px 12px;font:inherit;font-size:13px;cursor:pointer}
 
-/* fila Baschet */
-.bk-why { margin: 14px 0 6px; padding: 12px 14px; border: 1px solid rgba(255,255,255,.14); border-radius: 10px; }
-.bk-why h4 { margin: 0 0 8px; font-size: 14px; }
-.bk-why ul { margin: 0; padding-left: 18px; }
-.bk-why li { margin: 0 0 6px; line-height: 1.4; }
-.bk-why .note { margin: 8px 0 0; }
 .tabs .tablink{padding:8px 18px;border-radius:999px;font:600 18px/1 var(--display);letter-spacing:.01em;color:var(--flood);text-decoration:none;white-space:nowrap}
 .tabs .tablink:hover{background:rgba(246,226,74,.12)}
