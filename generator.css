@@ -112,3 +112,14 @@ body.gpage .toast{background:var(--ac);color:var(--ac-i)}
 .g-day{font:700 14px var(--slip);letter-spacing:.08em;color:var(--ac);margin:22px 0 10px}
 .g-mine-t li small{opacity:.7;margin-left:4px}
 @media(max-width:560px){.g-tab{font-size:12px}.g-tab th,.g-tab td{padding:8px 6px}}
+
+.g-sum{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+.g-sum div{background:var(--panel);border:1px solid var(--ln);border-radius:14px;padding:12px;text-align:center}
+.g-sum b{display:block;font:800 26px var(--display);color:var(--ac)}
+.g-sum span{font-size:12px;color:var(--dim)}
+.g-act{display:flex;gap:8px;align-items:flex-end;margin-top:12px;flex-wrap:wrap}
+.g-act label{display:grid;gap:5px;font:700 11px var(--slip);letter-spacing:.08em;text-transform:uppercase;color:var(--dim);flex:1;min-width:150px}
+.g-act input{background:var(--panel2);border:1px solid var(--ln);border-radius:10px;padding:9px 11px;color:var(--tx);font:600 15px var(--slip);letter-spacing:.04em}
+.g-act button{border:1px solid var(--ln);background:none;color:var(--dim);border-radius:10px;padding:9px 14px;cursor:pointer;font-weight:600}
+.g-act button:hover{color:var(--tx);border-color:rgba(255,255,255,.25)}
+#nmine{opacity:.7}

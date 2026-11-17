@@ -61,7 +61,7 @@ function generate() {
   $('#again').hidden = false;
   if (t.error === 'not_enough_matches') { ticket = null; $('#out').innerHTML = '<div class="g-msg"><b>Prea puține meciuri vulnerabile</b> pentru filtrele alese. Încearcă să bifezi mai multe piețe sau să lărgești intervalul de cote.</div>'; return; }
   if (t.error === 'target_odds_unreachable') { ticket = null; const p = t.partial; $('#out').innerHTML = `<div class="g-msg"><b>Nu se poate atinge ținta ${p.targetOdds}x</b> cu meciurile de azi: cea mai bună combinație dă doar ${p.totalOdds}. Încearcă un mod mai mic sau mai multe piețe.</div>` + renderTicket({ ...p, partial: true }); ticket = null; return; }
-  ticket = t; remember(t.signature); $('#out').innerHTML = renderTicket(t);
+  ticket = { ...t, id: Date.now() }; remember(t.signature); saveMine(ticket); $('#out').innerHTML = renderTicket(ticket);
 }
 const reason = s => s.sampleSize ? `gazde ${s.hitHome}/${s.sampleSize} · oaspeți ${s.hitAway}/${s.sampleSize}` : esc(s.model || 'model pe medii');
 function renderTicket(t, mine) {
@@ -72,25 +72,32 @@ function renderTicket(t, mine) {
       ${t.partial || mine ? '' : `<button type="button" class="g-sw" data-i="${i}">Schimbă meciul</button>`}</div>`; }).join('');
   const ok = !t.partial && t.totalOdds >= MODES[t.mode].minAccept && t.totalOdds <= MODES[t.mode].maxAccept;
   return `<div class="g-tk"><div class="g-tk-h"><div><b>Bilet ${t.targetOdds}x</b> <span>${t.selections.length} selecții</span></div><div><span>țintă ${t.targetOdds}</span> <span class="g-tot">${t.totalOdds.toFixed(2)}</span></div></div>${rows}
-    ${t.partial || mine ? '' : `<div class="g-tk-f"><small>${ok ? 'Cota totală e în intervalul țintei.' : ''} Cotele pot varia până plasezi biletul.</small><span><button type="button" id="save">Salvează biletul</button> <button type="button" id="copy">Copiază</button></span></div>`}</div>`;
+    ${t.partial || mine ? '' : `<div class="g-tk-f"><small>${ok ? 'Cota totală e în intervalul țintei. ' : ''}Salvat în „Biletele mele”. Cotele pot varia până la pregătirea biletului.</small><span><button type="button" id="copy">Copiază</button></span></div>`}</div>`;
 }
 $('#go').addEventListener('click', generate);
 $('#again').addEventListener('click', generate);
 $('#out').addEventListener('click', e => {
-  const sw = e.target.closest('.g-sw'); if (sw && ticket) { const r = swapSelection(ticket, +sw.dataset.i, M(), { filters: filters() }); if (r.error) return toast('Nu există alt meci potrivit'); ticket = r; $('#out').innerHTML = renderTicket(ticket); return; }
-  if (e.target.id === 'save' && ticket) { const L = LS.get('gen_mine', []); if (L.some(x => x.signature === ticket.signature && x.generatedAt === ticket.generatedAt)) return toast('Biletul e deja salvat'); LS.set('gen_mine', [{ ...ticket, id: Date.now() }, ...L].slice(0, 30)); toast('Bilet salvat'); renderMine(); return; }
+  const sw = e.target.closest('.g-sw'); if (sw && ticket) { const r = swapSelection(ticket, +sw.dataset.i, M(), { filters: filters() }); if (r.error) return toast('Nu există alt meci potrivit'); ticket = r; saveMine(ticket); $('#out').innerHTML = renderTicket(ticket); return; }
   if (e.target.id === 'copy' && ticket) { const txt = `Bilet ${ticket.targetOdds}x · cotă ${ticket.totalOdds.toFixed(2)}\n` + ticket.selections.map(s => `${hhmm(s.kickoff)} ${s.home} – ${s.away}: ${typeLabel(s.type)} (${s.odds.toFixed(2)})`).join('\n'); navigator.clipboard && navigator.clipboard.writeText(txt).then(() => toast('Copiat'), () => toast('Nu am putut copia')); }
 });
 
-// ---- biletele mele (decontate din scoruri.json) ----
+// ---- biletele mele (salvate automat, decontate din scoruri.json) ----
+function saveMine(t) { const L = LS.get('gen_mine', []); const i = L.findIndex(x => x.id === t.id); if (i >= 0) L[i] = { ...L[i], ...t, code: L[i].code }; else L.unshift({ ...t }); LS.set('gen_mine', L.slice(0, 200)); renderMine(); }
+const LBL = { '5x': 'Bilet 5x', '10x': 'Bilet 10x', '25x': 'Bilet 25x', '50x': 'Bilet 50x' };
 function renderMine() {
-  const L = LS.get('gen_mine', []); $('#mine-sec').hidden = !L.length; if (!L.length) return;
-  $('#mine').innerHTML = L.map(t => {
-    const sels = t.selections.map(s => ({ ...s, res: judgeSelection(s, SCORES[s.matchId]) }));
-    const st = judgeTicket(sels);
-    return `<div class="g-mine-t ${st || ''}"><div class="h"><b>${t.targetOdds}x · cotă ${ticketOdds(sels).toFixed(2)}</b><span>${st === 'won' ? 'CÂȘTIGAT' : st === 'lost' ? 'PIERDUT' : st === 'void' ? 'ANULAT' : 'în așteptare'} · ${hhmm(t.generatedAt)}</span></div>
-      <ul>${sels.map(s => `<li>${esc(s.home)} – ${esc(s.away)}: ${esc(typeLabel(s.type))} (${s.odds.toFixed(2)})${s.res ? `<span class="g-res ${s.res}">${{ won: 'CÂȘTIGAT', lost: 'PIERDUT', void: 'ANULAT' }[s.res]}</span>` : isCornerType(s.type) ? ' <i>(cornere: decontare manuală)</i>' : ''}</li>`).join('')}</ul></div>`; }).join('');
+  const L = LS.get('gen_mine', []); $('#nmine').textContent = L.length ? '(' + L.length + ')' : '';
+  const J = L.map(t => { const sels = t.selections.map(s => ({ ...s, res: judgeSelection(s, SCORES[s.matchId]) })); return { t, sels, st: judgeTicket(sels) }; });
+  const w = J.filter(x => x.st === 'won').length, l = J.filter(x => x.st === 'lost').length;
+  $('#mstats').innerHTML = L.length ? `<div class="g-sum"><div><b>${L.length}</b><span>generate</span></div><div><b>${w}</b><span>câștigate</span></div><div><b>${l}</b><span>pierdute</span></div><div><b>${L.length - w - l}</b><span>în așteptare</span></div></div>` : '';
+  $('#mine').innerHTML = L.length ? J.map(({ t, sels, st }) => `<div class="g-mine-t ${st || ''}" data-id="${t.id}"><div class="h"><b>${LBL[t.mode] || 'Bilet'} · cotă ${ticketOdds(sels).toFixed(2)}</b><span>${STAT_[st] || 'în așteptare'} · ${hhmm(t.generatedAt)}</span></div>
+      <ul>${sels.map(s => `<li>${esc(s.home)} – ${esc(s.away)}: ${esc(typeLabel(s.type))} (${s.odds.toFixed(2)})${s.res ? `<span class="g-res ${s.res}">${STAT_[s.res]}</span>` : isCornerType(s.type) ? ' <i>(cornere: decontare manuală)</i>' : ''}</li>`).join('')}</ul>
+      <div class="g-act"><label>Cod agenție<input class="g-code" value="${esc(t.code || '')}" placeholder="ex. 990O-KLTRBB" maxlength="14"></label><button type="button" class="g-cp">Copiază</button><button type="button" class="g-del">Șterge</button></div></div>`).join('') : '<div class="g-msg">Încă nu ai bilete generate. Generează unul din tabul „Generator” și apare aici automat.</div>';
 }
+const STAT_ = { won: 'CÂȘTIGAT', lost: 'PIERDUT', void: 'ANULAT' };
+$('#mine').addEventListener('input', e => { if (!e.target.classList.contains('g-code')) return; const id = +e.target.closest('.g-mine-t').dataset.id; const L = LS.get('gen_mine', []); const t = L.find(x => x.id === id); if (t) { t.code = e.target.value.trim().toUpperCase(); LS.set('gen_mine', L); } });
+$('#mine').addEventListener('click', e => { const card = e.target.closest('.g-mine-t'); if (!card) return; const id = +card.dataset.id; const L = LS.get('gen_mine', []); const t = L.find(x => x.id === id); if (!t) return;
+  if (e.target.classList.contains('g-del')) { if (e.target.dataset.sure) { LS.set('gen_mine', L.filter(x => x.id !== id)); renderMine(); } else { e.target.dataset.sure = '1'; e.target.textContent = 'Sigur?'; setTimeout(() => { e.target.dataset.sure = ''; e.target.textContent = 'Șterge'; }, 2500); } }
+  if (e.target.classList.contains('g-cp')) { const txt = `${LBL[t.mode] || 'Bilet'} · cotă ${ticketOdds(t.selections).toFixed(2)}${t.code ? ' · cod ' + t.code : ''}\n` + t.selections.map(s => `${hhmm(s.kickoff)} ${s.home} – ${s.away}: ${typeLabel(s.type)} (${s.odds.toFixed(2)})`).join('\n'); navigator.clipboard && navigator.clipboard.writeText(txt).then(() => toast('Copiat'), () => toast('Nu am putut copia')); } });
 
 // ---- lista meciurilor vulnerabile ----
 const sc = x => `${x.ft[0]}-${x.ft[1]} <span>(${x.ht[0]}-${x.ht[1]})</span>`;
@@ -115,5 +122,5 @@ function renderTest() {
   $('#tlist').innerHTML = days.length ? days.map(d => `<h3 class="g-day">${d.split('-').reverse().join('.')}</h3>` + Object.values(TEST.days[d].tickets).map(t => `<div class="g-mine-t ${t.status || ''}"><div class="h"><b>${esc(t.label)} · cotă ${t.totalOdds.toFixed(2)}</b><span>${STAT[t.status] || 'în așteptare'}</span></div>
       <ul>${t.selections.map(s => `<li>${hhmm(s.kickoff)} · ${esc(s.home)} – ${esc(s.away)}: ${esc(typeLabel(s.type))} (${s.odds.toFixed(2)}) <small>${esc(s.league)}</small>${s.res ? `<span class="g-res ${s.res}">${STAT[s.res]}</span>` : ''}</li>`).join('')}</ul></div>`).join('')).join('') : '<div class="g-msg">Încă nu există bilete de test. Primul apare după următoarea actualizare, într-o zi cu meciuri în ligile alese.</div>';
 }
-$('#seg').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; for (const x of $('#seg').children) x.setAttribute('aria-pressed', String(x === b)); $('#v-gen').hidden = b.dataset.v !== 'gen'; $('#v-test').hidden = b.dataset.v !== 'test'; });
+$('#seg').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; for (const x of $('#seg').children) x.setAttribute('aria-pressed', String(x === b)); $('#v-gen').hidden = b.dataset.v !== 'gen'; $('#v-mine').hidden = b.dataset.v !== 'mine'; $('#v-test').hidden = b.dataset.v !== 'test'; });
 renderModes(); renderTypes(); load();
