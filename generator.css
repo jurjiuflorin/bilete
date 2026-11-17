@@ -101,3 +101,14 @@ body.gpage .toast{background:var(--ac);color:var(--ac-i)}
   .gmain{padding:22px 14px 60px}
 }
 @media(max-width:560px){.g-modes{grid-template-columns:1fr 1fr}.g-two{grid-template-columns:1fr}.g-lf{grid-template-columns:1fr}.g-cta{flex-direction:column}.g-sl .g-od{font-size:18px}}
+
+.g-seg{display:flex;gap:6px;background:var(--panel);border:1px solid var(--ln);border-radius:999px;padding:4px;margin:0 auto 22px;width:max-content;max-width:100%}
+.g-seg button{border:0;background:none;color:var(--dim);padding:9px 18px;border-radius:999px;cursor:pointer;font:600 15px var(--ui)}
+.g-seg button[aria-pressed=true]{background:var(--ac);color:var(--ac-i)}
+.g-tab{width:100%;border-collapse:collapse;margin:0 0 18px;background:var(--panel);border:1px solid var(--ln);border-radius:14px;overflow:hidden;font-size:14px}
+.g-tab th,.g-tab td{padding:10px 12px;text-align:right;border-bottom:1px solid var(--ln)}
+.g-tab th:first-child,.g-tab td:first-child{text-align:left}
+.g-tab th{color:var(--dim);font:600 11px var(--slip);letter-spacing:.06em;text-transform:uppercase}
+.g-day{font:700 14px var(--slip);letter-spacing:.08em;color:var(--ac);margin:22px 0 10px}
+.g-mine-t li small{opacity:.7;margin-left:4px}
+@media(max-width:560px){.g-tab{font-size:12px}.g-tab th,.g-tab td{padding:8px 6px}}

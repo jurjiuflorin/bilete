@@ -63,6 +63,7 @@ export function analyzeMatch(inp, opts = {}) {
 
 // ---- generatorul ----
 export const MODES = {
+  c2: { targetOdds: 2, strategy: 'lowest', preferredLegs: [2, 3], maxLegs: 4, minAccept: 1.85, maxAccept: 2.3, attempts: 800 },
   '5x': { targetOdds: 5, strategy: 'lowest', preferredLegs: [2, 4], maxLegs: 5, minAccept: 4.6, maxAccept: 5.4, attempts: 1000 },
   '10x': { targetOdds: 10, strategy: 'lowest', preferredLegs: [3, 5], maxLegs: 7, minAccept: 9.25, maxAccept: 10.75, attempts: 1000 },
   '25x': { targetOdds: 25, strategy: 'second_lowest', preferredLegs: [4, 6], maxLegs: 8, minAccept: 23, maxAccept: 27, attempts: 1200 },
@@ -70,11 +71,12 @@ export const MODES = {
 };
 const r2 = v => Math.round(v * 100) / 100;
 
-export function buildPool(matches, mode, filters = {}, now = Date.now()) {
-  const cfg = MODES[mode]; const types = filters.marketTypes || DEFAULT_TYPES; const pool = [];
+export function buildPool(matches, mode, filters = {}, now = Date.now(), overrides = {}) {
+  const cfg = { ...MODES[mode], ...overrides }; const types = filters.marketTypes || DEFAULT_TYPES; const pool = [];
   for (const m of matches) {
     if (!m.vulnerable || new Date(m.kickoff).getTime() <= now) continue;
     let cand = m.markets.filter(x => x.signal && x.odds > 1 && x.odds <= MAX_LEG_ODDS && types.includes(x.type)
+      && (!filters.leagues || !filters.leagues.length || filters.leagues.includes(m.league))
       && (filters.minLineOdds == null || x.odds >= filters.minLineOdds) && (filters.maxLineOdds == null || x.odds <= filters.maxLineOdds)
       && !(isCornerType(x.type) && (mode === '25x' || mode === '50x') && !(x.odds > 1.8)));
     if (!cand.length) continue;
@@ -85,9 +87,10 @@ export function buildPool(matches, mode, filters = {}, now = Date.now()) {
   return pool;
 }
 
-export function generateTicket({ matches, mode, filters = {}, recentSignatures = [], random = Math.random, now = Date.now() }) {
-  const cfg = MODES[mode]; if (!cfg) return { error: 'mode_unknown' };
-  const pool = buildPool(matches, mode, filters, now);
+export function generateTicket({ matches, mode, filters = {}, recentSignatures = [], random = Math.random, now = Date.now(), overrides = {} }) {
+  if (!MODES[mode]) return { error: 'mode_unknown' };
+  const cfg = { ...MODES[mode], ...overrides};
+  const pool = buildPool(matches, mode, filters, now, overrides);
   if (pool.length < 2) return { error: 'not_enough_matches' };
   const recent = new Set(recentSignatures); const target = cfg.targetOdds, mid = Math.round((cfg.preferredLegs[0] + cfg.preferredLegs[1]) / 2);
   let best = null;
@@ -106,6 +109,24 @@ export function generateTicket({ matches, mode, filters = {}, recentSignatures =
     hitHome: s.market.hitHome, hitAway: s.market.hitAway, sampleSize: s.market.sampleSize, percentage: s.market.percentage, model: s.market.model || null }));
   if (!best.inRange) return { error: 'target_odds_unreachable', partial: { mode, targetOdds: target, totalOdds: r2(best.prod), selections, signature: best.signature } };
   return { mode, targetOdds: target, totalOdds: r2(best.prod), selections, generatedAt: new Date(now).toISOString(), signature: best.signature };
+}
+
+// Challenge: un singur meci, cota 1.35–1.50, piața cu cel mai mare procent din formă
+export function pickChallenge({ matches, filters = {}, now = Date.now() }) {
+  const types = filters.marketTypes || DEFAULT_TYPES; let best = null;
+  for (const m of matches) {
+    if (!m.vulnerable || new Date(m.kickoff).getTime() <= now) continue;
+    if (filters.leagues && filters.leagues.length && !filters.leagues.includes(m.league)) continue;
+    for (const x of m.markets) {
+      if (!x.signal || !(x.odds >= 1.35 && x.odds <= 1.5) || !types.includes(x.type)) continue;
+      const c = { m, x, score: x.percentage - Math.abs(x.odds - 1.42) * 10 };
+      if (!best || c.score > best.score) best = c;
+    }
+  }
+  if (!best) return { error: 'no_challenge' };
+  const { m, x } = best;
+  return { mode: 'challenge', targetOdds: 1.45, totalOdds: x.odds, generatedAt: new Date(now).toISOString(), signature: m.matchId + ':' + x.type,
+    selections: [{ matchId: m.matchId, kickoff: m.kickoff, league: m.league, home: m.home, away: m.away, type: x.type, odds: x.odds, hitHome: x.hitHome, hitAway: x.hitAway, sampleSize: x.sampleSize, percentage: x.percentage, model: x.model || null }] };
 }
 
 // înlocuiește o selecție cu alt meci din pool (neînceput, care nu e deja pe bilet), păstrând strategia de piață

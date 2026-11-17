@@ -8,7 +8,7 @@ const toast = m => { const t = $('#toast'); t.textContent = m; t.classList.add('
 
 const MODE_INFO = { '5x': 'Cel mai sigur', '10x': 'Risc mic', '25x': 'Risc mediu', '50x': 'Risc mare' };
 let DATA = { matches: [] }, SCORES = {}, mode = LS.get('gen_mode', '5x'), types = new Set(LS.get('gen_types', DEFAULT_TYPES)), ticket = null;
-let minO = LS.get('gen_minO', ''), maxO = LS.get('gen_maxO', '');
+let minO = LS.get('gen_minO', ''), maxO = LS.get('gen_maxO', ''), leagues = new Set(LS.get('gen_leagues', [])), TEST = { days: {} };
 
 async function load() {
   const bust = '?t=' + Math.floor(Date.now() / 60000);
@@ -16,7 +16,8 @@ async function load() {
   try { SCORES = await (await fetch('generator/scoruri.json' + bust, { cache: 'no-store' })).json(); } catch (e) { SCORES = {}; }
   const n = DATA.matches.filter(m => m.vulnerable && new Date(m.kickoff) > Date.now()).length;
   $('#sub').textContent = DATA.generatedAt ? `${n} meciuri vulnerabile încă neînceputute · actualizat ${new Date(DATA.generatedAt).toLocaleTimeString('ro-RO', { timeZone: 'Europe/Bucharest', hour: '2-digit', minute: '2-digit' })} (ora României)` : 'Nu sunt date încă. Revino în câteva minute.';
-  renderVul(); renderMine();
+  try { TEST = await (await fetch('generator/bilete.json' + bust, { cache: 'no-store' })).json(); } catch (e) { TEST = { days: {} }; }
+  renderVul(); renderMine(); renderLeagues(); renderTypes(); renderTest();
 }
 
 // ---- moduri + filtre ----
@@ -26,16 +27,22 @@ function renderModes() {
 function allTypes() { return [...Object.keys(MARKETS).filter(t => !MARKETS[t].optional), ...CORNER_LINES.map(cornerType), ...Object.keys(MARKETS).filter(t => MARKETS[t].optional)]; }
 function renderTypes() {
   $('#types').innerHTML = allTypes().map(t => `<button type="button" data-t="${t}" aria-pressed="${types.has(t)}">${esc(typeLabel(t))}${MARKETS[t] && MARKETS[t].optional ? ' (nerecomandat)' : ''}</button>`).join('');
-  const def = types.size === DEFAULT_TYPES.length && DEFAULT_TYPES.every(t => types.has(t)) && !minO && !maxO;
-  $('#adv-sum').textContent = def ? 'Piețe implicite' : 'Filtre personalizate';
+  const def = types.size === DEFAULT_TYPES.length && DEFAULT_TYPES.every(t => types.has(t)) && !minO && !maxO && !leagues.size;
+  $('#adv-sum').textContent = def ? 'Piețe implicite, toate ligile' : leagues.size ? 'Ligi: ' + leagues.size + ' selectate' : 'Filtre personalizate';
 }
 $('#modes').addEventListener('click', e => { const b = e.target.closest('.g-mode'); if (!b) return; mode = b.dataset.m; LS.set('gen_mode', mode); renderModes(); });
 $('#types').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; const t = b.dataset.t; types.has(t) ? types.delete(t) : types.add(t); LS.set('gen_types', [...types]); renderTypes(); });
 $('#minO').value = minO; $('#maxO').value = maxO;
 $('#minO').addEventListener('input', e => { minO = e.target.value; LS.set('gen_minO', minO); renderTypes(); });
 $('#maxO').addEventListener('input', e => { maxO = e.target.value; LS.set('gen_maxO', maxO); renderTypes(); });
-$('#reset').addEventListener('click', () => { types = new Set(DEFAULT_TYPES); minO = maxO = ''; $('#minO').value = $('#maxO').value = ''; LS.set('gen_types', [...types]); LS.set('gen_minO', ''); LS.set('gen_maxO', ''); renderTypes(); });
-const filters = () => ({ marketTypes: [...types], minLineOdds: minO ? +minO : null, maxLineOdds: maxO ? +maxO : null });
+$('#reset').addEventListener('click', () => { leagues = new Set(); LS.set('gen_leagues', []); renderLeagues(); types = new Set(DEFAULT_TYPES); minO = maxO = ''; $('#minO').value = $('#maxO').value = ''; LS.set('gen_types', [...types]); LS.set('gen_minO', ''); LS.set('gen_maxO', ''); renderTypes(); });
+const filters = () => ({ marketTypes: [...types], minLineOdds: minO ? +minO : null, maxLineOdds: maxO ? +maxO : null, leagues: [...leagues] });
+function renderLeagues() {
+  const L = [...new Set(DATA.matches.filter(m => m.vulnerable).map(m => m.league))].sort();
+  $('#leagues').innerHTML = L.length ? L.map(x => `<button type="button" data-l="${esc(x)}" aria-pressed="${leagues.has(x)}">${esc(x)}</button>`).join('') : '<span class="g-hint">Ligile apar când există meciuri vulnerabile.</span>';
+  $('#adv-sum').textContent = leagues.size ? `Ligi: ${leagues.size} selectate` : $('#adv-sum').textContent;
+}
+$('#leagues').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; const l = b.dataset.l; leagues.has(l) ? leagues.delete(l) : leagues.add(l); LS.set('gen_leagues', [...leagues]); renderLeagues(); renderTypes(); });
 
 // ---- generare ----
 function recent() { return LS.get('gen_recent', []); }
@@ -89,4 +96,16 @@ function renderVul() {
     : '<div class="g-msg">Niciun meci vulnerabil neînceput acum. Verifică mai târziu sau mâine dimineață.</div>';
 }
 
+// ---- rubrica „Bilete generator (test)” ----
+const STAT = { won: 'CÂȘTIGAT', lost: 'PIERDUT', void: 'ANULAT' };
+function renderTest() {
+  const days = Object.keys(TEST.days || {}).sort().reverse(), all = days.flatMap(d => Object.values(TEST.days[d].tickets));
+  const row = (label, L) => { const w = L.filter(t => t.status === 'won').length, l = L.filter(t => t.status === 'lost').length, p = L.length - w - l, dec = w + l;
+    const roi = dec ? L.filter(t => t.status).reduce((s, t) => s + (t.status === 'won' ? t.totalOdds - 1 : t.status === 'lost' ? -1 : 0), 0) : 0;
+    return `<tr><td>${label}</td><td>${L.length}</td><td>${w}</td><td>${l}</td><td>${p}</td><td>${dec ? Math.round(100 * w / dec) + '%' : '–'}</td><td>${dec ? (roi >= 0 ? '+' : '') + roi.toFixed(1) : '–'}</td></tr>`; };
+  $('#tstats').innerHTML = all.length ? `<table class="g-tab"><thead><tr><th>Tip</th><th>Bilete</th><th>Câștigate</th><th>Pierdute</th><th>În așteptare</th><th>Reușită</th><th>Profit (unități)</th></tr></thead><tbody>${['challenge', 'cota2', 'cota5', 'cota10'].map(id => row(({ challenge: 'Challenge', cota2: 'Cotă 2', cota5: 'Cotă 5', cota10: 'Cotă 10' })[id], all.filter(t => t.id === id))).join('')}${row('<b>Total</b>', all)}</tbody></table>` : '';
+  $('#tlist').innerHTML = days.length ? days.map(d => `<h3 class="g-day">${d.split('-').reverse().join('.')}</h3>` + Object.values(TEST.days[d].tickets).map(t => `<div class="g-mine-t ${t.status || ''}"><div class="h"><b>${esc(t.label)} · cotă ${t.totalOdds.toFixed(2)}</b><span>${STAT[t.status] || 'în așteptare'}</span></div>
+      <ul>${t.selections.map(s => `<li>${hhmm(s.kickoff)} · ${esc(s.home)} – ${esc(s.away)}: ${esc(typeLabel(s.type))} (${s.odds.toFixed(2)}) <small>${esc(s.league)}</small>${s.res ? `<span class="g-res ${s.res}">${STAT[s.res]}</span>` : ''}</li>`).join('')}</ul></div>`).join('')).join('') : '<div class="g-msg">Încă nu există bilete de test. Primul apare după următoarea actualizare, într-o zi cu meciuri în ligile alese.</div>';
+}
+$('#seg').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; for (const x of $('#seg').children) x.setAttribute('aria-pressed', String(x === b)); $('#v-gen').hidden = b.dataset.v !== 'gen'; $('#v-test').hidden = b.dataset.v !== 'test'; });
 renderModes(); renderTypes(); load();

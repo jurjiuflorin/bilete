@@ -22,6 +22,7 @@ jobs:
       - run: node scripts/generator-date.mjs 2>&1 | tee generator-rulare.txt
         env:
           GEN_ZILE: ${{ inputs.zile || '2' }}
+      - run: node scripts/generator-bilete.mjs 2>&1 | tee -a generator-rulare.txt
       - name: Commit
         run: |
           mkdir -p generator && mv generator-rulare.txt generator/ultima-rulare.txt

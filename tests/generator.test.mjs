@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { MARKETS, scoresOf, lastFinished, analyzeMatch, generateTicket, swapSelection, MODES, judgeSelection, judgeTicket, pois, cornerType } from '../scripts/generator-lib.mjs';
+import { pickChallenge, MARKETS, scoresOf, lastFinished, analyzeMatch, generateTicket, swapSelection, MODES, judgeSelection, judgeTicket, pois, cornerType } from '../scripts/generator-lib.mjs';
 
 const ev = (t1, t2, ft, ht, sec, id = 'a') => ({ match_state: 2, match_date: { seconds: sec }, team1: { id: t1, name: 'T' + t1 }, team2: { id: t2, name: 'T' + t2 },
   scores: [{ type: 0, team1: ft[0], team2: ft[1] }, { type: 1, team1: ht[0], team2: ht[1] }, { type: 6, team1: ft[0], team2: ft[1] }] });
@@ -90,4 +90,17 @@ test('decontare', () => {
   assert.equal(judgeTicket([{ res: 'won' }, { res: 'lost' }]), 'lost');
   assert.equal(judgeTicket([{ res: 'won' }, { res: null }]), null);
   assert.equal(judgeTicket([{ res: 'won' }, { res: 'void' }]), 'won');
+});
+
+test('Challenge: o selecție 1.35–1.50, filtru de ligi', () => {
+  const m = [mk(1, 1.2), mk(2, 1.42), mk(3, 1.48), mk(4, 1.8)]; m[2].league = 'Alta';
+  const c = pickChallenge({ matches: m }); assert.equal(c.selections.length, 1); assert.equal(c.selections[0].matchId, 2);
+  assert.equal(pickChallenge({ matches: m, filters: { leagues: ['Alta'] } }).selections[0].matchId, 3);
+  assert.equal(pickChallenge({ matches: [mk(1, 1.2)] }).error, 'no_challenge');
+});
+
+test('filtru de ligi la generator + mod Cotă 2', () => {
+  const m = Array.from({ length: 10 }, (_, i) => { const x = mk(i + 1, 1.25 + (i % 3) * 0.05); x.league = i < 5 ? 'A' : 'B'; return x; });
+  const t = generateTicket({ matches: m, mode: 'c2', filters: { leagues: ['A'] }, random: rnd(9) });
+  assert.ok(!t.error, JSON.stringify(t)); assert.ok(t.totalOdds >= 1.85 && t.totalOdds <= 2.3); assert.ok(t.selections.every(s => s.league === 'A'));
 });
