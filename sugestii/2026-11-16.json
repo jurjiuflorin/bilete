@@ -12,7 +12,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.42,
     "p": 0.672,
-    "why": "Namibia dă 0,2 și primește 2,2 goluri pe meci; Camerun dă 1,4 și primește 0,8."
+    "why": "Namibia dă 0,2 și primește 2,2 goluri pe meci; Camerun dă 1,4 și primește 0,8.",
+    "rez": "won",
+    "scor": "0-3"
    },
    {
     "id": 15339578,
@@ -22,7 +24,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.4,
     "p": 0.662,
-    "why": "Germania dă 1,9 și primește 0,9 goluri pe meci; Olanda dă 2,7 și primește 1,1."
+    "why": "Germania dă 1,9 și primește 0,9 goluri pe meci; Olanda dă 2,7 și primește 1,1.",
+    "rez": "won",
+    "scor": "5-0"
    },
    {
     "id": 15737162,
@@ -32,7 +36,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.8,
     "p": 0.561,
-    "why": "Sudan dă 0,6 și primește 2,1 goluri pe meci; Senegal dă 2,1 și primește 1,3."
+    "why": "Sudan dă 0,6 și primește 2,1 goluri pe meci; Senegal dă 2,1 și primește 1,3.",
+    "rez": "won",
+    "scor": "2-4"
    },
    {
     "id": 15339577,
@@ -42,7 +48,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.65,
     "p": 0.545,
-    "why": "Grecia dă 0,7 și primește 1,4 goluri pe meci; Serbia dă 0,9 și primește 2,4."
+    "why": "Grecia dă 0,7 și primește 1,4 goluri pe meci; Serbia dă 0,9 și primește 2,4.",
+    "rez": "lost",
+    "scor": "1-0"
    },
    {
     "id": 15737170,
@@ -52,7 +60,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.49,
     "p": 0.471,
-    "why": "Somalia dă 0,3 și primește 1,3 goluri pe meci; Ghana dă 0,8 și primește 1,4."
+    "why": "Somalia dă 0,3 și primește 1,3 goluri pe meci; Ghana dă 0,8 și primește 1,4.",
+    "rez": "lost",
+    "scor": "0-1"
    }
   ],
   "gg": [
@@ -64,7 +74,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.41,
     "p": 0.664,
-    "why": "Germania marchează 1,9 și primește 0,9 pe meci; Olanda marchează 2,7 și primește 1,1."
+    "why": "Germania marchează 1,9 și primește 0,9 pe meci; Olanda marchează 2,7 și primește 1,1.",
+    "rez": "lost",
+    "scor": "5-0"
    },
    {
     "id": 15339577,
@@ -74,7 +86,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.82,
     "p": 0.529,
-    "why": "Grecia marchează 0,7 și primește 1,4 pe meci; Serbia marchează 0,9 și primește 2,4."
+    "why": "Grecia marchează 0,7 și primește 1,4 pe meci; Serbia marchează 0,9 și primește 2,4.",
+    "rez": "lost",
+    "scor": "1-0"
    },
    {
     "id": 15339587,
@@ -84,7 +98,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.88,
     "p": 0.482,
-    "why": "Elvetia marchează 2 și primește 0,4 pe meci; Scotia marchează 1,4 și primește 1,1."
+    "why": "Elvetia marchează 2 și primește 0,4 pe meci; Scotia marchează 1,4 și primește 1,1.",
+    "rez": "lost",
+    "scor": "4-0"
    }
   ],
   "cornere": [
@@ -96,7 +112,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.36,
     "p": 0.82,
-    "why": "Media cornerelor: Germania 6, Olanda 7, adică 13 pe meci."
+    "why": "Media cornerelor: Germania 6, Olanda 7, adică 13 pe meci.",
+    "rez": "lost",
+    "scor": "5-0",
+    "total": 5
    },
    {
     "id": 15339587,
@@ -106,7 +125,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.41,
     "p": 0.785,
-    "why": "Media cornerelor: Elvetia 6,8, Scotia 5, adică 11,8 pe meci."
+    "why": "Media cornerelor: Elvetia 6,8, Scotia 5, adică 11,8 pe meci.",
+    "rez": "won",
+    "scor": "4-0",
+    "total": 11
    },
    {
     "id": 15737163,
@@ -116,7 +138,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.49,
     "p": 0.754,
-    "why": "Media cornerelor: Namibia 4, Camerun 7,3, adică 11,3 pe meci."
+    "why": "Media cornerelor: Namibia 4, Camerun 7,3, adică 11,3 pe meci.",
+    "rez": "lost",
+    "scor": "0-3",
+    "total": 7
    },
    {
     "id": 15737162,
@@ -126,7 +151,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.35,
     "p": 0.699,
-    "why": "Media cornerelor: Sudan 4,7, Senegal 4,5, adică 9,2 pe meci."
+    "why": "Media cornerelor: Sudan 4,7, Senegal 4,5, adică 9,2 pe meci.",
+    "rez": "won",
+    "scor": "2-4",
+    "total": 12
    },
    {
     "id": 15737170,
@@ -136,7 +164,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.42,
     "p": 0.67,
-    "why": "Media cornerelor: Somalia 2,3, Ghana 6,7, adică 9 pe meci."
+    "why": "Media cornerelor: Somalia 2,3, Ghana 6,7, adică 9 pe meci.",
+    "rez": "won",
+    "scor": "0-1",
+    "total": 8
    }
   ],
   "sub": [
@@ -148,7 +179,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.56,
     "p": 0.735,
-    "why": "Somalia dă 0,3 și primește 1,3 goluri pe meci; Ghana dă 0,8 și primește 1,4. Se urmărește doar pentru statistică."
+    "why": "Somalia dă 0,3 și primește 1,3 goluri pe meci; Ghana dă 0,8 și primește 1,4. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "0-1"
    },
    {
     "id": 15339577,
@@ -158,7 +191,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.49,
     "p": 0.668,
-    "why": "Grecia dă 0,7 și primește 1,4 goluri pe meci; Serbia dă 0,9 și primește 2,4. Se urmărește doar pentru statistică."
+    "why": "Grecia dă 0,7 și primește 1,4 goluri pe meci; Serbia dă 0,9 și primește 2,4. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "1-0"
    },
    {
     "id": 15737163,
@@ -168,7 +203,9 @@
     "sel": "Sub 2.5 goluri",
     "od": 1.54,
     "p": 0.598,
-    "why": "Namibia dă 0,2 și primește 2,2 goluri pe meci; Camerun dă 1,4 și primește 0,8. Se urmărește doar pentru statistică."
+    "why": "Namibia dă 0,2 și primește 2,2 goluri pe meci; Camerun dă 1,4 și primește 0,8. Se urmărește doar pentru statistică.",
+    "rez": "lost",
+    "scor": "0-3"
    },
    {
     "id": 15339578,
@@ -178,7 +215,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.78,
     "p": 0.55,
-    "why": "Germania dă 1,9 și primește 0,9 goluri pe meci; Olanda dă 2,7 și primește 1,1. Se urmărește doar pentru statistică."
+    "why": "Germania dă 1,9 și primește 0,9 goluri pe meci; Olanda dă 2,7 și primește 1,1. Se urmărește doar pentru statistică.",
+    "rez": "lost",
+    "scor": "5-0"
    },
    {
     "id": 15339587,
@@ -188,7 +227,9 @@
     "sel": "Sub 2.5 goluri",
     "od": 1.82,
     "p": 0.531,
-    "why": "Elvetia dă 2 și primește 0,4 goluri pe meci; Scotia dă 1,4 și primește 1,1. Se urmărește doar pentru statistică."
+    "why": "Elvetia dă 2 și primește 0,4 goluri pe meci; Scotia dă 1,4 și primește 1,1. Se urmărește doar pentru statistică.",
+    "rez": "lost",
+    "scor": "4-0"
    }
   ]
  }
