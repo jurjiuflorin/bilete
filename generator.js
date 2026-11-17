@@ -8,7 +8,7 @@ const toast = m => { const t = $('#toast'); t.textContent = m; t.classList.add('
 
 const MODE_INFO = { '5x': 'Cel mai sigur', '10x': 'Risc mic', '25x': 'Risc mediu', '50x': 'Risc mare' };
 let DATA = { matches: [] }, SCORES = {}, mode = LS.get('gen_mode', '5x'), types = new Set(LS.get('gen_types', DEFAULT_TYPES)), ticket = null;
-let minO = LS.get('gen_minO', ''), maxO = LS.get('gen_maxO', ''), leagues = new Set(LS.get('gen_leagues', [])), TEST = { days: {} }, kmin = +LS.get('gen_k', 4);
+let minO = LS.get('gen_minO', ''), maxO = LS.get('gen_maxO', ''), leagues = new Set(LS.get('gen_leagues', [])), TEST = { days: {} }, CODES = {}, kmin = +LS.get('gen_k', 4);
 
 function sub() {
   const n = M().filter(m => m.vulnerable && new Date(m.kickoff) > Date.now()).length;
@@ -19,6 +19,7 @@ async function load() {
   try { DATA = await (await fetch('generator/azi.json' + bust, { cache: 'no-store' })).json(); } catch (e) { DATA = { matches: [] }; }
   try { SCORES = await (await fetch('generator/scoruri.json' + bust, { cache: 'no-store' })).json(); } catch (e) { SCORES = {}; }
   sub();
+  try { CODES = await (await fetch('generator/coduri.json' + bust, { cache: 'no-store' })).json(); } catch (e) { CODES = {}; }
   try { TEST = await (await fetch('generator/bilete.json' + bust, { cache: 'no-store' })).json(); } catch (e) { TEST = { days: {} }, kmin = +LS.get('gen_k', 4); }
   renderK(); renderVul(); renderMine(); renderLeagues(); renderTypes(); renderTest();
 }
@@ -91,11 +92,20 @@ function renderMine() {
   $('#mstats').innerHTML = L.length ? `<div class="g-sum"><div><b>${L.length}</b><span>generate</span></div><div><b>${w}</b><span>câștigate</span></div><div><b>${l}</b><span>pierdute</span></div><div><b>${L.length - w - l}</b><span>în așteptare</span></div></div>` : '';
   $('#mine').innerHTML = L.length ? J.map(({ t, sels, st }) => `<div class="g-mine-t ${st || ''}" data-id="${t.id}"><div class="h"><b>${LBL[t.mode] || 'Bilet'} · cotă ${ticketOdds(sels).toFixed(2)}</b><span>${STAT_[st] || 'în așteptare'} · ${hhmm(t.generatedAt)}</span></div>
       <ul>${sels.map(s => `<li>${esc(s.home)} – ${esc(s.away)}: ${esc(typeLabel(s.type))} (${s.odds.toFixed(2)})${s.res ? `<span class="g-res ${s.res}">${STAT_[s.res]}</span>` : isCornerType(s.type) ? ' <i>(cornere: decontare manuală)</i>' : ''}</li>`).join('')}</ul>
-      <div class="g-act"><label>Cod agenție<input class="g-code" value="${esc(t.code || '')}" placeholder="ex. 990O-KLTRBB" maxlength="14"></label><button type="button" class="g-cp">Copiază</button><button type="button" class="g-del">Șterge</button></div></div>`).join('') : '<div class="g-msg">Încă nu ai bilete generate. Generează unul din tabul „Generator” și apare aici automat.</div>';
+      ${codeBox(t)}<div class="g-act"><label>Cod agenție<input class="g-code" value="${esc(CODES[t.id] ? CODES[t.id].code : t.code || '')}" placeholder="ex. 990O-KLTRBB" maxlength="14"></label><button type="button" class="g-cp">Copiază</button><button type="button" class="g-del">Șterge</button></div></div>`).join('') : '<div class="g-msg">Încă nu ai bilete generate. Generează unul din tabul „Generator” și apare aici automat.</div>';
+}
+const REPO = 'jurjiuflorin/bilete';
+function reqUrl(t) { const body = JSON.stringify({ id: t.id, mode: t.mode, total: t.totalOdds, sel: t.selections.map(s => [s.matchId, s.type, s.odds]) });
+  return `https://github.com/${REPO}/issues/new?labels=cod&title=${encodeURIComponent('Cod Superbet · bilet ' + t.id)}&body=${encodeURIComponent('Cerere de cod de agenție (nu se plasează nimic). Trimite issue-ul; codul apare pe site la bilet.\n\n```json\n' + body + '\n```')}`; }
+function codeBox(t) {
+  const c = CODES[t.id];
+  if (c) return `<div class="g-cod"><small>COD SUPERBET (agenție)</small><b>${esc(c.code)}</b><span>${c.odds ? 'cotă la pregătire ' + c.odds + ' · ' : ''}${hhmm(c.at)} · tu decizi dacă îl plasezi</span></div>`;
+  if (t.req) return `<div class="g-cod wait"><small>Cerere trimisă</small><span>Aștept codul. Apare aici după ce îl pregătesc; reîncarcă pagina mai târziu.</span> <a href="${reqUrl(t)}" target="_blank" rel="noopener" class="g-lnk2">Retrimite</a></div>`;
+  return `<div class="g-cod"><a href="${reqUrl(t)}" target="_blank" rel="noopener" class="g-ask" data-ask="${t.id}">Cere cod Superbet</a></div>`;
 }
 const STAT_ = { won: 'CÂȘTIGAT', lost: 'PIERDUT', void: 'ANULAT' };
 $('#mine').addEventListener('input', e => { if (!e.target.classList.contains('g-code')) return; const id = +e.target.closest('.g-mine-t').dataset.id; const L = LS.get('gen_mine', []); const t = L.find(x => x.id === id); if (t) { t.code = e.target.value.trim().toUpperCase(); LS.set('gen_mine', L); } });
-$('#mine').addEventListener('click', e => { const card = e.target.closest('.g-mine-t'); if (!card) return; const id = +card.dataset.id; const L = LS.get('gen_mine', []); const t = L.find(x => x.id === id); if (!t) return;
+$('#mine').addEventListener('click', e => { const ask = e.target.closest('.g-ask'); if (ask) { const L = LS.get('gen_mine', []), t = L.find(x => x.id === +ask.dataset.ask); if (t) { t.req = Date.now(); LS.set('gen_mine', L); setTimeout(renderMine, 400); } return; } const card = e.target.closest('.g-mine-t'); if (!card) return; const id = +card.dataset.id; const L = LS.get('gen_mine', []); const t = L.find(x => x.id === id); if (!t) return;
   if (e.target.classList.contains('g-del')) { if (e.target.dataset.sure) { LS.set('gen_mine', L.filter(x => x.id !== id)); renderMine(); } else { e.target.dataset.sure = '1'; e.target.textContent = 'Sigur?'; setTimeout(() => { e.target.dataset.sure = ''; e.target.textContent = 'Șterge'; }, 2500); } }
   if (e.target.classList.contains('g-cp')) { const txt = `${LBL[t.mode] || 'Bilet'} · cotă ${ticketOdds(t.selections).toFixed(2)}${t.code ? ' · cod ' + t.code : ''}\n` + t.selections.map(s => `${hhmm(s.kickoff)} ${s.home} – ${s.away}: ${typeLabel(s.type)} (${s.odds.toFixed(2)})`).join('\n'); navigator.clipboard && navigator.clipboard.writeText(txt).then(() => toast('Copiat'), () => toast('Nu am putut copia')); } });
 
