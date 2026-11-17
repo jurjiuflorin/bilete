@@ -12,9 +12,9 @@ if (a[0] === '--done') {
   const [, issue, tid, code, odds] = a; if (!/^[0-9A-Z]{4}-[0-9A-Z]{6}$/.test(code || '')) { console.error('cod invalid'); process.exit(1); }
   const f = 'generator/coduri.json', J = fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {};
   J[tid] = { code, odds: odds ? +odds : null, at: new Date().toISOString() }; fs.writeFileSync(f, JSON.stringify(J, null, 1) + '\n');
-  gh('issue', 'comment', issue, '-R', REPO, '-b', 'Cod pregătit: ' + code + '. Apare pe site la bilet. Nu s-a plasat nimic.'); gh('issue', 'close', issue, '-R', REPO); console.log('ok', tid, code); process.exit(0);
+  gh('api', '-X', 'POST', `repos/${REPO}/issues/${issue}/comments`, '-f', 'body=Cod pregătit: ' + code + '. Apare pe site la bilet. Nu s-a plasat nimic.'); gh('api', '-X', 'PATCH', `repos/${REPO}/issues/${issue}`, '-f', 'state=closed'); console.log('ok', tid, code); process.exit(0);
 }
-const issues = JSON.parse(gh('issue', 'list', '-R', REPO, '--label', 'cod', '--state', 'open', '--json', 'number,author,body,title', '-L', '30'));
+const issues = JSON.parse(gh('api', `repos/${REPO}/issues?labels=cod&state=open&per_page=30`)).filter(i => !i.pull_request).map(i => ({ number: i.number, author: i.user, body: i.body, title: i.title }));
 const out = [];
 for (const i of issues) {
   if (!i.author || i.author.login !== OWNER) { console.error('ignor issue #' + i.number + ' (autor ' + (i.author && i.author.login) + ')'); continue; }
