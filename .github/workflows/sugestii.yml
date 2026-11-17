@@ -35,6 +35,8 @@ jobs:
           node scripts/sugestii-rezultate.mjs 2>&1 | tee -a sugestii/ultima-rulare.txt
       - name: Commit
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
           git add sugestii candidati
           if git diff --cached --quiet; then exit 0; fi
           git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -m "Sugestii $(TZ=Europe/Bucharest date +%F)"

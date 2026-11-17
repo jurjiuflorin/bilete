@@ -24,6 +24,8 @@ jobs:
           node scripts/rezultate.mjs --legs 2>&1 | tee -a ultima-validare.txt
       - name: Commit
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
           git add settle.json legs.json 2>/dev/null || git add settle.json
           if git diff --cached --quiet; then exit 0; fi
           git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -m "Validare automata $(TZ=Europe/Bucharest date +'%F %H:%M')"

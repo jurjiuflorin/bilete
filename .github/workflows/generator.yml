@@ -26,6 +26,8 @@ jobs:
       - name: Commit
         run: |
           mkdir -p generator && mv generator-rulare.txt generator/ultima-rulare.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
           git add generator
           if git diff --cached --quiet; then exit 0; fi
           git -c user.name="github-actions[bot]" -c user.email="41898299+github-actions[bot]@users.noreply.github.com" commit -m "Generator $(TZ=Europe/Bucharest date +'%F %H:%M')"
