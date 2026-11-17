@@ -1224,16 +1224,28 @@ function viewResults() {
   for (const r of last) { const d = el('button', 'rs-dot ' + (r.status === 'câștigat' ? 'w' : 'l'), r.status === 'câștigat' ? '✓' : '✗'); d.type = 'button'; d.title = r.tip + ', cotă ' + fmtOdd(r.cota) + ', ' + fmtDM(new Date(r.data)); d.onclick = () => goToTicket(r.id); strip.append(d); }
   sec0.append(strip); list.append(sec0);
   // pe tip de bilet
-  const table = (title, sub, head, data, row) => {
+  const table = (title, sub, head, data, row, keys) => {
     const sec = el('section', 'day'); const h = el('h2', null, title); if (sub) h.append(el('small', null, sub)); sec.append(h);
-    const box = el('div', 'rs-table'); const t = el('table'); const tr = el('tr'); head.forEach(x => tr.append(el('th', null, x))); const th = el('thead'); th.append(tr); t.append(th);
-    const tb = el('tbody'); data.forEach(d => { const r = el('tr'); row(d).forEach((c, i) => { const td = el('td'); if (c instanceof Node) td.append(c); else td.textContent = c; if (i) td.className = 'n'; r.append(td); }); tb.append(r); }); t.append(tb); box.append(t); sec.append(box); list.append(sec);
+    const box = el('div', 'rs-table'); const t = el('table'); const tr = el('tr'); const th = el('thead'); th.append(tr); t.append(th);
+    const tb = el('tbody'); t.append(tb);
+    let sk = -1, dir = -1;
+    const draw = () => {
+      let arr = data.slice();
+      if (sk >= 0) arr.sort((a, b) => { const x = keys[sk](a), y = keys[sk](b); const c = typeof x === 'string' ? x.localeCompare(y, 'ro') : x - y; return dir * c || b.n - a.n; });
+      tb.replaceChildren();
+      arr.forEach(d => { const r = el('tr'); row(d).forEach((c, i) => { const td = el('td'); if (c instanceof Node) td.append(c); else td.textContent = c; if (i) td.className = 'n'; r.append(td); }); tb.append(r); });
+      tr.replaceChildren();
+      head.forEach((x, i) => { const c = el('th', null, x + (i === sk ? (dir < 0 ? ' ▼' : ' ▲') : '')); if (keys && keys[i]) { c.style.cursor = 'pointer'; c.title = 'Sortează după ' + x; c.onclick = () => { if (sk === i) dir = -dir; else { sk = i; dir = i === 0 ? 1 : -1; } draw(); }; } tr.append(c); });
+    };
+    draw(); box.append(t); sec.append(box); list.append(sec);
   };
   const bar = (w, n) => { const f = el('span', 'rs-bar'); const i = el('i'); i.style.width = Math.round(n ? 90 * w / n : 0) + 'px'; f.append(i, el('em', null, pctS(w, n))); return f; };
   table('Pe categorie', 'cât de des intră fiecare', ['Categorie', 'Bilete', 'Câștigate', 'Cotă medie', 'Profit (1 leu)'], D.byTip,
-    d => [d.k, String(d.n), bar(d.w, d.n), fmtOdd(d.avg), money(d.profit)]);
+    d => [d.k, String(d.n), bar(d.w, d.n), fmtOdd(d.avg), money(d.profit)],
+    [d => d.k, d => d.n, d => d.n ? d.w / d.n : 0, d => d.avg, d => d.profit]);
   if (D.byMarket.length) table('Pe tip de pariu', 'fiecare meci de pe bilete, judecat separat', ['Piață', 'Meciuri', 'Intrate'], D.byMarket,
-    d => [d.k, String(d.n), bar(d.w, d.n)]);
+    d => [d.k, String(d.n), bar(d.w, d.n)],
+    [d => d.k, d => d.n, d => d.n ? d.w / d.n : 0]);
   list.append(el('p', 'note rs-note', 'Meciurile se judecă din scorurile finale scrise pe bilet. Cornerele și cartonașele intră în calcul doar când numărul lor e trecut la rezultat. Statisticile se schimbă pe măsură ce se încheie bilete noi.'));
 }
 
