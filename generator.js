@@ -114,7 +114,7 @@ function renderVul() {
 // ---- rubrica „Bilete generator (test)” ----
 const STAT = { won: 'CÂȘTIGAT', lost: 'PIERDUT', void: 'ANULAT' };
 function renderTest() {
-  const days = Object.keys(TEST.days || {}).sort().reverse(), all = days.flatMap(d => Object.values(TEST.days[d].tickets));
+  const days = Object.keys(TEST.days || {}).filter(d => Object.keys(TEST.days[d].tickets || {}).length).sort().reverse(), all = days.flatMap(d => Object.values(TEST.days[d].tickets));
   const row = (label, L) => { const w = L.filter(t => t.status === 'won').length, l = L.filter(t => t.status === 'lost').length, p = L.length - w - l, dec = w + l;
     const roi = dec ? L.filter(t => t.status).reduce((s, t) => s + (t.status === 'won' ? t.totalOdds - 1 : t.status === 'lost' ? -1 : 0), 0) : 0;
     return `<tr><td>${label}</td><td>${L.length}</td><td>${w}</td><td>${l}</td><td>${p}</td><td>${dec ? Math.round(100 * w / dec) + '%' : '–'}</td><td>${dec ? (roi >= 0 ? '+' : '') + roi.toFixed(1) : '–'}</td></tr>`; };

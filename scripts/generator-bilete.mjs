@@ -36,6 +36,7 @@ for (const d of Object.values(store.days)) for (const t of Object.values(d.ticke
   for (const s of t.selections) if (!s.res && sc[s.matchId]) s.res = judgeSelection(s, sc[s.matchId]);
   t.status = judgeTicket(t.selections); t.finalOdds = ticketOdds(t.selections);
 }
+for (const k of Object.keys(store.days)) if (!Object.keys(store.days[k].tickets).length) delete store.days[k]; // fără zile goale
 // 3. păstrăm ultimele 60 de zile
 for (const k of Object.keys(store.days).sort().slice(0, -60)) delete store.days[k];
 store.updated = new Date(now).toISOString();
