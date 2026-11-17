@@ -131,3 +131,6 @@ body.gpage .toast{background:var(--ac);color:var(--ac-i)}
 .g-ask{display:inline-block;background:var(--ac);color:var(--ac-i);text-decoration:none;font-weight:700;padding:10px 16px;border-radius:12px}
 .g-lnk2{color:var(--dim);font-size:13px}
 .g-cod.wait{border-style:solid;border-color:var(--ln)}
+
+.g-tk-f .g-primary{background:var(--ac);color:var(--ac-i);border-color:var(--ac)}
+.g-tk-f button:disabled{opacity:.6;cursor:default}
