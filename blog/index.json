@@ -1,5 +1,320 @@
 [
  {
+  "id": "2026-11-17-rezumat",
+  "data": "2026-11-17",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 17 noiembrie: 2 câștigate, 3 pierdute",
+  "intro": "Pariul zilei pierdut · Challenge 1.40 câștigat · Cotă 2 câștigat · Cotă 5 pierdut · Cotă 10 pierdut",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [],
+    "li": [
+     "Pariul zilei: Polonia – Suedia Polonia–Suedia 1-1 (Suedia peste 1.5 goluri)",
+     "Cotă 5: Arabia Saudita – Uzbekistan Arabia Saudită–Uzbekistan 1-2 (Peste 1.5); Danemarca – Norvegia Danemarca–Norvegia 2-3 (GG); Ucraina – Georgia Ucraina–Georgia 1-0 (Peste 7.5 cornere); Rwanda – Mali Rwanda–Mali 0-2 (Rwanda peste 0.5 goluri)",
+     "Cotă 10: Polonia – Suedia Polonia–Suedia 1-1 (Peste 2.5); Ucraina – Georgia Ucraina–Georgia 1-0 (Peste 7.5 cornere); Rwanda – Mali Rwanda–Mali 0-2 (Rwanda peste 0.5 goluri)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 13."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "7 bilete câștigate din 14 validate (50%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 2.12,
+    "sansa": 55.6,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "Polonia – Suedia",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "Suedia peste 1.5 goluri",
+      "cota": 2.12,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Polonia dă 1,7 și primește 1,6 goluri pe meci; Suedia dă 1,9 și primește 1,7.",
+       "Suedia marchează 1,9 pe meci, iar Polonia primește 1,6.",
+       "Meciuri directe analizate: 5.",
+       "Suedia peste 1.5 goluri: piață 0.44, formă 0.55, H2H 0.80, p=0.56; absențe neverificate în detaliu"
+      ],
+      "p": 56,
+      "pm": 44,
+      "pf": 55,
+      "ph": 80,
+      "val": 8,
+      "rezultat": "Polonia–Suedia 1-1"
+     }
+    ]
+   },
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.36,
+    "sansa": 79,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "18:00",
+      "meci": "Sierra Leone – RD Congo",
+      "liga": "Cupa Africii (calificări)",
+      "selectie": "Peste 1.5",
+      "cota": 1.36,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Sierra Leone dă 1,1 și primește 1,4 goluri pe meci; RD Congo dă 1,4 și primește 1,2.",
+       "Meciurile Sierra Leone au în medie 2,5 goluri, cele ale RD Congo 2,6.",
+       "Meciuri directe analizate: 4.",
+       "Peste 1.5: piață 0.68, formă 0.80, H2H 1.00, p=0.79; absențe neverificate în detaliu"
+      ],
+      "p": 79,
+      "pm": 68,
+      "pf": 80,
+      "ph": 100,
+      "val": 5,
+      "rezultat": "Sierra Leone–RD Congo 1-1"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.97,
+    "sansa": 53.7,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "17:30",
+      "meci": "Arabia Saudita – Uzbekistan",
+      "liga": "Amicale internaționale",
+      "selectie": "Arabia Saudita peste 0.5 goluri",
+      "cota": 1.32,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Arabia Saudita dă 1,2 și primește 0,7 goluri pe meci; Uzbekistan dă 1,2 și primește 2,2.",
+       "Arabia Saudita marchează 1,2 pe meci, iar Uzbekistan primește 2,2.",
+       "Meciuri directe analizate: 5.",
+       "Arabia Saudita peste 0.5 goluri: piață 0.70, formă 0.75, H2H 1.00, p=0.78; absențe neverificate în detaliu"
+      ],
+      "p": 78,
+      "pm": 71,
+      "pf": 75,
+      "ph": 100,
+      "val": 2,
+      "rezultat": "Arabia Saudita–Uzbekistan 1-2"
+     },
+     {
+      "ora": "18:00",
+      "meci": "Kenya – Africa de Sud",
+      "liga": "Cupa Africii (calificări)",
+      "selectie": "Peste 1.5",
+      "cota": 1.49,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Kenya dă 1,2 și primește 1,5 goluri pe meci; Africa de Sud dă 1,3 și primește 0,7.",
+       "Meciurile Kenya au în medie 2,7 goluri, cele ale Africa de Sud 2,0.",
+       "Meciuri directe analizate: 3.",
+       "Peste 1.5: piață 0.62, formă 0.60, H2H 1.00, p=0.69; absențe neverificate în detaliu"
+      ],
+      "p": 69,
+      "pm": 62,
+      "pf": 60,
+      "ph": 100,
+      "val": 2,
+      "rezultat": "Kenya–Africa de Sud 1-2"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 4.57,
+    "sansa": 22.5,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "17:30",
+      "meci": "Arabia Saudita – Uzbekistan",
+      "liga": "Amicale internaționale",
+      "selectie": "Peste 1.5",
+      "cota": 1.36,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Arabia Saudita dă 1,2 și primește 0,7 goluri pe meci; Uzbekistan dă 1,2 și primește 2,2.",
+       "Meciurile Arabia Saudita au în medie 1,9 goluri, cele ale Uzbekistan 3,4.",
+       "Meciuri directe analizate: 5.",
+       "Peste 1.5: piață 0.68, formă 0.75, H2H 1.00, p=0.77; absențe neverificate în detaliu"
+      ],
+      "p": 77,
+      "pm": 68,
+      "pf": 75,
+      "ph": 100,
+      "val": 4,
+      "rezultat": "Arabia Saudită–Uzbekistan 1-2"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Danemarca – Norvegia",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "GG",
+      "cota": 1.4,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Danemarca dă 2,0 și primește 1,4 goluri pe meci; Norvegia dă 1,8 și primește 1,8.",
+       "Ambele echipe marchează doar dacă atacurile (2,0 și 1,8) trec de apărările adverse (1,8 și 1,4).",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "GG: piață 0.67, formă 0.80, p=0.73; absențe neverificate în detaliu"
+      ],
+      "p": 74,
+      "pm": 67,
+      "pf": 80,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Danemarca–Norvegia 2-3"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Ucraina – Georgia",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.43,
+      "linii": [
+       "Meciuri directe analizate: 4.",
+       "Media cornerelor pe meci: 9,0 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Peste 7.5 cornere: piață 0.65, formă 0.68, p=0.66; absențe neverificate în detaliu"
+      ],
+      "p": 66,
+      "pm": 65,
+      "pf": 68,
+      "ph": null,
+      "val": -4,
+      "rezultat": "Ucraina–Georgia 1-0"
+     },
+     {
+      "ora": "21:00",
+      "meci": "Rwanda – Mali",
+      "liga": "Cupa Africii (calificări)",
+      "selectie": "Rwanda peste 0.5 goluri",
+      "cota": 1.68,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Rwanda dă 1,4 și primește 1,0 goluri pe meci; Mali dă 1,0 și primește 0,9.",
+       "Rwanda marchează 1,4 pe meci, iar Mali primește 0,9.",
+       "Meciuri directe analizate: 5.",
+       "Rwanda peste 0.5 goluri: piață 0.55, formă 0.65, H2H 0.60, p=0.60; absențe neverificate în detaliu"
+      ],
+      "p": 60,
+      "pm": 55,
+      "pf": 65,
+      "ph": 60,
+      "val": 0,
+      "rezultat": "Rwanda–Mali 0-2"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10",
+    "cota": 9.04,
+    "sansa": 12,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "18:00",
+      "meci": "Kenya – Africa de Sud",
+      "liga": "Cupa Africii (calificări)",
+      "selectie": "Peste 1.5",
+      "cota": 1.49,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Kenya dă 1,2 și primește 1,5 goluri pe meci; Africa de Sud dă 1,3 și primește 0,7.",
+       "Meciurile Kenya au în medie 2,7 goluri, cele ale Africa de Sud 2,0.",
+       "Meciuri directe analizate: 3.",
+       "Peste 1.5: piață 0.62, formă 0.60, H2H 1.00, p=0.69; absențe neverificate în detaliu"
+      ],
+      "p": 69,
+      "pm": 62,
+      "pf": 60,
+      "ph": 100,
+      "val": 2
+     },
+     {
+      "ora": "21:45",
+      "meci": "Polonia – Suedia",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "Peste 2.5",
+      "cota": 1.54,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Polonia dă 1,7 și primește 1,6 goluri pe meci; Suedia dă 1,9 și primește 1,7.",
+       "Meciurile Polonia au în medie 3,3 goluri, cele ale Suedia 3,6.",
+       "Meciuri directe analizate: 5.",
+       "Peste 2.5: piață 0.62, formă 0.70, H2H 0.80, p=0.69; absențe neverificate în detaliu"
+      ],
+      "p": 69,
+      "pm": 62,
+      "pf": 70,
+      "ph": 80,
+      "val": 4,
+      "rezultat": "Polonia–Suedia 1-1"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Ucraina – Georgia",
+      "liga": "Liga Națiunilor UEFA",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.43,
+      "linii": [
+       "Meciuri directe analizate: 4.",
+       "Media cornerelor pe meci: 9,0 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Peste 7.5 cornere: piață 0.65, formă 0.68, p=0.66; absențe neverificate în detaliu"
+      ],
+      "p": 66,
+      "pm": 65,
+      "pf": 68,
+      "ph": null,
+      "val": -4,
+      "rezultat": "Ucraina–Georgia 1-0"
+     },
+     {
+      "ora": "18:00",
+      "meci": "Gambia – Coasta de Fildes",
+      "liga": "Cupa Africii (calificări)",
+      "selectie": "Coasta de Fildes câștigă",
+      "cota": 1.64,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Gambia dă 2,6 și primește 1,7 goluri pe meci; Coasta de Fildes dă 1,4 și primește 0,7.",
+       "Diferența de goluri pe meci: Gambia 0,9, Coasta de Fildes 0,7.",
+       "Meciuri directe analizate: 5.",
+       "Coasta de Fildes câștigă: piață 0.56, formă 0.55, H2H 1.00, p=0.64; absențe neverificate în detaliu"
+      ],
+      "p": 64,
+      "pm": 56,
+      "pf": 55,
+      "ph": 100,
+      "val": 3
+     },
+     {
+      "ora": "21:00",
+      "meci": "Rwanda – Mali",
+      "liga": "Cupa Africii (calificări)",
+      "selectie": "Rwanda peste 0.5 goluri",
+      "cota": 1.68,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Rwanda dă 1,4 și primește 1,0 goluri pe meci; Mali dă 1,0 și primește 0,9.",
+       "Rwanda marchează 1,4 pe meci, iar Mali primește 0,9.",
+       "Meciuri directe analizate: 5.",
+       "Rwanda peste 0.5 goluri: piață 0.55, formă 0.65, H2H 0.60, p=0.60; absențe neverificate în detaliu"
+      ],
+      "p": 60,
+      "pm": 55,
+      "pf": 65,
+      "ph": 60,
+      "val": 0,
+      "rezultat": "Rwanda–Mali 0-2"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-16-rezumat",
   "data": "2026-11-16",
   "tip": "rezumat",
