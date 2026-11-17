@@ -3572,5 +3572,140 @@
    "Duminică: Juventus – Venezia – Juventus câștigă: Piață 69%, formă 64% (Juventus loc 7, 5 clean sheet-uri, 8.5 cornere/meci; Venezia penultima 2V 9Î, 1.9 primite/meci), p estimat 66%; absențe neverificate."
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-17-baschet20",
+  "data": "2026-11-17",
+  "tip": "Baschet",
+  "cota": 20.08,
+  "sansa": 0.036,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "20:00 Zalgiris Kaunas – FC Bayern Basketball: Zalgiris Kaunas câștigă (1.28) · 20:00 Fenerbahce – LDLC ASVEL: Fenerbahce câștigă (1.20) · 21:30 FC Barcelona – Paris Basketball: FC Barcelona câștigă (1.30) · 22:00 Virtus Bologna – Panathinaikos: Panathinaikos câștigă (1.30) · 06:00 Los Angeles Lakers – Charlotte Hornets: Los Angeles Lakers câștigă (1.20) · 19:00 Besiktas – Real Madrid: Real Madrid câștigă (1.35) · 02:00 Indiana Pacers – Houston Rockets: Houston Rockets câștigă (1.30) · 02:00 Miami Heat – Milwaukee Bucks: Miami Heat câștigă (1.20) · 04:30 Denver Nuggets – Boston Celtics: Boston Celtics câștigă (1.45) · 03:00 San Antonio Spurs – Los Angeles Clippers: San Antonio Spurs câștigă (1.16) · 02:30 Detroit Pistons – Toronto Raptors: Detroit Pistons câștigă (1.40) · 03:00 Oklahoma City Thunder – New Orleans Pelicans: Oklahoma City Thunder câștigă (1.30)",
+  "rezultat": "",
+  "motive": [
+   "EuroLeague: Zalgiris 7-4 (+36) acasă vs Bayern 3-8 (-92). Bayern a câștigat totuși la ASVEL (99-95). Informații despre absențe: negăsite; ora 20:00 din calendarul Bayern, de verificat.",
+   "EuroLeague: Fenerbahce 7-4 (+49) acasă vs ASVEL 4-7 (-51). Braxton Key are o problemă la deget (Rotowire, nedatată); în rest nu am găsit absențe.",
+   "EuroLeague: Barcelona 8-3 (+30) acasă vs Paris 5-6 (-36). Diferența de puncte a Barcelonei e modestă, de aceea cota nu e foarte mică; absențe: negăsite.",
+   "EuroLeague: Panathinaikos 8-3 (+84) în deplasare vs Virtus 4-7 (-51); Baldasso (Virtus) revine în lot. Alte absențe: negăsite.",
+   "NBA: Lakers 12-2 (+7.9) acasă, ultimele: 131-123 la Phoenix; Reaves incert. Charlotte 4-9 (-10.7), fără Knueppel și Schroder (ESPN). Ora variază între surse (05:00/06:00).",
+   "EuroLeague: Real Madrid 7-4 (+95) în deplasare vs Besiktas 5-6 (-28). Madrid a pierdut totuși 4 din 11; Maledon revine. Absențe Besiktas: negăsite.",
+   "NBA: Houston 11-3 (+10.2), 147-119 la Washington; fără Capela și Adams, Amen Thompson incert. Indiana 5-9 (-2.4), fără Haliburton, Nembhard incert.",
+   "NBA: Miami 7-6 (-1.1) dar 2 victorii la 12-20 de puncte (133-121, 137-117); Bucks 1-13 (-13.6), cea mai slabă echipă din Est. Miami fără Jovic și Larsson.",
+   "NBA: Boston 11-2 (+13.1), 131-94 cu Dallas; doar Queta absent. Denver 7-4 (+1.8), fără Strawther, acasă (altitudine); Boston joacă și pe 16.11. Ora 04:00/04:30 după sursă.",
+   "NBA: Spurs 12-2 (+12.9) acasă; Clippers 4-8 (-4.2) fără Beal și Ingram. Absențe Spurs (Harris, Quaintance) din rezumat ESPN, neverificate integral.",
+   "NBA: Detroit 8-4 (+5.4) acasă, dar fără Duren, Joe și Robinson și cu 117-137 la Miami; al treilea meci în 4 zile. Toronto 5-8 (+1.0), fără Kawhi (rezumat ESPN). Selecția cea mai fragilă.",
+   "NBA: OKC 9-5 (+5.0) acasă, fără Holmgren, J. Williams, Wallace și Sorber (ESPN). New Orleans 4-10 (-9.0), fără Murphy, Murray și Mathurin."
+  ],
+  "sport": "baschet",
+  "nota": "Cote ESTIMATE (Superbet nu e accesibil din cloud), din record, diferență de puncte și absențe; verifică-le la plasare. Orele sunt ora României: 17.11 – Zalgiris, Fenerbahce, Barcelona, Virtus–Panathinaikos; 18.11 – Lakers–Charlotte (06:00), Besiktas–Real Madrid (19:00); 19.11 – Houston, Miami, Boston (noaptea); 20.11 – Spurs; 21.11 – Detroit, OKC. Primul meci e azi la 20:00, deci biletul trebuie plasat înainte. Absențe NBA din ESPN (parțial rezumat), EuroLeague fără listă de absențe. Nu s-a plasat niciun pariu."
+ },
+ {
+  "id": "2026-11-17-challenge",
+  "data": "2026-11-17",
+  "tip": "Challenge 1.40",
+  "cota": 1.36,
+  "sansa": 0.79,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "18:00 Sierra Leone – RD Congo: Peste 1.5 (1.36)",
+  "rezultat": "",
+  "motive": [
+   "Peste 1.5: piață 0.68, formă 0.80, H2H 1.00, p=0.79; absențe neverificate în detaliu"
+  ],
+  "ids": [
+   15752174
+  ],
+  "sport": "fotbal",
+  "ciclu": 5,
+  "pas": 2
+ },
+ {
+  "id": "2026-11-17-cota2",
+  "data": "2026-11-17",
+  "tip": "Cotă 2",
+  "cota": 1.97,
+  "sansa": 0.5372,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "17:30 Arabia Saudita – Uzbekistan: Arabia Saudita peste 0.5 goluri (1.32) · 18:00 Kenya – Africa de Sud: Peste 1.5 (1.49)",
+  "rezultat": "",
+  "motive": [
+   "Arabia Saudita peste 0.5 goluri: piață 0.70, formă 0.75, H2H 1.00, p=0.78; absențe neverificate în detaliu",
+   "Peste 1.5: piață 0.62, formă 0.60, H2H 1.00, p=0.69; absențe neverificate în detaliu"
+  ],
+  "ids": [
+   15683192,
+   15752173
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-17-pariu",
+  "data": "2026-11-17",
+  "tip": "Pariul zilei",
+  "cota": 2.12,
+  "sansa": 0.556,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Polonia – Suedia: Suedia peste 1.5 goluri (2.12)",
+  "rezultat": "",
+  "motive": [
+   "Suedia peste 1.5 goluri: piață 0.44, formă 0.55, H2H 0.80, p=0.56; absențe neverificate în detaliu"
+  ],
+  "ids": [
+   15339610
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-17-cota5",
+  "data": "2026-11-17",
+  "tip": "Cotă 5",
+  "cota": 4.57,
+  "sansa": 0.2253,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "17:30 Arabia Saudita – Uzbekistan: Peste 1.5 (1.36) · 21:45 Danemarca – Norvegia: GG (1.40) · 21:45 Ucraina – Georgia: Peste 7.5 cornere (1.43) · 21:00 Rwanda – Mali: Rwanda peste 0.5 goluri (1.68)",
+  "rezultat": "",
+  "motive": [
+   "Peste 1.5: piață 0.68, formă 0.75, H2H 1.00, p=0.77; absențe neverificate în detaliu",
+   "GG: piață 0.67, formă 0.80, p=0.73; absențe neverificate în detaliu",
+   "Peste 7.5 cornere: piață 0.65, formă 0.68, p=0.66; absențe neverificate în detaliu",
+   "Rwanda peste 0.5 goluri: piață 0.55, formă 0.65, H2H 0.60, p=0.60; absențe neverificate în detaliu"
+  ],
+  "ids": [
+   15683192,
+   15339583,
+   15339602,
+   15752380
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-17-cota10",
+  "data": "2026-11-17",
+  "tip": "Cotă 10",
+  "cota": 9.04,
+  "sansa": 0.1202,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "18:00 Kenya – Africa de Sud: Peste 1.5 (1.49) · 21:45 Polonia – Suedia: Peste 2.5 (1.54) · 21:45 Ucraina – Georgia: Peste 7.5 cornere (1.43) · 18:00 Gambia – Coasta de Fildes: Coasta de Fildes câștigă (1.64) · 21:00 Rwanda – Mali: Rwanda peste 0.5 goluri (1.68)",
+  "rezultat": "",
+  "motive": [
+   "Peste 1.5: piață 0.62, formă 0.60, H2H 1.00, p=0.69; absențe neverificate în detaliu",
+   "Peste 2.5: piață 0.62, formă 0.70, H2H 0.80, p=0.69; absențe neverificate în detaliu",
+   "Peste 7.5 cornere: piață 0.65, formă 0.68, p=0.66; absențe neverificate în detaliu",
+   "Coasta de Fildes câștigă: piață 0.56, formă 0.55, H2H 1.00, p=0.64; absențe neverificate în detaliu",
+   "Rwanda peste 0.5 goluri: piață 0.55, formă 0.65, H2H 0.60, p=0.60; absențe neverificate în detaliu"
+  ],
+  "ids": [
+   15752173,
+   15339610,
+   15339602,
+   15752172,
+   15752380
+  ],
+  "sport": "fotbal"
  }
 ]
