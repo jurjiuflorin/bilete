@@ -1,6 +1,4 @@
-evenimente 1451 meciuri azi 0
+evenimente 1706 meciuri azi 0
 nicio sugestie (feed indisponibil?)
-evenimente 2240 meciuri 8
-candidati 56 din 8 meciuri
-scris candidati/2026-11-19.json plan {} variante { challenge: 0, cota2: 0, pariu: 0, cota5: 0, cota10: 0 } 0
+exista deja candidati/2026-11-19.json
 index 22 zile
