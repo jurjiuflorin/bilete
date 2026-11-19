@@ -70,6 +70,13 @@ function rezScore(rez, meci) {
     const ph = nrm(m[1]), pa = nrm(m[2]);
     if (key(h) && ph.includes(key(h)) && key(a) && pa.includes(key(a))) return { state: 2, h: +m[3], a: +m[4], corners: m[5] ? [+m[5], 0] : null, yellow: null };
   }
+  // formate scrise greșit, citite totuși: „Spania 2-3 Anglia” și „Flamengo 2-1” (echipa numită primește primul scor)
+  for (const part of rez.split(/ · /)) {
+    let m = part.match(/^(.+?)\s+(\d+)\s*-\s*(\d+)\s+([^\d(].*?)(?:\s*\((\d+) cornere\))?$/);
+    if (m && key(h) && nrm(m[1]).includes(key(h)) && key(a) && nrm(m[4]).includes(key(a))) return { state: 2, h: +m[2], a: +m[3], corners: m[5] ? [+m[5], 0] : null, yellow: null };
+    m = part.match(/^(.+?)\s+(\d+)\s*-\s*(\d+)(?:\s*\((\d+) cornere\))?\s*$/);
+    if (m) { const t = nrm(m[1]); if (key(h) && t.includes(key(h))) return { state: 2, h: +m[2], a: +m[3], corners: m[4] ? [+m[4], 0] : null, yellow: null }; if (key(a) && t.includes(key(a))) return { state: 2, h: +m[3], a: +m[2], corners: m[4] ? [+m[4], 0] : null, yellow: null }; }
+  }
   return null;
 }
 
