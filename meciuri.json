@@ -1,5 +1,46 @@
 {
- "data": "2026-11-19",
- "actualizat": "2026-11-19T06:14:07Z",
- "meciuri": []
+ "data": "2026-11-20",
+ "actualizat": "2026-11-20T06:14:26Z",
+ "meciuri": [
+  {
+   "data": "2026-11-20",
+   "ora": "21:30",
+   "liga": "Bundesliga",
+   "gazde": "Bayern Munchen",
+   "oaspeti": "Koln",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate (nu s-au găsit surse proaspete)."
+  },
+  {
+   "data": "2026-11-20",
+   "ora": "22:00",
+   "liga": "LaLiga",
+   "gazde": "Athletic Bilbao",
+   "oaspeti": "Espanyol",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate (nu s-au găsit surse proaspete)."
+  },
+  {
+   "data": "2026-11-20",
+   "ora": "21:45",
+   "liga": "Ligue 1",
+   "gazde": "Troyes",
+   "oaspeti": "Le Havre",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate (nu s-au găsit surse proaspete). Data meciului nesigură (unele surse: 21.11)."
+  },
+  {
+   "data": "2026-11-20",
+   "ora": "22:45",
+   "liga": "Cupa Portugaliei",
+   "gazde": "FC Porto",
+   "oaspeti": "Paredes",
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Absențe neverificate (nu s-au găsit surse proaspete)."
+  }
+ ]
 }
