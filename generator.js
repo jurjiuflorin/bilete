@@ -44,7 +44,7 @@ $('#legs').addEventListener('change', e => setLegs(e.target.value));
 $('#ctarget').addEventListener('input', e => { cTarget = e.target.value; LS.set('gen_ct', cTarget); applyCustom(); });
 $('#cstrat').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; cStrat = b.dataset.s; LS.set('gen_cs', cStrat); renderCust(); });
 function renderModes() {
-  $('#modes').innerHTML = Object.keys(MODES).map(k => `<button type="button" class="g-mode" data-m="${k}" aria-pressed="${k === mode}"><b>${k}</b><span>${MODE_INFO[k]}</span></button>`).join('');
+  $('#modes').innerHTML = Object.keys(MODES).map(k => `<button type="button" class="g-mode" data-m="${k}" aria-pressed="${k === mode}"><b>${k === 'custom' ? 'N+' : k}</b><span>${k === 'custom' ? 'Personalizat · 2–30 meciuri' : MODE_INFO[k]}</span></button>`).join('');
   renderCust();
 }
 function allTypes() { return [...Object.keys(MARKETS).filter(t => !MARKETS[t].optional), ...CORNER_LINES.map(cornerType), ...Object.keys(MARKETS).filter(t => MARKETS[t].optional)]; }
