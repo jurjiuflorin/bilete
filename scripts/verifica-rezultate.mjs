@@ -12,6 +12,7 @@ const same = (a, b) => key(nrm(a)) && nrm(b).includes(key(nrm(a)));
 export function normPart(part, meciuri) {
   const m0 = part.match(CANON);
   if (m0) { const [h, a] = [m0[1], m0[2]]; if (meciuri.some(m => { const [mh, ma] = m.split(' – '); return same(mh, h) && same(ma, a); })) return { part, fixed: false, ok: true }; }
+  if (part.includes('–')) return { part, fixed: false, ok: false };   // formă canonică pentru ALT meci: nu o atinge
   // "Spania 2-3 Anglia"  ->  "Spania–Anglia 2-3"
   const m1 = part.match(/^(.+?)\s+(\d+)\s*-\s*(\d+)\s+([^\d(].*?)(\s*\(.*)?$/);
   if (m1) { const mt = meciuri.find(m => { const [mh, ma] = m.split(' – '); return same(mh, m1[1]) && same(ma, m1[4]); }); if (mt) { const [mh, ma] = mt.split(' – '); return { part: mh + '–' + ma + ' ' + m1[2] + '-' + m1[3] + (m1[5] || ''), fixed: true, ok: true }; } }
