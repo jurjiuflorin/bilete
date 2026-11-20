@@ -3631,5 +3631,45 @@
    15752380
   ],
   "sport": "fotbal"
+ },
+ {
+  "data": "2026-11-20",
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "sport": "fotbal",
+  "id": "2026-11-20-challenge",
+  "tip": "Challenge 1.40",
+  "cota": 1.44,
+  "sansa": 0.727,
+  "selectii": "20:30 Farul Constanța – U Cluj: Șansă dublă X2 (1.44)",
+  "motive": [
+   "X2: piață fără marjă 66.7%, formă 65%, H2H 100% → p 72.7%; absențe neverificate."
+  ],
+  "ids": [
+   14656270
+  ],
+  "ciclu": 5,
+  "pas": 3
+ },
+ {
+  "data": "2026-11-20",
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "sport": "fotbal",
+  "id": "2026-11-20-cota2",
+  "tip": "Cotă 2",
+  "cota": 1.86,
+  "sansa": 0.513,
+  "selectii": "20:30 Farul Constanța – U Cluj: Peste 1.5 goluri (1.30) · 20:00 AGF Aarhus – Lyngby: Peste 8.5 cornere (1.43)",
+  "motive": [
+   "Peste 1.5: piață 72.9%, formă 80%, H2H 60% → p 73.2%; absențe neverificate.",
+   "Peste 8.5 cornere: piață 64.3%, formă 75.9%, medie 10.9 cornere → p 70.1%; absențe neverificate."
+  ],
+  "ids": [
+   14656270,
+   15613909
+  ]
  }
 ]
