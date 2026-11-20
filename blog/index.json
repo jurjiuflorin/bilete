@@ -1,5 +1,96 @@
 [
  {
+  "id": "2026-11-20-rezumat",
+  "data": "2026-11-20",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 20 noiembrie: 1 câștigate, 1 pierdute",
+  "intro": "Challenge 1.40 câștigat · Cotă 2 pierdut",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [],
+    "li": [
+     "Cotă 2: Farul Constanța – U Cluj Farul Constanța–U Cluj 2-3 (Peste 1.5 goluri); AGF Aarhus – Lyngby AGF Aarhus–Lyngby 2-1 (Peste 8.5 cornere)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 1."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "7 bilete câștigate din 12 validate (58%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.44,
+    "sansa": 72.7,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "20:30",
+      "meci": "Farul Constanța – U Cluj",
+      "liga": "SuperLiga",
+      "selectie": "Șansă dublă X2",
+      "cota": 1.44,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Farul Constanța dă 1,6 și primește 1,4 goluri pe meci; U Cluj dă 2,0 și primește 1,2.",
+       "Meciuri directe analizate: 5.",
+       "X2: piață fără marjă 66.7%, formă 65%, H2H 100% → p 72.7%; absențe neverificate."
+      ],
+      "rezultat": "Farul Constanța–U Cluj 2-3"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.86,
+    "sansa": 51.3,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "20:30",
+      "meci": "Farul Constanța – U Cluj",
+      "liga": "SuperLiga",
+      "selectie": "Peste 1.5 goluri",
+      "cota": 1.3,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Farul Constanța dă 1,6 și primește 1,4 goluri pe meci; U Cluj dă 2,0 și primește 1,2.",
+       "Meciurile Farul Constanța au în medie 3,0 goluri, cele ale U Cluj 3,2.",
+       "Meciuri directe analizate: 5.",
+       "Peste 1.5: piață 72.9%, formă 80%, H2H 60% → p 73.2%; absențe neverificate."
+      ],
+      "rezultat": "Farul Constanța–U Cluj 2-3"
+     },
+     {
+      "ora": "20:00",
+      "meci": "AGF Aarhus – Lyngby",
+      "liga": "Superliga (Danemarca)",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.43,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 10,9 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Peste 8.5 cornere: piață 64.3%, formă 75.9%, medie 10.9 cornere → p 70.1%; absențe neverificate."
+      ],
+      "p": 70,
+      "pm": 64,
+      "pf": 76,
+      "ph": null,
+      "val": 0,
+      "rezultat": "AGF Aarhus–Lyngby 2-1"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-17-rezumat",
   "data": "2026-11-17",
   "tip": "rezumat",
