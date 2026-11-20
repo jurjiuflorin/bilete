@@ -68,6 +68,7 @@ export const MODES = {
   '10x': { targetOdds: 10, strategy: 'lowest', preferredLegs: [3, 5], maxLegs: 7, minAccept: 9.25, maxAccept: 10.75, attempts: 1000 },
   '25x': { targetOdds: 25, strategy: 'second_lowest', preferredLegs: [4, 6], maxLegs: 8, minAccept: 23, maxAccept: 27, attempts: 1200 },
   '50x': { targetOdds: 50, strategy: 'highest', preferredLegs: [5, 8], maxLegs: 10, minAccept: 46, maxAccept: 54, attempts: 1500 },
+  custom: { targetOdds: null, strategy: 'lowest', preferredLegs: [5, 5], maxLegs: 30, minAccept: 0, maxAccept: Infinity, attempts: 1500, legs: 5 },
 };
 const r2 = v => Math.round(v * 100) / 100;
 
@@ -87,11 +88,23 @@ export function buildPool(matches, mode, filters = {}, now = Date.now(), overrid
   return pool;
 }
 
+const selOf = s => ({ matchId: s.match.matchId, kickoff: s.match.kickoff, league: s.match.league, home: s.match.home, away: s.match.away, type: s.market.type, odds: s.market.odds,
+  hitHome: s.market.hitHome, hitAway: s.market.hitAway, sampleSize: s.market.sampleSize, percentage: s.market.percentage, model: s.market.model || null });
+const mk = (arr, prod, extra) => ({ ...extra, totalOdds: r2(prod), selections: arr.map(selOf), generatedAt: new Date().toISOString(), signature: arr.map(s => s.match.matchId + ':' + s.market.type).sort().join('|') });
 export function generateTicket({ matches, mode, filters = {}, recentSignatures = [], random = Math.random, now = Date.now(), overrides = {} }) {
   if (!MODES[mode]) return { error: 'mode_unknown' };
   const cfg = { ...MODES[mode], ...overrides};
   const pool = buildPool(matches, mode, filters, now, overrides);
   if (pool.length < 2) return { error: 'not_enough_matches' };
+  if (mode === 'custom') {   // N meciuri (2–30); fără cotă țintă = cele mai sigure N selecții după formă
+    const N = Math.max(2, Math.min(30, Math.round(cfg.legs || 5))); const T = cfg.targetOdds ? +cfg.targetOdds : null;
+    if (!T) {
+      const arr = pool.map(p => ({ p, k: p.market.percentage + random() * 2 - p.market.odds * 0.3 })).sort((a, b) => b.k - a.k).slice(0, N).map(x => x.p);
+      const prod = arr.reduce((q, x) => q * x.market.odds, 1);
+      return mk(arr, prod, { mode, legs: N, targetOdds: null, shortBy: Math.max(0, N - arr.length) });
+    }
+    cfg.preferredLegs = [N, N]; cfg.maxLegs = N; cfg.minAccept = T * 0.88; cfg.maxAccept = T * 1.12;
+  }
   const recent = new Set(recentSignatures); const target = cfg.targetOdds, mid = Math.round((cfg.preferredLegs[0] + cfg.preferredLegs[1]) / 2);
   let best = null;
   for (let i = 0; i < cfg.attempts; i++) {
@@ -107,8 +120,8 @@ export function generateTicket({ matches, mode, filters = {}, recentSignatures =
   }
   const selections = best.cand.map(s => ({ matchId: s.match.matchId, kickoff: s.match.kickoff, league: s.match.league, home: s.match.home, away: s.match.away, type: s.market.type, odds: s.market.odds,
     hitHome: s.market.hitHome, hitAway: s.market.hitAway, sampleSize: s.market.sampleSize, percentage: s.market.percentage, model: s.market.model || null }));
-  if (!best.inRange) return { error: 'target_odds_unreachable', partial: { mode, targetOdds: target, totalOdds: r2(best.prod), selections, signature: best.signature } };
-  return { mode, targetOdds: target, totalOdds: r2(best.prod), selections, generatedAt: new Date(now).toISOString(), signature: best.signature };
+  if (!best.inRange) return { error: 'target_odds_unreachable', partial: { mode, legs: cfg.legs, targetOdds: target, totalOdds: r2(best.prod), selections, signature: best.signature } };
+  return { mode, targetOdds: target, totalOdds: r2(best.prod), selections, generatedAt: new Date(now).toISOString(), signature: best.signature, ...(mode === 'custom' ? { legs: best.cand.length } : {}) };
 }
 
 // Challenge: un singur meci, cota 1.35–1.50, piața cu cel mai mare procent din formă

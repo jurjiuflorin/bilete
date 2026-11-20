@@ -6,7 +6,8 @@ const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '
 const hhmm = iso => new Date(iso).toLocaleString('ro-RO', { timeZone: 'Europe/Bucharest', weekday: 'short', day: '2-digit', month: '2-digit', hour: '2-digit', minute: '2-digit' });
 const toast = m => { const t = $('#toast'); t.textContent = m; t.classList.add('on'); setTimeout(() => t.classList.remove('on'), 2200); };
 
-const MODE_INFO = { '5x': 'Cel mai sigur', '10x': 'Risc mic', '25x': 'Risc mediu', '50x': 'Risc mare' };
+const MODE_INFO = { c2: 'Cotă 2 · sigur', custom: '2–30 meciuri', '5x': 'Cel mai sigur', '10x': 'Risc mic', '25x': 'Risc mediu', '50x': 'Risc mare' };
+let cLegs = +LS.get('gen_legs', 8) || 8, cTarget = LS.get('gen_ct', ''), cStrat = LS.get('gen_cs', 'lowest');
 let DATA = { matches: [] }, SCORES = {}, mode = LS.get('gen_mode', '5x'), types = new Set(LS.get('gen_types', DEFAULT_TYPES)), ticket = null;
 let minO = LS.get('gen_minO', ''), maxO = LS.get('gen_maxO', ''), leagues = new Set(LS.get('gen_leagues', [])), TEST = { days: {} }, CODES = {}, REQS = [], kmin = +LS.get('gen_k', 4);
 
@@ -26,8 +27,25 @@ async function load() {
 }
 
 // ---- moduri + filtre ----
+const STRATS = [['lowest', 'Sigur (cote mici)'], ['second_lowest', 'Echilibrat'], ['highest', 'Cote mari']];
+function applyCustom() { Object.assign(MODES.custom, { legs: cLegs, preferredLegs: [cLegs, cLegs], maxLegs: cLegs, targetOdds: cTarget ? +cTarget : null, strategy: cStrat }); }
+function renderCust() {
+  $('#cust').hidden = mode !== 'custom'; if (mode !== 'custom') return;
+  $('#legs-chips').innerHTML = [2, 3, 5, 8, 10, 15, 20, 25, 30].map(n => `<button type="button" data-n="${n}" aria-pressed="${n === cLegs}">${n}</button>`).join('');
+  $('#legs').value = cLegs; $('#ctarget').value = cTarget;
+  $('#cstrat').innerHTML = STRATS.map(([k, l]) => `<button type="button" data-s="${k}" aria-pressed="${k === cStrat}">${l}</button>`).join('');
+  const nv = M().filter(m => m.vulnerable && (!leagues.size || leagues.has(m.league))).length;
+  $('#cust-hint').textContent = `Meciuri vulnerabile disponibile acum: ${nv}${nv < cLegs ? ' · sunt mai puține decât ai cerut; poți coborî pragul de semnal la 3 din 5 sau adăuga ligi' : ''}. Fără cotă țintă, biletul are cele mai sigure ${cLegs} selecții după formă.`;
+  applyCustom();
+}
+function setLegs(n) { cLegs = Math.max(2, Math.min(30, Math.round(+n) || 2)); LS.set('gen_legs', cLegs); renderCust(); }
+$('#legs-chips').addEventListener('click', e => { const b = e.target.closest('button'); if (b) setLegs(b.dataset.n); });
+$('#legs').addEventListener('change', e => setLegs(e.target.value));
+$('#ctarget').addEventListener('input', e => { cTarget = e.target.value; LS.set('gen_ct', cTarget); applyCustom(); });
+$('#cstrat').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; cStrat = b.dataset.s; LS.set('gen_cs', cStrat); renderCust(); });
 function renderModes() {
   $('#modes').innerHTML = Object.keys(MODES).map(k => `<button type="button" class="g-mode" data-m="${k}" aria-pressed="${k === mode}"><b>${k}</b><span>${MODE_INFO[k]}</span></button>`).join('');
+  renderCust();
 }
 function allTypes() { return [...Object.keys(MARKETS).filter(t => !MARKETS[t].optional), ...CORNER_LINES.map(cornerType), ...Object.keys(MARKETS).filter(t => MARKETS[t].optional)]; }
 function renderTypes() {
@@ -62,11 +80,14 @@ const showT = () => { $('#out').innerHTML = outMsg + renderTicket(ticket); };
 function generate() {
   outMsg = '';
   if (!DATA.matches.length) { $('#out').innerHTML = '<div class="g-msg">Nu avem încă meciuri analizate pentru următoarele zile. Datele se actualizează de câteva ori pe zi.</div>'; return; }
+  if (mode === 'custom') applyCustom();
   const t = generateTicket({ matches: M(), mode, filters: filters(), recentSignatures: recent() });
   $('#again').hidden = false;
   if (t.error === 'not_enough_matches') { ticket = null; $('#out').innerHTML = '<div class="g-msg"><b>Prea puține meciuri vulnerabile</b> pentru filtrele alese. Încearcă să bifezi mai multe piețe sau să lărgești intervalul de cote.</div>'; return; }
-  if (t.error === 'target_odds_unreachable') { ticket = null; const p = t.partial; ticket = { ...p, id: Date.now(), generatedAt: new Date().toISOString(), partial: true }; outMsg = `<div class="g-msg"><b>Nu se poate atinge ținta ${p.targetOdds}x</b> cu meciurile de azi: cea mai bună combinație dă doar ${p.totalOdds}. Încearcă un mod mai mic sau mai multe piețe. Îl poți salva oricum.</div>`; showT(); return; }
-  ticket = { ...t, id: Date.now() }; remember(t.signature); showT();
+  if (t.error === 'target_odds_unreachable') { ticket = null; const p = t.partial; ticket = { ...p, id: Date.now(), generatedAt: new Date().toISOString(), partial: true }; outMsg = `<div class="g-msg"><b>Nu se poate atinge ținta ${p.targetOdds}x${mode === 'custom' ? ' cu ' + cLegs + ' meciuri' : ''}</b> cu meciurile de azi: cea mai bună combinație dă doar ${p.totalOdds}. Încearcă un mod mai mic sau mai multe piețe. Îl poți salva oricum.</div>`; showT(); return; }
+  ticket = { ...t, id: Date.now() }; remember(t.signature);
+  if (t.shortBy) outMsg = `<div class="g-msg"><b>Doar ${t.selections.length} meciuri disponibile</b> din ${t.selections.length + t.shortBy} cerute. Am pus tot ce se potrivește filtrelor.</div>`;
+  showT();
 }
 const reason = s => s.sampleSize ? `gazde ${s.hitHome}/${s.sampleSize} · oaspeți ${s.hitAway}/${s.sampleSize}` : esc(s.model || 'model pe medii');
 function renderTicket(t, mine) {
@@ -76,7 +97,7 @@ function renderTicket(t, mine) {
       <div class="g-why">${reason(s)} · formă ${s.percentage}% vs cotă ${imp}% <span class="${edge > 0 ? 'g-ok' : 'g-no'}">(${edge > 0 ? '+' : ''}${edge} pp)</span></div>
       ${t.partial || mine ? '' : `<button type="button" class="g-sw" data-i="${i}">Schimbă meciul</button>`}</div>`; }).join('');
   const ok = !t.partial && t.totalOdds >= MODES[t.mode].minAccept && t.totalOdds <= MODES[t.mode].maxAccept;
-  return `<div class="g-tk"><div class="g-tk-h"><div><b>Bilet ${t.targetOdds}x</b> <span>${t.selections.length} selecții</span></div><div><span>țintă ${t.targetOdds}</span> <span class="g-tot">${t.totalOdds.toFixed(2)}</span></div></div>${rows}
+  return `<div class="g-tk"><div class="g-tk-h"><div><b>${t.mode === 'custom' ? 'Bilet personalizat' : 'Bilet ' + t.targetOdds + 'x'}</b> <span>${t.selections.length} selecții</span></div><div><span>${t.targetOdds ? 'țintă ' + t.targetOdds : 'cele mai sigure'}</span> <span class="g-tot">${t.totalOdds.toFixed(2)}</span></div></div>${rows}
     ${mine ? '' : `<div class="g-tk-f"><small>${ok ? 'Cota totală e în intervalul țintei. ' : ''}Cotele pot varia până la pregătirea biletului.</small><span>${isSaved(t.id) ? '<button type="button" disabled>Salvat ✓</button>' : '<button type="button" id="save" class="g-primary">Salvează biletul</button>'} <button type="button" id="copy">Copiază</button></span></div>`}</div>`;
 }
 $('#go').addEventListener('click', generate);
@@ -84,13 +105,13 @@ $('#again').addEventListener('click', generate);
 $('#out').addEventListener('click', e => {
   const sw = e.target.closest('.g-sw'); if (sw && ticket) { const r = swapSelection(ticket, +sw.dataset.i, M(), { filters: filters() }); if (r.error) return toast('Nu există alt meci potrivit'); ticket = r; if (isSaved(r.id)) saveMine(r); showT(); return; }
   if (e.target.id === 'save' && ticket) { saveMine(ticket); showT(); toast('Bilet salvat în „Biletele mele”'); return; }
-  if (e.target.id === 'copy' && ticket) { const txt = `Bilet ${ticket.targetOdds}x · cotă ${ticket.totalOdds.toFixed(2)}\n` + ticket.selections.map(s => `${hhmm(s.kickoff)} ${s.home} – ${s.away}: ${typeLabel(s.type)} (${s.odds.toFixed(2)})`).join('\n'); navigator.clipboard && navigator.clipboard.writeText(txt).then(() => toast('Copiat'), () => toast('Nu am putut copia')); }
+  if (e.target.id === 'copy' && ticket) { const txt = `${ticket.mode === 'custom' ? 'Bilet personalizat' : 'Bilet ' + ticket.targetOdds + 'x'} · cotă ${ticket.totalOdds.toFixed(2)}\n` + ticket.selections.map(s => `${hhmm(s.kickoff)} ${s.home} – ${s.away}: ${typeLabel(s.type)} (${s.odds.toFixed(2)})`).join('\n'); navigator.clipboard && navigator.clipboard.writeText(txt).then(() => toast('Copiat'), () => toast('Nu am putut copia')); }
 });
 
 // ---- biletele mele (salvate de tine, decontate din scoruri.json) ----
 const isSaved = id => LS.get('gen_mine', []).some(x => x.id === id);
 function saveMine(t) { const L = LS.get('gen_mine', []); const i = L.findIndex(x => x.id === t.id); if (i >= 0) L[i] = { ...L[i], ...t, code: L[i].code }; else L.unshift({ ...t }); LS.set('gen_mine', L.slice(0, 200)); renderMine(); }
-const LBL = { '5x': 'Bilet 5x', '10x': 'Bilet 10x', '25x': 'Bilet 25x', '50x': 'Bilet 50x' };
+const LBL = { c2: 'Bilet 2x', custom: 'Bilet personalizat', '5x': 'Bilet 5x', '10x': 'Bilet 10x', '25x': 'Bilet 25x', '50x': 'Bilet 50x' };
 function renderMine() {
   const L = LS.get('gen_mine', []); $('#nmine').textContent = (L.length ? '(' + L.length + ')' : '') + (REQS.length ? ' · ' + REQS.length + ' cereri' : '');
   const J = L.map(t => { const sels = t.selections.map(s => ({ ...s, res: judgeSelection(s, SCORES[s.matchId]) })); return { t, sels, st: judgeTicket(sels) }; });

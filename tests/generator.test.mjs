@@ -104,3 +104,17 @@ test('filtru de ligi la generator + mod Cotă 2', () => {
   const t = generateTicket({ matches: m, mode: 'c2', filters: { leagues: ['A'] }, random: rnd(9) });
   assert.ok(!t.error, JSON.stringify(t)); assert.ok(t.totalOdds >= 1.85 && t.totalOdds <= 2.3); assert.ok(t.selections.every(s => s.league === 'A'));
 });
+
+test('mod personalizat: N meciuri (2-30), cu și fără cotă țintă', () => {
+  const mkM = (i, odds) => ({ matchId: 'c' + i, kickoff: new Date(Date.now() + 36e5 * (i + 2)).toISOString(), league: 'L', home: 'H' + i, away: 'A' + i, vulnerable: true, signals: 1,
+    markets: [{ type: 'over_1_5_ft', odds, signal: true, hitHome: 4, hitAway: 4, sampleSize: 5, percentage: 80 - i }] });
+  const ms = Array.from({ length: 35 }, (_, i) => mkM(i, 1.3 + (i % 5) * 0.05));
+  MODES.custom.preferredLegs = [30, 30]; MODES.custom.maxLegs = 30; MODES.custom.legs = 30; MODES.custom.targetOdds = null;
+  const t = generateTicket({ matches: ms, mode: 'custom', filters: { marketTypes: ['over_1_5_ft'] } });
+  assert.equal(t.selections.length, 30); assert.equal(new Set(t.selections.map(s => s.matchId)).size, 30);
+  MODES.custom.legs = 30; const t2 = generateTicket({ matches: ms.slice(0, 10), mode: 'custom', filters: { marketTypes: ['over_1_5_ft'] } });
+  assert.equal(t2.selections.length, 10); assert.equal(t2.shortBy, 20);
+  Object.assign(MODES.custom, { legs: 4, preferredLegs: [4, 4], maxLegs: 4, targetOdds: 4 });
+  const t3 = generateTicket({ matches: ms, mode: 'custom', filters: { marketTypes: ['over_1_5_ft'] } });
+  assert.equal(t3.selections.length, 4); assert.ok(t3.totalOdds >= 3.52 && t3.totalOdds <= 4.48, String(t3.totalOdds));
+});

@@ -20,6 +20,6 @@ for (const i of issues) {
   if (!i.author || i.author.login !== OWNER) { console.error('ignor issue #' + i.number + ' (autor ' + (i.author && i.author.login) + ')'); continue; }
   const m = /```json\s*([\s\S]*?)```/.exec(i.body || ''); if (!m) continue;
   try { const r = JSON.parse(m[1]); const sel = (r.sel || []).filter(s => Array.isArray(s) && Number.isInteger(s[0]) && TYPES.has(s[1]) && +s[2] > 1);
-    if (r.id && sel.length && sel.length <= 12) out.push({ issue: i.number, ticketId: String(r.id), mode: r.mode, total: r.total, sel: sel.map(s => ({ matchId: s[0], type: s[1], odds: +s[2] })) }); } catch (e) { console.error('issue #' + i.number + ' ilizibil'); }
+    if (r.id && sel.length && sel.length <= 30) out.push({ issue: i.number, ticketId: String(r.id), mode: r.mode, total: r.total, sel: sel.map(s => ({ matchId: s[0], type: s[1], odds: +s[2] })) }); } catch (e) { console.error('issue #' + i.number + ' ilizibil'); }
 }
 console.log(JSON.stringify(out, null, 1));
