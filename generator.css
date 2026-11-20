@@ -149,3 +149,4 @@ body.gpage .toast{background:var(--ac);color:var(--ac-i)}
 .g-rq:first-of-type{border-top:0}
 .g-rq a{color:var(--dim);font-size:13px}
 .g-rq a:hover{color:var(--tx)}
+.g-chips button small{opacity:.7;font-weight:400}

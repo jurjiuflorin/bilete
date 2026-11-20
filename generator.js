@@ -35,7 +35,7 @@ function renderCust() {
   $('#legs').value = cLegs; $('#ctarget').value = cTarget;
   $('#cstrat').innerHTML = STRATS.map(([k, l]) => `<button type="button" data-s="${k}" aria-pressed="${k === cStrat}">${l}</button>`).join('');
   const nv = M().filter(m => m.vulnerable && (!leagues.size || leagues.has(m.league))).length;
-  $('#cust-hint').textContent = `Meciuri vulnerabile disponibile acum: ${nv}${nv < cLegs ? ' · sunt mai puține decât ai cerut; poți coborî pragul de semnal la 3 din 5 sau adăuga ligi' : ''}. Fără cotă țintă, biletul are cele mai sigure ${cLegs} selecții după formă.`;
+  $('#cust-hint').textContent = `Meciuri vulnerabile disponibile acum: ${nv}${nv < cLegs ? ' · sunt mai puține decât ai cerut; poți alege pragul 3 din 5 sau adaugă ligi' : ''}. Fără cotă țintă, biletul are cele mai sigure ${cLegs} selecții după formă.`;
   applyCustom();
 }
 function setLegs(n) { cLegs = Math.max(2, Math.min(30, Math.round(+n) || 2)); LS.set('gen_legs', cLegs); renderCust(); }
@@ -62,15 +62,21 @@ $('#reset').addEventListener('click', () => { kmin = 4; LS.set('gen_k', 4); rend
 // recalculează semnalele după pragul ales (x din 5); piețele de cornere (model) folosesc x·20%
 const withK = k => DATA.matches.map(m => { const markets = m.markets.map(x => ({ ...x, signal: x.sampleSize ? (x.hitHome >= k && x.hitAway >= k) : x.percentage >= k * 20 })); const signals = markets.filter(x => x.signal).length; return { ...m, markets, signals, vulnerable: signals >= 2 }; });
 const M = () => withK(kmin);
-function renderK() { $('#kmin').innerHTML = [3, 4, 5].map(k => `<button type="button" data-k="${k}" aria-pressed="${k === kmin}">${k} din 5${k === 4 ? ' (implicit)' : ''}</button>`).join(''); }
-$('#kmin').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; kmin = +b.dataset.k; LS.set('gen_k', kmin); renderK(); renderLeagues(); renderTypes(); renderVul(); sub(); });
+function renderK() {
+  $('#kmin').innerHTML = [3, 4, 5].map(k => `<button type="button" data-k="${k}" aria-pressed="${k === kmin}">${k} din 5${k === 4 ? ' (implicit)' : ''}</button>`).join('');
+  const cnt = k => withK(k).filter(m => m.vulnerable && (!leagues.size || leagues.has(m.league))).length;
+  $('#cust-k').innerHTML = [3, 4, 5].map(k => `<button type="button" data-k="${k}" aria-pressed="${k === kmin}">${k} din 5 <small>· ${cnt(k)} meciuri</small></button>`).join('');
+}
+const setK = e => { const b = e.target.closest('button'); if (!b) return; kmin = +b.dataset.k; LS.set('gen_k', kmin); renderK(); renderLeagues(); renderTypes(); renderVul(); renderCust(); sub(); };
+$('#kmin').addEventListener('click', setK);
+$('#cust-k').addEventListener('click', setK);
 const filters = () => ({ marketTypes: [...types], minLineOdds: minO ? +minO : null, maxLineOdds: maxO ? +maxO : null, leagues: [...leagues] });
 function renderLeagues() {
   const L = [...new Set(M().filter(m => m.vulnerable).map(m => m.league))].sort();
   $('#leagues').innerHTML = L.length ? L.map(x => `<button type="button" data-l="${esc(x)}" aria-pressed="${leagues.has(x)}">${esc(x)}</button>`).join('') : '<span class="g-hint">Ligile apar când există meciuri vulnerabile.</span>';
   $('#adv-sum').textContent = leagues.size ? `Ligi: ${leagues.size} selectate` : $('#adv-sum').textContent;
 }
-$('#leagues').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; const l = b.dataset.l; leagues.has(l) ? leagues.delete(l) : leagues.add(l); LS.set('gen_leagues', [...leagues]); renderLeagues(); renderTypes(); });
+$('#leagues').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; const l = b.dataset.l; leagues.has(l) ? leagues.delete(l) : leagues.add(l); LS.set('gen_leagues', [...leagues]); renderLeagues(); renderTypes(); renderK(); renderCust(); });
 
 // ---- generare ----
 function recent() { return LS.get('gen_recent', []); }
