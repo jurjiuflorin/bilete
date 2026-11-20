@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-20",
+ "salvat": "2026-11-20T10:24:22.606Z",
+ "n": 8,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14656322,
+    "meci": "Cercle Brugge – Westerlo",
+    "when": "2026-11-20T19:45:00.000Z",
+    "liga": "Pro League",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.62,
+    "p": 0.679,
+    "why": "Cercle Brugge dă 1,3 și primește 2 goluri pe meci; Westerlo dă 2,4 și primește 2,7."
+   },
+   {
+    "id": 15613909,
+    "meci": "AGF Aarhus – Lyngby",
+    "when": "2026-11-20T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.56,
+    "p": 0.618,
+    "why": "AGF Aarhus dă 1,4 și primește 1,5 goluri pe meci; Lyngby dă 1,4 și primește 2,1."
+   },
+   {
+    "id": 14656273,
+    "meci": "Botosani – Voluntari",
+    "when": "2026-11-20T15:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.6,
+    "p": 0.6,
+    "why": "Botosani dă 1,3 și primește 1,3 goluri pe meci; Voluntari dă 1 și primește 2,2."
+   },
+   {
+    "id": 14656212,
+    "meci": "Bayern Munchen – FC Koln",
+    "when": "2026-11-20T19:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 3.5 goluri",
+    "od": 1.42,
+    "p": 0.582,
+    "why": "Bayern Munchen dă 3,2 și primește 1 goluri pe meci; FC Koln dă 1,1 și primește 1,6."
+   },
+   {
+    "id": 14670930,
+    "meci": "Molde – Bodo/Glimt",
+    "when": "2026-11-20T18:00:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "Peste 3.5 goluri",
+    "od": 1.53,
+    "p": 0.572,
+    "why": "Molde dă 2,5 și primește 1,7 goluri pe meci; Bodo/Glimt dă 2,4 și primește 0,9."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14656322,
+    "meci": "Cercle Brugge – Westerlo",
+    "when": "2026-11-20T19:45:00.000Z",
+    "liga": "Pro League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.54,
+    "p": 0.685,
+    "why": "Cercle Brugge marchează 1,3 și primește 2 pe meci; Westerlo marchează 2,4 și primește 2,7."
+   },
+   {
+    "id": 15613909,
+    "meci": "AGF Aarhus – Lyngby",
+    "when": "2026-11-20T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.54,
+    "p": 0.624,
+    "why": "AGF Aarhus marchează 1,4 și primește 1,5 pe meci; Lyngby marchează 1,4 și primește 2,1."
+   },
+   {
+    "id": 14656273,
+    "meci": "Botosani – Voluntari",
+    "when": "2026-11-20T15:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.62,
+    "p": 0.589,
+    "why": "Botosani marchează 1,3 și primește 1,3 pe meci; Voluntari marchează 1 și primește 2,2."
+   },
+   {
+    "id": 14656369,
+    "meci": "Troyes – Le Havre",
+    "when": "2026-11-20T19:45:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "GG (ambele marchează)",
+    "od": 1.71,
+    "p": 0.584,
+    "why": "Troyes marchează 0,7 și primește 1,7 pe meci; Le Havre marchează 0,9 și primește 2,2."
+   },
+   {
+    "id": 14656270,
+    "meci": "Farul Constanta – U Cluj",
+    "when": "2026-11-20T18:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.73,
+    "p": 0.579,
+    "why": "Farul Constanta marchează 1,6 și primește 1,5 pe meci; U Cluj marchează 1,7 și primește 1,3."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14670930,
+    "meci": "Molde – Bodo/Glimt",
+    "when": "2026-11-20T18:00:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.42,
+    "p": 0.787,
+    "why": "Media cornerelor: Molde 5,9, Bodo/Glimt 7,3, adică 13,2 pe meci."
+   },
+   {
+    "id": 14656212,
+    "meci": "Bayern Munchen – FC Koln",
+    "when": "2026-11-20T19:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.46,
+    "p": 0.773,
+    "why": "Media cornerelor: Bayern Munchen 8,6, FC Koln 5,6, adică 14,2 pe meci."
+   },
+   {
+    "id": 14656369,
+    "meci": "Troyes – Le Havre",
+    "when": "2026-11-20T19:45:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.42,
+    "p": 0.761,
+    "why": "Media cornerelor: Troyes 5,7, Le Havre 5,3, adică 11 pe meci."
+   },
+   {
+    "id": 15613909,
+    "meci": "AGF Aarhus – Lyngby",
+    "when": "2026-11-20T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.43,
+    "p": 0.709,
+    "why": "Media cornerelor: AGF Aarhus 6,4, Lyngby 4,5, adică 10,9 pe meci."
+   },
+   {
+    "id": 14656273,
+    "meci": "Botosani – Voluntari",
+    "when": "2026-11-20T15:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.38,
+    "p": 0.655,
+    "why": "Media cornerelor: Botosani 4,5, Voluntari 4,1, adică 8,6 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 14656212,
+    "meci": "Bayern Munchen – FC Koln",
+    "when": "2026-11-20T19:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Sub 5.5 goluri",
+    "od": 1.41,
+    "p": 0.751,
+    "why": "Bayern Munchen dă 3,2 și primește 1 goluri pe meci; FC Koln dă 1,1 și primește 1,6. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14670973,
+    "meci": "Athletic Bilbao – Espanyol",
+    "when": "2026-11-20T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.44,
+    "p": 0.714,
+    "why": "Athletic Bilbao dă 1,4 și primește 1 goluri pe meci; Espanyol dă 1,1 și primește 1,2. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14656369,
+    "meci": "Troyes – Le Havre",
+    "when": "2026-11-20T19:45:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.35,
+    "p": 0.662,
+    "why": "Troyes dă 0,7 și primește 1,7 goluri pe meci; Le Havre dă 0,9 și primește 2,2. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14670930,
+    "meci": "Molde – Bodo/Glimt",
+    "when": "2026-11-20T18:00:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.62,
+    "p": 0.625,
+    "why": "Molde dă 2,5 și primește 1,7 goluri pe meci; Bodo/Glimt dă 2,4 și primește 0,9. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14656273,
+    "meci": "Botosani – Voluntari",
+    "when": "2026-11-20T15:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.53,
+    "p": 0.615,
+    "why": "Botosani dă 1,3 și primește 1,3 goluri pe meci; Voluntari dă 1 și primește 2,2. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}
