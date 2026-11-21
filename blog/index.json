@@ -1,5 +1,115 @@
 [
  {
+  "id": "2026-11-21-bilete",
+  "data": "2026-11-21",
+  "tip": "bilete",
+  "titlu": "Biletele zilei de 21 noiembrie: 1 bilete, 6 evenimente analizate",
+  "intro": "Weekend 29,55",
+  "sectiuni": [
+   {
+    "h": "Cum citești analiza",
+    "p": [
+     "Pentru fiecare eveniment vezi trei numere: ce spune piața (cota fără marja casei), ce spune forma pe ultimele 10 meciuri ale ambelor echipe și ce spun meciurile directe (H2H). Estimarea finală e 40% piață, 40% formă și 20% H2H, iar „valoarea” e diferența dintre estimare și probabilitatea din cotă. Cotă 2 are prioritate la alegere, iar meciurile se repetă cât mai puțin între bilete."
+    ]
+   },
+   {
+    "h": "Ce trebuie verificat",
+    "p": [
+     "Absențele nu sunt verificate. Estimările sunt statistice, nu garanții, iar cotele se pot mișca până la meci. Pune doar o miză mică."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Weekend",
+    "cota": 29.55,
+    "sansa": 3.5,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "16:30",
+      "meci": "Mönchengladbach – Dortmund",
+      "selectie": "Dortmund câștigă",
+      "cota": 1.58,
+      "linii": [
+       "Dortmund câștigă: piață 60.6%, formă ~55% (Gladbach 0 victorii acasă în ligă, 25 goluri primite în 9 meciuri; Dortmund 8 din 12 puncte în deplasare, 7 goluri primite), H2H 5 victorii din ultimele 6 → p 60%; Guirassy incert, cotă estimată."
+      ],
+      "p": 60,
+      "pm": null,
+      "pf": null,
+      "ph": null,
+      "val": -3
+     },
+     {
+      "ora": "17:00",
+      "meci": "Aston Villa – Sunderland",
+      "selectie": "Aston Villa câștigă",
+      "cota": 1.75,
+      "linii": [
+       "Villa câștigă: piață 54%, formă ~70% (Villa acasă 5 meciuri neînvinsă, V3 E2, 14 goluri; Sunderland 1 punct din 5 în deplasare), H2H 5V din ultimele 12 în PL → p 58%; Sunderland fără Xhaka și Brobbey, Villa fără Onana."
+      ],
+      "p": 58,
+      "pm": 54,
+      "pf": null,
+      "ph": null,
+      "val": 1
+     },
+     {
+      "ora": "17:00",
+      "meci": "Bournemouth – Nottingham Forest",
+      "selectie": "Bournemouth câștigă",
+      "cota": 1.9,
+      "linii": [
+       "Bournemouth câștigă: piață 50%, formă ~70% (8 victorii la rând, 2+ goluri în fiecare; Forest L în 4 din ultimele 6 în PL, 5 goluri marcate), H2H neînvinsă în ultimele 8 (4V 4E) → p 58%; cotă estimată."
+      ],
+      "p": 58,
+      "pm": 50,
+      "pf": null,
+      "ph": null,
+      "val": 5
+     },
+     {
+      "ora": "17:00",
+      "meci": "Chelsea – Leeds",
+      "selectie": "Chelsea câștigă",
+      "cota": 2,
+      "linii": [
+       "Chelsea câștigă: piață 47%, formă ~55% (Chelsea acasă 10 din 16 puncte, 13 goluri; Leeds 1 victorie din ultimele 8 în deplasare), H2H Chelsea 8V din ultimele 10 acasă cu Leeds → p ~57%, redus la 52% pentru absențele lui João Pedro, James, Hato; cotă estimată."
+      ]
+     },
+     {
+      "ora": "19:30",
+      "meci": "Schalke – Stuttgart",
+      "selectie": "Stuttgart câștigă",
+      "cota": 1.85,
+      "linii": [
+       "Stuttgart câștigă: piață 52%, formă ~70% (Schalke 0V 1E 5Î în ultimele 6, 0 puncte acasă; Stuttgart 2V din 3 în deplasare), H2H doar 1V din 6 (2018-23, vechi) → p 52%; absențe neverificate, cotă estimată."
+      ],
+      "p": 52,
+      "pm": 52,
+      "pf": null,
+      "ph": null,
+      "val": -2
+     },
+     {
+      "ora": "16:00",
+      "meci": "Hull – Brighton",
+      "selectie": "Brighton câștigă",
+      "cota": 1.52,
+      "linii": [
+       "Brighton câștigă: piață 63%, formă ~65% (Brighton 4V 1E 1Î în ultimele 6, 5V 1Î în PL; Hull 0V 3E 3Î, 0 victorii acasă), H2H fără meciuri recente relevante (2013-16), greutatea mutată pe formă → p 64%; cotă estimată, absențe neverificate."
+      ],
+      "p": 64,
+      "pm": 63,
+      "pf": null,
+      "ph": null,
+      "val": -2
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-20-rezumat",
   "data": "2026-11-20",
   "tip": "rezumat",
