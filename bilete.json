@@ -3709,5 +3709,24 @@
    14656270,
    15613909
   ]
+ },
+ {
+  "id": "2026-11-21-weekend",
+  "data": "2026-11-21",
+  "tip": "Weekend",
+  "cota": 29.55,
+  "sansa": 0.0349,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21.11 16:30 Mönchengladbach – Dortmund: Dortmund câștigă (1.58) · 21.11 17:00 Aston Villa – Sunderland: Aston Villa câștigă (1.75) · 21.11 17:00 Bournemouth – Nottingham Forest: Bournemouth câștigă (1.90) · 21.11 17:00 Chelsea – Leeds: Chelsea câștigă (2.00) · 21.11 19:30 Schalke – Stuttgart: Stuttgart câștigă (1.85) · 22.11 16:00 Hull – Brighton: Brighton câștigă (1.52)",
+  "rezultat": "",
+  "motive": [
+   "Dortmund câștigă: piață 60.6%, formă ~55% (Gladbach 0 victorii acasă în ligă, 25 goluri primite în 9 meciuri; Dortmund 8 din 12 puncte în deplasare, 7 goluri primite), H2H 5 victorii din ultimele 6 → p 60%; Guirassy incert, cotă estimată.",
+   "Villa câștigă: piață 54%, formă ~70% (Villa acasă 5 meciuri neînvinsă, V3 E2, 14 goluri; Sunderland 1 punct din 5 în deplasare), H2H 5V din ultimele 12 în PL → p 58%; Sunderland fără Xhaka și Brobbey, Villa fără Onana.",
+   "Bournemouth câștigă: piață 50%, formă ~70% (8 victorii la rând, 2+ goluri în fiecare; Forest L în 4 din ultimele 6 în PL, 5 goluri marcate), H2H neînvinsă în ultimele 8 (4V 4E) → p 58%; cotă estimată.",
+   "Chelsea câștigă: piață 47%, formă ~55% (Chelsea acasă 10 din 16 puncte, 13 goluri; Leeds 1 victorie din ultimele 8 în deplasare), H2H Chelsea 8V din ultimele 10 acasă cu Leeds → p ~57%, redus la 52% pentru absențele lui João Pedro, James, Hato; cotă estimată.",
+   "Stuttgart câștigă: piață 52%, formă ~70% (Schalke 0V 1E 5Î în ultimele 6, 0 puncte acasă; Stuttgart 2V din 3 în deplasare), H2H doar 1V din 6 (2018-23, vechi) → p 52%; absențe neverificate, cotă estimată.",
+   "Brighton câștigă: piață 63%, formă ~65% (Brighton 4V 1E 1Î în ultimele 6, 5V 1Î în PL; Hull 0V 3E 3Î, 0 victorii acasă), H2H fără meciuri recente relevante (2013-16), greutatea mutată pe formă → p 64%; cotă estimată, absențe neverificate."
+  ]
  }
 ]
