@@ -73,5 +73,25 @@
   "status": "pierdut",
   "rezultat": "Farul Constanța–U Cluj 2-3 · AGF Aarhus–Lyngby 2-1 (6 cornere)",
   "at": "2026-11-20T22:54:15.603Z"
+ },
+ "2026-11-16-cota100": {
+  "status": "pierdut",
+  "rezultat": "Manchester City–Fulham 1-1 · Como–Cagliari 2-0 · Lazio–Lecce 3-0 · Mönchengladbach–Dortmund 0-1 · Union Berlin–RB Leipzig 1-5",
+  "at": "2026-11-21T17:26:22.576Z"
+ },
+ "2026-11-21-cota2": {
+  "status": "pierdut",
+  "rezultat": "Norwich City–Cardiff City 2-1 · Borussia Monchengladbach–Borussia Dortmund 0-1",
+  "at": "2026-11-21T17:26:22.942Z"
+ },
+ "2026-11-21-cota5": {
+  "status": "pierdut",
+  "rezultat": "Lincoln City–Wrexham 0-1 · Stoke City–Birmingham City 1-0 · Bayer Leverkusen–Paderborn 4-0",
+  "at": "2026-11-21T17:26:23.717Z"
+ },
+ "2026-11-21-cota10": {
+  "status": "pierdut",
+  "rezultat": "Eintracht Frankfurt–Hoffenheim 1-0 (14 cornere) · Millwall–Queens Park Rangers 0-1 · Aston Villa–Sunderland 0-0",
+  "at": "2026-11-21T17:26:24.689Z"
  }
 }
