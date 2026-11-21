@@ -1,6 +1,6 @@
 turnee potrivite 68 nepotrivite (verifică numele): cehia - extraliga | elvetia - nla | croatia - hmnl | austria - ice league | grecia - a1 | scotia - cupa | grecia - volley league | scotia - championship | elvetia - nlb | elvetia - elite u21 | croatia - premijer liga - gr.a | cehia - 1. liga (f) | cehia - 1. liga - gr.a | grecia - cupa superbet | grecia - superbet league 2 | austria - abl | polonia - phl | elvetia - lna | polonia - obl | scotia - cupa challenge
-zile în feed {"2026-11-23":104,"2026-11-26":47,"2026-11-24":66,"2026-11-22":1085,"2026-11-21":2230,"2026-11-25":57,"2026-11-27":39,"2026-11-28":74} chei events ligi potrivite în feed 288
-evenimente 3702 meciuri în ligile alese 197
+zile în feed {"2026-11-23":135,"2026-11-24":84,"2026-11-22":1471,"2026-11-21":1107,"2026-11-25":60,"2026-11-27":44,"2026-11-28":145,"2026-11-26":46} chei events ligi potrivite în feed 246
+evenimente 3092 meciuri în ligile alese 157
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
@@ -235,124 +235,6 @@ HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBet
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-analizate 81 păstrate (≥3/5 la o piață) 81 vulnerabile 42
-arhivă 153 scoruri 11
-Challenge cota 1.41 1 selecții
-Cotă 2 cota 2 3 selecții
-Cotă 5 cota 4.99 4 selecții
-Cotă 10 cota 10 7 selecții
-bilete generator: 6 câștigate 0 pierdute 2
+analizate 79 păstrate (≥3/5 la o piață) 79 vulnerabile 38
+arhivă 167 scoruri 38
+bilete generator: 6 câștigate 1 pierdute 4
