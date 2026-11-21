@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-21",
+ "salvat": "2026-11-21T10:24:27.584Z",
+ "n": 70,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14656349,
+    "meci": "Feyenoord Rotterdam – Excelsior",
+    "when": "2026-11-21T17:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.35,
+    "p": 0.729,
+    "why": "Feyenoord Rotterdam dă 3 și primește 1,4 goluri pe meci; Excelsior dă 1,3 și primește 2,4."
+   },
+   {
+    "id": 14656348,
+    "meci": "Utrecht – Cambuur",
+    "when": "2026-11-21T17:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.45,
+    "p": 0.728,
+    "why": "Utrecht dă 1,8 și primește 2,8 goluri pe meci; Cambuur dă 2,1 și primește 2,3."
+   },
+   {
+    "id": 14656306,
+    "meci": "Lincoln City – Wrexham",
+    "when": "2026-11-21T15:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.38,
+    "p": 0.717,
+    "why": "Lincoln City dă 1 și primește 1,7 goluri pe meci; Wrexham dă 1,2 și primește 1,3."
+   },
+   {
+    "id": 14656309,
+    "meci": "Stoke City – Birmingham City",
+    "when": "2026-11-21T15:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.4,
+    "p": 0.71,
+    "why": "Stoke City dă 1,6 și primește 1,2 goluri pe meci; Birmingham City dă 1,9 și primește 0,9."
+   },
+   {
+    "id": 14656346,
+    "meci": "Groningen – Heerenveen",
+    "when": "2026-11-21T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.44,
+    "p": 0.695,
+    "why": "Groningen dă 2,4 și primește 2,3 goluri pe meci; Heerenveen dă 2 și primește 1,3."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14656348,
+    "meci": "Utrecht – Cambuur",
+    "when": "2026-11-21T17:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.43,
+    "p": 0.721,
+    "why": "Utrecht marchează 1,8 și primește 2,8 pe meci; Cambuur marchează 2,1 și primește 2,3."
+   },
+   {
+    "id": 14656346,
+    "meci": "Groningen – Heerenveen",
+    "when": "2026-11-21T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.39,
+    "p": 0.702,
+    "why": "Groningen marchează 2,4 și primește 2,3 pe meci; Heerenveen marchează 2 și primește 1,3."
+   },
+   {
+    "id": 14656233,
+    "meci": "Norwich City – Cardiff City",
+    "when": "2026-11-21T12:30:00.000Z",
+    "liga": "Championship",
+    "sel": "GG (ambele marchează)",
+    "od": 1.35,
+    "p": 0.698,
+    "why": "Norwich City marchează 2,1 și primește 1,6 pe meci; Cardiff City marchează 1,8 și primește 1,8."
+   },
+   {
+    "id": 14656353,
+    "meci": "Telstar – Zwolle",
+    "when": "2026-11-21T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.47,
+    "p": 0.65,
+    "why": "Telstar marchează 1,5 și primește 2,1 pe meci; Zwolle marchează 1,1 și primește 2."
+   },
+   {
+    "id": 14656328,
+    "meci": "Sporting Charleroi – Sint-Truiden",
+    "when": "2026-11-21T15:00:00.000Z",
+    "liga": "Pro League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.61,
+    "p": 0.648,
+    "why": "Sporting Charleroi marchează 2,4 și primește 1,2 pe meci; Sint-Truiden marchează 2 și primește 2."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14656351,
+    "meci": "NEC Nijmegen – PSV Eindhoven",
+    "when": "2026-11-21T15:30:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.4,
+    "p": 0.785,
+    "why": "Media cornerelor: NEC Nijmegen 6,5, PSV Eindhoven 6,4, adică 12,9 pe meci."
+   },
+   {
+    "id": 14656301,
+    "meci": "Manchester City – Fulham",
+    "when": "2026-11-21T12:30:00.000Z",
+    "liga": "Premier League",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.36,
+    "p": 0.773,
+    "why": "Media cornerelor: Manchester City 6,1, Fulham 6, adică 12,1 pe meci."
+   },
+   {
+    "id": 14656217,
+    "meci": "Borussia Monchengladbach – Borussia Dortmund",
+    "when": "2026-11-21T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.37,
+    "p": 0.769,
+    "why": "Media cornerelor: Borussia Monchengladbach 5,3, Borussia Dortmund 5,6, adică 10,9 pe meci."
+   },
+   {
+    "id": 14656328,
+    "meci": "Sporting Charleroi – Sint-Truiden",
+    "when": "2026-11-21T15:00:00.000Z",
+    "liga": "Pro League",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.36,
+    "p": 0.752,
+    "why": "Media cornerelor: Sporting Charleroi 5,4, Sint-Truiden 6,1, adică 11,5 pe meci."
+   },
+   {
+    "id": 14656330,
+    "meci": "Mechelen – Club Brugge",
+    "when": "2026-11-21T19:45:00.000Z",
+    "liga": "Pro League",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.54,
+    "p": 0.749,
+    "why": "Media cornerelor: Mechelen 5,5, Club Brugge 8,4, adică 13,9 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 14656330,
+    "meci": "Mechelen – Club Brugge",
+    "when": "2026-11-21T19:45:00.000Z",
+    "liga": "Pro League",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.35,
+    "p": 0.74,
+    "why": "Mechelen dă 1,2 și primește 1,8 goluri pe meci; Club Brugge dă 2,5 și primește 0,8. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14656308,
+    "meci": "Sheffield United – Watford",
+    "when": "2026-11-21T15:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.38,
+    "p": 0.713,
+    "why": "Sheffield United dă 1,4 și primește 1,3 goluri pe meci; Watford dă 0,9 și primește 1,5. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14656302,
+    "meci": "Newcastle – Arsenal",
+    "when": "2026-11-21T17:30:00.000Z",
+    "liga": "Premier League",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.43,
+    "p": 0.709,
+    "why": "Newcastle dă 1,3 și primește 1,6 goluri pe meci; Arsenal dă 1,5 și primește 0,5. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14656213,
+    "meci": "Bayer Leverkusen – Paderborn",
+    "when": "2026-11-21T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.5,
+    "p": 0.707,
+    "why": "Bayer Leverkusen dă 2,2 și primește 1,9 goluri pe meci; Paderborn dă 0,9 și primește 1,2. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14656233,
+    "meci": "Norwich City – Cardiff City",
+    "when": "2026-11-21T12:30:00.000Z",
+    "liga": "Championship",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.42,
+    "p": 0.683,
+    "why": "Norwich City dă 2,1 și primește 1,6 goluri pe meci; Cardiff City dă 1,8 și primește 1,8. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}
