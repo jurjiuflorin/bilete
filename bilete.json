@@ -3728,5 +3728,115 @@
    "Stuttgart câștigă: piață 52%, formă ~70% (Schalke 0V 1E 5Î în ultimele 6, 0 puncte acasă; Stuttgart 2V din 3 în deplasare), H2H doar 1V din 6 (2018-23, vechi) → p 52%; absențe neverificate, cotă estimată.",
    "Brighton câștigă: piață 63%, formă ~65% (Brighton 4V 1E 1Î în ultimele 6, 5V 1Î în PL; Hull 0V 3E 3Î, 0 victorii acasă), H2H fără meciuri recente relevante (2013-16), greutatea mutată pe formă → p 64%; cotă estimată, absențe neverificate."
   ]
+ },
+ {
+  "id": "2026-11-21-challenge",
+  "data": "2026-11-21",
+  "tip": "Challenge 1.40",
+  "cota": 1.4,
+  "sansa": 0.751,
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "selectii": "21:45 Mechelen – Club Brugge: Peste 2.5 (1.4)",
+  "motive": [
+   "Peste 2.5: piață 68%, formă 70%, H2H 100% → p 75%; absențe neverificate."
+  ],
+  "ids": [
+   14656330
+  ],
+  "sport": "fotbal",
+  "ciclu": 5,
+  "pas": 4
+ },
+ {
+  "id": "2026-11-21-cota2",
+  "data": "2026-11-21",
+  "tip": "Cotă 2",
+  "cota": 1.88,
+  "sansa": 0.5833,
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "selectii": "14:30 Norwich City – Cardiff City: Peste 2.5 (1.33) · 16:30 Borussia Monchengladbach – Borussia Dortmund: Borussia Monchengladbach peste 0.5 goluri (1.41)",
+  "motive": [
+   "Peste 2.5: piață 71%, formă 75%, H2H 100% → p 78%; absențe neverificate.",
+   "Borussia Monchengladbach peste 0.5 goluri: piață 66%, formă 80%, H2H 80% → p 74%; absențe neverificate."
+  ],
+  "ids": [
+   14656233,
+   14656217
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-21-pariu",
+  "data": "2026-11-21",
+  "tip": "Pariul zilei",
+  "cota": 1.71,
+  "sansa": 0.7,
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "selectii": "22:00 Telstar – Zwolle: X2 (1.71)",
+  "motive": [
+   "X2: piață 55%, formă 70%, H2H 100% → p 70%; absențe neverificate."
+  ],
+  "ids": [
+   14656353
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-21-cota5",
+  "data": "2026-11-21",
+  "tip": "Cotă 5",
+  "cota": 4.65,
+  "sansa": 0.2425,
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "selectii": "17:00 Lincoln City – Wrexham: Peste 1.5 (1.38) · 17:00 Stoke City – Birmingham City: Stoke City peste 0.5 goluri (1.39) · 16:30 Bayer Leverkusen – Paderborn: Paderborn peste 0.5 goluri (1.47) · 21:45 Monaco – Auxerre: Peste 2.5 (1.65)",
+  "motive": [
+   "Peste 1.5: piață 68%, formă 80% → p 74%; absențe neverificate.",
+   "Stoke City peste 0.5 goluri: piață 67%, formă 75%, H2H 80% → p 73%; absențe neverificate.",
+   "Paderborn peste 0.5 goluri: piață 63%, formă 65%, H2H 80% → p 67%; absențe neverificate.",
+   "Peste 2.5: piață 57%, formă 60%, H2H 100% → p 67%; absențe neverificate."
+  ],
+  "ids": [
+   14656306,
+   14656309,
+   14656213,
+   14656365
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-21-cota10",
+  "data": "2026-11-21",
+  "tip": "Cotă 10",
+  "cota": 9.01,
+  "sansa": 0.1133,
+  "status": "în așteptare",
+  "cod": "",
+  "rezultat": "",
+  "selectii": "21:45 Lens – Toulouse: Peste 7.5 cornere (1.35) · 16:30 Eintracht Frankfurt – Hoffenheim: Peste 8.5 cornere (1.38) · 17:30 CFR Cluj – Otelul Galati: 1X (1.38) · 14:30 Millwall – Queens Park Rangers: 1X (1.51) · 17:00 Aston Villa – Sunderland: Sunderland peste 0.5 goluri (1.46) · 19:30 Newcastle – Arsenal: Arsenal câștigă (1.59)",
+  "motive": [
+   "Peste 7.5 cornere: piață 69%, formă 79% → p 74%; absențe neverificate.",
+   "Peste 8.5 cornere: piață 67%, formă 78% → p 72%; absențe neverificate.",
+   "1X: piață 70%, formă 80%, H2H 60% → p 72%; absențe neverificate.",
+   "1X: piață 62%, formă 60%, H2H 100% → p 69%; absențe neverificate.",
+   "Sunderland peste 0.5 goluri: piață 64%, formă 70% → p 67%; absențe neverificate.",
+   "Arsenal câștigă: piață 60%, formă 60%, H2H 80% → p 64%; absențe neverificate."
+  ],
+  "ids": [
+   14656361,
+   14656214,
+   14656274,
+   14656232,
+   14656291,
+   14656302
+  ],
+  "sport": "fotbal"
  }
 ]
