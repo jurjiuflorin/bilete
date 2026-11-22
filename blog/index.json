@@ -1,5 +1,313 @@
 [
  {
+  "id": "2026-11-22-rezumat",
+  "data": "2026-11-22",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 22 noiembrie: 2 câștigate, 3 pierdute",
+  "intro": "Pariul zilei câștigat · Challenge 1.40 câștigat · Cotă 2 pierdut · Cotă 5 pierdut · Cotă 10 pierdut",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [],
+    "li": [
+     "Cotă 2: Nordsjalland – FC Copenhaga 5-0 (FC Copenhaga peste 0.5 goluri)",
+     "Cotă 5: Zurich – St. Gallen Zurich–St. Gallen 0-1 (Peste 2.5); Kortrijk – Royale Union SG Kortrijk–Royale Union SG 2-2 (Royale Union SG câștigă); Austria Viena – RB Salzburg Austria Viena–RB Salzburg 1-0 (Peste 2.5)",
+     "Cotă 10: Barcelona – Villarreal Barcelona–Villarreal 1-1 (Villarreal peste 0.5 goluri); Sirius – Djurgarden IF Sirius–Djurgarden IF 2-6 (X2); Bologna – Udinese Bologna–Udinese 3-2 (Peste 7.5 cornere); Augsburg – Mainz Augsburg–Mainz 3-1 (Peste 8.5 cornere); UTA Arad – Universitatea Craiova UTA Arad–Universitatea Craiova 1-0 (Peste 7.5 cornere)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 9."
+    ],
+    "li": []
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "8 bilete câștigate din 21 validate (38%)."
+    ],
+    "li": []
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 1.47,
+    "sansa": 75.9,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "16:00",
+      "meci": "Sassuolo – Genoa",
+      "liga": "Serie A",
+      "selectie": "X2",
+      "cota": 1.47,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Sassuolo dă 1,4 și primește 2,7 goluri pe meci; Genoa dă 1,1 și primește 1,1.",
+       "Diferența de goluri pe meci: Sassuolo -1,3, Genoa 0,0.",
+       "Meciuri directe analizate: 5.",
+       "Sassuolo – Genoa – X2: piață fără marjă 65%, formă 75%, H2H 1; absențe neverificate/fără impact major raportat."
+      ],
+      "p": 76,
+      "pm": 65,
+      "pf": 75,
+      "ph": 100,
+      "val": 8,
+      "rezultat": "Sassuolo–Genoa 0-2"
+     }
+    ]
+   },
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.37,
+    "sansa": 79.1,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "18:15",
+      "meci": "Lorient – Rennes",
+      "liga": "Ligue 1",
+      "selectie": "Lorient peste 0.5 goluri",
+      "cota": 1.37,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Lorient dă 1,1 și primește 0,9 goluri pe meci; Rennes dă 1,7 și primește 2,0.",
+       "Lorient marchează 1,1 pe meci, iar Rennes primește 2,0.",
+       "Meciuri directe analizate: 5.",
+       "Lorient – Rennes – Lorient peste 0.5 goluri: piață fără marjă 68%, formă 80%, H2H 1; absențe neverificate/fără impact major raportat."
+      ],
+      "p": 79,
+      "pm": 68,
+      "pf": 80,
+      "ph": 100,
+      "val": 6,
+      "rezultat": "Lorient–Rennes 1-1"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.87,
+    "sansa": 63.3,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "16:00",
+      "meci": "Sassuolo – Genoa",
+      "liga": "Serie A",
+      "selectie": "X2",
+      "cota": 1.47,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Sassuolo dă 1,6 și primește 1,6 goluri pe meci; Genoa dă 1,6 și primește 0,9.",
+       "Diferența de goluri pe meci: Sassuolo 0,0, Genoa 0,7.",
+       "Meciuri directe analizate: 5.",
+       "Sassuolo – Genoa – X2: piață fără marjă 65%, formă 75%, H2H 1; absențe neverificate/fără impact major raportat."
+      ],
+      "p": 73,
+      "pm": 62,
+      "pf": 80,
+      "ph": 80,
+      "val": 5,
+      "rezultat": "Sassuolo–Genoa 0-2"
+     },
+     {
+      "ora": "19:00",
+      "meci": "Nordsjalland – FC Copenhaga",
+      "liga": "Superliga (Danemarca)",
+      "selectie": "FC Copenhaga peste 0.5 goluri",
+      "cota": 1.27,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Nordsjalland dă 1,4 și primește 2,7 goluri pe meci; FC Copenhaga dă 1,1 și primește 1,1.",
+       "FC Copenhaga marchează 1,1 pe meci, iar Nordsjalland primește 2,7.",
+       "Meciuri directe analizate: 5.",
+       "Nordsjalland – FC Copenhaga – FC Copenhaga peste 0.5 goluri: piață fără marjă 73%, formă 85%, H2H 1; absențe neverificate/fără impact major raportat."
+      ],
+      "rezultat": "Nordsjalland–FC Copenhaga 5-0"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 4.59,
+    "sansa": 26,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "15:00",
+      "meci": "Zurich – St. Gallen",
+      "liga": "Pro League",
+      "selectie": "Peste 2.5",
+      "cota": 1.46,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Zurich dă 0,6 și primește 1,9 goluri pe meci; St. Gallen dă 2,4 și primește 0,6.",
+       "Meciurile Zurich au în medie 2,5 goluri, cele ale St. Gallen 3,0.",
+       "Meciuri directe analizate: 5.",
+       "Zurich – St. Gallen – Peste 2.5: piață fără marjă 64%, formă 70%, H2H 1; absențe neverificate/fără impact major raportat."
+      ],
+      "p": 66,
+      "pm": 61,
+      "pf": 55,
+      "ph": 100,
+      "val": -2,
+      "rezultat": "Zurich–St. Gallen 0-1"
+     },
+     {
+      "ora": "17:00",
+      "meci": "Kortrijk – Royale Union SG",
+      "liga": "Super League (Elveția)",
+      "selectie": "Royale Union SG câștigă",
+      "cota": 1.37,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Kortrijk dă 2,0 și primește 1,5 goluri pe meci; Royale Union SG dă 2,0 și primește 1,7.",
+       "Diferența de goluri pe meci: Kortrijk 0,5, Royale Union SG 0,3.",
+       "Meciuri directe analizate: 5.",
+       "Kortrijk – Royale Union SG – Royale Union SG câștigă: piață fără marjă 69%, formă 75%, H2H 1; absențe neverificate/fără impact major raportat."
+      ],
+      "rezultat": "Kortrijk–Royale Union SG 2-2"
+     },
+     {
+      "ora": "18:00",
+      "meci": "Austria Viena – RB Salzburg",
+      "liga": "Bundesliga (Austria)",
+      "selectie": "Peste 2.5",
+      "cota": 1.54,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Austria Viena dă 2,1 și primește 1,5 goluri pe meci; RB Salzburg dă 2,1 și primește 1,7.",
+       "Meciurile Austria Viena au în medie 3,6 goluri, cele ale RB Salzburg 3,8.",
+       "Meciuri directe analizate: 5.",
+       "Austria Viena – RB Salzburg – Peste 2.5: piață fără marjă 60%, formă 70%, H2H 0.8; absențe neverificate/fără impact major raportat."
+      ],
+      "p": 68,
+      "pm": 60,
+      "pf": 70,
+      "ph": 80,
+      "val": 3,
+      "rezultat": "Austria Viena–RB Salzburg 1-0"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Olympique Marseille – Le Mans",
+      "liga": "Ligue 1",
+      "selectie": "Le Mans peste 0.5 goluri",
+      "cota": 1.49,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Olympique Marseille dă 1,7 și primește 1,1 goluri pe meci; Le Mans dă 1,2 și primește 1,7.",
+       "Le Mans marchează 1,2 pe meci, iar Olympique Marseille primește 1,1.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Olympique Marseille – Le Mans – Le Mans peste 0.5 goluri: piață fără marjă 62%, formă 75%, H2H n/a; absențe neverificate/fără impact major raportat."
+      ],
+      "p": 67,
+      "pm": 62,
+      "pf": 75,
+      "ph": null,
+      "val": 0
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10",
+    "cota": 9.06,
+    "sansa": 10.5,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "15:00",
+      "meci": "Barcelona – Villarreal",
+      "liga": "Serie A",
+      "selectie": "Villarreal peste 0.5 goluri",
+      "cota": 1.41,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Barcelona dă 1,6 și primește 1,3 goluri pe meci; Villarreal dă 0,9 și primește 2,3.",
+       "Villarreal marchează 0,9 pe meci, iar Barcelona primește 1,3.",
+       "Meciuri directe analizate: 5.",
+       "Barcelona – Villarreal – Villarreal peste 0.5 goluri: piață fără marjă 66%, formă 70%, H2H 0.8; absențe neverificate/fără impact major raportat."
+      ],
+      "rezultat": "Barcelona–Villarreal 1-1"
+     },
+     {
+      "ora": "15:00",
+      "meci": "Sirius – Djurgarden IF",
+      "liga": "SuperLiga",
+      "selectie": "X2",
+      "cota": 1.55,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Sirius dă 1,3 și primește 1,2 goluri pe meci; Djurgarden IF dă 2,1 și primește 0,4.",
+       "Diferența de goluri pe meci: Sirius 0,1, Djurgarden IF 1,7.",
+       "Meciuri directe analizate: 5.",
+       "Sirius – Djurgarden IF – X2: piață fără marjă 60%, formă 65%, H2H 0.8; absențe neverificate/fără impact major raportat."
+      ],
+      "p": 78,
+      "pm": 80,
+      "pf": 75,
+      "ph": 80,
+      "val": 13,
+      "rezultat": "Sirius–Djurgarden IF 2-6"
+     },
+     {
+      "ora": "16:00",
+      "meci": "Bologna – Udinese",
+      "liga": "LaLiga",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.39,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Bologna – Udinese – Peste 7.5 cornere: piață fără marjă 67%, formă 75%, H2H n/a; absențe neverificate/fără impact major raportat."
+      ],
+      "rezultat": "Bologna–Udinese 3-2"
+     },
+     {
+      "ora": "16:30",
+      "meci": "Augsburg – Mainz",
+      "liga": "Bundesliga",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.44,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 10,8 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Augsburg – Mainz – Peste 8.5 cornere: piață fără marjă 64%, formă 75%, H2H n/a; absențe neverificate/fără impact major raportat."
+      ],
+      "p": 70,
+      "pm": 64,
+      "pf": 75,
+      "ph": null,
+      "val": 0,
+      "rezultat": "Augsburg–Mainz 3-1"
+     },
+     {
+      "ora": "17:30",
+      "meci": "UTA Arad – Universitatea Craiova",
+      "liga": "Allsvenskan",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.4,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "UTA Arad – Universitatea Craiova – Peste 7.5 cornere: piață fără marjă 66%, formă 75%, H2H n/a; absențe neverificate/fără impact major raportat."
+      ],
+      "rezultat": "UTA Arad–Universitatea Craiova 1-0"
+     },
+     {
+      "ora": "20:30",
+      "meci": "FC Arges – FCSB",
+      "liga": "SuperLiga",
+      "selectie": "FC Arges peste 0.5 goluri",
+      "cota": 1.48,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): FC Arges dă 1,0 și primește 1,2 goluri pe meci; FCSB dă 1,2 și primește 1,5.",
+       "FC Arges marchează 1,0 pe meci, iar FCSB primește 1,5.",
+       "Meciuri directe analizate: 5.",
+       "FC Arges – FCSB – FC Arges peste 0.5 goluri: piață fără marjă 63%, formă 70%, H2H 0.6; absențe neverificate/fără impact major raportat."
+      ],
+      "p": 65,
+      "pm": 63,
+      "pf": 70,
+      "ph": 60,
+      "val": -2
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-21-rezumat",
   "data": "2026-11-21",
   "tip": "rezumat",
