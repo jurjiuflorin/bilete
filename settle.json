@@ -93,5 +93,35 @@
   "status": "pierdut",
   "rezultat": "Eintracht Frankfurt–Hoffenheim 1-0 (14 cornere) · Millwall–Queens Park Rangers 0-1 · Aston Villa–Sunderland 0-0",
   "at": "2026-11-21T17:26:24.689Z"
+ },
+ "2026-11-16-7zile": {
+  "status": "câștigat",
+  "rezultat": "Lazio–Lecce 3-0 · Juventus–Venezia 4-0",
+  "at": "2026-11-22T20:11:52.226Z"
+ },
+ "2026-11-22-challenge": {
+  "status": "câștigat",
+  "rezultat": "Lorient–Rennes 1-1",
+  "at": "2026-11-22T20:11:52.437Z"
+ },
+ "2026-11-22-cota2": {
+  "status": "pierdut",
+  "rezultat": "Sassuolo–Genoa 5-0 · Nordsjalland–FC Copenhaga 0-2",
+  "at": "2026-11-22T20:11:52.911Z"
+ },
+ "2026-11-22-pariu": {
+  "status": "câștigat",
+  "rezultat": "Sassuolo–Genoa 0-2",
+  "at": "2026-11-22T20:11:52.912Z"
+ },
+ "2026-11-22-cota5": {
+  "status": "pierdut",
+  "rezultat": "Zurich–St. Gallen 0-1 · Kortrijk–Royale Union SG 2-2 · Austria Viena–RB Salzburg 1-0",
+  "at": "2026-11-22T20:11:53.718Z"
+ },
+ "2026-11-22-cota10": {
+  "status": "pierdut",
+  "rezultat": "Barcelona–Villarreal 1-1 · Sirius–Djurgarden IF 2-6 · Bologna–Udinese 3-2 (10 cornere) · Augsburg–Mainz 3-1 (6 cornere) · UTA Arad–Universitatea Craiova 1-0 (9 cornere)",
+  "at": "2026-11-22T20:11:54.822Z"
  }
 }
