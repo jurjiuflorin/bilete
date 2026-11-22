@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-22",
+ "salvat": "2026-11-22T10:23:43.871Z",
+ "n": 47,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14656215,
+    "meci": "Augsburg – Mainz",
+    "when": "2026-11-22T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.41,
+    "p": 0.733,
+    "why": "Augsburg dă 2,2 și primește 2,2 goluri pe meci; Mainz dă 2 și primește 2,1."
+   },
+   {
+    "id": 14656352,
+    "meci": "Sparta Rotterdam – AZ Alkmaar",
+    "when": "2026-11-22T13:30:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.45,
+    "p": 0.703,
+    "why": "Sparta Rotterdam dă 1,8 și primește 2,4 goluri pe meci; AZ Alkmaar dă 2 și primește 1,3."
+   },
+   {
+    "id": 14670980,
+    "meci": "Racing Santander – Real Sociedad",
+    "when": "2026-11-22T15:15:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.38,
+    "p": 0.697,
+    "why": "Racing Santander dă 1,4 și primește 2,5 goluri pe meci; Real Sociedad dă 1,8 și primește 1,7."
+   },
+   {
+    "id": 14670976,
+    "meci": "Getafe – Atletico Madrid",
+    "when": "2026-11-22T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.37,
+    "p": 0.693,
+    "why": "Getafe dă 0,7 și primește 1,5 goluri pe meci; Atletico Madrid dă 1,9 și primește 0,8."
+   },
+   {
+    "id": 14656235,
+    "meci": "Atalanta – Inter Milano",
+    "when": "2026-11-22T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.4,
+    "p": 0.686,
+    "why": "Atalanta dă 1,5 și primește 1,8 goluri pe meci; Inter Milano dă 2,5 și primește 1,2."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14656215,
+    "meci": "Augsburg – Mainz",
+    "when": "2026-11-22T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.38,
+    "p": 0.729,
+    "why": "Augsburg marchează 2,2 și primește 2,2 pe meci; Mainz marchează 2 și primește 2,1."
+   },
+   {
+    "id": 14670980,
+    "meci": "Racing Santander – Real Sociedad",
+    "when": "2026-11-22T15:15:00.000Z",
+    "liga": "LaLiga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.37,
+    "p": 0.695,
+    "why": "Racing Santander marchează 1,4 și primește 2,5 pe meci; Real Sociedad marchează 1,8 și primește 1,7."
+   },
+   {
+    "id": 14656352,
+    "meci": "Sparta Rotterdam – AZ Alkmaar",
+    "when": "2026-11-22T13:30:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.45,
+    "p": 0.691,
+    "why": "Sparta Rotterdam marchează 1,8 și primește 2,4 pe meci; AZ Alkmaar marchează 2 și primește 1,3."
+   },
+   {
+    "id": 14670937,
+    "meci": "Aalesund – Rosenborg",
+    "when": "2026-11-22T16:00:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "GG (ambele marchează)",
+    "od": 1.37,
+    "p": 0.69,
+    "why": "Aalesund marchează 1,7 și primește 2,3 pe meci; Rosenborg marchează 2 și primește 1,2."
+   },
+   {
+    "id": 14858586,
+    "meci": "Zurich – St. Gallen",
+    "when": "2026-11-22T13:00:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.43,
+    "p": 0.688,
+    "why": "Zurich marchează 1,9 și primește 2 pe meci; St. Gallen marchează 1,8 și primește 1,7."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 15532973,
+    "meci": "SCR Altach – Sturm Graz",
+    "when": "2026-11-22T13:30:00.000Z",
+    "liga": "Bundesliga (Austria)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.38,
+    "p": 0.779,
+    "why": "Media cornerelor: SCR Altach 4,5, Sturm Graz 6,8, adică 11,3 pe meci."
+   },
+   {
+    "id": 14656240,
+    "meci": "Juventus – Venezia",
+    "when": "2026-11-22T11:30:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.39,
+    "p": 0.774,
+    "why": "Media cornerelor: Juventus 8,5, Venezia 3,9, adică 12,4 pe meci."
+   },
+   {
+    "id": 14670974,
+    "meci": "Barcelona – Villarreal",
+    "when": "2026-11-22T13:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.42,
+    "p": 0.773,
+    "why": "Media cornerelor: Barcelona 6,4, Villarreal 7,4, adică 13,8 pe meci."
+   },
+   {
+    "id": 14670881,
+    "meci": "Sirius – Djurgarden IF",
+    "when": "2026-11-22T13:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.38,
+    "p": 0.754,
+    "why": "Media cornerelor: Sirius 5,9, Djurgarden IF 5,8, adică 11,7 pe meci."
+   },
+   {
+    "id": 14656352,
+    "meci": "Sparta Rotterdam – AZ Alkmaar",
+    "when": "2026-11-22T13:30:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.51,
+    "p": 0.745,
+    "why": "Media cornerelor: Sparta Rotterdam 6, AZ Alkmaar 7,5, adică 13,5 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 14670931,
+    "meci": "Sarpsborg 08 – Lillestrom",
+    "when": "2026-11-22T18:15:00.000Z",
+    "liga": "Eliteserien",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.38,
+    "p": 0.762,
+    "why": "Sarpsborg 08 dă 1,2 și primește 1,6 goluri pe meci; Lillestrom dă 1,5 și primește 1,3. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14670974,
+    "meci": "Barcelona – Villarreal",
+    "when": "2026-11-22T13:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Sub 5.5 goluri",
+    "od": 1.4,
+    "p": 0.735,
+    "why": "Barcelona dă 4 și primește 1,1 goluri pe meci; Villarreal dă 1,4 și primește 1,3. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14670884,
+    "meci": "Trabzonspor – Eyupspor",
+    "when": "2026-11-22T16:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.42,
+    "p": 0.729,
+    "why": "Trabzonspor dă 2,4 și primește 0,7 goluri pe meci; Eyupspor dă 0,3 și primește 2,7. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14656298,
+    "meci": "Hull City – Brighton",
+    "when": "2026-11-22T14:00:00.000Z",
+    "liga": "Premier League",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.4,
+    "p": 0.708,
+    "why": "Hull City dă 1,1 și primește 1,1 goluri pe meci; Brighton dă 2,6 și primește 0,7. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14656326,
+    "meci": "SK Beveren – Gent",
+    "when": "2026-11-22T12:30:00.000Z",
+    "liga": "Pro League",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.37,
+    "p": 0.696,
+    "why": "SK Beveren dă 1,2 și primește 2,1 goluri pe meci; Gent dă 1,8 și primește 0,5. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}
