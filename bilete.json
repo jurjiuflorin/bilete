@@ -3846,5 +3846,115 @@
    14656302
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-22-challenge",
+  "data": "2026-11-22",
+  "tip": "Challenge 1.40",
+  "cota": 1.37,
+  "sansa": 0.791,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "18:15 Lorient – Rennes: Lorient peste 0.5 goluri (1.37)",
+  "rezultat": "",
+  "motive": [
+   "Lorient – Rennes – Lorient peste 0.5 goluri: piață fără marjă 68%, formă 80%, H2H 1; absențe neverificate/fără impact major raportat."
+  ],
+  "ids": [
+   14656363
+  ],
+  "sport": "fotbal",
+  "ciclu": 5,
+  "pas": 5
+ },
+ {
+  "id": "2026-11-22-cota2",
+  "data": "2026-11-22",
+  "tip": "Cotă 2",
+  "cota": 1.87,
+  "sansa": 0.633,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "16:00 Sassuolo – Genoa: X2 (1.47) · 19:00 Nordsjalland – FC Copenhaga: FC Copenhaga peste 0.5 goluri (1.27)",
+  "rezultat": "",
+  "motive": [
+   "Sassuolo – Genoa – X2: piață fără marjă 65%, formă 75%, H2H 1; absențe neverificate/fără impact major raportat.",
+   "Nordsjalland – FC Copenhaga – FC Copenhaga peste 0.5 goluri: piață fără marjă 73%, formă 85%, H2H 1; absențe neverificate/fără impact major raportat."
+  ],
+  "ids": [
+   15644445,
+   14656247
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-22-pariu",
+  "data": "2026-11-22",
+  "tip": "Pariul zilei",
+  "cota": 1.47,
+  "sansa": 0.759,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "16:00 Sassuolo – Genoa: X2 (1.47)",
+  "rezultat": "",
+  "motive": [
+   "Sassuolo – Genoa – X2: piață fără marjă 65%, formă 75%, H2H 1; absențe neverificate/fără impact major raportat."
+  ],
+  "ids": [
+   14656247
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-22-cota5",
+  "data": "2026-11-22",
+  "tip": "Cotă 5",
+  "cota": 4.59,
+  "sansa": 0.2603,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "15:00 Zurich – St. Gallen: Peste 2.5 (1.46) · 17:00 Kortrijk – Royale Union SG: Royale Union SG câștigă (1.37) · 18:00 Austria Viena – RB Salzburg: Peste 2.5 (1.54) · 21:45 Olympique Marseille – Le Mans: Le Mans peste 0.5 goluri (1.49)",
+  "rezultat": "",
+  "motive": [
+   "Zurich – St. Gallen – Peste 2.5: piață fără marjă 64%, formă 70%, H2H 1; absențe neverificate/fără impact major raportat.",
+   "Kortrijk – Royale Union SG – Royale Union SG câștigă: piață fără marjă 69%, formă 75%, H2H 1; absențe neverificate/fără impact major raportat.",
+   "Austria Viena – RB Salzburg – Peste 2.5: piață fără marjă 60%, formă 70%, H2H 0.8; absențe neverificate/fără impact major raportat.",
+   "Olympique Marseille – Le Mans – Le Mans peste 0.5 goluri: piață fără marjă 62%, formă 75%, H2H n/a; absențe neverificate/fără impact major raportat."
+  ],
+  "ids": [
+   14656325,
+   14858586,
+   15420923,
+   14656364
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-22-cota10",
+  "data": "2026-11-22",
+  "tip": "Cotă 10",
+  "cota": 9.06,
+  "sansa": 0.1052,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "15:00 Barcelona – Villarreal: Villarreal peste 0.5 goluri (1.41) · 15:00 Sirius – Djurgarden IF: X2 (1.55) · 16:00 Bologna – Udinese: Peste 7.5 cornere (1.39) · 16:30 Augsburg – Mainz: Peste 8.5 cornere (1.44) · 17:30 UTA Arad – Universitatea Craiova: Peste 7.5 cornere (1.40) · 20:30 FC Arges – FCSB: FC Arges peste 0.5 goluri (1.48)",
+  "rezultat": "",
+  "motive": [
+   "Barcelona – Villarreal – Villarreal peste 0.5 goluri: piață fără marjă 66%, formă 70%, H2H 0.8; absențe neverificate/fără impact major raportat.",
+   "Sirius – Djurgarden IF – X2: piață fără marjă 60%, formă 65%, H2H 0.8; absențe neverificate/fără impact major raportat.",
+   "Bologna – Udinese – Peste 7.5 cornere: piață fără marjă 67%, formă 75%, H2H n/a; absențe neverificate/fără impact major raportat.",
+   "Augsburg – Mainz – Peste 8.5 cornere: piață fără marjă 64%, formă 75%, H2H n/a; absențe neverificate/fără impact major raportat.",
+   "UTA Arad – Universitatea Craiova – Peste 7.5 cornere: piață fără marjă 66%, formă 75%, H2H n/a; absențe neverificate/fără impact major raportat.",
+   "FC Arges – FCSB – FC Arges peste 0.5 goluri: piață fără marjă 63%, formă 70%, H2H 0.6; absențe neverificate/fără impact major raportat."
+  ],
+  "ids": [
+   14656236,
+   14656276,
+   14670974,
+   14656215,
+   14670881,
+   14656267
+  ],
+  "sport": "fotbal"
  }
 ]
