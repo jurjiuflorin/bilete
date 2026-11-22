@@ -1,46 +1,269 @@
 {
- "data": "2026-11-20",
- "actualizat": "2026-11-20T06:14:26Z",
+ "data": "2026-11-22",
+ "actualizat": "2026-11-22T06:18:10Z",
  "meciuri": [
   {
-   "data": "2026-11-20",
-   "ora": "21:30",
-   "liga": "Bundesliga",
-   "gazde": "Bayern Munchen",
-   "oaspeti": "Koln",
-   "absenti_gazde": [],
+   "data": "2026-11-22",
+   "ora": "13:30",
+   "liga": "Serie A",
+   "gazde": "Juventus",
+   "oaspeti": "Venezia",
+   "loc_gazde": 7,
+   "loc_oaspeti": 19,
+   "absenti_gazde": [
+    "Kalulu (fundaș) – indisponibil"
+   ],
    "absenti_oaspeti": [],
-   "nota": "Absențe neverificate (nu s-au găsit surse proaspete)."
+   "nota": "Venezia: fără absențe raportate; Juventus: doar Kalulu confirmat absent."
   },
   {
-   "data": "2026-11-20",
+   "data": "2026-11-22",
+   "ora": "16:00",
+   "liga": "Serie A",
+   "gazde": "Bologna",
+   "oaspeti": "Udinese",
+   "loc_gazde": 8,
+   "loc_oaspeti": 20,
+   "absenti_gazde": [
+    "Miranda (fundaș) – accidentat",
+    "El Azzouzi (mijlocaș) – accidentat, ~2 săptămâni",
+    "Heggem (fundaș) – nu e convocat",
+    "Cambiaghi (extremă) – incert"
+   ],
+   "absenti_oaspeti": [
+    "Zanoli (fundaș) – în revenire"
+   ]
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "16:00",
+   "liga": "Serie A",
+   "gazde": "Sassuolo",
+   "oaspeti": "Genoa",
+   "loc_gazde": 17,
+   "loc_oaspeti": 13,
+   "absenti_gazde": [
+    "Adzic (mijlocaș) – absent",
+    "Volpato (mijlocaș) – absent",
+    "Berardi (extremă) – incert"
+   ],
+   "absenti_oaspeti": [
+    "Frendrup (mijlocaș) – de evaluat"
+   ],
+   "marcatori_oaspeti": "Osmajic 4"
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "19:00",
+   "liga": "Serie A",
+   "gazde": "AC Milan",
+   "oaspeti": "Frosinone",
+   "loc_gazde": 4,
+   "loc_oaspeti": 6,
+   "absenti_gazde": [
+    "Pavlovic (fundaș) – incert"
+   ],
+   "absenti_oaspeti": [
+    "Raimondo (atacant, golgheter) – accidentat"
+   ],
+   "marcatori_gazde": "Cisse 5, Rabiot 5",
+   "marcatori_oaspeti": "Raimondo 8, Calo 5"
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "21:45",
+   "liga": "Serie A",
+   "gazde": "Atalanta",
+   "oaspeti": "Inter",
+   "forma_gazde": "EEIEV",
+   "forma_oaspeti": "VVIVV",
+   "loc_gazde": 12,
+   "loc_oaspeti": 2,
+   "absenti_gazde": [
+    "Hien (fundaș) – accidentat, incert",
+    "Kossounou (fundaș) – accidentat, incert"
+   ],
+   "absenti_oaspeti": [
+    "Zielinski (mijlocaș) – accidentat, incert",
+    "Bonny (atacant) – accidentat, revine în decembrie"
+   ],
+   "marcatori_gazde": "Krstovic 7",
+   "marcatori_oaspeti": "Thuram 6"
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "16:00",
+   "liga": "Premier League",
+   "gazde": "Hull",
+   "oaspeti": "Brighton",
+   "loc_gazde": 13,
+   "loc_oaspeti": 2,
+   "absenti_gazde": [
+    "Ansah (atacant) – accidentat",
+    "Matazo (mijlocaș) – accidentat",
+    "Morita (mijlocaș) – accidentat",
+    "Targett (fundaș) – accidentat"
+   ],
+   "absenti_oaspeti": [
+    "Mitoma (extremă) – accidentat",
+    "Ferguson (atacant) – accidentat",
+    "Tzimas (fundaș) – incert",
+    "Yohanna (atacant) – accidentat"
+   ],
+   "marcatori_gazde": "Belloumi",
+   "marcatori_oaspeti": "Gross"
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "18:30",
+   "liga": "Premier League",
+   "gazde": "Liverpool",
+   "oaspeti": "Manchester United",
+   "absenti_gazde": [
+    "Ekitike (atacant) – accidentat",
+    "Bradley (fundaș) – accidentat grav",
+    "Leoni (fundaș) – accidentat grav"
+   ],
+   "absenti_oaspeti": [
+    "Baleba (mijlocaș) – absent",
+    "Sesko (atacant) – absent",
+    "Ugarte (mijlocaș) – absent",
+    "Rashford, Shaw, Maguire – incerți"
+   ],
+   "nota": "Poziții în clasament neclare în surse."
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "16:30",
+   "liga": "Bundesliga",
+   "gazde": "Augsburg",
+   "oaspeti": "Mainz",
+   "loc_gazde": 14,
+   "loc_oaspeti": 12,
+   "absenti_gazde": [
+    "Massengo (mijlocaș) – absent",
+    "Matsima (fundaș) – absent"
+   ],
+   "absenti_oaspeti": [
+    "Kohr (mijlocaș) – accidentat, până în ianuarie"
+   ],
+   "marcatori_gazde": "Gregoritsch 5"
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "18:30",
+   "liga": "Bundesliga",
+   "gazde": "Werder Bremen",
+   "oaspeti": "Hamburger SV",
+   "absenti_gazde": [
+    "Stage – accidentat",
+    "Musah – accidentat",
+    "Topp (genunchi) – accidentat",
+    "Weiser – accidentat"
+   ],
+   "absenti_oaspeti": [
+    "Lokonga (mijlocaș) – accidentat",
+    "Poulsen – accidentat",
+    "Torunarigha (fundaș) – accidentat",
+    "Remberg – accidentat"
+   ],
+   "nota": "Absențe din sursă cu dată incertă."
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "14:30",
+   "liga": "2. Bundesliga",
+   "gazde": "Energie Cottbus",
+   "oaspeti": "Hertha Berlin",
+   "loc_gazde": 12,
+   "loc_oaspeti": 1,
+   "absenti_gazde": [],
+   "absenti_oaspeti": [],
+   "nota": "Ambele loturi complete conform antrenorilor."
+  },
+  {
+   "data": "2026-11-22",
+   "ora": "15:00",
+   "liga": "LaLiga",
+   "gazde": "Barcelona",
+   "oaspeti": "Villarreal",
+   "loc_gazde": 1,
+   "loc_oaspeti": 8,
+   "absenti_gazde": [
+    "Christensen (fundaș) – accidentat",
+    "Rodri Hernandez – biceps femural, până la finalul lunii",
+    "Xavi Espart – gleznă, până la mijlocul lui decembrie",
+    "Bardghji (extremă) – ruptură LCA"
+   ],
+   "absenti_oaspeti": [
+    "Foyth (fundaș) – accidentat",
+    "Gerard Moreno (atacant) – accidentat",
+    "Akhomach (extremă) – accidentat",
+    "Diatta – incert"
+   ]
+  },
+  {
+   "data": "2026-11-22",
    "ora": "22:00",
    "liga": "LaLiga",
-   "gazde": "Athletic Bilbao",
-   "oaspeti": "Espanyol",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate (nu s-au găsit surse proaspete)."
+   "gazde": "Getafe",
+   "oaspeti": "Atletico Madrid",
+   "loc_gazde": 15,
+   "loc_oaspeti": 3,
+   "absenti_gazde": [
+    "Uche (atacant) – LCA, până în aprilie",
+    "Juanmi Jimenez – accidentat",
+    "Gudelj (mijlocaș) – suspendat"
+   ],
+   "absenti_oaspeti": [
+    "Cuti Romero – accidentat",
+    "Pubill (fundaș) – gleznă",
+    "Lookman (atacant) – entorsă genunchi, până în ian-feb"
+   ],
+   "marcatori_gazde": "Satriano 3",
+   "marcatori_oaspeti": "Baena 5, G. Simeone 4, Grimaldo 4"
   },
   {
-   "data": "2026-11-20",
-   "ora": "21:45",
-   "liga": "Ligue 1",
-   "gazde": "Troyes",
-   "oaspeti": "Le Havre",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate (nu s-au găsit surse proaspete). Data meciului nesigură (unele surse: 21.11)."
+   "data": "2026-11-22",
+   "ora": "17:30",
+   "liga": "Romania SuperLiga",
+   "gazde": "UTA Arad",
+   "oaspeti": "U Craiova",
+   "forma_gazde": "IVVII",
+   "forma_oaspeti": "VVVVE",
+   "loc_gazde": 10,
+   "loc_oaspeti": 1,
+   "absenti_gazde": [
+    "Odada – fractură peroneu, revine în februarie",
+    "Oaidă – ligamente, din aprilie",
+    "Pitu – ligamente, din aprilie"
+   ],
+   "absenti_oaspeti": [
+    "Stevanovic, Etim, Roux – probleme medicale",
+    "Baiaram – motive personale",
+    "Assad, Mora – incerți după națională"
+   ],
+   "marcatori_gazde": "Coman 5",
+   "marcatori_oaspeti": "Elisor 9, Assad 7",
+   "nota": "Craiova: listă de absențe mai puțin sigură."
   },
   {
-   "data": "2026-11-20",
-   "ora": "22:45",
-   "liga": "Cupa Portugaliei",
-   "gazde": "FC Porto",
-   "oaspeti": "Paredes",
+   "data": "2026-11-22",
+   "ora": "20:30",
+   "liga": "Romania SuperLiga",
+   "gazde": "FC Arges",
+   "oaspeti": "FCSB",
+   "forma_oaspeti": "VVVII",
+   "loc_gazde": 13,
+   "loc_oaspeti": 8,
    "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate (nu s-au găsit surse proaspete)."
+   "absenti_oaspeti": [
+    "Korenica – ligamente, până la finalul lui 2026",
+    "Labonne – accidentat",
+    "Politic – menisc, necesită operație",
+    "Cisotti și Garita – revin din accidentare, improbabil"
+   ],
+   "nota": "Argeș: absențe neverificate; FCSB cu probleme de lot (Reghecampf)."
   }
  ]
 }
