@@ -3964,7 +3964,7 @@
   "cota": 112.93,
   "sansa": 0.0049,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "990H-WME7U7",
   "selectii": "24.11 22:00 Manchester City – Napoli: Manchester City peste 2.5 goluri echipă (1.80) · 24.11 22:00 Arsenal – Borussia Dortmund: Peste 2.5 goluri (1.65) · 25.11 22:00 PSG – AS Roma: PSG peste 2.5 goluri echipă (1.88) · 26.11 22:00 Juventus – Omonia Nicosia: Juventus peste 2.5 goluri echipă (1.76) · 28.11 16:30 Hamburg – Bayern Munchen: Bayern peste 2.5 goluri echipă (1.63) · 28.11 21:45 Inter – Genoa: Peste 2.5 goluri (1.58) · 28.11 22:00 Real Madrid – Alaves: Real Madrid peste 2.5 goluri echipă (1.61) · 29.11 17:15 Deportivo – Barcelona: Barcelona peste 2.5 goluri echipă (1.64) · 29.11 19:00 AS Roma – Monza: AS Roma peste 2.5 goluri echipă (1.69)",
   "rezultat": "",
   "motive": [
@@ -3978,7 +3978,18 @@
    "Deportivo – Barcelona – Barcelona peste 2.5 goluri echipă: Barcelona 3-2 cu Villarreal, Deportivo 1-3 cu Alaves; piață 57,5%, formă ~55%. Probabilitate estimată 56%.",
    "AS Roma – Monza – AS Roma peste 2.5 goluri echipă: Roma 5-1 la Parma, Monza outsider (11.00); piață 56%, formă ~56%. Probabilitate estimată 56%."
   ],
-  "sport": "fotbal"
+  "sport": "fotbal",
+  "ids": [
+   14790409,
+   14790413,
+   14805723,
+   14820907,
+   14764495,
+   14764514,
+   14780646,
+   14780640,
+   14764516
+  ]
  },
  {
   "id": "2026-11-23-mega",
@@ -3987,7 +3998,7 @@
   "cota": 898.41,
   "sansa": 0.0002,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "990E-KKFPA8",
   "selectii": "24.11 22:00 Manchester City – Napoli: Peste 2.5 goluri (1.36) · 24.11 22:00 Slovan Bratislava – Betis: Peste 2.5 goluri (1.36) · 24.11 22:00 RB Leipzig – Lens: RB Leipzig câștigă (1.38) · 24.11 22:00 Arsenal – Borussia Dortmund: Arsenal câștigă (1.40) · 24.11 22:00 Real Madrid – PSV: Real Madrid peste 2.5 goluri echipă (1.41) · 25.11 22:00 PSG – AS Roma: PSG câștigă (1.39) · 25.11 22:00 Club Brugge – Liverpool: Liverpool peste 1.5 goluri echipă (1.38) · 25.11 22:00 Inter – Stuttgart: Inter câștigă (1.42) · 26.11 22:00 Juventus – Omonia Nicosia: Peste 2.5 goluri (1.40) · 26.11 22:00 Hoffenheim – Sturm Graz: Peste 2.5 goluri (1.40) · 26.11 22:00 Olympique Lyon – Lillestrom: Peste 2.5 goluri (1.37) · 27.11 21:30 Werder Bremen – Gladbach: Ambele echipe marchează (1.50) · 27.11 22:00 Levante – Racing Santander: Levante sau egal (1X) (1.35) · 28.11 16:30 Mainz – Union Berlin: Mainz câștigă (1.50) · 28.11 17:00 Leeds – Coventry: Leeds câștigă (1.55) · 28.11 19:30 Stuttgart – Eintracht Frankfurt: Stuttgart peste 1.5 goluri echipă (1.37) · 28.11 21:45 Inter – Genoa: Inter peste 1.5 goluri echipă (1.41) · 28.11 21:45 PSG – Lorient: Peste 2.5 goluri (1.46) · 29.11 18:30 Hoffenheim – Augsburg: Ambele echipe marchează (1.36) · 29.11 19:00 AS Roma – Monza: Peste 2.5 goluri (1.35)",
   "rezultat": "",
   "motive": [
@@ -4012,7 +4023,29 @@
    "Hoffenheim – Augsburg – Ambele echipe marchează: Augsburg 3-1 cu Mainz, Hoffenheim 0-1 la Frankfurt; piață 69%, formă ~62%. Probabilitate estimată 65%.",
    "AS Roma – Monza – Peste 2.5 goluri: Roma 5-1 la Parma, Monza e outsider (11.00); piață 70%, formă ~70%. Probabilitate estimată 70%."
   ],
-  "sport": "fotbal"
+  "sport": "fotbal",
+  "ids": [
+   14790409,
+   14790412,
+   14790410,
+   14790413,
+   14790411,
+   14805723,
+   14805721,
+   14805717,
+   14820907,
+   14820899,
+   14820912,
+   14764497,
+   14780643,
+   14764494,
+   14764551,
+   14764491,
+   14764514,
+   14764639,
+   14764492,
+   14764516
+  ]
  },
  {
   "id": "2026-11-23-7zile",
@@ -4021,7 +4054,7 @@
   "cota": 6.8,
   "sansa": 0.0989,
   "status": "în așteptare",
-  "cod": "",
+  "cod": "991E-WLMR1A",
   "selectii": "24.11 22:00 Manchester City – Napoli: Peste 2.5 goluri (1.36) · 25.11 22:00 PSG – AS Roma: PSG câștigă (1.39) · 26.11 22:00 Juventus – Omonia Nicosia: Peste 2.5 goluri (1.40) · 27.11 22:00 Levante – Racing Santander: Levante sau egal (1X) (1.35) · 28.11 21:45 Inter – Genoa: Inter peste 1.5 goluri echipă (1.41) · 29.11 19:00 AS Roma – Monza: Peste 2.5 goluri (1.35)",
   "rezultat": "",
   "motive": [
@@ -4032,6 +4065,14 @@
    "Inter – Genoa – Inter peste 1.5 goluri echipă: Inter a marcat 4 cu Atalanta, Genoa 2-0 cu Sassuolo dar are doar 10,8% șanse în feed; piață 66%, formă ~70%. Probabilitate estimată 68%.",
    "AS Roma – Monza – Peste 2.5 goluri: Roma 5-1 la Parma, Monza e outsider (11.00); piață 70%, formă ~70%. Probabilitate estimată 70%."
   ],
-  "sport": "fotbal"
+  "sport": "fotbal",
+  "ids": [
+   14790409,
+   14805723,
+   14820907,
+   14780643,
+   14764514,
+   14764516
+  ]
  }
 ]
