@@ -1,5 +1,367 @@
 [
  {
+  "id": "2026-11-23-bilete",
+  "data": "2026-11-23",
+  "tip": "bilete",
+  "titlu": "Biletele zilei de 23 noiembrie: 3 bilete, 35 evenimente analizate",
+  "intro": "Cotă 100+ 112,93 · Mega 20+ 898,41 · Săptămânal 7 zile 6,80",
+  "sectiuni": [
+   {
+    "h": "Cum citești analiza",
+    "p": [
+     "Pentru fiecare eveniment vezi trei numere: ce spune piața (cota fără marja casei), ce spune forma pe ultimele 10 meciuri ale ambelor echipe și ce spun meciurile directe (H2H). Estimarea finală e 40% piață, 40% formă și 20% H2H, iar „valoarea” e diferența dintre estimare și probabilitatea din cotă. Cotă 2 are prioritate la alegere, iar meciurile se repetă cât mai puțin între bilete."
+    ]
+   },
+   {
+    "h": "Ce trebuie verificat",
+    "p": [
+     "Absențele nu sunt verificate. Estimările sunt statistice, nu garanții, iar cotele se pot mișca până la meci. Pune doar o miză mică."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Cotă 100+",
+    "cota": 112.93,
+    "sansa": 0.5,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "Manchester City – Napoli",
+      "selectie": "Manchester City peste 2.5 goluri echipă",
+      "cota": 1.8,
+      "linii": [
+       "Manchester City – Napoli – Manchester City peste 2.5 goluri echipă: City are 76% după feed, Napoli a primit 4 la Porto; piață 52%, formă ~52%. Probabilitate estimată 52%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Arsenal – Borussia Dortmund",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.65,
+      "linii": [
+       "Arsenal – Borussia Dortmund – Peste 2.5 goluri: Arsenal 2-2 la Newcastle, Dortmund câștigă cu 1-0/2-1; piață 57,4%, formă ~58%. Probabilitate estimată 58%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "PSG – AS Roma",
+      "selectie": "PSG peste 2.5 goluri echipă",
+      "cota": 1.88,
+      "linii": [
+       "PSG – AS Roma – PSG peste 2.5 goluri echipă: PSG 6-0 cu Villarreal și 3-2 la Nice; piață 50%, formă ~52%. Probabilitate estimată 51%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Juventus – Omonia Nicosia",
+      "selectie": "Juventus peste 2.5 goluri echipă",
+      "cota": 1.76,
+      "linii": [
+       "Juventus – Omonia Nicosia – Juventus peste 2.5 goluri echipă: Juventus 4-0 cu Venezia, Omonia 11.00; piață 53,6%, formă ~52%. Probabilitate estimată 53%."
+      ]
+     },
+     {
+      "ora": "16:30",
+      "meci": "Hamburg – Bayern Munchen",
+      "selectie": "Bayern peste 2.5 goluri echipă",
+      "cota": 1.63,
+      "linii": [
+       "Hamburg – Bayern Munchen – Bayern peste 2.5 goluri echipă: Bayern 1-1 cu Köln dar 77% pentru victorie, Hamburg 0-4 cu Bremen; piață 58%, formă ~56%. Probabilitate estimată 57%."
+      ]
+     },
+     {
+      "ora": "21:45",
+      "meci": "Inter – Genoa",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.58,
+      "linii": [
+       "Inter – Genoa – Peste 2.5 goluri: Inter 4-4 cu Atalanta (8 goluri), Genoa 2-0 cu Sassuolo; piață 60%, formă ~60%. Probabilitate estimată 60%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Real Madrid – Alaves",
+      "selectie": "Real Madrid peste 2.5 goluri echipă",
+      "cota": 1.61,
+      "linii": [
+       "Real Madrid – Alaves – Real Madrid peste 2.5 goluri echipă: Real Madrid 3-2 la AEK, 83% pentru victorie în feed; piață 57,7%, formă ~55%. Probabilitate estimată 56%."
+      ]
+     },
+     {
+      "ora": "17:15",
+      "meci": "Deportivo – Barcelona",
+      "selectie": "Barcelona peste 2.5 goluri echipă",
+      "cota": 1.64,
+      "linii": [
+       "Deportivo – Barcelona – Barcelona peste 2.5 goluri echipă: Barcelona 3-2 cu Villarreal, Deportivo 1-3 cu Alaves; piață 57,5%, formă ~55%. Probabilitate estimată 56%."
+      ]
+     },
+     {
+      "ora": "19:00",
+      "meci": "AS Roma – Monza",
+      "selectie": "AS Roma peste 2.5 goluri echipă",
+      "cota": 1.69,
+      "linii": [
+       "AS Roma – Monza – AS Roma peste 2.5 goluri echipă: Roma 5-1 la Parma, Monza outsider (11.00); piață 56%, formă ~56%. Probabilitate estimată 56%."
+      ]
+     }
+    ]
+   },
+   {
+    "tip": "Mega 20+",
+    "cota": 898.41,
+    "sansa": 0,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "Manchester City – Napoli",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.36,
+      "linii": [
+       "Manchester City – Napoli – Peste 2.5 goluri: City 3-2 la Leipzig în CL și 1-1 cu Fulham, Napoli a primit 4 la Porto; piață fără marjă 69,5%, formă ~70%, H2H neverificat. Probabilitate estimată 70%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Slovan Bratislava – Betis",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.36,
+      "linii": [
+       "Slovan Bratislava – Betis – Peste 2.5 goluri: Slovan are 0 puncte după 4 meciuri CL, Betis a câștigat cu BVB (2-1) și are 78% să câștige; piață 69,5%, formă ~68%. Probabilitate estimată 69%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "RB Leipzig – Lens",
+      "selectie": "RB Leipzig câștigă",
+      "cota": 1.38,
+      "linii": [
+       "RB Leipzig – Lens – RB Leipzig câștigă: Leipzig 5-1 la Union Berlin, Lens are doar 1 victorie în 4 meciuri CL; piață 68,6%, formă ~68%. Probabilitate estimată 68%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Arsenal – Borussia Dortmund",
+      "selectie": "Arsenal câștigă",
+      "cota": 1.4,
+      "linii": [
+       "Arsenal – Borussia Dortmund – Arsenal câștigă: Arsenal 3V 1E în CL (10 puncte), 2-2 la Newcastle; piață 67,7%, formă ~65%, probabilitate 69% după feed. Probabilitate estimată 66%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Real Madrid – PSV",
+      "selectie": "Real Madrid peste 2.5 goluri echipă",
+      "cota": 1.41,
+      "linii": [
+       "Real Madrid – PSV – Real Madrid peste 2.5 goluri echipă: Real Madrid 3-2 la AEK și 2-1 cu Celta, PSV a primit 6 în ultimele meciuri de elită; piață 66%, formă ~58%. Probabilitate estimată 61%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "PSG – AS Roma",
+      "selectie": "PSG câștigă",
+      "cota": 1.39,
+      "linii": [
+       "PSG – AS Roma – PSG câștigă: PSG 6-0 cu Villarreal și 3-2 la Nice (lider CL, 12 puncte), Roma 1V 2Î în CL; piață 68%, formă ~70%. Probabilitate estimată 69%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Club Brugge – Liverpool",
+      "selectie": "Liverpool peste 1.5 goluri echipă",
+      "cota": 1.38,
+      "linii": [
+       "Club Brugge – Liverpool – Liverpool peste 1.5 goluri echipă: Liverpool 4-0 în ultimul meci, dar 2-3 la Fenerbahce; Brugge 3V în CL; piață 67%, formă ~66%. Probabilitate estimată 67%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Inter – Stuttgart",
+      "selectie": "Inter câștigă",
+      "cota": 1.42,
+      "linii": [
+       "Inter – Stuttgart – Inter câștigă: Inter 4-4 cu Atalanta (a primit 4) și doar 2V din 4 în CL, Stuttgart 0-0 la Schalke; piață 66,7%, formă ~62%. Probabilitate estimată 64%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Juventus – Omonia Nicosia",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.4,
+      "linii": [
+       "Juventus – Omonia Nicosia – Peste 2.5 goluri: Juventus 4-0 cu Venezia și 2-2 cu Fiorentina, Omonia e outsider clar (11.00); piață 67%, formă ~66%. Probabilitate estimată 67%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Hoffenheim – Sturm Graz",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.4,
+      "linii": [
+       "Hoffenheim – Sturm Graz – Peste 2.5 goluri: Hoffenheim 2-1 cu Schalke, 0-1 la Frankfurt, favorită clară (1.35); piață 67,6%, formă ~64%. Probabilitate estimată 65%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Olympique Lyon – Lillestrom",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.37,
+      "linii": [
+       "Olympique Lyon – Lillestrom – Peste 2.5 goluri: Lyon 1-0 la Lille în ultimul meci, adversar slab (11.00); piață 69%, formă ~60% (Ligue 1 cu puține goluri). Probabilitate estimată 64%."
+      ]
+     },
+     {
+      "ora": "21:30",
+      "meci": "Werder Bremen – Gladbach",
+      "selectie": "Ambele echipe marchează",
+      "cota": 1.5,
+      "linii": [
+       "Werder Bremen – Gladbach – Ambele echipe marchează: Bremen 4-0 cu Hamburg, Gladbach 0-1 cu Dortmund dar marchează în deplasare; piață 62,5%, formă ~62%. Probabilitate estimată 62%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Levante – Racing Santander",
+      "selectie": "Levante sau egal (1X)",
+      "cota": 1.35,
+      "linii": [
+       "Levante – Racing Santander – Levante sau egal (1X): Levante e favorită (2.10) acasă, Racing vine cu 3-2 cu Sociedad; piață 70,5%, formă ~60%, estimare ajustată în jos. Probabilitate estimată 64%."
+      ]
+     },
+     {
+      "ora": "16:30",
+      "meci": "Mainz – Union Berlin",
+      "selectie": "Mainz câștigă",
+      "cota": 1.5,
+      "linii": [
+       "Mainz – Union Berlin – Mainz câștigă: Mainz 3-1 pierdut la Augsburg, Union 1-5 cu Leipzig; piață 62,7%, formă ~58%. Probabilitate estimată 60%."
+      ]
+     },
+     {
+      "ora": "17:00",
+      "meci": "Leeds – Coventry",
+      "selectie": "Leeds câștigă",
+      "cota": 1.55,
+      "linii": [
+       "Leeds – Coventry – Leeds câștigă: Leeds 4-1 cu Chelsea, Coventry 3-2 cu Palace; piață 61%, formă ~64%. Probabilitate estimată 63%."
+      ]
+     },
+     {
+      "ora": "19:30",
+      "meci": "Stuttgart – Eintracht Frankfurt",
+      "selectie": "Stuttgart peste 1.5 goluri echipă",
+      "cota": 1.37,
+      "linii": [
+       "Stuttgart – Eintracht Frankfurt – Stuttgart peste 1.5 goluri echipă: Stuttgart 0-0 la Schalke, Frankfurt 1-0 cu Hoffenheim (apărare solidă); piață 68%, formă ~60%. Probabilitate estimată 63%."
+      ]
+     },
+     {
+      "ora": "21:45",
+      "meci": "Inter – Genoa",
+      "selectie": "Inter peste 1.5 goluri echipă",
+      "cota": 1.41,
+      "linii": [
+       "Inter – Genoa – Inter peste 1.5 goluri echipă: Inter a marcat 4 cu Atalanta, Genoa 2-0 cu Sassuolo dar are doar 10,8% șanse în feed; piață 66%, formă ~70%. Probabilitate estimată 68%."
+      ]
+     },
+     {
+      "ora": "21:45",
+      "meci": "PSG – Lorient",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.46,
+      "linii": [
+       "PSG – Lorient – Peste 2.5 goluri: PSG 3-2 la Nice și 6-0 cu Villarreal, Lorient 1-1 cu Rennes; piață 64,6%, formă ~64%. Probabilitate estimată 64%."
+      ]
+     },
+     {
+      "ora": "18:30",
+      "meci": "Hoffenheim – Augsburg",
+      "selectie": "Ambele echipe marchează",
+      "cota": 1.36,
+      "linii": [
+       "Hoffenheim – Augsburg – Ambele echipe marchează: Augsburg 3-1 cu Mainz, Hoffenheim 0-1 la Frankfurt; piață 69%, formă ~62%. Probabilitate estimată 65%."
+      ]
+     },
+     {
+      "ora": "19:00",
+      "meci": "AS Roma – Monza",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.35,
+      "linii": [
+       "AS Roma – Monza – Peste 2.5 goluri: Roma 5-1 la Parma, Monza e outsider (11.00); piață 70%, formă ~70%. Probabilitate estimată 70%."
+      ]
+     }
+    ]
+   },
+   {
+    "tip": "Săptămânal 7 zile",
+    "cota": 6.8,
+    "sansa": 9.9,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "Manchester City – Napoli",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.36,
+      "linii": [
+       "Manchester City – Napoli – Peste 2.5 goluri: City 3-2 la Leipzig în CL și 1-1 cu Fulham, Napoli a primit 4 la Porto; piață fără marjă 69,5%, formă ~70%, H2H neverificat. Probabilitate estimată 70%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "PSG – AS Roma",
+      "selectie": "PSG câștigă",
+      "cota": 1.39,
+      "linii": [
+       "PSG – AS Roma – PSG câștigă: PSG 6-0 cu Villarreal și 3-2 la Nice (lider CL, 12 puncte), Roma 1V 2Î în CL; piață 68%, formă ~70%. Probabilitate estimată 69%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Juventus – Omonia Nicosia",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.4,
+      "linii": [
+       "Juventus – Omonia Nicosia – Peste 2.5 goluri: Juventus 4-0 cu Venezia și 2-2 cu Fiorentina, Omonia e outsider clar (11.00); piață 67%, formă ~66%. Probabilitate estimată 67%."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Levante – Racing Santander",
+      "selectie": "Levante sau egal (1X)",
+      "cota": 1.35,
+      "linii": [
+       "Levante – Racing Santander – Levante sau egal (1X): Levante e favorită (2.10) acasă, Racing vine cu 3-2 cu Sociedad; piață 70,5%, formă ~60%, estimare ajustată în jos. Probabilitate estimată 64%."
+      ]
+     },
+     {
+      "ora": "21:45",
+      "meci": "Inter – Genoa",
+      "selectie": "Inter peste 1.5 goluri echipă",
+      "cota": 1.41,
+      "linii": [
+       "Inter – Genoa – Inter peste 1.5 goluri echipă: Inter a marcat 4 cu Atalanta, Genoa 2-0 cu Sassuolo dar are doar 10,8% șanse în feed; piață 66%, formă ~70%. Probabilitate estimată 68%."
+      ]
+     },
+     {
+      "ora": "19:00",
+      "meci": "AS Roma – Monza",
+      "selectie": "Peste 2.5 goluri",
+      "cota": 1.35,
+      "linii": [
+       "AS Roma – Monza – Peste 2.5 goluri: Roma 5-1 la Parma, Monza e outsider (11.00); piață 70%, formă ~70%. Probabilitate estimată 70%."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-22-rezumat",
   "data": "2026-11-22",
   "tip": "rezumat",
