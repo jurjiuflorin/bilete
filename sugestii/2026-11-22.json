@@ -12,7 +12,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.41,
     "p": 0.733,
-    "why": "Augsburg dă 2,2 și primește 2,2 goluri pe meci; Mainz dă 2 și primește 2,1."
+    "why": "Augsburg dă 2,2 și primește 2,2 goluri pe meci; Mainz dă 2 și primește 2,1.",
+    "rez": "won",
+    "scor": "3-1"
    },
    {
     "id": 14656352,
@@ -22,7 +24,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.45,
     "p": 0.703,
-    "why": "Sparta Rotterdam dă 1,8 și primește 2,4 goluri pe meci; AZ Alkmaar dă 2 și primește 1,3."
+    "why": "Sparta Rotterdam dă 1,8 și primește 2,4 goluri pe meci; AZ Alkmaar dă 2 și primește 1,3.",
+    "rez": "won",
+    "scor": "1-5"
    },
    {
     "id": 14670980,
@@ -32,7 +36,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.38,
     "p": 0.697,
-    "why": "Racing Santander dă 1,4 și primește 2,5 goluri pe meci; Real Sociedad dă 1,8 și primește 1,7."
+    "why": "Racing Santander dă 1,4 și primește 2,5 goluri pe meci; Real Sociedad dă 1,8 și primește 1,7.",
+    "rez": "won",
+    "scor": "3-2"
    },
    {
     "id": 14670976,
@@ -42,7 +48,9 @@
     "sel": "Peste 1.5 goluri",
     "od": 1.37,
     "p": 0.693,
-    "why": "Getafe dă 0,7 și primește 1,5 goluri pe meci; Atletico Madrid dă 1,9 și primește 0,8."
+    "why": "Getafe dă 0,7 și primește 1,5 goluri pe meci; Atletico Madrid dă 1,9 și primește 0,8.",
+    "rez": "won",
+    "scor": "0-3"
    },
    {
     "id": 14656235,
@@ -52,7 +60,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.4,
     "p": 0.686,
-    "why": "Atalanta dă 1,5 și primește 1,8 goluri pe meci; Inter Milano dă 2,5 și primește 1,2."
+    "why": "Atalanta dă 1,5 și primește 1,8 goluri pe meci; Inter Milano dă 2,5 și primește 1,2.",
+    "rez": "won",
+    "scor": "4-4"
    }
   ],
   "gg": [
@@ -64,7 +74,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.38,
     "p": 0.729,
-    "why": "Augsburg marchează 2,2 și primește 2,2 pe meci; Mainz marchează 2 și primește 2,1."
+    "why": "Augsburg marchează 2,2 și primește 2,2 pe meci; Mainz marchează 2 și primește 2,1.",
+    "rez": "won",
+    "scor": "3-1"
    },
    {
     "id": 14670980,
@@ -74,7 +86,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.37,
     "p": 0.695,
-    "why": "Racing Santander marchează 1,4 și primește 2,5 pe meci; Real Sociedad marchează 1,8 și primește 1,7."
+    "why": "Racing Santander marchează 1,4 și primește 2,5 pe meci; Real Sociedad marchează 1,8 și primește 1,7.",
+    "rez": "won",
+    "scor": "3-2"
    },
    {
     "id": 14656352,
@@ -84,7 +98,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.45,
     "p": 0.691,
-    "why": "Sparta Rotterdam marchează 1,8 și primește 2,4 pe meci; AZ Alkmaar marchează 2 și primește 1,3."
+    "why": "Sparta Rotterdam marchează 1,8 și primește 2,4 pe meci; AZ Alkmaar marchează 2 și primește 1,3.",
+    "rez": "won",
+    "scor": "1-5"
    },
    {
     "id": 14670937,
@@ -94,7 +110,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.37,
     "p": 0.69,
-    "why": "Aalesund marchează 1,7 și primește 2,3 pe meci; Rosenborg marchează 2 și primește 1,2."
+    "why": "Aalesund marchează 1,7 și primește 2,3 pe meci; Rosenborg marchează 2 și primește 1,2.",
+    "rez": "won",
+    "scor": "2-2"
    },
    {
     "id": 14858586,
@@ -104,7 +122,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.43,
     "p": 0.688,
-    "why": "Zurich marchează 1,9 și primește 2 pe meci; St. Gallen marchează 1,8 și primește 1,7."
+    "why": "Zurich marchează 1,9 și primește 2 pe meci; St. Gallen marchează 1,8 și primește 1,7.",
+    "rez": "won",
+    "scor": "2-2"
    }
   ],
   "cornere": [
@@ -116,7 +136,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.38,
     "p": 0.779,
-    "why": "Media cornerelor: SCR Altach 4,5, Sturm Graz 6,8, adică 11,3 pe meci."
+    "why": "Media cornerelor: SCR Altach 4,5, Sturm Graz 6,8, adică 11,3 pe meci.",
+    "rez": "won",
+    "scor": "1-0",
+    "total": 13
    },
    {
     "id": 14656240,
@@ -126,7 +149,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.39,
     "p": 0.774,
-    "why": "Media cornerelor: Juventus 8,5, Venezia 3,9, adică 12,4 pe meci."
+    "why": "Media cornerelor: Juventus 8,5, Venezia 3,9, adică 12,4 pe meci.",
+    "rez": "lost",
+    "scor": "4-0",
+    "total": 7
    },
    {
     "id": 14670974,
@@ -136,7 +162,10 @@
     "sel": "Peste 9.5 cornere",
     "od": 1.42,
     "p": 0.773,
-    "why": "Media cornerelor: Barcelona 6,4, Villarreal 7,4, adică 13,8 pe meci."
+    "why": "Media cornerelor: Barcelona 6,4, Villarreal 7,4, adică 13,8 pe meci.",
+    "rez": "won",
+    "scor": "3-2",
+    "total": 10
    },
    {
     "id": 14670881,
@@ -146,7 +175,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.38,
     "p": 0.754,
-    "why": "Media cornerelor: Sirius 5,9, Djurgarden IF 5,8, adică 11,7 pe meci."
+    "why": "Media cornerelor: Sirius 5,9, Djurgarden IF 5,8, adică 11,7 pe meci.",
+    "rez": "won",
+    "scor": "1-0",
+    "total": 9
    },
    {
     "id": 14656352,
@@ -156,7 +188,10 @@
     "sel": "Peste 9.5 cornere",
     "od": 1.51,
     "p": 0.745,
-    "why": "Media cornerelor: Sparta Rotterdam 6, AZ Alkmaar 7,5, adică 13,5 pe meci."
+    "why": "Media cornerelor: Sparta Rotterdam 6, AZ Alkmaar 7,5, adică 13,5 pe meci.",
+    "rez": "lost",
+    "scor": "1-5",
+    "total": 9
    }
   ],
   "sub": [
@@ -168,7 +203,9 @@
     "sel": "Sub 4.5 goluri",
     "od": 1.38,
     "p": 0.762,
-    "why": "Sarpsborg 08 dă 1,2 și primește 1,6 goluri pe meci; Lillestrom dă 1,5 și primește 1,3. Se urmărește doar pentru statistică."
+    "why": "Sarpsborg 08 dă 1,2 și primește 1,6 goluri pe meci; Lillestrom dă 1,5 și primește 1,3. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "0-2"
    },
    {
     "id": 14670974,
@@ -178,7 +215,9 @@
     "sel": "Sub 5.5 goluri",
     "od": 1.4,
     "p": 0.735,
-    "why": "Barcelona dă 4 și primește 1,1 goluri pe meci; Villarreal dă 1,4 și primește 1,3. Se urmărește doar pentru statistică."
+    "why": "Barcelona dă 4 și primește 1,1 goluri pe meci; Villarreal dă 1,4 și primește 1,3. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "3-2"
    },
    {
     "id": 14670884,
@@ -188,7 +227,9 @@
     "sel": "Sub 4.5 goluri",
     "od": 1.42,
     "p": 0.729,
-    "why": "Trabzonspor dă 2,4 și primește 0,7 goluri pe meci; Eyupspor dă 0,3 și primește 2,7. Se urmărește doar pentru statistică."
+    "why": "Trabzonspor dă 2,4 și primește 0,7 goluri pe meci; Eyupspor dă 0,3 și primește 2,7. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "1-0"
    },
    {
     "id": 14656298,
@@ -198,7 +239,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.4,
     "p": 0.708,
-    "why": "Hull City dă 1,1 și primește 1,1 goluri pe meci; Brighton dă 2,6 și primește 0,7. Se urmărește doar pentru statistică."
+    "why": "Hull City dă 1,1 și primește 1,1 goluri pe meci; Brighton dă 2,6 și primește 0,7. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "2-0"
    },
    {
     "id": 14656326,
@@ -208,7 +251,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.37,
     "p": 0.696,
-    "why": "SK Beveren dă 1,2 și primește 2,1 goluri pe meci; Gent dă 1,8 și primește 0,5. Se urmărește doar pentru statistică."
+    "why": "SK Beveren dă 1,2 și primește 2,1 goluri pe meci; Gent dă 1,8 și primește 0,5. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "1-0"
    }
   ]
  }
