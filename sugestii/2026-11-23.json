@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-23",
+ "salvat": "2026-11-23T10:23:43.471Z",
+ "n": 8,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14656244,
+    "meci": "Monza – Fiorentina",
+    "when": "2026-11-23T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.57,
+    "p": 0.674,
+    "why": "Monza dă 1,5 și primește 2,3 goluri pe meci; Fiorentina dă 1,5 și primește 2,3."
+   },
+   {
+    "id": 14670887,
+    "meci": "Basaksehir – Corum FK",
+    "when": "2026-11-23T17:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.57,
+    "p": 0.633,
+    "why": "Basaksehir dă 1,7 și primește 1,5 goluri pe meci; Corum FK dă 1,9 și primește 1,9."
+   },
+   {
+    "id": 14670871,
+    "meci": "Hammarby IF – IFK Goteborg",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.35,
+    "p": 0.632,
+    "why": "Hammarby IF dă 2,1 și primește 0,8 goluri pe meci; IFK Goteborg dă 1,3 și primește 1,6."
+   },
+   {
+    "id": 15660742,
+    "meci": "Brondby – Midtjylland",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.54,
+    "p": 0.622,
+    "why": "Brondby dă 1,6 și primește 1,5 goluri pe meci; Midtjylland dă 2,1 și primește 1,2."
+   },
+   {
+    "id": 14670977,
+    "meci": "Levante – Elche",
+    "when": "2026-11-23T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.68,
+    "p": 0.572,
+    "why": "Levante dă 1,3 și primește 1,8 goluri pe meci; Elche dă 1,2 și primește 1,7."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14656244,
+    "meci": "Monza – Fiorentina",
+    "when": "2026-11-23T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "GG (ambele marchează)",
+    "od": 1.51,
+    "p": 0.68,
+    "why": "Monza marchează 1,5 și primește 2,3 pe meci; Fiorentina marchează 1,5 și primește 2,3."
+   },
+   {
+    "id": 14670887,
+    "meci": "Basaksehir – Corum FK",
+    "when": "2026-11-23T17:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "GG (ambele marchează)",
+    "od": 1.51,
+    "p": 0.645,
+    "why": "Basaksehir marchează 1,7 și primește 1,5 pe meci; Corum FK marchează 1,9 și primește 1,9."
+   },
+   {
+    "id": 15660742,
+    "meci": "Brondby – Midtjylland",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.47,
+    "p": 0.642,
+    "why": "Brondby marchează 1,6 și primește 1,5 pe meci; Midtjylland marchează 2,1 și primește 1,2."
+   },
+   {
+    "id": 14670977,
+    "meci": "Levante – Elche",
+    "when": "2026-11-23T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.57,
+    "p": 0.604,
+    "why": "Levante marchează 1,3 și primește 1,8 pe meci; Elche marchează 1,2 și primește 1,7."
+   },
+   {
+    "id": 14670874,
+    "meci": "Orgryte – Kalmar FF",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "GG (ambele marchează)",
+    "od": 1.59,
+    "p": 0.59,
+    "why": "Orgryte marchează 1,2 și primește 2,1 pe meci; Kalmar FF marchează 0,9 și primește 1,5."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14670871,
+    "meci": "Hammarby IF – IFK Goteborg",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.54,
+    "p": 0.733,
+    "why": "Media cornerelor: Hammarby IF 6,7, IFK Goteborg 6,6, adică 13,3 pe meci."
+   },
+   {
+    "id": 15660742,
+    "meci": "Brondby – Midtjylland",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.46,
+    "p": 0.732,
+    "why": "Media cornerelor: Brondby 6,4, Midtjylland 5,2, adică 11,6 pe meci."
+   },
+   {
+    "id": 14656244,
+    "meci": "Monza – Fiorentina",
+    "when": "2026-11-23T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.37,
+    "p": 0.682,
+    "why": "Media cornerelor: Monza 4,1, Fiorentina 4,9, adică 9 pe meci."
+   },
+   {
+    "id": 14656272,
+    "meci": "Sepsi Sfantu Gheorghe – Rapid Bucuresti",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.37,
+    "p": 0.67,
+    "why": "Media cornerelor: Sepsi Sfantu Gheorghe 3,3, Rapid Bucuresti 5,5, adică 8,8 pe meci."
+   },
+   {
+    "id": 14670887,
+    "meci": "Basaksehir – Corum FK",
+    "when": "2026-11-23T17:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.37,
+    "p": 0.664,
+    "why": "Media cornerelor: Basaksehir 4,7, Corum FK 4, adică 8,7 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 14670871,
+    "meci": "Hammarby IF – IFK Goteborg",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.35,
+    "p": 0.761,
+    "why": "Hammarby IF dă 2,1 și primește 0,8 goluri pe meci; IFK Goteborg dă 1,3 și primește 1,6. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14656294,
+    "meci": "Brentford – Everton",
+    "when": "2026-11-23T20:00:00.000Z",
+    "liga": "Premier League",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.39,
+    "p": 0.715,
+    "why": "Brentford dă 1,6 și primește 1,1 goluri pe meci; Everton dă 1,2 și primește 1. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14670874,
+    "meci": "Orgryte – Kalmar FF",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "Allsvenskan",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.43,
+    "p": 0.665,
+    "why": "Orgryte dă 1,2 și primește 2,1 goluri pe meci; Kalmar FF dă 0,9 și primește 1,5. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14670977,
+    "meci": "Levante – Elche",
+    "when": "2026-11-23T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.47,
+    "p": 0.642,
+    "why": "Levante dă 1,3 și primește 1,8 goluri pe meci; Elche dă 1,2 și primește 1,7. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 15660742,
+    "meci": "Brondby – Midtjylland",
+    "when": "2026-11-23T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.6,
+    "p": 0.591,
+    "why": "Brondby dă 1,6 și primește 1,5 goluri pe meci; Midtjylland dă 2,1 și primește 1,2. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}
