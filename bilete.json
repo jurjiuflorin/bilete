@@ -4074,5 +4074,175 @@
    14764514,
    14764516
   ]
+ },
+ {
+  "id": "2026-11-24-challenge",
+  "data": "2026-11-24",
+  "tip": "Challenge 1.40",
+  "cota": 1.4,
+  "sansa": 0.72,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Cardiff City – Preston North End: Preston North End peste 0.5 goluri (1.40)",
+  "rezultat": "",
+  "motive": [
+   "Piață 66,4%, formă Preston 75% meciuri cu gol (10 meciuri, 0,8 goluri/meci), H2H 100% (5 întâlniri); absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14701618
+  ],
+  "ciclu": 5,
+  "pas": 6
+ },
+ {
+  "id": "2026-11-24-cota2",
+  "data": "2026-11-24",
+  "tip": "Cotă 2",
+  "cota": 2,
+  "sansa": 0.5838,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Norwich City – Queens Park Rangers: Queens Park Rangers peste 0.5 goluri (1.33) · 21:45 Sheffield United – Southampton: Șansă dublă X2 (1.50)",
+  "rezultat": "",
+  "motive": [
+   "Piață 70%, QPR a marcat în 85% din ultimele 10 (1,8 goluri/meci), H2H 100%; absențe neverificate.",
+   "Piață 63%, formă 65%, H2H 100% (5 întâlniri); Southampton primește doar 0,8 goluri/meci în deplasare; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14701621,
+   14701623
+  ]
+ },
+ {
+  "id": "2026-11-24-pariu",
+  "data": "2026-11-24",
+  "tip": "Pariul zilei",
+  "cota": 1.66,
+  "sansa": 0.668,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Norwich City – Queens Park Rangers: Peste 2.5 (1.66)",
+  "rezultat": "",
+  "motive": [
+   "Piață 57%, formă 70% peste 2.5, H2H 80%; ambele echipe înscriu 2,1/1,8 goluri/meci, edge +6,6% față de cotă; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14701621
+  ]
+ },
+ {
+  "id": "2026-11-24-cota5",
+  "data": "2026-11-24",
+  "tip": "Cotă 5",
+  "cota": 4.77,
+  "sansa": 0.2097,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:45 Galatasaray – Aston Villa: Peste 2.5 (1.49) · 21:45 Bristol City – Wrexham: Wrexham peste 0.5 goluri (1.38) · 22:00 RB Leipzig – Lens: Peste 8.5 cornere (1.45) · 22:00 Slovan Bratislava – Betis: Slovan Bratislava peste 0.5 goluri (1.60)",
+  "rezultat": "",
+  "motive": [
+   "Piață 63,7%, formă 75%; Galatasaray 2,6 și Aston Villa 1,9 goluri/meci; absențe neverificate.",
+   "Piață 67,4%, formă 70% (1,2 goluri/meci), Bristol primește 1,4/meci acasă; absențe neverificate.",
+   "Piață 64,2%, formă 73,1%, medie 10,6 cornere/meci; absențe neverificate.",
+   "Piață 58,1%, formă 70%; Betis primește 1,5 goluri/meci; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14789076,
+   14701617,
+   14790410,
+   14790412
+  ]
+ },
+ {
+  "id": "2026-11-24-cota10",
+  "data": "2026-11-24",
+  "tip": "Cotă 10",
+  "cota": 9.56,
+  "sansa": 0.0886,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Sheffield United – Southampton: Șansă dublă X2 (1.50) · 21:45 Norwich City – Queens Park Rangers: Peste 8.5 cornere (1.45) · 22:00 Feyenoord Rotterdam – Porto: Șansă dublă X2 (1.39) · 21:45 Middlesbrough – Swansea City: Peste 8.5 cornere (1.37) · 21:45 Hibernian – Dundee FC: Peste 9.5 cornere (1.48) · 22:00 Manchester City – Napoli: Peste 8.5 cornere (1.56)",
+  "rezultat": "",
+  "motive": [
+   "Piață 63%, formă 65%, H2H 100% (5 întâlniri); Southampton primește doar 0,8 goluri/meci în deplasare; absențe neverificate.",
+   "Piață 63,5%, formă 76,8%, medie 11 cornere/meci; meci repetat (pe Cotă 2 și Pariul zilei cu alte piețe); absențe neverificate.",
+   "Piață 68,3%, formă 70%, H2H 66,7% (3 întâlniri); Porto primește 0,9 goluri/meci; absențe neverificate.",
+   "Piață 67,3%, formă 67,8%, medie 10,1 cornere/meci; absențe neverificate.",
+   "Piață 62,1%, formă 63,7%, medie 10,8 cornere/meci; absențe neverificate.",
+   "Piață 59,6%, formă 62%, medie 9,6 cornere/meci; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14701623,
+   14701621,
+   14790408,
+   14701620,
+   15839180,
+   14790409
+  ]
+ },
+ {
+  "id": "2026-11-24-cl10",
+  "data": "2026-11-24",
+  "tip": "Cotă 10 CL",
+  "cota": 9.28,
+  "sansa": 0.1111,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "25.11 22:00 Shakhtar Donetsk – Fenerbahce: Peste 7.5 cornere (1.35) · 25.11 22:00 Lille – Bayern Munchen: Lille peste 0.5 goluri (1.43) · 19:45 Galatasaray – Aston Villa: Peste 2.5 (1.49) · 22:00 Feyenoord Rotterdam – Porto: Șansă dublă X2 (1.39) · 22:00 RB Leipzig – Lens: Peste 8.5 cornere (1.45) · 22:00 Slovan Bratislava – Betis: Slovan Bratislava peste 0.5 goluri (1.60)",
+  "rezultat": "",
+  "motive": [
+   "Piață 69%, formă 77,1%, medie 9,9 cornere/meci; absențe neverificate.",
+   "Piață 65,1%, formă 80% (outsider, 0,9 goluri/meci); absențe neverificate.",
+   "Piață 63,7%, formă 75%; Galatasaray 2,6 și Aston Villa 1,9 goluri/meci; absențe neverificate.",
+   "Piață 68,3%, formă 70%, H2H 66,7% (3 întâlniri); Porto primește 0,9 goluri/meci; absențe neverificate.",
+   "Piață 64,2%, formă 73,1%, medie 10,6 cornere/meci; absențe neverificate.",
+   "Piață 58,1%, formă 70%; Betis primește 1,5 goluri/meci; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14805718,
+   14805722,
+   14789076,
+   14790408,
+   14790410,
+   14790412
+  ]
+ },
+ {
+  "id": "2026-11-24-clmare",
+  "data": "2026-11-24",
+  "tip": "CL mare",
+  "cota": 25.77,
+  "sansa": 0.0329,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "25.11 22:00 PSG – AS Roma: AS Roma peste 0.5 goluri (1.38) · 19:45 Galatasaray – Aston Villa: Peste 2.5 (1.49) · 22:00 RB Leipzig – Lens: Peste 8.5 cornere (1.45) · 22:00 Slovan Bratislava – Betis: Slovan Bratislava peste 0.5 goluri (1.60) · 25.11 22:00 Lille – Bayern Munchen: Peste 8.5 cornere (1.55) · 25.11 19:45 Slavia Praga – Villarreal: Peste 8.5 cornere (1.46) · 25.11 19:45 Sabah Baku – Barcelona: Peste 8.5 cornere (1.53) · 22:00 Manchester City – Napoli: Peste 8.5 cornere (1.56)",
+  "rezultat": "",
+  "motive": [
+   "Piață 67,1%, formă 80% (outsider, 3,1 goluri/meci); absențe neverificate.",
+   "Piață 63,7%, formă 75%; Galatasaray 2,6 și Aston Villa 1,9 goluri/meci; absențe neverificate.",
+   "Piață 64,2%, formă 73,1%, medie 10,6 cornere/meci; absențe neverificate.",
+   "Piață 58,1%, formă 70%; Betis primește 1,5 goluri/meci; absențe neverificate.",
+   "Piață 59,9%, formă 66,7%, medie 10 cornere/meci; absențe neverificate.",
+   "Piață 63,6%, formă 62%, medie 9,6 cornere/meci; absențe neverificate.",
+   "Piață 60,8%, formă 63,2%, medie 9,7 cornere/meci; absențe neverificate.",
+   "Piață 59,6%, formă 62%, medie 9,6 cornere/meci; absențe neverificate."
+  ],
+  "sport": "fotbal",
+  "ids": [
+   14805723,
+   14789076,
+   14790410,
+   14790412,
+   14805722,
+   14804354,
+   14804355,
+   14790409
+  ]
  }
 ]
