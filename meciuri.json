@@ -1,97 +1,213 @@
 {
- "data": "2026-11-23",
- "actualizat": "2026-11-23T06:14:49Z",
+ "data": "2026-11-24",
+ "actualizat": "2026-11-24T06:18:15Z",
  "meciuri": [
   {
-   "data": "2026-11-23",
-   "ora": "17:00",
-   "liga": "Grecia Super League",
-   "gazde": "Asteras Tripolis",
-   "oaspeti": "Aris",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate"
-  },
-  {
-   "data": "2026-11-23",
-   "ora": "21:45",
-   "liga": "Serie A",
-   "gazde": "Monza",
-   "oaspeti": "Fiorentina",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate"
-  },
-  {
-   "data": "2026-11-23",
-   "ora": "22:00",
-   "liga": "Premier League",
-   "gazde": "Brentford",
-   "oaspeti": "Everton",
+   "data": "2026-11-24",
+   "ora": "19:45",
+   "liga": "Champions League",
+   "gazde": "Galatasaray",
+   "oaspeti": "Aston Villa",
+   "forma_gazde": "VVVVV",
+   "forma_oaspeti": "IEIEE",
+   "loc_gazde": 18,
+   "loc_oaspeti": 6,
    "absenti_gazde": [
-    "Igor Thiago (atacant) – suspendat (cartonaș roșu)",
-    "Hickey (fundaș) – accidentat, hamstring, mai multe săptămâni",
-    "Collins (fundaș) – accidentat, genunchi",
-    "Rico Henry – accidentat",
-    "Furo – accidentat",
-    "Fábio Carvalho – incert"
+    "Osimhen (atacant) – accidentat la genunchi",
+    "Leão (atacant) – accidentat muscular",
+    "Frankowski (fundaș) – accidentat muscular",
+    "Jakobs (fundaș) – incert, inghinal",
+    "Sallai (fundaș) – incert, ischiogambieri"
    ],
-   "absenti_oaspeti": [],
-   "marcatori_oaspeti": "Barry 10 goluri în 13 meciuri (toate competițiile)",
-   "nota": "Brentford a pierdut 0-2 la Brighton; Everton a câștigat ultimele 3 meciuri. Absențe Everton neverificate."
+   "absenti_oaspeti": [
+    "Onana (mijlocaș) – accidentat la genunchi",
+    "Cash (fundaș) – comoție",
+    "Ruggeri (fundaș) – accidentat muscular",
+    "Lindelöf (fundaș) – incert, boală",
+    "Manzambi (mijlocaș) – incert, gambă"
+   ],
+   "nota": "Loc = clasamentul fazei ligii."
   },
   {
-   "data": "2026-11-23",
+   "data": "2026-11-24",
+   "ora": "19:45",
+   "liga": "Champions League",
+   "gazde": "Bodo/Glimt",
+   "oaspeti": "LASK Linz",
+   "forma_gazde": "VIVIE",
+   "forma_oaspeti": "IVIVV",
+   "loc_gazde": 25,
+   "loc_oaspeti": 16,
+   "absenti_gazde": [
+    "Mikkelsen (atacant) – accidentat inghinal",
+    "Evjen (mijlocaș) – accidentat la genunchi",
+    "Sjong (portar) – accidentat"
+   ],
+   "absenti_oaspeti": [
+    "Harakaté (atacant) – accidentat la genunchi",
+    "Bello (fundaș) – accidentat muscular"
+   ],
+   "nota": "Loc = clasamentul fazei ligii."
+  },
+  {
+   "data": "2026-11-24",
    "ora": "22:00",
-   "liga": "LaLiga",
-   "gazde": "Levante",
-   "oaspeti": "Elche",
+   "liga": "Champions League",
+   "gazde": "Arsenal",
+   "oaspeti": "Borussia Dortmund",
+   "forma_gazde": "EVVVE",
+   "forma_oaspeti": "VEVVV",
+   "loc_gazde": 3,
+   "loc_oaspeti": 12,
+   "absenti_gazde": [
+    "Saka (atacant) – accidentat la coapsă",
+    "Zubimendi (mijlocaș) – accidentat muscular",
+    "Raya (portar) – incert, umăr",
+    "Merino (mijlocaș) – incert",
+    "Saliba (fundaș) – incert"
+   ],
+   "absenti_oaspeti": [
+    "Guirassy (atacant, golgheter) – accidentat la coapsă",
+    "Chukwuemeka (mijlocaș) – accidentat muscular",
+    "Emre Can (mijlocaș) – accidentat la genunchi",
+    "Lerma (mijlocaș) – accidentat muscular",
+    "Konstantelias (mijlocaș) – accidentat la genunchi",
+    "Anton (fundaș) – incert"
+   ],
+   "marcatori_oaspeti": "Guirassy 4 goluri",
+   "nota": "Loc = clasamentul fazei ligii. Surse parțial contradictorii (Merino, Saliba incerți)."
+  },
+  {
+   "data": "2026-11-24",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Manchester City",
+   "oaspeti": "Napoli",
+   "absenti_gazde": [
+    "Semenyo (atacant) – accidentat la genunchi",
+    "Nunes (mijlocaș) – accidentat",
+    "Guéhi (fundaș) – incert, șold",
+    "Khusanov (fundaș) – incert"
+   ],
+   "absenti_oaspeti": [
+    "Marín (fundaș) – suspendat (cartonaș roșu)",
+    "Di Lorenzo (fundaș, căpitan) – accidentat muscular",
+    "Lobotka (mijlocaș) – accidentat la gleznă",
+    "Buongiorno (fundaș) – accidentat la genunchi",
+    "Meret (portar) – accidentat",
+    "Neres (atacant) – accidentat"
+   ],
+   "marcatori_gazde": "Haaland 5 goluri în UCL",
+   "nota": "City fără victorie în 90 de minute în ultimele 5 meciuri (E2, I3); rotații posibile (Cherki, Fernández, Gvardiol pe bancă)."
+  },
+  {
+   "data": "2026-11-24",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Real Madrid",
+   "oaspeti": "PSV",
+   "absenti_gazde": [
+    "Rodrygo (atacant) – accidentat la genunchi",
+    "Mendy (fundaș) – accidentat la șold",
+    "Asencio (fundaș) – picior rupt"
+   ],
+   "absenti_oaspeti": [
+    "Schouten (mijlocaș) – accidentat la genunchi",
+    "Pléa (atacant) – operat",
+    "Ouaissa (atacant) – accidentat muscular",
+    "Nagalo (fundaș) – accidentat",
+    "Dest (fundaș) – incert",
+    "Wanner (mijlocaș) – incert, picior"
+   ],
+   "nota": "Absențe din disponibilitate raportată, nu lot confirmat."
+  },
+  {
+   "data": "2026-11-24",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "RB Leipzig",
+   "oaspeti": "Lens",
+   "forma_gazde": "VIVIV",
+   "forma_oaspeti": "VIIIE",
+   "loc_gazde": 30,
+   "loc_oaspeti": 33,
+   "absenti_gazde": [
+    "Marc Guiu (atacant) – accidentat la ischiogambieri",
+    "Ouédraogo (mijlocaș) – accidentat la umăr",
+    "Finkgräfe (fundaș) – incert, coapsă"
+   ],
+   "absenti_oaspeti": [
+    "Édouard (atacant) – accidentat inghinal",
+    "Sima (atacant) – accidentat muscular",
+    "Ivanović (atacant) – comoție",
+    "Gradit (fundaș) – accidentat",
+    "Nawrocki (fundaș) – accidentat la genunchi",
+    "Bulatović (mijlocaș) – accidentat la gât"
+   ],
+   "nota": "Loc = clasamentul fazei ligii. Lens vine după 1-9 cu Como."
+  },
+  {
+   "data": "2026-11-24",
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Slovan Bratislava",
+   "oaspeti": "Betis",
+   "forma_gazde": "VIIII",
+   "forma_oaspeti": "VIVVE",
+   "loc_gazde": 36,
+   "loc_oaspeti": 11,
    "absenti_gazde": [],
    "absenti_oaspeti": [
-    "Aguado (mijlocaș) – accidentat, gleznă",
-    "Lemar – incert, în așteptarea avizului medical"
+    "Ceballos (mijlocaș) – accidentat la ischiogambieri"
    ],
-   "nota": "Levante și Elche la un punct distanță, în zona retrogradării; Levante 0-0 cu Celta, Elche 2 înfrângeri fără gol marcat."
+   "marcatori_oaspeti": "Camara 1 gol (Slovan)",
+   "nota": "Loc = clasamentul fazei ligii. Absențe Slovan neverificate."
   },
   {
    "data": "2026-11-24",
-   "ora": "00:30",
-   "liga": "Brasileirão",
-   "gazde": "Internacional",
-   "oaspeti": "Vitória",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate"
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Como",
+   "oaspeti": "AEK Atena",
+   "forma_gazde": "VVVIV",
+   "forma_oaspeti": "VIIVV",
+   "loc_gazde": 4,
+   "loc_oaspeti": 29,
+   "absenti_gazde": [
+    "Kean (atacant) – accidentat",
+    "Addai (atacant) – accidentat muscular",
+    "Diao (atacant) – accidentat la coapsă",
+    "Jesús Rodríguez (atacant) – accidentat",
+    "Chalobah (fundaș) – incert"
+   ],
+   "absenti_oaspeti": [
+    "Koita (atacant) – suspendat (cartonaș roșu)"
+   ],
+   "nota": "Loc = clasamentul fazei ligii."
   },
   {
    "data": "2026-11-24",
-   "ora": "01:00",
-   "liga": "Brasileirão",
-   "gazde": "Botafogo",
-   "oaspeti": "São Paulo",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate"
-  },
-  {
-   "data": "2026-11-24",
-   "ora": "02:00",
-   "liga": "Brasileirão",
-   "gazde": "Santos",
-   "oaspeti": "Grêmio",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate"
-  },
-  {
-   "data": "2026-11-24",
-   "ora": "03:00",
-   "liga": "MLS",
-   "gazde": "St. Louis City",
-   "oaspeti": "Los Angeles FC",
-   "absenti_gazde": [],
-   "absenti_oaspeti": [],
-   "nota": "Absențe neverificate"
+   "ora": "22:00",
+   "liga": "Champions League",
+   "gazde": "Feyenoord",
+   "oaspeti": "Porto",
+   "forma_gazde": "EEIII",
+   "forma_oaspeti": "IVVVV",
+   "loc_gazde": 32,
+   "loc_oaspeti": 26,
+   "absenti_gazde": [
+    "St. Juste (fundaș) – accidentat",
+    "Nieuwkoop (fundaș) – accidentat la genunchi",
+    "Beelen (fundaș) – picior rupt",
+    "Bos (fundaș) – accidentat la genunchi",
+    "Moder (mijlocaș) – accidentat la genunchi",
+    "Hadj-Moussa (atacant) – incert, gleznă"
+   ],
+   "absenti_oaspeti": [
+    "William (atacant) – accidentat la gleznă",
+    "Smalling (fundaș) – accidentat la genunchi"
+   ],
+   "nota": "Loc = clasamentul fazei ligii."
   }
  ]
 }
