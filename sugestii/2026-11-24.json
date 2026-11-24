@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-24",
+ "salvat": "2026-11-24T06:00:06.744Z",
+ "n": 19,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14701617,
+    "meci": "Bristol City – Wrexham",
+    "when": "2026-11-24T19:45:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.35,
+    "p": 0.723,
+    "why": "Bristol City dă 1 și primește 1,6 goluri pe meci; Wrexham dă 1,2 și primește 1,3."
+   },
+   {
+    "id": 14789076,
+    "meci": "Galatasaray – Aston Villa",
+    "when": "2026-11-24T17:45:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.49,
+    "p": 0.682,
+    "why": "Galatasaray dă 2,6 și primește 1,5 goluri pe meci; Aston Villa dă 1,9 și primește 1,5."
+   },
+   {
+    "id": 14790412,
+    "meci": "Slovan Bratislava – Betis",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.36,
+    "p": 0.662,
+    "why": "Slovan Bratislava dă 1,3 și primește 1,7 goluri pe meci; Betis dă 1,9 și primește 1,5."
+   },
+   {
+    "id": 14701618,
+    "meci": "Cardiff City – Preston North End",
+    "when": "2026-11-24T19:45:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.45,
+    "p": 0.653,
+    "why": "Cardiff City dă 1,8 și primește 1,8 goluri pe meci; Preston North End dă 0,9 și primește 1,9."
+   },
+   {
+    "id": 14790408,
+    "meci": "Feyenoord Rotterdam – Porto",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.62,
+    "p": 0.631,
+    "why": "Feyenoord Rotterdam dă 2,1 și primește 1,9 goluri pe meci; Porto dă 2 și primește 0,9."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14789077,
+    "meci": "Bodo/Glimt – LASK Linz",
+    "when": "2026-11-24T17:45:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "GG (ambele marchează)",
+    "od": 1.4,
+    "p": 0.716,
+    "why": "Bodo/Glimt marchează 2,4 și primește 1,2 pe meci; LASK Linz marchează 2,6 și primește 2."
+   },
+   {
+    "id": 14789076,
+    "meci": "Galatasaray – Aston Villa",
+    "when": "2026-11-24T17:45:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "GG (ambele marchează)",
+    "od": 1.43,
+    "p": 0.687,
+    "why": "Galatasaray marchează 2,6 și primește 1,5 pe meci; Aston Villa marchează 1,9 și primește 1,5."
+   },
+   {
+    "id": 14790410,
+    "meci": "RB Leipzig – Lens",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "GG (ambele marchează)",
+    "od": 1.49,
+    "p": 0.686,
+    "why": "RB Leipzig marchează 2,7 și primește 2,2 pe meci; Lens marchează 1,1 și primește 2,3."
+   },
+   {
+    "id": 14790409,
+    "meci": "Manchester City – Napoli",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "GG (ambele marchează)",
+    "od": 1.58,
+    "p": 0.658,
+    "why": "Manchester City marchează 2,1 și primește 1,8 pe meci; Napoli marchează 1,8 și primește 1,8."
+   },
+   {
+    "id": 14790411,
+    "meci": "Real Madrid – PSV Eindhoven",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "GG (ambele marchează)",
+    "od": 1.59,
+    "p": 0.653,
+    "why": "Real Madrid marchează 2,7 și primește 1,1 pe meci; PSV Eindhoven marchează 2,4 și primește 1,2."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14790411,
+    "meci": "Real Madrid – PSV Eindhoven",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.39,
+    "p": 0.796,
+    "why": "Media cornerelor: Real Madrid 6,8, PSV Eindhoven 6,5, adică 13,3 pe meci."
+   },
+   {
+    "id": 14790413,
+    "meci": "Arsenal – Borussia Dortmund",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.42,
+    "p": 0.794,
+    "why": "Media cornerelor: Arsenal 5, Borussia Dortmund 7,3, adică 12,3 pe meci."
+   },
+   {
+    "id": 14701622,
+    "meci": "Portsmouth – West Ham",
+    "when": "2026-11-24T19:45:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.39,
+    "p": 0.789,
+    "why": "Media cornerelor: Portsmouth 5,6, West Ham 7,4, adică 13 pe meci."
+   },
+   {
+    "id": 14701624,
+    "meci": "Wolverhampton – Derby County",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.36,
+    "p": 0.769,
+    "why": "Media cornerelor: Wolverhampton 6,7, Derby County 5,3, adică 12 pe meci."
+   },
+   {
+    "id": 15738549,
+    "meci": "Rangers – Aberdeen",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Premiership (Scoția)",
+    "sel": "Peste 9.5 cornere",
+    "od": 1.45,
+    "p": 0.746,
+    "why": "Media cornerelor: Rangers 7,5, Aberdeen 5,6, adică 13,1 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 14790411,
+    "meci": "Real Madrid – PSV Eindhoven",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "Sub 5.5 goluri",
+    "od": 1.4,
+    "p": 0.748,
+    "why": "Real Madrid dă 2,7 și primește 1,1 goluri pe meci; PSV Eindhoven dă 2,4 și primește 1,2. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14790412,
+    "meci": "Slovan Bratislava – Betis",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.37,
+    "p": 0.73,
+    "why": "Slovan Bratislava dă 1,3 și primește 1,7 goluri pe meci; Betis dă 1,9 și primește 1,5. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14790413,
+    "meci": "Arsenal – Borussia Dortmund",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.45,
+    "p": 0.704,
+    "why": "Arsenal dă 1,7 și primește 0,7 goluri pe meci; Borussia Dortmund dă 1,5 și primește 1. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14790414,
+    "meci": "Como – AEK Atena",
+    "when": "2026-11-24T20:00:00.000Z",
+    "liga": "Liga Campionilor",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.42,
+    "p": 0.685,
+    "why": "Como dă 2,6 și primește 0,9 goluri pe meci; AEK Atena dă 1,8 și primește 1,8. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14701623,
+    "meci": "Sheffield United – Southampton",
+    "when": "2026-11-24T19:45:00.000Z",
+    "liga": "Championship",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.48,
+    "p": 0.667,
+    "why": "Sheffield United dă 1,6 și primește 1,2 goluri pe meci; Southampton dă 1,9 și primește 0,9. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}

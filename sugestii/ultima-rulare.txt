@@ -1,3 +1,21 @@
-exista deja sugestii/2026-11-23.json
-exista deja candidati/2026-11-23.json
-index 26 zile
+evenimente 1504 meciuri azi 19
+scris sugestii/2026-11-24.json { goluri: 5, gg: 5, cornere: 5, sub: 5 }
+evenimente 1672 meciuri 31
+candidati 218 din 31 meciuri
+scris candidati/2026-11-24.json plan {
+  challenge: '1.4 / 0.72',
+  cota2: '2 / 0.584',
+  pariu: '1.66 / 0.668',
+  cota5: '4.77 / 0.21',
+  cota10: '9.56 / 0.089'
+} variante {
+  challenge: 4,
+  cota2: 3,
+  pariu: 1,
+  cota5: 3,
+  cota10: 3,
+  cl10: 3,
+  clmare: 2
+} 5
+judecat 2026-11-23.json
+index 27 zile
