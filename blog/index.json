@@ -1,5 +1,585 @@
 [
  {
+  "id": "2026-11-24-rezumat",
+  "data": "2026-11-24",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 24 noiembrie: 2 câștigate, 5 pierdute",
+  "intro": "Pariul zilei pierdut · Challenge 1.40 câștigat · Cotă 2 câștigat · Cotă 5 pierdut · Cotă 10 pierdut · Cotă 10 CL pierdut · CL mare pierdut",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [],
+    "li": [
+     "Pariul zilei: Norwich City – Queens Park Rangers Norwich City–Queens Park Rangers 1-1 (Peste 2.5)",
+     "Cotă 5: Galatasaray – Aston Villa Galatasaray–Aston Villa 1-0 (Peste 2.5); Bristol City – Wrexham Bristol City–Wrexham 1-1 (Wrexham peste 0.5 goluri); RB Leipzig – Lens RB Leipzig–Lens 3-1 (Peste 8.5 cornere); Slovan Bratislava – Betis Slovan Bratislava–Betis 0-2 (Slovan Bratislava peste 0.5 goluri)",
+     "Cotă 10: Sheffield United – Southampton Sheffield United–Southampton 1-1 (Șansă dublă X2); Norwich City – Queens Park Rangers Norwich City–Queens Park Rangers 1-1 (Peste 8.5 cornere); Feyenoord Rotterdam – Porto Feyenoord Rotterdam–Porto 0-1 (Șansă dublă X2); Middlesbrough – Swansea City Middlesbrough–Swansea City 2-1 (Peste 8.5 cornere); Hibernian – Dundee FC Hibernian–Dundee FC 2-1 (Peste 9.5 cornere); Manchester City – Napoli Manchester City–Napoli 2-2 (Peste 8.5 cornere)",
+     "Cotă 10 CL: Galatasaray – Aston Villa Galatasaray–Aston Villa 1-0 (Peste 2.5); Feyenoord Rotterdam – Porto Feyenoord Rotterdam–Porto 0-1 (Șansă dublă X2); RB Leipzig – Lens RB Leipzig–Lens 3-1 (Peste 8.5 cornere); Slovan Bratislava – Betis Slovan Bratislava–Betis 0-2 (Slovan Bratislava peste 0.5 goluri)",
+     "CL mare: Galatasaray – Aston Villa Galatasaray–Aston Villa 1-0 (Peste 2.5); RB Leipzig – Lens RB Leipzig–Lens 3-1 (Peste 8.5 cornere); Slovan Bratislava – Betis Slovan Bratislava–Betis 0-2 (Slovan Bratislava peste 0.5 goluri); Manchester City – Napoli Manchester City–Napoli 2-2 (Peste 8.5 cornere)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 24."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "7 bilete câștigate din 22 validate (32%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 1.66,
+    "sansa": 66.8,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "Norwich City – Queens Park Rangers",
+      "liga": "Championship",
+      "selectie": "Peste 2.5",
+      "cota": 1.66,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Norwich City dă 2,1 și primește 1,7 goluri pe meci; Queens Park Rangers dă 1,8 și primește 1,4.",
+       "Meciurile Norwich City au în medie 3,8 goluri, cele ale Queens Park Rangers 3,2.",
+       "Meciuri directe analizate: 5.",
+       "Piață 57%, formă 70% peste 2.5, H2H 80%; ambele echipe înscriu 2,1/1,8 goluri/meci, edge +6,6% față de cotă; absențe neverificate."
+      ],
+      "p": 67,
+      "pm": 57,
+      "pf": 70,
+      "ph": 80,
+      "val": 7,
+      "rezultat": "Norwich City–Queens Park Rangers 1-1"
+     }
+    ]
+   },
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.4,
+    "sansa": 72,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "Cardiff City – Preston North End",
+      "liga": "Championship",
+      "selectie": "Preston North End peste 0.5 goluri",
+      "cota": 1.4,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Cardiff City dă 2,1 și primește 1,9 goluri pe meci; Preston North End dă 0,8 și primește 1,9.",
+       "Preston North End marchează 0,8 pe meci, iar Cardiff City primește 1,9.",
+       "Meciuri directe analizate: 5.",
+       "Piață 66,4%, formă Preston 75% meciuri cu gol (10 meciuri, 0,8 goluri/meci), H2H 100% (5 întâlniri); absențe neverificate."
+      ],
+      "p": 72,
+      "pm": 66,
+      "pf": 75,
+      "ph": 100,
+      "val": 1,
+      "rezultat": "Cardiff City–Preston North End 0-4"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 2,
+    "sansa": 58.4,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "Norwich City – Queens Park Rangers",
+      "liga": "Championship",
+      "selectie": "Queens Park Rangers peste 0.5 goluri",
+      "cota": 1.33,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Norwich City dă 2,1 și primește 1,7 goluri pe meci; Queens Park Rangers dă 1,8 și primește 1,4.",
+       "Queens Park Rangers marchează 1,8 pe meci, iar Norwich City primește 1,7.",
+       "Meciuri directe analizate: 5.",
+       "Piață 70%, QPR a marcat în 85% din ultimele 10 (1,8 goluri/meci), H2H 100%; absențe neverificate."
+      ],
+      "p": 82,
+      "pm": 70,
+      "pf": 85,
+      "ph": 100,
+      "val": 7,
+      "rezultat": "Norwich City–Queens Park Rangers 1-1"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Sheffield United – Southampton",
+      "liga": "Championship",
+      "selectie": "Șansă dublă X2",
+      "cota": 1.5,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Sheffield United dă 1,7 și primește 1,1 goluri pe meci; Southampton dă 1,7 și primește 0,8.",
+       "Meciuri directe analizate: 5.",
+       "Piață 63%, formă 65%, H2H 100% (5 întâlniri); Southampton primește doar 0,8 goluri/meci în deplasare; absențe neverificate."
+      ],
+      "rezultat": "Sheffield United–Southampton 1-1"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 4.77,
+    "sansa": 21,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "19:45",
+      "meci": "Galatasaray – Aston Villa",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 2.5",
+      "cota": 1.49,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Galatasaray dă 2,6 și primește 1,5 goluri pe meci; Aston Villa dă 1,9 și primește 1,5.",
+       "Meciurile Galatasaray au în medie 4,1 goluri, cele ale Aston Villa 3,4.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Piață 63,7%, formă 75%; Galatasaray 2,6 și Aston Villa 1,9 goluri/meci; absențe neverificate."
+      ],
+      "p": 69,
+      "pm": 64,
+      "pf": 75,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Galatasaray–Aston Villa 1-0"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Bristol City – Wrexham",
+      "liga": "Championship",
+      "selectie": "Wrexham peste 0.5 goluri",
+      "cota": 1.38,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Bristol City dă 0,8 și primește 1,4 goluri pe meci; Wrexham dă 1,2 și primește 1,5.",
+       "Wrexham marchează 1,2 pe meci, iar Bristol City primește 1,4.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Piață 67,4%, formă 70% (1,2 goluri/meci), Bristol primește 1,4/meci acasă; absențe neverificate."
+      ],
+      "p": 69,
+      "pm": 67,
+      "pf": 70,
+      "ph": null,
+      "val": -4,
+      "rezultat": "Bristol City–Wrexham 1-1"
+     },
+     {
+      "ora": "22:00",
+      "meci": "RB Leipzig – Lens",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.45,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 10,6 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 64,2%, formă 73,1%, medie 10,6 cornere/meci; absențe neverificate."
+      ],
+      "p": 69,
+      "pm": 64,
+      "pf": 73,
+      "ph": null,
+      "val": 0,
+      "rezultat": "RB Leipzig–Lens 3-1"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Slovan Bratislava – Betis",
+      "liga": "Liga Campionilor",
+      "selectie": "Slovan Bratislava peste 0.5 goluri",
+      "cota": 1.6,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Slovan Bratislava dă 1,3 și primește 1,7 goluri pe meci; Betis dă 1,9 și primește 1,5.",
+       "Slovan Bratislava marchează 1,3 pe meci, iar Betis primește 1,5.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Piață 58,1%, formă 70%; Betis primește 1,5 goluri/meci; absențe neverificate."
+      ],
+      "p": 64,
+      "pm": 58,
+      "pf": 70,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Slovan Bratislava–Betis 0-2"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10",
+    "cota": 9.56,
+    "sansa": 8.9,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "Sheffield United – Southampton",
+      "liga": "Championship",
+      "selectie": "Șansă dublă X2",
+      "cota": 1.5,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Sheffield United dă 1,7 și primește 1,1 goluri pe meci; Southampton dă 1,7 și primește 0,8.",
+       "Meciuri directe analizate: 5.",
+       "Piață 63%, formă 65%, H2H 100% (5 întâlniri); Southampton primește doar 0,8 goluri/meci în deplasare; absențe neverificate."
+      ],
+      "rezultat": "Sheffield United–Southampton 1-1"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Norwich City – Queens Park Rangers",
+      "liga": "Championship",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.45,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 11,0 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 63,5%, formă 76,8%, medie 11 cornere/meci; meci repetat (pe Cotă 2 și Pariul zilei cu alte piețe); absențe neverificate."
+      ],
+      "p": 70,
+      "pm": 64,
+      "pf": 77,
+      "ph": null,
+      "val": 1,
+      "rezultat": "Norwich City–Queens Park Rangers 1-1"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Feyenoord Rotterdam – Porto",
+      "liga": "Liga Campionilor",
+      "selectie": "Șansă dublă X2",
+      "cota": 1.39,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Feyenoord Rotterdam dă 2,1 și primește 1,9 goluri pe meci; Porto dă 2,0 și primește 0,9.",
+       "Meciuri directe analizate: 3.",
+       "Piață 68,3%, formă 70%, H2H 66,7% (3 întâlniri); Porto primește 0,9 goluri/meci; absențe neverificate."
+      ],
+      "rezultat": "Feyenoord Rotterdam–Porto 0-1"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Middlesbrough – Swansea City",
+      "liga": "Championship",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.37,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 10,1 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 67,3%, formă 67,8%, medie 10,1 cornere/meci; absențe neverificate."
+      ],
+      "p": 68,
+      "pm": 67,
+      "pf": 68,
+      "ph": null,
+      "val": -5,
+      "rezultat": "Middlesbrough–Swansea City 2-1"
+     },
+     {
+      "ora": "21:45",
+      "meci": "Hibernian – Dundee FC",
+      "liga": "Premiership (Scoția)",
+      "selectie": "Peste 9.5 cornere",
+      "cota": 1.48,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 10,8 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 62,1%, formă 63,7%, medie 10,8 cornere/meci; absențe neverificate."
+      ],
+      "p": 63,
+      "pm": 62,
+      "pf": 64,
+      "ph": null,
+      "val": -5,
+      "rezultat": "Hibernian–Dundee FC 2-1"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Manchester City – Napoli",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.56,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,6 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 59,6%, formă 62%, medie 9,6 cornere/meci; absențe neverificate."
+      ],
+      "p": 61,
+      "pm": 60,
+      "pf": 62,
+      "ph": null,
+      "val": -3,
+      "rezultat": "Manchester City–Napoli 2-2"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10 CL",
+    "cota": 9.28,
+    "sansa": 11.1,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "Shakhtar Donetsk – Fenerbahce",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.35,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,9 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 69%, formă 77,1%, medie 9,9 cornere/meci; absențe neverificate."
+      ],
+      "p": 73,
+      "pm": 69,
+      "pf": 77,
+      "ph": null,
+      "val": -1
+     },
+     {
+      "ora": "22:00",
+      "meci": "Lille – Bayern Munchen",
+      "liga": "Liga Campionilor",
+      "selectie": "Lille peste 0.5 goluri",
+      "cota": 1.43,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Lille dă 0,9 și primește 1,3 goluri pe meci; Bayern Munchen dă 2,9 și primește 1,4.",
+       "Lille marchează 0,9 pe meci, iar Bayern Munchen primește 1,4.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Piață 65,1%, formă 80% (outsider, 0,9 goluri/meci); absențe neverificate."
+      ],
+      "p": 73,
+      "pm": 65,
+      "pf": 80,
+      "ph": null,
+      "val": 3
+     },
+     {
+      "ora": "19:45",
+      "meci": "Galatasaray – Aston Villa",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 2.5",
+      "cota": 1.49,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Galatasaray dă 2,6 și primește 1,5 goluri pe meci; Aston Villa dă 1,9 și primește 1,5.",
+       "Meciurile Galatasaray au în medie 4,1 goluri, cele ale Aston Villa 3,4.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Piață 63,7%, formă 75%; Galatasaray 2,6 și Aston Villa 1,9 goluri/meci; absențe neverificate."
+      ],
+      "p": 69,
+      "pm": 64,
+      "pf": 75,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Galatasaray–Aston Villa 1-0"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Feyenoord Rotterdam – Porto",
+      "liga": "Liga Campionilor",
+      "selectie": "Șansă dublă X2",
+      "cota": 1.39,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Feyenoord Rotterdam dă 2,1 și primește 1,9 goluri pe meci; Porto dă 2,0 și primește 0,9.",
+       "Meciuri directe analizate: 3.",
+       "Piață 68,3%, formă 70%, H2H 66,7% (3 întâlniri); Porto primește 0,9 goluri/meci; absențe neverificate."
+      ],
+      "rezultat": "Feyenoord Rotterdam–Porto 0-1"
+     },
+     {
+      "ora": "22:00",
+      "meci": "RB Leipzig – Lens",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.45,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 10,6 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 64,2%, formă 73,1%, medie 10,6 cornere/meci; absențe neverificate."
+      ],
+      "p": 69,
+      "pm": 64,
+      "pf": 73,
+      "ph": null,
+      "val": 0,
+      "rezultat": "RB Leipzig–Lens 3-1"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Slovan Bratislava – Betis",
+      "liga": "Liga Campionilor",
+      "selectie": "Slovan Bratislava peste 0.5 goluri",
+      "cota": 1.6,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Slovan Bratislava dă 1,3 și primește 1,7 goluri pe meci; Betis dă 1,9 și primește 1,5.",
+       "Slovan Bratislava marchează 1,3 pe meci, iar Betis primește 1,5.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Piață 58,1%, formă 70%; Betis primește 1,5 goluri/meci; absențe neverificate."
+      ],
+      "p": 64,
+      "pm": 58,
+      "pf": 70,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Slovan Bratislava–Betis 0-2"
+     }
+    ]
+   },
+   {
+    "tip": "CL mare",
+    "cota": 25.77,
+    "sansa": 3.3,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "PSG – AS Roma",
+      "liga": "Liga Campionilor",
+      "selectie": "AS Roma peste 0.5 goluri",
+      "cota": 1.38,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): PSG dă 3,3 și primește 1,0 goluri pe meci; AS Roma dă 3,1 și primește 1,5.",
+       "AS Roma marchează 3,1 pe meci, iar PSG primește 1,0.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Piață 67,1%, formă 80% (outsider, 3,1 goluri/meci); absențe neverificate."
+      ],
+      "p": 72,
+      "pm": 67,
+      "pf": 80,
+      "ph": null,
+      "val": 0
+     },
+     {
+      "ora": "19:45",
+      "meci": "Galatasaray – Aston Villa",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 2.5",
+      "cota": 1.49,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Galatasaray dă 2,6 și primește 1,5 goluri pe meci; Aston Villa dă 1,9 și primește 1,5.",
+       "Meciurile Galatasaray au în medie 4,1 goluri, cele ale Aston Villa 3,4.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Piață 63,7%, formă 75%; Galatasaray 2,6 și Aston Villa 1,9 goluri/meci; absențe neverificate."
+      ],
+      "p": 69,
+      "pm": 64,
+      "pf": 75,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Galatasaray–Aston Villa 1-0"
+     },
+     {
+      "ora": "22:00",
+      "meci": "RB Leipzig – Lens",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.45,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 10,6 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 64,2%, formă 73,1%, medie 10,6 cornere/meci; absențe neverificate."
+      ],
+      "p": 69,
+      "pm": 64,
+      "pf": 73,
+      "ph": null,
+      "val": 0,
+      "rezultat": "RB Leipzig–Lens 3-1"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Slovan Bratislava – Betis",
+      "liga": "Liga Campionilor",
+      "selectie": "Slovan Bratislava peste 0.5 goluri",
+      "cota": 1.6,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Slovan Bratislava dă 1,3 și primește 1,7 goluri pe meci; Betis dă 1,9 și primește 1,5.",
+       "Slovan Bratislava marchează 1,3 pe meci, iar Betis primește 1,5.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Piață 58,1%, formă 70%; Betis primește 1,5 goluri/meci; absențe neverificate."
+      ],
+      "p": 64,
+      "pm": 58,
+      "pf": 70,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Slovan Bratislava–Betis 0-2"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Lille – Bayern Munchen",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.55,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 10,0 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 59,9%, formă 66,7%, medie 10 cornere/meci; absențe neverificate."
+      ],
+      "p": 63,
+      "pm": 60,
+      "pf": 67,
+      "ph": null,
+      "val": -1
+     },
+     {
+      "ora": "19:45",
+      "meci": "Slavia Praga – Villarreal",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.46,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,6 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 63,6%, formă 62%, medie 9,6 cornere/meci; absențe neverificate."
+      ],
+      "p": 63,
+      "pm": 64,
+      "pf": 62,
+      "ph": null,
+      "val": -6
+     },
+     {
+      "ora": "19:45",
+      "meci": "Sabah Baku – Barcelona",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.53,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,7 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 60,8%, formă 63,2%, medie 9,7 cornere/meci; absențe neverificate."
+      ],
+      "p": 62,
+      "pm": 61,
+      "pf": 63,
+      "ph": null,
+      "val": -3
+     },
+     {
+      "ora": "22:00",
+      "meci": "Manchester City – Napoli",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.56,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,6 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Piață 59,6%, formă 62%, medie 9,6 cornere/meci; absențe neverificate."
+      ],
+      "p": 61,
+      "pm": 60,
+      "pf": 62,
+      "ph": null,
+      "val": -3,
+      "rezultat": "Manchester City–Napoli 2-2"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-24-bilete",
   "data": "2026-11-24",
   "tip": "bilete",
