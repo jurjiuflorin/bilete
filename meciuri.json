@@ -1,213 +1,201 @@
 {
- "data": "2026-11-24",
- "actualizat": "2026-11-24T06:18:15Z",
+ "data": "2026-11-25",
+ "actualizat": "2026-11-25T06:15:33Z",
  "meciuri": [
   {
-   "data": "2026-11-24",
+   "data": "2026-11-25",
    "ora": "19:45",
    "liga": "Champions League",
-   "gazde": "Galatasaray",
-   "oaspeti": "Aston Villa",
-   "forma_gazde": "VVVVV",
-   "forma_oaspeti": "IEIEE",
-   "loc_gazde": 18,
-   "loc_oaspeti": 6,
+   "gazde": "Sabah",
+   "oaspeti": "Barcelona",
+   "loc_gazde": 31,
+   "loc_oaspeti": 5,
    "absenti_gazde": [
-    "Osimhen (atacant) – accidentat la genunchi",
-    "Leão (atacant) – accidentat muscular",
-    "Frankowski (fundaș) – accidentat muscular",
-    "Jakobs (fundaș) – incert, inghinal",
-    "Sallai (fundaș) – incert, ischiogambieri"
+    "McCarthy – suspendat",
+    "Khaibulaev – incert (lovitură)"
    ],
    "absenti_oaspeti": [
-    "Onana (mijlocaș) – accidentat la genunchi",
-    "Cash (fundaș) – comoție",
-    "Ruggeri (fundaș) – accidentat muscular",
-    "Lindelöf (fundaș) – incert, boală",
-    "Manzambi (mijlocaș) – incert, gambă"
+    "Yamal (extremă) – accidentat gleznă",
+    "Rodri (mijlocaș) – accidentat",
+    "Christensen (fundaș) – accidentat",
+    "Espart (fundaș) – accidentat gleznă",
+    "Bardghji – accidentat"
    ],
-   "nota": "Loc = clasamentul fazei ligii."
+   "nota": "Clasament Liga Campionilor înainte de etapa 5."
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-11-25",
    "ora": "19:45",
    "liga": "Champions League",
-   "gazde": "Bodo/Glimt",
-   "oaspeti": "LASK Linz",
-   "forma_gazde": "VIVIE",
-   "forma_oaspeti": "IVIVV",
-   "loc_gazde": 25,
-   "loc_oaspeti": 16,
+   "gazde": "Slavia Praga",
+   "oaspeti": "Villarreal",
+   "loc_gazde": 34,
+   "loc_oaspeti": 28,
    "absenti_gazde": [
-    "Mikkelsen (atacant) – accidentat inghinal",
-    "Evjen (mijlocaș) – accidentat la genunchi",
-    "Sjong (portar) – accidentat"
+    "Chaloupek – accidentat",
+    "Moses – accidentat",
+    "Ouanda – accidentat",
+    "Pitak – accidentat",
+    "Sturm – accidentat",
+    "Provod – accidentat genunchi"
    ],
    "absenti_oaspeti": [
-    "Harakaté (atacant) – accidentat la genunchi",
-    "Bello (fundaș) – accidentat muscular"
+    "Gerard Moreno (atacant) – accidentat",
+    "Akhomach – accidentat",
+    "Alassane – accidentat",
+    "Foyth (fundaș) – accidentat",
+    "Saliba – accidentat gleznă"
    ],
-   "nota": "Loc = clasamentul fazei ligii."
+   "nota": "Slavia nu a câștigat încă în faza ligii."
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-11-25",
    "ora": "22:00",
    "liga": "Champions League",
-   "gazde": "Arsenal",
-   "oaspeti": "Borussia Dortmund",
-   "forma_gazde": "EVVVE",
-   "forma_oaspeti": "VEVVV",
-   "loc_gazde": 3,
-   "loc_oaspeti": 12,
+   "gazde": "Club Brugge",
+   "oaspeti": "Liverpool",
+   "loc_gazde": 9,
+   "loc_oaspeti": 8,
    "absenti_gazde": [
-    "Saka (atacant) – accidentat la coapsă",
-    "Zubimendi (mijlocaș) – accidentat muscular",
-    "Raya (portar) – incert, umăr",
-    "Merino (mijlocaș) – incert",
-    "Saliba (fundaș) – incert"
+    "Ordonez – fractură metatars",
+    "Virgili – accidentat"
    ],
    "absenti_oaspeti": [
-    "Guirassy (atacant, golgheter) – accidentat la coapsă",
-    "Chukwuemeka (mijlocaș) – accidentat muscular",
-    "Emre Can (mijlocaș) – accidentat la genunchi",
-    "Lerma (mijlocaș) – accidentat muscular",
-    "Konstantelias (mijlocaș) – accidentat la genunchi",
-    "Anton (fundaș) – incert"
+    "Ekitike (atacant) – accidentat tendon Ahile",
+    "Gakpo (atacant) – accidentat",
+    "Jaros (portar) – accidentat",
+    "Gravenberch (mijlocaș) – incert, călcâi",
+    "Leoni și Bradley – în antrenament (surse contradictorii)"
    ],
-   "marcatori_oaspeti": "Guirassy 4 goluri",
-   "nota": "Loc = clasamentul fazei ligii. Surse parțial contradictorii (Merino, Saliba incerți)."
+   "nota": "Brugge neînvinsă în 11 meciuri în toate competițiile."
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-11-25",
    "ora": "22:00",
    "liga": "Champions League",
-   "gazde": "Manchester City",
-   "oaspeti": "Napoli",
+   "gazde": "Atletico Madrid",
+   "oaspeti": "Viking",
+   "loc_gazde": 23,
+   "loc_oaspeti": 22,
    "absenti_gazde": [
-    "Semenyo (atacant) – accidentat la genunchi",
-    "Nunes (mijlocaș) – accidentat",
-    "Guéhi (fundaș) – incert, șold",
-    "Khusanov (fundaș) – incert"
+    "Lookman (atacant) – accidentat genunchi",
+    "Cristian Romero (fundaș) – accidentat",
+    "Pubill (fundaș) – accidentat gleznă"
    ],
    "absenti_oaspeti": [
-    "Marín (fundaș) – suspendat (cartonaș roșu)",
-    "Di Lorenzo (fundaș, căpitan) – accidentat muscular",
-    "Lobotka (mijlocaș) – accidentat la gleznă",
-    "Buongiorno (fundaș) – accidentat la genunchi",
-    "Meret (portar) – accidentat",
-    "Neres (atacant) – accidentat"
+    "Baertelsen – accidentat",
+    "Bjorshol – accidentat",
+    "D'Agostino – accidentat",
+    "Roseth – accidentat",
+    "Berisha, K. Haugen – incerți"
    ],
-   "marcatori_gazde": "Haaland 5 goluri în UCL",
-   "nota": "City fără victorie în 90 de minute în ultimele 5 meciuri (E2, I3); rotații posibile (Cherki, Fernández, Gvardiol pe bancă)."
+   "nota": "Atletico a pierdut ultimele două meciuri acasă."
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-11-25",
    "ora": "22:00",
    "liga": "Champions League",
-   "gazde": "Real Madrid",
-   "oaspeti": "PSV",
+   "gazde": "Lille",
+   "oaspeti": "Bayern Munchen",
+   "loc_gazde": 35,
+   "loc_oaspeti": 13,
    "absenti_gazde": [
-    "Rodrygo (atacant) – accidentat la genunchi",
-    "Mendy (fundaș) – accidentat la șold",
-    "Asencio (fundaș) – picior rupt"
+    "Tiago Santos (fundaș) – accidentat genunchi",
+    "Nianzou (fundaș) – accidentat",
+    "Igamane – accidentat"
    ],
    "absenti_oaspeti": [
-    "Schouten (mijlocaș) – accidentat la genunchi",
-    "Pléa (atacant) – operat",
-    "Ouaissa (atacant) – accidentat muscular",
-    "Nagalo (fundaș) – accidentat",
-    "Dest (fundaș) – incert",
-    "Wanner (mijlocaș) – incert, picior"
+    "Kane (atacant, golgheter) – accidentat gleznă, câteva luni",
+    "Neuer (portar) – accidentat",
+    "Davies (fundaș) – accidentat",
+    "Gnabry (extremă) – accidentat",
+    "Saibari – accidentat",
+    "Olise – incert (picior)",
+    "Luis Diaz – incert (ischiogambieri)"
    ],
-   "nota": "Absențe din disponibilitate raportată, nu lot confirmat."
+   "nota": "Bayern fără Kane și Neuer."
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-11-25",
    "ora": "22:00",
    "liga": "Champions League",
-   "gazde": "RB Leipzig",
-   "oaspeti": "Lens",
-   "forma_gazde": "VIVIV",
-   "forma_oaspeti": "VIIIE",
-   "loc_gazde": 30,
-   "loc_oaspeti": 33,
+   "gazde": "Sporting",
+   "oaspeti": "Man. United",
+   "loc_gazde": 10,
+   "loc_oaspeti": 17,
    "absenti_gazde": [
-    "Marc Guiu (atacant) – accidentat la ischiogambieri",
-    "Ouédraogo (mijlocaș) – accidentat la umăr",
-    "Finkgräfe (fundaș) – incert, coapsă"
+    "Debast (fundaș) – accidentat",
+    "Nuno Santos – accidentat"
    ],
    "absenti_oaspeti": [
-    "Édouard (atacant) – accidentat inghinal",
-    "Sima (atacant) – accidentat muscular",
-    "Ivanović (atacant) – comoție",
-    "Gradit (fundaș) – accidentat",
-    "Nawrocki (fundaș) – accidentat la genunchi",
-    "Bulatović (mijlocaș) – accidentat la gât"
+    "Cunha (atacant) – suspendat",
+    "Sesko (atacant) – accidentat",
+    "Rashford (atacant) – accidentat",
+    "Baleba (mijlocaș) – accidentat",
+    "Ugarte (mijlocaș) – accidentat genunchi",
+    "Shaw (fundaș) – incert"
    ],
-   "nota": "Loc = clasamentul fazei ligii. Lens vine după 1-9 cu Como."
+   "nota": "Primul meci european al lui Pochettino la United; United a câștigat 1 din ultimele 12."
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-11-25",
    "ora": "22:00",
    "liga": "Champions League",
-   "gazde": "Slovan Bratislava",
-   "oaspeti": "Betis",
-   "forma_gazde": "VIIII",
-   "forma_oaspeti": "VIVVE",
-   "loc_gazde": 36,
-   "loc_oaspeti": 11,
-   "absenti_gazde": [],
-   "absenti_oaspeti": [
-    "Ceballos (mijlocaș) – accidentat la ischiogambieri"
+   "gazde": "Inter",
+   "oaspeti": "Stuttgart",
+   "loc_gazde": 15,
+   "loc_oaspeti": 14,
+   "absenti_gazde": [
+    "Calhanoglu (mijlocaș) – accidentat",
+    "Bonny (atacant) – accidentat"
    ],
-   "marcatori_oaspeti": "Camara 1 gol (Slovan)",
-   "nota": "Loc = clasamentul fazei ligii. Absențe Slovan neverificate."
+   "absenti_oaspeti": [
+    "Jaquez – incert (coaste)",
+    "Sauer – incert",
+    "Stiller – incert (zona inghinală)"
+   ],
+   "nota": "Lautaro Martinez revenit și disponibil."
   },
   {
-   "data": "2026-11-24",
+   "id": 14805723,
+   "data": "2026-11-25",
    "ora": "22:00",
    "liga": "Champions League",
-   "gazde": "Como",
-   "oaspeti": "AEK Atena",
-   "forma_gazde": "VVVIV",
-   "forma_oaspeti": "VIIVV",
-   "loc_gazde": 4,
-   "loc_oaspeti": 29,
+   "gazde": "PSG",
+   "oaspeti": "AS Roma",
+   "loc_gazde": 1,
+   "loc_oaspeti": 20,
    "absenti_gazde": [
-    "Kean (atacant) – accidentat",
-    "Addai (atacant) – accidentat muscular",
-    "Diao (atacant) – accidentat la coapsă",
-    "Jesús Rodríguez (atacant) – accidentat",
-    "Chalobah (fundaș) – incert"
+    "Doue (atacant) – accidentat genunchi",
+    "Kvaratskhelia (atacant) – accidentat genunchi"
    ],
    "absenti_oaspeti": [
-    "Koita (atacant) – suspendat (cartonaș roșu)"
+    "Pellegrini (mijlocaș) – accidentat",
+    "Balerdi – incert (gleznă)",
+    "Rensch – incert"
    ],
-   "nota": "Loc = clasamentul fazei ligii."
+   "nota": "PSG a câștigat ultimele 12 meciuri în toate competițiile."
   },
   {
-   "data": "2026-11-24",
+   "data": "2026-11-25",
    "ora": "22:00",
    "liga": "Champions League",
-   "gazde": "Feyenoord",
-   "oaspeti": "Porto",
-   "forma_gazde": "EEIII",
-   "forma_oaspeti": "IVVVV",
-   "loc_gazde": 32,
-   "loc_oaspeti": 26,
+   "gazde": "Șahtior",
+   "oaspeti": "Fenerbahce",
+   "loc_gazde": 21,
+   "loc_oaspeti": 19,
    "absenti_gazde": [
-    "St. Juste (fundaș) – accidentat",
-    "Nieuwkoop (fundaș) – accidentat la genunchi",
-    "Beelen (fundaș) – picior rupt",
-    "Bos (fundaș) – accidentat la genunchi",
-    "Moder (mijlocaș) – accidentat la genunchi",
-    "Hadj-Moussa (atacant) – incert, gleznă"
+    "Kaua Elias – fractură",
+    "Marlon Santos – accidentat/incert",
+    "Mendoza – accidentat gleznă",
+    "Eguinaldo, Pedrinho – absenți"
    ],
    "absenti_oaspeti": [
-    "William (atacant) – accidentat la gleznă",
-    "Smalling (fundaș) – accidentat la genunchi"
+    "Ake (fundaș) – accidentat",
+    "Asensio (atacant) – accidentat genunchi",
+    "Oosterwolde – accidentat Ahile"
    ],
-   "nota": "Loc = clasamentul fazei ligii."
+   "nota": "Lukaku recuperat, probabil titular la Fenerbahce."
   }
  ]
 }
