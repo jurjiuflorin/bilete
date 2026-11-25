@@ -1,5 +1,187 @@
 [
  {
+  "id": "2026-11-25-rezumat",
+  "data": "2026-11-25",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 25 noiembrie: 2 câștigate, 1 pierdute",
+  "intro": "Challenge 1.40 câștigat · Cotă 2 pierdut · Cotă 5 câștigat",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [],
+    "li": [
+     "Cotă 2: Bolton – West Bromwich Bolton–West Bromwich 1-3 (Peste 8.5 cornere); Lille – Bayern Munchen Lille–Bayern Munchen 2-1 (Peste 7.5 cornere)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 7."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "9 bilete câștigate din 26 validate (35%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.36,
+    "sansa": 74.8,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "PSG – AS Roma",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 2.5",
+      "cota": 1.36,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): PSG dă 3,3 și primește 1,0 goluri pe meci; AS Roma dă 3,1 și primește 1,5.",
+       "Meciurile PSG au în medie 4,3 goluri, cele ale AS Roma 4,6.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "PSG–Roma Peste 2.5: piață 69,5%, formă 80% (PSG 3,3 goluri marcate/meci, Roma 3,1); PSG a câștigat ultimele 12 meciuri; fără Doué și Kvaratskhelia, Roma fără Pellegrini; p 74,8%."
+      ],
+      "p": 75,
+      "pm": 70,
+      "pf": 80,
+      "ph": null,
+      "val": 1,
+      "rezultat": "PSG–AS Roma 2-2"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.88,
+    "sansa": 53.7,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "19:45",
+      "meci": "Bolton – West Bromwich",
+      "liga": "Championship",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.37,
+      "linii": [
+       "Meciuri directe analizate: 3.",
+       "Media cornerelor pe meci: 11,4 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Bolton–West Brom Peste 8.5 cornere: piață 67,1%, formă 80,2%, medie 11,4 cornere/meci; absențe neverificate (Championship); p 73,7%."
+      ],
+      "p": 74,
+      "pm": 67,
+      "pf": 80,
+      "ph": null,
+      "val": 1,
+      "rezultat": "Bolton–West Bromwich 1-3"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Lille – Bayern Munchen",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.37,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 10,0 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Lille–Bayern Peste 7.5 cornere: piață 67,9%, formă 78%, medie 10 cornere/meci; Bayern fără Kane și Neuer, Lille fără 3 fundași; p 72,9%."
+      ],
+      "p": 73,
+      "pm": 68,
+      "pf": 78,
+      "ph": null,
+      "val": 0,
+      "rezultat": "Lille–Bayern Munchen 2-1"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 4.72,
+    "sansa": 19,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "Șahtior – Fenerbahce",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.38,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,9 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Șahtior–Fenerbahce Peste 7.5 cornere: piață 67,4%, formă 77,1%, medie 9,9; absențe la ambele echipe fără impact major pe cornere; p 72,2%."
+      ],
+      "p": 72,
+      "pm": 67,
+      "pf": 77,
+      "ph": null,
+      "val": 0,
+      "rezultat": "Șahtior–Fenerbahce 0-1"
+     },
+     {
+      "ora": "19:45",
+      "meci": "Watford – Blackburn",
+      "liga": "Championship",
+      "selectie": "X2",
+      "cota": 1.5,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Watford dă 0,7 și primește 2,0 goluri pe meci; Blackburn dă 1,7 și primește 1,6.",
+       "Diferența de goluri pe meci: Watford -1,3, Blackburn 0,1.",
+       "Meciuri directe analizate: 5.",
+       "Watford–Blackburn X2: piață 63%, formă 75%, H2H 60%; absențe neverificate; p 67,2%."
+      ],
+      "p": 67,
+      "pm": 63,
+      "pf": 75,
+      "ph": 60,
+      "val": 1,
+      "rezultat": "Watford–Blackburn 0-1"
+     },
+     {
+      "ora": "19:45",
+      "meci": "Burnley – Birmingham",
+      "liga": "Championship",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.54,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 9,9 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Burnley–Birmingham Peste 8.5 cornere: piață 59,9%, formă 65,6%, medie 9,9; absențe neverificate; p 62,7%."
+      ],
+      "p": 63,
+      "pm": 60,
+      "pf": 66,
+      "ph": null,
+      "val": -2,
+      "rezultat": "Burnley–Birmingham 0-2"
+     },
+     {
+      "ora": "19:45",
+      "meci": "Slavia Praga – Villarreal",
+      "liga": "Liga Campionilor",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.48,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,6 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Slavia–Villarreal Peste 8.5 cornere: piață 62,8%, formă 62%, medie 9,6; ambele echipe cu multe absențe; p 62,4%."
+      ],
+      "p": 62,
+      "pm": 63,
+      "pf": 62,
+      "ph": null,
+      "val": -5,
+      "rezultat": "Slavia Praga–Villarreal 0-1"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-24-rezumat",
   "data": "2026-11-24",
   "tip": "rezumat",
