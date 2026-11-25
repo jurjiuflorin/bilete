@@ -4244,5 +4244,69 @@
    14804355,
    14790409
   ]
+ },
+ {
+  "id": "2026-11-25-challenge",
+  "data": "2026-11-25",
+  "tip": "Challenge 1.40",
+  "cota": 1.36,
+  "sansa": 0.748,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:00 PSG – AS Roma: Peste 2.5 (1.36)",
+  "rezultat": "",
+  "motive": [
+   "PSG–Roma Peste 2.5: piață 69,5%, formă 80% (PSG 3,3 goluri marcate/meci, Roma 3,1); PSG a câștigat ultimele 12 meciuri; fără Doué și Kvaratskhelia, Roma fără Pellegrini; p 74,8%."
+  ],
+  "ids": [
+   14805723
+  ],
+  "sport": "fotbal",
+  "ciclu": 5,
+  "pas": 7
+ },
+ {
+  "id": "2026-11-25-cota2",
+  "data": "2026-11-25",
+  "tip": "Cotă 2",
+  "cota": 1.88,
+  "sansa": 0.537,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:45 Bolton – West Bromwich: Peste 8.5 cornere (1.37) · 22:00 Lille – Bayern Munchen: Peste 7.5 cornere (1.37)",
+  "rezultat": "",
+  "motive": [
+   "Bolton–West Brom Peste 8.5 cornere: piață 67,1%, formă 80,2%, medie 11,4 cornere/meci; absențe neverificate (Championship); p 73,7%.",
+   "Lille–Bayern Peste 7.5 cornere: piață 67,9%, formă 78%, medie 10 cornere/meci; Bayern fără Kane și Neuer, Lille fără 3 fundași; p 72,9%."
+  ],
+  "ids": [
+   14719690,
+   14805722
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-25-cota5",
+  "data": "2026-11-25",
+  "tip": "Cotă 5",
+  "cota": 4.72,
+  "sansa": 0.19,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:00 Șahtior – Fenerbahce: Peste 7.5 cornere (1.38) · 19:45 Watford – Blackburn: X2 (1.50) · 19:45 Burnley – Birmingham: Peste 8.5 cornere (1.54) · 19:45 Slavia Praga – Villarreal: Peste 8.5 cornere (1.48)",
+  "rezultat": "",
+  "motive": [
+   "Șahtior–Fenerbahce Peste 7.5 cornere: piață 67,4%, formă 77,1%, medie 9,9; absențe la ambele echipe fără impact major pe cornere; p 72,2%.",
+   "Watford–Blackburn X2: piață 63%, formă 75%, H2H 60%; absențe neverificate; p 67,2%.",
+   "Burnley–Birmingham Peste 8.5 cornere: piață 59,9%, formă 65,6%, medie 9,9; absențe neverificate; p 62,7%.",
+   "Slavia–Villarreal Peste 8.5 cornere: piață 62,8%, formă 62%, medie 9,6; ambele echipe cu multe absențe; p 62,4%."
+  ],
+  "ids": [
+   14805718,
+   14719692,
+   14719691,
+   14804354
+  ],
+  "sport": "fotbal"
  }
 ]
