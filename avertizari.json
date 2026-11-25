@@ -1,4 +1,17 @@
 {
- "at": "2026-11-24T16:06:23.668Z",
- "avertizari": {}
+ "at": "2026-11-25T00:59:42.419Z",
+ "avertizari": {
+  "2026-11-23-cota100": [
+   "selecții fără scor validat: 25.11 22:00 PSG – AS Roma: PSG peste 2.5 goluri ec; 26.11 22:00 Juventus – Omonia Nicosia: Juventus pe; 28.11 16:30 Hamburg – Bayern Munchen: Bayern peste; 28.11 21:45 Inter – Genoa: Peste 2.5 goluri (1.58)"
+  ],
+  "2026-11-23-mega": [
+   "selecții fără scor validat: 25.11 22:00 PSG – AS Roma: PSG câștigă (1.39); 25.11 22:00 Club Brugge – Liverpool: Liverpool pes; 25.11 22:00 Inter – Stuttgart: Inter câștigă (1.42; 26.11 22:00 Juventus – Omonia Nicosia: Peste 2.5 g"
+  ],
+  "2026-11-24-cl10": [
+   "selecții fără scor validat: 25.11 22:00 Shakhtar Donetsk – Fenerbahce: Peste 7; 25.11 22:00 Lille – Bayern Munchen: Lille peste 0."
+  ],
+  "2026-11-24-clmare": [
+   "selecții fără scor validat: 25.11 22:00 PSG – AS Roma: AS Roma peste 0.5 golur; 25.11 22:00 Lille – Bayern Munchen: Peste 8.5 corn; 25.11 19:45 Slavia Praga – Villarreal: Peste 8.5 c; 25.11 19:45 Sabah Baku – Barcelona: Peste 8.5 corn"
+  ]
+ }
 }
