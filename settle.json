@@ -123,5 +123,20 @@
   "status": "pierdut",
   "rezultat": "Barcelona–Villarreal 1-1 · Sirius–Djurgarden IF 2-6 · Bologna–Udinese 3-2 (10 cornere) · Augsburg–Mainz 3-1 (6 cornere) · UTA Arad–Universitatea Craiova 1-0 (9 cornere)",
   "at": "2026-11-22T20:11:54.822Z"
+ },
+ "2026-11-26-challenge": {
+  "status": "pierdut",
+  "rezultat": "Iberia 1999–Getafe 1-0",
+  "at": "2026-11-26T20:46:53.162Z"
+ },
+ "2026-11-26-cota2": {
+  "status": "câștigat",
+  "rezultat": "Olympiacos–AC Milan 2-4 · Viktoria Plzen–Benfica 4-0",
+  "at": "2026-11-26T20:46:53.574Z"
+ },
+ "2026-11-26-cota5": {
+  "status": "pierdut",
+  "rezultat": "Kauno Zalgiris–Riga FC 2-0 · Dinamo Zagreb–Bayer Leverkusen 0-2 · Ajax Amsterdam–Thun 4-0 (11 cornere)",
+  "at": "2026-11-26T20:46:54.197Z"
  }
 }
