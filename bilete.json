@@ -4308,5 +4308,97 @@
    14804354
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-26-challenge",
+  "data": "2026-11-26",
+  "tip": "Challenge 1.40",
+  "cota": 1.38,
+  "sansa": 0.744,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:45 Iberia 1999 – Getafe: Peste 1.5 (1.38)",
+  "rezultat": "",
+  "motive": [
+   "Iberia 1999 – Getafe Peste 1.5: piață 68.8%, formă 80%; absențe neverificate (Conference League); p 74.4%."
+  ],
+  "ids": [
+   14819236
+  ],
+  "sport": "fotbal",
+  "ciclu": 5,
+  "pas": 8
+ },
+ {
+  "id": "2026-11-26-cota2",
+  "data": "2026-11-26",
+  "tip": "Cotă 2",
+  "cota": 1.87,
+  "sansa": 0.5702,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:45 Olympiacos – AC Milan: Olympiacos peste 0.5 goluri (1.31) · 19:45 Viktoria Plzen – Benfica: Peste 2.5 (1.43)",
+  "rezultat": "",
+  "motive": [
+   "Olympiacos – AC Milan Olympiacos peste 0.5 goluri: piață 71.0%, formă 85%; absențe neverificate (Europa League); p 78.0%.",
+   "Viktoria Plzen – Benfica Peste 2.5: piață 66.2%, formă 80%; absențe neverificate (Europa League); p 73.1%."
+  ],
+  "ids": [
+   14819247,
+   14819241
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-26-cota5",
+  "data": "2026-11-26",
+  "tip": "Cotă 5",
+  "cota": 4.54,
+  "sansa": 0.2368,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:45 Kauno Zalgiris – Riga FC: Kauno Zalgiris peste 0.5 goluri (1.41) · 19:45 Dinamo Zagreb – Bayer Leverkusen: Peste 2.5 (1.48) · 19:45 Ajax Amsterdam – Thun: Peste 8.5 cornere (1.51) · 22:00 Olympique Lyon – Lillestrom: Peste 8.5 cornere (1.44)",
+  "rezultat": "",
+  "motive": [
+   "Kauno Zalgiris – Riga FC Kauno Zalgiris peste 0.5 goluri: piață 65.9%, formă 75%; absențe neverificate (Conference League); p 70.4%.",
+   "Dinamo Zagreb – Bayer Leverkusen Peste 2.5: piață 63.9%, formă 75%; absențe neverificate (Europa League); p 69.5%.",
+   "Ajax Amsterdam – Thun Peste 8.5 cornere: piață 61.4%, formă 74%; absențe neverificate (Conference League); p 67.7%.",
+   "Olympique Lyon – Lillestrom Peste 8.5 cornere: piață 64.5%, formă 78%; absențe neverificate (Europa League); p 71.5%."
+  ],
+  "ids": [
+   14819250,
+   14819246,
+   14819249,
+   14820912
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-26-cota10",
+  "data": "2026-11-26",
+  "tip": "Cotă 10",
+  "cota": 9.05,
+  "sansa": 0.1018,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "19:45 Pafos – Midtjylland: X2 (1.41) · 19:45 RB Salzburg – Ararat Armenia: Peste 7.5 cornere (1.36) · 22:00 Hajduk Split – Sint-Truiden: Peste 7.5 cornere (1.39) · 22:00 Crystal Palace – Real Sociedad: Peste 7.5 cornere (1.36) · 22:00 Inter Escaldes – FC Copenhaga: Peste 7.5 cornere (1.46) · 22:00 Sparta Praga – AZ Alkmaar: Peste 9.5 cornere (1.71)",
+  "rezultat": "",
+  "motive": [
+   "Pafos – Midtjylland X2: piață 66.8%, formă 75%; absențe neverificate (Conference League); p 70.9%.",
+   "RB Salzburg – Ararat Armenia Peste 7.5 cornere: piață 68.4%, formă 69%; absențe neverificate (Europa League); p 68.6%.",
+   "Hajduk Split – Sint-Truiden Peste 7.5 cornere: piață 67.0%, formă 81%; absențe neverificate (Conference League); p 74.2%.",
+   "Crystal Palace – Real Sociedad Peste 7.5 cornere: piață 68.2%, formă 71%; absențe neverificate (Europa League); p 69.6%.",
+   "Inter Escaldes – FC Copenhaga Peste 7.5 cornere: piață 63.6%, formă 68%; absențe neverificate (Conference League); p 65.6%.",
+   "Sparta Praga – AZ Alkmaar Peste 9.5 cornere: piață 54.5%, formă 69%; absențe neverificate (Europa League); p 61.8%."
+  ],
+  "ids": [
+   14819244,
+   14819252,
+   14820914,
+   14820910,
+   14820901,
+   14820905
+  ],
+  "sport": "fotbal"
  }
 ]
