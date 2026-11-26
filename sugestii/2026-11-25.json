@@ -12,7 +12,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.36,
     "p": 0.76,
-    "why": "PSG dă 3,3 și primește 1 goluri pe meci; AS Roma dă 3,1 și primește 1,5."
+    "why": "PSG dă 3,3 și primește 1 goluri pe meci; AS Roma dă 3,1 și primește 1,5.",
+    "rez": "won",
+    "scor": "2-2"
    },
    {
     "id": 14804355,
@@ -22,7 +24,9 @@
     "sel": "Peste 3.5 goluri",
     "od": 1.38,
     "p": 0.625,
-    "why": "Sabah Baku dă 2 și primește 1,3 goluri pe meci; Barcelona dă 3,2 și primește 1,4."
+    "why": "Sabah Baku dă 2 și primește 1,3 goluri pe meci; Barcelona dă 3,2 și primește 1,4.",
+    "rez": "won",
+    "scor": "1-4"
    },
    {
     "id": 14805720,
@@ -32,7 +36,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.54,
     "p": 0.622,
-    "why": "Sporting Lisabona dă 2 și primește 0,9 goluri pe meci; Manchester United dă 1,1 și primește 2,4."
+    "why": "Sporting Lisabona dă 2 și primește 0,9 goluri pe meci; Manchester United dă 1,1 și primește 2,4.",
+    "rez": "won",
+    "scor": "2-2"
    },
    {
     "id": 14804354,
@@ -42,7 +48,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.66,
     "p": 0.589,
-    "why": "Slavia Praga dă 2 și primește 0,8 goluri pe meci; Villarreal dă 1,7 și primește 1,7."
+    "why": "Slavia Praga dă 2 și primește 0,8 goluri pe meci; Villarreal dă 1,7 și primește 1,7.",
+    "rez": "lost",
+    "scor": "0-1"
    },
    {
     "id": 14805722,
@@ -52,7 +60,9 @@
     "sel": "Peste 2.5 goluri",
     "od": 1.76,
     "p": 0.588,
-    "why": "Lille dă 0,9 și primește 1,3 goluri pe meci; Bayern Munchen dă 2,9 și primește 1,4."
+    "why": "Lille dă 0,9 și primește 1,3 goluri pe meci; Bayern Munchen dă 2,9 și primește 1,4.",
+    "rez": "won",
+    "scor": "2-1"
    }
   ],
   "gg": [
@@ -64,7 +74,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.47,
     "p": 0.718,
-    "why": "PSG marchează 3,3 și primește 1 pe meci; AS Roma marchează 3,1 și primește 1,5."
+    "why": "PSG marchează 3,3 și primește 1 pe meci; AS Roma marchează 3,1 și primește 1,5.",
+    "rez": "won",
+    "scor": "2-2"
    },
    {
     "id": 14805721,
@@ -74,7 +86,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.39,
     "p": 0.711,
-    "why": "Club Brugge marchează 3 și primește 1,1 pe meci; Liverpool marchează 2,4 și primește 1,6."
+    "why": "Club Brugge marchează 3 și primește 1,1 pe meci; Liverpool marchează 2,4 și primește 1,6.",
+    "rez": "lost",
+    "scor": "0-3"
    },
    {
     "id": 14804355,
@@ -84,7 +98,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.77,
     "p": 0.638,
-    "why": "Sabah Baku marchează 2 și primește 1,3 pe meci; Barcelona marchează 3,2 și primește 1,4."
+    "why": "Sabah Baku marchează 2 și primește 1,3 pe meci; Barcelona marchează 3,2 și primește 1,4.",
+    "rez": "won",
+    "scor": "1-4"
    },
    {
     "id": 14805717,
@@ -94,7 +110,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.44,
     "p": 0.628,
-    "why": "Inter Milano marchează 2,4 și primește 1,3 pe meci; Stuttgart marchează 1,4 și primește 0,9."
+    "why": "Inter Milano marchează 2,4 și primește 1,3 pe meci; Stuttgart marchează 1,4 și primește 0,9.",
+    "rez": "lost",
+    "scor": "2-0"
    },
    {
     "id": 14804354,
@@ -104,7 +122,9 @@
     "sel": "GG (ambele marchează)",
     "od": 1.56,
     "p": 0.602,
-    "why": "Slavia Praga marchează 2 și primește 0,8 pe meci; Villarreal marchează 1,7 și primește 1,7."
+    "why": "Slavia Praga marchează 2 și primește 0,8 pe meci; Villarreal marchează 1,7 și primește 1,7.",
+    "rez": "lost",
+    "scor": "0-1"
    }
   ],
   "cornere": [
@@ -116,7 +136,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.47,
     "p": 0.766,
-    "why": "Media cornerelor: Club Brugge 3,5, Liverpool 9,3, adică 12,8 pe meci."
+    "why": "Media cornerelor: Club Brugge 3,5, Liverpool 9,3, adică 12,8 pe meci.",
+    "rez": "won",
+    "scor": "0-3",
+    "total": 12
    },
    {
     "id": 14719690,
@@ -126,7 +149,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.37,
     "p": 0.745,
-    "why": "Media cornerelor: Bolton Wanderers 5,5, West Bromwich Albion 5,9, adică 11,4 pe meci."
+    "why": "Media cornerelor: Bolton Wanderers 5,5, West Bromwich Albion 5,9, adică 11,4 pe meci.",
+    "rez": "lost",
+    "scor": "1-3",
+    "total": 5
    },
    {
     "id": 14805722,
@@ -136,7 +162,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.37,
     "p": 0.734,
-    "why": "Media cornerelor: Lille 3, Bayern Munchen 7, adică 10 pe meci."
+    "why": "Media cornerelor: Lille 3, Bayern Munchen 7, adică 10 pe meci.",
+    "rez": "lost",
+    "scor": "2-1",
+    "total": 7
    },
    {
     "id": 14805717,
@@ -146,7 +175,10 @@
     "sel": "Peste 8.5 cornere",
     "od": 1.53,
     "p": 0.731,
-    "why": "Media cornerelor: Inter Milano 6, Stuttgart 6, adică 12 pe meci."
+    "why": "Media cornerelor: Inter Milano 6, Stuttgart 6, adică 12 pe meci.",
+    "rez": "won",
+    "scor": "2-0",
+    "total": 17
    },
    {
     "id": 14805718,
@@ -156,7 +188,10 @@
     "sel": "Peste 7.5 cornere",
     "od": 1.38,
     "p": 0.727,
-    "why": "Media cornerelor: Shakhtar Donetsk 4,8, Fenerbahce 5,1, adică 9,9 pe meci."
+    "why": "Media cornerelor: Shakhtar Donetsk 4,8, Fenerbahce 5,1, adică 9,9 pe meci.",
+    "rez": "won",
+    "scor": "0-1",
+    "total": 8
    }
   ],
   "sub": [
@@ -168,7 +203,9 @@
     "sel": "Sub 4.5 goluri",
     "od": 1.49,
     "p": 0.72,
-    "why": "Inter Milano dă 2,4 și primește 1,3 goluri pe meci; Stuttgart dă 1,4 și primește 0,9. Se urmărește doar pentru statistică."
+    "why": "Inter Milano dă 2,4 și primește 1,3 goluri pe meci; Stuttgart dă 1,4 și primește 0,9. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "2-0"
    },
    {
     "id": 14804355,
@@ -178,7 +215,9 @@
     "sel": "Sub 5.5 goluri",
     "od": 1.45,
     "p": 0.718,
-    "why": "Sabah Baku dă 2 și primește 1,3 goluri pe meci; Barcelona dă 3,2 și primește 1,4. Se urmărește doar pentru statistică."
+    "why": "Sabah Baku dă 2 și primește 1,3 goluri pe meci; Barcelona dă 3,2 și primește 1,4. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "1-4"
    },
    {
     "id": 14805719,
@@ -188,7 +227,9 @@
     "sel": "Sub 4.5 goluri",
     "od": 1.51,
     "p": 0.684,
-    "why": "Atletico Madrid dă 1,5 și primește 0,7 goluri pe meci; Viking dă 2,8 și primește 1,7. Se urmărește doar pentru statistică."
+    "why": "Atletico Madrid dă 1,5 și primește 0,7 goluri pe meci; Viking dă 2,8 și primește 1,7. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "2-0"
    },
    {
     "id": 14805718,
@@ -198,7 +239,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.42,
     "p": 0.667,
-    "why": "Shakhtar Donetsk dă 1,4 și primește 0,5 goluri pe meci; Fenerbahce dă 2,2 și primește 1,6. Se urmărește doar pentru statistică."
+    "why": "Shakhtar Donetsk dă 1,4 și primește 0,5 goluri pe meci; Fenerbahce dă 2,2 și primește 1,6. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "0-1"
    },
    {
     "id": 14719691,
@@ -208,7 +251,9 @@
     "sel": "Sub 3.5 goluri",
     "od": 1.4,
     "p": 0.647,
-    "why": "Burnley dă 1,5 și primește 2,1 goluri pe meci; Birmingham City dă 1,8 și primește 0,9. Se urmărește doar pentru statistică."
+    "why": "Burnley dă 1,5 și primește 2,1 goluri pe meci; Birmingham City dă 1,8 și primește 0,9. Se urmărește doar pentru statistică.",
+    "rez": "won",
+    "scor": "0-2"
    }
   ]
  }
