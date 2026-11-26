@@ -1,4 +1,11 @@
-prea devreme pentru lista zilei 6
-prea devreme 6
-judecat 2026-11-25.json
-index 28 zile
+evenimente 1306 meciuri azi 36
+scris sugestii/2026-11-26.json { goluri: 5, gg: 5, cornere: 5, sub: 5 }
+evenimente 2002 meciuri 51
+candidati 369 din 51 meciuri
+scris candidati/2026-11-26.json plan {
+  challenge: '1.38 / 0.744',
+  cota2: '1.87 / 0.57',
+  cota5: '4.54 / 0.237',
+  cota10: '9.05 / 0.102'
+} variante { challenge: 4, cota2: 3, pariu: 0, cota5: 3, cota10: 3 } 4
+index 29 zile
