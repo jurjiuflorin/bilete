@@ -1,5 +1,308 @@
 [
  {
+  "id": "2026-11-26-rezumat",
+  "data": "2026-11-26",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 26 noiembrie: 1 câștigate, 3 pierdute",
+  "intro": "Challenge 1.40 pierdut · Cotă 2 câștigat · Cotă 5 pierdut · Cotă 10 pierdut",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [],
+    "li": [
+     "Challenge 1.40: Iberia 1999 – Getafe Iberia 1999–Getafe 1-0 (Peste 1.5)",
+     "Cotă 5: Kauno Zalgiris – Riga FC Kauno Zalgiris–Riga FC 2-0 (Kauno Zalgiris peste 0.5 goluri); Dinamo Zagreb – Bayer Leverkusen Dinamo Zagreb–Bayer Leverkusen 0-2 (Peste 2.5); Ajax Amsterdam – Thun Ajax Amsterdam–Thun 4-0 (Peste 8.5 cornere)",
+     "Cotă 10: Pafos – Midtjylland Pafos–Midtjylland 0-2 (X2); RB Salzburg – Ararat Armenia RB Salzburg–Ararat Armenia 2-0 (Peste 7.5 cornere); Hajduk Split – Sint-Truiden Hajduk Split–Sint-Truiden 0-2 (Peste 7.5 cornere); Crystal Palace – Real Sociedad Crystal Palace–Real Sociedad 2-1 (Peste 7.5 cornere); Inter Escaldes – FC Copenhaga Inter Escaldes–FC Copenhaga 2-0 (Peste 7.5 cornere); Sparta Praga – AZ Alkmaar Sparta Praga–AZ Alkmaar 2-4 (Peste 9.5 cornere)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 13."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "10 bilete câștigate din 30 validate (33%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.38,
+    "sansa": 74.4,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "19:45",
+      "meci": "Iberia 1999 – Getafe",
+      "liga": "Conference League",
+      "selectie": "Peste 1.5",
+      "cota": 1.38,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Iberia 1999 dă 1,3 și primește 1,0 goluri pe meci; Getafe dă 1,0 și primește 2,3.",
+       "Meciurile Iberia 1999 au în medie 2,3 goluri, cele ale Getafe 3,3.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Iberia 1999 – Getafe Peste 1.5: piață 68.8%, formă 80%; absențe neverificate (Conference League); p 74.4%."
+      ],
+      "p": 74,
+      "pm": 69,
+      "pf": 80,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Iberia 1999–Getafe 1-0"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.87,
+    "sansa": 57,
+    "status": "câștigat",
+    "evenimente": [
+     {
+      "ora": "19:45",
+      "meci": "Olympiacos – AC Milan",
+      "liga": "Europa League",
+      "selectie": "Olympiacos peste 0.5 goluri",
+      "cota": 1.31,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Olympiacos dă 2,2 și primește 0,5 goluri pe meci; AC Milan dă 2,2 și primește 1,5.",
+       "Olympiacos marchează 2,2 pe meci, iar AC Milan primește 1,5.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Olympiacos – AC Milan Olympiacos peste 0.5 goluri: piață 71.0%, formă 85%; absențe neverificate (Europa League); p 78.0%."
+      ],
+      "p": 78,
+      "pm": 71,
+      "pf": 85,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Olympiacos–AC Milan 2-4"
+     },
+     {
+      "ora": "19:45",
+      "meci": "Viktoria Plzen – Benfica",
+      "liga": "Europa League",
+      "selectie": "Peste 2.5",
+      "cota": 1.43,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Viktoria Plzen dă 2,3 și primește 1,1 goluri pe meci; Benfica dă 2,7 și primește 1,1.",
+       "Meciurile Viktoria Plzen au în medie 3,4 goluri, cele ale Benfica 3,8.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Viktoria Plzen – Benfica Peste 2.5: piață 66.2%, formă 80%; absențe neverificate (Europa League); p 73.1%."
+      ],
+      "p": 73,
+      "pm": 66,
+      "pf": 80,
+      "ph": null,
+      "val": 3,
+      "rezultat": "Viktoria Plzen–Benfica 4-0"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 4.54,
+    "sansa": 23.7,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "19:45",
+      "meci": "Kauno Zalgiris – Riga FC",
+      "liga": "Conference League",
+      "selectie": "Kauno Zalgiris peste 0.5 goluri",
+      "cota": 1.41,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Kauno Zalgiris dă 1,4 și primește 1,9 goluri pe meci; Riga FC dă 1,4 și primește 1,2.",
+       "Kauno Zalgiris marchează 1,4 pe meci, iar Riga FC primește 1,2.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Kauno Zalgiris – Riga FC Kauno Zalgiris peste 0.5 goluri: piață 65.9%, formă 75%; absențe neverificate (Conference League); p 70.4%."
+      ],
+      "p": 70,
+      "pm": 66,
+      "pf": 75,
+      "ph": null,
+      "val": -1,
+      "rezultat": "Kauno Zalgiris–Riga FC 2-0"
+     },
+     {
+      "ora": "19:45",
+      "meci": "Dinamo Zagreb – Bayer Leverkusen",
+      "liga": "Europa League",
+      "selectie": "Peste 2.5",
+      "cota": 1.48,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Dinamo Zagreb dă 2,3 și primește 1,2 goluri pe meci; Bayer Leverkusen dă 2,5 și primește 1,5.",
+       "Meciurile Dinamo Zagreb au în medie 3,5 goluri, cele ale Bayer Leverkusen 4,0.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Dinamo Zagreb – Bayer Leverkusen Peste 2.5: piață 63.9%, formă 75%; absențe neverificate (Europa League); p 69.5%."
+      ],
+      "p": 70,
+      "pm": 64,
+      "pf": 75,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Dinamo Zagreb–Bayer Leverkusen 0-2"
+     },
+     {
+      "ora": "19:45",
+      "meci": "Ajax Amsterdam – Thun",
+      "liga": "Conference League",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.51,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 10,7 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Ajax Amsterdam – Thun Peste 8.5 cornere: piață 61.4%, formă 74%; absențe neverificate (Conference League); p 67.7%."
+      ],
+      "p": 68,
+      "pm": 61,
+      "pf": 74,
+      "ph": null,
+      "val": 1,
+      "rezultat": "Ajax Amsterdam–Thun 4-0"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Olympique Lyon – Lillestrom",
+      "liga": "Europa League",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.44,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 11,2 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Olympique Lyon – Lillestrom Peste 8.5 cornere: piață 64.5%, formă 78%; absențe neverificate (Europa League); p 71.5%."
+      ],
+      "p": 72,
+      "pm": 65,
+      "pf": 79,
+      "ph": null,
+      "val": 2
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10",
+    "cota": 9.05,
+    "sansa": 10.2,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "19:45",
+      "meci": "Pafos – Midtjylland",
+      "liga": "Conference League",
+      "selectie": "X2",
+      "cota": 1.41,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Pafos dă 1,4 și primește 1,5 goluri pe meci; Midtjylland dă 1,8 și primește 1,7.",
+       "Diferența de goluri pe meci: Pafos -0,1, Midtjylland 0,1.",
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Pafos – Midtjylland X2: piață 66.8%, formă 75%; absențe neverificate (Conference League); p 70.9%."
+      ],
+      "p": 71,
+      "pm": 67,
+      "pf": 75,
+      "ph": null,
+      "val": 0,
+      "rezultat": "Pafos–Midtjylland 0-2"
+     },
+     {
+      "ora": "19:45",
+      "meci": "RB Salzburg – Ararat Armenia",
+      "liga": "Europa League",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.36,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,1 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "RB Salzburg – Ararat Armenia Peste 7.5 cornere: piață 68.4%, formă 69%; absențe neverificate (Europa League); p 68.6%."
+      ],
+      "p": 69,
+      "pm": 68,
+      "pf": 69,
+      "ph": null,
+      "val": -5,
+      "rezultat": "RB Salzburg–Ararat Armenia 2-0"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Hajduk Split – Sint-Truiden",
+      "liga": "Conference League",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.39,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 10,4 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Hajduk Split – Sint-Truiden Peste 7.5 cornere: piață 67.0%, formă 81%; absențe neverificate (Conference League); p 74.2%."
+      ],
+      "p": 74,
+      "pm": 67,
+      "pf": 81,
+      "ph": null,
+      "val": 2,
+      "rezultat": "Hajduk Split–Sint-Truiden 0-2"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Crystal Palace – Real Sociedad",
+      "liga": "Europa League",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.36,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,3 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Crystal Palace – Real Sociedad Peste 7.5 cornere: piață 68.2%, formă 71%; absențe neverificate (Europa League); p 69.6%."
+      ],
+      "p": 70,
+      "pm": 68,
+      "pf": 71,
+      "ph": null,
+      "val": -4,
+      "rezultat": "Crystal Palace–Real Sociedad 2-1"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Inter Escaldes – FC Copenhaga",
+      "liga": "Conference League",
+      "selectie": "Peste 7.5 cornere",
+      "cota": 1.46,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 9,0 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Inter Escaldes – FC Copenhaga Peste 7.5 cornere: piață 63.6%, formă 68%; absențe neverificate (Conference League); p 65.6%."
+      ],
+      "p": 66,
+      "pm": 64,
+      "pf": 68,
+      "ph": null,
+      "val": -3,
+      "rezultat": "Inter Escaldes–FC Copenhaga 2-0"
+     },
+     {
+      "ora": "22:00",
+      "meci": "Sparta Praga – AZ Alkmaar",
+      "liga": "Europa League",
+      "selectie": "Peste 9.5 cornere",
+      "cota": 1.71,
+      "linii": [
+       "Prea puține meciuri directe (sub 3) ca să conteze în estimare.",
+       "Media cornerelor pe meci: 11,3 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Sparta Praga – AZ Alkmaar Peste 9.5 cornere: piață 54.5%, formă 69%; absențe neverificate (Europa League); p 61.8%."
+      ],
+      "p": 62,
+      "pm": 55,
+      "pf": 69,
+      "ph": null,
+      "val": 3,
+      "rezultat": "Sparta Praga–AZ Alkmaar 2-4"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-25-rezumat",
   "data": "2026-11-25",
   "tip": "rezumat",
