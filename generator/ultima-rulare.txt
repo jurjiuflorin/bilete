@@ -1,6 +1,6 @@
 turnee potrivite 66 nepotrivite (verifică numele): cehia - extraliga | elvetia - nla | croatia - hmnl | austria - ice league | grecia - a1 | scotia - cupa | grecia - volley league | scotia - championship | elvetia - nlb | elvetia - elite u21 | croatia - premijer liga - gr.a | cehia - 1. liga (f) | cehia - 1. liga - gr.a | grecia - cupa superbet | grecia - superbet league 2 | austria - abl | polonia - phl | elvetia - lna | polonia - obl | scotia - cupa challenge
-zile în feed {"2026-11-26":1298,"2026-11-27":365,"2026-12-02":44,"2026-11-29":320,"2026-12-01":31,"2026-11-30":35,"2026-11-28":571} chei events ligi potrivite în feed 238
-evenimente 2664 meciuri în ligile alese 203
+zile în feed {"2026-11-26":763,"2026-11-27":770,"2026-12-02":47,"2026-11-29":394,"2026-12-01":38,"2026-11-30":42,"2026-11-28":761,"2026-12-03":26} chei events ligi potrivite în feed 253
+evenimente 2841 meciuri în ligile alese 203
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
@@ -228,6 +228,9 @@ HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBet
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 ERR SyntaxError: Unexpected end of JSON input
+ERR SyntaxError: Unexpected end of JSON input
+HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
+HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
@@ -237,7 +240,6 @@ ERR SyntaxError: Unexpected end of JSON input
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-ERR SyntaxError: Unexpected end of JSON input
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
@@ -359,15 +361,7 @@ HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBet
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
 HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-HTTP 406 https://production-superbet-bmb.freetls.fastly.net/betbuilder/v3/getBetbuilderMarketsForMa
-analizate 82 păstrate (≥3/5 la o piață) 82 vulnerabile 37
+analizate 84 păstrate (≥3/5 la o piață) 84 vulnerabile 37
 arhivă 262 scoruri 161
 Challenge nu se poate azi: no_challenge
 Cotă 2 nu se poate azi: not_enough_matches
