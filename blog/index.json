@@ -1,5 +1,314 @@
 [
  {
+  "id": "2026-11-27-rezumat",
+  "data": "2026-11-27",
+  "tip": "rezumat",
+  "titlu": "Rezumatul zilei de 27 noiembrie: 0 câștigate, 5 pierdute",
+  "intro": "Pariul zilei pierdut · Challenge 1.40 pierdut · Cotă 2 pierdut · Cotă 5 pierdut · Cotă 10 pierdut",
+  "sectiuni": [
+   {
+    "h": "Ce a picat",
+    "p": [],
+    "li": [
+     "Pariul zilei: Maritimo – CD Nacional Maritimo–CD Nacional 1-2 (Maritimo câștigă)",
+     "Challenge 1.40: Southampton – Middlesbrough Southampton–Middlesbrough 2-0 (X2)",
+     "Cotă 2: Nottingham Forest – Chelsea Nottingham Forest–Chelsea 3-2 (Chelsea peste 0.5 goluri); Alanyaspor – Konyaspor Alanyaspor–Konyaspor 1-2 (1X)",
+     "Cotă 5: Nottingham Forest – Chelsea Nottingham Forest–Chelsea 3-2 (X2)",
+     "Cotă 10: Nottingham Forest – Chelsea Nottingham Forest–Chelsea 3-2 (X2); Maritimo – CD Nacional Maritimo–CD Nacional 1-2 (CD Nacional peste 0.5 goluri)"
+    ]
+   },
+   {
+    "h": "Verificări",
+    "p": [
+     "Evenimente cu estimare: 10."
+    ]
+   },
+   {
+    "h": "Ultimele 7 zile",
+    "p": [
+     "9 bilete câștigate din 33 validate (27%)."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Pariul zilei",
+    "cota": 2.17,
+    "sansa": 55.4,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "22:15",
+      "meci": "Maritimo – CD Nacional",
+      "liga": "Liga Portugal",
+      "selectie": "Maritimo câștigă",
+      "cota": 2.17,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Maritimo dă 0,7 și primește 2,1 goluri pe meci; CD Nacional dă 0,7 și primește 1,8.",
+       "Diferența de goluri pe meci: Maritimo -1,4, CD Nacional -1,1.",
+       "Meciuri directe analizate: 5.",
+       "Maritimo – CD Nacional – Maritimo câștigă: piață fără marjă 43%, formă 45%, H2H 100%; p estimat 55%; absențe neverificate."
+      ],
+      "p": 55,
+      "pm": 43,
+      "pf": 45,
+      "ph": 100,
+      "val": 9,
+      "rezultat": "Maritimo–CD Nacional 1-2"
+     }
+    ]
+   },
+   {
+    "tip": "Challenge 1.40",
+    "cota": 1.35,
+    "sansa": 76,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "Southampton – Middlesbrough",
+      "liga": "Championship",
+      "selectie": "X2",
+      "cota": 1.35,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Southampton dă 1,4 și primește 0,8 goluri pe meci; Middlesbrough dă 2,0 și primește 1,0.",
+       "Diferența de goluri pe meci: Southampton 0,6, Middlesbrough 1,0.",
+       "Meciuri directe analizate: 5.",
+       "Southampton – Middlesbrough – X2: piață fără marjă 70%, formă 70%, H2H 100%; p estimat 76%; absențe neverificate."
+      ],
+      "p": 76,
+      "pm": 70,
+      "pf": 70,
+      "ph": 100,
+      "val": 2,
+      "rezultat": "Southampton–Middlesbrough 2-0"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 2",
+    "cota": 1.89,
+    "sansa": 57.9,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "22:00",
+      "meci": "Nottingham Forest – Chelsea",
+      "liga": "Premier League",
+      "selectie": "Chelsea peste 0.5 goluri",
+      "cota": 1.34,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Nottingham Forest dă 0,9 și primește 1,4 goluri pe meci; Chelsea dă 1,9 și primește 1,7.",
+       "Chelsea marchează 1,9 pe meci, iar Nottingham Forest primește 1,4.",
+       "Meciuri directe analizate: 5.",
+       "Nottingham Forest – Chelsea – Chelsea peste 0.5 goluri: piață fără marjă 70%, formă 80%, H2H 100%; p estimat 80%; absențe neverificate."
+      ],
+      "p": 80,
+      "pm": 70,
+      "pf": 80,
+      "ph": 100,
+      "val": 5,
+      "rezultat": "Nottingham Forest–Chelsea 3-2"
+     },
+     {
+      "ora": "19:00",
+      "meci": "Alanyaspor – Konyaspor",
+      "liga": "Süper Lig",
+      "selectie": "1X",
+      "cota": 1.41,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Alanyaspor dă 1,1 și primește 1,8 goluri pe meci; Konyaspor dă 0,6 și primește 1,3.",
+       "Diferența de goluri pe meci: Alanyaspor -0,7, Konyaspor -0,7.",
+       "Meciuri directe analizate: 5.",
+       "Alanyaspor – Konyaspor – 1X: piață fără marjă 66%, formă 65%, H2H 100%; p estimat 72%; absențe neverificate."
+      ],
+      "p": 73,
+      "pm": 66,
+      "pf": 65,
+      "ph": 100,
+      "val": 2,
+      "rezultat": "Alanyaspor–Konyaspor 1-2"
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 5",
+    "cota": 4.6,
+    "sansa": 21.9,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "20:00",
+      "meci": "Sonderjyske – Brondby",
+      "liga": "Bundesliga",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.39,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 9,6 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Sonderjyske – Brondby – Peste 8.5 cornere: piață fără marjă 66%, formă 78%, H2H n/a; p estimat 72%; absențe neverificate."
+      ],
+      "p": 62,
+      "pm": 62,
+      "pf": 62,
+      "ph": null,
+      "val": -10
+     },
+     {
+      "ora": "21:45",
+      "meci": "Brest – Paris FC",
+      "liga": "Premier League",
+      "selectie": "Brest peste 0.5 goluri",
+      "cota": 1.38,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Brest dă 0,9 și primește 1,4 goluri pe meci; Paris FC dă 1,9 și primește 1,7.",
+       "Brest marchează 0,9 pe meci, iar Paris FC primește 1,7.",
+       "Meciuri directe analizate: 5.",
+       "Brest – Paris FC – Brest peste 0.5 goluri: piață fără marjă 68%, formă 75%, H2H 75%; p estimat 72%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "22:00",
+      "meci": "Nottingham Forest – Chelsea",
+      "liga": "Ligue 1",
+      "selectie": "X2",
+      "cota": 1.6,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Nottingham Forest dă 1,7 și primește 1,0 goluri pe meci; Chelsea dă 2,1 și primește 1,0.",
+       "Diferența de goluri pe meci: Nottingham Forest 0,7, Chelsea 1,1.",
+       "Meciuri directe analizate: 4.",
+       "Nottingham Forest – Chelsea – X2: piață fără marjă 59%, formă 70%, H2H 80%; p estimat 68%; absențe neverificate."
+      ],
+      "p": 70,
+      "pm": 73,
+      "pf": 65,
+      "ph": 75,
+      "val": 8,
+      "rezultat": "Nottingham Forest–Chelsea 3-2"
+     },
+     {
+      "ora": "21:30",
+      "meci": "Werder Bremen – Borussia Monchengladbach",
+      "liga": "Superliga (Danemarca)",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.5,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Media cornerelor pe meci: 11,2 cu cele două echipe împreună (din statistica Superbet pe sezon).",
+       "Werder Bremen – Borussia Monchengladbach – Peste 8.5 cornere: piață fără marjă 62%, formă 62%, H2H n/a; p estimat 62%; absențe neverificate."
+      ],
+      "p": 72,
+      "pm": 66,
+      "pf": 79,
+      "ph": null,
+      "val": 6
+     }
+    ]
+   },
+   {
+    "tip": "Cotă 10",
+    "cota": 9.19,
+    "sansa": 8.6,
+    "status": "pierdut",
+    "evenimente": [
+     {
+      "ora": "21:45",
+      "meci": "Venezia – Bologna",
+      "liga": "Bundesliga",
+      "selectie": "Peste 1.5",
+      "cota": 1.35,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Venezia dă 1,9 și primește 2,0 goluri pe meci; Bologna dă 1,3 și primește 1,1.",
+       "Meciurile Venezia au în medie 3,9 goluri, cele ale Bologna 2,4.",
+       "Meciuri directe analizate: 5.",
+       "Venezia – Bologna – Peste 1.5: piață fără marjă 70%, formă 75%, H2H 60%; p estimat 70%; absențe neverificate."
+      ],
+      "p": 58,
+      "pm": 60,
+      "pf": 55,
+      "ph": 60,
+      "val": -16
+     },
+     {
+      "ora": "19:00",
+      "meci": "Rizespor – Kasımpasa",
+      "liga": "Serie A",
+      "selectie": "Kasımpasa peste 0.5 goluri",
+      "cota": 1.35,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Rizespor dă 0,7 și primește 1,8 goluri pe meci; Kasımpasa dă 1,7 și primește 1,3.",
+       "Kasımpasa marchează 1,7 pe meci, iar Rizespor primește 1,8.",
+       "Meciuri directe analizate: 5.",
+       "Rizespor – Kasımpasa – Kasımpasa peste 0.5 goluri: piață fără marjă 69%, formă 75%, H2H 60%; p estimat 70%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "20:30",
+      "meci": "Petrolul Ploiesti – FC Arges",
+      "liga": "SuperLiga",
+      "selectie": "1X",
+      "cota": 1.4,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Petrolul Ploiesti dă 1,9 și primește 0,9 goluri pe meci; FC Arges dă 0,9 și primește 0,9.",
+       "Diferența de goluri pe meci: Petrolul Ploiesti 1,0, FC Arges 0,0.",
+       "Meciuri directe analizate: 5.",
+       "Petrolul Ploiesti – FC Arges – 1X: piață fără marjă 68%, formă 75%, H2H 60%; p estimat 69%; absențe neverificate."
+      ],
+      "p": 69,
+      "pm": 69,
+      "pf": 75,
+      "ph": 60,
+      "val": -2
+     },
+     {
+      "ora": "22:00",
+      "meci": "Nottingham Forest – Chelsea",
+      "liga": "Premier League",
+      "selectie": "X2",
+      "cota": 1.6,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Nottingham Forest dă 0,9 și primește 1,4 goluri pe meci; Chelsea dă 1,9 și primește 1,7.",
+       "Diferența de goluri pe meci: Nottingham Forest -0,5, Chelsea 0,2.",
+       "Meciuri directe analizate: 5.",
+       "Nottingham Forest – Chelsea – X2: piață fără marjă 59%, formă 70%, H2H 80%; p estimat 68%; absențe neverificate."
+      ],
+      "p": 68,
+      "pm": 59,
+      "pf": 70,
+      "ph": 80,
+      "val": 5,
+      "rezultat": "Nottingham Forest–Chelsea 3-2"
+     },
+     {
+      "ora": "21:30",
+      "meci": "Werder Bremen – Borussia Monchengladbach",
+      "liga": "Liga Portugal",
+      "selectie": "Peste 8.5 cornere",
+      "cota": 1.5,
+      "linii": [
+       "Meciuri directe analizate: 5.",
+       "Werder Bremen – Borussia Monchengladbach – Peste 8.5 cornere: piață fără marjă 62%, formă 62%, H2H n/a; p estimat 62%; absențe neverificate."
+      ]
+     },
+     {
+      "ora": "22:15",
+      "meci": "Maritimo – CD Nacional",
+      "liga": "Süper Lig",
+      "selectie": "CD Nacional peste 0.5 goluri",
+      "cota": 1.5,
+      "linii": [
+       "Ultimele 10 meciuri (toate competițiile): Maritimo dă 1,5 și primește 1,3 goluri pe meci; CD Nacional dă 1,9 și primește 1,0.",
+       "CD Nacional marchează 1,9 pe meci, iar Maritimo primește 1,3.",
+       "Meciuri directe analizate: 5.",
+       "Maritimo – CD Nacional – CD Nacional peste 0.5 goluri: piață fără marjă 62%, formă 70%, H2H 40%; p estimat 61%; absențe neverificate."
+      ],
+      "rezultat": "Maritimo–CD Nacional 1-2"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-26-rezumat",
   "data": "2026-11-26",
   "tip": "rezumat",
