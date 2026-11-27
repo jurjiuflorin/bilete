@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-27",
+ "salvat": "2026-11-27T10:23:47.430Z",
+ "n": 15,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14764520,
+    "meci": "Venezia – Bologna",
+    "when": "2026-11-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.35,
+    "p": 0.754,
+    "why": "Venezia dă 0,7 și primește 2,1 goluri pe meci; Bologna dă 1,4 și primește 1,3."
+   },
+   {
+    "id": 14764590,
+    "meci": "Groningen – Willem II Tilburg",
+    "when": "2026-11-27T19:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.44,
+    "p": 0.735,
+    "why": "Groningen dă 2,3 și primește 2,4 goluri pe meci; Willem II Tilburg dă 0,9 și primește 3,2."
+   },
+   {
+    "id": 14780591,
+    "meci": "Maritimo – CD Nacional",
+    "when": "2026-11-27T20:15:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.43,
+    "p": 0.726,
+    "why": "Maritimo dă 0,9 și primește 2,1 goluri pe meci; CD Nacional dă 1 și primește 1,7."
+   },
+   {
+    "id": 14780599,
+    "meci": "Alanyaspor – Konyaspor",
+    "when": "2026-11-27T17:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.39,
+    "p": 0.706,
+    "why": "Alanyaspor dă 0,8 și primește 1,7 goluri pe meci; Konyaspor dă 0,7 și primește 1,5."
+   },
+   {
+    "id": 14780643,
+    "meci": "Levante – Racing Santander",
+    "when": "2026-11-27T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.4,
+    "p": 0.681,
+    "why": "Levante dă 1,3 și primește 1,7 goluri pe meci; Racing Santander dă 1,5 și primește 2,5."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14780643,
+    "meci": "Levante – Racing Santander",
+    "when": "2026-11-27T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.38,
+    "p": 0.683,
+    "why": "Levante marchează 1,3 și primește 1,7 pe meci; Racing Santander marchează 1,5 și primește 2,5."
+   },
+   {
+    "id": 14764590,
+    "meci": "Groningen – Willem II Tilburg",
+    "when": "2026-11-27T19:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.77,
+    "p": 0.646,
+    "why": "Groningen marchează 2,3 și primește 2,4 pe meci; Willem II Tilburg marchează 0,9 și primește 3,2."
+   },
+   {
+    "id": 14764497,
+    "meci": "Werder Bremen – Borussia Monchengladbach",
+    "when": "2026-11-27T19:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "GG (ambele marchează)",
+    "od": 1.56,
+    "p": 0.643,
+    "why": "Werder Bremen marchează 2,1 și primește 1,5 pe meci; Borussia Monchengladbach marchează 1,2 și primește 2,6."
+   },
+   {
+    "id": 14750088,
+    "meci": "Southampton – Middlesbrough",
+    "when": "2026-11-27T20:00:00.000Z",
+    "liga": "Championship",
+    "sel": "GG (ambele marchează)",
+    "od": 1.49,
+    "p": 0.622,
+    "why": "Southampton marchează 1,9 și primește 0,9 pe meci; Middlesbrough marchează 2 și primește 1,2."
+   },
+   {
+    "id": 15724971,
+    "meci": "Sonderjyske – Brondby",
+    "when": "2026-11-27T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.62,
+    "p": 0.619,
+    "why": "Sonderjyske marchează 1,3 și primește 2,3 pe meci; Brondby marchează 1,5 și primește 1,5."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14750088,
+    "meci": "Southampton – Middlesbrough",
+    "when": "2026-11-27T20:00:00.000Z",
+    "liga": "Championship",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.35,
+    "p": 0.769,
+    "why": "Media cornerelor: Southampton 5,9, Middlesbrough 6, adică 11,9 pe meci."
+   },
+   {
+    "id": 15724971,
+    "meci": "Sonderjyske – Brondby",
+    "when": "2026-11-27T18:00:00.000Z",
+    "liga": "Superliga (Danemarca)",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.39,
+    "p": 0.732,
+    "why": "Media cornerelor: Sonderjyske 4,8, Brondby 6,4, adică 11,2 pe meci."
+   },
+   {
+    "id": 14780600,
+    "meci": "Rizespor – Kasımpasa",
+    "when": "2026-11-27T17:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.35,
+    "p": 0.693,
+    "why": "Media cornerelor: Rizespor 5, Kasımpasa 4,1, adică 9,1 pe meci."
+   },
+   {
+    "id": 14764520,
+    "meci": "Venezia – Bologna",
+    "when": "2026-11-27T19:45:00.000Z",
+    "liga": "Serie A",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.45,
+    "p": 0.669,
+    "why": "Media cornerelor: Venezia 3,8, Bologna 5,3, adică 9,1 pe meci."
+   },
+   {
+    "id": 15848197,
+    "meci": "Grazer AK – SCR Altach",
+    "when": "2026-11-27T18:30:00.000Z",
+    "liga": "Bundesliga (Austria)",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.36,
+    "p": 0.648,
+    "why": "Media cornerelor: Grazer AK 3,9, SCR Altach 4,5, adică 8,4 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 14780643,
+    "meci": "Levante – Racing Santander",
+    "when": "2026-11-27T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.35,
+    "p": 0.707,
+    "why": "Levante dă 1,3 și primește 1,7 goluri pe meci; Racing Santander dă 1,5 și primește 2,5. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14780600,
+    "meci": "Rizespor – Kasımpasa",
+    "when": "2026-11-27T17:00:00.000Z",
+    "liga": "Süper Lig",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.47,
+    "p": 0.683,
+    "why": "Rizespor dă 1,3 și primește 1,3 goluri pe meci; Kasımpasa dă 1,6 și primește 1. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14764530,
+    "meci": "U Cluj – Sepsi Sfantu Gheorghe",
+    "when": "2026-11-27T15:30:00.000Z",
+    "liga": "SuperLiga",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.42,
+    "p": 0.678,
+    "why": "U Cluj dă 1,8 și primește 1,4 goluri pe meci; Sepsi Sfantu Gheorghe dă 0,8 și primește 1,4. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14764570,
+    "meci": "Leuven – Kortrijk",
+    "when": "2026-11-27T19:45:00.000Z",
+    "liga": "Pro League",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.48,
+    "p": 0.67,
+    "why": "Leuven dă 1 și primește 1,5 goluri pe meci; Kortrijk dă 0,3 și primește 2. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14764553,
+    "meci": "Nottingham Forest – Chelsea",
+    "when": "2026-11-27T20:00:00.000Z",
+    "liga": "Premier League",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.35,
+    "p": 0.67,
+    "why": "Nottingham Forest dă 0,8 și primește 1,4 goluri pe meci; Chelsea dă 1,8 și primește 1,8. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}

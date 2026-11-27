@@ -1,4 +1,15 @@
-prea devreme pentru lista zilei 6
-prea devreme 6
-judecat 2026-11-26.json
-index 29 zile
+evenimente 2177 meciuri azi 15
+scris sugestii/2026-11-27.json { goluri: 5, gg: 5, cornere: 5, sub: 5 }
+evenimente 2788 meciuri 72
+ERR SyntaxError: Unexpected end of JSON input https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro
+ERR SyntaxError: Unexpected end of JSON input https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro
+ERR SyntaxError: Unexpected end of JSON input https://scorealarm-stats.freetls.fastly.net/v2/soccer/fixtures/overview/rosuperbetsport/ro
+candidati 547 din 71 meciuri
+scris candidati/2026-11-27.json plan {
+  challenge: '1.35 / 0.76',
+  cota2: '1.89 / 0.579',
+  pariu: '2.17 / 0.554',
+  cota5: '4.6 / 0.219',
+  cota10: '9.19 / 0.086'
+} variante { challenge: 4, cota2: 3, pariu: 2, cota5: 3, cota10: 3 } 5
+index 30 zile
