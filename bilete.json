@@ -4400,5 +4400,115 @@
    14820905
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-27-challenge",
+  "data": "2026-11-27",
+  "tip": "Challenge 1.40",
+  "cota": 1.35,
+  "sansa": 0.76,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:00 Southampton – Middlesbrough: X2 (1.35)",
+  "rezultat": "",
+  "motive": [
+   "Southampton – Middlesbrough – X2: piață fără marjă 70%, formă 70%, H2H 100%; p estimat 76%; absențe neverificate."
+  ],
+  "ids": [
+   14750088
+  ],
+  "sport": "fotbal",
+  "ciclu": 6,
+  "pas": 1
+ },
+ {
+  "id": "2026-11-27-cota2",
+  "data": "2026-11-27",
+  "tip": "Cotă 2",
+  "cota": 1.89,
+  "sansa": 0.5786,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:00 Nottingham Forest – Chelsea: Chelsea peste 0.5 goluri (1.34) · 19:00 Alanyaspor – Konyaspor: 1X (1.41)",
+  "rezultat": "",
+  "motive": [
+   "Nottingham Forest – Chelsea – Chelsea peste 0.5 goluri: piață fără marjă 70%, formă 80%, H2H 100%; p estimat 80%; absențe neverificate.",
+   "Alanyaspor – Konyaspor – 1X: piață fără marjă 66%, formă 65%, H2H 100%; p estimat 72%; absențe neverificate."
+  ],
+  "ids": [
+   14764553,
+   14780599
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-27-pariu",
+  "data": "2026-11-27",
+  "tip": "Pariul zilei",
+  "cota": 2.17,
+  "sansa": 0.554,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "22:15 Maritimo – CD Nacional: Maritimo câștigă (2.17)",
+  "rezultat": "",
+  "motive": [
+   "Maritimo – CD Nacional – Maritimo câștigă: piață fără marjă 43%, formă 45%, H2H 100%; p estimat 55%; absențe neverificate."
+  ],
+  "ids": [
+   14780591
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-27-cota5",
+  "data": "2026-11-27",
+  "tip": "Cotă 5",
+  "cota": 4.6,
+  "sansa": 0.2188,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "20:00 Sonderjyske – Brondby: Peste 8.5 cornere (1.39) · 21:45 Brest – Paris FC: Brest peste 0.5 goluri (1.38) · 22:00 Nottingham Forest – Chelsea: X2 (1.60) · 21:30 Werder Bremen – Borussia Monchengladbach: Peste 8.5 cornere (1.50)",
+  "rezultat": "",
+  "motive": [
+   "Sonderjyske – Brondby – Peste 8.5 cornere: piață fără marjă 66%, formă 78%, H2H n/a; p estimat 72%; absențe neverificate.",
+   "Brest – Paris FC – Brest peste 0.5 goluri: piață fără marjă 68%, formă 75%, H2H 75%; p estimat 72%; absențe neverificate.",
+   "Nottingham Forest – Chelsea – X2: piață fără marjă 59%, formă 70%, H2H 80%; p estimat 68%; absențe neverificate.",
+   "Werder Bremen – Borussia Monchengladbach – Peste 8.5 cornere: piață fără marjă 62%, formă 62%, H2H n/a; p estimat 62%; absențe neverificate."
+  ],
+  "ids": [
+   14764497,
+   14764553,
+   14764634,
+   15724971
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-27-cota10",
+  "data": "2026-11-27",
+  "tip": "Cotă 10",
+  "cota": 9.19,
+  "sansa": 0.0861,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Venezia – Bologna: Peste 1.5 (1.35) · 19:00 Rizespor – Kasımpasa: Kasımpasa peste 0.5 goluri (1.35) · 20:30 Petrolul Ploiesti – FC Arges: 1X (1.40) · 22:00 Nottingham Forest – Chelsea: X2 (1.60) · 21:30 Werder Bremen – Borussia Monchengladbach: Peste 8.5 cornere (1.50) · 22:15 Maritimo – CD Nacional: CD Nacional peste 0.5 goluri (1.50)",
+  "rezultat": "",
+  "motive": [
+   "Venezia – Bologna – Peste 1.5: piață fără marjă 70%, formă 75%, H2H 60%; p estimat 70%; absențe neverificate.",
+   "Rizespor – Kasımpasa – Kasımpasa peste 0.5 goluri: piață fără marjă 69%, formă 75%, H2H 60%; p estimat 70%; absențe neverificate.",
+   "Petrolul Ploiesti – FC Arges – 1X: piață fără marjă 68%, formă 75%, H2H 60%; p estimat 69%; absențe neverificate.",
+   "Nottingham Forest – Chelsea – X2: piață fără marjă 59%, formă 70%, H2H 80%; p estimat 68%; absențe neverificate.",
+   "Werder Bremen – Borussia Monchengladbach – Peste 8.5 cornere: piață fără marjă 62%, formă 62%, H2H n/a; p estimat 62%; absențe neverificate.",
+   "Maritimo – CD Nacional – CD Nacional peste 0.5 goluri: piață fără marjă 62%, formă 70%, H2H 40%; p estimat 61%; absențe neverificate."
+  ],
+  "ids": [
+   14764497,
+   14764520,
+   14764535,
+   14764553,
+   14780591,
+   14780600
+  ],
+  "sport": "fotbal"
  }
 ]
