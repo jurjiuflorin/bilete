@@ -4529,5 +4529,115 @@
    "Como – Juventus – Como câștigă: piață fără marjă 48%, formă 80% (Como 4V 1E în 5 acasă și 4V 1Î în ultimele 5 cu 8-3 la goluri; Juventus 1V 2E 2Î în 5 deplasări), H2H insuficient verificat (greutate mutată pe formă); p estimat 58%; absențe neverificate (scăzut); cotă estimată."
   ],
   "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-28-challenge",
+  "data": "2026-11-28",
+  "tip": "Challenge 1.40",
+  "cota": 1.39,
+  "sansa": 0.753,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "16:30 Hamburger – Bayern Munchen: Peste 2.5 (1.39)",
+  "rezultat": "",
+  "motive": [
+   "Hamburger – Bayern Munchen: piață 0.683, formă 0.7, H2H 1 → p 0.753; absențe neverificate."
+  ],
+  "ids": [
+   14764495
+  ],
+  "sport": "fotbal",
+  "ciclu": 7,
+  "pas": 1
+ },
+ {
+  "id": "2026-11-28-cota2",
+  "data": "2026-11-28",
+  "tip": "Cotă 2",
+  "cota": 1.86,
+  "sansa": 0.568,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Le Havre – Strasbourg: Strasbourg peste 0.5 goluri (1.20) · 17:00 Westerlo – RAAL La Louviere: Peste 1.5 (1.23) · 18:00 Gaziantep – Amedspor: Peste 1.5 (1.26)",
+  "rezultat": "",
+  "motive": [
+   "Le Havre – Strasbourg: piață 0.776, formă 0.85, H2H 1 → p 0.85; absențe neverificate.",
+   "Westerlo – RAAL La Louviere: piață 0.769, formă 0.9 → p 0.835; absențe neverificate.",
+   "Gaziantep – Amedspor: piață 0.751, formă 0.85 → p 0.8; absențe neverificate."
+  ],
+  "ids": [
+   14764635,
+   14764577,
+   14780597
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-28-pariu",
+  "data": "2026-11-28",
+  "tip": "Pariul zilei",
+  "cota": 1.78,
+  "sansa": 0.671,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "17:00 Queens Park Rangers – Sheffield United: X2 (1.78)",
+  "rezultat": "",
+  "motive": [
+   "Queens Park Rangers – Sheffield United: piață 0.528, formă 0.65, H2H 1 → p 0.671; absențe neverificate."
+  ],
+  "ids": [
+   14764558
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-28-cota5",
+  "data": "2026-11-28",
+  "tip": "Cotă 5",
+  "cota": 4.51,
+  "sansa": 0.263,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "20:00 Academico Viseu – Alverca: 1X (1.42) · 19:45 PSV Eindhoven – Go Ahead Eagles: Go Ahead Eagles peste 0.5 goluri (1.49) · 16:30 Mainz – Union Berlin: Union Berlin peste 0.5 goluri (1.47) · 19:00 Rosenborg – Molde: Peste 9.5 cornere (1.45)",
+  "rezultat": "",
+  "motive": [
+   "Academico Viseu – Alverca: piață 0.663, formă 0.65, H2H 1 → p 0.725; absențe neverificate.",
+   "PSV Eindhoven – Go Ahead Eagles: piață 0.624, formă 0.75, H2H 1 → p 0.72; absențe neverificate.",
+   "Mainz – Union Berlin: piață 0.632, formă 0.65, H2H 1 → p 0.711; absențe neverificate.",
+   "Rosenborg – Molde: piață 0.635, formă 0.783 → p 0.709; absențe neverificate."
+  ],
+  "ids": [
+   14780587,
+   14764595,
+   14764494,
+   14780610
+  ],
+  "sport": "fotbal"
+ },
+ {
+  "id": "2026-11-28-cota10",
+  "data": "2026-11-28",
+  "tip": "Cotă 10",
+  "cota": 9.38,
+  "sansa": 0.14,
+  "status": "în așteptare",
+  "cod": "",
+  "selectii": "21:45 Le Mans – Lille: Le Mans peste 0.5 goluri (1.49) · 17:00 Derby County – Watford: X2 (1.59) · 21:45 Lommel – Zulte Waregem: 1X (1.62) · 17:00 Birmingham City – Bolton Wanderers: Bolton Wanderers peste 0.5 goluri (1.50) · 17:00 St. Mirren – Kilmarnock: X2 (1.63)",
+  "rezultat": "",
+  "motive": [
+   "Le Mans – Lille: piață 0.622, formă 0.75 → p 0.686; absențe neverificate.",
+   "Derby County – Watford: piață 0.594, formă 0.6, H2H 1 → p 0.678; absențe neverificate.",
+   "Lommel – Zulte Waregem: piață 0.581, formă 0.7, H2H 0.8 → p 0.672; absențe neverificate.",
+   "Birmingham City – Bolton Wanderers: piață 0.62, formă 0.7, H2H 0.75 → p 0.67; absențe neverificate.",
+   "St. Mirren – Kilmarnock: piață 0.576, formă 0.7, H2H 0.8 → p 0.67; absențe neverificate."
+  ],
+  "ids": [
+   14764636,
+   14764556,
+   14764572,
+   14764555,
+   15839176
+  ],
+  "sport": "fotbal"
  }
 ]
