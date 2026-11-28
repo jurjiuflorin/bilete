@@ -1,5 +1,81 @@
 [
  {
+  "id": "2026-11-28-bilete",
+  "data": "2026-11-28",
+  "tip": "bilete",
+  "titlu": "Biletele zilei de 28 noiembrie: 1 bilete, 5 evenimente analizate",
+  "intro": "Weekend 31,11",
+  "sectiuni": [
+   {
+    "h": "Cum citești analiza",
+    "p": [
+     "Pentru fiecare eveniment vezi trei numere: ce spune piața (cota fără marja casei), ce spune forma pe ultimele 10 meciuri ale ambelor echipe și ce spun meciurile directe (H2H). Estimarea finală e 40% piață, 40% formă și 20% H2H, iar „valoarea” e diferența dintre estimare și probabilitatea din cotă. Cotă 2 are prioritate la alegere, iar meciurile se repetă cât mai puțin între bilete."
+    ]
+   },
+   {
+    "h": "Ce trebuie verificat",
+    "p": [
+     "Absențele nu sunt verificate. Estimările sunt statistice, nu garanții, iar cotele se pot mișca până la meci. Pune doar o miză mică."
+    ]
+   }
+  ],
+  "bilete": [
+   {
+    "tip": "Weekend",
+    "cota": 31.11,
+    "sansa": 5.6,
+    "status": "în așteptare",
+    "evenimente": [
+     {
+      "ora": "19:00",
+      "meci": "Torino – Lazio",
+      "selectie": "Lazio câștigă",
+      "cota": 2.15,
+      "linii": [
+       "Torino – Lazio – Lazio câștigă: piață fără marjă 44,5%, formă 70% (Lazio 4V 1E în ultimele 5 în deplasare, 14-5 la goluri în ultimele 5; Torino doar 2V în 5 acasă), H2H 40% (2V 2E 1Î în ultimele 5, 2-0 Torino în martie); p estimat 52%; Zaccagni lipsește (scăzut); cotă estimată."
+      ]
+     },
+     {
+      "ora": "14:00",
+      "meci": "Everton – Liverpool",
+      "selectie": "Liverpool câștigă",
+      "cota": 1.77,
+      "linii": [
+       "Everton – Liverpool – Liverpool câștigă: piață fără marjă 54%, formă 75% (Liverpool 4/4 victorii în deplasare în Premier League și 10-1 la goluri în ultimele 3 meciuri; Everton doar 2V în 4 acasă, 0-4 la Brentford), H2H insuficient verificat (greutate mutată pe formă); p estimat 61%; Gakpo și Ekitiké lipsesc, Gravenberch incert (scăzut), Tarkowski suspendat la Everton."
+      ]
+     },
+     {
+      "ora": "18:30",
+      "meci": "Arsenal – Manchester City",
+      "selectie": "Arsenal câștigă",
+      "cota": 1.95,
+      "linii": [
+       "Arsenal – Manchester City – Arsenal câștigă: piață fără marjă 48%, formă 70% (Arsenal 5/5 victorii acasă în ligă, doar 2 goluri primite la Emirates; City 1V în ultimele 7 și niciun meci fără gol primit în 10), H2H 67% (ultimele 3 la Emirates: 2V 1E); p estimat 56%; Saka și Zubimendi lipsesc, Raya incert (scăzut)."
+      ]
+     },
+     {
+      "ora": "20:30",
+      "meci": "Borussia Dortmund – Bayer Leverkusen",
+      "selectie": "Dortmund câștigă",
+      "cota": 2.15,
+      "linii": [
+       "Borussia Dortmund – Bayer Leverkusen – Dortmund câștigă: piață fără marjă 44,5%, formă 70% (Dortmund 4V 1E în 5 acasă în Bundesliga, cea mai bună defensivă cu 7 goluri primite; Leverkusen doar 2V în 5 deplasări), H2H insuficient verificat (greutate mutată pe formă); p estimat 54%; Can și Konstantelias lipsesc (lungă durată), Guirassy revine (scăzut); cotă estimată."
+      ]
+     },
+     {
+      "ora": "21:45",
+      "meci": "Como – Juventus",
+      "selectie": "Como câștigă",
+      "cota": 1.95,
+      "linii": [
+       "Como – Juventus – Como câștigă: piață fără marjă 48%, formă 80% (Como 4V 1E în 5 acasă și 4V 1Î în ultimele 5 cu 8-3 la goluri; Juventus 1V 2E 2Î în 5 deplasări), H2H insuficient verificat (greutate mutată pe formă); p estimat 58%; absențe neverificate (scăzut); cotă estimată."
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ {
   "id": "2026-11-27-rezumat",
   "data": "2026-11-27",
   "tip": "rezumat",
