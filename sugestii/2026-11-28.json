@@ -1,0 +1,215 @@
+{
+ "data": "2026-11-28",
+ "salvat": "2026-11-28T10:24:22.629Z",
+ "n": 58,
+ "sugestii": {
+  "goluri": [
+   {
+    "id": 14764596,
+    "meci": "Cambuur – Sparta Rotterdam",
+    "when": "2026-11-28T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.36,
+    "p": 0.745,
+    "why": "Cambuur dă 2,2 și primește 2,2 goluri pe meci; Sparta Rotterdam dă 1,7 și primește 2,6."
+   },
+   {
+    "id": 14858617,
+    "meci": "Vaduz – Zurich",
+    "when": "2026-11-28T17:00:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.39,
+    "p": 0.724,
+    "why": "Vaduz dă 1,9 și primește 2,2 goluri pe meci; Zurich dă 1,9 și primește 2."
+   },
+   {
+    "id": 14764636,
+    "meci": "Le Mans – Lille",
+    "when": "2026-11-28T19:45:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 1.5 goluri",
+    "od": 1.39,
+    "p": 0.719,
+    "why": "Le Mans dă 1,4 și primește 1,9 goluri pe meci; Lille dă 1,3 și primește 0,7."
+   },
+   {
+    "id": 14764495,
+    "meci": "Hamburger – Bayern Munchen",
+    "when": "2026-11-28T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.39,
+    "p": 0.709,
+    "why": "Hamburger dă 1 și primește 2,4 goluri pe meci; Bayern Munchen dă 3 și primește 1."
+   },
+   {
+    "id": 15517548,
+    "meci": "Austria Lustenau – Rapid Viena",
+    "when": "2026-11-28T18:30:00.000Z",
+    "liga": "Bundesliga (Austria)",
+    "sel": "Peste 2.5 goluri",
+    "od": 1.4,
+    "p": 0.698,
+    "why": "Austria Lustenau dă 1,2 și primește 2,3 goluri pe meci; Rapid Viena dă 3,2 și primește 0,7."
+   }
+  ],
+  "gg": [
+   {
+    "id": 14764596,
+    "meci": "Cambuur – Sparta Rotterdam",
+    "when": "2026-11-28T20:00:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.36,
+    "p": 0.733,
+    "why": "Cambuur marchează 2,2 și primește 2,2 pe meci; Sparta Rotterdam marchează 1,7 și primește 2,6."
+   },
+   {
+    "id": 14858617,
+    "meci": "Vaduz – Zurich",
+    "when": "2026-11-28T17:00:00.000Z",
+    "liga": "Super League (Elveția)",
+    "sel": "GG (ambele marchează)",
+    "od": 1.36,
+    "p": 0.724,
+    "why": "Vaduz marchează 1,9 și primește 2,2 pe meci; Zurich marchează 1,9 și primește 2."
+   },
+   {
+    "id": 14764577,
+    "meci": "Westerlo – RAAL La Louviere",
+    "when": "2026-11-28T15:00:00.000Z",
+    "liga": "Pro League",
+    "sel": "GG (ambele marchează)",
+    "od": 1.66,
+    "p": 0.659,
+    "why": "Westerlo marchează 2,2 și primește 2,6 pe meci; RAAL La Louviere marchează 1,1 și primește 2,3."
+   },
+   {
+    "id": 14764595,
+    "meci": "PSV Eindhoven – Go Ahead Eagles",
+    "when": "2026-11-28T17:45:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.56,
+    "p": 0.656,
+    "why": "PSV Eindhoven marchează 3,4 și primește 1,2 pe meci; Go Ahead Eagles marchează 1,8 și primește 2,2."
+   },
+   {
+    "id": 14764589,
+    "meci": "Excelsior – Telstar",
+    "when": "2026-11-28T15:30:00.000Z",
+    "liga": "Eredivisie",
+    "sel": "GG (ambele marchează)",
+    "od": 1.61,
+    "p": 0.651,
+    "why": "Excelsior marchează 1,5 și primește 2,4 pe meci; Telstar marchează 1,5 și primește 2,2."
+   }
+  ],
+  "cornere": [
+   {
+    "id": 14764495,
+    "meci": "Hamburger – Bayern Munchen",
+    "when": "2026-11-28T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.42,
+    "p": 0.775,
+    "why": "Media cornerelor: Hamburger 4,5, Bayern Munchen 8,2, adică 12,7 pe meci."
+   },
+   {
+    "id": 14764638,
+    "meci": "Nice – Troyes",
+    "when": "2026-11-28T19:45:00.000Z",
+    "liga": "Ligue 1",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.37,
+    "p": 0.769,
+    "why": "Media cornerelor: Nice 5,1, Troyes 5,8, adică 10,9 pe meci."
+   },
+   {
+    "id": 14780641,
+    "meci": "Elche – Atletico Madrid",
+    "when": "2026-11-28T17:30:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Peste 7.5 cornere",
+    "od": 1.4,
+    "p": 0.74,
+    "why": "Media cornerelor: Elche 4,6, Atletico Madrid 5,7, adică 10,3 pe meci."
+   },
+   {
+    "id": 14764491,
+    "meci": "Stuttgart – Eintracht Frankfurt",
+    "when": "2026-11-28T17:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.36,
+    "p": 0.739,
+    "why": "Media cornerelor: Stuttgart 5,8, Eintracht Frankfurt 5,4, adică 11,2 pe meci."
+   },
+   {
+    "id": 15839657,
+    "meci": "Motherwell – Hibernian",
+    "when": "2026-11-28T17:45:00.000Z",
+    "liga": "Premiership (Scoția)",
+    "sel": "Peste 8.5 cornere",
+    "od": 1.38,
+    "p": 0.739,
+    "why": "Media cornerelor: Motherwell 5,4, Hibernian 5,9, adică 11,3 pe meci."
+   }
+  ],
+  "sub": [
+   {
+    "id": 15839658,
+    "meci": "Rangers – Falkirk",
+    "when": "2026-11-28T15:00:00.000Z",
+    "liga": "Premiership (Scoția)",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.36,
+    "p": 0.771,
+    "why": "Rangers dă 1,9 și primește 0,9 goluri pe meci; Falkirk dă 1,6 și primește 1,1. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14764513,
+    "meci": "Frosinone – Parma",
+    "when": "2026-11-28T14:00:00.000Z",
+    "liga": "Serie A",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.38,
+    "p": 0.732,
+    "why": "Frosinone dă 2,1 și primește 1,7 goluri pe meci; Parma dă 0,8 și primește 1,8. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14780588,
+    "meci": "Arouca – Rio Ave",
+    "when": "2026-11-28T15:30:00.000Z",
+    "liga": "Liga Portugal",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.37,
+    "p": 0.726,
+    "why": "Arouca dă 1,2 și primește 0,7 goluri pe meci; Rio Ave dă 0,8 și primește 2,2. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14780646,
+    "meci": "Real Madrid – Alaves",
+    "when": "2026-11-28T20:00:00.000Z",
+    "liga": "LaLiga",
+    "sel": "Sub 4.5 goluri",
+    "od": 1.45,
+    "p": 0.724,
+    "why": "Real Madrid dă 2,5 și primește 0,8 goluri pe meci; Alaves dă 1,4 și primește 1,4. Se urmărește doar pentru statistică."
+   },
+   {
+    "id": 14764498,
+    "meci": "Paderborn – Schalke",
+    "when": "2026-11-28T14:30:00.000Z",
+    "liga": "Bundesliga",
+    "sel": "Sub 3.5 goluri",
+    "od": 1.51,
+    "p": 0.717,
+    "why": "Paderborn dă 0,8 și primește 1,5 goluri pe meci; Schalke dă 0,5 și primește 1,1. Se urmărește doar pentru statistică."
+   }
+  ]
+ }
+}
